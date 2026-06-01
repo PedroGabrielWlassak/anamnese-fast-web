@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anamnese FAST — Prontuário</title>
+<meta name="description" content="Prontuário digital baseado no protocolo Anamnese FAST: ID, QD, HPMA, AP, AF, HV, RBS, Sinais, HD e CD.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🩺</text></svg>">
+<style>
+  :root{
+    --bg:#f3f5f8;
+    --panel:#ffffff;
+    --ink:#0f172a;
+    --muted:#64748b;
+    --line:#e2e8f0;
+    --brand:#0d6b6b;
+    --brand-2:#0a8f8f;
+    --accent:#0ea5e9;
+    --warn:#b45309;
+    --danger:#b91c1c;
+    --ok:#15803d;
+    --chip:#e6f3f3;
+    --shadow:0 1px 2px rgba(15,23,42,.04),0 4px 16px rgba(15,23,42,.06);
+    --radius:12px;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font:15px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;-webkit-font-smoothing:antialiased}
+  a{color:var(--brand)}
+  header.top{
+    background:linear-gradient(135deg,var(--brand) 0%,var(--brand-2) 100%);
+    color:#fff;padding:18px 24px;display:flex;align-items:center;justify-content:space-between;gap:16px;
+    box-shadow:var(--shadow);
+  }
+  header.top .brand{display:flex;align-items:center;gap:12px}
+  header.top h1{font-size:18px;margin:0;font-weight:600;letter-spacing:.2px}
+  header.top .sub{font-size:12px;opacity:.85;margin-top:2px}
+  header.top .logo{
+    width:38px;height:38px;border-radius:10px;background:rgba(255,255,255,.15);
+    display:grid;place-items:center;font-size:20px;
+  }
+  header.top .actions{display:flex;gap:8px;flex-wrap:wrap}
+  .btn{
+    appearance:none;border:0;background:#fff;color:var(--ink);
+    padding:8px 14px;border-radius:8px;font-weight:600;font-size:13px;
+    cursor:pointer;transition:transform .05s ease, box-shadow .15s ease, background .15s ease;
+    box-shadow:0 1px 2px rgba(0,0,0,.08);
+  }
+  .btn:hover{box-shadow:0 2px 6px rgba(0,0,0,.12)}
+  .btn:active{transform:translateY(1px)}
+  .btn.ghost{background:rgba(255,255,255,.15);color:#fff;box-shadow:none;border:1px solid rgba(255,255,255,.3)}
+  .btn.ghost:hover{background:rgba(255,255,255,.25)}
+  .btn.primary{background:var(--brand);color:#fff}
+  .btn.primary:hover{background:var(--brand-2)}
+  .btn.danger{background:#fff;color:var(--danger);border:1px solid #fecaca}
+  .btn.danger:hover{background:#fef2f2}
+  .btn.success{background:var(--ok);color:#fff}
+
+  main{max-width:1180px;margin:24px auto;padding:0 20px;display:grid;grid-template-columns:1fr 420px;gap:20px}
+  @media (max-width:980px){ main{grid-template-columns:1fr} }
+
+  .panel{
+    background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
+    box-shadow:var(--shadow);overflow:hidden;
+  }
+  .section{padding:18px 20px;border-bottom:1px solid var(--line)}
+  .section:last-child{border-bottom:0}
+  .section h2{
+    margin:0 0 12px;font-size:14px;letter-spacing:.4px;text-transform:uppercase;
+    color:var(--brand);display:flex;align-items:center;gap:10px;
+  }
+  .section h2 .tag{
+    background:var(--chip);color:var(--brand);padding:2px 8px;border-radius:999px;
+    font-size:11px;font-weight:700;letter-spacing:.5px;
+  }
+  .section .hint{color:var(--muted);font-size:12px;margin:-6px 0 12px}
+
+  .row{display:grid;grid-template-columns:repeat(12,1fr);gap:12px}
+  .row > .col-12{grid-column:span 12}
+  .row > .col-6{grid-column:span 6}
+  .row > .col-4{grid-column:span 4}
+  .row > .col-3{grid-column:span 3}
+  .row > .col-2{grid-column:span 2}
+  @media (max-width:640px){
+    .row > [class*="col-"]{grid-column:span 12}
+  }
+
+  label{display:block;font-size:12px;font-weight:600;color:var(--muted);margin-bottom:4px;letter-spacing:.2px}
+  input[type=text],input[type=number],input[type=date],select,textarea{
+    width:100%;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);
+    padding:9px 11px;font:inherit;outline:0;transition:border-color .15s, box-shadow .15s;
+  }
+  textarea{resize:vertical;min-height:80px;line-height:1.45}
+  input:focus,select:focus,textarea:focus{border-color:var(--brand-2);box-shadow:0 0 0 3px rgba(10,143,143,.15)}
+  .check{
+    display:inline-flex;align-items:center;gap:6px;font-size:13px;color:var(--ink);
+    background:#f8fafc;border:1px solid var(--line);padding:6px 10px;border-radius:999px;cursor:pointer;
+    user-select:none;transition:all .15s;
+  }
+  .check input{margin:0}
+  .check:hover{background:#eef2f6}
+  .check.on{background:var(--chip);border-color:var(--brand-2);color:var(--brand)}
+  .chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:4px}
+
+  .templates{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:10px}
+  .templates button{
+    background:#f1f5f9;border:1px solid var(--line);color:var(--ink);
+    padding:5px 10px;border-radius:999px;font-size:12px;cursor:pointer;
+  }
+  .templates button:hover{background:#e2e8f0}
+
+  details{border:1px dashed var(--line);border-radius:10px;padding:10px 12px;background:#fafbfc;margin-top:10px}
+  details > summary{cursor:pointer;font-weight:600;color:var(--brand);font-size:13px}
+  details[open]{background:#f6fbfb}
+
+  .alert{
+    background:#fff8eb;border:1px solid #f3d488;color:#7a4d05;
+    padding:10px 12px;border-radius:8px;font-size:13px;margin:10px 0;
+  }
+  .alert.red{background:#fef2f2;border-color:#fecaca;color:#7f1d1d}
+
+  /* output panel */
+  .output{position:sticky;top:16px;align-self:start}
+  .output .section{padding:16px 18px}
+  .output h2{color:var(--ink)}
+  .output pre{
+    background:#0f172a;color:#e2e8f0;padding:14px;border-radius:8px;
+    white-space:pre-wrap;word-wrap:break-word;font:13px/1.55 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+    max-height:60vh;overflow:auto;
+  }
+  .output .actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+  .toggle-tabs{display:flex;gap:4px;background:#f1f5f9;padding:3px;border-radius:8px;margin-bottom:10px}
+  .toggle-tabs button{
+    flex:1;border:0;background:transparent;padding:7px 10px;border-radius:6px;cursor:pointer;
+    font-size:12px;font-weight:600;color:var(--muted);
+  }
+  .toggle-tabs button.active{background:#fff;color:var(--ink);box-shadow:0 1px 3px rgba(0,0,0,.08)}
+
+  footer{padding:24px;text-align:center;color:var(--muted);font-size:12px}
+  .toast{
+    position:fixed;bottom:24px;left:50%;transform:translateX(-50%);
+    background:var(--ink);color:#fff;padding:10px 16px;border-radius:8px;font-size:13px;
+    opacity:0;pointer-events:none;transition:opacity .25s, transform .25s;z-index:50;
+  }
+  .toast.show{opacity:1;transform:translate(-50%,-6px)}
+
+  /* print */
+  @media print{
+    header.top,.output .actions,.btn,.templates,.toggle-tabs,footer{display:none !important}
+    body{background:#fff}
+    main{display:block;margin:0;padding:0;max-width:none}
+    .panel{box-shadow:none;border:0}
+    .output{position:static}
+    .output pre{background:#fff;color:#000;padding:0;font-size:12px;max-height:none}
+    .section{break-inside:avoid;border-color:#ccc}
+  }
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="brand">
+    <div class="logo">🩺</div>
+    <div>
+      <h1>Anamnese FAST</h1>
+      <div class="sub">Prontuário digital · ID · QD · HPMA · AP · AF · HV · RBS · Sinais · HD · CD</div>
+    </div>
+  </div>
+  <div class="actions">
+    <button class="btn ghost" id="btnExample">Carregar exemplo</button>
+    <button class="btn ghost" id="btnClear">Limpar</button>
+    <button class="btn" id="btnPrint">Imprimir / PDF</button>
+  </div>
+</header>
+
+<main>
+  <!-- FORM -->
+  <form class="panel" id="form" autocomplete="off" onsubmit="return false;">
+
+    <!-- ID -->
+    <div class="section">
+      <h2><span class="tag">ID</span> Identificação</h2>
+      <div class="row">
+        <div class="col-6"><label>Nome</label><input type="text" id="id_nome" placeholder="Ex.: João da Silva"></div>
+        <div class="col-2"><label>Idade</label><input type="number" id="id_idade" min="0" max="120" placeholder="45"></div>
+        <div class="col-2">
+          <label>Sexo</label>
+          <select id="id_sexo">
+            <option value="">—</option>
+            <option>masculino</option>
+            <option>feminino</option>
+            <option>outro</option>
+          </select>
+        </div>
+        <div class="col-2">
+          <label>Faixa</label>
+          <select id="id_faixa">
+            <option value="">—</option>
+            <option value="adulto">adulto</option>
+            <option value="crianca">criança</option>
+            <option value="idoso">idoso</option>
+            <option value="gestante">gestante</option>
+          </select>
+        </div>
+        <div class="col-6"><label>Profissão / ocupação (se relevante)</label><input type="text" id="id_prof"></div>
+        <div class="col-6"><label>Procedência (se relevante)</label><input type="text" id="id_proc"></div>
+        <div class="col-12">
+          <label>Informante</label>
+          <input type="text" id="id_informante" placeholder="Próprio paciente; ou: filha, que convive com a paciente">
+        </div>
+      </div>
+    </div>
+
+    <!-- QD -->
+    <div class="section">
+      <h2><span class="tag">QD</span> Queixa e duração</h2>
+      <div class="hint">Curta e objetiva. O detalhamento vem na HPMA.</div>
+      <div class="row">
+        <div class="col-8"><label>Queixa principal</label><input type="text" id="qd_queixa" placeholder="Ex.: dor epigástrica"></div>
+        <div class="col-4"><label>Há quanto tempo</label><input type="text" id="qd_tempo" placeholder="Ex.: 2 dias"></div>
+      </div>
+    </div>
+
+    <!-- HPMA -->
+    <div class="section">
+      <h2><span class="tag">HPMA</span> História da moléstia atual</h2>
+      <div class="hint">Cronologia: início, evolução, características e sintomas associados.</div>
+      <div class="templates">
+        <button type="button" data-tpl="dor">+ Dor</button>
+        <button type="button" data-tpl="febre">+ Febre</button>
+        <button type="button" data-tpl="tosse">+ Tosse</button>
+        <button type="button" data-tpl="dispneia">+ Dispneia</button>
+        <button type="button" data-tpl="neuro">+ Neurológico</button>
+      </div>
+      <textarea id="hpma_text" rows="6" placeholder="Paciente refere ... iniciado(a) há ..., de início (súbito/gradual), localizada em ..., intensidade .../10, com piora ... e melhora ... Refere ... Nega ..."></textarea>
+
+      <details>
+        <summary>Campos auxiliares (preenche automaticamente o texto se você quiser)</summary>
+        <div class="row" style="margin-top:10px">
+          <div class="col-3">
+            <label>Início</label>
+            <select id="hpma_inicio"><option value="">—</option><option>súbito</option><option>gradual</option></select>
+          </div>
+          <div class="col-3"><label>Localização</label><input type="text" id="hpma_loc"></div>
+          <div class="col-3"><label>Intensidade (0–10)</label><input type="number" id="hpma_int" min="0" max="10"></div>
+          <div class="col-3"><label>Irradiação</label><input type="text" id="hpma_irr"></div>
+          <div class="col-6"><label>Fatores de melhora</label><input type="text" id="hpma_melhora"></div>
+          <div class="col-6"><label>Fatores de piora</label><input type="text" id="hpma_piora"></div>
+          <div class="col-6"><label>Sintomas associados</label><input type="text" id="hpma_assoc"></div>
+          <div class="col-6"><label>Tratamentos / resposta</label><input type="text" id="hpma_trat"></div>
+          <div class="col-12">
+            <button type="button" class="btn primary" id="btnComporHpma">Compor HPMA a partir dos campos</button>
+          </div>
+        </div>
+      </details>
+    </div>
+
+    <!-- AP -->
+    <div class="section">
+      <h2><span class="tag">AP</span> Antecedentes pessoais</h2>
+      <div class="alert"><strong>Alergias devem ser perguntadas obrigatoriamente</strong> — registre o agente e a reação.</div>
+      <div class="row">
+        <div class="col-6"><label>Comorbidades</label><input type="text" id="ap_com" placeholder="Ex.: HAS, DM2"></div>
+        <div class="col-6"><label>Cirurgias / internações</label><input type="text" id="ap_cir" placeholder="Ex.: apendicectomia prévia"></div>
+        <div class="col-6">
+          <label>Alergias <span style="color:var(--danger)">*</span></label>
+          <input type="text" id="ap_alergia" placeholder="Ex.: nega / dipirona com urticária">
+        </div>
+        <div class="col-6"><label>Medicamentos em uso</label><input type="text" id="ap_med" placeholder="Ex.: losartana, metformina"></div>
+        <div class="col-12"><label>Vacinação / gestação / outros</label><input type="text" id="ap_outros"></div>
+      </div>
+    </div>
+
+    <!-- AF -->
+    <div class="section">
+      <h2><span class="tag">AF</span> Antecedentes familiares</h2>
+      <textarea id="af_text" rows="2" placeholder="Ex.: pai hipertenso e com histórico de IAM; mãe diabética; irmãos sem doenças conhecidas."></textarea>
+    </div>
+
+    <!-- HV -->
+    <div class="section">
+      <h2><span class="tag">HV</span> Hábitos e vícios</h2>
+      <div class="row">
+        <div class="col-4"><label>Tabagismo</label><input type="text" id="hv_tab" placeholder="Ex.: 20 maços-ano / nega"></div>
+        <div class="col-4"><label>Etilismo</label><input type="text" id="hv_eti" placeholder="Ex.: social / nega"></div>
+        <div class="col-4"><label>Drogas</label><input type="text" id="hv_dro" placeholder="Ex.: nega"></div>
+        <div class="col-4"><label>Atividade física</label><input type="text" id="hv_ativ" placeholder="Ex.: sedentário / 3x/sem"></div>
+        <div class="col-4"><label>Alimentação</label><input type="text" id="hv_alim"></div>
+        <div class="col-4"><label>Sono</label><input type="text" id="hv_sono"></div>
+        <div class="col-12"><label>Trabalho / exposição / contexto social</label><input type="text" id="hv_trab"></div>
+      </div>
+    </div>
+
+    <!-- RBS -->
+    <div class="section">
+      <h2><span class="tag">RBS</span> Revisão breve de sistemas</h2>
+      <div class="hint">Marque o que o paciente <strong>refere</strong>; o restante entrará como “nega”.</div>
+      <div id="rbs_groups"></div>
+      <div style="margin-top:10px">
+        <label>Observações livres da RBS</label>
+        <textarea id="rbs_obs" rows="2" placeholder="Outros sintomas relatados ou particularidades."></textarea>
+      </div>
+    </div>
+
+    <!-- Sinais -->
+    <div class="section">
+      <h2><span class="tag">Sinais</span> Dados objetivos / exame físico</h2>
+      <div class="row">
+        <div class="col-3"><label>PA (mmHg)</label><input type="text" id="sv_pa" placeholder="130x80"></div>
+        <div class="col-2"><label>FC (bpm)</label><input type="number" id="sv_fc"></div>
+        <div class="col-2"><label>FR (irpm)</label><input type="number" id="sv_fr"></div>
+        <div class="col-2"><label>T (°C)</label><input type="number" id="sv_t" step="0.1"></div>
+        <div class="col-2"><label>SpO₂ (%)</label><input type="number" id="sv_sat" min="0" max="100"></div>
+        <div class="col-3"><label>Glicemia capilar</label><input type="text" id="sv_glic"></div>
+        <div class="col-3"><label>Dor (0–10)</label><input type="number" id="sv_dor" min="0" max="10"></div>
+        <div class="col-3"><label>Peso (kg)</label><input type="number" id="sv_peso" step="0.1"></div>
+        <div class="col-3"><label>Altura (cm)</label><input type="number" id="sv_alt"></div>
+        <div class="col-12">
+          <label>Exame geral / direcionado</label>
+          <textarea id="sv_exame" rows="4" placeholder="Ex.: bom estado geral, hidratado, corado. Abdome flácido, doloroso à palpação em epigástrio, sem sinais de irritação peritoneal."></textarea>
+        </div>
+      </div>
+    </div>
+
+    <!-- HD -->
+    <div class="section">
+      <h2><span class="tag">HD</span> Hipótese diagnóstica</h2>
+      <textarea id="hd_text" rows="2" placeholder="Ex.: dispepsia/dor epigástrica a esclarecer."></textarea>
+    </div>
+
+    <!-- CD -->
+    <div class="section">
+      <h2><span class="tag">CD</span> Conduta</h2>
+      <textarea id="cd_text" rows="4" placeholder="Ex.: orientações gerais, analgesia conforme prescrição, solicitação de exames laboratoriais e retorno se piora, febre persistente, vômitos incoercíveis ou dor intensa."></textarea>
+    </div>
+
+  </form>
+
+  <!-- OUTPUT -->
+  <aside class="output">
+    <div class="panel">
+      <div class="section">
+        <h2>📝 Saída para prontuário</h2>
+        <div class="toggle-tabs" role="tablist">
+          <button type="button" class="active" data-tab="resumo">Resumo estruturado</button>
+          <button type="button" data-tab="evolucao">Evolução em 3 linhas</button>
+        </div>
+        <pre id="output">Preencha os campos para gerar o resumo…</pre>
+        <div class="actions">
+          <button class="btn primary" id="btnCopy">Copiar</button>
+          <button class="btn" id="btnDownload">Baixar .txt</button>
+          <button class="btn danger" id="btnReset">Resetar campos</button>
+        </div>
+        <div class="hint" style="margin-top:10px">
+          Dados ficam salvos localmente no seu navegador (localStorage). Este sistema é um auxiliar de organização clínica e <strong>não substitui avaliação médica</strong>.
+        </div>
+      </div>
+    </div>
+  </aside>
+</main>
+
+<footer>
+  Anamnese FAST · página estática · hospedagem em GitHub Pages.
+</footer>
+
+<div class="toast" id="toast">Copiado para a área de transferência</div>
+
+<script>
+/* ---------- RBS groups ---------- */
+const RBS = [
+  { key:'cv', label:'Cardiovascular', items:['dor torácica','palpitações','síncope','dispneia aos esforços','ortopneia','dispneia paroxística noturna','edema'] },
+  { key:'resp', label:'Respiratório', items:['tosse','dispneia','chiado','expectoração','hemoptise','dor ventilatório-dependente'] },
+  { key:'gi', label:'Gastrointestinal', items:['náuseas','vômitos','diarreia','constipação','dor abdominal','pirose','sangue nas fezes','perda de apetite'] },
+  { key:'gu', label:'Geniturinário', items:['disúria','polaciúria','urgência urinária','hematúria','dor lombar','corrimento','alterações menstruais'] },
+  { key:'neuro', label:'Neurológico', items:['cefaleia','tontura','síncope','convulsão','fraqueza','formigamento','alteração de fala','alteração visual','alteração de consciência'] },
+  { key:'geral', label:'Geral', items:['febre','perda de peso','fadiga','sudorese noturna','mal-estar','anorexia'] }
+];
+
+const $ = (s,el=document)=>el.querySelector(s);
+const $$ = (s,el=document)=>[...el.querySelectorAll(s)];
+
+function renderRBS(){
+  const wrap = $('#rbs_groups');
+  wrap.innerHTML = RBS.map(g=>`
+    <details ${g.key==='cv'?'open':''}>
+      <summary>${g.label}</summary>
+      <div class="chips" data-group="${g.key}">
+        ${g.items.map(i=>`<label class="check"><input type="checkbox" value="${i}"><span>${i}</span></label>`).join('')}
+      </div>
+    </details>
+  `).join('');
+  wrap.addEventListener('change', e=>{
+    const cb = e.target.closest('input[type=checkbox]'); if(!cb) return;
+    cb.closest('.check').classList.toggle('on', cb.checked);
+    save(); render();
+  });
+}
+
+/* ---------- Templates ---------- */
+const TEMPLATES = {
+  dor: 'Dor iniciada há __, de início (súbito/gradual), localizada em __, intensidade __/10, irradiação __, com piora __ e melhora __. ',
+  febre: 'Febre iniciada há __, máxima de ___ °C, (contínua/intermitente), associada a __. Uso de __ com __ resposta. ',
+  tosse: 'Tosse iniciada há __, (seca/produtiva), associada a __. Piora __. ',
+  dispneia: 'Dispneia iniciada há __, (em repouso/aos esforços), com __ ortopneia e __ DPN, associada a __. ',
+  neuro: 'Sintomas neurológicos: __; início (súbito/gradual). Nega __ . '
+};
+
+/* ---------- State persistence ---------- */
+const FIELDS = [
+  'id_nome','id_idade','id_sexo','id_faixa','id_prof','id_proc','id_informante',
+  'qd_queixa','qd_tempo',
+  'hpma_text','hpma_inicio','hpma_loc','hpma_int','hpma_irr','hpma_melhora','hpma_piora','hpma_assoc','hpma_trat',
+  'ap_com','ap_cir','ap_alergia','ap_med','ap_outros',
+  'af_text',
+  'hv_tab','hv_eti','hv_dro','hv_ativ','hv_alim','hv_sono','hv_trab',
+  'rbs_obs',
+  'sv_pa','sv_fc','sv_fr','sv_t','sv_sat','sv_glic','sv_dor','sv_peso','sv_alt','sv_exame',
+  'hd_text','cd_text'
+];
+const KEY = 'anamnese_fast_v1';
+
+function getData(){
+  const o = {};
+  FIELDS.forEach(id=>{ const el=$('#'+id); if(el) o[id]= el.value.trim(); });
+  o.rbs = {};
+  $$('#rbs_groups .chips').forEach(g=>{
+    o.rbs[g.dataset.group] = $$('input:checked',g).map(c=>c.value);
+  });
+  return o;
+}
+function setData(o){
+  FIELDS.forEach(id=>{ const el=$('#'+id); if(el && o[id]!=null) el.value = o[id]; });
+  if(o.rbs){
+    $$('#rbs_groups .chips').forEach(g=>{
+      const sel = o.rbs[g.dataset.group] || [];
+      $$('input',g).forEach(c=>{
+        c.checked = sel.includes(c.value);
+        c.closest('.check').classList.toggle('on', c.checked);
+      });
+    });
+  }
+}
+function save(){ try{ localStorage.setItem(KEY, JSON.stringify(getData())); }catch(e){} }
+function load(){ try{
+  const raw = localStorage.getItem(KEY); if(!raw) return;
+  setData(JSON.parse(raw));
+}catch(e){} }
+
+/* ---------- Build summary ---------- */
+function NI(v, fallback='Não informado'){ return (v && String(v).trim()) ? v : fallback; }
+
+function buildID(d){
+  const parts = [];
+  if(d.id_nome) parts.push(d.id_nome);
+  if(d.id_idade) parts.push(d.id_idade + ' anos');
+  if(d.id_sexo) parts.push(d.id_sexo);
+  if(d.id_prof) parts.push(d.id_prof);
+  if(d.id_proc) parts.push('procedente de ' + d.id_proc);
+  let s = parts.join(', ');
+  if(d.id_informante) s += (s?', ':'') + 'história fornecida por ' + d.id_informante.toLowerCase();
+  return s || 'Não informado';
+}
+function buildQD(d){
+  if(!d.qd_queixa && !d.qd_tempo) return 'Não informado';
+  return [d.qd_queixa, d.qd_tempo ? ('há ' + d.qd_tempo) : ''].filter(Boolean).join(' ') + '.';
+}
+function buildHPMA(d){
+  if(d.hpma_text) return d.hpma_text;
+  // compose from auxiliary fields if any
+  const bits = [];
+  if(d.qd_queixa) bits.push('Paciente refere ' + d.qd_queixa);
+  if(d.qd_tempo) bits.push('iniciada há ' + d.qd_tempo);
+  if(d.hpma_inicio) bits.push('de início ' + d.hpma_inicio);
+  if(d.hpma_loc) bits.push('localizada em ' + d.hpma_loc);
+  if(d.hpma_int) bits.push('intensidade ' + d.hpma_int + '/10');
+  if(d.hpma_irr) bits.push('com irradiação para ' + d.hpma_irr);
+  if(d.hpma_piora) bits.push('com piora ' + d.hpma_piora);
+  if(d.hpma_melhora) bits.push('e melhora ' + d.hpma_melhora);
+  let s = bits.join(', ');
+  if(s) s += '.';
+  if(d.hpma_assoc) s += ' Refere ' + d.hpma_assoc + '.';
+  if(d.hpma_trat) s += ' Tratamento: ' + d.hpma_trat + '.';
+  return s || 'Não informado';
+}
+function buildAP(d){
+  const parts = [];
+  if(d.ap_com) parts.push(d.ap_com);
+  if(d.ap_cir) parts.push(d.ap_cir);
+  parts.push(d.ap_alergia ? ('Alergias: ' + d.ap_alergia) : 'Alergias: não informado');
+  if(d.ap_med) parts.push('Em uso de ' + d.ap_med);
+  if(d.ap_outros) parts.push(d.ap_outros);
+  return parts.join('. ') + (parts.length?'.':'');
+}
+function buildAF(d){ return d.af_text || 'Não informado.'; }
+function buildHV(d){
+  const parts = [];
+  if(d.hv_tab) parts.push('Tabagismo: ' + d.hv_tab);
+  if(d.hv_eti) parts.push('Etilismo: ' + d.hv_eti);
+  if(d.hv_dro) parts.push('Drogas: ' + d.hv_dro);
+  if(d.hv_ativ) parts.push('Atividade física: ' + d.hv_ativ);
+  if(d.hv_alim) parts.push('Alimentação: ' + d.hv_alim);
+  if(d.hv_sono) parts.push('Sono: ' + d.hv_sono);
+  if(d.hv_trab) parts.push(d.hv_trab);
+  return parts.length ? parts.join('. ') + '.' : 'Não informado.';
+}
+function buildRBS(d){
+  const refers = [], denies = [];
+  RBS.forEach(g=>{
+    const sel = (d.rbs && d.rbs[g.key]) || [];
+    sel.forEach(x=>refers.push(x));
+    g.items.forEach(it=>{ if(!sel.includes(it)) denies.push(it); });
+  });
+  const parts = [];
+  if(refers.length) parts.push('Refere ' + refers.join(', ') + '.');
+  // shorten denial list a bit to the clinically relevant negatives
+  const key = ['febre','dor torácica','dispneia','vômitos','diarreia','cefaleia','alteração de consciência','alteração visual'];
+  const keyDenied = key.filter(k=>denies.includes(k));
+  if(keyDenied.length) parts.push('Nega ' + keyDenied.join(', ') + '.');
+  if(d.rbs_obs) parts.push(d.rbs_obs);
+  return parts.length ? parts.join(' ') : 'Não informado.';
+}
+function buildSinais(d){
+  const v = [];
+  if(d.sv_pa) v.push('PA ' + d.sv_pa + ' mmHg');
+  if(d.sv_fc) v.push('FC ' + d.sv_fc + ' bpm');
+  if(d.sv_fr) v.push('FR ' + d.sv_fr + ' irpm');
+  if(d.sv_t)  v.push('T ' + d.sv_t + '°C');
+  if(d.sv_sat) v.push('SpO₂ ' + d.sv_sat + '%');
+  if(d.sv_glic) v.push('HGT ' + d.sv_glic);
+  if(d.sv_dor) v.push('Dor ' + d.sv_dor + '/10');
+  if(d.sv_peso && d.sv_alt){
+    const h = d.sv_alt/100; const imc = (d.sv_peso/(h*h)).toFixed(1);
+    v.push('Peso ' + d.sv_peso + ' kg, altura ' + d.sv_alt + ' cm, IMC ' + imc);
+  } else {
+    if(d.sv_peso) v.push('Peso ' + d.sv_peso + ' kg');
+    if(d.sv_alt) v.push('Altura ' + d.sv_alt + ' cm');
+  }
+  let s = v.join(', ');
+  if(d.sv_exame) s += (s?'. ':'') + d.sv_exame;
+  return s ? (s.endsWith('.')?s:s+'.') : 'Não informado.';
+}
+function buildHD(d){ return d.hd_text || 'A esclarecer.'; }
+function buildCD(d){ return d.cd_text || 'A definir conforme avaliação clínica.'; }
+
+function buildResumo(d){
+  return [
+    'Resumo estruturado:',
+    '',
+    'ID: ' + buildID(d),
+    'QD: ' + buildQD(d),
+    'HPMA: ' + buildHPMA(d),
+    'AP: ' + buildAP(d),
+    'AF: ' + buildAF(d),
+    'HV: ' + buildHV(d),
+    'RBS: ' + buildRBS(d),
+    'Sinais: ' + buildSinais(d),
+    'HD: ' + buildHD(d),
+    'CD: ' + buildCD(d)
+  ].join('\n');
+}
+function buildEvolucao(d){
+  const idadeSexo = [d.id_idade ? d.id_idade+' anos' : '', d.id_sexo || ''].filter(Boolean).join(', ') || '[idade/sexo]';
+  const queixa = d.qd_queixa || '[queixa]';
+  const tempo = d.qd_tempo ? ('há ' + d.qd_tempo) : '[duração]';
+  const assoc = d.hpma_assoc || '[principais sintomas/sinais]';
+  const ant = [d.ap_com, d.af_text, d.hv_tab, d.hv_eti].filter(Boolean).join('; ') || '[AP/AF/HV]';
+  const sinais = buildSinais(d).replace(/\.$/,'');
+  const hd = d.hd_text || 'a esclarecer';
+  const cd = d.cd_text || 'a definir conforme avaliação clínica';
+  return [
+    'Evolução rápida em até 3 linhas:',
+    '',
+    `Paciente ${idadeSexo}, com ${queixa} ${tempo}, associado a ${assoc}.`,
+    `Antecedentes relevantes: ${ant}. Ao exame/sinais: ${sinais}.`,
+    `HD: ${hd}. CD: ${cd}.`
+  ].join('\n');
+}
+
+let currentTab = 'resumo';
+function render(){
+  const d = getData();
+  const text = currentTab === 'resumo' ? buildResumo(d) : buildEvolucao(d);
+  $('#output').textContent = text;
+}
+
+/* ---------- Wire up ---------- */
+function wire(){
+  // re-render & save on any input
+  document.addEventListener('input', e=>{
+    if(e.target.closest('#form')) { save(); render(); }
+  });
+
+  // templates
+  $$('#form .templates button').forEach(b=>{
+    b.addEventListener('click', ()=>{
+      const ta = $('#hpma_text');
+      ta.value = (ta.value ? ta.value + '\n' : '') + TEMPLATES[b.dataset.tpl];
+      ta.focus(); save(); render();
+    });
+  });
+
+  $('#btnComporHpma').addEventListener('click', ()=>{
+    const d = getData(); d.hpma_text=''; // force recompose
+    $('#hpma_text').value = buildHPMA(d);
+    save(); render();
+  });
+
+  // tabs
+  $$('.toggle-tabs button').forEach(b=>{
+    b.addEventListener('click', ()=>{
+      $$('.toggle-tabs button').forEach(x=>x.classList.remove('active'));
+      b.classList.add('active');
+      currentTab = b.dataset.tab; render();
+    });
+  });
+
+  // top actions
+  $('#btnExample').addEventListener('click', loadExample);
+  $('#btnClear').addEventListener('click', ()=>{ if(confirm('Limpar todos os campos?')){ localStorage.removeItem(KEY); document.querySelectorAll('input,textarea,select').forEach(el=>el.value=''); $$('.check').forEach(c=>c.classList.remove('on')); $$('input[type=checkbox]').forEach(c=>c.checked=false); render(); } });
+  $('#btnPrint').addEventListener('click', ()=>window.print());
+
+  // output actions
+  $('#btnCopy').addEventListener('click', async ()=>{
+    const text = $('#output').textContent;
+    try{ await navigator.clipboard.writeText(text); toast('Copiado para a área de transferência'); }
+    catch{ toast('Não foi possível copiar'); }
+  });
+  $('#btnDownload').addEventListener('click', ()=>{
+    const text = $('#output').textContent;
+    const blob = new Blob([text], {type:'text/plain;charset=utf-8'});
+    const a = document.createElement('a');
+    const name = ($('#id_nome').value || 'anamnese').toLowerCase().replace(/\s+/g,'_');
+    a.href = URL.createObjectURL(blob);
+    a.download = name + '_' + new Date().toISOString().slice(0,10) + '.txt';
+    document.body.appendChild(a); a.click(); a.remove();
+  });
+  $('#btnReset').addEventListener('click', ()=>{ $('#btnClear').click(); });
+}
+
+function toast(msg){
+  const t = $('#toast'); t.textContent = msg; t.classList.add('show');
+  clearTimeout(window.__t); window.__t = setTimeout(()=>t.classList.remove('show'), 1800);
+}
+
+/* ---------- Example ---------- */
+function loadExample(){
+  setData({
+    id_nome:'João', id_idade:'45', id_sexo:'masculino', id_faixa:'adulto', id_informante:'próprio paciente',
+    qd_queixa:'dor epigástrica', qd_tempo:'2 dias',
+    hpma_text:'Paciente refere dor epigástrica iniciada há 2 dias, de início gradual, intensidade 6/10, sem irradiação, com piora após alimentação e melhora parcial com repouso. Refere náuseas. Nega febre, vômitos, diarreia, dor torácica e dispneia. Fez uso de dipirona com melhora discreta.',
+    hpma_assoc:'náuseas',
+    ap_com:'HAS e DM2', ap_cir:'apendicectomia prévia', ap_alergia:'nega alergias conhecidas', ap_med:'losartana e metformina',
+    af_text:'Pai hipertenso e com histórico de IAM; mãe diabética.',
+    hv_tab:'nega', hv_eti:'social', hv_dro:'nega', hv_ativ:'sedentário',
+    sv_pa:'130x80', sv_fc:'88', sv_fr:'18', sv_t:'36.8', sv_sat:'98',
+    sv_exame:'Bom estado geral, hidratado, corado. Abdome flácido, doloroso à palpação em epigástrio, sem sinais de irritação peritoneal.',
+    hd_text:'Dispepsia/dor epigástrica a esclarecer.',
+    cd_text:'Orientações gerais, analgesia conforme prescrição, avaliar necessidade de exames complementares e retorno se piora, febre persistente, vômitos incoercíveis ou dor intensa.',
+    rbs:{ gi:['náuseas'] }
+  });
+  save(); render();
+}
+
+/* ---------- Init ---------- */
+renderRBS();
+wire();
+load();
+render();
+</script>
+</body>
+</html>
