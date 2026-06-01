@@ -2,48 +2,59 @@
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <title>Anamnese FAST — Prontuário</title>
-<meta name="description" content="Prontuário digital baseado no protocolo Anamnese FAST: ID, QD, HPMA, AP, AF, HV, RBS, Sinais, HD e CD.">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🩺</text></svg>">
+<meta name="description" content="Prontuário digital baseado no protocolo Anamnese FAST: ID, QD, HPMA, AP, AF, HV, RBS, Sinais, HD e CD. PWA, modo escuro, ditado, sinais de alarme, escores e exportação.">
+<meta name="theme-color" content="#0d6b6b">
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="icon.svg">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
 <style>
   :root{
-    --bg:#f3f5f8;
-    --panel:#ffffff;
-    --ink:#0f172a;
-    --muted:#64748b;
-    --line:#e2e8f0;
-    --brand:#0d6b6b;
-    --brand-2:#0a8f8f;
-    --accent:#0ea5e9;
-    --warn:#b45309;
-    --danger:#b91c1c;
-    --ok:#15803d;
-    --chip:#e6f3f3;
+    --bg:#f3f5f8; --panel:#ffffff; --ink:#0f172a; --muted:#64748b;
+    --line:#e2e8f0; --brand:#0d6b6b; --brand-2:#0a8f8f; --accent:#0ea5e9;
+    --warn:#b45309; --warn-bg:#fff8eb; --warn-bd:#f3d488;
+    --danger:#b91c1c; --danger-bg:#fef2f2; --danger-bd:#fecaca;
+    --ok:#15803d; --ok-bg:#f0fdf4; --ok-bd:#bbf7d0;
+    --chip:#e6f3f3; --field:#ffffff; --field-fc:#0f172a;
     --shadow:0 1px 2px rgba(15,23,42,.04),0 4px 16px rgba(15,23,42,.06);
     --radius:12px;
+  }
+  html[data-theme="dark"]{
+    --bg:#0b1220; --panel:#111827; --ink:#e5e7eb; --muted:#94a3b8;
+    --line:#1f2937; --brand:#14b8a6; --brand-2:#2dd4bf; --accent:#38bdf8;
+    --chip:#0f3a3a; --field:#0f172a; --field-fc:#e5e7eb;
+    --warn-bg:#3b2a08; --warn-bd:#7a5a16;
+    --danger-bg:#3b0d0d; --danger-bd:#7a1d1d;
+    --ok-bg:#0b3a1f; --ok-bd:#15803d;
+    --shadow:0 1px 2px rgba(0,0,0,.4),0 4px 16px rgba(0,0,0,.5);
   }
   *{box-sizing:border-box}
   html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font:15px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;-webkit-font-smoothing:antialiased}
   a{color:var(--brand)}
+
   header.top{
     background:linear-gradient(135deg,var(--brand) 0%,var(--brand-2) 100%);
-    color:#fff;padding:18px 24px;display:flex;align-items:center;justify-content:space-between;gap:16px;
-    box-shadow:var(--shadow);
+    color:#fff;padding:14px 20px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;
+    box-shadow:var(--shadow);position:sticky;top:0;z-index:30;
   }
   header.top .brand{display:flex;align-items:center;gap:12px}
-  header.top h1{font-size:18px;margin:0;font-weight:600;letter-spacing:.2px}
-  header.top .sub{font-size:12px;opacity:.85;margin-top:2px}
-  header.top .logo{
-    width:38px;height:38px;border-radius:10px;background:rgba(255,255,255,.15);
-    display:grid;place-items:center;font-size:20px;
+  header.top h1{font-size:17px;margin:0;font-weight:600}
+  header.top .sub{font-size:11.5px;opacity:.85;margin-top:2px}
+  header.top .logo{width:36px;height:36px;border-radius:10px;background:rgba(255,255,255,.15);display:grid;place-items:center;font-size:18px}
+  header.top .actions{display:flex;gap:6px;flex-wrap:wrap;align-items:center}
+  .case-pick{
+    display:flex;align-items:center;gap:6px;background:rgba(255,255,255,.15);
+    border:1px solid rgba(255,255,255,.3);padding:5px 8px;border-radius:8px;color:#fff;font-size:12px;
   }
-  header.top .actions{display:flex;gap:8px;flex-wrap:wrap}
+  .case-pick select{background:transparent;color:#fff;border:0;outline:0;font:inherit;max-width:180px}
+  .case-pick select option{color:#000}
+
   .btn{
     appearance:none;border:0;background:#fff;color:var(--ink);
-    padding:8px 14px;border-radius:8px;font-weight:600;font-size:13px;
+    padding:7px 12px;border-radius:8px;font-weight:600;font-size:12.5px;
     cursor:pointer;transition:transform .05s ease, box-shadow .15s ease, background .15s ease;
-    box-shadow:0 1px 2px rgba(0,0,0,.08);
+    box-shadow:0 1px 2px rgba(0,0,0,.08);display:inline-flex;align-items:center;gap:6px;
   }
   .btn:hover{box-shadow:0 2px 6px rgba(0,0,0,.12)}
   .btn:active{transform:translateY(1px)}
@@ -52,106 +63,156 @@
   .btn.primary{background:var(--brand);color:#fff}
   .btn.primary:hover{background:var(--brand-2)}
   .btn.danger{background:#fff;color:var(--danger);border:1px solid #fecaca}
-  .btn.danger:hover{background:#fef2f2}
   .btn.success{background:var(--ok);color:#fff}
-
-  main{max-width:1180px;margin:24px auto;padding:0 20px;display:grid;grid-template-columns:1fr 420px;gap:20px}
-  @media (max-width:980px){ main{grid-template-columns:1fr} }
-
-  .panel{
-    background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
-    box-shadow:var(--shadow);overflow:hidden;
+  .icon-btn{
+    width:32px;height:32px;border-radius:8px;display:inline-grid;place-items:center;
+    background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.3);color:#fff;cursor:pointer;
   }
-  .section{padding:18px 20px;border-bottom:1px solid var(--line)}
+  .icon-btn:hover{background:rgba(255,255,255,.25)}
+
+  main{max-width:1240px;margin:18px auto;padding:0 16px;display:grid;grid-template-columns:1fr 440px;gap:16px}
+  @media (max-width:1020px){ main{grid-template-columns:1fr} }
+
+  .panel{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden}
+  .section{padding:16px 18px;border-bottom:1px solid var(--line)}
   .section:last-child{border-bottom:0}
-  .section h2{
-    margin:0 0 12px;font-size:14px;letter-spacing:.4px;text-transform:uppercase;
-    color:var(--brand);display:flex;align-items:center;gap:10px;
-  }
-  .section h2 .tag{
-    background:var(--chip);color:var(--brand);padding:2px 8px;border-radius:999px;
-    font-size:11px;font-weight:700;letter-spacing:.5px;
-  }
-  .section .hint{color:var(--muted);font-size:12px;margin:-6px 0 12px}
+  .section h2{margin:0 0 10px;font-size:13.5px;letter-spacing:.4px;text-transform:uppercase;color:var(--brand);display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+  .section h2 .tag{background:var(--chip);color:var(--brand);padding:2px 8px;border-radius:999px;font-size:11px;font-weight:700;letter-spacing:.5px}
+  .section h2 .spacer{flex:1}
+  .section h2 .extra{font-size:11px;color:var(--muted);text-transform:none;letter-spacing:0;font-weight:500}
+  .section .hint{color:var(--muted);font-size:12px;margin:-4px 0 10px}
 
-  .row{display:grid;grid-template-columns:repeat(12,1fr);gap:12px}
+  .row{display:grid;grid-template-columns:repeat(12,1fr);gap:10px}
   .row > .col-12{grid-column:span 12}
+  .row > .col-8{grid-column:span 8}
   .row > .col-6{grid-column:span 6}
   .row > .col-4{grid-column:span 4}
   .row > .col-3{grid-column:span 3}
   .row > .col-2{grid-column:span 2}
-  @media (max-width:640px){
-    .row > [class*="col-"]{grid-column:span 12}
-  }
+  @media (max-width:640px){ .row > [class*="col-"]{grid-column:span 12} }
 
-  label{display:block;font-size:12px;font-weight:600;color:var(--muted);margin-bottom:4px;letter-spacing:.2px}
+  label{display:block;font-size:11.5px;font-weight:600;color:var(--muted);margin-bottom:3px;letter-spacing:.2px}
   input[type=text],input[type=number],input[type=date],select,textarea{
-    width:100%;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);
-    padding:9px 11px;font:inherit;outline:0;transition:border-color .15s, box-shadow .15s;
+    width:100%;border:1px solid var(--line);border-radius:8px;background:var(--field);color:var(--field-fc);
+    padding:8px 10px;font:inherit;outline:0;transition:border-color .15s, box-shadow .15s;
   }
-  textarea{resize:vertical;min-height:80px;line-height:1.45}
-  input:focus,select:focus,textarea:focus{border-color:var(--brand-2);box-shadow:0 0 0 3px rgba(10,143,143,.15)}
-  .check{
-    display:inline-flex;align-items:center;gap:6px;font-size:13px;color:var(--ink);
-    background:#f8fafc;border:1px solid var(--line);padding:6px 10px;border-radius:999px;cursor:pointer;
-    user-select:none;transition:all .15s;
+  textarea{resize:vertical;min-height:72px;line-height:1.45}
+  input:focus,select:focus,textarea:focus{border-color:var(--brand-2);box-shadow:0 0 0 3px rgba(10,143,143,.18)}
+
+  .field-with-mic{position:relative}
+  .mic-btn{
+    position:absolute;right:6px;bottom:6px;width:28px;height:28px;border-radius:6px;
+    border:0;background:var(--chip);color:var(--brand);cursor:pointer;display:grid;place-items:center;font-size:14px;
   }
+  .mic-btn.rec{background:var(--danger);color:#fff;animation:pulse 1.2s infinite}
+  @keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(185,28,28,.5)}50%{box-shadow:0 0 0 6px rgba(185,28,28,0)}}
+
+  .check{display:inline-flex;align-items:center;gap:6px;font-size:12.5px;color:var(--ink);background:var(--field);border:1px solid var(--line);padding:5px 9px;border-radius:999px;cursor:pointer;user-select:none;transition:all .15s}
   .check input{margin:0}
-  .check:hover{background:#eef2f6}
+  .check:hover{background:var(--chip)}
   .check.on{background:var(--chip);border-color:var(--brand-2);color:var(--brand)}
-  .chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:4px}
+  .chips{display:flex;flex-wrap:wrap;gap:5px;margin-top:4px}
 
-  .templates{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:10px}
-  .templates button{
-    background:#f1f5f9;border:1px solid var(--line);color:var(--ink);
-    padding:5px 10px;border-radius:999px;font-size:12px;cursor:pointer;
+  .templates{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:8px}
+  .templates button{background:var(--field);border:1px solid var(--line);color:var(--ink);padding:4px 10px;border-radius:999px;font-size:11.5px;cursor:pointer}
+  .templates button:hover{background:var(--chip)}
+
+  details{border:1px dashed var(--line);border-radius:10px;padding:8px 12px;background:var(--field);margin-top:8px}
+  details > summary{cursor:pointer;font-weight:600;color:var(--brand);font-size:12.5px}
+  details[open]{background:var(--chip)}
+
+  .alert{padding:10px 12px;border-radius:8px;font-size:12.5px;margin:8px 0;border:1px solid}
+  .alert.warn{background:var(--warn-bg);border-color:var(--warn-bd);color:var(--warn)}
+  .alert.red{background:var(--danger-bg);border-color:var(--danger-bd);color:var(--danger)}
+  .alert.ok{background:var(--ok-bg);border-color:var(--ok-bd);color:var(--ok)}
+  .alert strong{font-weight:700}
+  .alert ul{margin:6px 0 0 18px;padding:0}
+
+  /* Autocomplete */
+  .ac-wrap{position:relative}
+  .ac-list{
+    position:absolute;top:100%;left:0;right:0;background:var(--panel);
+    border:1px solid var(--line);border-radius:8px;box-shadow:var(--shadow);
+    max-height:240px;overflow:auto;z-index:20;margin-top:2px;display:none;
   }
-  .templates button:hover{background:#e2e8f0}
+  .ac-list.open{display:block}
+  .ac-item{padding:8px 10px;cursor:pointer;font-size:13px;border-bottom:1px solid var(--line)}
+  .ac-item:last-child{border-bottom:0}
+  .ac-item.active,.ac-item:hover{background:var(--chip)}
+  .ac-item small{display:block;color:var(--muted);font-size:11px;margin-top:1px}
 
-  details{border:1px dashed var(--line);border-radius:10px;padding:10px 12px;background:#fafbfc;margin-top:10px}
-  details > summary{cursor:pointer;font-weight:600;color:var(--brand);font-size:13px}
-  details[open]{background:#f6fbfb}
-
-  .alert{
-    background:#fff8eb;border:1px solid #f3d488;color:#7a4d05;
-    padding:10px 12px;border-radius:8px;font-size:13px;margin:10px 0;
+  /* Score cards */
+  .scores{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:8px;margin-bottom:10px}
+  .score{
+    background:var(--field);border:1px solid var(--line);border-radius:10px;padding:8px 10px;
+    display:flex;flex-direction:column;gap:2px;
   }
-  .alert.red{background:#fef2f2;border-color:#fecaca;color:#7f1d1d}
+  .score .lbl{font-size:10.5px;font-weight:700;color:var(--muted);letter-spacing:.4px;text-transform:uppercase}
+  .score .val{font-size:16px;font-weight:700;color:var(--ink)}
+  .score .ctx{font-size:11px;color:var(--muted)}
+  .score.warn{border-color:var(--warn-bd);background:var(--warn-bg)}
+  .score.warn .val{color:var(--warn)}
+  .score.red{border-color:var(--danger-bd);background:var(--danger-bg)}
+  .score.red .val{color:var(--danger)}
+  .score.ok{border-color:var(--ok-bd);background:var(--ok-bg)}
+  .score.ok .val{color:var(--ok)}
 
-  /* output panel */
-  .output{position:sticky;top:16px;align-self:start}
-  .output .section{padding:16px 18px}
+  /* Output panel */
+  .output{position:sticky;top:74px;align-self:start}
+  .output .section{padding:14px 16px}
   .output h2{color:var(--ink)}
   .output pre{
     background:#0f172a;color:#e2e8f0;padding:14px;border-radius:8px;
-    white-space:pre-wrap;word-wrap:break-word;font:13px/1.55 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
-    max-height:60vh;overflow:auto;
+    white-space:pre-wrap;word-wrap:break-word;font:12.5px/1.55 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+    max-height:48vh;overflow:auto;
   }
-  .output .actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
-  .toggle-tabs{display:flex;gap:4px;background:#f1f5f9;padding:3px;border-radius:8px;margin-bottom:10px}
-  .toggle-tabs button{
-    flex:1;border:0;background:transparent;padding:7px 10px;border-radius:6px;cursor:pointer;
-    font-size:12px;font-weight:600;color:var(--muted);
-  }
-  .toggle-tabs button.active{background:#fff;color:var(--ink);box-shadow:0 1px 3px rgba(0,0,0,.08)}
+  html[data-theme="dark"] .output pre{background:#020617}
+  .output .out-actions{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px}
+  .toggle-tabs{display:flex;gap:3px;background:var(--field);padding:3px;border-radius:8px;margin-bottom:8px;border:1px solid var(--line)}
+  .toggle-tabs button{flex:1;border:0;background:transparent;padding:6px 8px;border-radius:6px;cursor:pointer;font-size:11.5px;font-weight:600;color:var(--muted)}
+  .toggle-tabs button.active{background:var(--brand);color:#fff}
 
-  footer{padding:24px;text-align:center;color:var(--muted);font-size:12px}
-  .toast{
-    position:fixed;bottom:24px;left:50%;transform:translateX(-50%);
-    background:var(--ink);color:#fff;padding:10px 16px;border-radius:8px;font-size:13px;
-    opacity:0;pointer-events:none;transition:opacity .25s, transform .25s;z-index:50;
+  /* Mode tabs (specialty) */
+  .mode-tabs{display:flex;gap:4px;flex-wrap:wrap;margin-bottom:6px}
+  .mode-tabs button{
+    background:var(--field);border:1px solid var(--line);color:var(--ink);
+    padding:5px 10px;border-radius:999px;font-size:12px;cursor:pointer;
   }
+  .mode-tabs button.active{background:var(--brand);color:#fff;border-color:var(--brand)}
+
+  .install-banner{
+    display:none;align-items:center;gap:10px;background:var(--chip);border:1px solid var(--brand-2);
+    color:var(--brand);padding:8px 12px;border-radius:8px;font-size:12.5px;margin:10px 16px;
+  }
+  .install-banner.show{display:flex}
+
+  footer{padding:18px;text-align:center;color:var(--muted);font-size:11.5px}
+  .toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%);background:var(--ink);color:var(--panel);padding:10px 16px;border-radius:8px;font-size:13px;opacity:0;pointer-events:none;transition:opacity .25s, transform .25s;z-index:50}
   .toast.show{opacity:1;transform:translate(-50%,-6px)}
 
-  /* print */
+  /* Mobile tweaks */
+  @media (max-width:640px){
+    header.top{padding:10px 12px}
+    header.top h1{font-size:15px}
+    header.top .sub{display:none}
+    .case-pick select{max-width:120px}
+    .section{padding:14px}
+    main{padding:0 10px;margin:10px auto}
+    .output{position:static}
+  }
+
+  /* Print */
   @media print{
-    header.top,.output .actions,.btn,.templates,.toggle-tabs,footer{display:none !important}
-    body{background:#fff}
+    header.top,.output .out-actions,.btn,.icon-btn,.templates,.toggle-tabs,.mode-tabs,footer,.install-banner,.mic-btn,details summary,.ac-list{display:none !important}
+    body{background:#fff;color:#000}
     main{display:block;margin:0;padding:0;max-width:none}
     .panel{box-shadow:none;border:0}
     .output{position:static}
     .output pre{background:#fff;color:#000;padding:0;font-size:12px;max-height:none}
-    .section{break-inside:avoid;border-color:#ccc}
+    .section{break-inside:avoid;border-color:#ccc;padding:8px 0}
+    details{border:0;padding:0;background:transparent}
+    details[open] > summary{display:none}
+    .scores{display:none}
   }
 </style>
 </head>
@@ -162,51 +223,58 @@
     <div class="logo">🩺</div>
     <div>
       <h1>Anamnese FAST</h1>
-      <div class="sub">Prontuário digital · ID · QD · HPMA · AP · AF · HV · RBS · Sinais · HD · CD</div>
+      <div class="sub">Prontuário · com PWA, sinais de alarme, escores e exportação</div>
     </div>
   </div>
   <div class="actions">
-    <button class="btn ghost" id="btnExample">Carregar exemplo</button>
-    <button class="btn ghost" id="btnClear">Limpar</button>
-    <button class="btn" id="btnPrint">Imprimir / PDF</button>
+    <div class="case-pick" title="Caso atual">
+      <span>📁</span>
+      <select id="caseSel"></select>
+      <button class="icon-btn" id="btnNewCase" title="Novo caso" style="width:24px;height:24px">＋</button>
+      <button class="icon-btn" id="btnDelCase" title="Excluir caso" style="width:24px;height:24px">🗑</button>
+    </div>
+    <button class="btn ghost" id="btnAnon" title="Anonimizar nome ao copiar/exportar">🛡 Anonimizar</button>
+    <button class="btn ghost" id="btnTheme" title="Alternar tema">🌓</button>
+    <button class="btn ghost" id="btnExample">Exemplo</button>
+    <button class="btn ghost" id="btnPrint">Imprimir/PDF</button>
+    <button class="btn" id="btnInstall" style="display:none">📲 Instalar</button>
   </div>
 </header>
+
+<div class="install-banner" id="installBanner">
+  🔒 Seus dados ficam apenas neste navegador (localStorage). Nada é enviado para servidor.
+  <button class="btn" style="margin-left:auto;font-size:11px;padding:4px 8px" onclick="document.getElementById('installBanner').classList.remove('show')">OK</button>
+</div>
 
 <main>
   <!-- FORM -->
   <form class="panel" id="form" autocomplete="off" onsubmit="return false;">
 
+    <div class="section" style="padding-bottom:8px">
+      <div class="mode-tabs" id="modeTabs">
+        <button type="button" data-mode="adulto" class="active">Adulto</button>
+        <button type="button" data-mode="crianca">Criança</button>
+        <button type="button" data-mode="idoso">Idoso</button>
+        <button type="button" data-mode="gestante">Gestante</button>
+        <button type="button" data-mode="psiq">Psiq./Emocional</button>
+      </div>
+      <div class="hint">O modo escolhido revela campos específicos da faixa/contexto.</div>
+    </div>
+
     <!-- ID -->
     <div class="section">
-      <h2><span class="tag">ID</span> Identificação</h2>
+      <h2><span class="tag">ID</span> Identificação <span class="spacer"></span></h2>
       <div class="row">
         <div class="col-6"><label>Nome</label><input type="text" id="id_nome" placeholder="Ex.: João da Silva"></div>
         <div class="col-2"><label>Idade</label><input type="number" id="id_idade" min="0" max="120" placeholder="45"></div>
         <div class="col-2">
           <label>Sexo</label>
-          <select id="id_sexo">
-            <option value="">—</option>
-            <option>masculino</option>
-            <option>feminino</option>
-            <option>outro</option>
-          </select>
+          <select id="id_sexo"><option value="">—</option><option>masculino</option><option>feminino</option><option>outro</option></select>
         </div>
-        <div class="col-2">
-          <label>Faixa</label>
-          <select id="id_faixa">
-            <option value="">—</option>
-            <option value="adulto">adulto</option>
-            <option value="crianca">criança</option>
-            <option value="idoso">idoso</option>
-            <option value="gestante">gestante</option>
-          </select>
-        </div>
+        <div class="col-2"><label>Data</label><input type="date" id="id_data"></div>
         <div class="col-6"><label>Profissão / ocupação (se relevante)</label><input type="text" id="id_prof"></div>
         <div class="col-6"><label>Procedência (se relevante)</label><input type="text" id="id_proc"></div>
-        <div class="col-12">
-          <label>Informante</label>
-          <input type="text" id="id_informante" placeholder="Próprio paciente; ou: filha, que convive com a paciente">
-        </div>
+        <div class="col-12"><label>Informante</label><input type="text" id="id_informante" placeholder="Próprio paciente; ou: filha, que convive com a paciente"></div>
       </div>
     </div>
 
@@ -230,16 +298,18 @@
         <button type="button" data-tpl="tosse">+ Tosse</button>
         <button type="button" data-tpl="dispneia">+ Dispneia</button>
         <button type="button" data-tpl="neuro">+ Neurológico</button>
+        <button type="button" data-tpl="abd">+ Abdominal</button>
+        <button type="button" data-tpl="cef">+ Cefaleia</button>
       </div>
-      <textarea id="hpma_text" rows="6" placeholder="Paciente refere ... iniciado(a) há ..., de início (súbito/gradual), localizada em ..., intensidade .../10, com piora ... e melhora ... Refere ... Nega ..."></textarea>
+      <div class="field-with-mic">
+        <textarea id="hpma_text" rows="6" placeholder="Paciente refere ... iniciado(a) há ..., de início (súbito/gradual), localizada em ..., intensidade __/10, com piora ... e melhora ... Refere ... Nega ..."></textarea>
+        <button type="button" class="mic-btn" data-mic="hpma_text" title="Ditar (Web Speech API)">🎤</button>
+      </div>
 
       <details>
-        <summary>Campos auxiliares (preenche automaticamente o texto se você quiser)</summary>
-        <div class="row" style="margin-top:10px">
-          <div class="col-3">
-            <label>Início</label>
-            <select id="hpma_inicio"><option value="">—</option><option>súbito</option><option>gradual</option></select>
-          </div>
+        <summary>Campos auxiliares (compõem o texto automaticamente)</summary>
+        <div class="row" style="margin-top:8px">
+          <div class="col-3"><label>Início</label><select id="hpma_inicio"><option value="">—</option><option>súbito</option><option>gradual</option></select></div>
           <div class="col-3"><label>Localização</label><input type="text" id="hpma_loc"></div>
           <div class="col-3"><label>Intensidade (0–10)</label><input type="number" id="hpma_int" min="0" max="10"></div>
           <div class="col-3"><label>Irradiação</label><input type="text" id="hpma_irr"></div>
@@ -247,57 +317,60 @@
           <div class="col-6"><label>Fatores de piora</label><input type="text" id="hpma_piora"></div>
           <div class="col-6"><label>Sintomas associados</label><input type="text" id="hpma_assoc"></div>
           <div class="col-6"><label>Tratamentos / resposta</label><input type="text" id="hpma_trat"></div>
-          <div class="col-12">
-            <button type="button" class="btn primary" id="btnComporHpma">Compor HPMA a partir dos campos</button>
-          </div>
+          <div class="col-12"><button type="button" class="btn primary" id="btnComporHpma">Compor HPMA a partir dos campos</button></div>
         </div>
       </details>
+
+      <!-- Red flags sinais de alarme contextuais -->
+      <div id="redflags"></div>
     </div>
 
     <!-- AP -->
     <div class="section">
       <h2><span class="tag">AP</span> Antecedentes pessoais</h2>
-      <div class="alert"><strong>Alergias devem ser perguntadas obrigatoriamente</strong> — registre o agente e a reação.</div>
+      <div class="alert warn"><strong>Alergias obrigatórias</strong> — registre o agente e a reação.</div>
       <div class="row">
         <div class="col-6"><label>Comorbidades</label><input type="text" id="ap_com" placeholder="Ex.: HAS, DM2"></div>
-        <div class="col-6"><label>Cirurgias / internações</label><input type="text" id="ap_cir" placeholder="Ex.: apendicectomia prévia"></div>
-        <div class="col-6">
-          <label>Alergias <span style="color:var(--danger)">*</span></label>
-          <input type="text" id="ap_alergia" placeholder="Ex.: nega / dipirona com urticária">
-        </div>
-        <div class="col-6"><label>Medicamentos em uso</label><input type="text" id="ap_med" placeholder="Ex.: losartana, metformina"></div>
-        <div class="col-12"><label>Vacinação / gestação / outros</label><input type="text" id="ap_outros"></div>
+        <div class="col-6"><label>Cirurgias / internações</label><input type="text" id="ap_cir"></div>
+        <div class="col-6"><label>Alergias <span style="color:var(--danger)">*</span></label><input type="text" id="ap_alergia" placeholder="Ex.: nega / dipirona com urticária"></div>
+        <div class="col-6"><label>Medicamentos em uso</label><div class="ac-wrap"><input type="text" id="ap_med" placeholder="Comece a digitar (autocomplete)"><div class="ac-list" data-for="ap_med"></div></div></div>
+        <div class="col-12"><label>Vacinação / outros</label><input type="text" id="ap_outros"></div>
       </div>
     </div>
 
     <!-- AF -->
     <div class="section">
       <h2><span class="tag">AF</span> Antecedentes familiares</h2>
-      <textarea id="af_text" rows="2" placeholder="Ex.: pai hipertenso e com histórico de IAM; mãe diabética; irmãos sem doenças conhecidas."></textarea>
+      <textarea id="af_text" rows="2" placeholder="Ex.: pai hipertenso e com histórico de IAM; mãe diabética."></textarea>
     </div>
 
     <!-- HV -->
     <div class="section">
       <h2><span class="tag">HV</span> Hábitos e vícios</h2>
       <div class="row">
-        <div class="col-4"><label>Tabagismo</label><input type="text" id="hv_tab" placeholder="Ex.: 20 maços-ano / nega"></div>
-        <div class="col-4"><label>Etilismo</label><input type="text" id="hv_eti" placeholder="Ex.: social / nega"></div>
-        <div class="col-4"><label>Drogas</label><input type="text" id="hv_dro" placeholder="Ex.: nega"></div>
-        <div class="col-4"><label>Atividade física</label><input type="text" id="hv_ativ" placeholder="Ex.: sedentário / 3x/sem"></div>
+        <div class="col-4"><label>Tabagismo</label><input type="text" id="hv_tab" placeholder="Ex.: nega / atual"></div>
+        <div class="col-2"><label>Cigarros/dia</label><input type="number" id="hv_cigdia" min="0"></div>
+        <div class="col-2"><label>Anos de tabaco</label><input type="number" id="hv_anos" min="0"></div>
+        <div class="col-4"><label>Etilismo</label><input type="text" id="hv_eti"></div>
+        <div class="col-4"><label>Drogas</label><input type="text" id="hv_dro"></div>
+        <div class="col-4"><label>Atividade física</label><input type="text" id="hv_ativ"></div>
         <div class="col-4"><label>Alimentação</label><input type="text" id="hv_alim"></div>
-        <div class="col-4"><label>Sono</label><input type="text" id="hv_sono"></div>
-        <div class="col-12"><label>Trabalho / exposição / contexto social</label><input type="text" id="hv_trab"></div>
+        <div class="col-6"><label>Sono</label><input type="text" id="hv_sono"></div>
+        <div class="col-6"><label>Trabalho / exposição / contexto social</label><input type="text" id="hv_trab"></div>
       </div>
     </div>
 
     <!-- RBS -->
     <div class="section">
       <h2><span class="tag">RBS</span> Revisão breve de sistemas</h2>
-      <div class="hint">Marque o que o paciente <strong>refere</strong>; o restante entrará como “nega”.</div>
+      <div class="hint">Marque o que o paciente refere; o restante entrará como "nega".</div>
       <div id="rbs_groups"></div>
-      <div style="margin-top:10px">
+      <div style="margin-top:8px">
         <label>Observações livres da RBS</label>
-        <textarea id="rbs_obs" rows="2" placeholder="Outros sintomas relatados ou particularidades."></textarea>
+        <div class="field-with-mic">
+          <textarea id="rbs_obs" rows="2"></textarea>
+          <button type="button" class="mic-btn" data-mic="rbs_obs" title="Ditar">🎤</button>
+        </div>
       </div>
     </div>
 
@@ -310,27 +383,102 @@
         <div class="col-2"><label>FR (irpm)</label><input type="number" id="sv_fr"></div>
         <div class="col-2"><label>T (°C)</label><input type="number" id="sv_t" step="0.1"></div>
         <div class="col-2"><label>SpO₂ (%)</label><input type="number" id="sv_sat" min="0" max="100"></div>
+        <div class="col-3"><label>Glasgow</label><input type="number" id="sv_gcs" min="3" max="15"></div>
         <div class="col-3"><label>Glicemia capilar</label><input type="text" id="sv_glic"></div>
-        <div class="col-3"><label>Dor (0–10)</label><input type="number" id="sv_dor" min="0" max="10"></div>
-        <div class="col-3"><label>Peso (kg)</label><input type="number" id="sv_peso" step="0.1"></div>
-        <div class="col-3"><label>Altura (cm)</label><input type="number" id="sv_alt"></div>
+        <div class="col-2"><label>Dor (0–10)</label><input type="number" id="sv_dor" min="0" max="10"></div>
+        <div class="col-2"><label>Peso (kg)</label><input type="number" id="sv_peso" step="0.1"></div>
+        <div class="col-2"><label>Altura (cm)</label><input type="number" id="sv_alt"></div>
         <div class="col-12">
           <label>Exame geral / direcionado</label>
-          <textarea id="sv_exame" rows="4" placeholder="Ex.: bom estado geral, hidratado, corado. Abdome flácido, doloroso à palpação em epigástrio, sem sinais de irritação peritoneal."></textarea>
+          <div class="field-with-mic">
+            <textarea id="sv_exame" rows="4" placeholder="Ex.: bom estado geral, hidratado, corado. Abdome doloroso à palpação em epigástrio, sem irritação peritoneal."></textarea>
+            <button type="button" class="mic-btn" data-mic="sv_exame" title="Ditar">🎤</button>
+          </div>
         </div>
+      </div>
+    </div>
+
+    <!-- Specialty blocks -->
+    <div class="section" data-mode-only="crianca" style="display:none">
+      <h2><span class="tag">Pediatria</span> Específicos da criança</h2>
+      <div class="row">
+        <div class="col-6"><label>Gestação / parto</label><input type="text" id="ped_gest"></div>
+        <div class="col-6"><label>Desenvolvimento (DNPM)</label><input type="text" id="ped_dnpm"></div>
+        <div class="col-6"><label>Vacinação</label><input type="text" id="ped_vac" placeholder="Em dia / atrasada"></div>
+        <div class="col-6"><label>Alimentação / aleitamento</label><input type="text" id="ped_alim"></div>
+        <div class="col-6"><label>Diurese / evacuações</label><input type="text" id="ped_eliminacoes"></div>
+        <div class="col-6"><label>Escola / contato com doentes</label><input type="text" id="ped_contato"></div>
+      </div>
+    </div>
+
+    <div class="section" data-mode-only="idoso" style="display:none">
+      <h2><span class="tag">Geriatria</span> Específicos do idoso</h2>
+      <div class="row">
+        <div class="col-6"><label>Cognição / memória</label><input type="text" id="ger_cog"></div>
+        <div class="col-6"><label>Quedas recentes</label><input type="text" id="ger_quedas"></div>
+        <div class="col-6"><label>Autonomia (AVDs)</label><input type="text" id="ger_avds"></div>
+        <div class="col-6"><label>Polifarmácia</label><input type="text" id="ger_poli"></div>
+        <div class="col-6"><label>Perda de peso</label><input type="text" id="ger_peso"></div>
+        <div class="col-6"><label>Rede de apoio</label><input type="text" id="ger_apoio"></div>
+      </div>
+    </div>
+
+    <div class="section" data-mode-only="gestante" style="display:none">
+      <h2><span class="tag">Gestante</span> Específicos</h2>
+      <div class="row">
+        <div class="col-4"><label>DUM</label><input type="date" id="ges_dum"></div>
+        <div class="col-4"><label>IG calculada</label><input type="text" id="ges_ig_calc" readonly placeholder="(automática pela DUM)"></div>
+        <div class="col-4"><label>IG informada</label><input type="text" id="ges_ig" placeholder="Ex.: 28 sem"></div>
+        <div class="col-3"><label>G</label><input type="number" id="ges_g" min="0"></div>
+        <div class="col-3"><label>P</label><input type="number" id="ges_p" min="0"></div>
+        <div class="col-3"><label>A</label><input type="number" id="ges_a" min="0"></div>
+        <div class="col-3"><label>Pré-natal</label><input type="text" id="ges_pn"></div>
+        <div class="col-6"><label>Movimentação fetal</label><input type="text" id="ges_mov"></div>
+        <div class="col-6"><label>Sangramento / perda de líquido / dor pélvica</label><input type="text" id="ges_sinais"></div>
+      </div>
+    </div>
+
+    <div class="section" data-mode-only="psiq" style="display:none">
+      <h2><span class="tag">Psiq./Emocional</span> Avaliação acolhedora</h2>
+      <div class="row">
+        <div class="col-4"><label>Humor</label><input type="text" id="psi_humor"></div>
+        <div class="col-4"><label>Ansiedade</label><input type="text" id="psi_ans"></div>
+        <div class="col-4"><label>Sono</label><input type="text" id="psi_sono"></div>
+        <div class="col-4"><label>Apetite</label><input type="text" id="psi_apetite"></div>
+        <div class="col-4"><label>Impacto funcional</label><input type="text" id="psi_func"></div>
+        <div class="col-4"><label>Substâncias</label><input type="text" id="psi_subst"></div>
+        <div class="col-6"><label>Acompanhamento prévio</label><input type="text" id="psi_acomp"></div>
+        <div class="col-6"><label>Rede de apoio</label><input type="text" id="psi_apoio"></div>
+        <div class="col-12"><label>Ideação suicida / risco</label><input type="text" id="psi_risco" placeholder="Avaliar com cuidado e acolhimento"></div>
       </div>
     </div>
 
     <!-- HD -->
     <div class="section">
       <h2><span class="tag">HD</span> Hipótese diagnóstica</h2>
-      <textarea id="hd_text" rows="2" placeholder="Ex.: dispepsia/dor epigástrica a esclarecer."></textarea>
+      <div class="row">
+        <div class="col-12">
+          <label>Hipótese (texto livre)</label>
+          <textarea id="hd_text" rows="2" placeholder="Ex.: dispepsia/dor epigástrica a esclarecer."></textarea>
+        </div>
+        <div class="col-12">
+          <label>CID-10 (autocomplete)</label>
+          <div class="ac-wrap"><input type="text" id="hd_cid" placeholder="Digite código ou nome (ex.: R10, dor abdominal)"><div class="ac-list" data-for="hd_cid"></div></div>
+        </div>
+      </div>
     </div>
 
     <!-- CD -->
     <div class="section">
       <h2><span class="tag">CD</span> Conduta</h2>
-      <textarea id="cd_text" rows="4" placeholder="Ex.: orientações gerais, analgesia conforme prescrição, solicitação de exames laboratoriais e retorno se piora, febre persistente, vômitos incoercíveis ou dor intensa."></textarea>
+      <div class="field-with-mic">
+        <textarea id="cd_text" rows="4" placeholder="Ex.: orientações gerais, analgesia conforme prescrição, exames laboratoriais e retorno se sinais de alarme."></textarea>
+        <button type="button" class="mic-btn" data-mic="cd_text" title="Ditar">🎤</button>
+      </div>
+      <div style="margin-top:8px">
+        <label>Adicionar medicamento (autocomplete)</label>
+        <div class="ac-wrap"><input type="text" id="cd_med" placeholder="Ex.: dipirona, omeprazol"><div class="ac-list" data-for="cd_med"></div></div>
+      </div>
     </div>
 
   </form>
@@ -340,32 +488,40 @@
     <div class="panel">
       <div class="section">
         <h2>📝 Saída para prontuário</h2>
+
+        <div class="scores" id="scores"></div>
+        <div id="alerts"></div>
+
         <div class="toggle-tabs" role="tablist">
-          <button type="button" class="active" data-tab="resumo">Resumo estruturado</button>
-          <button type="button" data-tab="evolucao">Evolução em 3 linhas</button>
+          <button type="button" class="active" data-tab="resumo">Resumo</button>
+          <button type="button" data-tab="evolucao">Evolução</button>
+          <button type="button" data-tab="receita">Receita</button>
         </div>
         <pre id="output">Preencha os campos para gerar o resumo…</pre>
-        <div class="actions">
-          <button class="btn primary" id="btnCopy">Copiar</button>
-          <button class="btn" id="btnDownload">Baixar .txt</button>
-          <button class="btn danger" id="btnReset">Resetar campos</button>
+        <div class="out-actions">
+          <button class="btn primary" id="btnCopy">📋 Copiar</button>
+          <button class="btn" id="btnDownload">⬇ .txt</button>
+          <button class="btn" id="btnPdf">📄 PDF</button>
+          <button class="btn" id="btnWa">💬 WhatsApp</button>
+          <button class="btn" id="btnMail">✉ Email</button>
         </div>
-        <div class="hint" style="margin-top:10px">
-          Dados ficam salvos localmente no seu navegador (localStorage). Este sistema é um auxiliar de organização clínica e <strong>não substitui avaliação médica</strong>.
+        <div class="hint" style="margin-top:8px">
+          Auxiliar de organização clínica. <strong>Não substitui avaliação médica.</strong>
+          Dados ficam apenas neste navegador; "Anonimizar" troca o nome por iniciais ao copiar/exportar.
         </div>
       </div>
     </div>
   </aside>
 </main>
 
-<footer>
-  Anamnese FAST · página estática · hospedagem em GitHub Pages.
-</footer>
+<footer>Anamnese FAST · PWA · GitHub Pages · <a href="https://github.com/PedroGabrielWlassak/anamnese-fast-web" target="_blank" rel="noopener">código-fonte</a></footer>
 
-<div class="toast" id="toast">Copiado para a área de transferência</div>
+<div class="toast" id="toast"></div>
 
 <script>
-/* ---------- RBS groups ---------- */
+/* =========================================================
+   CONFIG: RBS, templates, CID-10, medicamentos, red flags
+   ========================================================= */
 const RBS = [
   { key:'cv', label:'Cardiovascular', items:['dor torácica','palpitações','síncope','dispneia aos esforços','ortopneia','dispneia paroxística noturna','edema'] },
   { key:'resp', label:'Respiratório', items:['tosse','dispneia','chiado','expectoração','hemoptise','dor ventilatório-dependente'] },
@@ -375,50 +531,240 @@ const RBS = [
   { key:'geral', label:'Geral', items:['febre','perda de peso','fadiga','sudorese noturna','mal-estar','anorexia'] }
 ];
 
-const $ = (s,el=document)=>el.querySelector(s);
-const $$ = (s,el=document)=>[...el.querySelectorAll(s)];
-
-function renderRBS(){
-  const wrap = $('#rbs_groups');
-  wrap.innerHTML = RBS.map(g=>`
-    <details ${g.key==='cv'?'open':''}>
-      <summary>${g.label}</summary>
-      <div class="chips" data-group="${g.key}">
-        ${g.items.map(i=>`<label class="check"><input type="checkbox" value="${i}"><span>${i}</span></label>`).join('')}
-      </div>
-    </details>
-  `).join('');
-  wrap.addEventListener('change', e=>{
-    const cb = e.target.closest('input[type=checkbox]'); if(!cb) return;
-    cb.closest('.check').classList.toggle('on', cb.checked);
-    save(); render();
-  });
-}
-
-/* ---------- Templates ---------- */
 const TEMPLATES = {
   dor: 'Dor iniciada há __, de início (súbito/gradual), localizada em __, intensidade __/10, irradiação __, com piora __ e melhora __. ',
   febre: 'Febre iniciada há __, máxima de ___ °C, (contínua/intermitente), associada a __. Uso de __ com __ resposta. ',
   tosse: 'Tosse iniciada há __, (seca/produtiva), associada a __. Piora __. ',
   dispneia: 'Dispneia iniciada há __, (em repouso/aos esforços), com __ ortopneia e __ DPN, associada a __. ',
-  neuro: 'Sintomas neurológicos: __; início (súbito/gradual). Nega __ . '
+  neuro: 'Sintomas neurológicos: __; início (súbito/gradual). Nega __. ',
+  abd: 'Dor abdominal iniciada há __, localizada em __, tipo __, intensidade __/10, associada a (náuseas/vômitos/diarreia/constipação). ',
+  cef: 'Cefaleia iniciada há __, tipo __, intensidade __/10, sem/com (foto/fonofobia, náuseas, déficit neurológico). '
 };
 
-/* ---------- State persistence ---------- */
+const CID10 = [
+  ['A09','Diarreia e gastroenterite de origem infecciosa presumível'],
+  ['B34','Doença viral, não especificada'],
+  ['B86','Escabiose'],
+  ['E03.9','Hipotireoidismo não especificado'],
+  ['E10','Diabetes mellitus tipo 1'],
+  ['E11','Diabetes mellitus tipo 2'],
+  ['E66','Obesidade'],
+  ['E78','Distúrbios do metabolismo de lipoproteínas'],
+  ['F32','Episódio depressivo'],
+  ['F33','Transtorno depressivo recorrente'],
+  ['F41','Outros transtornos ansiosos'],
+  ['F43','Reação ao estresse / transtorno de adaptação'],
+  ['G43','Enxaqueca'],
+  ['G44','Outras síndromes de cefaleia'],
+  ['H10','Conjuntivite'],
+  ['H66','Otite média supurativa'],
+  ['I10','Hipertensão essencial'],
+  ['I20','Angina pectoris'],
+  ['I21','Infarto agudo do miocárdio'],
+  ['I48','Fibrilação e flutter atrial'],
+  ['I50','Insuficiência cardíaca'],
+  ['I63','Infarto cerebral (AVCi)'],
+  ['I64','AVC não especificado'],
+  ['J00','Nasofaringite aguda (resfriado comum)'],
+  ['J03','Amigdalite aguda'],
+  ['J06.9','Infecção aguda das vias aéreas superiores'],
+  ['J11','Influenza (gripe)'],
+  ['J18','Pneumonia não especificada'],
+  ['J20','Bronquite aguda'],
+  ['J44','DPOC'],
+  ['J45','Asma'],
+  ['K21','DRGE'],
+  ['K29','Gastrite e duodenite'],
+  ['K30','Dispepsia funcional'],
+  ['K35','Apendicite aguda'],
+  ['K52','Outras gastroenterites e colites não infecciosas'],
+  ['K59','Outros transtornos funcionais do intestino'],
+  ['K80','Colelitíase'],
+  ['L20','Dermatite atópica'],
+  ['L30','Outras dermatites'],
+  ['L50','Urticária'],
+  ['M25','Outros transtornos articulares'],
+  ['M54','Dorsalgia / lombalgia'],
+  ['M79','Outros transtornos dos tecidos moles'],
+  ['N18','Doença renal crônica'],
+  ['N30','Cistite'],
+  ['N39.0','Infecção do trato urinário'],
+  ['N76','Outras inflamações da vagina e vulva'],
+  ['N94','Dor / outras condições do aparelho genital feminino'],
+  ['O20','Hemorragia do início da gravidez'],
+  ['O21','Hiperemese gravídica'],
+  ['O26','Assistência à gestante com outras condições'],
+  ['R05','Tosse'],
+  ['R06','Dispneia'],
+  ['R07','Dor de garganta e no peito'],
+  ['R10','Dor abdominal e pélvica'],
+  ['R11','Náuseas e vômitos'],
+  ['R19','Outros sintomas digestivos'],
+  ['R21','Erupção cutânea inespecífica'],
+  ['R30','Dor ao urinar (disúria)'],
+  ['R31','Hematúria não especificada'],
+  ['R42','Tontura e instabilidade'],
+  ['R50','Febre de origem desconhecida'],
+  ['R51','Cefaleia'],
+  ['R52','Dor não classificada em outra parte'],
+  ['R55','Síncope e colapso'],
+  ['R60','Edema'],
+  ['T78','Reação alérgica não especificada'],
+  ['Z00','Exame médico geral'],
+  ['Z34','Supervisão de gravidez normal'],
+  ['Z76','Pessoas em contato com serviços de saúde']
+];
+
+const MEDS = [
+  'losartana 50 mg','enalapril 10 mg','captopril 25 mg','anlodipino 5 mg','hidroclorotiazida 25 mg',
+  'atenolol 25 mg','metoprolol 25 mg','propranolol 40 mg','furosemida 40 mg','espironolactona 25 mg',
+  'AAS 100 mg','clopidogrel 75 mg','atorvastatina 20 mg','sinvastatina 20 mg','rosuvastatina 10 mg',
+  'metformina 850 mg','glibenclamida 5 mg','gliclazida 30 mg','dapagliflozina 10 mg','empagliflozina 10 mg',
+  'insulina NPH','insulina regular','levotiroxina 50 mcg',
+  'omeprazol 20 mg','pantoprazol 40 mg','ranitidina 150 mg','domperidona 10 mg','metoclopramida 10 mg','ondansetrona 4 mg','bromoprida 10 mg',
+  'dipirona 500 mg','paracetamol 500 mg','ibuprofeno 600 mg','diclofenaco 50 mg','nimesulida 100 mg','tramadol 50 mg','codeína 30 mg',
+  'amoxicilina 500 mg','amoxicilina + clavulanato 500/125 mg','azitromicina 500 mg','cefalexina 500 mg','ciprofloxacino 500 mg','levofloxacino 500 mg','sulfametoxazol + trimetoprima','metronidazol 250 mg','nitrofurantoína 100 mg',
+  'prednisona 20 mg','prednisolona 20 mg','dexametasona 4 mg','hidrocortisona 100 mg',
+  'salbutamol spray','budesonida 200 mcg','formoterol + budesonida','ipratrópio',
+  'loratadina 10 mg','desloratadina 5 mg','cetirizina 10 mg','prometazina 25 mg',
+  'fluoxetina 20 mg','sertralina 50 mg','escitalopram 10 mg','clonazepam 2 mg','alprazolam 0,5 mg','diazepam 5 mg','quetiapina 25 mg',
+  'soro fisiológico 0,9%','soro glicosado 5%','dimenidrinato 50 mg','ondansetrona 4 mg',
+  'varfarina 5 mg','rivaroxabana 20 mg','enoxaparina 40 mg','heparina',
+  'vitamina D 7000 UI','vitamina B12','ácido fólico 5 mg','ferro sulfato 40 mg'
+];
+
+const RED_FLAGS = {
+  'dor torácica': [
+    'irradiação para braço/mandíbula/dorso','sudorese','náuseas','dispneia','síncope',
+    'fatores de risco cardiovasculares','alteração de sinais vitais'
+  ],
+  'cefaleia': [
+    'início súbito (thunderclap)','pior cefaleia da vida','déficit neurológico focal',
+    'febre / rigidez de nuca','alteração visual','rebaixamento de consciência','trauma recente'
+  ],
+  'dor abdominal': [
+    'dor intensa progressiva','defesa / rigidez abdominal','vômitos persistentes','febre',
+    'sangramento','icterícia','síncope','gestação (descartar prenhez ectópica)'
+  ],
+  'dispneia': [
+    'início súbito','dor torácica','cianose','SpO₂ < 92%','confusão','uso de musculatura acessória','edema de MMII'
+  ],
+  'febre': [
+    'duração > 7 dias','prostração importante','rigidez de nuca','dispneia','dor abdominal intensa',
+    'manchas na pele','imunossupressão','extremos de idade'
+  ],
+  'fraqueza': ['déficit focal','alteração de fala','assimetria facial','queda recente','dor torácica'],
+  'tosse': ['hemoptise','dispneia','perda de peso','sudorese noturna','> 3 semanas']
+};
+
+/* =========================================================
+   STATE: multi-case management
+   ========================================================= */
+const KEY_CASES = 'anamnese_fast_cases_v2';
+const KEY_PREFS = 'anamnese_fast_prefs_v1';
+const LEGACY_KEY = 'anamnese_fast_v1';
+
+const $ = (s,el=document)=>el.querySelector(s);
+const $$ = (s,el=document)=>[...el.querySelectorAll(s)];
+
 const FIELDS = [
-  'id_nome','id_idade','id_sexo','id_faixa','id_prof','id_proc','id_informante',
+  'id_nome','id_idade','id_sexo','id_data','id_prof','id_proc','id_informante',
   'qd_queixa','qd_tempo',
   'hpma_text','hpma_inicio','hpma_loc','hpma_int','hpma_irr','hpma_melhora','hpma_piora','hpma_assoc','hpma_trat',
-  'ap_com','ap_cir','ap_alergia','ap_med','ap_outros',
-  'af_text',
-  'hv_tab','hv_eti','hv_dro','hv_ativ','hv_alim','hv_sono','hv_trab',
-  'rbs_obs',
-  'sv_pa','sv_fc','sv_fr','sv_t','sv_sat','sv_glic','sv_dor','sv_peso','sv_alt','sv_exame',
-  'hd_text','cd_text'
+  'ap_com','ap_cir','ap_alergia','ap_med','ap_outros','af_text',
+  'hv_tab','hv_cigdia','hv_anos','hv_eti','hv_dro','hv_ativ','hv_alim','hv_sono','hv_trab','rbs_obs',
+  'sv_pa','sv_fc','sv_fr','sv_t','sv_sat','sv_gcs','sv_glic','sv_dor','sv_peso','sv_alt','sv_exame',
+  'hd_text','hd_cid','cd_text','cd_med',
+  'ped_gest','ped_dnpm','ped_vac','ped_alim','ped_eliminacoes','ped_contato',
+  'ger_cog','ger_quedas','ger_avds','ger_poli','ger_peso','ger_apoio',
+  'ges_dum','ges_ig_calc','ges_ig','ges_g','ges_p','ges_a','ges_pn','ges_mov','ges_sinais',
+  'psi_humor','psi_ans','psi_sono','psi_apetite','psi_func','psi_subst','psi_acomp','psi_apoio','psi_risco'
 ];
-const KEY = 'anamnese_fast_v1';
 
-function getData(){
+let state = {
+  cases: [],
+  currentId: null,
+  prefs: { theme:'auto', anon:false, mode:'adulto' }
+};
+
+function uid(){ return Math.random().toString(36).slice(2,9) + Date.now().toString(36).slice(-4); }
+
+function loadAll(){
+  try{
+    const raw = localStorage.getItem(KEY_CASES);
+    if(raw){
+      const obj = JSON.parse(raw);
+      state.cases = obj.cases || [];
+      state.currentId = obj.currentId || (state.cases[0] && state.cases[0].id) || null;
+    }
+    // Migrate legacy single-case
+    const legacy = localStorage.getItem(LEGACY_KEY);
+    if(legacy && state.cases.length===0){
+      try{
+        const data = JSON.parse(legacy);
+        const c = { id: uid(), createdAt: Date.now(), data };
+        state.cases.push(c); state.currentId = c.id;
+      }catch{}
+    }
+    const p = localStorage.getItem(KEY_PREFS);
+    if(p) Object.assign(state.prefs, JSON.parse(p));
+  }catch{}
+  if(state.cases.length===0) newCase(false);
+}
+
+function saveAll(){
+  try{ localStorage.setItem(KEY_CASES, JSON.stringify({cases:state.cases, currentId:state.currentId})); }catch{}
+  try{ localStorage.setItem(KEY_PREFS, JSON.stringify(state.prefs)); }catch{}
+}
+
+function currentCase(){ return state.cases.find(c=>c.id===state.currentId); }
+
+function newCase(focus=true){
+  const c = { id: uid(), createdAt: Date.now(), data:{} };
+  state.cases.unshift(c);
+  state.currentId = c.id;
+  saveAll(); refreshCaseList(); setFormFromData({}); render();
+  if(focus) $('#id_nome').focus();
+}
+
+function deleteCurrent(){
+  if(!confirm('Excluir este caso? Esta ação é definitiva.')) return;
+  state.cases = state.cases.filter(c=>c.id!==state.currentId);
+  if(state.cases.length===0) return newCase();
+  state.currentId = state.cases[0].id;
+  saveAll(); refreshCaseList(); setFormFromData(currentCase().data||{}); render();
+}
+
+function caseLabel(c){
+  const d = c.data || {};
+  const nome = d.id_nome || 'Sem nome';
+  const queixa = d.qd_queixa ? ' · ' + d.qd_queixa : '';
+  const dt = new Date(c.createdAt).toLocaleDateString('pt-BR');
+  return `${nome}${queixa} (${dt})`;
+}
+
+function refreshCaseList(){
+  const sel = $('#caseSel'); sel.innerHTML='';
+  state.cases.forEach(c=>{
+    const o = document.createElement('option');
+    o.value = c.id; o.textContent = caseLabel(c);
+    if(c.id===state.currentId) o.selected=true;
+    sel.appendChild(o);
+  });
+}
+
+function setFormFromData(o){
+  FIELDS.forEach(id=>{ const el=$('#'+id); if(el) el.value = o[id] ?? ''; });
+  $$('#rbs_groups .chips').forEach(g=>{
+    const sel = (o.rbs && o.rbs[g.dataset.group]) || [];
+    $$('input',g).forEach(c=>{
+      c.checked = sel.includes(c.value);
+      c.closest('.check').classList.toggle('on', c.checked);
+    });
+  });
+}
+
+function getDataFromForm(){
   const o = {};
   FIELDS.forEach(id=>{ const el=$('#'+id); if(el) o[id]= el.value.trim(); });
   o.rbs = {};
@@ -427,26 +773,144 @@ function getData(){
   });
   return o;
 }
-function setData(o){
-  FIELDS.forEach(id=>{ const el=$('#'+id); if(el && o[id]!=null) el.value = o[id]; });
-  if(o.rbs){
-    $$('#rbs_groups .chips').forEach(g=>{
-      const sel = o.rbs[g.dataset.group] || [];
-      $$('input',g).forEach(c=>{
-        c.checked = sel.includes(c.value);
-        c.closest('.check').classList.toggle('on', c.checked);
-      });
-    });
+
+function saveCurrent(){
+  const c = currentCase(); if(!c) return;
+  c.data = getDataFromForm();
+  saveAll(); refreshCaseList();
+}
+
+/* =========================================================
+   RENDER RBS
+   ========================================================= */
+function renderRBS(){
+  const wrap = $('#rbs_groups');
+  wrap.innerHTML = RBS.map((g,i)=>`
+    <details ${i===0?'open':''}>
+      <summary>${g.label}</summary>
+      <div class="chips" data-group="${g.key}">
+        ${g.items.map(it=>`<label class="check"><input type="checkbox" value="${it}"><span>${it}</span></label>`).join('')}
+      </div>
+    </details>
+  `).join('');
+}
+
+/* =========================================================
+   CALCULATIONS
+   ========================================================= */
+function calcIMC(p, a){ if(!p||!a) return null; const h=a/100; return +(p/(h*h)).toFixed(1); }
+function classIMC(v){
+  if(v<18.5) return ['baixo peso','warn'];
+  if(v<25) return ['eutrófico','ok'];
+  if(v<30) return ['sobrepeso','warn'];
+  if(v<35) return ['obesidade I','warn'];
+  if(v<40) return ['obesidade II','red'];
+  return ['obesidade III','red'];
+}
+function macosAno(cd, anos){ if(!cd||!anos) return null; return +((cd*anos)/20).toFixed(1); }
+function classPA(pa){
+  if(!pa) return null;
+  const m = String(pa).replace(/\s+/g,'').match(/^(\d{2,3})[xX\/](\d{2,3})/);
+  if(!m) return null;
+  const s=+m[1], d=+m[2];
+  if(s>=180 || d>=120) return ['emergência hipertensiva','red',s,d];
+  if(s>=140 || d>=90) return ['hipertensão','warn',s,d];
+  if(s>=130 || d>=80) return ['pré-hipertensão','warn',s,d];
+  if(s<90 || d<60) return ['hipotensão','warn',s,d];
+  return ['normal','ok',s,d];
+}
+function calcIG(dum){
+  if(!dum) return null;
+  const d = new Date(dum); if(isNaN(d)) return null;
+  const days = Math.floor((Date.now()-d.getTime())/86400000);
+  if(days<0 || days>320) return null;
+  const sem = Math.floor(days/7), rd = days%7;
+  return `${sem} sem ${rd} d`;
+}
+function mews(d){
+  // Modified Early Warning Score (sinais vitais)
+  let s=0, parts=[];
+  const fr=+d.sv_fr, fc=+d.sv_fc, t=+d.sv_t, sat=+d.sv_sat, gcs=+d.sv_gcs;
+  const paM = d.sv_pa ? String(d.sv_pa).match(/^(\d{2,3})/) : null;
+  const sis = paM ? +paM[1] : null;
+  function add(v,p){ if(v>0){ s+=v; parts.push(p); } }
+  if(fr){ if(fr<9)add(2,'FR<9'); else if(fr<=14)add(0,''); else if(fr<=20)add(1,'FR 15-20'); else if(fr<=29)add(2,'FR 21-29'); else add(3,'FR>=30'); }
+  if(fc){ if(fc<40)add(2,'FC<40'); else if(fc<=50)add(1,'FC 40-50'); else if(fc<=100)add(0,''); else if(fc<=110)add(1,'FC 101-110'); else if(fc<=129)add(2,'FC 111-129'); else add(3,'FC>=130'); }
+  if(sis){ if(sis<70)add(3,'PAS<70'); else if(sis<81)add(2,'PAS 70-80'); else if(sis<101)add(1,'PAS 81-100'); else if(sis<200)add(0,''); else add(2,'PAS>=200'); }
+  if(t){ if(t<35)add(2,'T<35'); else if(t<38.5)add(0,''); else add(2,'T>=38.5'); }
+  if(sat){ if(sat<92)add(3,'SpO₂<92'); else if(sat<95)add(1,'SpO₂ 92-94'); }
+  if(gcs){ if(gcs<9)add(3,'GCS<9'); else if(gcs<13)add(2,'GCS 9-12'); else if(gcs<15)add(1,'GCS 13-14'); }
+  return { score:s, parts };
+}
+
+/* =========================================================
+   AUTOCOMPLETE
+   ========================================================= */
+function setupAutocomplete(inputId, sourceFn, formatFn){
+  const inp = $('#'+inputId);
+  const list = document.querySelector(`.ac-list[data-for="${inputId}"]`);
+  if(!inp || !list) return;
+  let items = [], idx = -1;
+  function close(){ list.classList.remove('open'); idx=-1; }
+  function render(){
+    list.innerHTML = items.slice(0,10).map((it,i)=>`<div class="ac-item ${i===idx?'active':''}" data-i="${i}">${formatFn(it)}</div>`).join('');
+    list.classList.toggle('open', items.length>0);
+  }
+  inp.addEventListener('input', ()=>{
+    const q = inp.value.trim().toLowerCase();
+    items = q ? sourceFn(q) : [];
+    idx = -1; render();
+  });
+  inp.addEventListener('keydown', e=>{
+    if(!list.classList.contains('open')) return;
+    if(e.key==='ArrowDown'){ idx=Math.min(idx+1, items.length-1); render(); e.preventDefault(); }
+    else if(e.key==='ArrowUp'){ idx=Math.max(idx-1, 0); render(); e.preventDefault(); }
+    else if(e.key==='Enter' && idx>=0){ pick(idx); e.preventDefault(); }
+    else if(e.key==='Escape'){ close(); }
+  });
+  list.addEventListener('click', e=>{
+    const t = e.target.closest('.ac-item'); if(!t) return;
+    pick(+t.dataset.i);
+  });
+  inp.addEventListener('blur', ()=>setTimeout(close, 150));
+  function pick(i){
+    const it = items[i]; if(!it) return;
+    const txt = (typeof it === 'string') ? it : `${it[0]} - ${it[1]}`;
+    // append to existing if comma-separated; otherwise replace
+    const cur = inp.value.trim();
+    if(cur && !cur.endsWith(',') && !cur.endsWith(';')) inp.value = cur + '; ' + txt;
+    else inp.value = (cur ? cur + ' ' : '') + txt;
+    close(); inp.dispatchEvent(new Event('input', {bubbles:true}));
   }
 }
-function save(){ try{ localStorage.setItem(KEY, JSON.stringify(getData())); }catch(e){} }
-function load(){ try{
-  const raw = localStorage.getItem(KEY); if(!raw) return;
-  setData(JSON.parse(raw));
-}catch(e){} }
 
-/* ---------- Build summary ---------- */
-function NI(v, fallback='Não informado'){ return (v && String(v).trim()) ? v : fallback; }
+/* =========================================================
+   RED FLAGS detection
+   ========================================================= */
+function detectRedFlags(d){
+  const out = [];
+  const q = (d.qd_queixa + ' ' + d.hpma_text + ' ' + (d.hpma_assoc||'')).toLowerCase();
+  Object.keys(RED_FLAGS).forEach(key=>{
+    if(q.includes(key)){
+      out.push({ symptom:key, flags: RED_FLAGS[key] });
+    }
+  });
+  return out;
+}
+
+/* =========================================================
+   ANONYMIZE
+   ========================================================= */
+function anonymize(text, nome){
+  if(!state.prefs.anon || !nome) return text;
+  const initials = nome.trim().split(/\s+/).map(w=>w[0]?.toUpperCase()).filter(Boolean).join('.');
+  return text.split(nome).join(initials + '.');
+}
+
+/* =========================================================
+   BUILD OUTPUT
+   ========================================================= */
+function NI(v, f='Não informado'){ return (v && String(v).trim()) ? v : f; }
 
 function buildID(d){
   const parts = [];
@@ -465,7 +929,6 @@ function buildQD(d){
 }
 function buildHPMA(d){
   if(d.hpma_text) return d.hpma_text;
-  // compose from auxiliary fields if any
   const bits = [];
   if(d.qd_queixa) bits.push('Paciente refere ' + d.qd_queixa);
   if(d.qd_tempo) bits.push('iniciada há ' + d.qd_tempo);
@@ -494,6 +957,8 @@ function buildAF(d){ return d.af_text || 'Não informado.'; }
 function buildHV(d){
   const parts = [];
   if(d.hv_tab) parts.push('Tabagismo: ' + d.hv_tab);
+  const ma = macosAno(+d.hv_cigdia, +d.hv_anos);
+  if(ma) parts.push(`(${ma} maços-ano)`);
   if(d.hv_eti) parts.push('Etilismo: ' + d.hv_eti);
   if(d.hv_dro) parts.push('Drogas: ' + d.hv_dro);
   if(d.hv_ativ) parts.push('Atividade física: ' + d.hv_ativ);
@@ -511,7 +976,6 @@ function buildRBS(d){
   });
   const parts = [];
   if(refers.length) parts.push('Refere ' + refers.join(', ') + '.');
-  // shorten denial list a bit to the clinically relevant negatives
   const key = ['febre','dor torácica','dispneia','vômitos','diarreia','cefaleia','alteração de consciência','alteração visual'];
   const keyDenied = key.filter(k=>denies.includes(k));
   if(keyDenied.length) parts.push('Nega ' + keyDenied.join(', ') + '.');
@@ -525,11 +989,12 @@ function buildSinais(d){
   if(d.sv_fr) v.push('FR ' + d.sv_fr + ' irpm');
   if(d.sv_t)  v.push('T ' + d.sv_t + '°C');
   if(d.sv_sat) v.push('SpO₂ ' + d.sv_sat + '%');
+  if(d.sv_gcs) v.push('GCS ' + d.sv_gcs);
   if(d.sv_glic) v.push('HGT ' + d.sv_glic);
   if(d.sv_dor) v.push('Dor ' + d.sv_dor + '/10');
   if(d.sv_peso && d.sv_alt){
-    const h = d.sv_alt/100; const imc = (d.sv_peso/(h*h)).toFixed(1);
-    v.push('Peso ' + d.sv_peso + ' kg, altura ' + d.sv_alt + ' cm, IMC ' + imc);
+    const imc = calcIMC(+d.sv_peso, +d.sv_alt);
+    v.push(`Peso ${d.sv_peso} kg, altura ${d.sv_alt} cm, IMC ${imc}`);
   } else {
     if(d.sv_peso) v.push('Peso ' + d.sv_peso + ' kg');
     if(d.sv_alt) v.push('Altura ' + d.sv_alt + ' cm');
@@ -538,11 +1003,68 @@ function buildSinais(d){
   if(d.sv_exame) s += (s?'. ':'') + d.sv_exame;
   return s ? (s.endsWith('.')?s:s+'.') : 'Não informado.';
 }
-function buildHD(d){ return d.hd_text || 'A esclarecer.'; }
-function buildCD(d){ return d.cd_text || 'A definir conforme avaliação clínica.'; }
+function buildHD(d){
+  let s = d.hd_text || 'A esclarecer.';
+  if(d.hd_cid) s += ' [' + d.hd_cid + ']';
+  return s;
+}
+function buildCD(d){
+  let s = d.cd_text || 'A definir conforme avaliação clínica.';
+  if(d.cd_med) s += '\nMedicação: ' + d.cd_med;
+  return s;
+}
+
+function buildSpecialty(d){
+  const mode = state.prefs.mode;
+  const blocks = [];
+  if(mode==='crianca'){
+    const p = [];
+    if(d.ped_gest) p.push('Gestação/parto: ' + d.ped_gest);
+    if(d.ped_dnpm) p.push('DNPM: ' + d.ped_dnpm);
+    if(d.ped_vac) p.push('Vacinação: ' + d.ped_vac);
+    if(d.ped_alim) p.push('Alimentação: ' + d.ped_alim);
+    if(d.ped_eliminacoes) p.push('Eliminações: ' + d.ped_eliminacoes);
+    if(d.ped_contato) p.push(d.ped_contato);
+    if(p.length) blocks.push('Pediatria: ' + p.join('; ') + '.');
+  }
+  if(mode==='idoso'){
+    const p = [];
+    if(d.ger_cog) p.push('Cognição: ' + d.ger_cog);
+    if(d.ger_quedas) p.push('Quedas: ' + d.ger_quedas);
+    if(d.ger_avds) p.push('AVDs: ' + d.ger_avds);
+    if(d.ger_poli) p.push('Polifarmácia: ' + d.ger_poli);
+    if(d.ger_peso) p.push('Perda de peso: ' + d.ger_peso);
+    if(d.ger_apoio) p.push('Rede de apoio: ' + d.ger_apoio);
+    if(p.length) blocks.push('Geriatria: ' + p.join('; ') + '.');
+  }
+  if(mode==='gestante'){
+    const p = [];
+    if(d.ges_ig || d.ges_ig_calc) p.push('IG: ' + (d.ges_ig || d.ges_ig_calc));
+    if(d.ges_dum) p.push('DUM: ' + d.ges_dum);
+    if(d.ges_g||d.ges_p||d.ges_a) p.push(`G${d.ges_g||0}P${d.ges_p||0}A${d.ges_a||0}`);
+    if(d.ges_pn) p.push('Pré-natal: ' + d.ges_pn);
+    if(d.ges_mov) p.push('MF: ' + d.ges_mov);
+    if(d.ges_sinais) p.push(d.ges_sinais);
+    if(p.length) blocks.push('Gestante: ' + p.join('; ') + '.');
+  }
+  if(mode==='psiq'){
+    const p = [];
+    if(d.psi_humor) p.push('Humor: ' + d.psi_humor);
+    if(d.psi_ans) p.push('Ansiedade: ' + d.psi_ans);
+    if(d.psi_sono) p.push('Sono: ' + d.psi_sono);
+    if(d.psi_apetite) p.push('Apetite: ' + d.psi_apetite);
+    if(d.psi_func) p.push('Impacto: ' + d.psi_func);
+    if(d.psi_subst) p.push('Substâncias: ' + d.psi_subst);
+    if(d.psi_acomp) p.push('Acompanhamento: ' + d.psi_acomp);
+    if(d.psi_apoio) p.push('Apoio: ' + d.psi_apoio);
+    if(d.psi_risco) p.push('Risco: ' + d.psi_risco);
+    if(p.length) blocks.push('Psiq./Emocional: ' + p.join('; ') + '.');
+  }
+  return blocks.join('\n');
+}
 
 function buildResumo(d){
-  return [
+  const lines = [
     'Resumo estruturado:',
     '',
     'ID: ' + buildID(d),
@@ -552,10 +1074,13 @@ function buildResumo(d){
     'AF: ' + buildAF(d),
     'HV: ' + buildHV(d),
     'RBS: ' + buildRBS(d),
-    'Sinais: ' + buildSinais(d),
-    'HD: ' + buildHD(d),
-    'CD: ' + buildCD(d)
-  ].join('\n');
+    'Sinais: ' + buildSinais(d)
+  ];
+  const spec = buildSpecialty(d);
+  if(spec) lines.push(spec);
+  lines.push('HD: ' + buildHD(d));
+  lines.push('CD: ' + buildCD(d));
+  return anonymize(lines.join('\n'), d.id_nome);
 }
 function buildEvolucao(d){
   const idadeSexo = [d.id_idade ? d.id_idade+' anos' : '', d.id_sexo || ''].filter(Boolean).join(', ') || '[idade/sexo]';
@@ -566,105 +1091,369 @@ function buildEvolucao(d){
   const sinais = buildSinais(d).replace(/\.$/,'');
   const hd = d.hd_text || 'a esclarecer';
   const cd = d.cd_text || 'a definir conforme avaliação clínica';
-  return [
+  return anonymize([
     'Evolução rápida em até 3 linhas:',
     '',
     `Paciente ${idadeSexo}, com ${queixa} ${tempo}, associado a ${assoc}.`,
     `Antecedentes relevantes: ${ant}. Ao exame/sinais: ${sinais}.`,
     `HD: ${hd}. CD: ${cd}.`
+  ].join('\n'), d.id_nome);
+}
+function buildReceita(d){
+  if(!d.cd_med) return 'Sem medicação registrada na CD.\n\nUse o campo "Adicionar medicamento" na seção CD.';
+  const today = new Date().toLocaleDateString('pt-BR');
+  const nome = state.prefs.anon ? (d.id_nome||'').split(/\s+/).map(w=>w[0]).join('.')+'.' : (d.id_nome || '________________________');
+  return [
+    'RECEITUÁRIO',
+    '',
+    `Paciente: ${nome}`,
+    `Data: ${today}`,
+    '',
+    'Medicação:',
+    d.cd_med.split(/[;\n]/).map(m=>m.trim()).filter(Boolean).map((m,i)=>`${i+1}. ${m}`).join('\n'),
+    '',
+    'Orientações:',
+    d.cd_text || '—',
+    '',
+    '_____________________________',
+    'Assinatura e carimbo'
   ].join('\n');
 }
 
 let currentTab = 'resumo';
-function render(){
-  const d = getData();
-  const text = currentTab === 'resumo' ? buildResumo(d) : buildEvolucao(d);
-  $('#output').textContent = text;
+function activeOutput(d){
+  if(currentTab==='resumo') return buildResumo(d);
+  if(currentTab==='evolucao') return buildEvolucao(d);
+  return buildReceita(d);
 }
 
-/* ---------- Wire up ---------- */
+/* =========================================================
+   RENDER (scores, alerts, output)
+   ========================================================= */
+function renderScores(d){
+  const cards = [];
+  // IMC
+  const imc = calcIMC(+d.sv_peso, +d.sv_alt);
+  if(imc){
+    const [lbl, sev] = classIMC(imc);
+    cards.push({lbl:'IMC', val:imc.toFixed(1), ctx:lbl, sev});
+  }
+  // PA
+  const pa = classPA(d.sv_pa);
+  if(pa){
+    cards.push({lbl:'PA', val:`${pa[2]}/${pa[3]}`, ctx:pa[0], sev:pa[1]});
+  }
+  // Maços-ano
+  const ma = macosAno(+d.hv_cigdia, +d.hv_anos);
+  if(ma){
+    cards.push({lbl:'Maços-ano', val:ma.toString(), ctx: ma>=20 ? 'risco significativo' : 'baixo risco', sev: ma>=20?'warn':'ok'});
+  }
+  // MEWS
+  const m = mews(d);
+  if(m.score>0 || d.sv_fc || d.sv_fr || d.sv_pa || d.sv_t || d.sv_sat){
+    const sev = m.score>=5 ? 'red' : m.score>=3 ? 'warn' : 'ok';
+    cards.push({lbl:'MEWS', val:m.score.toString(), ctx: m.parts.length ? m.parts.join(', ') : 'sem alterações', sev});
+  }
+  // IG
+  if(d.ges_dum){
+    const ig = calcIG(d.ges_dum);
+    if(ig){ cards.push({lbl:'IG (DUM)', val:ig.split(' ')[0]+'s', ctx:ig, sev:'ok'}); $('#ges_ig_calc').value = ig; }
+  } else {
+    if($('#ges_ig_calc')) $('#ges_ig_calc').value = '';
+  }
+  const html = cards.map(c=>`<div class="score ${c.sev||''}"><div class="lbl">${c.lbl}</div><div class="val">${c.val}</div><div class="ctx">${c.ctx||''}</div></div>`).join('');
+  $('#scores').innerHTML = html;
+}
+
+function renderAlerts(d){
+  const flags = detectRedFlags(d);
+  if(!flags.length){ $('#redflags').innerHTML=''; $('#alerts').innerHTML=''; return; }
+  const html = flags.map(f=>`
+    <div class="alert red">
+      <strong>⚠️ Sinais de alarme — ${f.symptom}</strong>
+      <ul>${f.flags.map(x=>`<li>${x}</li>`).join('')}</ul>
+    </div>
+  `).join('');
+  $('#redflags').innerHTML = html;
+  $('#alerts').innerHTML = `<div class="alert warn"><strong>Atenção:</strong> investigar sinais de alarme listados ao lado.</div>`;
+}
+
+function render(){
+  const d = getDataFromForm();
+  renderScores(d);
+  renderAlerts(d);
+  $('#output').textContent = activeOutput(d);
+}
+
+/* =========================================================
+   THEME, ANON, MODE
+   ========================================================= */
+function applyTheme(){
+  const t = state.prefs.theme;
+  if(t==='auto'){
+    const dark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    document.documentElement.dataset.theme = dark ? 'dark' : 'light';
+  } else {
+    document.documentElement.dataset.theme = t;
+  }
+}
+function toggleTheme(){
+  const cur = document.documentElement.dataset.theme;
+  state.prefs.theme = cur==='dark' ? 'light' : 'dark';
+  applyTheme(); saveAll();
+}
+function applyAnon(){
+  $('#btnAnon').classList.toggle('primary', state.prefs.anon);
+}
+function applyMode(){
+  $$('#modeTabs button').forEach(b=>b.classList.toggle('active', b.dataset.mode===state.prefs.mode));
+  $$('[data-mode-only]').forEach(el=>{
+    el.style.display = (el.dataset.modeOnly===state.prefs.mode) ? '' : 'none';
+  });
+}
+
+/* =========================================================
+   EXPORT
+   ========================================================= */
+function copyOut(){
+  navigator.clipboard.writeText($('#output').textContent).then(
+    ()=>toast('Copiado para a área de transferência'),
+    ()=>toast('Não foi possível copiar')
+  );
+}
+function downloadOut(){
+  const text = $('#output').textContent;
+  const d = getDataFromForm();
+  const blob = new Blob([text], {type:'text/plain;charset=utf-8'});
+  const a = document.createElement('a');
+  const nm = (d.id_nome || 'anamnese').toLowerCase().replace(/\s+/g,'_').replace(/[^a-z0-9_]/g,'');
+  a.href = URL.createObjectURL(blob);
+  a.download = `${nm || 'anamnese'}_${new Date().toISOString().slice(0,10)}.txt`;
+  document.body.appendChild(a); a.click(); a.remove();
+}
+function shareWA(){
+  const text = encodeURIComponent($('#output').textContent);
+  window.open(`https://wa.me/?text=${text}`, '_blank');
+}
+function shareMail(){
+  const d = getDataFromForm();
+  const subj = encodeURIComponent('Anamnese — ' + (d.id_nome || 'paciente'));
+  const body = encodeURIComponent($('#output').textContent);
+  window.location.href = `mailto:?subject=${subj}&body=${body}`;
+}
+function exportPdf(){ window.print(); }
+
+/* =========================================================
+   SPEECH RECOGNITION (Web Speech API)
+   ========================================================= */
+let activeRec = null, activeBtn = null;
+function startMic(btn){
+  const targetId = btn.dataset.mic;
+  const ta = $('#'+targetId);
+  if(!ta) return;
+  const SR = window.SpeechRecognition || window.webkitSpeechRecognition;
+  if(!SR){ toast('Ditado não disponível neste navegador'); return; }
+  if(activeRec){ activeRec.stop(); return; }
+  const rec = new SR();
+  rec.lang = 'pt-BR'; rec.continuous = true; rec.interimResults = true;
+  let finalText = ta.value;
+  rec.onresult = (ev)=>{
+    let interim = '';
+    for(let i=ev.resultIndex; i<ev.results.length; i++){
+      const txt = ev.results[i][0].transcript;
+      if(ev.results[i].isFinal){ finalText += (finalText && !finalText.endsWith(' ') ? ' ' : '') + txt; }
+      else interim += txt;
+    }
+    ta.value = finalText + interim;
+    ta.dispatchEvent(new Event('input',{bubbles:true}));
+  };
+  rec.onerror = (e)=>{ toast('Erro no ditado: ' + e.error); stopMic(); };
+  rec.onend = ()=>stopMic();
+  rec.start();
+  activeRec = rec; activeBtn = btn;
+  btn.classList.add('rec');
+  toast('Ditando… clique no microfone para parar');
+}
+function stopMic(){
+  if(activeRec){ try{ activeRec.stop(); }catch{} }
+  if(activeBtn){ activeBtn.classList.remove('rec'); }
+  activeRec = null; activeBtn = null;
+}
+
+/* =========================================================
+   WIRING
+   ========================================================= */
 function wire(){
-  // re-render & save on any input
+  // Auto save + render on input
   document.addEventListener('input', e=>{
-    if(e.target.closest('#form')) { save(); render(); }
+    if(e.target.closest('#form')){ saveCurrent(); render(); }
+  });
+  document.addEventListener('change', e=>{
+    if(e.target.closest('#rbs_groups')){
+      const cb = e.target.closest('input[type=checkbox]'); if(cb) cb.closest('.check').classList.toggle('on', cb.checked);
+      saveCurrent(); render();
+    }
   });
 
-  // templates
+  // HPMA templates
   $$('#form .templates button').forEach(b=>{
     b.addEventListener('click', ()=>{
       const ta = $('#hpma_text');
       ta.value = (ta.value ? ta.value + '\n' : '') + TEMPLATES[b.dataset.tpl];
-      ta.focus(); save(); render();
+      ta.focus(); saveCurrent(); render();
     });
   });
 
   $('#btnComporHpma').addEventListener('click', ()=>{
-    const d = getData(); d.hpma_text=''; // force recompose
+    const d = getDataFromForm(); d.hpma_text='';
     $('#hpma_text').value = buildHPMA(d);
-    save(); render();
+    saveCurrent(); render();
   });
 
-  // tabs
+  // Output tabs
   $$('.toggle-tabs button').forEach(b=>{
     b.addEventListener('click', ()=>{
       $$('.toggle-tabs button').forEach(x=>x.classList.remove('active'));
-      b.classList.add('active');
-      currentTab = b.dataset.tab; render();
+      b.classList.add('active'); currentTab = b.dataset.tab; render();
     });
   });
 
-  // top actions
-  $('#btnExample').addEventListener('click', loadExample);
-  $('#btnClear').addEventListener('click', ()=>{ if(confirm('Limpar todos os campos?')){ localStorage.removeItem(KEY); document.querySelectorAll('input,textarea,select').forEach(el=>el.value=''); $$('.check').forEach(c=>c.classList.remove('on')); $$('input[type=checkbox]').forEach(c=>c.checked=false); render(); } });
-  $('#btnPrint').addEventListener('click', ()=>window.print());
+  // Mode tabs
+  $$('#modeTabs button').forEach(b=>{
+    b.addEventListener('click', ()=>{
+      state.prefs.mode = b.dataset.mode; applyMode(); saveAll(); render();
+    });
+  });
 
-  // output actions
-  $('#btnCopy').addEventListener('click', async ()=>{
-    const text = $('#output').textContent;
-    try{ await navigator.clipboard.writeText(text); toast('Copiado para a área de transferência'); }
-    catch{ toast('Não foi possível copiar'); }
+  // Theme
+  $('#btnTheme').addEventListener('click', toggleTheme);
+  // Anon
+  $('#btnAnon').addEventListener('click', ()=>{ state.prefs.anon = !state.prefs.anon; applyAnon(); saveAll(); render(); });
+
+  // Cases
+  $('#caseSel').addEventListener('change', e=>{
+    state.currentId = e.target.value; saveAll();
+    setFormFromData(currentCase().data || {}); render();
   });
-  $('#btnDownload').addEventListener('click', ()=>{
-    const text = $('#output').textContent;
-    const blob = new Blob([text], {type:'text/plain;charset=utf-8'});
-    const a = document.createElement('a');
-    const name = ($('#id_nome').value || 'anamnese').toLowerCase().replace(/\s+/g,'_');
-    a.href = URL.createObjectURL(blob);
-    a.download = name + '_' + new Date().toISOString().slice(0,10) + '.txt';
-    document.body.appendChild(a); a.click(); a.remove();
+  $('#btnNewCase').addEventListener('click', ()=>newCase(true));
+  $('#btnDelCase').addEventListener('click', deleteCurrent);
+
+  // Header actions
+  $('#btnExample').addEventListener('click', loadExample);
+  $('#btnPrint').addEventListener('click', exportPdf);
+
+  // Output actions
+  $('#btnCopy').addEventListener('click', copyOut);
+  $('#btnDownload').addEventListener('click', downloadOut);
+  $('#btnPdf').addEventListener('click', exportPdf);
+  $('#btnWa').addEventListener('click', shareWA);
+  $('#btnMail').addEventListener('click', shareMail);
+
+  // Mic buttons
+  $$('.mic-btn').forEach(b=>b.addEventListener('click', ()=>{
+    if(activeBtn===b) stopMic(); else { stopMic(); startMic(b); }
+  }));
+
+  // Keyboard shortcuts
+  document.addEventListener('keydown', e=>{
+    const mod = e.ctrlKey || e.metaKey;
+    if(mod && e.key==='Enter'){ e.preventDefault(); copyOut(); }
+    if(mod && e.key.toLowerCase()==='p'){ /* default print */ }
+    if(mod && e.shiftKey && e.key.toLowerCase()==='n'){ e.preventDefault(); newCase(true); }
+    if(mod && e.shiftKey && e.key.toLowerCase()==='d'){ e.preventDefault(); toggleTheme(); }
   });
-  $('#btnReset').addEventListener('click', ()=>{ $('#btnClear').click(); });
+
+  // Theme: react to system change when in auto
+  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', ()=>{
+    if(state.prefs.theme==='auto') applyTheme();
+  });
 }
 
+/* =========================================================
+   EXAMPLE
+   ========================================================= */
+function loadExample(){
+  const data = {
+    id_nome:'João Pereira', id_idade:'45', id_sexo:'masculino', id_data: new Date().toISOString().slice(0,10), id_informante:'próprio paciente',
+    qd_queixa:'dor epigástrica', qd_tempo:'2 dias',
+    hpma_text:'Paciente refere dor epigástrica iniciada há 2 dias, de início gradual, intensidade 6/10, sem irradiação, com piora após alimentação e melhora parcial com repouso. Refere náuseas. Nega febre, vômitos, diarreia, dor torácica e dispneia. Fez uso de dipirona com melhora discreta.',
+    hpma_assoc:'náuseas',
+    ap_com:'HAS e DM2', ap_cir:'apendicectomia prévia', ap_alergia:'nega alergias conhecidas', ap_med:'losartana 50 mg; metformina 850 mg',
+    af_text:'Pai hipertenso e com histórico de IAM; mãe diabética.',
+    hv_tab:'ex-tabagista', hv_cigdia:'20', hv_anos:'15', hv_eti:'social', hv_dro:'nega', hv_ativ:'sedentário',
+    sv_pa:'138/86', sv_fc:'88', sv_fr:'18', sv_t:'36.8', sv_sat:'98', sv_dor:'6', sv_peso:'92', sv_alt:'175',
+    sv_exame:'Bom estado geral, hidratado, corado. Abdome flácido, doloroso à palpação em epigástrio, sem sinais de irritação peritoneal.',
+    hd_text:'Dispepsia/dor epigástrica a esclarecer.', hd_cid:'K30 - Dispepsia funcional',
+    cd_text:'Orientações alimentares, evitar AINEs, retorno em 7 dias ou se piora.',
+    cd_med:'omeprazol 20 mg 1x/dia em jejum por 14 dias; dipirona 500 mg se dor',
+    rbs:{ gi:['náuseas'] }
+  };
+  setFormFromData(data); saveCurrent(); render();
+  toast('Exemplo carregado');
+}
+
+/* =========================================================
+   PWA install prompt
+   ========================================================= */
+let deferredPrompt = null;
+window.addEventListener('beforeinstallprompt', e=>{
+  e.preventDefault(); deferredPrompt = e;
+  $('#btnInstall').style.display = '';
+});
+document.addEventListener('click', e=>{
+  if(e.target.id==='btnInstall' && deferredPrompt){
+    deferredPrompt.prompt();
+    deferredPrompt.userChoice.finally(()=>{
+      deferredPrompt = null;
+      $('#btnInstall').style.display = 'none';
+    });
+  }
+});
+
+/* =========================================================
+   TOAST
+   ========================================================= */
 function toast(msg){
   const t = $('#toast'); t.textContent = msg; t.classList.add('show');
   clearTimeout(window.__t); window.__t = setTimeout(()=>t.classList.remove('show'), 1800);
 }
 
-/* ---------- Example ---------- */
-function loadExample(){
-  setData({
-    id_nome:'João', id_idade:'45', id_sexo:'masculino', id_faixa:'adulto', id_informante:'próprio paciente',
-    qd_queixa:'dor epigástrica', qd_tempo:'2 dias',
-    hpma_text:'Paciente refere dor epigástrica iniciada há 2 dias, de início gradual, intensidade 6/10, sem irradiação, com piora após alimentação e melhora parcial com repouso. Refere náuseas. Nega febre, vômitos, diarreia, dor torácica e dispneia. Fez uso de dipirona com melhora discreta.',
-    hpma_assoc:'náuseas',
-    ap_com:'HAS e DM2', ap_cir:'apendicectomia prévia', ap_alergia:'nega alergias conhecidas', ap_med:'losartana e metformina',
-    af_text:'Pai hipertenso e com histórico de IAM; mãe diabética.',
-    hv_tab:'nega', hv_eti:'social', hv_dro:'nega', hv_ativ:'sedentário',
-    sv_pa:'130x80', sv_fc:'88', sv_fr:'18', sv_t:'36.8', sv_sat:'98',
-    sv_exame:'Bom estado geral, hidratado, corado. Abdome flácido, doloroso à palpação em epigástrio, sem sinais de irritação peritoneal.',
-    hd_text:'Dispepsia/dor epigástrica a esclarecer.',
-    cd_text:'Orientações gerais, analgesia conforme prescrição, avaliar necessidade de exames complementares e retorno se piora, febre persistente, vômitos incoercíveis ou dor intensa.',
-    rbs:{ gi:['náuseas'] }
-  });
-  save(); render();
+/* =========================================================
+   INIT
+   ========================================================= */
+renderRBS();
+loadAll();
+applyTheme(); applyAnon(); applyMode();
+refreshCaseList();
+setFormFromData(currentCase()?.data || {});
+wire();
+
+// Autocomplete sources
+setupAutocomplete('hd_cid',
+  q => CID10.filter(([c,n]) => c.toLowerCase().includes(q) || n.toLowerCase().includes(q)),
+  it => `<strong>${it[0]}</strong> — ${it[1]}`
+);
+setupAutocomplete('ap_med',
+  q => MEDS.filter(m => m.toLowerCase().includes(q)),
+  it => it
+);
+setupAutocomplete('cd_med',
+  q => MEDS.filter(m => m.toLowerCase().includes(q)),
+  it => it
+);
+
+// Show privacy banner on first visit
+if(!localStorage.getItem('seen_privacy')){
+  $('#installBanner').classList.add('show');
+  localStorage.setItem('seen_privacy','1');
 }
 
-/* ---------- Init ---------- */
-renderRBS();
-wire();
-load();
 render();
+
+// Register service worker
+if('serviceWorker' in navigator){
+  window.addEventListener('load', ()=>navigator.serviceWorker.register('sw.js').catch(()=>{}));
+}
 </script>
 </body>
 </html>

@@ -1,0 +1,16 @@
+{
+  "name": "Anamnese FAST — Prontuário",
+  "short_name": "Anamnese FAST",
+  "description": "Prontuário digital baseado no protocolo Anamnese FAST. PWA com sinais de alarme, escores, CID-10, autocomplete de medicamentos, ditado e exportação.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#f3f5f8",
+  "theme_color": "#0d6b6b",
+  "lang": "pt-BR",
+  "categories": ["medical", "productivity", "health"],
+  "icons": [
+    { "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}
