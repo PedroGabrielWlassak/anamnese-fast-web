@@ -264,6 +264,46 @@
   .palette-section{padding:8px 12px 4px;font-size:10.5px;color:var(--muted);
     text-transform:uppercase;letter-spacing:.5px;font-weight:700}
 
+  /* Tools modal */
+  .modal .box.lg{max-width:680px}
+  .tools-toolbar{display:flex;align-items:center;gap:8px;padding:10px 14px;border-bottom:1px solid var(--line)}
+  .tools-toolbar input{flex:1;border:1px solid var(--line);border-radius:8px;padding:7px 10px;background:var(--field);color:var(--ink);outline:0;font-size:14px}
+  .tools-toolbar input:focus{border-color:var(--brand-2);box-shadow:var(--focus)}
+  .tools-list{padding:8px;overflow:auto}
+  .tools-section{font-size:10.5px;color:var(--muted);text-transform:uppercase;letter-spacing:.5px;font-weight:700;padding:10px 10px 4px}
+  .tool-card{display:flex;gap:10px;align-items:center;padding:9px 10px;border-radius:8px;cursor:pointer;border:1px solid transparent}
+  .tool-card:hover{background:var(--chip);border-color:var(--brand-2)}
+  .tool-card .name{font-weight:600;font-size:13.5px;color:var(--ink)}
+  .tool-card .desc{font-size:11.5px;color:var(--muted);margin-top:1px}
+  .tool-card .body{flex:1;min-width:0}
+  .tool-card .body .name,.tool-card .body .desc{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .tool-card .spec-tag{background:var(--chip);color:var(--brand);padding:2px 7px;border-radius:999px;font-size:10.5px;font-weight:700;letter-spacing:.3px}
+  .tool-detail{padding:14px;overflow:auto;display:flex;flex-direction:column;gap:10px}
+  .tool-detail .desc{font-size:12.5px;color:var(--muted);line-height:1.5}
+  .tool-inp{display:flex;align-items:flex-start;gap:10px;padding:7px 0;border-bottom:1px solid var(--line)}
+  .tool-inp:last-child{border-bottom:0}
+  .tool-inp .lab{flex:1;font-size:13px;color:var(--ink);line-height:1.45}
+  .tool-inp .lab small{display:block;color:var(--muted);font-size:11px;margin-top:1px}
+  .tool-inp .auto{display:inline-block;background:var(--ok-bg);color:var(--ok);border:1px solid var(--ok-bd);font-size:9.5px;font-weight:700;padding:1px 5px;border-radius:999px;margin-left:6px;letter-spacing:.3px;text-transform:uppercase;vertical-align:middle}
+  .tool-inp .pts{font-size:11px;color:var(--muted);font-weight:600;min-width:28px;text-align:right;padding-top:1px}
+  .tool-inp .ctrl{flex:0 0 auto}
+  .tool-inp input[type=checkbox]{width:18px;height:18px;cursor:pointer;accent-color:var(--brand)}
+  .tool-inp select,.tool-inp input[type=number]{min-width:140px;padding:5px 8px;font-size:13px;min-height:0}
+  .tool-result{background:var(--field);border:1px solid var(--line);border-radius:10px;padding:12px 14px;display:flex;flex-direction:column;gap:6px}
+  .tool-result.ok{background:var(--ok-bg);border-color:var(--ok-bd)}
+  .tool-result.warn{background:var(--warn-bg);border-color:var(--warn-bd)}
+  .tool-result.red{background:var(--danger-bg);border-color:var(--danger-bd)}
+  .tool-result .score-big{font-size:28px;font-weight:800;line-height:1}
+  .tool-result.ok .score-big{color:var(--ok)}
+  .tool-result.warn .score-big{color:var(--warn)}
+  .tool-result.red .score-big{color:var(--danger)}
+  .tool-result .risk{font-size:13.5px;font-weight:700}
+  .tool-result .interp{font-size:12.5px;line-height:1.5;color:var(--ink)}
+  .tool-result .actions{display:flex;gap:6px;flex-wrap:wrap;margin-top:4px}
+  .tool-back{background:transparent;border:0;color:var(--brand);cursor:pointer;font-size:13px;font-weight:600;padding:6px 8px;border-radius:6px}
+  .tool-back:hover{background:var(--chip)}
+  .tool-foot{font-size:11px;color:var(--muted);padding:6px 2px;line-height:1.4;font-style:italic}
+
   /* Keyboard shortcuts list */
   .kbd-list{padding:14px}
   .kbd-row{display:flex;justify-content:space-between;align-items:center;padding:7px 0;border-bottom:1px solid var(--line)}
@@ -333,6 +373,7 @@
       <button class="icon-btn sm" id="btnNewCase" title="Novo caso (Ctrl/⌘+Shift+N)" aria-label="Novo caso">＋</button>
       <button class="icon-btn sm" id="btnDelCase" title="Excluir caso" aria-label="Excluir caso">🗑</button>
     </div>
+    <button class="btn ghost" id="btnTools" title="Ferramentas diagnósticas (escores, calculadoras)" aria-label="Ferramentas diagnósticas">🧮 Escores</button>
     <button class="btn ghost" id="btnPalette" title="Buscar / comandos (Ctrl/⌘+K)" aria-label="Paleta de comandos">⌘K</button>
     <button class="btn ghost" id="btnAnon" title="Anonimizar nome ao copiar/exportar">🛡</button>
     <button class="btn ghost" id="btnTheme" title="Alternar tema (Ctrl/⌘+Shift+D)" aria-label="Alternar tema">🌓</button>
@@ -662,6 +703,18 @@
   </div>
 </div>
 
+<!-- Tools / Calculators modal -->
+<div class="modal" id="toolsModal" role="dialog" aria-label="Ferramentas diagnósticas">
+  <div class="box lg">
+    <header>
+      <span>🧮</span>
+      <strong id="toolsTitle">Ferramentas diagnósticas</strong>
+      <button class="icon-btn" style="margin-left:auto;background:var(--field);color:var(--ink);border-color:var(--line)" onclick="closeModal('toolsModal')" aria-label="Fechar">✕</button>
+    </header>
+    <div id="toolsView"></div>
+  </div>
+</div>
+
 <!-- Keyboard help -->
 <div class="modal" id="helpModal" role="dialog" aria-label="Atalhos de teclado">
   <div class="box" style="max-width:420px">
@@ -672,6 +725,7 @@
     <div class="kbd-list">
       <div class="kbd-row"><span>Copiar saída</span><div class="keys"><kbd>Ctrl/⌘</kbd>+<kbd>Enter</kbd></div></div>
       <div class="kbd-row"><span>Paleta de comandos</span><div class="keys"><kbd>Ctrl/⌘</kbd>+<kbd>K</kbd></div></div>
+      <div class="kbd-row"><span>Ferramentas / escores</span><div class="keys"><kbd>Ctrl/⌘</kbd>+<kbd>Shift</kbd>+<kbd>E</kbd></div></div>
       <div class="kbd-row"><span>Novo caso</span><div class="keys"><kbd>Ctrl/⌘</kbd>+<kbd>Shift</kbd>+<kbd>N</kbd></div></div>
       <div class="kbd-row"><span>Alternar tema</span><div class="keys"><kbd>Ctrl/⌘</kbd>+<kbd>Shift</kbd>+<kbd>D</kbd></div></div>
       <div class="kbd-row"><span>Imprimir / PDF</span><div class="keys"><kbd>Ctrl/⌘</kbd>+<kbd>P</kbd></div></div>
@@ -1575,6 +1629,7 @@ function importAll(file){
    COMMAND PALETTE
    ========================================================= */
 const ACTIONS = [
+  {label:'Abrir ferramentas / escores', ico:'🧮', fn:()=>openTools(), keys:'⌘⇧E'},
   {label:'Novo caso',           ico:'＋', fn:()=>newCase(true),    keys:'⌘⇧N'},
   {label:'Excluir caso atual',  ico:'🗑', fn:deleteCurrent,         keys:''},
   {label:'Copiar saída',        ico:'📋', fn:copyOut,               keys:'⌘↵'},
@@ -1601,7 +1656,8 @@ function paletteFilter(q){
   const cases = state.cases.map(c=>({type:'case', c, label:caseLabel(c)}));
   const acts  = ACTIONS.map(a=>({type:'action', a, label:a.label}));
   const secs  = SECTIONS.map(s=>({type:'section', s, label:'Ir para: '+s.name}));
-  const all = [...cases, ...secs, ...acts];
+  const tools = (typeof TOOLS !== 'undefined' ? TOOLS : []).map(t=>({type:'tool', t, label:t.name+' — '+t.desc}));
+  const all = [...cases, ...secs, ...tools, ...acts];
   palItems = q ? all.filter(x => x.label.toLowerCase().includes(q)) : all;
   palIdx = 0; renderPalette();
 }
@@ -1610,8 +1666,10 @@ function renderPalette(){
   const groups = {case:[], section:[], action:[]};
   palItems.forEach((it,i)=>groups[it.type].push({...it,i}));
   let html='';
+  groups.tool = groups.tool || [];
   if(groups.case.length){ html += '<div class="palette-section">Casos</div>' + groups.case.map(it=>itemHtml(it,'📁')).join(''); }
   if(groups.section.length){ html += '<div class="palette-section">Seções</div>' + groups.section.map(it=>itemHtml(it,'§')).join(''); }
+  if(groups.tool.length){ html += '<div class="palette-section">Escores</div>' + groups.tool.map(it=>itemHtml(it,'🧮')).join(''); }
   if(groups.action.length){ html += '<div class="palette-section">Ações</div>' + groups.action.map(it=>itemHtml(it, it.a.ico)).join(''); }
   $('#paletteList').innerHTML = html;
   // scroll active into view
@@ -1627,6 +1685,7 @@ function palettePick(i){
   closeModal('palette');
   if(it.type==='case'){ state.currentId = it.c.id; saveAll(); refreshCaseList(); setFormFromData(currentCase().data||{}); render(); }
   else if(it.type==='section'){ const t = document.querySelector('#sec-'+it.s.id); if(t) t.scrollIntoView({behavior:'smooth'}); }
+  else if(it.type==='tool'){ openTools(); setTimeout(()=>openTool(it.t.id), 30); }
   else if(it.type==='action'){ it.a.fn(); }
 }
 
@@ -1660,6 +1719,419 @@ function shareMail(){
   window.location.href = `mailto:?subject=${subj}&body=${body}`;
 }
 function exportPdf(){ window.print(); }
+
+/* =========================================================
+   DIAGNOSTIC TOOLS (escores / calculadoras)
+   ========================================================= */
+const TOOLS = [
+  /* ----- CARDIOLOGIA ----- */
+  {
+    id:'chads', name:'CHA₂DS₂-VASc', spec:'Cardiologia',
+    desc:'Risco anual de AVC em fibrilação atrial não valvar.',
+    inputs:[
+      {id:'c',  label:'IC congestiva / disfunção VE', pts:1,
+        prefill:d=>/\b(IC|ICC|insuf.*card)/i.test([d.ap_com,d.ap_outros].join(' '))},
+      {id:'h',  label:'HAS', pts:1,
+        prefill:d=>/\b(HAS|hipertens)/i.test([d.ap_com,d.ap_outros].join(' '))},
+      {id:'a2', label:'Idade ≥ 75 anos', pts:2,
+        prefill:d=>+d.id_idade>=75},
+      {id:'d',  label:'Diabetes mellitus', pts:1,
+        prefill:d=>/\b(DM|diabet)/i.test([d.ap_com,d.ap_outros].join(' '))},
+      {id:'s2', label:'AVC, AIT ou tromboembolismo prévio', pts:2,
+        prefill:d=>/\b(AVC|AIT|TIA|trombo|embol)/i.test([d.ap_com,d.ap_outros].join(' '))},
+      {id:'v',  label:'Doença vascular (IAM, DAC, DAP)', pts:1,
+        prefill:d=>/\b(IAM|DAC|DAP|coronari|aterosc|infarto)/i.test([d.ap_com,d.ap_outros].join(' '))},
+      {id:'a',  label:'Idade 65–74 anos', pts:1,
+        prefill:d=>+d.id_idade>=65 && +d.id_idade<75},
+      {id:'sc', label:'Sexo feminino', pts:1,
+        prefill:d=>d.id_sexo==='feminino'}
+    ],
+    interpret:(s,v)=>{
+      const f = !!v.sc;
+      const rec = (f ? s>=3 : s>=2) ? 'Anticoagulação oral indicada.'
+        : (s===1 && !f) ? 'Considerar anticoagulação (decisão compartilhada).'
+        : 'Anticoagulação não recomendada rotineiramente.';
+      const tab = [0, 1.3, 2.2, 3.2, 4.0, 6.7, 9.8, 9.6, 6.7, 15.2];
+      const risk = tab[Math.min(s,9)];
+      const sev = s>=3 ? 'red' : s>=1 ? 'warn' : 'ok';
+      return {sev, label: s>=3?'risco alto':s>=1?'risco moderado':'risco baixo',
+        desc:`Risco anual de AVC ≈ ${risk}%. ${rec}`};
+    }
+  },
+  {
+    id:'hasbled', name:'HAS-BLED', spec:'Cardiologia',
+    desc:'Risco de sangramento maior em pacientes em anticoagulação.',
+    inputs:[
+      {id:'h',  label:'HAS não controlada (PAS > 160 mmHg)', pts:1,
+        prefill:d=>{const p=parsePA(d.sv_pa); return p && p[0]>160;}},
+      {id:'a1', label:'Função renal anormal (Cr > 2,3 mg/dL ou diálise)', pts:1},
+      {id:'a2', label:'Função hepática anormal', pts:1},
+      {id:'s',  label:'AVC prévio', pts:1, prefill:d=>/AVC|AIT/i.test(d.ap_com||'')},
+      {id:'b',  label:'Sangramento prévio ou predisposição', pts:1},
+      {id:'l',  label:'INR lábil', pts:1},
+      {id:'e',  label:'Idade > 65 anos', pts:1, prefill:d=>+d.id_idade>65},
+      {id:'d1', label:'Drogas que aumentam sangramento (AAS/AINE)', pts:1,
+        prefill:d=>/\b(AAS|AINE|ibuprofeno|diclofenaco)/i.test(d.ap_med||'')},
+      {id:'d2', label:'Etilismo (≥ 8 doses/sem)', pts:1,
+        prefill:d=>/(diári|abusiv|severo|alto)/i.test(d.hv_eti||'')}
+    ],
+    interpret:s=>({
+      sev: s>=3?'red':s>=2?'warn':'ok',
+      label: s>=3?'alto risco':s>=2?'moderado':'baixo',
+      desc: s>=3 ? 'Risco alto de sangramento — cautela na anticoagulação; corrigir fatores modificáveis e monitorizar de perto.'
+                 : 'Risco aceitável; manter vigilância dos fatores modificáveis.'
+    })
+  },
+  {
+    id:'wellsdvt', name:'Wells (TVP)', spec:'Cardiologia',
+    desc:'Probabilidade clínica de trombose venosa profunda de MMII.',
+    inputs:[
+      {id:'a', label:'Câncer ativo (tratamento atual ou < 6 meses)', pts:1},
+      {id:'b', label:'Paralisia / paresia / imobilização de MMII', pts:1},
+      {id:'c', label:'Acamado > 3 dias ou cirurgia maior < 12 sem', pts:1},
+      {id:'d', label:'Dor localizada na distribuição venosa profunda', pts:1},
+      {id:'e', label:'Edema de toda a perna', pts:1},
+      {id:'f', label:'Edema de panturrilha > 3 cm em relação ao contralateral', pts:1},
+      {id:'g', label:'Edema com cacifo unilateral', pts:1},
+      {id:'h', label:'Veias colaterais superficiais visíveis (não varicosas)', pts:1},
+      {id:'i', label:'TVP prévia documentada', pts:1},
+      {id:'j', label:'Diagnóstico alternativo igualmente provável', pts:-2}
+    ],
+    interpret:s=>s>=2
+      ? {sev:'warn', label:'TVP provável', desc:'Solicitar USG Doppler venoso de MMII.'}
+      : {sev:'ok', label:'TVP improvável', desc:'D-dímero pode ajudar a descartar; se negativo, TVP excluída.'}
+  },
+
+  /* ----- PNEUMOLOGIA ----- */
+  {
+    id:'curb', name:'CURB-65', spec:'Pneumologia',
+    desc:'Gravidade de pneumonia adquirida na comunidade. Define local de tratamento.',
+    inputs:[
+      {id:'c',  label:'Confusão mental nova', pts:1,
+        prefill:d=>+d.sv_gcs && d.sv_gcs<15},
+      {id:'u',  label:'Ureia > 50 mg/dL (> 7 mmol/L)', pts:1},
+      {id:'r',  label:'FR ≥ 30 irpm', pts:1, prefill:d=>+d.sv_fr>=30},
+      {id:'b',  label:'PAS < 90 ou PAD ≤ 60 mmHg', pts:1,
+        prefill:d=>{const p=parsePA(d.sv_pa); return p && (p[0]<90 || p[1]<=60);}},
+      {id:'age',label:'Idade ≥ 65 anos', pts:1, prefill:d=>+d.id_idade>=65}
+    ],
+    interpret:s=>{
+      if(s<=1) return {sev:'ok',   label:'baixa gravidade', desc:'Tratamento ambulatorial em geral é seguro.'};
+      if(s===2)return {sev:'warn', label:'moderada',         desc:'Considerar internação hospitalar.'};
+      if(s===3)return {sev:'red',  label:'grave',            desc:'Internação recomendada; avaliar UTI.'};
+      return     {sev:'red',  label:'muito grave',       desc:'Internação em UTI fortemente recomendada.'};
+    }
+  },
+  {
+    id:'wellspe', name:'Wells (TEP)', spec:'Pneumologia',
+    desc:'Probabilidade clínica de tromboembolismo pulmonar.',
+    inputs:[
+      {id:'a', label:'Sinais clínicos de TVP', pts:3},
+      {id:'b', label:'TEP é o diagnóstico mais provável', pts:3},
+      {id:'c', label:'FC > 100 bpm', pts:1.5, prefill:d=>+d.sv_fc>100},
+      {id:'d', label:'Imobilização ≥ 3 dias ou cirurgia < 4 sem', pts:1.5},
+      {id:'e', label:'TVP ou TEP prévio', pts:1.5},
+      {id:'f', label:'Hemoptise', pts:1,
+        prefill:d=>/hemoptise/i.test([d.hpma_text,d.hpma_assoc,d.rbs_obs].join(' '))},
+      {id:'g', label:'Câncer ativo (tratamento atual ou < 6 meses)', pts:1}
+    ],
+    interpret:s=>{
+      if(s>6) return {sev:'red',  label:'alta probabilidade', desc:'Angio-TC de tórax indicada; sem necessidade de D-dímero.'};
+      if(s>4) return {sev:'warn', label:'TEP provável',       desc:'Risco moderado-alto — solicitar angio-TC.'};
+      return    {sev:'ok',   label:'TEP improvável',     desc:'D-dímero pode descartar TEP em risco baixo.'};
+    }
+  },
+  {
+    id:'perc', name:'PERC', spec:'Pneumologia',
+    desc:'Critérios para descartar TEP em pacientes com probabilidade clínica baixa (todos negativos → exclui).',
+    inputs:[
+      {id:'a', label:'Idade ≥ 50 anos', pts:1, prefill:d=>+d.id_idade>=50},
+      {id:'b', label:'FC ≥ 100 bpm', pts:1, prefill:d=>+d.sv_fc>=100},
+      {id:'c', label:'SpO₂ < 95%', pts:1, prefill:d=>+d.sv_sat && +d.sv_sat<95},
+      {id:'d', label:'Hemoptise', pts:1, prefill:d=>/hemoptise/i.test(d.hpma_text||'')},
+      {id:'e', label:'Uso de estrogênio / hormônio', pts:1},
+      {id:'f', label:'TVP / TEP prévio', pts:1},
+      {id:'g', label:'Cirurgia ou trauma com internação < 4 sem', pts:1},
+      {id:'h', label:'Edema unilateral de MI', pts:1,
+        prefill:d=>/edema.*(unilater|assimétric)/i.test(d.sv_exame||'')}
+    ],
+    interpret:s=>s===0
+      ? {sev:'ok',   label:'PERC negativo', desc:'Em paciente com probabilidade clínica baixa, descarta TEP — não solicitar D-dímero.'}
+      : {sev:'warn', label:'PERC positivo', desc:'Não pode descartar TEP — prosseguir investigação (D-dímero ou imagem).'}
+  },
+
+  /* ----- NEUROLOGIA ----- */
+  {
+    id:'abcd2', name:'ABCD²', spec:'Neurologia',
+    desc:'Risco de AVC em 48 h após acidente isquêmico transitório (AIT).',
+    inputs:[
+      {id:'a',  label:'Idade ≥ 60 anos', pts:1, prefill:d=>+d.id_idade>=60},
+      {id:'b',  label:'PA ≥ 140/90 mmHg', pts:1,
+        prefill:d=>{const p=parsePA(d.sv_pa); return p && (p[0]>=140 || p[1]>=90);}},
+      {id:'c',  label:'Clínica: fraqueza unilateral', pts:2},
+      {id:'c2', label:'Clínica: distúrbio de fala SEM fraqueza', pts:1},
+      {id:'d',  label:'Duração ≥ 60 min', pts:2},
+      {id:'d2', label:'Duração 10–59 min', pts:1},
+      {id:'dm', label:'Diabetes mellitus', pts:1, prefill:d=>/DM|diabet/i.test(d.ap_com||'')}
+    ],
+    interpret:s=>{
+      if(s<=3) return {sev:'ok',   label:'baixo risco',    desc:'Risco ~1% em 2 dias. Investigação ambulatorial pode ser possível.'};
+      if(s<=5) return {sev:'warn', label:'risco moderado', desc:'Risco ~4% em 2 dias. Internar para investigação.'};
+      return     {sev:'red',  label:'alto risco',     desc:'Risco ~8% em 2 dias. Internação imediata.'};
+    }
+  },
+
+  /* ----- INFECTOLOGIA / ORL ----- */
+  {
+    id:'centor', name:'Centor / McIsaac', spec:'Infectologia',
+    desc:'Probabilidade de faringoamigdalite por estreptococo β-hemolítico.',
+    inputs:[
+      {id:'a', label:'Febre > 38 °C', pts:1, prefill:d=>+d.sv_t>38},
+      {id:'b', label:'Ausência de tosse', pts:1},
+      {id:'c', label:'Adenopatia cervical anterior dolorosa', pts:1},
+      {id:'d', label:'Exsudato ou edema tonsilar', pts:1},
+      {id:'e', label:'Idade 3–14 anos',  pts:1,  prefill:d=>+d.id_idade>=3 && +d.id_idade<=14},
+      {id:'f', label:'Idade ≥ 45 anos',  pts:-1, prefill:d=>+d.id_idade>=45}
+    ],
+    interpret:s=>{
+      if(s<=1) return {sev:'ok',   label:'baixo risco',     desc:'Não realizar teste/antibiótico.'};
+      if(s<=3) return {sev:'warn', label:'risco intermediário', desc:'Solicitar teste rápido (TRA) ou cultura.'};
+      return     {sev:'red',  label:'alto risco',      desc:'Considerar TRA; tratamento empírico conforme protocolo local.'};
+    }
+  },
+
+  /* ----- CIRURGIA / ABDOME ----- */
+  {
+    id:'alvarado', name:'Alvarado (apendicite)', spec:'Cirurgia',
+    desc:'Probabilidade de apendicite aguda (MANTRELS).',
+    inputs:[
+      {id:'m', label:'Migração da dor para FID', pts:1},
+      {id:'a', label:'Anorexia', pts:1},
+      {id:'n', label:'Náuseas / vômitos', pts:1,
+        prefill:d=>/(náuse|nause|vômito|vomito)/i.test(d.hpma_text + ' ' + (d.hpma_assoc||''))},
+      {id:'t', label:'Dor à palpação em FID', pts:2},
+      {id:'r', label:'Sinal de Blumberg / rebote', pts:1},
+      {id:'e', label:'Temperatura > 37,3 °C', pts:1, prefill:d=>+d.sv_t>37.3},
+      {id:'l', label:'Leucocitose > 10.000/mm³', pts:2},
+      {id:'s', label:'Desvio para esquerda (neutrófilos > 75%)', pts:1}
+    ],
+    interpret:s=>{
+      if(s<=3) return {sev:'ok',   label:'apendicite improvável',       desc:'Considerar diagnósticos alternativos.'};
+      if(s<=6) return {sev:'warn', label:'possível apendicite',         desc:'Observar; exames complementares (USG/TC).'};
+      if(s<=8) return {sev:'red',  label:'apendicite provável',         desc:'Avaliação cirúrgica; considerar imagem.'};
+      return     {sev:'red',  label:'apendicite muito provável',   desc:'Avaliação cirúrgica indicada.'};
+    }
+  },
+
+  /* ----- GASTRO ----- */
+  {
+    id:'gbs', name:'Glasgow-Blatchford (HDA)', spec:'Gastroenterologia',
+    desc:'Necessidade de intervenção em hemorragia digestiva alta.',
+    inputs:[
+      {id:'ureia', label:'Ureia (mg/dL)', type:'select', options:[
+        {v:0,l:'< 39 (0 pts)'},{v:2,l:'39–47 (2 pts)'},{v:3,l:'48–59 (3 pts)'},
+        {v:4,l:'60–149 (4 pts)'},{v:6,l:'≥ 150 (6 pts)'}
+      ]},
+      {id:'hb', label:'Hemoglobina (g/dL)', type:'select', options:[
+        {v:0,l:'≥ 13 / ≥ 12 mulher (0 pts)'},
+        {v:1,l:'12–12,9 H ou 10–11,9 M (1 pt)'},
+        {v:3,l:'10–11,9 H (3 pts)'},
+        {v:6,l:'< 10 (6 pts)'}
+      ]},
+      {id:'pas', label:'PAS (mmHg)', type:'select', options:[
+        {v:0,l:'≥ 110 (0 pts)'},{v:1,l:'100–109 (1 pt)'},{v:2,l:'90–99 (2 pts)'},{v:3,l:'< 90 (3 pts)'}
+      ], prefill:d=>{const p=parsePA(d.sv_pa); if(!p) return null; const s=p[0]; return s>=110?0:s>=100?1:s>=90?2:3;}},
+      {id:'fc',     label:'FC ≥ 100 bpm', pts:1, prefill:d=>+d.sv_fc>=100},
+      {id:'melena', label:'Melena', pts:1},
+      {id:'sinc',   label:'Síncope', pts:2},
+      {id:'hep',    label:'Doença hepática', pts:2},
+      {id:'icc',    label:'Insuficiência cardíaca', pts:2,
+        prefill:d=>/\b(ICC|insuf.*card)/i.test(d.ap_com||'')}
+    ],
+    interpret:s=>s===0
+      ? {sev:'ok',   label:'baixo risco',         desc:'Pode-se considerar manejo ambulatorial.'}
+      : s<=5
+      ? {sev:'warn', label:'risco intermediário', desc:'Internação para observação e investigação endoscópica.'}
+      : {sev:'red',  label:'alto risco',          desc:'Internação; risco de intervenção (endoscopia, transfusão, cirurgia).'}
+  },
+
+  /* ----- HEMATOLOGIA / PROFILAXIA ----- */
+  {
+    id:'padua', name:'Padua (profilaxia VTE)', spec:'Hematologia',
+    desc:'Necessidade de profilaxia tromboembólica em paciente clínico internado.',
+    inputs:[
+      {id:'ca',     label:'Câncer ativo', pts:3},
+      {id:'tvp',    label:'TVP / TEP prévio (exceto trombose superficial)', pts:3},
+      {id:'mob',    label:'Mobilidade reduzida (≥ 3 dias)', pts:3},
+      {id:'trombo', label:'Trombofilia conhecida', pts:3},
+      {id:'cirurg', label:'Trauma ou cirurgia < 1 mês', pts:2},
+      {id:'idade',  label:'Idade ≥ 70 anos', pts:1, prefill:d=>+d.id_idade>=70},
+      {id:'icir',   label:'Insuf. cardíaca e/ou respiratória', pts:1,
+        prefill:d=>/\b(ICC|insuf.*card|DPOC|insuf.*resp)/i.test(d.ap_com||'')},
+      {id:'iamavc', label:'IAM ou AVCi agudo', pts:1},
+      {id:'inf',    label:'Infecção aguda e/ou doença reumatológica', pts:1},
+      {id:'imc',    label:'IMC ≥ 30', pts:1,
+        prefill:d=>{const i=calcIMC(+d.sv_peso,+d.sv_alt); return i && i>=30;}},
+      {id:'horm',   label:'Terapia hormonal', pts:1}
+    ],
+    interpret:s=>s>=4
+      ? {sev:'warn', label:'alto risco', desc:'Profilaxia VTE recomendada (HBPM/HNF), se sem contraindicação.'}
+      : {sev:'ok',   label:'baixo risco', desc:'Profilaxia farmacológica não recomendada rotineiramente.'}
+  }
+];
+
+let currentTool = null, toolValues = {};
+
+function openTools(){
+  openModal('toolsModal');
+  $('#toolsTitle').textContent = 'Ferramentas diagnósticas';
+  renderToolsList('');
+}
+
+function renderToolsList(q){
+  q = (q||'').toLowerCase().trim();
+  const filt = TOOLS.filter(t => !q
+    || t.name.toLowerCase().includes(q)
+    || t.spec.toLowerCase().includes(q)
+    || t.desc.toLowerCase().includes(q));
+  const bySpec = {};
+  filt.forEach(t => { (bySpec[t.spec] = bySpec[t.spec] || []).push(t); });
+  let html = `
+    <div class="tools-toolbar">
+      <input id="toolsSearch" placeholder="Buscar (chads, wells, pneumonia, AVC…)" value="${q.replace(/"/g,'&quot;')}">
+      <kbd style="font-size:10px;background:var(--field);border:1px solid var(--line);padding:1px 5px;border-radius:4px;color:var(--muted)">esc</kbd>
+    </div>
+    <div class="tools-list" id="toolsListBody">`;
+  if(Object.keys(bySpec).length===0){
+    html += '<div class="tool-card" style="color:var(--muted);justify-content:center">Nenhuma ferramenta encontrada.</div>';
+  } else {
+    Object.entries(bySpec).forEach(([spec, list])=>{
+      html += `<div class="tools-section">${spec}</div>`;
+      list.forEach(t=>{
+        html += `<div class="tool-card" data-tool="${t.id}" tabindex="0" role="button">
+          <div class="body">
+            <div class="name">${t.name}</div>
+            <div class="desc">${t.desc}</div>
+          </div>
+          <span class="spec-tag">${t.spec}</span>
+        </div>`;
+      });
+    });
+  }
+  html += '</div>';
+  $('#toolsView').innerHTML = html;
+  const search = $('#toolsSearch');
+  search.addEventListener('input', e => renderToolsList(e.target.value));
+  search.addEventListener('keydown', e => { if(e.key==='Escape') closeModal('toolsModal'); });
+  search.focus();
+  $$('#toolsListBody .tool-card').forEach(el=>{
+    if(!el.dataset.tool) return;
+    el.addEventListener('click', ()=>openTool(el.dataset.tool));
+    el.addEventListener('keydown', e=>{ if(e.key==='Enter') openTool(el.dataset.tool); });
+  });
+}
+
+function openTool(id){
+  const t = TOOLS.find(x=>x.id===id); if(!t) return;
+  currentTool = t;
+  toolValues = {};
+  const d = getDataFromForm();
+  t.inputs.forEach(inp=>{
+    if(!inp.prefill) return;
+    const v = inp.prefill(d);
+    if(v!==null && v!==undefined && v!==false){
+      toolValues[inp.id] = (inp.type==='select') ? v : true;
+    }
+  });
+  renderToolDetail(t);
+  $('#toolsTitle').textContent = t.name + ' · ' + t.spec;
+}
+
+function renderToolDetail(t){
+  let html = `<div class="tool-detail">
+    <div style="display:flex;align-items:center;gap:8px">
+      <button class="tool-back" id="toolBack">← Voltar</button>
+      <span class="spec-tag">${t.spec}</span>
+    </div>
+    <div class="desc">${t.desc}</div>
+    <div>`;
+  t.inputs.forEach(inp=>{
+    const prefilled = inp.prefill && toolValues[inp.id]!==undefined;
+    const autoTag = prefilled ? '<span class="auto" title="Pré-preenchido a partir do caso">AUTO</span>' : '';
+    if(inp.type==='select'){
+      html += `<div class="tool-inp">
+        <label class="lab">${inp.label}${autoTag}</label>
+        <div class="ctrl"><select data-tinp="${inp.id}">
+          ${inp.options.map(o=>`<option value="${o.v}" ${toolValues[inp.id]==o.v?'selected':''}>${o.l}</option>`).join('')}
+        </select></div>
+      </div>`;
+    } else {
+      const ptsTag = `<span class="pts">${inp.pts>0?'+':''}${inp.pts}</span>`;
+      const inpId = 'ti_'+inp.id;
+      html += `<div class="tool-inp">
+        <div class="ctrl"><input id="${inpId}" type="checkbox" data-tinp="${inp.id}" ${toolValues[inp.id]?'checked':''}></div>
+        <label class="lab" for="${inpId}">${inp.label}${autoTag}${inp.hint?`<small>${inp.hint}</small>`:''}</label>
+        ${ptsTag}
+      </div>`;
+    }
+  });
+  html += `</div><div id="toolResult"></div></div>`;
+  $('#toolsView').innerHTML = html;
+  $('#toolBack').addEventListener('click', openTools);
+  $$('#toolsView [data-tinp]').forEach(el=>{
+    el.addEventListener('change', ()=>{
+      const inp = t.inputs.find(x=>x.id===el.dataset.tinp);
+      if(inp.type==='select') toolValues[inp.id] = +el.value;
+      else toolValues[inp.id] = el.checked;
+      computeAndRender(t);
+    });
+  });
+  computeAndRender(t);
+}
+
+function computeAndRender(t){
+  let score = 0;
+  t.inputs.forEach(inp=>{
+    if(inp.type==='select')      score += +toolValues[inp.id] || 0;
+    else if(toolValues[inp.id])  score += inp.pts;
+  });
+  // Round display for non-integer scores (Wells uses 0.5)
+  const sDisp = Number.isInteger(score) ? score : (+score.toFixed(1));
+  const interp = t.interpret(score, toolValues);
+  const text = `${t.name}: ${sDisp} pontos (${interp.label}) — ${interp.desc}`;
+  $('#toolResult').innerHTML = `
+    <div class="tool-result ${interp.sev}">
+      <div style="display:flex;align-items:baseline;gap:10px;flex-wrap:wrap">
+        <div class="score-big">${sDisp}</div>
+        <div class="risk">${interp.label}</div>
+      </div>
+      <div class="interp">${interp.desc}</div>
+      <div class="actions">
+        <button class="btn primary" data-act="copy">📋 Copiar</button>
+        <button class="btn" data-act="hd">→ Inserir em HD</button>
+        <button class="btn" data-act="cd">→ Inserir em CD</button>
+      </div>
+    </div>
+    <div class="tool-foot">Auxiliar de decisão; não substitui julgamento clínico nem dispensa avaliação individualizada.</div>
+  `;
+  $$('#toolResult [data-act]').forEach(b=>{
+    b.addEventListener('click', ()=>{
+      if(b.dataset.act==='copy'){
+        navigator.clipboard.writeText(text).then(()=>toast('Copiado'));
+      } else {
+        insertToolResult(b.dataset.act==='hd' ? 'hd_text' : 'cd_text', text);
+      }
+    });
+  });
+}
+
+function insertToolResult(targetId, text){
+  const el = $('#'+targetId);
+  el.value = (el.value ? el.value + '\n' : '') + text;
+  el.dispatchEvent(new Event('input',{bubbles:true}));
+  closeModal('toolsModal');
+  toast('Inserido em ' + (targetId==='hd_text'?'HD':'CD'));
+}
 
 /* =========================================================
    SPEECH RECOGNITION
@@ -1747,6 +2219,7 @@ function wire(){
     toast(state.prefs.anon ? 'Anonimização ativada' : 'Anonimização desativada');
   });
   $('#btnHelp').addEventListener('click', ()=>openModal('helpModal'));
+  $('#btnTools').addEventListener('click', openTools);
   $('#btnPalette').addEventListener('click', openPalette);
 
   $('#caseSel').addEventListener('change', e=>{
@@ -1809,6 +2282,7 @@ function wire(){
     else if(mod && e.shiftKey && e.key.toLowerCase()==='n'){ e.preventDefault(); newCase(true); }
     else if(mod && e.shiftKey && e.key.toLowerCase()==='d'){ e.preventDefault(); toggleTheme(); }
     else if(mod && e.key.toLowerCase()==='k'){ e.preventDefault(); openPalette(); }
+    else if(mod && e.shiftKey && e.key.toLowerCase()==='e'){ e.preventDefault(); openTools(); }
     else if(e.key==='?' && !e.target.matches('input,textarea,select')){ e.preventDefault(); openModal('helpModal'); }
     else if(e.key==='Escape'){ $$('.modal.show').forEach(m=>m.classList.remove('show')); }
   });
