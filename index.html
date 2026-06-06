@@ -4,84 +4,122 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <title>Anamnese FAST — Prontuário</title>
-<meta name="description" content="Prontuário digital baseado no protocolo Anamnese FAST: ID, QD, HPMA, AP, AF, HV, RBS, Sinais, HD e CD. PWA, modo escuro, ditado, sinais de alarme, escores e exportação.">
+<meta name="description" content="Prontuário digital baseado no protocolo Anamnese FAST. PWA com sinais de alarme, escores, CID-10, autocomplete de medicamentos, ditado, multi-casos e exportação.">
 <meta name="theme-color" content="#0d6b6b">
 <link rel="manifest" href="manifest.json">
 <link rel="apple-touch-icon" href="icon.svg">
 <link rel="icon" href="icon.svg" type="image/svg+xml">
 <style>
   :root{
-    --bg:#f3f5f8; --panel:#ffffff; --ink:#0f172a; --muted:#64748b;
-    --line:#e2e8f0; --brand:#0d6b6b; --brand-2:#0a8f8f; --accent:#0ea5e9;
+    --bg:#f3f5f8; --panel:#ffffff; --ink:#0f172a; --muted:#64748b; --soft:#94a3b8;
+    --line:#e2e8f0; --line-2:#cbd5e1; --brand:#0d6b6b; --brand-2:#0a8f8f; --accent:#0ea5e9;
     --warn:#b45309; --warn-bg:#fff8eb; --warn-bd:#f3d488;
     --danger:#b91c1c; --danger-bg:#fef2f2; --danger-bd:#fecaca;
     --ok:#15803d; --ok-bg:#f0fdf4; --ok-bd:#bbf7d0;
     --chip:#e6f3f3; --field:#ffffff; --field-fc:#0f172a;
     --shadow:0 1px 2px rgba(15,23,42,.04),0 4px 16px rgba(15,23,42,.06);
-    --radius:12px;
+    --shadow-2:0 8px 24px rgba(15,23,42,.10),0 2px 6px rgba(15,23,42,.06);
+    --radius:12px; --radius-sm:8px;
+    --focus:0 0 0 3px rgba(10,143,143,.30);
   }
   html[data-theme="dark"]{
-    --bg:#0b1220; --panel:#111827; --ink:#e5e7eb; --muted:#94a3b8;
-    --line:#1f2937; --brand:#14b8a6; --brand-2:#2dd4bf; --accent:#38bdf8;
+    --bg:#0b1220; --panel:#111827; --ink:#e5e7eb; --muted:#94a3b8; --soft:#64748b;
+    --line:#1f2937; --line-2:#334155; --brand:#14b8a6; --brand-2:#2dd4bf; --accent:#38bdf8;
     --chip:#0f3a3a; --field:#0f172a; --field-fc:#e5e7eb;
-    --warn-bg:#3b2a08; --warn-bd:#7a5a16;
-    --danger-bg:#3b0d0d; --danger-bd:#7a1d1d;
-    --ok-bg:#0b3a1f; --ok-bd:#15803d;
+    --warn-bg:#3b2a08; --warn-bd:#7a5a16; --warn:#fbbf24;
+    --danger-bg:#3b0d0d; --danger-bd:#7a1d1d; --danger:#fca5a5;
+    --ok-bg:#0b3a1f; --ok-bd:#15803d; --ok:#86efac;
     --shadow:0 1px 2px rgba(0,0,0,.4),0 4px 16px rgba(0,0,0,.5);
+    --shadow-2:0 8px 24px rgba(0,0,0,.6);
+    --focus:0 0 0 3px rgba(45,212,191,.35);
   }
   *{box-sizing:border-box}
-  html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font:15px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;-webkit-font-smoothing:antialiased}
+  html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);
+    font:15px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
   a{color:var(--brand)}
+  ::selection{background:var(--chip);color:var(--brand)}
+  :focus-visible{outline:0;box-shadow:var(--focus);border-radius:6px}
 
+  /* Skip link */
+  .skip{position:absolute;left:-9999px;top:0;background:var(--brand);color:#fff;padding:10px 16px;border-radius:0 0 8px 0;z-index:100}
+  .skip:focus{left:0}
+
+  /* Header */
   header.top{
     background:linear-gradient(135deg,var(--brand) 0%,var(--brand-2) 100%);
-    color:#fff;padding:14px 20px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;
-    box-shadow:var(--shadow);position:sticky;top:0;z-index:30;
+    color:#fff;padding:12px 18px;display:flex;align-items:center;justify-content:space-between;gap:14px;
+    flex-wrap:wrap;box-shadow:var(--shadow);position:sticky;top:0;z-index:30;
   }
-  header.top .brand{display:flex;align-items:center;gap:12px}
-  header.top h1{font-size:17px;margin:0;font-weight:600}
-  header.top .sub{font-size:11.5px;opacity:.85;margin-top:2px}
-  header.top .logo{width:36px;height:36px;border-radius:10px;background:rgba(255,255,255,.15);display:grid;place-items:center;font-size:18px}
+  header.top .brand{display:flex;align-items:center;gap:11px}
+  header.top h1{font-size:16px;margin:0;font-weight:600;letter-spacing:.1px}
+  header.top .sub{font-size:11px;opacity:.85;margin-top:1px}
+  header.top .logo{width:34px;height:34px;border-radius:9px;background:rgba(255,255,255,.18);
+    display:grid;place-items:center;font-size:17px}
   header.top .actions{display:flex;gap:6px;flex-wrap:wrap;align-items:center}
-  .case-pick{
-    display:flex;align-items:center;gap:6px;background:rgba(255,255,255,.15);
-    border:1px solid rgba(255,255,255,.3);padding:5px 8px;border-radius:8px;color:#fff;font-size:12px;
-  }
-  .case-pick select{background:transparent;color:#fff;border:0;outline:0;font:inherit;max-width:180px}
-  .case-pick select option{color:#000}
+  .case-pick{display:flex;align-items:center;gap:6px;background:rgba(255,255,255,.15);
+    border:1px solid rgba(255,255,255,.28);padding:4px 8px;border-radius:8px;color:#fff;font-size:12px}
+  .case-pick select{background:transparent;color:#fff;border:0;outline:0;font:inherit;max-width:200px;cursor:pointer}
+  .case-pick select option{color:#000;background:#fff}
+  .saved-dot{width:6px;height:6px;border-radius:50%;background:#86efac;box-shadow:0 0 4px rgba(134,239,172,.6)}
+  .saved-dot.dirty{background:#fbbf24}
 
-  .btn{
-    appearance:none;border:0;background:#fff;color:var(--ink);
-    padding:7px 12px;border-radius:8px;font-weight:600;font-size:12.5px;
-    cursor:pointer;transition:transform .05s ease, box-shadow .15s ease, background .15s ease;
-    box-shadow:0 1px 2px rgba(0,0,0,.08);display:inline-flex;align-items:center;gap:6px;
-  }
+  .btn{appearance:none;border:0;background:var(--panel);color:var(--ink);
+    padding:6px 11px;border-radius:7px;font-weight:600;font-size:12px;
+    cursor:pointer;transition:background .15s, box-shadow .15s, transform .05s;
+    box-shadow:0 1px 2px rgba(0,0,0,.08);display:inline-flex;align-items:center;gap:5px;line-height:1}
   .btn:hover{box-shadow:0 2px 6px rgba(0,0,0,.12)}
   .btn:active{transform:translateY(1px)}
-  .btn.ghost{background:rgba(255,255,255,.15);color:#fff;box-shadow:none;border:1px solid rgba(255,255,255,.3)}
+  .btn.ghost{background:rgba(255,255,255,.15);color:#fff;box-shadow:none;border:1px solid rgba(255,255,255,.28)}
   .btn.ghost:hover{background:rgba(255,255,255,.25)}
+  .btn.ghost.on{background:#fff;color:var(--brand);border-color:#fff}
   .btn.primary{background:var(--brand);color:#fff}
   .btn.primary:hover{background:var(--brand-2)}
-  .btn.danger{background:#fff;color:var(--danger);border:1px solid #fecaca}
+  .btn.danger{background:var(--panel);color:var(--danger);border:1px solid var(--danger-bd)}
   .btn.success{background:var(--ok);color:#fff}
-  .icon-btn{
-    width:32px;height:32px;border-radius:8px;display:inline-grid;place-items:center;
-    background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.3);color:#fff;cursor:pointer;
-  }
+  .icon-btn{width:30px;height:30px;border-radius:8px;display:inline-grid;place-items:center;
+    background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.28);color:#fff;cursor:pointer;
+    transition:background .15s}
   .icon-btn:hover{background:rgba(255,255,255,.25)}
+  .icon-btn.sm{width:22px;height:22px;border-radius:6px;font-size:12px}
 
-  main{max-width:1240px;margin:18px auto;padding:0 16px;display:grid;grid-template-columns:1fr 440px;gap:16px}
+  /* Layout */
+  main{max-width:1320px;margin:14px auto;padding:0 14px;display:grid;
+    grid-template-columns:200px 1fr 420px;gap:14px}
+  @media (max-width:1180px){ main{grid-template-columns:1fr 400px} .navside{display:none} }
   @media (max-width:1020px){ main{grid-template-columns:1fr} }
 
-  .panel{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden}
-  .section{padding:16px 18px;border-bottom:1px solid var(--line)}
-  .section:last-child{border-bottom:0}
-  .section h2{margin:0 0 10px;font-size:13.5px;letter-spacing:.4px;text-transform:uppercase;color:var(--brand);display:flex;align-items:center;gap:10px;flex-wrap:wrap}
-  .section h2 .tag{background:var(--chip);color:var(--brand);padding:2px 8px;border-radius:999px;font-size:11px;font-weight:700;letter-spacing:.5px}
-  .section h2 .spacer{flex:1}
-  .section h2 .extra{font-size:11px;color:var(--muted);text-transform:none;letter-spacing:0;font-weight:500}
-  .section .hint{color:var(--muted);font-size:12px;margin:-4px 0 10px}
+  /* Side navigation */
+  .navside{position:sticky;top:74px;align-self:start}
+  .navside .panel{padding:10px}
+  .nav-title{font-size:10.5px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.5px;padding:6px 8px}
+  .nav-link{display:flex;align-items:center;gap:8px;padding:6px 8px;border-radius:7px;color:var(--ink);
+    text-decoration:none;font-size:13px;font-weight:500;cursor:pointer;transition:background .15s}
+  .nav-link:hover{background:var(--chip)}
+  .nav-link.active{background:var(--chip);color:var(--brand)}
+  .nav-link .ico{width:22px;height:22px;border-radius:6px;display:grid;place-items:center;font-size:10px;
+    font-weight:700;background:var(--line);color:var(--muted)}
+  .nav-link[data-status="done"] .ico{background:var(--ok);color:#fff}
+  .nav-link[data-status="missing"] .ico{background:var(--danger);color:#fff}
+  .nav-link[data-status="partial"] .ico{background:var(--warn);color:#fff}
 
+  /* Panels & sections */
+  .panel{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
+    box-shadow:var(--shadow);overflow:hidden}
+  .section{padding:14px 16px;border-bottom:1px solid var(--line);scroll-margin-top:80px}
+  .section:last-child{border-bottom:0}
+  .section h2{margin:0 0 10px;font-size:12.5px;letter-spacing:.4px;text-transform:uppercase;
+    color:var(--brand);display:flex;align-items:center;gap:10px;flex-wrap:wrap;font-weight:700}
+  .section h2 .tag{background:var(--chip);color:var(--brand);padding:2px 8px;border-radius:999px;
+    font-size:10.5px;font-weight:700;letter-spacing:.5px}
+  .section h2 .badge{margin-left:auto;font-size:10.5px;padding:1.5px 7px;border-radius:999px;
+    text-transform:none;letter-spacing:0;font-weight:600}
+  .section h2 .badge.done{background:var(--ok-bg);color:var(--ok);border:1px solid var(--ok-bd)}
+  .section h2 .badge.missing{background:var(--danger-bg);color:var(--danger);border:1px solid var(--danger-bd)}
+  .section h2 .badge.partial{background:var(--warn-bg);color:var(--warn);border:1px solid var(--warn-bd)}
+  .section .hint{color:var(--muted);font-size:12px;margin:-2px 0 10px}
+
+  /* Forms */
   .row{display:grid;grid-template-columns:repeat(12,1fr);gap:10px}
   .row > .col-12{grid-column:span 12}
   .row > .col-8{grid-column:span 8}
@@ -91,50 +129,63 @@
   .row > .col-2{grid-column:span 2}
   @media (max-width:640px){ .row > [class*="col-"]{grid-column:span 12} }
 
-  label{display:block;font-size:11.5px;font-weight:600;color:var(--muted);margin-bottom:3px;letter-spacing:.2px}
+  label{display:block;font-size:11px;font-weight:600;color:var(--muted);margin-bottom:3px;
+    letter-spacing:.2px;text-transform:uppercase}
+  label .req{color:var(--danger);margin-left:2px}
   input[type=text],input[type=number],input[type=date],select,textarea{
     width:100%;border:1px solid var(--line);border-radius:8px;background:var(--field);color:var(--field-fc);
     padding:8px 10px;font:inherit;outline:0;transition:border-color .15s, box-shadow .15s;
+    min-height:36px;
   }
-  textarea{resize:vertical;min-height:72px;line-height:1.45}
-  input:focus,select:focus,textarea:focus{border-color:var(--brand-2);box-shadow:0 0 0 3px rgba(10,143,143,.18)}
+  textarea{resize:vertical;min-height:72px;line-height:1.5}
+  input:focus,select:focus,textarea:focus{border-color:var(--brand-2);box-shadow:var(--focus)}
+  input[aria-invalid="true"]{border-color:var(--danger)}
+  input.warn{border-color:var(--warn-bd);background:var(--warn-bg)}
+  input.danger{border-color:var(--danger-bd);background:var(--danger-bg)}
+
+  .field-hint{font-size:11px;margin-top:3px;color:var(--muted)}
+  .field-hint.warn{color:var(--warn)}
+  .field-hint.danger{color:var(--danger)}
 
   .field-with-mic{position:relative}
-  .mic-btn{
-    position:absolute;right:6px;bottom:6px;width:28px;height:28px;border-radius:6px;
-    border:0;background:var(--chip);color:var(--brand);cursor:pointer;display:grid;place-items:center;font-size:14px;
-  }
+  .mic-btn{position:absolute;right:6px;bottom:6px;width:28px;height:28px;border-radius:6px;
+    border:0;background:var(--chip);color:var(--brand);cursor:pointer;display:grid;place-items:center;font-size:14px}
   .mic-btn.rec{background:var(--danger);color:#fff;animation:pulse 1.2s infinite}
   @keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(185,28,28,.5)}50%{box-shadow:0 0 0 6px rgba(185,28,28,0)}}
 
-  .check{display:inline-flex;align-items:center;gap:6px;font-size:12.5px;color:var(--ink);background:var(--field);border:1px solid var(--line);padding:5px 9px;border-radius:999px;cursor:pointer;user-select:none;transition:all .15s}
+  .check{display:inline-flex;align-items:center;gap:6px;font-size:12.5px;color:var(--ink);
+    background:var(--field);border:1px solid var(--line);padding:5px 9px;border-radius:999px;cursor:pointer;
+    user-select:none;transition:all .15s}
   .check input{margin:0}
   .check:hover{background:var(--chip)}
-  .check.on{background:var(--chip);border-color:var(--brand-2);color:var(--brand)}
+  .check.on{background:var(--chip);border-color:var(--brand-2);color:var(--brand);font-weight:600}
   .chips{display:flex;flex-wrap:wrap;gap:5px;margin-top:4px}
 
   .templates{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:8px}
-  .templates button{background:var(--field);border:1px solid var(--line);color:var(--ink);padding:4px 10px;border-radius:999px;font-size:11.5px;cursor:pointer}
-  .templates button:hover{background:var(--chip)}
+  .templates button{background:var(--field);border:1px solid var(--line);color:var(--ink);
+    padding:4px 10px;border-radius:999px;font-size:11.5px;cursor:pointer;transition:all .15s}
+  .templates button:hover{background:var(--chip);border-color:var(--brand-2)}
 
   details{border:1px dashed var(--line);border-radius:10px;padding:8px 12px;background:var(--field);margin-top:8px}
-  details > summary{cursor:pointer;font-weight:600;color:var(--brand);font-size:12.5px}
+  details > summary{cursor:pointer;font-weight:600;color:var(--brand);font-size:12.5px;list-style:none}
+  details > summary::-webkit-details-marker{display:none}
+  details > summary::before{content:'▸ ';font-size:10px}
+  details[open] > summary::before{content:'▾ '}
   details[open]{background:var(--chip)}
 
-  .alert{padding:10px 12px;border-radius:8px;font-size:12.5px;margin:8px 0;border:1px solid}
+  .alert{padding:10px 12px;border-radius:8px;font-size:12.5px;margin:8px 0;border:1px solid;line-height:1.5}
   .alert.warn{background:var(--warn-bg);border-color:var(--warn-bd);color:var(--warn)}
   .alert.red{background:var(--danger-bg);border-color:var(--danger-bd);color:var(--danger)}
   .alert.ok{background:var(--ok-bg);border-color:var(--ok-bd);color:var(--ok)}
   .alert strong{font-weight:700}
   .alert ul{margin:6px 0 0 18px;padding:0}
+  .alert ul li{margin:2px 0}
 
   /* Autocomplete */
   .ac-wrap{position:relative}
-  .ac-list{
-    position:absolute;top:100%;left:0;right:0;background:var(--panel);
-    border:1px solid var(--line);border-radius:8px;box-shadow:var(--shadow);
-    max-height:240px;overflow:auto;z-index:20;margin-top:2px;display:none;
-  }
+  .ac-list{position:absolute;top:100%;left:0;right:0;background:var(--panel);
+    border:1px solid var(--line);border-radius:8px;box-shadow:var(--shadow-2);
+    max-height:240px;overflow:auto;z-index:20;margin-top:2px;display:none}
   .ac-list.open{display:block}
   .ac-item{padding:8px 10px;cursor:pointer;font-size:13px;border-bottom:1px solid var(--line)}
   .ac-item:last-child{border-bottom:0}
@@ -142,14 +193,12 @@
   .ac-item small{display:block;color:var(--muted);font-size:11px;margin-top:1px}
 
   /* Score cards */
-  .scores{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:8px;margin-bottom:10px}
-  .score{
-    background:var(--field);border:1px solid var(--line);border-radius:10px;padding:8px 10px;
-    display:flex;flex-direction:column;gap:2px;
-  }
-  .score .lbl{font-size:10.5px;font-weight:700;color:var(--muted);letter-spacing:.4px;text-transform:uppercase}
-  .score .val{font-size:16px;font-weight:700;color:var(--ink)}
-  .score .ctx{font-size:11px;color:var(--muted)}
+  .scores{display:grid;grid-template-columns:repeat(auto-fit,minmax(110px,1fr));gap:7px;margin-bottom:10px}
+  .score{background:var(--field);border:1px solid var(--line);border-radius:9px;padding:7px 9px;
+    display:flex;flex-direction:column;gap:1px;min-width:0}
+  .score .lbl{font-size:10px;font-weight:700;color:var(--muted);letter-spacing:.4px;text-transform:uppercase}
+  .score .val{font-size:15px;font-weight:700;color:var(--ink);line-height:1.2}
+  .score .ctx{font-size:10.5px;color:var(--muted);line-height:1.3;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
   .score.warn{border-color:var(--warn-bd);background:var(--warn-bg)}
   .score.warn .val{color:var(--warn)}
   .score.red{border-color:var(--danger-bd);background:var(--danger-bg)}
@@ -158,112 +207,193 @@
   .score.ok .val{color:var(--ok)}
 
   /* Output panel */
-  .output{position:sticky;top:74px;align-self:start}
+  .output{position:sticky;top:74px;align-self:start;max-height:calc(100vh - 90px);overflow:auto}
   .output .section{padding:14px 16px}
   .output h2{color:var(--ink)}
-  .output pre{
-    background:#0f172a;color:#e2e8f0;padding:14px;border-radius:8px;
-    white-space:pre-wrap;word-wrap:break-word;font:12.5px/1.55 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
-    max-height:48vh;overflow:auto;
-  }
+  .output pre{background:#0b1220;color:#e2e8f0;padding:14px;border-radius:8px;
+    white-space:pre-wrap;word-wrap:break-word;
+    font:12.5px/1.6 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+    max-height:50vh;overflow:auto;margin:0}
   html[data-theme="dark"] .output pre{background:#020617}
   .output .out-actions{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px}
   .toggle-tabs{display:flex;gap:3px;background:var(--field);padding:3px;border-radius:8px;margin-bottom:8px;border:1px solid var(--line)}
-  .toggle-tabs button{flex:1;border:0;background:transparent;padding:6px 8px;border-radius:6px;cursor:pointer;font-size:11.5px;font-weight:600;color:var(--muted)}
+  .toggle-tabs button{flex:1;border:0;background:transparent;padding:7px 8px;border-radius:6px;cursor:pointer;
+    font-size:11.5px;font-weight:600;color:var(--muted);transition:all .15s}
   .toggle-tabs button.active{background:var(--brand);color:#fff}
 
-  /* Mode tabs (specialty) */
+  /* Mode tabs */
   .mode-tabs{display:flex;gap:4px;flex-wrap:wrap;margin-bottom:6px}
-  .mode-tabs button{
-    background:var(--field);border:1px solid var(--line);color:var(--ink);
-    padding:5px 10px;border-radius:999px;font-size:12px;cursor:pointer;
-  }
+  .mode-tabs button{background:var(--field);border:1px solid var(--line);color:var(--ink);
+    padding:5px 11px;border-radius:999px;font-size:12px;cursor:pointer;transition:all .15s}
+  .mode-tabs button:hover{border-color:var(--brand-2)}
   .mode-tabs button.active{background:var(--brand);color:#fff;border-color:var(--brand)}
 
-  .install-banner{
-    display:none;align-items:center;gap:10px;background:var(--chip);border:1px solid var(--brand-2);
-    color:var(--brand);padding:8px 12px;border-radius:8px;font-size:12.5px;margin:10px 16px;
-  }
-  .install-banner.show{display:flex}
+  /* Case tag chips */
+  .tag-chip{display:inline-flex;align-items:center;gap:4px;padding:2px 7px;border-radius:999px;
+    font-size:10.5px;font-weight:600;border:1px solid;line-height:1.4}
+  .tag-chip.urgente{background:var(--danger-bg);color:var(--danger);border-color:var(--danger-bd)}
+  .tag-chip.followup{background:var(--warn-bg);color:var(--warn);border-color:var(--warn-bd)}
+  .tag-chip.concluido{background:var(--ok-bg);color:var(--ok);border-color:var(--ok-bd)}
+  .tag-chip.rotina{background:var(--chip);color:var(--brand);border-color:var(--brand-2)}
+
+  /* Banners */
+  .banner{display:none;align-items:center;gap:10px;background:var(--chip);border:1px solid var(--brand-2);
+    color:var(--brand);padding:8px 12px;border-radius:8px;font-size:12.5px;margin:10px 14px 0;line-height:1.4}
+  .banner.show{display:flex}
 
   footer{padding:18px;text-align:center;color:var(--muted);font-size:11.5px}
-  .toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%);background:var(--ink);color:var(--panel);padding:10px 16px;border-radius:8px;font-size:13px;opacity:0;pointer-events:none;transition:opacity .25s, transform .25s;z-index:50}
+  .toast{position:fixed;bottom:84px;left:50%;transform:translateX(-50%);background:var(--ink);
+    color:var(--panel);padding:10px 16px;border-radius:8px;font-size:13px;opacity:0;pointer-events:none;
+    transition:opacity .25s, transform .25s;z-index:80;box-shadow:var(--shadow-2)}
   .toast.show{opacity:1;transform:translate(-50%,-6px)}
+
+  /* Modal */
+  .modal{position:fixed;inset:0;background:rgba(0,0,0,.5);display:none;align-items:flex-start;
+    justify-content:center;padding:80px 16px 16px;z-index:60;backdrop-filter:blur(2px)}
+  .modal.show{display:flex}
+  .modal .box{background:var(--panel);border-radius:12px;box-shadow:var(--shadow-2);
+    width:100%;max-width:560px;max-height:80vh;overflow:hidden;display:flex;flex-direction:column}
+  .modal .box header{padding:12px 14px;border-bottom:1px solid var(--line);display:flex;align-items:center;gap:10px}
+  .modal .box header input{flex:1;border:0;outline:0;font-size:15px;background:transparent;color:var(--ink)}
+  .modal .box header kbd{font-size:10px;background:var(--field);border:1px solid var(--line);padding:1px 5px;border-radius:4px;color:var(--muted)}
+  .modal .box .body{overflow:auto;padding:6px}
+  .palette-item{padding:9px 12px;border-radius:7px;cursor:pointer;display:flex;align-items:center;gap:10px;font-size:13px;color:var(--ink)}
+  .palette-item.active,.palette-item:hover{background:var(--chip)}
+  .palette-item .ico{width:24px;text-align:center;font-size:14px}
+  .palette-item .meta{font-size:11px;color:var(--muted);margin-left:auto}
+  .palette-section{padding:8px 12px 4px;font-size:10.5px;color:var(--muted);
+    text-transform:uppercase;letter-spacing:.5px;font-weight:700}
+
+  /* Keyboard shortcuts list */
+  .kbd-list{padding:14px}
+  .kbd-row{display:flex;justify-content:space-between;align-items:center;padding:7px 0;border-bottom:1px solid var(--line)}
+  .kbd-row:last-child{border-bottom:0}
+  .kbd-row span{font-size:13px}
+  .kbd-row .keys{display:flex;gap:4px}
+  .kbd-row kbd{font-size:11px;background:var(--field);border:1px solid var(--line-2);
+    padding:2px 6px;border-radius:5px;color:var(--ink);font-family:ui-monospace,monospace;box-shadow:0 1px 0 var(--line-2)}
+
+  /* FAB for mobile output */
+  .fab{position:fixed;bottom:18px;right:18px;width:54px;height:54px;border-radius:50%;
+    background:var(--brand);color:#fff;display:none;align-items:center;justify-content:center;
+    box-shadow:var(--shadow-2);border:0;cursor:pointer;font-size:22px;z-index:25}
+  .fab .fab-badge{position:absolute;top:-2px;right:-2px;background:var(--danger);color:#fff;
+    font-size:10px;font-weight:700;width:18px;height:18px;border-radius:50%;display:grid;place-items:center}
+  @media (max-width:1020px){ .fab{display:grid} .output{position:static;max-height:none} }
+
+  /* Hidden file input */
+  .file-hidden{position:absolute;left:-9999px;width:1px;height:1px;opacity:0}
 
   /* Mobile tweaks */
   @media (max-width:640px){
-    header.top{padding:10px 12px}
-    header.top h1{font-size:15px}
+    header.top{padding:10px 12px;gap:8px}
+    header.top h1{font-size:14px}
     header.top .sub{display:none}
-    .case-pick select{max-width:120px}
-    .section{padding:14px}
+    .case-pick select{max-width:140px}
+    .section{padding:12px 14px}
     main{padding:0 10px;margin:10px auto}
-    .output{position:static}
+    .btn{padding:7px 10px;font-size:13px}
+    .icon-btn{width:34px;height:34px}
+    input,select,textarea{min-height:42px;font-size:16px}  /* prevent zoom iOS */
+    label{font-size:11.5px}
   }
 
   /* Print */
   @media print{
-    header.top,.output .out-actions,.btn,.icon-btn,.templates,.toggle-tabs,.mode-tabs,footer,.install-banner,.mic-btn,details summary,.ac-list{display:none !important}
+    header.top,.output .out-actions,.btn,.icon-btn,.templates,.toggle-tabs,.mode-tabs,
+    footer,.banner,.mic-btn,details summary,.ac-list,.navside,.fab,.modal,.scores,.skip{display:none !important}
     body{background:#fff;color:#000}
     main{display:block;margin:0;padding:0;max-width:none}
     .panel{box-shadow:none;border:0}
-    .output{position:static}
+    .output{position:static;max-height:none}
     .output pre{background:#fff;color:#000;padding:0;font-size:12px;max-height:none}
     .section{break-inside:avoid;border-color:#ccc;padding:8px 0}
     details{border:0;padding:0;background:transparent}
     details[open] > summary{display:none}
-    .scores{display:none}
+    .section h2 .badge{display:none}
   }
 </style>
 </head>
 <body>
 
+<a class="skip" href="#main">Pular para conteúdo</a>
+
 <header class="top">
   <div class="brand">
-    <div class="logo">🩺</div>
+    <div class="logo" aria-hidden="true">🩺</div>
     <div>
       <h1>Anamnese FAST</h1>
-      <div class="sub">Prontuário · com PWA, sinais de alarme, escores e exportação</div>
+      <div class="sub">Prontuário · PWA · sinais de alarme · escores · CID-10</div>
     </div>
   </div>
   <div class="actions">
     <div class="case-pick" title="Caso atual">
-      <span>📁</span>
-      <select id="caseSel"></select>
-      <button class="icon-btn" id="btnNewCase" title="Novo caso" style="width:24px;height:24px">＋</button>
-      <button class="icon-btn" id="btnDelCase" title="Excluir caso" style="width:24px;height:24px">🗑</button>
+      <span class="saved-dot" id="savedDot" title="Salvo localmente"></span>
+      <select id="caseSel" aria-label="Casos salvos"></select>
+      <button class="icon-btn sm" id="btnNewCase" title="Novo caso (Ctrl/⌘+Shift+N)" aria-label="Novo caso">＋</button>
+      <button class="icon-btn sm" id="btnDelCase" title="Excluir caso" aria-label="Excluir caso">🗑</button>
     </div>
-    <button class="btn ghost" id="btnAnon" title="Anonimizar nome ao copiar/exportar">🛡 Anonimizar</button>
-    <button class="btn ghost" id="btnTheme" title="Alternar tema">🌓</button>
-    <button class="btn ghost" id="btnExample">Exemplo</button>
-    <button class="btn ghost" id="btnPrint">Imprimir/PDF</button>
+    <button class="btn ghost" id="btnPalette" title="Buscar / comandos (Ctrl/⌘+K)" aria-label="Paleta de comandos">⌘K</button>
+    <button class="btn ghost" id="btnAnon" title="Anonimizar nome ao copiar/exportar">🛡</button>
+    <button class="btn ghost" id="btnTheme" title="Alternar tema (Ctrl/⌘+Shift+D)" aria-label="Alternar tema">🌓</button>
+    <button class="btn ghost" id="btnHelp" title="Atalhos (?)" aria-label="Atalhos do teclado">?</button>
+    <button class="btn ghost" id="btnPrint" title="Imprimir / PDF (Ctrl/⌘+P)">🖨</button>
     <button class="btn" id="btnInstall" style="display:none">📲 Instalar</button>
   </div>
 </header>
 
-<div class="install-banner" id="installBanner">
+<div class="banner" id="installBanner" role="status">
   🔒 Seus dados ficam apenas neste navegador (localStorage). Nada é enviado para servidor.
   <button class="btn" style="margin-left:auto;font-size:11px;padding:4px 8px" onclick="document.getElementById('installBanner').classList.remove('show')">OK</button>
 </div>
 
-<main>
-  <!-- FORM -->
-  <form class="panel" id="form" autocomplete="off" onsubmit="return false;">
+<main id="main">
+
+  <!-- LEFT: SECTION NAV -->
+  <aside class="navside" aria-label="Navegação por seção">
+    <div class="panel">
+      <div class="nav-title">Seções</div>
+      <div id="navLinks"></div>
+      <div class="nav-title" style="margin-top:8px">Caso</div>
+      <div style="padding:6px 8px;display:flex;flex-direction:column;gap:6px">
+        <select id="caseTag" aria-label="Etiqueta do caso" style="font-size:12px;padding:5px 8px;min-height:0">
+          <option value="">— sem etiqueta —</option>
+          <option value="rotina">Rotina</option>
+          <option value="urgente">Urgente</option>
+          <option value="followup">Follow-up</option>
+          <option value="concluido">Concluído</option>
+        </select>
+        <select id="caseSort" aria-label="Ordenar casos" style="font-size:12px;padding:5px 8px;min-height:0">
+          <option value="date_desc">Mais recente primeiro</option>
+          <option value="date_asc">Mais antigo primeiro</option>
+          <option value="name">Por nome</option>
+          <option value="urgency">Urgentes primeiro</option>
+        </select>
+        <button class="btn" id="btnExport" style="justify-content:center">⬇ Exportar tudo</button>
+        <button class="btn" id="btnImport" style="justify-content:center">⬆ Importar</button>
+        <input type="file" id="fileImport" accept="application/json" class="file-hidden">
+        <button class="btn ghost" id="btnExample" style="justify-content:center;color:var(--brand);border-color:var(--line)">Carregar exemplo</button>
+      </div>
+    </div>
+  </aside>
+
+  <!-- CENTER: FORM -->
+  <form class="panel" id="form" autocomplete="off" onsubmit="return false;" aria-label="Formulário de anamnese">
 
     <div class="section" style="padding-bottom:8px">
-      <div class="mode-tabs" id="modeTabs">
-        <button type="button" data-mode="adulto" class="active">Adulto</button>
-        <button type="button" data-mode="crianca">Criança</button>
-        <button type="button" data-mode="idoso">Idoso</button>
-        <button type="button" data-mode="gestante">Gestante</button>
-        <button type="button" data-mode="psiq">Psiq./Emocional</button>
+      <div class="mode-tabs" id="modeTabs" role="tablist" aria-label="Modo de atendimento">
+        <button type="button" data-mode="adulto" class="active" role="tab">Adulto</button>
+        <button type="button" data-mode="crianca" role="tab">Criança</button>
+        <button type="button" data-mode="idoso" role="tab">Idoso</button>
+        <button type="button" data-mode="gestante" role="tab">Gestante</button>
+        <button type="button" data-mode="psiq" role="tab">Psiq./Emocional</button>
       </div>
       <div class="hint">O modo escolhido revela campos específicos da faixa/contexto.</div>
     </div>
 
     <!-- ID -->
-    <div class="section">
-      <h2><span class="tag">ID</span> Identificação <span class="spacer"></span></h2>
+    <div class="section" id="sec-id" data-section="id">
+      <h2><span class="tag">ID</span> Identificação <span class="badge" data-badge="id"></span></h2>
       <div class="row">
         <div class="col-6"><label>Nome</label><input type="text" id="id_nome" placeholder="Ex.: João da Silva"></div>
         <div class="col-2"><label>Idade</label><input type="number" id="id_idade" min="0" max="120" placeholder="45"></div>
@@ -272,15 +402,15 @@
           <select id="id_sexo"><option value="">—</option><option>masculino</option><option>feminino</option><option>outro</option></select>
         </div>
         <div class="col-2"><label>Data</label><input type="date" id="id_data"></div>
-        <div class="col-6"><label>Profissão / ocupação (se relevante)</label><input type="text" id="id_prof"></div>
-        <div class="col-6"><label>Procedência (se relevante)</label><input type="text" id="id_proc"></div>
+        <div class="col-6"><label>Profissão / ocupação</label><input type="text" id="id_prof"></div>
+        <div class="col-6"><label>Procedência</label><input type="text" id="id_proc"></div>
         <div class="col-12"><label>Informante</label><input type="text" id="id_informante" placeholder="Próprio paciente; ou: filha, que convive com a paciente"></div>
       </div>
     </div>
 
     <!-- QD -->
-    <div class="section">
-      <h2><span class="tag">QD</span> Queixa e duração</h2>
+    <div class="section" id="sec-qd" data-section="qd">
+      <h2><span class="tag">QD</span> Queixa e duração <span class="badge" data-badge="qd"></span></h2>
       <div class="hint">Curta e objetiva. O detalhamento vem na HPMA.</div>
       <div class="row">
         <div class="col-8"><label>Queixa principal</label><input type="text" id="qd_queixa" placeholder="Ex.: dor epigástrica"></div>
@@ -289,8 +419,8 @@
     </div>
 
     <!-- HPMA -->
-    <div class="section">
-      <h2><span class="tag">HPMA</span> História da moléstia atual</h2>
+    <div class="section" id="sec-hpma" data-section="hpma">
+      <h2><span class="tag">HPMA</span> História da moléstia atual <span class="badge" data-badge="hpma"></span></h2>
       <div class="hint">Cronologia: início, evolução, características e sintomas associados.</div>
       <div class="templates">
         <button type="button" data-tpl="dor">+ Dor</button>
@@ -302,12 +432,11 @@
         <button type="button" data-tpl="cef">+ Cefaleia</button>
       </div>
       <div class="field-with-mic">
-        <textarea id="hpma_text" rows="6" placeholder="Paciente refere ... iniciado(a) há ..., de início (súbito/gradual), localizada em ..., intensidade __/10, com piora ... e melhora ... Refere ... Nega ..."></textarea>
-        <button type="button" class="mic-btn" data-mic="hpma_text" title="Ditar (Web Speech API)">🎤</button>
+        <textarea id="hpma_text" rows="6" placeholder="Paciente refere ... iniciado(a) há ..., de início (súbito/gradual), localizado(a) em ..., intensidade __/10, com piora ... e melhora ..."></textarea>
+        <button type="button" class="mic-btn" data-mic="hpma_text" title="Ditar" aria-label="Ditar HPMA">🎤</button>
       </div>
-
       <details>
-        <summary>Campos auxiliares (compõem o texto automaticamente)</summary>
+        <summary>Campos auxiliares (compõem o texto)</summary>
         <div class="row" style="margin-top:8px">
           <div class="col-3"><label>Início</label><select id="hpma_inicio"><option value="">—</option><option>súbito</option><option>gradual</option></select></div>
           <div class="col-3"><label>Localização</label><input type="text" id="hpma_loc"></div>
@@ -320,70 +449,70 @@
           <div class="col-12"><button type="button" class="btn primary" id="btnComporHpma">Compor HPMA a partir dos campos</button></div>
         </div>
       </details>
-
-      <!-- Red flags sinais de alarme contextuais -->
-      <div id="redflags"></div>
+      <div id="redflags" aria-live="polite"></div>
     </div>
 
     <!-- AP -->
-    <div class="section">
-      <h2><span class="tag">AP</span> Antecedentes pessoais</h2>
-      <div class="alert warn"><strong>Alergias obrigatórias</strong> — registre o agente e a reação.</div>
+    <div class="section" id="sec-ap" data-section="ap">
+      <h2><span class="tag">AP</span> Antecedentes pessoais <span class="badge" data-badge="ap"></span></h2>
+      <div class="alert warn"><strong>Alergias obrigatórias.</strong> Registre o agente e a reação.</div>
       <div class="row">
         <div class="col-6"><label>Comorbidades</label><input type="text" id="ap_com" placeholder="Ex.: HAS, DM2"></div>
         <div class="col-6"><label>Cirurgias / internações</label><input type="text" id="ap_cir"></div>
-        <div class="col-6"><label>Alergias <span style="color:var(--danger)">*</span></label><input type="text" id="ap_alergia" placeholder="Ex.: nega / dipirona com urticária"></div>
-        <div class="col-6"><label>Medicamentos em uso</label><div class="ac-wrap"><input type="text" id="ap_med" placeholder="Comece a digitar (autocomplete)"><div class="ac-list" data-for="ap_med"></div></div></div>
+        <div class="col-6"><label>Alergias <span class="req">*</span></label><input type="text" id="ap_alergia" placeholder="Ex.: nega / dipirona com urticária"></div>
+        <div class="col-6"><label>Medicamentos em uso</label>
+          <div class="ac-wrap"><input type="text" id="ap_med" placeholder="Comece a digitar"><div class="ac-list" data-for="ap_med"></div></div>
+        </div>
         <div class="col-12"><label>Vacinação / outros</label><input type="text" id="ap_outros"></div>
       </div>
     </div>
 
     <!-- AF -->
-    <div class="section">
-      <h2><span class="tag">AF</span> Antecedentes familiares</h2>
+    <div class="section" id="sec-af" data-section="af">
+      <h2><span class="tag">AF</span> Antecedentes familiares <span class="badge" data-badge="af"></span></h2>
       <textarea id="af_text" rows="2" placeholder="Ex.: pai hipertenso e com histórico de IAM; mãe diabética."></textarea>
     </div>
 
     <!-- HV -->
-    <div class="section">
-      <h2><span class="tag">HV</span> Hábitos e vícios</h2>
+    <div class="section" id="sec-hv" data-section="hv">
+      <h2><span class="tag">HV</span> Hábitos e vícios <span class="badge" data-badge="hv"></span></h2>
       <div class="row">
-        <div class="col-4"><label>Tabagismo</label><input type="text" id="hv_tab" placeholder="Ex.: nega / atual"></div>
-        <div class="col-2"><label>Cigarros/dia</label><input type="number" id="hv_cigdia" min="0"></div>
-        <div class="col-2"><label>Anos de tabaco</label><input type="number" id="hv_anos" min="0"></div>
+        <div class="col-4"><label>Tabagismo</label><input type="text" id="hv_tab" placeholder="Ex.: nega / atual / ex"></div>
+        <div class="col-2"><label>Cig/dia</label><input type="number" id="hv_cigdia" min="0"></div>
+        <div class="col-2"><label>Anos</label><input type="number" id="hv_anos" min="0"></div>
         <div class="col-4"><label>Etilismo</label><input type="text" id="hv_eti"></div>
         <div class="col-4"><label>Drogas</label><input type="text" id="hv_dro"></div>
         <div class="col-4"><label>Atividade física</label><input type="text" id="hv_ativ"></div>
         <div class="col-4"><label>Alimentação</label><input type="text" id="hv_alim"></div>
         <div class="col-6"><label>Sono</label><input type="text" id="hv_sono"></div>
-        <div class="col-6"><label>Trabalho / exposição / contexto social</label><input type="text" id="hv_trab"></div>
+        <div class="col-6"><label>Trabalho / exposição</label><input type="text" id="hv_trab"></div>
       </div>
     </div>
 
     <!-- RBS -->
-    <div class="section">
-      <h2><span class="tag">RBS</span> Revisão breve de sistemas</h2>
-      <div class="hint">Marque o que o paciente refere; o restante entrará como "nega".</div>
+    <div class="section" id="sec-rbs" data-section="rbs">
+      <h2><span class="tag">RBS</span> Revisão breve de sistemas <span class="badge" data-badge="rbs"></span></h2>
+      <div class="hint">Marque o que o paciente refere. Os sistemas relevantes à QD abrirão automaticamente.</div>
       <div id="rbs_groups"></div>
       <div style="margin-top:8px">
-        <label>Observações livres da RBS</label>
+        <label>Observações livres</label>
         <div class="field-with-mic">
           <textarea id="rbs_obs" rows="2"></textarea>
-          <button type="button" class="mic-btn" data-mic="rbs_obs" title="Ditar">🎤</button>
+          <button type="button" class="mic-btn" data-mic="rbs_obs" title="Ditar" aria-label="Ditar observações">🎤</button>
         </div>
       </div>
     </div>
 
     <!-- Sinais -->
-    <div class="section">
-      <h2><span class="tag">Sinais</span> Dados objetivos / exame físico</h2>
+    <div class="section" id="sec-sinais" data-section="sinais">
+      <h2><span class="tag">Sinais</span> Dados objetivos / exame físico <span class="badge" data-badge="sinais"></span></h2>
       <div class="row">
-        <div class="col-3"><label>PA (mmHg)</label><input type="text" id="sv_pa" placeholder="130x80"></div>
-        <div class="col-2"><label>FC (bpm)</label><input type="number" id="sv_fc"></div>
-        <div class="col-2"><label>FR (irpm)</label><input type="number" id="sv_fr"></div>
-        <div class="col-2"><label>T (°C)</label><input type="number" id="sv_t" step="0.1"></div>
-        <div class="col-2"><label>SpO₂ (%)</label><input type="number" id="sv_sat" min="0" max="100"></div>
-        <div class="col-3"><label>Glasgow</label><input type="number" id="sv_gcs" min="3" max="15"></div>
+        <div class="col-3"><label>PA (mmHg)</label><input type="text" id="sv_pa" placeholder="130x80"><div class="field-hint" data-hint="sv_pa"></div></div>
+        <div class="col-2"><label>FC (bpm)</label><input type="number" id="sv_fc"><div class="field-hint" data-hint="sv_fc"></div></div>
+        <div class="col-2"><label>FR (irpm)</label><input type="number" id="sv_fr"><div class="field-hint" data-hint="sv_fr"></div></div>
+        <div class="col-2"><label>T (°C)</label><input type="number" id="sv_t" step="0.1"><div class="field-hint" data-hint="sv_t"></div></div>
+        <div class="col-2"><label>SpO₂ (%)</label><input type="number" id="sv_sat" min="0" max="100"><div class="field-hint" data-hint="sv_sat"></div></div>
+        <div class="col-3"><label>Glasgow</label><input type="number" id="sv_gcs" min="3" max="15"><div class="field-hint" data-hint="sv_gcs"></div></div>
         <div class="col-3"><label>Glicemia capilar</label><input type="text" id="sv_glic"></div>
         <div class="col-2"><label>Dor (0–10)</label><input type="number" id="sv_dor" min="0" max="10"></div>
         <div class="col-2"><label>Peso (kg)</label><input type="number" id="sv_peso" step="0.1"></div>
@@ -392,7 +521,7 @@
           <label>Exame geral / direcionado</label>
           <div class="field-with-mic">
             <textarea id="sv_exame" rows="4" placeholder="Ex.: bom estado geral, hidratado, corado. Abdome doloroso à palpação em epigástrio, sem irritação peritoneal."></textarea>
-            <button type="button" class="mic-btn" data-mic="sv_exame" title="Ditar">🎤</button>
+            <button type="button" class="mic-btn" data-mic="sv_exame" title="Ditar" aria-label="Ditar exame">🎤</button>
           </div>
         </div>
       </div>
@@ -427,7 +556,7 @@
       <h2><span class="tag">Gestante</span> Específicos</h2>
       <div class="row">
         <div class="col-4"><label>DUM</label><input type="date" id="ges_dum"></div>
-        <div class="col-4"><label>IG calculada</label><input type="text" id="ges_ig_calc" readonly placeholder="(automática pela DUM)"></div>
+        <div class="col-4"><label>IG calculada</label><input type="text" id="ges_ig_calc" readonly placeholder="(automática)"></div>
         <div class="col-4"><label>IG informada</label><input type="text" id="ges_ig" placeholder="Ex.: 28 sem"></div>
         <div class="col-3"><label>G</label><input type="number" id="ges_g" min="0"></div>
         <div class="col-3"><label>P</label><input type="number" id="ges_p" min="0"></div>
@@ -454,52 +583,51 @@
     </div>
 
     <!-- HD -->
-    <div class="section">
-      <h2><span class="tag">HD</span> Hipótese diagnóstica</h2>
+    <div class="section" id="sec-hd" data-section="hd">
+      <h2><span class="tag">HD</span> Hipótese diagnóstica <span class="badge" data-badge="hd"></span></h2>
       <div class="row">
-        <div class="col-12">
-          <label>Hipótese (texto livre)</label>
+        <div class="col-12"><label>Hipótese (texto livre)</label>
           <textarea id="hd_text" rows="2" placeholder="Ex.: dispepsia/dor epigástrica a esclarecer."></textarea>
         </div>
-        <div class="col-12">
-          <label>CID-10 (autocomplete)</label>
+        <div class="col-12"><label>CID-10 (autocomplete)</label>
           <div class="ac-wrap"><input type="text" id="hd_cid" placeholder="Digite código ou nome (ex.: R10, dor abdominal)"><div class="ac-list" data-for="hd_cid"></div></div>
         </div>
       </div>
     </div>
 
     <!-- CD -->
-    <div class="section">
-      <h2><span class="tag">CD</span> Conduta</h2>
+    <div class="section" id="sec-cd" data-section="cd">
+      <h2><span class="tag">CD</span> Conduta <span class="badge" data-badge="cd"></span></h2>
       <div class="field-with-mic">
         <textarea id="cd_text" rows="4" placeholder="Ex.: orientações gerais, analgesia conforme prescrição, exames laboratoriais e retorno se sinais de alarme."></textarea>
-        <button type="button" class="mic-btn" data-mic="cd_text" title="Ditar">🎤</button>
+        <button type="button" class="mic-btn" data-mic="cd_text" title="Ditar" aria-label="Ditar conduta">🎤</button>
       </div>
       <div style="margin-top:8px">
-        <label>Adicionar medicamento (autocomplete)</label>
+        <label>Adicionar medicamento</label>
         <div class="ac-wrap"><input type="text" id="cd_med" placeholder="Ex.: dipirona, omeprazol"><div class="ac-list" data-for="cd_med"></div></div>
+        <div id="allergyAlert" aria-live="assertive"></div>
       </div>
     </div>
 
   </form>
 
-  <!-- OUTPUT -->
-  <aside class="output">
+  <!-- RIGHT: OUTPUT -->
+  <aside class="output" aria-label="Saída para prontuário">
     <div class="panel">
       <div class="section">
         <h2>📝 Saída para prontuário</h2>
 
-        <div class="scores" id="scores"></div>
-        <div id="alerts"></div>
+        <div class="scores" id="scores" aria-live="polite"></div>
+        <div id="alerts" aria-live="polite"></div>
 
         <div class="toggle-tabs" role="tablist">
-          <button type="button" class="active" data-tab="resumo">Resumo</button>
-          <button type="button" data-tab="evolucao">Evolução</button>
-          <button type="button" data-tab="receita">Receita</button>
+          <button type="button" class="active" data-tab="resumo" role="tab">Resumo</button>
+          <button type="button" data-tab="evolucao" role="tab">Evolução</button>
+          <button type="button" data-tab="receita" role="tab">Receita</button>
         </div>
         <pre id="output">Preencha os campos para gerar o resumo…</pre>
         <div class="out-actions">
-          <button class="btn primary" id="btnCopy">📋 Copiar</button>
+          <button class="btn primary" id="btnCopy" title="Ctrl/⌘+Enter">📋 Copiar</button>
           <button class="btn" id="btnDownload">⬇ .txt</button>
           <button class="btn" id="btnPdf">📄 PDF</button>
           <button class="btn" id="btnWa">💬 WhatsApp</button>
@@ -507,33 +635,68 @@
         </div>
         <div class="hint" style="margin-top:8px">
           Auxiliar de organização clínica. <strong>Não substitui avaliação médica.</strong>
-          Dados ficam apenas neste navegador; "Anonimizar" troca o nome por iniciais ao copiar/exportar.
+          Dados ficam apenas neste navegador.
         </div>
       </div>
     </div>
   </aside>
 </main>
 
-<footer>Anamnese FAST · PWA · GitHub Pages · <a href="https://github.com/PedroGabrielWlassak/anamnese-fast-web" target="_blank" rel="noopener">código-fonte</a></footer>
+<footer>Anamnese FAST · PWA · <a href="https://github.com/PedroGabrielWlassak/anamnese-fast-web" target="_blank" rel="noopener">código-fonte</a></footer>
 
-<div class="toast" id="toast"></div>
+<!-- Mobile FAB -->
+<button class="fab" id="fab" title="Ver resumo" aria-label="Ver resumo">📝<span class="fab-badge" id="fabBadge" style="display:none">0</span></button>
+
+<!-- Toast -->
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<!-- Command palette -->
+<div class="modal" id="palette" role="dialog" aria-label="Paleta de comandos">
+  <div class="box">
+    <header>
+      <span>⌘</span>
+      <input id="paletteInput" placeholder="Buscar caso, ação ou seção…" aria-label="Buscar">
+      <kbd>esc</kbd>
+    </header>
+    <div class="body" id="paletteList"></div>
+  </div>
+</div>
+
+<!-- Keyboard help -->
+<div class="modal" id="helpModal" role="dialog" aria-label="Atalhos de teclado">
+  <div class="box" style="max-width:420px">
+    <header>
+      <strong>Atalhos de teclado</strong>
+      <button class="icon-btn" style="margin-left:auto;background:var(--field);color:var(--ink);border-color:var(--line)" onclick="closeModal('helpModal')">✕</button>
+    </header>
+    <div class="kbd-list">
+      <div class="kbd-row"><span>Copiar saída</span><div class="keys"><kbd>Ctrl/⌘</kbd>+<kbd>Enter</kbd></div></div>
+      <div class="kbd-row"><span>Paleta de comandos</span><div class="keys"><kbd>Ctrl/⌘</kbd>+<kbd>K</kbd></div></div>
+      <div class="kbd-row"><span>Novo caso</span><div class="keys"><kbd>Ctrl/⌘</kbd>+<kbd>Shift</kbd>+<kbd>N</kbd></div></div>
+      <div class="kbd-row"><span>Alternar tema</span><div class="keys"><kbd>Ctrl/⌘</kbd>+<kbd>Shift</kbd>+<kbd>D</kbd></div></div>
+      <div class="kbd-row"><span>Imprimir / PDF</span><div class="keys"><kbd>Ctrl/⌘</kbd>+<kbd>P</kbd></div></div>
+      <div class="kbd-row"><span>Esta ajuda</span><div class="keys"><kbd>?</kbd></div></div>
+      <div class="kbd-row"><span>Ditado (no campo)</span><div class="keys"><kbd>clique 🎤</kbd></div></div>
+    </div>
+  </div>
+</div>
 
 <script>
 /* =========================================================
-   CONFIG: RBS, templates, CID-10, medicamentos, red flags
+   CONFIG
    ========================================================= */
 const RBS = [
-  { key:'cv', label:'Cardiovascular', items:['dor torácica','palpitações','síncope','dispneia aos esforços','ortopneia','dispneia paroxística noturna','edema'] },
-  { key:'resp', label:'Respiratório', items:['tosse','dispneia','chiado','expectoração','hemoptise','dor ventilatório-dependente'] },
-  { key:'gi', label:'Gastrointestinal', items:['náuseas','vômitos','diarreia','constipação','dor abdominal','pirose','sangue nas fezes','perda de apetite'] },
-  { key:'gu', label:'Geniturinário', items:['disúria','polaciúria','urgência urinária','hematúria','dor lombar','corrimento','alterações menstruais'] },
-  { key:'neuro', label:'Neurológico', items:['cefaleia','tontura','síncope','convulsão','fraqueza','formigamento','alteração de fala','alteração visual','alteração de consciência'] },
-  { key:'geral', label:'Geral', items:['febre','perda de peso','fadiga','sudorese noturna','mal-estar','anorexia'] }
+  { key:'cv',    label:'Cardiovascular',   items:['dor torácica','palpitações','síncope','dispneia aos esforços','ortopneia','dispneia paroxística noturna','edema de MMII'] },
+  { key:'resp',  label:'Respiratório',     items:['tosse','dispneia','chiado','expectoração','hemoptise','dor ventilatório-dependente'] },
+  { key:'gi',    label:'Gastrointestinal', items:['náuseas','vômitos','diarreia','constipação','dor abdominal','pirose','sangue nas fezes','perda de apetite'] },
+  { key:'gu',    label:'Geniturinário',    items:['disúria','polaciúria','urgência urinária','hematúria','dor lombar','corrimento','alterações menstruais'] },
+  { key:'neuro', label:'Neurológico',      items:['cefaleia','tontura','síncope','convulsão','fraqueza','formigamento','alteração de fala','alteração visual','alteração de consciência'] },
+  { key:'geral', label:'Geral',            items:['febre','perda de peso','fadiga','sudorese noturna','mal-estar','anorexia'] }
 ];
 
 const TEMPLATES = {
   dor: 'Dor iniciada há __, de início (súbito/gradual), localizada em __, intensidade __/10, irradiação __, com piora __ e melhora __. ',
-  febre: 'Febre iniciada há __, máxima de ___ °C, (contínua/intermitente), associada a __. Uso de __ com __ resposta. ',
+  febre: 'Febre iniciada há __, máxima de ___ °C, (contínua/intermitente), associada a __. ',
   tosse: 'Tosse iniciada há __, (seca/produtiva), associada a __. Piora __. ',
   dispneia: 'Dispneia iniciada há __, (em repouso/aos esforços), com __ ortopneia e __ DPN, associada a __. ',
   neuro: 'Sintomas neurológicos: __; início (súbito/gradual). Nega __. ',
@@ -542,77 +705,29 @@ const TEMPLATES = {
 };
 
 const CID10 = [
-  ['A09','Diarreia e gastroenterite de origem infecciosa presumível'],
-  ['B34','Doença viral, não especificada'],
-  ['B86','Escabiose'],
-  ['E03.9','Hipotireoidismo não especificado'],
-  ['E10','Diabetes mellitus tipo 1'],
-  ['E11','Diabetes mellitus tipo 2'],
-  ['E66','Obesidade'],
-  ['E78','Distúrbios do metabolismo de lipoproteínas'],
-  ['F32','Episódio depressivo'],
-  ['F33','Transtorno depressivo recorrente'],
-  ['F41','Outros transtornos ansiosos'],
-  ['F43','Reação ao estresse / transtorno de adaptação'],
-  ['G43','Enxaqueca'],
-  ['G44','Outras síndromes de cefaleia'],
-  ['H10','Conjuntivite'],
-  ['H66','Otite média supurativa'],
-  ['I10','Hipertensão essencial'],
-  ['I20','Angina pectoris'],
-  ['I21','Infarto agudo do miocárdio'],
-  ['I48','Fibrilação e flutter atrial'],
-  ['I50','Insuficiência cardíaca'],
-  ['I63','Infarto cerebral (AVCi)'],
-  ['I64','AVC não especificado'],
-  ['J00','Nasofaringite aguda (resfriado comum)'],
-  ['J03','Amigdalite aguda'],
-  ['J06.9','Infecção aguda das vias aéreas superiores'],
-  ['J11','Influenza (gripe)'],
-  ['J18','Pneumonia não especificada'],
-  ['J20','Bronquite aguda'],
-  ['J44','DPOC'],
-  ['J45','Asma'],
-  ['K21','DRGE'],
-  ['K29','Gastrite e duodenite'],
-  ['K30','Dispepsia funcional'],
-  ['K35','Apendicite aguda'],
-  ['K52','Outras gastroenterites e colites não infecciosas'],
-  ['K59','Outros transtornos funcionais do intestino'],
-  ['K80','Colelitíase'],
-  ['L20','Dermatite atópica'],
-  ['L30','Outras dermatites'],
-  ['L50','Urticária'],
-  ['M25','Outros transtornos articulares'],
-  ['M54','Dorsalgia / lombalgia'],
-  ['M79','Outros transtornos dos tecidos moles'],
-  ['N18','Doença renal crônica'],
-  ['N30','Cistite'],
-  ['N39.0','Infecção do trato urinário'],
-  ['N76','Outras inflamações da vagina e vulva'],
-  ['N94','Dor / outras condições do aparelho genital feminino'],
-  ['O20','Hemorragia do início da gravidez'],
-  ['O21','Hiperemese gravídica'],
-  ['O26','Assistência à gestante com outras condições'],
-  ['R05','Tosse'],
-  ['R06','Dispneia'],
-  ['R07','Dor de garganta e no peito'],
-  ['R10','Dor abdominal e pélvica'],
-  ['R11','Náuseas e vômitos'],
-  ['R19','Outros sintomas digestivos'],
-  ['R21','Erupção cutânea inespecífica'],
-  ['R30','Dor ao urinar (disúria)'],
-  ['R31','Hematúria não especificada'],
-  ['R42','Tontura e instabilidade'],
-  ['R50','Febre de origem desconhecida'],
-  ['R51','Cefaleia'],
-  ['R52','Dor não classificada em outra parte'],
-  ['R55','Síncope e colapso'],
-  ['R60','Edema'],
-  ['T78','Reação alérgica não especificada'],
-  ['Z00','Exame médico geral'],
-  ['Z34','Supervisão de gravidez normal'],
-  ['Z76','Pessoas em contato com serviços de saúde']
+  ['A09','Diarreia e gastroenterite de origem infecciosa presumível'],['B34','Doença viral, não especificada'],
+  ['B86','Escabiose'],['E03.9','Hipotireoidismo não especificado'],['E10','Diabetes mellitus tipo 1'],
+  ['E11','Diabetes mellitus tipo 2'],['E66','Obesidade'],['E78','Distúrbios do metabolismo de lipoproteínas'],
+  ['F32','Episódio depressivo'],['F33','Transtorno depressivo recorrente'],['F41','Outros transtornos ansiosos'],
+  ['F43','Reação ao estresse / transtorno de adaptação'],['G43','Enxaqueca'],['G44','Outras síndromes de cefaleia'],
+  ['H10','Conjuntivite'],['H66','Otite média supurativa'],['I10','Hipertensão essencial'],['I20','Angina pectoris'],
+  ['I21','Infarto agudo do miocárdio'],['I48','Fibrilação e flutter atrial'],['I50','Insuficiência cardíaca'],
+  ['I63','Infarto cerebral (AVCi)'],['I64','AVC não especificado'],['J00','Nasofaringite aguda (resfriado)'],
+  ['J03','Amigdalite aguda'],['J06.9','Infecção aguda das vias aéreas superiores'],['J11','Influenza (gripe)'],
+  ['J18','Pneumonia não especificada'],['J20','Bronquite aguda'],['J44','DPOC'],['J45','Asma'],['K21','DRGE'],
+  ['K29','Gastrite e duodenite'],['K30','Dispepsia funcional'],['K35','Apendicite aguda'],
+  ['K52','Outras gastroenterites e colites não infecciosas'],['K59','Outros transtornos funcionais do intestino'],
+  ['K80','Colelitíase'],['L20','Dermatite atópica'],['L30','Outras dermatites'],['L50','Urticária'],
+  ['M25','Outros transtornos articulares'],['M54','Dorsalgia / lombalgia'],['M79','Outros transtornos dos tecidos moles'],
+  ['N18','Doença renal crônica'],['N30','Cistite'],['N39.0','Infecção do trato urinário'],
+  ['N76','Outras inflamações da vagina e vulva'],['N94','Dor / outras condições do aparelho genital feminino'],
+  ['O20','Hemorragia do início da gravidez'],['O21','Hiperemese gravídica'],['O26','Assistência à gestante com outras condições'],
+  ['R05','Tosse'],['R06','Dispneia'],['R07','Dor de garganta e no peito'],['R10','Dor abdominal e pélvica'],
+  ['R11','Náuseas e vômitos'],['R19','Outros sintomas digestivos'],['R21','Erupção cutânea inespecífica'],
+  ['R30','Dor ao urinar (disúria)'],['R31','Hematúria não especificada'],['R42','Tontura e instabilidade'],
+  ['R50','Febre de origem desconhecida'],['R51','Cefaleia'],['R52','Dor não classificada em outra parte'],
+  ['R55','Síncope e colapso'],['R60','Edema'],['T78','Reação alérgica não especificada'],
+  ['Z00','Exame médico geral'],['Z34','Supervisão de gravidez normal'],['Z76','Pessoas em contato com serviços de saúde']
 ];
 
 const MEDS = [
@@ -623,48 +738,54 @@ const MEDS = [
   'insulina NPH','insulina regular','levotiroxina 50 mcg',
   'omeprazol 20 mg','pantoprazol 40 mg','ranitidina 150 mg','domperidona 10 mg','metoclopramida 10 mg','ondansetrona 4 mg','bromoprida 10 mg',
   'dipirona 500 mg','paracetamol 500 mg','ibuprofeno 600 mg','diclofenaco 50 mg','nimesulida 100 mg','tramadol 50 mg','codeína 30 mg',
-  'amoxicilina 500 mg','amoxicilina + clavulanato 500/125 mg','azitromicina 500 mg','cefalexina 500 mg','ciprofloxacino 500 mg','levofloxacino 500 mg','sulfametoxazol + trimetoprima','metronidazol 250 mg','nitrofurantoína 100 mg',
+  'amoxicilina 500 mg','amoxicilina + clavulanato 500/125 mg','azitromicina 500 mg','cefalexina 500 mg','ciprofloxacino 500 mg','levofloxacino 500 mg','sulfametoxazol + trimetoprima','metronidazol 250 mg','nitrofurantoína 100 mg','penicilina G benzatina',
   'prednisona 20 mg','prednisolona 20 mg','dexametasona 4 mg','hidrocortisona 100 mg',
   'salbutamol spray','budesonida 200 mcg','formoterol + budesonida','ipratrópio',
   'loratadina 10 mg','desloratadina 5 mg','cetirizina 10 mg','prometazina 25 mg',
   'fluoxetina 20 mg','sertralina 50 mg','escitalopram 10 mg','clonazepam 2 mg','alprazolam 0,5 mg','diazepam 5 mg','quetiapina 25 mg',
-  'soro fisiológico 0,9%','soro glicosado 5%','dimenidrinato 50 mg','ondansetrona 4 mg',
+  'soro fisiológico 0,9%','soro glicosado 5%','dimenidrinato 50 mg',
   'varfarina 5 mg','rivaroxabana 20 mg','enoxaparina 40 mg','heparina',
   'vitamina D 7000 UI','vitamina B12','ácido fólico 5 mg','ferro sulfato 40 mg'
 ];
 
 const RED_FLAGS = {
-  'dor torácica': [
-    'irradiação para braço/mandíbula/dorso','sudorese','náuseas','dispneia','síncope',
-    'fatores de risco cardiovasculares','alteração de sinais vitais'
-  ],
-  'cefaleia': [
-    'início súbito (thunderclap)','pior cefaleia da vida','déficit neurológico focal',
-    'febre / rigidez de nuca','alteração visual','rebaixamento de consciência','trauma recente'
-  ],
-  'dor abdominal': [
-    'dor intensa progressiva','defesa / rigidez abdominal','vômitos persistentes','febre',
-    'sangramento','icterícia','síncope','gestação (descartar prenhez ectópica)'
-  ],
-  'dispneia': [
-    'início súbito','dor torácica','cianose','SpO₂ < 92%','confusão','uso de musculatura acessória','edema de MMII'
-  ],
-  'febre': [
-    'duração > 7 dias','prostração importante','rigidez de nuca','dispneia','dor abdominal intensa',
-    'manchas na pele','imunossupressão','extremos de idade'
-  ],
+  'dor torácica': ['irradiação para braço/mandíbula/dorso','sudorese','náuseas','dispneia','síncope','fatores de risco cardiovasculares','alteração de sinais vitais'],
+  'cefaleia': ['início súbito (thunderclap)','pior cefaleia da vida','déficit neurológico focal','febre / rigidez de nuca','alteração visual','rebaixamento de consciência','trauma recente'],
+  'dor abdominal': ['dor intensa progressiva','defesa / rigidez abdominal','vômitos persistentes','febre','sangramento','icterícia','síncope','gestação (descartar prenhez ectópica)'],
+  'dispneia': ['início súbito','dor torácica','cianose','SpO₂ < 92%','confusão','uso de musculatura acessória','edema de MMII'],
+  'febre': ['duração > 7 dias','prostração importante','rigidez de nuca','dispneia','dor abdominal intensa','manchas na pele','imunossupressão','extremos de idade'],
   'fraqueza': ['déficit focal','alteração de fala','assimetria facial','queda recente','dor torácica'],
-  'tosse': ['hemoptise','dispneia','perda de peso','sudorese noturna','> 3 semanas']
+  'tosse': ['hemoptise','dispneia','perda de peso','sudorese noturna','> 3 semanas'],
+  'síncope': ['precedida de dor torácica','sem pródromos','em decúbito','história familiar de morte súbita','recorrente'],
+  'lombalgia': ['febre','perda de peso','déficit neurológico','retenção urinária','trauma','>50 anos sem causa clara'],
+  'sangramento': ['volumoso','instabilidade hemodinâmica','uso de anticoagulante','gestação']
+};
+
+const RBS_RELEVANCE = {
+  'dor torácica':['cv','resp','geral'],'tosse':['resp','cv','geral'],'dispneia':['resp','cv','geral'],
+  'palpitaç':['cv','neuro'],'cefaleia':['neuro','geral'],'tontura':['neuro','cv'],
+  'dor abdomin':['gi','gu','geral'],'náuse':['gi'],'vômit':['gi','neuro'],'diarrei':['gi','geral'],
+  'disúria':['gu'],'dor lombar':['gu','geral'],'febre':['geral','resp','gi','gu'],
+  'fraqueza':['neuro','cv','geral'],'perda de peso':['geral','gi','neuro'],'edema':['cv','gu'],
+  'sangramento':['gi','gu','geral']
+};
+
+const VITAL_RANGES = {
+  sv_fc:{ implausible:[20,250], normal:[50,100],  label:'FC',  unit:'bpm' },
+  sv_fr:{ implausible:[4,80],   normal:[12,20],   label:'FR',  unit:'irpm' },
+  sv_t: { implausible:[28,43],  normal:[36,37.5], label:'T',   unit:'°C' },
+  sv_sat:{implausible:[50,100], normal:[95,100],  label:'SpO₂',unit:'%' },
+  sv_gcs:{implausible:[3,15],   normal:[15,15],   label:'GCS', unit:'' }
 };
 
 /* =========================================================
-   STATE: multi-case management
+   STATE
    ========================================================= */
 const KEY_CASES = 'anamnese_fast_cases_v2';
 const KEY_PREFS = 'anamnese_fast_prefs_v1';
 const LEGACY_KEY = 'anamnese_fast_v1';
 
-const $ = (s,el=document)=>el.querySelector(s);
+const $  = (s,el=document)=>el.querySelector(s);
 const $$ = (s,el=document)=>[...el.querySelectorAll(s)];
 
 const FIELDS = [
@@ -681,11 +802,28 @@ const FIELDS = [
   'psi_humor','psi_ans','psi_sono','psi_apetite','psi_func','psi_subst','psi_acomp','psi_apoio','psi_risco'
 ];
 
+const SECTIONS = [
+  {id:'id',     name:'Identificação',          icon:'ID'},
+  {id:'qd',     name:'Queixa e duração',       icon:'QD'},
+  {id:'hpma',   name:'HPMA',                   icon:'H'},
+  {id:'ap',     name:'Antec. pessoais',        icon:'AP'},
+  {id:'af',     name:'Antec. familiares',      icon:'AF'},
+  {id:'hv',     name:'Hábitos',                icon:'HV'},
+  {id:'rbs',    name:'Revisão de sistemas',    icon:'R'},
+  {id:'sinais', name:'Sinais / exame',         icon:'SV'},
+  {id:'hd',     name:'Hipótese',               icon:'HD'},
+  {id:'cd',     name:'Conduta',                icon:'CD'}
+];
+
 let state = {
   cases: [],
   currentId: null,
-  prefs: { theme:'auto', anon:false, mode:'adulto' }
+  prefs: { theme:'auto', anon:false, mode:'adulto', sort:'date_desc' }
 };
+
+let saveTimer = null;
+function markDirty(){ $('#savedDot').classList.add('dirty'); }
+function markSaved(){ $('#savedDot').classList.remove('dirty'); }
 
 function uid(){ return Math.random().toString(36).slice(2,9) + Date.now().toString(36).slice(-4); }
 
@@ -697,30 +835,28 @@ function loadAll(){
       state.cases = obj.cases || [];
       state.currentId = obj.currentId || (state.cases[0] && state.cases[0].id) || null;
     }
-    // Migrate legacy single-case
     const legacy = localStorage.getItem(LEGACY_KEY);
     if(legacy && state.cases.length===0){
-      try{
-        const data = JSON.parse(legacy);
-        const c = { id: uid(), createdAt: Date.now(), data };
-        state.cases.push(c); state.currentId = c.id;
-      }catch{}
+      try{ const data = JSON.parse(legacy); const c={id:uid(),createdAt:Date.now(),data}; state.cases.push(c); state.currentId=c.id; }catch{}
     }
     const p = localStorage.getItem(KEY_PREFS);
     if(p) Object.assign(state.prefs, JSON.parse(p));
   }catch{}
   if(state.cases.length===0) newCase(false);
+  // ensure tag field exists
+  state.cases.forEach(c => { if(!c.tag) c.tag=''; if(!c.createdAt) c.createdAt=Date.now(); });
 }
 
 function saveAll(){
   try{ localStorage.setItem(KEY_CASES, JSON.stringify({cases:state.cases, currentId:state.currentId})); }catch{}
   try{ localStorage.setItem(KEY_PREFS, JSON.stringify(state.prefs)); }catch{}
+  markSaved();
 }
 
 function currentCase(){ return state.cases.find(c=>c.id===state.currentId); }
 
 function newCase(focus=true){
-  const c = { id: uid(), createdAt: Date.now(), data:{} };
+  const c = { id:uid(), createdAt:Date.now(), tag:'', data:{} };
   state.cases.unshift(c);
   state.currentId = c.id;
   saveAll(); refreshCaseList(); setFormFromData({}); render();
@@ -728,11 +864,13 @@ function newCase(focus=true){
 }
 
 function deleteCurrent(){
-  if(!confirm('Excluir este caso? Esta ação é definitiva.')) return;
-  state.cases = state.cases.filter(c=>c.id!==state.currentId);
+  const c = currentCase(); if(!c) return;
+  if(!confirm(`Excluir o caso "${caseLabel(c)}"?\nEsta ação é definitiva.`)) return;
+  state.cases = state.cases.filter(x=>x.id!==state.currentId);
   if(state.cases.length===0) return newCase();
   state.currentId = state.cases[0].id;
   saveAll(); refreshCaseList(); setFormFromData(currentCase().data||{}); render();
+  toast('Caso excluído');
 }
 
 function caseLabel(c){
@@ -743,14 +881,28 @@ function caseLabel(c){
   return `${nome}${queixa} (${dt})`;
 }
 
+function sortedCases(){
+  const arr = [...state.cases];
+  const TAG_W = {urgente:0, followup:1, rotina:2, '':3, concluido:4};
+  switch(state.prefs.sort){
+    case 'date_asc':  return arr.sort((a,b)=>a.createdAt-b.createdAt);
+    case 'name':      return arr.sort((a,b)=>(a.data?.id_nome||'').localeCompare(b.data?.id_nome||''));
+    case 'urgency':   return arr.sort((a,b)=>(TAG_W[a.tag||'']??3) - (TAG_W[b.tag||'']??3) || b.createdAt-a.createdAt);
+    default:          return arr.sort((a,b)=>b.createdAt-a.createdAt);
+  }
+}
+
 function refreshCaseList(){
   const sel = $('#caseSel'); sel.innerHTML='';
-  state.cases.forEach(c=>{
+  sortedCases().forEach(c=>{
     const o = document.createElement('option');
-    o.value = c.id; o.textContent = caseLabel(c);
+    const flag = c.tag==='urgente' ? '🔴 ' : c.tag==='followup' ? '🟡 ' : c.tag==='concluido' ? '✅ ' : '';
+    o.value = c.id; o.textContent = flag + caseLabel(c);
     if(c.id===state.currentId) o.selected=true;
     sel.appendChild(o);
   });
+  const c = currentCase();
+  if(c) $('#caseTag').value = c.tag || '';
 }
 
 function setFormFromData(o){
@@ -766,7 +918,7 @@ function setFormFromData(o){
 
 function getDataFromForm(){
   const o = {};
-  FIELDS.forEach(id=>{ const el=$('#'+id); if(el) o[id]= el.value.trim(); });
+  FIELDS.forEach(id=>{ const el=$('#'+id); if(el) o[id]=el.value.trim(); });
   o.rbs = {};
   $$('#rbs_groups .chips').forEach(g=>{
     o.rbs[g.dataset.group] = $$('input:checked',g).map(c=>c.value);
@@ -777,16 +929,18 @@ function getDataFromForm(){
 function saveCurrent(){
   const c = currentCase(); if(!c) return;
   c.data = getDataFromForm();
-  saveAll(); refreshCaseList();
+  markDirty();
+  clearTimeout(saveTimer);
+  saveTimer = setTimeout(()=>{ saveAll(); refreshCaseList(); }, 300);
 }
 
 /* =========================================================
-   RENDER RBS
+   RBS render + smart auto-open
    ========================================================= */
 function renderRBS(){
   const wrap = $('#rbs_groups');
-  wrap.innerHTML = RBS.map((g,i)=>`
-    <details ${i===0?'open':''}>
+  wrap.innerHTML = RBS.map(g=>`
+    <details data-group="${g.key}">
       <summary>${g.label}</summary>
       <div class="chips" data-group="${g.key}">
         ${g.items.map(it=>`<label class="check"><input type="checkbox" value="${it}"><span>${it}</span></label>`).join('')}
@@ -795,28 +949,48 @@ function renderRBS(){
   `).join('');
 }
 
+function smartOpenRBS(qd){
+  const q = (qd||'').toLowerCase();
+  const open = new Set(['geral']);
+  Object.entries(RBS_RELEVANCE).forEach(([k,arr])=>{ if(q.includes(k)) arr.forEach(s=>open.add(s)); });
+  if(open.size===1 && open.has('geral')) open.add('cv'); // sensible default
+  $$('#rbs_groups details').forEach(d=>{
+    if(open.has(d.dataset.group)) d.setAttribute('open','');
+  });
+}
+
+function relevantSystemsFor(qd){
+  const q = (qd||'').toLowerCase();
+  const sys = new Set(['geral']);
+  Object.entries(RBS_RELEVANCE).forEach(([k,arr])=>{ if(q.includes(k)) arr.forEach(s=>sys.add(s)); });
+  return sys;
+}
+
 /* =========================================================
    CALCULATIONS
    ========================================================= */
-function calcIMC(p, a){ if(!p||!a) return null; const h=a/100; return +(p/(h*h)).toFixed(1); }
+function calcIMC(p,a){ if(!p||!a) return null; const h=a/100; return +(p/(h*h)).toFixed(1); }
 function classIMC(v){
   if(v<18.5) return ['baixo peso','warn'];
-  if(v<25) return ['eutrófico','ok'];
-  if(v<30) return ['sobrepeso','warn'];
-  if(v<35) return ['obesidade I','warn'];
-  if(v<40) return ['obesidade II','red'];
+  if(v<25)   return ['eutrófico','ok'];
+  if(v<30)   return ['sobrepeso','warn'];
+  if(v<35)   return ['obesidade I','warn'];
+  if(v<40)   return ['obesidade II','red'];
   return ['obesidade III','red'];
 }
-function macosAno(cd, anos){ if(!cd||!anos) return null; return +((cd*anos)/20).toFixed(1); }
-function classPA(pa){
+function macosAno(cd,anos){ if(!cd||!anos) return null; return +((cd*anos)/20).toFixed(1); }
+function parsePA(pa){
   if(!pa) return null;
   const m = String(pa).replace(/\s+/g,'').match(/^(\d{2,3})[xX\/](\d{2,3})/);
-  if(!m) return null;
-  const s=+m[1], d=+m[2];
+  return m ? [+m[1], +m[2]] : null;
+}
+function classPA(pa, idade){
+  const m = parsePA(pa); if(!m) return null;
+  const [s,d] = m;
   if(s>=180 || d>=120) return ['emergência hipertensiva','red',s,d];
-  if(s>=140 || d>=90) return ['hipertensão','warn',s,d];
-  if(s>=130 || d>=80) return ['pré-hipertensão','warn',s,d];
-  if(s<90 || d<60) return ['hipotensão','warn',s,d];
+  if(s>=140 || d>=90)  return ['hipertensão','warn',s,d];
+  if(s>=130 || d>=80)  return ['pré-hipertensão','warn',s,d];
+  if(s<90 || d<60)     return ['hipotensão','warn',s,d];
   return ['normal','ok',s,d];
 }
 function calcIG(dum){
@@ -828,19 +1002,39 @@ function calcIG(dum){
   return `${sem} sem ${rd} d`;
 }
 function mews(d){
-  // Modified Early Warning Score (sinais vitais)
   let s=0, parts=[];
   const fr=+d.sv_fr, fc=+d.sv_fc, t=+d.sv_t, sat=+d.sv_sat, gcs=+d.sv_gcs;
-  const paM = d.sv_pa ? String(d.sv_pa).match(/^(\d{2,3})/) : null;
-  const sis = paM ? +paM[1] : null;
-  function add(v,p){ if(v>0){ s+=v; parts.push(p); } }
-  if(fr){ if(fr<9)add(2,'FR<9'); else if(fr<=14)add(0,''); else if(fr<=20)add(1,'FR 15-20'); else if(fr<=29)add(2,'FR 21-29'); else add(3,'FR>=30'); }
-  if(fc){ if(fc<40)add(2,'FC<40'); else if(fc<=50)add(1,'FC 40-50'); else if(fc<=100)add(0,''); else if(fc<=110)add(1,'FC 101-110'); else if(fc<=129)add(2,'FC 111-129'); else add(3,'FC>=130'); }
-  if(sis){ if(sis<70)add(3,'PAS<70'); else if(sis<81)add(2,'PAS 70-80'); else if(sis<101)add(1,'PAS 81-100'); else if(sis<200)add(0,''); else add(2,'PAS>=200'); }
-  if(t){ if(t<35)add(2,'T<35'); else if(t<38.5)add(0,''); else add(2,'T>=38.5'); }
-  if(sat){ if(sat<92)add(3,'SpO₂<92'); else if(sat<95)add(1,'SpO₂ 92-94'); }
-  if(gcs){ if(gcs<9)add(3,'GCS<9'); else if(gcs<13)add(2,'GCS 9-12'); else if(gcs<15)add(1,'GCS 13-14'); }
+  const pa = parsePA(d.sv_pa); const sis = pa ? pa[0] : null;
+  function add(v,p){ if(v>0){ s+=v; if(p) parts.push(p); } }
+  if(fr){ if(fr<9)add(2,'FR<9'); else if(fr<=14)add(0); else if(fr<=20)add(1); else if(fr<=29)add(2,'FR↑'); else add(3,'FR↑↑'); }
+  if(fc){ if(fc<40)add(2,'FC<40'); else if(fc<=50)add(1); else if(fc<=100)add(0); else if(fc<=110)add(1); else if(fc<=129)add(2,'FC↑'); else add(3,'FC↑↑'); }
+  if(sis){ if(sis<70)add(3,'PAS<70'); else if(sis<81)add(2); else if(sis<101)add(1); else if(sis<200)add(0); else add(2,'PAS↑↑'); }
+  if(t){ if(t<35)add(2,'T<35'); else if(t<38.5)add(0); else add(2,'T↑'); }
+  if(sat){ if(sat<92)add(3,'SpO₂↓↓'); else if(sat<95)add(1,'SpO₂↓'); }
+  if(gcs){ if(gcs<9)add(3,'GCS↓↓'); else if(gcs<13)add(2,'GCS↓'); else if(gcs<15)add(1); }
   return { score:s, parts };
+}
+function qsofa(d){
+  // qSOFA: PAS≤100, FR≥22, alteração mental (GCS<15)
+  let s=0; const parts=[];
+  const fr=+d.sv_fr, gcs=+d.sv_gcs;
+  const pa=parsePA(d.sv_pa); const sis=pa?pa[0]:null;
+  if(sis && sis<=100){ s++; parts.push('PAS≤100'); }
+  if(fr && fr>=22){ s++; parts.push('FR≥22'); }
+  if(gcs && gcs<15){ s++; parts.push('GCS<15'); }
+  return { score:s, parts };
+}
+function validateVital(id, v){
+  const r = VITAL_RANGES[id]; if(!r||v==null||v==='') return null;
+  const n = +v; if(isNaN(n)) return null;
+  if(n < r.implausible[0] || n > r.implausible[1]) return {level:'danger', msg:`valor implausível (${r.label})`};
+  if(n < r.normal[0] || n > r.normal[1]) return {level:'warn', msg:`fora do normal (${r.normal[0]}–${r.normal[1]} ${r.unit})`};
+  return null;
+}
+function validatePA(v){
+  if(!v) return null;
+  if(!parsePA(v)) return {level:'warn', msg:'formato esperado: 120x80 ou 120/80'};
+  return null;
 }
 
 /* =========================================================
@@ -850,15 +1044,15 @@ function setupAutocomplete(inputId, sourceFn, formatFn){
   const inp = $('#'+inputId);
   const list = document.querySelector(`.ac-list[data-for="${inputId}"]`);
   if(!inp || !list) return;
-  let items = [], idx = -1;
+  let items=[], idx=-1;
   function close(){ list.classList.remove('open'); idx=-1; }
   function render(){
     list.innerHTML = items.slice(0,10).map((it,i)=>`<div class="ac-item ${i===idx?'active':''}" data-i="${i}">${formatFn(it)}</div>`).join('');
     list.classList.toggle('open', items.length>0);
   }
   inp.addEventListener('input', ()=>{
-    const q = inp.value.trim().toLowerCase();
-    items = q ? sourceFn(q) : [];
+    const seg = inp.value.split(/[;,]/).pop().trim().toLowerCase();
+    items = seg ? sourceFn(seg) : [];
     idx = -1; render();
   });
   inp.addEventListener('keydown', e=>{
@@ -868,50 +1062,77 @@ function setupAutocomplete(inputId, sourceFn, formatFn){
     else if(e.key==='Enter' && idx>=0){ pick(idx); e.preventDefault(); }
     else if(e.key==='Escape'){ close(); }
   });
-  list.addEventListener('click', e=>{
+  list.addEventListener('mousedown', e=>{
     const t = e.target.closest('.ac-item'); if(!t) return;
-    pick(+t.dataset.i);
+    e.preventDefault(); pick(+t.dataset.i);
   });
   inp.addEventListener('blur', ()=>setTimeout(close, 150));
   function pick(i){
     const it = items[i]; if(!it) return;
-    const txt = (typeof it === 'string') ? it : `${it[0]} - ${it[1]}`;
-    // append to existing if comma-separated; otherwise replace
-    const cur = inp.value.trim();
-    if(cur && !cur.endsWith(',') && !cur.endsWith(';')) inp.value = cur + '; ' + txt;
-    else inp.value = (cur ? cur + ' ' : '') + txt;
-    close(); inp.dispatchEvent(new Event('input', {bubbles:true}));
+    const txt = (typeof it==='string') ? it : `${it[0]} - ${it[1]}`;
+    const segs = inp.value.split(/([;,])/);
+    segs[segs.length-1] = ' ' + txt;
+    inp.value = segs.join('').replace(/^\s+/,'');
+    close(); inp.dispatchEvent(new Event('input',{bubbles:true})); inp.focus();
   }
 }
 
 /* =========================================================
-   RED FLAGS detection
+   TEXT QUALITY HELPERS
+   ========================================================= */
+function gen(d){
+  const f = d.id_sexo === 'feminino';
+  return {
+    paciente: f ? 'A paciente' : 'O paciente',
+    pacienteRel: f ? 'a paciente' : 'o paciente',
+    iniciado: f ? 'iniciada' : 'iniciado',
+    localizado: f ? 'localizada' : 'localizado',
+    associado: f ? 'associada' : 'associado',
+    submetido: f ? 'submetida' : 'submetido'
+  };
+}
+function cap(s){ s=String(s||'').trim(); return s ? s[0].toUpperCase()+s.slice(1) : s; }
+function clean(s){
+  return String(s||'')
+    .replace(/\s+\./g,'.')
+    .replace(/\s+,/g,',')
+    .replace(/\.\.+/g,'.')
+    .replace(/,\s*,/g,',')
+    .replace(/\s{2,}/g,' ')
+    .replace(/^\s+|\s+$/g,'');
+}
+function endDot(s){ s=clean(s); if(!s) return s; return /[.!?…]$/.test(s) ? s : s+'.'; }
+function joinList(arr, sep=', ', last=' e '){
+  arr = arr.filter(Boolean);
+  if(arr.length<=1) return arr.join('');
+  return arr.slice(0,-1).join(sep) + last + arr[arr.length-1];
+}
+function isFilled(v){ return v!=null && String(v).trim() !== ''; }
+
+/* =========================================================
+   RED FLAGS + ALLERGY CHECK
    ========================================================= */
 function detectRedFlags(d){
   const out = [];
-  const q = (d.qd_queixa + ' ' + d.hpma_text + ' ' + (d.hpma_assoc||'')).toLowerCase();
+  const q = (d.qd_queixa + ' ' + (d.hpma_text||'') + ' ' + (d.hpma_assoc||'')).toLowerCase();
   Object.keys(RED_FLAGS).forEach(key=>{
-    if(q.includes(key)){
-      out.push({ symptom:key, flags: RED_FLAGS[key] });
-    }
+    if(q.includes(key)) out.push({symptom:key, flags:RED_FLAGS[key]});
   });
   return out;
 }
-
-/* =========================================================
-   ANONYMIZE
-   ========================================================= */
-function anonymize(text, nome){
-  if(!state.prefs.anon || !nome) return text;
-  const initials = nome.trim().split(/\s+/).map(w=>w[0]?.toUpperCase()).filter(Boolean).join('.');
-  return text.split(nome).join(initials + '.');
+function checkAllergyConflict(d){
+  if(!d.ap_alergia || !d.cd_med) return null;
+  const a = d.ap_alergia.toLowerCase();
+  const m = d.cd_med.toLowerCase();
+  if(/(\bnega\b|sem alergi|desconhecid)/.test(a)) return null;
+  const tokens = a.split(/[,;.]| e |\(|\)/).map(x=>x.trim()).filter(x=>x.length>3 && !['com','sem','para','urticária','urticaria','prurido','reação','reacao','anafilaxia','rash'].includes(x));
+  const hits = [...new Set(tokens.filter(t => m.includes(t)))];
+  return hits.length ? hits : null;
 }
 
 /* =========================================================
-   BUILD OUTPUT
+   OUTPUT BUILDERS
    ========================================================= */
-function NI(v, f='Não informado'){ return (v && String(v).trim()) ? v : f; }
-
 function buildID(d){
   const parts = [];
   if(d.id_nome) parts.push(d.id_nome);
@@ -925,24 +1146,25 @@ function buildID(d){
 }
 function buildQD(d){
   if(!d.qd_queixa && !d.qd_tempo) return 'Não informado';
-  return [d.qd_queixa, d.qd_tempo ? ('há ' + d.qd_tempo) : ''].filter(Boolean).join(' ') + '.';
+  return endDot([d.qd_queixa, d.qd_tempo ? ('há '+d.qd_tempo) : ''].filter(Boolean).join(' '));
 }
 function buildHPMA(d){
-  if(d.hpma_text) return d.hpma_text;
+  if(d.hpma_text) return endDot(cap(d.hpma_text));
+  const g = gen(d);
   const bits = [];
-  if(d.qd_queixa) bits.push('Paciente refere ' + d.qd_queixa);
-  if(d.qd_tempo) bits.push('iniciada há ' + d.qd_tempo);
+  if(d.qd_queixa) bits.push(`${g.paciente} refere ${d.qd_queixa}`);
+  if(d.qd_tempo) bits.push(`${g.iniciado} há ${d.qd_tempo}`);
   if(d.hpma_inicio) bits.push('de início ' + d.hpma_inicio);
-  if(d.hpma_loc) bits.push('localizada em ' + d.hpma_loc);
+  if(d.hpma_loc) bits.push(`${g.localizado} em ${d.hpma_loc}`);
   if(d.hpma_int) bits.push('intensidade ' + d.hpma_int + '/10');
   if(d.hpma_irr) bits.push('com irradiação para ' + d.hpma_irr);
   if(d.hpma_piora) bits.push('com piora ' + d.hpma_piora);
   if(d.hpma_melhora) bits.push('e melhora ' + d.hpma_melhora);
   let s = bits.join(', ');
-  if(s) s += '.';
-  if(d.hpma_assoc) s += ' Refere ' + d.hpma_assoc + '.';
-  if(d.hpma_trat) s += ' Tratamento: ' + d.hpma_trat + '.';
-  return s || 'Não informado';
+  if(s) s = endDot(s);
+  if(d.hpma_assoc) s += ' Refere ' + endDot(d.hpma_assoc);
+  if(d.hpma_trat) s += ' Tratamento: ' + endDot(d.hpma_trat);
+  return clean(s) || 'Não informado';
 }
 function buildAP(d){
   const parts = [];
@@ -951,36 +1173,51 @@ function buildAP(d){
   parts.push(d.ap_alergia ? ('Alergias: ' + d.ap_alergia) : 'Alergias: não informado');
   if(d.ap_med) parts.push('Em uso de ' + d.ap_med);
   if(d.ap_outros) parts.push(d.ap_outros);
-  return parts.join('. ') + (parts.length?'.':'');
+  return endDot(parts.map(p=>p.replace(/\.+$/,'')).join('. '));
 }
-function buildAF(d){ return d.af_text || 'Não informado.'; }
+function buildAF(d){ return d.af_text ? endDot(cap(d.af_text)) : 'Não informado.'; }
 function buildHV(d){
   const parts = [];
-  if(d.hv_tab) parts.push('Tabagismo: ' + d.hv_tab);
-  const ma = macosAno(+d.hv_cigdia, +d.hv_anos);
-  if(ma) parts.push(`(${ma} maços-ano)`);
+  if(d.hv_tab){
+    let s = 'Tabagismo: ' + d.hv_tab;
+    const ma = macosAno(+d.hv_cigdia, +d.hv_anos);
+    if(ma) s += ` (${ma} maços-ano)`;
+    parts.push(s);
+  }
   if(d.hv_eti) parts.push('Etilismo: ' + d.hv_eti);
   if(d.hv_dro) parts.push('Drogas: ' + d.hv_dro);
   if(d.hv_ativ) parts.push('Atividade física: ' + d.hv_ativ);
   if(d.hv_alim) parts.push('Alimentação: ' + d.hv_alim);
   if(d.hv_sono) parts.push('Sono: ' + d.hv_sono);
   if(d.hv_trab) parts.push(d.hv_trab);
-  return parts.length ? parts.join('. ') + '.' : 'Não informado.';
+  return parts.length ? endDot(parts.join('. ')) : 'Não informado.';
 }
 function buildRBS(d){
-  const refers = [], denies = [];
+  const refers = [], deniedRel = [];
+  const relevant = relevantSystemsFor(d.qd_queixa);
+  // Include relevant + any system the user touched
+  const touched = new Set();
   RBS.forEach(g=>{
     const sel = (d.rbs && d.rbs[g.key]) || [];
+    if(sel.length) touched.add(g.key);
     sel.forEach(x=>refers.push(x));
-    g.items.forEach(it=>{ if(!sel.includes(it)) denies.push(it); });
   });
+  // Build denial list only from relevant + touched systems
+  const systemsToDeny = new Set([...relevant, ...touched]);
+  RBS.forEach(g=>{
+    if(!systemsToDeny.has(g.key)) return;
+    const sel = new Set((d.rbs && d.rbs[g.key]) || []);
+    g.items.forEach(it=>{ if(!sel.has(it)) deniedRel.push(it); });
+  });
+  // Curated negatives that always make sense
+  const keyNeg = ['febre','dor torácica','dispneia','vômitos','diarreia','cefaleia','alteração de consciência','alteração visual','síncope'];
+  const denials = [...new Set(deniedRel.filter(x => keyNeg.includes(x)))];
+
   const parts = [];
-  if(refers.length) parts.push('Refere ' + refers.join(', ') + '.');
-  const key = ['febre','dor torácica','dispneia','vômitos','diarreia','cefaleia','alteração de consciência','alteração visual'];
-  const keyDenied = key.filter(k=>denies.includes(k));
-  if(keyDenied.length) parts.push('Nega ' + keyDenied.join(', ') + '.');
-  if(d.rbs_obs) parts.push(d.rbs_obs);
-  return parts.length ? parts.join(' ') : 'Não informado.';
+  if(refers.length) parts.push('Refere ' + joinList(refers) + '.');
+  if(denials.length) parts.push('Nega ' + joinList(denials) + '.');
+  if(d.rbs_obs) parts.push(endDot(cap(d.rbs_obs)));
+  return parts.length ? clean(parts.join(' ')) : 'Sem alterações pertinentes relatadas.';
 }
 function buildSinais(d){
   const v = [];
@@ -1000,73 +1237,77 @@ function buildSinais(d){
     if(d.sv_alt) v.push('Altura ' + d.sv_alt + ' cm');
   }
   let s = v.join(', ');
-  if(d.sv_exame) s += (s?'. ':'') + d.sv_exame;
-  return s ? (s.endsWith('.')?s:s+'.') : 'Não informado.';
+  if(d.sv_exame) s += (s?'. ':'') + cap(d.sv_exame);
+  return s ? endDot(s) : 'Não informado.';
 }
 function buildHD(d){
-  let s = d.hd_text || 'A esclarecer.';
+  let s = d.hd_text ? endDot(cap(d.hd_text)) : 'A esclarecer.';
   if(d.hd_cid) s += ' [' + d.hd_cid + ']';
   return s;
 }
 function buildCD(d){
-  let s = d.cd_text || 'A definir conforme avaliação clínica.';
-  if(d.cd_med) s += '\nMedicação: ' + d.cd_med;
+  let s = d.cd_text ? endDot(cap(d.cd_text)) : 'A definir conforme avaliação clínica.';
+  if(d.cd_med) s += '\nMedicação: ' + endDot(d.cd_med);
   return s;
 }
-
 function buildSpecialty(d){
   const mode = state.prefs.mode;
   const blocks = [];
   if(mode==='crianca'){
-    const p = [];
-    if(d.ped_gest) p.push('Gestação/parto: ' + d.ped_gest);
-    if(d.ped_dnpm) p.push('DNPM: ' + d.ped_dnpm);
-    if(d.ped_vac) p.push('Vacinação: ' + d.ped_vac);
-    if(d.ped_alim) p.push('Alimentação: ' + d.ped_alim);
-    if(d.ped_eliminacoes) p.push('Eliminações: ' + d.ped_eliminacoes);
+    const p=[];
+    if(d.ped_gest) p.push('Gestação/parto: '+d.ped_gest);
+    if(d.ped_dnpm) p.push('DNPM: '+d.ped_dnpm);
+    if(d.ped_vac)  p.push('Vacinação: '+d.ped_vac);
+    if(d.ped_alim) p.push('Alimentação: '+d.ped_alim);
+    if(d.ped_eliminacoes) p.push('Eliminações: '+d.ped_eliminacoes);
     if(d.ped_contato) p.push(d.ped_contato);
-    if(p.length) blocks.push('Pediatria: ' + p.join('; ') + '.');
+    if(p.length) blocks.push('Pediatria: '+p.join('; ')+'.');
   }
   if(mode==='idoso'){
-    const p = [];
-    if(d.ger_cog) p.push('Cognição: ' + d.ger_cog);
-    if(d.ger_quedas) p.push('Quedas: ' + d.ger_quedas);
-    if(d.ger_avds) p.push('AVDs: ' + d.ger_avds);
-    if(d.ger_poli) p.push('Polifarmácia: ' + d.ger_poli);
-    if(d.ger_peso) p.push('Perda de peso: ' + d.ger_peso);
-    if(d.ger_apoio) p.push('Rede de apoio: ' + d.ger_apoio);
-    if(p.length) blocks.push('Geriatria: ' + p.join('; ') + '.');
+    const p=[];
+    if(d.ger_cog) p.push('Cognição: '+d.ger_cog);
+    if(d.ger_quedas) p.push('Quedas: '+d.ger_quedas);
+    if(d.ger_avds) p.push('AVDs: '+d.ger_avds);
+    if(d.ger_poli) p.push('Polifarmácia: '+d.ger_poli);
+    if(d.ger_peso) p.push('Perda de peso: '+d.ger_peso);
+    if(d.ger_apoio) p.push('Rede de apoio: '+d.ger_apoio);
+    if(p.length) blocks.push('Geriatria: '+p.join('; ')+'.');
   }
   if(mode==='gestante'){
-    const p = [];
-    if(d.ges_ig || d.ges_ig_calc) p.push('IG: ' + (d.ges_ig || d.ges_ig_calc));
-    if(d.ges_dum) p.push('DUM: ' + d.ges_dum);
+    const p=[];
+    if(d.ges_ig || d.ges_ig_calc) p.push('IG: '+(d.ges_ig || d.ges_ig_calc));
+    if(d.ges_dum) p.push('DUM: '+d.ges_dum);
     if(d.ges_g||d.ges_p||d.ges_a) p.push(`G${d.ges_g||0}P${d.ges_p||0}A${d.ges_a||0}`);
-    if(d.ges_pn) p.push('Pré-natal: ' + d.ges_pn);
-    if(d.ges_mov) p.push('MF: ' + d.ges_mov);
+    if(d.ges_pn) p.push('Pré-natal: '+d.ges_pn);
+    if(d.ges_mov) p.push('MF: '+d.ges_mov);
     if(d.ges_sinais) p.push(d.ges_sinais);
-    if(p.length) blocks.push('Gestante: ' + p.join('; ') + '.');
+    if(p.length) blocks.push('Gestante: '+p.join('; ')+'.');
   }
   if(mode==='psiq'){
-    const p = [];
-    if(d.psi_humor) p.push('Humor: ' + d.psi_humor);
-    if(d.psi_ans) p.push('Ansiedade: ' + d.psi_ans);
-    if(d.psi_sono) p.push('Sono: ' + d.psi_sono);
-    if(d.psi_apetite) p.push('Apetite: ' + d.psi_apetite);
-    if(d.psi_func) p.push('Impacto: ' + d.psi_func);
-    if(d.psi_subst) p.push('Substâncias: ' + d.psi_subst);
-    if(d.psi_acomp) p.push('Acompanhamento: ' + d.psi_acomp);
-    if(d.psi_apoio) p.push('Apoio: ' + d.psi_apoio);
-    if(d.psi_risco) p.push('Risco: ' + d.psi_risco);
-    if(p.length) blocks.push('Psiq./Emocional: ' + p.join('; ') + '.');
+    const p=[];
+    if(d.psi_humor) p.push('Humor: '+d.psi_humor);
+    if(d.psi_ans) p.push('Ansiedade: '+d.psi_ans);
+    if(d.psi_sono) p.push('Sono: '+d.psi_sono);
+    if(d.psi_apetite) p.push('Apetite: '+d.psi_apetite);
+    if(d.psi_func) p.push('Impacto: '+d.psi_func);
+    if(d.psi_subst) p.push('Substâncias: '+d.psi_subst);
+    if(d.psi_acomp) p.push('Acompanhamento: '+d.psi_acomp);
+    if(d.psi_apoio) p.push('Apoio: '+d.psi_apoio);
+    if(d.psi_risco) p.push('Risco: '+d.psi_risco);
+    if(p.length) blocks.push('Psiq./Emocional: '+p.join('; ')+'.');
   }
   return blocks.join('\n');
 }
 
+function anonymize(text, nome){
+  if(!state.prefs.anon || !nome) return text;
+  const initials = nome.trim().split(/\s+/).map(w=>w[0]?.toUpperCase()).filter(Boolean).join('.') + '.';
+  return text.split(nome).join(initials);
+}
+
 function buildResumo(d){
   const lines = [
-    'Resumo estruturado:',
-    '',
+    'Resumo estruturado:', '',
     'ID: ' + buildID(d),
     'QD: ' + buildQD(d),
     'HPMA: ' + buildHPMA(d),
@@ -1076,45 +1317,59 @@ function buildResumo(d){
     'RBS: ' + buildRBS(d),
     'Sinais: ' + buildSinais(d)
   ];
-  const spec = buildSpecialty(d);
-  if(spec) lines.push(spec);
+  const spec = buildSpecialty(d); if(spec) lines.push(spec);
   lines.push('HD: ' + buildHD(d));
   lines.push('CD: ' + buildCD(d));
   return anonymize(lines.join('\n'), d.id_nome);
 }
 function buildEvolucao(d){
-  const idadeSexo = [d.id_idade ? d.id_idade+' anos' : '', d.id_sexo || ''].filter(Boolean).join(', ') || '[idade/sexo]';
-  const queixa = d.qd_queixa || '[queixa]';
-  const tempo = d.qd_tempo ? ('há ' + d.qd_tempo) : '[duração]';
-  const assoc = d.hpma_assoc || '[principais sintomas/sinais]';
-  const ant = [d.ap_com, d.af_text, d.hv_tab, d.hv_eti].filter(Boolean).join('; ') || '[AP/AF/HV]';
-  const sinais = buildSinais(d).replace(/\.$/,'');
-  const hd = d.hd_text || 'a esclarecer';
-  const cd = d.cd_text || 'a definir conforme avaliação clínica';
-  return anonymize([
-    'Evolução rápida em até 3 linhas:',
-    '',
-    `Paciente ${idadeSexo}, com ${queixa} ${tempo}, associado a ${assoc}.`,
-    `Antecedentes relevantes: ${ant}. Ao exame/sinais: ${sinais}.`,
-    `HD: ${hd}. CD: ${cd}.`
-  ].join('\n'), d.id_nome);
+  const g = gen(d);
+  const idadeSexo = [d.id_idade ? d.id_idade+' anos' : '', d.id_sexo || ''].filter(Boolean).join(', ');
+  const queixa = d.qd_queixa;
+  const tempo = d.qd_tempo ? ('há '+d.qd_tempo) : '';
+  const assoc = d.hpma_assoc;
+  const ant = [d.ap_com, d.hv_tab, d.hv_eti].filter(Boolean).join('; ');
+  const sinaisRaw = buildSinais(d).replace(/\.$/,'');
+  const sinais = sinaisRaw === 'Não informado' ? '' : sinaisRaw;
+  const hd = d.hd_text || '';
+  const cd = d.cd_text || '';
+
+  const l1 = [
+    `Paciente${idadeSexo?' '+idadeSexo:''}`,
+    queixa ? (`com ${queixa}${tempo?' '+tempo:''}`) : '',
+    assoc ? (`${g.associado.replace(/^./,c=>c.toLowerCase())} a ${assoc}`) : ''
+  ].filter(Boolean).join(', ');
+
+  const l2parts = [];
+  if(ant) l2parts.push(`Antecedentes: ${ant}`);
+  if(sinais) l2parts.push(`Ao exame: ${sinais}`);
+  const l2 = l2parts.join('. ');
+
+  const l3parts = [];
+  if(hd) l3parts.push('HD: ' + hd.replace(/\.$/,''));
+  if(cd) l3parts.push('CD: ' + cd.replace(/\.$/,''));
+  const l3 = l3parts.join('. ');
+
+  const out = ['Evolução rápida em até 3 linhas:', '', endDot(l1)];
+  if(l2) out.push(endDot(l2));
+  if(l3) out.push(endDot(l3));
+  return anonymize(out.join('\n'), d.id_nome);
 }
 function buildReceita(d){
   if(!d.cd_med) return 'Sem medicação registrada na CD.\n\nUse o campo "Adicionar medicamento" na seção CD.';
   const today = new Date().toLocaleDateString('pt-BR');
-  const nome = state.prefs.anon ? (d.id_nome||'').split(/\s+/).map(w=>w[0]).join('.')+'.' : (d.id_nome || '________________________');
+  const nome = state.prefs.anon && d.id_nome
+    ? d.id_nome.split(/\s+/).map(w=>w[0]).join('.')+'.'
+    : (d.id_nome || '________________________');
+  const meds = d.cd_med.split(/[;\n]/).map(m=>m.trim()).filter(Boolean);
   return [
-    'RECEITUÁRIO',
-    '',
+    'RECEITUÁRIO', '',
     `Paciente: ${nome}`,
-    `Data: ${today}`,
-    '',
+    `Data: ${today}`, '',
     'Medicação:',
-    d.cd_med.split(/[;\n]/).map(m=>m.trim()).filter(Boolean).map((m,i)=>`${i+1}. ${m}`).join('\n'),
-    '',
+    meds.map((m,i)=>`${i+1}. ${m}`).join('\n'), '',
     'Orientações:',
-    d.cd_text || '—',
-    '',
+    d.cd_text || '—', '',
     '_____________________________',
     'Assinatura e carimbo'
   ].join('\n');
@@ -1122,66 +1377,132 @@ function buildReceita(d){
 
 let currentTab = 'resumo';
 function activeOutput(d){
-  if(currentTab==='resumo') return buildResumo(d);
+  if(currentTab==='resumo')   return buildResumo(d);
   if(currentTab==='evolucao') return buildEvolucao(d);
   return buildReceita(d);
 }
 
 /* =========================================================
-   RENDER (scores, alerts, output)
+   SECTION COMPLETION BADGES
+   ========================================================= */
+function sectionStatus(d){
+  const has = id => isFilled(d[id]);
+  const filledAny = ids => ids.some(has);
+  return {
+    id:     has('id_nome') && has('id_idade') ? 'done' : (filledAny(['id_nome','id_idade'])?'partial':'missing'),
+    qd:     has('qd_queixa') && has('qd_tempo') ? 'done' : (filledAny(['qd_queixa','qd_tempo'])?'partial':'missing'),
+    hpma:   has('hpma_text') ? 'done' : (filledAny(['hpma_inicio','hpma_loc','hpma_int'])?'partial':'missing'),
+    ap:     has('ap_alergia') ? 'done' : 'missing',  // alergia é obrigatória
+    af:     has('af_text') ? 'done' : 'partial',
+    hv:     filledAny(['hv_tab','hv_eti','hv_dro']) ? 'done' : 'partial',
+    rbs:    'done',
+    sinais: filledAny(['sv_pa','sv_fc','sv_fr','sv_t','sv_sat','sv_exame']) ? 'done' : 'partial',
+    hd:     has('hd_text') ? 'done' : 'missing',
+    cd:     has('cd_text') ? 'done' : 'missing'
+  };
+}
+function renderBadges(){
+  const d = getDataFromForm();
+  const st = sectionStatus(d);
+  const map = {done:['done','✓'], missing:['missing','!'], partial:['partial','…']};
+  Object.entries(st).forEach(([k,v])=>{
+    const b = document.querySelector(`[data-badge="${k}"]`);
+    if(b){
+      const [cls,sym] = map[v] || ['',''];
+      b.className = 'badge ' + cls;
+      b.textContent = sym;
+      b.title = ({done:'completo', missing:'pendente', partial:'parcial'})[v]||'';
+    }
+  });
+  // navside
+  $$('#navLinks .nav-link').forEach(el=>{
+    const id = el.dataset.section;
+    el.dataset.status = st[id] || 'partial';
+  });
+}
+
+/* =========================================================
+   RENDER (scores, alerts, output, validations)
    ========================================================= */
 function renderScores(d){
   const cards = [];
-  // IMC
   const imc = calcIMC(+d.sv_peso, +d.sv_alt);
-  if(imc){
-    const [lbl, sev] = classIMC(imc);
-    cards.push({lbl:'IMC', val:imc.toFixed(1), ctx:lbl, sev});
-  }
-  // PA
+  if(imc){ const [lbl, sev]=classIMC(imc); cards.push({lbl:'IMC', val:imc.toFixed(1), ctx:lbl, sev}); }
   const pa = classPA(d.sv_pa);
-  if(pa){
-    cards.push({lbl:'PA', val:`${pa[2]}/${pa[3]}`, ctx:pa[0], sev:pa[1]});
-  }
-  // Maços-ano
+  if(pa){ cards.push({lbl:'PA', val:`${pa[2]}/${pa[3]}`, ctx:pa[0], sev:pa[1]}); }
   const ma = macosAno(+d.hv_cigdia, +d.hv_anos);
-  if(ma){
-    cards.push({lbl:'Maços-ano', val:ma.toString(), ctx: ma>=20 ? 'risco significativo' : 'baixo risco', sev: ma>=20?'warn':'ok'});
-  }
-  // MEWS
-  const m = mews(d);
-  if(m.score>0 || d.sv_fc || d.sv_fr || d.sv_pa || d.sv_t || d.sv_sat){
+  if(ma){ cards.push({lbl:'Maços-ano', val:ma.toString(), ctx: ma>=20?'risco significativo':'baixo risco', sev: ma>=20?'warn':'ok'}); }
+  if(d.sv_fc || d.sv_fr || d.sv_pa || d.sv_t || d.sv_sat || d.sv_gcs){
+    const m = mews(d);
     const sev = m.score>=5 ? 'red' : m.score>=3 ? 'warn' : 'ok';
-    cards.push({lbl:'MEWS', val:m.score.toString(), ctx: m.parts.length ? m.parts.join(', ') : 'sem alterações', sev});
+    cards.push({lbl:'MEWS', val:m.score.toString(), ctx: m.parts.length?m.parts.join(', '):'sem alterações', sev});
+    const q = qsofa(d);
+    if(q.score>0 || d.sv_gcs){
+      const sev2 = q.score>=2 ? 'red' : q.score===1 ? 'warn' : 'ok';
+      cards.push({lbl:'qSOFA', val:q.score.toString(), ctx:q.parts.length?q.parts.join(', '):'negativo', sev:sev2});
+    }
   }
-  // IG
   if(d.ges_dum){
     const ig = calcIG(d.ges_dum);
     if(ig){ cards.push({lbl:'IG (DUM)', val:ig.split(' ')[0]+'s', ctx:ig, sev:'ok'}); $('#ges_ig_calc').value = ig; }
-  } else {
-    if($('#ges_ig_calc')) $('#ges_ig_calc').value = '';
+  } else if($('#ges_ig_calc')) $('#ges_ig_calc').value = '';
+  $('#scores').innerHTML = cards.map(c=>`<div class="score ${c.sev||''}"><div class="lbl">${c.lbl}</div><div class="val">${c.val}</div><div class="ctx" title="${c.ctx||''}">${c.ctx||''}</div></div>`).join('');
+}
+
+function renderVitalsValidation(d){
+  // inline warnings under vital fields
+  ['sv_fc','sv_fr','sv_t','sv_sat','sv_gcs'].forEach(id=>{
+    const inp = $('#'+id); const h = document.querySelector(`[data-hint="${id}"]`);
+    if(!inp||!h) return;
+    const v = inp.value;
+    inp.classList.remove('warn','danger');
+    h.classList.remove('warn','danger');
+    h.textContent = '';
+    const r = validateVital(id, v);
+    if(r){ inp.classList.add(r.level); h.classList.add(r.level); h.textContent = '⚠ '+r.msg; }
+  });
+  const inp = $('#sv_pa'), h = document.querySelector('[data-hint="sv_pa"]');
+  if(inp){
+    inp.classList.remove('warn','danger'); h.classList.remove('warn','danger'); h.textContent='';
+    const r = validatePA(inp.value);
+    if(r){ inp.classList.add(r.level); h.classList.add(r.level); h.textContent='⚠ '+r.msg; }
   }
-  const html = cards.map(c=>`<div class="score ${c.sev||''}"><div class="lbl">${c.lbl}</div><div class="val">${c.val}</div><div class="ctx">${c.ctx||''}</div></div>`).join('');
-  $('#scores').innerHTML = html;
 }
 
 function renderAlerts(d){
   const flags = detectRedFlags(d);
-  if(!flags.length){ $('#redflags').innerHTML=''; $('#alerts').innerHTML=''; return; }
-  const html = flags.map(f=>`
-    <div class="alert red">
-      <strong>⚠️ Sinais de alarme — ${f.symptom}</strong>
-      <ul>${f.flags.map(x=>`<li>${x}</li>`).join('')}</ul>
-    </div>
-  `).join('');
-  $('#redflags').innerHTML = html;
-  $('#alerts').innerHTML = `<div class="alert warn"><strong>Atenção:</strong> investigar sinais de alarme listados ao lado.</div>`;
+  $('#redflags').innerHTML = flags.length ? flags.map(f=>`
+    <div class="alert red"><strong>⚠️ Sinais de alarme — ${f.symptom}</strong>
+      <ul>${f.flags.map(x=>`<li>${x}</li>`).join('')}</ul></div>`).join('') : '';
+
+  const alerts = [];
+  if(flags.length) alerts.push(`<div class="alert warn"><strong>${flags.length} sinal(is) de alarme</strong> detectado(s) pela QD/HPMA. Verifique a lista no formulário.</div>`);
+  // Allergy conflict
+  const allergyHits = checkAllergyConflict(d);
+  if(allergyHits){
+    alerts.push(`<div class="alert red"><strong>⚠️ Possível alergia × medicação</strong><br>"${allergyHits.join(', ')}" aparece nas alergias e na conduta. Revise antes de prescrever.</div>`);
+    renderAllergyAlert(allergyHits);
+  } else renderAllergyAlert(null);
+  $('#alerts').innerHTML = alerts.join('');
+  updateFabBadge(flags.length + (allergyHits?1:0));
+}
+function renderAllergyAlert(hits){
+  const el = $('#allergyAlert'); if(!el) return;
+  el.innerHTML = hits ? `<div class="alert red"><strong>⚠️ Conflito com alergia:</strong> ${hits.join(', ')}</div>` : '';
+}
+
+function updateFabBadge(n){
+  const b = $('#fabBadge');
+  if(n>0){ b.textContent = n; b.style.display=''; }
+  else { b.style.display='none'; }
 }
 
 function render(){
   const d = getDataFromForm();
   renderScores(d);
+  renderVitalsValidation(d);
   renderAlerts(d);
+  renderBadges();
   $('#output').textContent = activeOutput(d);
 }
 
@@ -1191,29 +1512,129 @@ function render(){
 function applyTheme(){
   const t = state.prefs.theme;
   if(t==='auto'){
-    const dark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    document.documentElement.dataset.theme = dark ? 'dark' : 'light';
-  } else {
-    document.documentElement.dataset.theme = t;
-  }
+    document.documentElement.dataset.theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark':'light';
+  } else document.documentElement.dataset.theme = t;
 }
 function toggleTheme(){
   const cur = document.documentElement.dataset.theme;
   state.prefs.theme = cur==='dark' ? 'light' : 'dark';
   applyTheme(); saveAll();
 }
-function applyAnon(){
-  $('#btnAnon').classList.toggle('primary', state.prefs.anon);
-}
+function applyAnon(){ $('#btnAnon').classList.toggle('on', state.prefs.anon); }
 function applyMode(){
   $$('#modeTabs button').forEach(b=>b.classList.toggle('active', b.dataset.mode===state.prefs.mode));
-  $$('[data-mode-only]').forEach(el=>{
-    el.style.display = (el.dataset.modeOnly===state.prefs.mode) ? '' : 'none';
+  $$('[data-mode-only]').forEach(el=>{ el.style.display = (el.dataset.modeOnly===state.prefs.mode)?'':'none'; });
+}
+
+/* =========================================================
+   NAVSIDE
+   ========================================================= */
+function renderNav(){
+  $('#navLinks').innerHTML = SECTIONS.map(s =>
+    `<a class="nav-link" data-section="${s.id}" href="#sec-${s.id}"><span class="ico">${s.icon}</span><span>${s.name}</span></a>`
+  ).join('');
+  $$('#navLinks .nav-link').forEach(el=>{
+    el.addEventListener('click', e=>{
+      e.preventDefault();
+      const t = document.querySelector('#sec-' + el.dataset.section);
+      if(t){ t.scrollIntoView({behavior:'smooth', block:'start'}); }
+    });
   });
 }
 
 /* =========================================================
-   EXPORT
+   EXPORT / IMPORT
+   ========================================================= */
+function exportAll(){
+  const data = { exported:new Date().toISOString(), cases:state.cases, prefs:state.prefs, version:3 };
+  const blob = new Blob([JSON.stringify(data,null,2)], {type:'application/json'});
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = `anamnese-fast-backup-${new Date().toISOString().slice(0,10)}.json`;
+  document.body.appendChild(a); a.click(); a.remove();
+  toast('Backup exportado');
+}
+function importAll(file){
+  const r = new FileReader();
+  r.onload = e=>{
+    try{
+      const obj = JSON.parse(e.target.result);
+      if(!obj.cases || !Array.isArray(obj.cases)) throw new Error('Formato inválido');
+      const before = state.cases.length;
+      // merge by id
+      const ids = new Set(state.cases.map(c=>c.id));
+      obj.cases.forEach(c=>{ if(!ids.has(c.id)) state.cases.push(c); });
+      saveAll(); refreshCaseList();
+      toast(`Importado: ${state.cases.length - before} novo(s) caso(s)`);
+    }catch(err){ toast('Falha ao importar: '+err.message); }
+  };
+  r.readAsText(file);
+}
+
+/* =========================================================
+   COMMAND PALETTE
+   ========================================================= */
+const ACTIONS = [
+  {label:'Novo caso',           ico:'＋', fn:()=>newCase(true),    keys:'⌘⇧N'},
+  {label:'Excluir caso atual',  ico:'🗑', fn:deleteCurrent,         keys:''},
+  {label:'Copiar saída',        ico:'📋', fn:copyOut,               keys:'⌘↵'},
+  {label:'Baixar .txt',         ico:'⬇',  fn:downloadOut,           keys:''},
+  {label:'Imprimir / PDF',      ico:'🖨', fn:exportPdf,             keys:'⌘P'},
+  {label:'Enviar por WhatsApp', ico:'💬', fn:shareWA,               keys:''},
+  {label:'Enviar por Email',    ico:'✉', fn:shareMail,             keys:''},
+  {label:'Exportar tudo (JSON)',ico:'⬇',  fn:exportAll,             keys:''},
+  {label:'Importar JSON',       ico:'⬆',  fn:()=>$('#fileImport').click(), keys:''},
+  {label:'Alternar tema',       ico:'🌓', fn:toggleTheme,           keys:'⌘⇧D'},
+  {label:'Anonimizar nome',     ico:'🛡', fn:()=>{state.prefs.anon=!state.prefs.anon;applyAnon();saveAll();render();}, keys:''},
+  {label:'Carregar exemplo',    ico:'📝', fn:loadExample,           keys:''},
+  {label:'Atalhos do teclado',  ico:'?',  fn:()=>openModal('helpModal'), keys:'?'}
+];
+
+let palItems = [], palIdx = 0;
+function openPalette(){
+  openModal('palette');
+  const inp = $('#paletteInput'); inp.value=''; inp.focus();
+  paletteFilter('');
+}
+function paletteFilter(q){
+  q = q.toLowerCase().trim();
+  const cases = state.cases.map(c=>({type:'case', c, label:caseLabel(c)}));
+  const acts  = ACTIONS.map(a=>({type:'action', a, label:a.label}));
+  const secs  = SECTIONS.map(s=>({type:'section', s, label:'Ir para: '+s.name}));
+  const all = [...cases, ...secs, ...acts];
+  palItems = q ? all.filter(x => x.label.toLowerCase().includes(q)) : all;
+  palIdx = 0; renderPalette();
+}
+function renderPalette(){
+  if(palItems.length===0){ $('#paletteList').innerHTML = '<div class="palette-item" style="color:var(--muted)">Nada encontrado</div>'; return; }
+  const groups = {case:[], section:[], action:[]};
+  palItems.forEach((it,i)=>groups[it.type].push({...it,i}));
+  let html='';
+  if(groups.case.length){ html += '<div class="palette-section">Casos</div>' + groups.case.map(it=>itemHtml(it,'📁')).join(''); }
+  if(groups.section.length){ html += '<div class="palette-section">Seções</div>' + groups.section.map(it=>itemHtml(it,'§')).join(''); }
+  if(groups.action.length){ html += '<div class="palette-section">Ações</div>' + groups.action.map(it=>itemHtml(it, it.a.ico)).join(''); }
+  $('#paletteList').innerHTML = html;
+  // scroll active into view
+  const act = $('#paletteList .palette-item.active');
+  if(act) act.scrollIntoView({block:'nearest'});
+}
+function itemHtml(it, ico){
+  const meta = it.type==='action' && it.a.keys ? `<span class="meta">${it.a.keys}</span>` : '';
+  return `<div class="palette-item ${it.i===palIdx?'active':''}" data-i="${it.i}"><span class="ico">${ico}</span><span>${it.label}</span>${meta}</div>`;
+}
+function palettePick(i){
+  const it = palItems[i]; if(!it) return;
+  closeModal('palette');
+  if(it.type==='case'){ state.currentId = it.c.id; saveAll(); refreshCaseList(); setFormFromData(currentCase().data||{}); render(); }
+  else if(it.type==='section'){ const t = document.querySelector('#sec-'+it.s.id); if(t) t.scrollIntoView({behavior:'smooth'}); }
+  else if(it.type==='action'){ it.a.fn(); }
+}
+
+function openModal(id){ $('#'+id).classList.add('show'); }
+function closeModal(id){ $('#'+id).classList.remove('show'); }
+
+/* =========================================================
+   EXPORT actions
    ========================================================= */
 function copyOut(){
   navigator.clipboard.writeText($('#output').textContent).then(
@@ -1231,10 +1652,7 @@ function downloadOut(){
   a.download = `${nm || 'anamnese'}_${new Date().toISOString().slice(0,10)}.txt`;
   document.body.appendChild(a); a.click(); a.remove();
 }
-function shareWA(){
-  const text = encodeURIComponent($('#output').textContent);
-  window.open(`https://wa.me/?text=${text}`, '_blank');
-}
+function shareWA(){ window.open(`https://wa.me/?text=${encodeURIComponent($('#output').textContent)}`, '_blank'); }
 function shareMail(){
   const d = getDataFromForm();
   const subj = encodeURIComponent('Anamnese — ' + (d.id_nome || 'paciente'));
@@ -1244,30 +1662,29 @@ function shareMail(){
 function exportPdf(){ window.print(); }
 
 /* =========================================================
-   SPEECH RECOGNITION (Web Speech API)
+   SPEECH RECOGNITION
    ========================================================= */
-let activeRec = null, activeBtn = null;
+let activeRec=null, activeBtn=null;
 function startMic(btn){
   const targetId = btn.dataset.mic;
-  const ta = $('#'+targetId);
-  if(!ta) return;
+  const ta = $('#'+targetId); if(!ta) return;
   const SR = window.SpeechRecognition || window.webkitSpeechRecognition;
   if(!SR){ toast('Ditado não disponível neste navegador'); return; }
   if(activeRec){ activeRec.stop(); return; }
   const rec = new SR();
-  rec.lang = 'pt-BR'; rec.continuous = true; rec.interimResults = true;
+  rec.lang='pt-BR'; rec.continuous=true; rec.interimResults=true;
   let finalText = ta.value;
-  rec.onresult = (ev)=>{
+  rec.onresult = ev=>{
     let interim = '';
-    for(let i=ev.resultIndex; i<ev.results.length; i++){
+    for(let i=ev.resultIndex;i<ev.results.length;i++){
       const txt = ev.results[i][0].transcript;
-      if(ev.results[i].isFinal){ finalText += (finalText && !finalText.endsWith(' ') ? ' ' : '') + txt; }
+      if(ev.results[i].isFinal){ finalText += (finalText && !finalText.endsWith(' ')?' ':'') + txt; }
       else interim += txt;
     }
     ta.value = finalText + interim;
     ta.dispatchEvent(new Event('input',{bubbles:true}));
   };
-  rec.onerror = (e)=>{ toast('Erro no ditado: ' + e.error); stopMic(); };
+  rec.onerror = e=>{ toast('Erro no ditado: '+e.error); stopMic(); };
   rec.onend = ()=>stopMic();
   rec.start();
   activeRec = rec; activeBtn = btn;
@@ -1275,31 +1692,32 @@ function startMic(btn){
   toast('Ditando… clique no microfone para parar');
 }
 function stopMic(){
-  if(activeRec){ try{ activeRec.stop(); }catch{} }
-  if(activeBtn){ activeBtn.classList.remove('rec'); }
-  activeRec = null; activeBtn = null;
+  if(activeRec){ try{activeRec.stop();}catch{} }
+  if(activeBtn) activeBtn.classList.remove('rec');
+  activeRec=null; activeBtn=null;
 }
 
 /* =========================================================
    WIRING
    ========================================================= */
 function wire(){
-  // Auto save + render on input
   document.addEventListener('input', e=>{
     if(e.target.closest('#form')){ saveCurrent(); render(); }
   });
   document.addEventListener('change', e=>{
     if(e.target.closest('#rbs_groups')){
-      const cb = e.target.closest('input[type=checkbox]'); if(cb) cb.closest('.check').classList.toggle('on', cb.checked);
+      const cb = e.target.closest('input[type=checkbox]');
+      if(cb) cb.closest('.check').classList.toggle('on', cb.checked);
       saveCurrent(); render();
     }
+    if(e.target.id==='id_sexo'){ render(); }
+    if(e.target.id==='qd_queixa'){ smartOpenRBS(e.target.value); }
   });
 
-  // HPMA templates
   $$('#form .templates button').forEach(b=>{
     b.addEventListener('click', ()=>{
       const ta = $('#hpma_text');
-      ta.value = (ta.value ? ta.value + '\n' : '') + TEMPLATES[b.dataset.tpl];
+      ta.value = (ta.value ? ta.value+'\n' : '') + TEMPLATES[b.dataset.tpl];
       ta.focus(); saveCurrent(); render();
     });
   });
@@ -1310,7 +1728,6 @@ function wire(){
     saveCurrent(); render();
   });
 
-  // Output tabs
   $$('.toggle-tabs button').forEach(b=>{
     b.addEventListener('click', ()=>{
       $$('.toggle-tabs button').forEach(x=>x.classList.remove('active'));
@@ -1318,52 +1735,85 @@ function wire(){
     });
   });
 
-  // Mode tabs
   $$('#modeTabs button').forEach(b=>{
     b.addEventListener('click', ()=>{
       state.prefs.mode = b.dataset.mode; applyMode(); saveAll(); render();
     });
   });
 
-  // Theme
   $('#btnTheme').addEventListener('click', toggleTheme);
-  // Anon
-  $('#btnAnon').addEventListener('click', ()=>{ state.prefs.anon = !state.prefs.anon; applyAnon(); saveAll(); render(); });
+  $('#btnAnon').addEventListener('click', ()=>{
+    state.prefs.anon = !state.prefs.anon; applyAnon(); saveAll(); render();
+    toast(state.prefs.anon ? 'Anonimização ativada' : 'Anonimização desativada');
+  });
+  $('#btnHelp').addEventListener('click', ()=>openModal('helpModal'));
+  $('#btnPalette').addEventListener('click', openPalette);
 
-  // Cases
   $('#caseSel').addEventListener('change', e=>{
     state.currentId = e.target.value; saveAll();
-    setFormFromData(currentCase().data || {}); render();
+    setFormFromData(currentCase().data||{}); render();
   });
   $('#btnNewCase').addEventListener('click', ()=>newCase(true));
   $('#btnDelCase').addEventListener('click', deleteCurrent);
+  $('#caseTag').addEventListener('change', e=>{
+    const c = currentCase(); if(!c) return;
+    c.tag = e.target.value; saveAll(); refreshCaseList();
+  });
+  $('#caseSort').addEventListener('change', e=>{
+    state.prefs.sort = e.target.value; saveAll(); refreshCaseList();
+  });
 
-  // Header actions
+  $('#btnExport').addEventListener('click', exportAll);
+  $('#btnImport').addEventListener('click', ()=>$('#fileImport').click());
+  $('#fileImport').addEventListener('change', e=>{ if(e.target.files[0]) importAll(e.target.files[0]); e.target.value=''; });
   $('#btnExample').addEventListener('click', loadExample);
   $('#btnPrint').addEventListener('click', exportPdf);
 
-  // Output actions
   $('#btnCopy').addEventListener('click', copyOut);
   $('#btnDownload').addEventListener('click', downloadOut);
   $('#btnPdf').addEventListener('click', exportPdf);
   $('#btnWa').addEventListener('click', shareWA);
   $('#btnMail').addEventListener('click', shareMail);
 
-  // Mic buttons
   $$('.mic-btn').forEach(b=>b.addEventListener('click', ()=>{
     if(activeBtn===b) stopMic(); else { stopMic(); startMic(b); }
   }));
 
-  // Keyboard shortcuts
+  // FAB
+  $('#fab').addEventListener('click', ()=>{
+    document.querySelector('.output').scrollIntoView({behavior:'smooth', block:'start'});
+  });
+
+  // Modals: backdrop close + ESC
+  $$('.modal').forEach(m=>m.addEventListener('click', e=>{
+    if(e.target===m) m.classList.remove('show');
+  }));
+
+  // Palette interactions
+  $('#paletteInput').addEventListener('input', e=>paletteFilter(e.target.value));
+  $('#paletteInput').addEventListener('keydown', e=>{
+    if(e.key==='ArrowDown'){ palIdx=Math.min(palIdx+1, palItems.length-1); renderPalette(); e.preventDefault(); }
+    else if(e.key==='ArrowUp'){ palIdx=Math.max(palIdx-1, 0); renderPalette(); e.preventDefault(); }
+    else if(e.key==='Enter'){ palettePick(palIdx); e.preventDefault(); }
+    else if(e.key==='Escape'){ closeModal('palette'); }
+  });
+  $('#paletteList').addEventListener('mousedown', e=>{
+    const t = e.target.closest('.palette-item'); if(!t) return;
+    e.preventDefault(); palettePick(+t.dataset.i);
+  });
+
+  // Keyboard shortcuts (global)
   document.addEventListener('keydown', e=>{
     const mod = e.ctrlKey || e.metaKey;
     if(mod && e.key==='Enter'){ e.preventDefault(); copyOut(); }
-    if(mod && e.key.toLowerCase()==='p'){ /* default print */ }
-    if(mod && e.shiftKey && e.key.toLowerCase()==='n'){ e.preventDefault(); newCase(true); }
-    if(mod && e.shiftKey && e.key.toLowerCase()==='d'){ e.preventDefault(); toggleTheme(); }
+    else if(mod && e.shiftKey && e.key.toLowerCase()==='n'){ e.preventDefault(); newCase(true); }
+    else if(mod && e.shiftKey && e.key.toLowerCase()==='d'){ e.preventDefault(); toggleTheme(); }
+    else if(mod && e.key.toLowerCase()==='k'){ e.preventDefault(); openPalette(); }
+    else if(e.key==='?' && !e.target.matches('input,textarea,select')){ e.preventDefault(); openModal('helpModal'); }
+    else if(e.key==='Escape'){ $$('.modal.show').forEach(m=>m.classList.remove('show')); }
   });
 
-  // Theme: react to system change when in auto
+  // Theme system change
   window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', ()=>{
     if(state.prefs.theme==='auto') applyTheme();
   });
@@ -1374,7 +1824,8 @@ function wire(){
    ========================================================= */
 function loadExample(){
   const data = {
-    id_nome:'João Pereira', id_idade:'45', id_sexo:'masculino', id_data: new Date().toISOString().slice(0,10), id_informante:'próprio paciente',
+    id_nome:'João Pereira', id_idade:'45', id_sexo:'masculino',
+    id_data: new Date().toISOString().slice(0,10), id_informante:'próprio paciente',
     qd_queixa:'dor epigástrica', qd_tempo:'2 dias',
     hpma_text:'Paciente refere dor epigástrica iniciada há 2 dias, de início gradual, intensidade 6/10, sem irradiação, com piora após alimentação e melhora parcial com repouso. Refere náuseas. Nega febre, vômitos, diarreia, dor torácica e dispneia. Fez uso de dipirona com melhora discreta.',
     hpma_assoc:'náuseas',
@@ -1393,7 +1844,7 @@ function loadExample(){
 }
 
 /* =========================================================
-   PWA install prompt
+   PWA install
    ========================================================= */
 let deferredPrompt = null;
 window.addEventListener('beforeinstallprompt', e=>{
@@ -1403,10 +1854,7 @@ window.addEventListener('beforeinstallprompt', e=>{
 document.addEventListener('click', e=>{
   if(e.target.id==='btnInstall' && deferredPrompt){
     deferredPrompt.prompt();
-    deferredPrompt.userChoice.finally(()=>{
-      deferredPrompt = null;
-      $('#btnInstall').style.display = 'none';
-    });
+    deferredPrompt.userChoice.finally(()=>{ deferredPrompt=null; $('#btnInstall').style.display='none'; });
   }
 });
 
@@ -1415,42 +1863,35 @@ document.addEventListener('click', e=>{
    ========================================================= */
 function toast(msg){
   const t = $('#toast'); t.textContent = msg; t.classList.add('show');
-  clearTimeout(window.__t); window.__t = setTimeout(()=>t.classList.remove('show'), 1800);
+  clearTimeout(window.__t); window.__t = setTimeout(()=>t.classList.remove('show'), 2000);
 }
 
 /* =========================================================
    INIT
    ========================================================= */
 renderRBS();
+renderNav();
 loadAll();
 applyTheme(); applyAnon(); applyMode();
+$('#caseSort').value = state.prefs.sort || 'date_desc';
 refreshCaseList();
 setFormFromData(currentCase()?.data || {});
+smartOpenRBS(currentCase()?.data?.qd_queixa || '');
 wire();
 
-// Autocomplete sources
 setupAutocomplete('hd_cid',
   q => CID10.filter(([c,n]) => c.toLowerCase().includes(q) || n.toLowerCase().includes(q)),
   it => `<strong>${it[0]}</strong> — ${it[1]}`
 );
-setupAutocomplete('ap_med',
-  q => MEDS.filter(m => m.toLowerCase().includes(q)),
-  it => it
-);
-setupAutocomplete('cd_med',
-  q => MEDS.filter(m => m.toLowerCase().includes(q)),
-  it => it
-);
+setupAutocomplete('ap_med', q => MEDS.filter(m=>m.toLowerCase().includes(q)), it=>it);
+setupAutocomplete('cd_med', q => MEDS.filter(m=>m.toLowerCase().includes(q)), it=>it);
 
-// Show privacy banner on first visit
 if(!localStorage.getItem('seen_privacy')){
   $('#installBanner').classList.add('show');
   localStorage.setItem('seen_privacy','1');
 }
-
 render();
 
-// Register service worker
 if('serviceWorker' in navigator){
   window.addEventListener('load', ()=>navigator.serviceWorker.register('sw.js').catch(()=>{}));
 }
