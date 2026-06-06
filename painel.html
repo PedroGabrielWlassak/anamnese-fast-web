@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Painel · Consulta Rápida</title>
+<meta name="robots" content="noindex,nofollow">
+<meta name="theme-color" content="#0d6b6b">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="icon.svg">
+<style>
+  :root{
+    --bg:#f3f5f8; --panel:#ffffff; --ink:#0f172a; --muted:#64748b;
+    --line:#e2e8f0; --line-2:#cbd5e1; --brand:#0d6b6b; --brand-2:#0a8f8f;
+    --amber:#d97706; --amber-2:#b45309; --amber-bg:#fef3c7;
+    --red:#b91c1c; --red-2:#991b1b;
+    --green:#15803d; --green-2:#166534; --green-bg:#dcfce7;
+    --chip:#e6f3f3;
+    --shadow:0 1px 2px rgba(15,23,42,.04),0 8px 24px rgba(15,23,42,.08);
+    --shadow-lg:0 20px 50px rgba(15,23,42,.18);
+    --radius:16px;
+  }
+  html[data-theme="dark"]{
+    --bg:#0b1220; --panel:#111827; --ink:#e5e7eb; --muted:#94a3b8;
+    --line:#1f2937; --line-2:#334155; --brand:#14b8a6; --brand-2:#2dd4bf;
+    --amber:#fbbf24; --amber-2:#f59e0b; --amber-bg:#3b2a08;
+    --green-bg:#0b3a1f; --chip:#0f3a3a;
+    --shadow:0 1px 2px rgba(0,0,0,.4),0 8px 24px rgba(0,0,0,.5);
+    --shadow-lg:0 24px 60px rgba(0,0,0,.7);
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);
+    font:16px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing:antialiased;min-height:100vh}
+  a{color:var(--brand);text-decoration:none}
+  :focus-visible{outline:0;box-shadow:0 0 0 3px rgba(10,143,143,.35);border-radius:8px}
+
+  /* ===== TOPBAR ===== */
+  header.top{
+    background:linear-gradient(135deg,var(--brand) 0%,var(--brand-2) 100%);
+    color:#fff;padding:14px 18px;display:flex;align-items:center;justify-content:space-between;
+    gap:14px;flex-wrap:wrap;box-shadow:var(--shadow);position:sticky;top:0;z-index:30;
+  }
+  header.top .brand{display:flex;align-items:center;gap:11px}
+  header.top h1{font-size:16px;margin:0;font-weight:600}
+  header.top .sub{font-size:11px;opacity:.85;margin-top:1px}
+  header.top .logo{width:34px;height:34px;border-radius:9px;background:rgba(255,255,255,.18);
+    display:grid;place-items:center;font-size:17px}
+  .top-link{
+    background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.28);
+    padding:7px 12px;border-radius:9px;color:#fff;font-size:13px;font-weight:600;
+    display:inline-flex;align-items:center;gap:6px;cursor:pointer
+  }
+  .top-link:hover{background:rgba(255,255,255,.25)}
+  .top-actions{display:flex;gap:8px;align-items:center}
+  .theme-btn{
+    width:34px;height:34px;border-radius:9px;background:rgba(255,255,255,.15);
+    border:1px solid rgba(255,255,255,.28);color:#fff;font-size:15px;cursor:pointer;
+    display:inline-grid;place-items:center
+  }
+  .theme-btn:hover{background:rgba(255,255,255,.25)}
+
+  /* ===== HOME ===== */
+  main{max-width:1100px;margin:0 auto;padding:28px 18px 60px}
+  .hello{text-align:center;margin:8px 0 28px}
+  .hello h2{margin:0 0 6px;font-size:22px;font-weight:600;letter-spacing:.2px}
+  .hello p{margin:0;color:var(--muted);font-size:14px}
+
+  .cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+  @media(max-width:720px){.cards{grid-template-columns:1fr}}
+
+  .card{
+    border-radius:var(--radius);padding:28px 24px;cursor:pointer;
+    color:#fff;border:0;text-align:left;font:inherit;
+    box-shadow:var(--shadow);transition:transform .15s ease, box-shadow .15s ease;
+    display:flex;flex-direction:column;gap:14px;min-height:220px;
+    position:relative;overflow:hidden;
+  }
+  .card:hover{transform:translateY(-2px);box-shadow:var(--shadow-lg)}
+  .card:active{transform:translateY(0)}
+  .card::after{
+    content:"";position:absolute;inset:auto -40px -40px auto;
+    width:180px;height:180px;border-radius:50%;
+    background:rgba(255,255,255,.08);pointer-events:none
+  }
+  .card .badge{
+    display:inline-flex;align-items:center;gap:6px;align-self:flex-start;
+    background:rgba(255,255,255,.20);border:1px solid rgba(255,255,255,.35);
+    padding:4px 10px;border-radius:99px;font-size:11px;font-weight:600;
+    letter-spacing:.4px;text-transform:uppercase
+  }
+  .card h3{margin:0;font-size:22px;line-height:1.25;font-weight:700;letter-spacing:.2px}
+  .card .desc{font-size:13px;opacity:.92;line-height:1.45}
+  .card .open{margin-top:auto;font-size:13px;font-weight:600;opacity:.95}
+  .card.amarela{background:linear-gradient(135deg,#d97706 0%,#b91c1c 100%)}
+  .card.verde  {background:linear-gradient(135deg,#15803d 0%,#0d9488 100%)}
+  .card .swatches{display:flex;gap:6px;margin-top:-4px}
+  .card .swatch{width:14px;height:14px;border-radius:4px;border:1px solid rgba(255,255,255,.5)}
+
+  .quicks{margin-top:28px;display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:10px}
+  .quick{
+    background:var(--panel);border:1px solid var(--line);border-radius:12px;
+    padding:14px;color:var(--ink);font-size:13px;font-weight:600;
+    display:flex;align-items:center;gap:10px;cursor:pointer;
+    box-shadow:var(--shadow);font-family:inherit
+  }
+  .quick:hover{border-color:var(--brand)}
+  .quick .ico{width:28px;height:28px;border-radius:8px;display:grid;place-items:center;
+    background:rgba(13,107,107,.10);color:var(--brand);font-size:14px;flex-shrink:0}
+
+  footer{text-align:center;color:var(--muted);font-size:11px;padding:24px 16px}
+  footer .warn{color:var(--amber-2);font-size:11px;margin-top:6px}
+
+  /* ===== READER (FULLSCREEN) ===== */
+  .reader{
+    position:fixed;inset:0;z-index:80;background:var(--bg);
+    display:none;flex-direction:column
+  }
+  .reader.open{display:flex}
+  .rbar{
+    background:linear-gradient(135deg,var(--brand) 0%,var(--brand-2) 100%);
+    color:#fff;padding:10px 14px;display:flex;align-items:center;gap:10px;
+    box-shadow:var(--shadow);flex-shrink:0
+  }
+  .rbar .acc{
+    width:34px;height:34px;border-radius:9px;display:grid;place-items:center;
+    background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.28);
+    color:#fff;cursor:pointer;font-size:15px;flex-shrink:0
+  }
+  .rbar .acc:hover{background:rgba(255,255,255,.25)}
+  .rbar .rt{flex:1;min-width:0}
+  .rbar .rt .t{font-size:14px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .rbar .rt .s{font-size:11px;opacity:.85}
+  .rsearch{
+    flex:0 1 320px;display:flex;align-items:center;gap:6px;
+    background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.28);
+    border-radius:9px;padding:6px 10px;color:#fff
+  }
+  .rsearch input{
+    flex:1;min-width:80px;background:transparent;border:0;outline:0;color:#fff;
+    font:inherit;font-size:13px
+  }
+  .rsearch input::placeholder{color:rgba(255,255,255,.7)}
+  @media(max-width:720px){.rsearch{flex:0 0 auto;width:42px;padding:6px;justify-content:center}
+    .rsearch input{display:none}.rsearch.exp{flex:1;width:auto;padding:6px 10px;justify-content:flex-start}.rsearch.exp input{display:block}}
+
+  .rwrap{flex:1;display:grid;grid-template-columns:300px 1fr;min-height:0}
+  @media(max-width:900px){.rwrap{grid-template-columns:1fr}}
+
+  .rside{
+    background:var(--panel);border-right:1px solid var(--line);
+    overflow-y:auto;padding:8px 4px 80px 8px
+  }
+  @media(max-width:900px){
+    .rside{display:none;position:absolute;left:0;top:54px;bottom:0;width:min(320px,85vw);z-index:5;
+      box-shadow:var(--shadow-lg)}
+    .rside.open{display:block}
+  }
+  .rside .sec{margin-bottom:6px}
+  .rside .sec-h{
+    padding:8px 10px;font-size:11px;font-weight:700;text-transform:uppercase;
+    letter-spacing:.6px;color:var(--brand);cursor:pointer;
+    display:flex;align-items:center;justify-content:space-between;gap:6px;
+    border-radius:8px;user-select:none
+  }
+  .rside .sec-h:hover{background:var(--chip)}
+  .rside .sec-h .arr{font-size:10px;opacity:.7;transition:transform .15s}
+  .rside .sec.collapsed .sec-h .arr{transform:rotate(-90deg)}
+  .rside .sec.collapsed .topics{display:none}
+  .rside .topics{display:flex;flex-direction:column;gap:1px;padding:2px 0 6px 6px}
+  .rside .topic{
+    padding:7px 10px;border-radius:7px;font-size:13px;color:var(--ink);
+    cursor:pointer;line-height:1.35;transition:background .1s
+  }
+  .rside .topic:hover{background:var(--chip)}
+  .rside .topic.active{background:var(--brand);color:#fff;font-weight:600}
+  .rside .topic .pg{font-size:10px;opacity:.6;margin-left:6px}
+  .rside .topic.active .pg{opacity:.85}
+  .rside .empty{padding:20px;color:var(--muted);font-size:13px;text-align:center}
+
+  .rmain{
+    background:var(--bg);overflow-y:auto;padding:20px 24px 80px
+  }
+  @media(max-width:600px){.rmain{padding:14px 14px 80px}}
+  .rmain .crumb{font-size:11px;color:var(--muted);text-transform:uppercase;
+    letter-spacing:.6px;font-weight:700;margin-bottom:6px}
+  .rmain h2{margin:0 0 16px;font-size:24px;font-weight:700;letter-spacing:.2px;line-height:1.2}
+  .rmain h2 .pg{font-size:12px;font-weight:500;color:var(--muted);margin-left:8px}
+
+  .block{
+    background:var(--panel);border:1px solid var(--line);border-radius:14px;
+    padding:18px 20px;margin-bottom:14px;box-shadow:var(--shadow)
+  }
+  .block-h{
+    display:flex;align-items:center;gap:8px;margin-bottom:10px;
+    font-size:14px;font-weight:700;color:var(--brand);text-transform:uppercase;
+    letter-spacing:.5px
+  }
+  .block-h .pg{font-size:11px;color:var(--muted);font-weight:500;text-transform:none;letter-spacing:0;margin-left:auto}
+  .block.rx .block-h{color:var(--amber-2)}
+  html[data-theme="dark"] .block.rx .block-h{color:var(--amber)}
+  .block .txt{
+    font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+    font-size:13px;line-height:1.6;white-space:pre-wrap;word-wrap:break-word;
+    color:var(--ink)
+  }
+  .block .txt mark{background:#fde68a;color:#0f172a;padding:0 2px;border-radius:3px}
+
+  .welcome{text-align:center;color:var(--muted);padding:60px 20px}
+  .welcome h3{margin:0 0 6px;color:var(--ink);font-weight:600;font-size:18px}
+  .welcome p{margin:0;font-size:13px}
+
+  /* ===== PIN GATE ===== */
+  .gate{
+    position:fixed;inset:0;background:linear-gradient(135deg,#0d6b6b 0%,#0a8f8f 100%);
+    display:none;align-items:center;justify-content:center;z-index:90;color:#fff
+  }
+  .gate.open{display:flex}
+  .gate-box{
+    background:rgba(255,255,255,.06);backdrop-filter:blur(12px);
+    border:1px solid rgba(255,255,255,.15);border-radius:18px;
+    padding:28px 26px;width:min(360px,92vw);text-align:center;
+    box-shadow:0 20px 60px rgba(0,0,0,.4)
+  }
+  .gate h3{margin:0 0 6px;font-size:18px;font-weight:600}
+  .gate p{margin:0 0 18px;font-size:13px;opacity:.85}
+  .gate input{
+    width:100%;padding:14px 16px;border-radius:10px;border:0;
+    font:inherit;font-size:18px;text-align:center;letter-spacing:8px;
+    background:rgba(255,255,255,.95);color:#0f172a
+  }
+  .gate input:focus{outline:0;box-shadow:0 0 0 3px rgba(255,255,255,.4)}
+  .gate .err{margin-top:10px;font-size:12px;color:#fecaca;min-height:16px}
+  .gate .hint{margin-top:18px;font-size:11px;opacity:.6}
+</style>
+</head>
+<body>
+
+<!-- PIN GATE -->
+<div class="gate" id="gate" role="dialog" aria-modal="true">
+  <form class="gate-box" id="gateForm" autocomplete="off">
+    <h3>Painel privado</h3>
+    <p>Digite o PIN para acessar.</p>
+    <input id="pin" type="password" inputmode="numeric" pattern="[0-9]*" maxlength="6" autofocus aria-label="PIN" />
+    <div class="err" id="gateErr"></div>
+    <div class="hint">Acesso pessoal · dados ficam no aparelho</div>
+  </form>
+</div>
+
+<!-- HOME -->
+<div id="home">
+  <header class="top">
+    <div class="brand">
+      <div class="logo" aria-hidden="true">⚡</div>
+      <div>
+        <h1>Painel · Consulta Rápida</h1>
+        <div class="sub" id="dateLine"></div>
+      </div>
+    </div>
+    <div class="top-actions">
+      <a class="top-link" href="index.html" title="Abrir Anamnese FAST">
+        <span>📋</span><span>Anamnese FAST</span>
+      </a>
+      <button class="theme-btn" id="themeBtn" title="Tema claro/escuro" aria-label="Alternar tema">🌓</button>
+    </div>
+  </header>
+
+  <main>
+    <div class="hello">
+      <h2>Prescrição Médica · Adulto</h2>
+      <p>Escolha a ficha para consulta rápida no PS</p>
+    </div>
+
+    <div class="cards">
+      <button class="card amarela" data-book="av">
+        <div class="swatches">
+          <span class="swatch" style="background:#fbbf24"></span>
+          <span class="swatch" style="background:#dc2626"></span>
+        </div>
+        <span class="badge">Urgência · Emergência</span>
+        <h3>Ficha Amarela &amp; Vermelha</h3>
+        <div class="desc">Sala vermelha · Cardio · Endócrino · Neuro · Sepse · Choque · TEP · IAM · AVC · CAD · Convulsão · Intoxicações</div>
+        <div class="open">Abrir →</div>
+      </button>
+
+      <button class="card verde" data-book="v">
+        <div class="swatches">
+          <span class="swatch" style="background:#22c55e"></span>
+          <span class="swatch" style="background:#15803d"></span>
+        </div>
+        <span class="badge">Pouco urgente · Ambulatorial</span>
+        <h3>Ficha Verde</h3>
+        <div class="desc">Cefaleia · Lombalgia · IVAS · Cistite · Dispepsia · Gastroenterite · Dermatites · Otite · Faringite · Quadros leves</div>
+        <div class="open">Abrir →</div>
+      </button>
+    </div>
+
+    <div class="quicks">
+      <a class="quick" href="index.html"><span class="ico">📋</span><span>Abrir Anamnese FAST</span></a>
+      <button class="quick" id="reloadBtn"><span class="ico">⟳</span><span>Recarregar painel</span></button>
+      <button class="quick" id="lockBtn"><span class="ico">🔒</span><span>Bloquear painel</span></button>
+    </div>
+  </main>
+
+  <footer>
+    <div>Painel pessoal · uso médico · não compartilhar</div>
+    <div class="warn">⚠ Material de referência. Sempre validar contra protocolo local e bula.</div>
+  </footer>
+</div>
+
+<!-- READER -->
+<div class="reader" id="reader" role="dialog" aria-modal="true">
+  <div class="rbar">
+    <button class="acc" id="rBack" title="Voltar" aria-label="Voltar">←</button>
+    <button class="acc" id="rMenu" title="Menu (índice)" aria-label="Menu">☰</button>
+    <div class="rt">
+      <div class="t" id="rTitle">—</div>
+      <div class="s" id="rSub"></div>
+    </div>
+    <div class="rsearch" id="rSearchWrap">
+      <span>🔍</span>
+      <input id="rSearch" type="search" placeholder="Buscar (medicamento, condição…)" autocomplete="off" />
+    </div>
+  </div>
+  <div class="rwrap">
+    <aside class="rside" id="rSide"></aside>
+    <section class="rmain" id="rMain">
+      <div class="welcome">
+        <h3>Selecione um tópico</h3>
+        <p>Use o índice à esquerda ou a busca acima.</p>
+      </div>
+    </section>
+  </div>
+</div>
+
+<script>
+(function(){
+  /* ===== CONFIG ===== */
+  var PIN = "2604"; // <-- TROQUE para o seu PIN (ou deixe "" para desativar)
+  var SESSION_KEY = "painel_unlocked_v1";
+  var THEME_KEY   = "painel_theme_v1";
+
+  /* ===== THEME ===== */
+  var htmlEl = document.documentElement;
+  var savedTheme = localStorage.getItem(THEME_KEY);
+  if(savedTheme === "dark") htmlEl.setAttribute("data-theme","dark");
+  document.getElementById("themeBtn").addEventListener("click", function(){
+    var isDark = htmlEl.getAttribute("data-theme") === "dark";
+    if(isDark){ htmlEl.removeAttribute("data-theme"); localStorage.setItem(THEME_KEY,"light"); }
+    else { htmlEl.setAttribute("data-theme","dark"); localStorage.setItem(THEME_KEY,"dark"); }
+  });
+
+  /* ===== DATE ===== */
+  var d = new Date();
+  var dias = ["domingo","segunda","terça","quarta","quinta","sexta","sábado"];
+  var meses = ["jan","fev","mar","abr","mai","jun","jul","ago","set","out","nov","dez"];
+  document.getElementById("dateLine").textContent =
+    dias[d.getDay()] + ", " + d.getDate() + " " + meses[d.getMonth()] + " " + d.getFullYear();
+
+  /* ===== PIN GATE ===== */
+  var gate = document.getElementById("gate");
+  var gateForm = document.getElementById("gateForm");
+  var pinInput = document.getElementById("pin");
+  var gateErr = document.getElementById("gateErr");
+  function unlock(){ gate.classList.remove("open"); sessionStorage.setItem(SESSION_KEY,"1"); }
+  function lock(){
+    sessionStorage.removeItem(SESSION_KEY); pinInput.value=""; gateErr.textContent="";
+    gate.classList.add("open"); setTimeout(function(){pinInput.focus();},50);
+  }
+  if(PIN && sessionStorage.getItem(SESSION_KEY) !== "1"){
+    gate.classList.add("open"); setTimeout(function(){pinInput.focus();},100);
+  }
+  gateForm.addEventListener("submit", function(e){
+    e.preventDefault();
+    if(pinInput.value === PIN){ unlock(); }
+    else { gateErr.textContent = "PIN incorreto."; pinInput.value=""; pinInput.focus(); }
+  });
+  document.getElementById("lockBtn").addEventListener("click", lock);
+  document.getElementById("reloadBtn").addEventListener("click", function(){ location.reload(); });
+
+  /* ===== READER ===== */
+  var reader = document.getElementById("reader");
+  var rTitle = document.getElementById("rTitle");
+  var rSub   = document.getElementById("rSub");
+  var rSide  = document.getElementById("rSide");
+  var rMain  = document.getElementById("rMain");
+  var rSearch= document.getElementById("rSearch");
+  var rSearchWrap = document.getElementById("rSearchWrap");
+
+  var currentBook = null;
+  var currentData = null;
+  var currentTopic = null;
+  var bookLoaded = {av:false, v:false};
+
+  function loadScript(src){
+    return new Promise(function(res, rej){
+      var s = document.createElement("script");
+      s.src = src; s.onload = function(){ res(); };
+      s.onerror = function(){ rej(new Error("Falha ao carregar "+src)); };
+      document.head.appendChild(s);
+    });
+  }
+
+  function openBook(book){
+    currentBook = book;
+    var dataReady = bookLoaded[book]
+      ? Promise.resolve()
+      : loadScript("recursos/data-"+book+".js").then(function(){ bookLoaded[book]=true; });
+    dataReady.then(function(){
+      currentData = (book==="av") ? window.EBOOK_AV : window.EBOOK_V;
+      rTitle.textContent = currentData.title;
+      rSub.textContent = countAll(currentData) + " tópicos · " + currentData.sections.length + " seções";
+      buildSidebar("");
+      rMain.innerHTML = '<div class="welcome"><h3>Selecione um tópico</h3><p>Use o índice à esquerda ou a busca acima.</p></div>';
+      reader.classList.add("open");
+      document.body.style.overflow = "hidden";
+      currentTopic = null;
+      rSearch.value = "";
+    }).catch(function(err){
+      alert(err.message);
+    });
+  }
+
+  function countAll(d){
+    var n=0; d.sections.forEach(function(s){ n += s.topics.length; }); return n;
+  }
+
+  function closeReader(){
+    reader.classList.remove("open");
+    document.body.style.overflow = "";
+  }
+
+  document.querySelectorAll(".card").forEach(function(c){
+    c.addEventListener("click", function(){ openBook(c.getAttribute("data-book")); });
+  });
+  document.getElementById("rBack").addEventListener("click", closeReader);
+  document.getElementById("rMenu").addEventListener("click", function(){
+    rSide.classList.toggle("open");
+  });
+  document.addEventListener("keydown", function(e){
+    if(e.key === "Escape" && reader.classList.contains("open")) closeReader();
+  });
+
+  /* ===== SIDEBAR ===== */
+  function norm(s){ return (s||"").toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g,""); }
+  function matchTopic(t, q){
+    if(!q) return true;
+    if(norm(t.title).indexOf(q) >= 0) return true;
+    if(norm(t.body).indexOf(q) >= 0) return true;
+    for(var i=0;i<(t.children||[]).length;i++){
+      var c = t.children[i];
+      if(norm(c.title).indexOf(q) >= 0) return true;
+      if(norm(c.body).indexOf(q) >= 0) return true;
+    }
+    return false;
+  }
+
+  function buildSidebar(query){
+    var q = norm(query.trim());
+    rSide.innerHTML = "";
+    var anyShown = false;
+    currentData.sections.forEach(function(sec, si){
+      var topics = sec.topics.filter(function(t){ return matchTopic(t, q); });
+      if(!topics.length) return;
+      anyShown = true;
+      var secEl = document.createElement("div");
+      secEl.className = "sec";
+      var h = document.createElement("div");
+      h.className = "sec-h";
+      h.innerHTML = "<span>"+esc(sec.section)+"</span><span class='arr'>▾</span>";
+      h.addEventListener("click", function(){ secEl.classList.toggle("collapsed"); });
+      secEl.appendChild(h);
+      var ul = document.createElement("div");
+      ul.className = "topics";
+      topics.forEach(function(t, ti){
+        var el = document.createElement("div");
+        el.className = "topic";
+        el.dataset.section = si; el.dataset.topic = sec.topics.indexOf(t);
+        el.innerHTML = esc(t.title) + "<span class='pg'>p"+t.page+"</span>";
+        el.addEventListener("click", function(){
+          selectTopic(sec, t);
+          rSide.querySelectorAll(".topic.active").forEach(function(x){x.classList.remove("active");});
+          el.classList.add("active");
+          if(window.innerWidth <= 900) rSide.classList.remove("open");
+        });
+        ul.appendChild(el);
+      });
+      secEl.appendChild(ul);
+      rSide.appendChild(secEl);
+    });
+    if(!anyShown){
+      rSide.innerHTML = '<div class="empty">Nada encontrado.</div>';
+    }
+  }
+
+  function selectTopic(sec, t){
+    currentTopic = t;
+    var q = norm(rSearch.value.trim());
+    var html = '<div class="crumb">'+esc(sec.section)+'</div>';
+    html += '<h2>'+esc(t.title)+'<span class="pg">p'+t.page+'</span></h2>';
+    if(t.body){
+      html += '<div class="block"><div class="block-h"><span>📖 Tópico</span><span class="pg">p'+t.page+'</span></div>';
+      html += '<div class="txt">'+highlight(esc(t.body), q)+'</div></div>';
+    }
+    (t.children||[]).forEach(function(c){
+      var isRx = /presc|orient|trombol/i.test(c.title);
+      html += '<div class="block '+(isRx?"rx":"")+'"><div class="block-h">';
+      html += '<span>'+(isRx?'💊':'📄')+' '+esc(c.title)+'</span>';
+      html += '<span class="pg">p'+c.page+'</span></div>';
+      html += '<div class="txt">'+highlight(esc(c.body), q)+'</div></div>';
+    });
+    rMain.innerHTML = html;
+    rMain.scrollTop = 0;
+  }
+
+  function esc(s){
+    return (s||"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");
+  }
+  function highlight(html, q){
+    if(!q || q.length < 2) return html;
+    // Build regex from normalized q against the original html by matching diacritic-insensitive
+    try{
+      var re = new RegExp("("+q.replace(/[.*+?^${}()|[\]\\]/g,"\\$&")+")","gi");
+      // Approach: replace ignoring accents — split text by matching normalized substrings
+      var out = "";
+      var i = 0;
+      var norm_html = norm(html);
+      while(i < html.length){
+        var idx = norm_html.indexOf(q, i);
+        if(idx < 0){ out += html.substring(i); break; }
+        // map back to original: since norm is 1:1 character mapping for our chars (NFD strips
+        // combining marks, but accented chars in PT become ascii equivalents — length is mostly the same)
+        // Conservative: use the original substring at the same indices.
+        out += html.substring(i, idx);
+        out += '<mark>' + html.substr(idx, q.length) + '</mark>';
+        i = idx + q.length;
+      }
+      return out;
+    }catch(e){ return html; }
+  }
+
+  /* ===== SEARCH ===== */
+  rSearch.addEventListener("input", function(){
+    buildSidebar(rSearch.value);
+    if(currentTopic){
+      // Re-render current topic with new highlights
+      var sec = null;
+      currentData.sections.forEach(function(s){
+        if(s.topics.indexOf(currentTopic) >= 0) sec = s;
+      });
+      if(sec) selectTopic(sec, currentTopic);
+    }
+  });
+  // Mobile: expand search on focus
+  rSearch.addEventListener("focus", function(){ rSearchWrap.classList.add("exp"); });
+  rSearch.addEventListener("blur",  function(){ if(!rSearch.value) rSearchWrap.classList.remove("exp"); });
+})();
+</script>
+</body>
+</html>
