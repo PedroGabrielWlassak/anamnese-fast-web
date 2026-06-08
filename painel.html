@@ -202,14 +202,19 @@
   .rside .topic.g .dot{background:#22c55e}
   .rside .topic .title{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
   .rside .topic .star{
-    width:22px;height:22px;border:0;background:transparent;cursor:pointer;
+    width:24px;height:24px;border:0;background:transparent;cursor:pointer;
     display:grid;place-items:center;flex-shrink:0;border-radius:5px;
-    color:var(--muted);opacity:.4;font-size:14px;font-family:inherit
+    color:var(--muted);opacity:.30;font-size:15px;font-family:inherit;
+    transition:opacity .12s,color .12s,background .12s
   }
-  .rside .topic .star.on{color:var(--star);opacity:1}
-  .rside .topic:hover .star{opacity:.8}
-  .rside .topic.active .star{color:#fde047}
+  .rside .topic .star.on{color:#eab308;opacity:1}
+  .rside .topic:hover .star{opacity:.65}
+  .rside .topic:hover .star.on{opacity:1}
+  .rside .topic .star:hover{background:rgba(234,179,8,.18);opacity:1;color:#eab308}
+  /* Active topic (selected/open): star stays muted white when NOT favorited */
+  .rside .topic.active .star{color:rgba(255,255,255,.55);opacity:.55}
   .rside .topic.active .star.on{color:#fde047;opacity:1}
+  .rside .topic.active .star:hover{background:rgba(255,255,255,.18);color:#fde047;opacity:1}
   .rside .empty{padding:30px 20px;color:var(--muted);font-size:13px;text-align:center}
   .rside hr{border:0;border-top:1px solid var(--line);margin:6px 8px}
 
