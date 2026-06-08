@@ -235,6 +235,11 @@
   .topic-head h2 .sev.a{background:var(--amber-bg);color:var(--amber);border:1px solid var(--amber-bd)}
   .topic-head h2 .sev.g{background:var(--green-bg);color:var(--green);border:1px solid var(--green-bd)}
   .topic-head h2 .pg{font-size:11px;font-weight:500;color:var(--muted)}
+  .topic-head h2 .cid{
+    display:inline-flex;align-items:center;gap:5px;font-size:11px;font-weight:700;
+    padding:3px 9px;border-radius:99px;text-transform:uppercase;letter-spacing:.4px;
+    background:var(--chip);color:var(--brand);border:1px solid var(--line)
+  }
   .topic-head .star-big{
     appearance:none;background:var(--panel);border:1px solid var(--line);
     width:38px;height:38px;border-radius:9px;cursor:pointer;display:grid;place-items:center;
@@ -436,8 +441,8 @@
     <div class="cards">
       <button class="card rx" id="btnRx">
         <span class="badge">Crânio-caudal · 🔴🟡🟢</span>
-        <h3>Prescrições</h3>
-        <div class="desc">Consulta rápida por região anatômica. Modelo pronto para colar + explicação ao lado.</div>
+        <h3>Receituário · APS / Urgência</h3>
+        <div class="desc">Consulta rápida por região anatômica. Modelo pronto para colar + CID-10 + explicação.</div>
         <div class="counts" id="rxCounts"><span>— tópicos</span></div>
         <div class="open">Abrir →</div>
       </button>
@@ -470,7 +475,7 @@
     <button class="acc" id="rBack" title="Voltar" aria-label="Voltar">←</button>
     <button class="acc" id="rMenu" title="Índice" aria-label="Menu">☰</button>
     <div class="rt">
-      <div class="t" id="rTitle">Prescrições</div>
+      <div class="t" id="rTitle">Receituário · APS / Urgência</div>
       <div class="s" id="rSub"></div>
     </div>
     <div class="rsearch" id="rSearchWrap">
@@ -598,8 +603,10 @@
       buildSidebar("");
       rMain.innerHTML = '<div class="welcome"><h3>Selecione um tópico</h3><p>Crânio-caudal no índice à esquerda · ou busque acima</p>'+
         '<div class="tip"><b>Dica</b><br>• Favorite os mais frequentes (⭐) — aparecem no topo<br>• Use chip <b>⭐ Favoritos</b> pra ver só os pinados<br>• <b>Esc</b> fecha · <b>☰</b> abre o índice no celular</div></div>';
+      if(DATA.title) rTitle.textContent = DATA.title;
       rSub.textContent = DATA.counts.total+" tópicos · 🔴 "+DATA.counts.vermelha+
-        " · 🟡 "+DATA.counts.amarela+" · 🟢 "+DATA.counts.verde;
+        " · 🟡 "+DATA.counts.amarela+" · 🟢 "+DATA.counts.verde +
+        (DATA.source ? " · " + DATA.source : "");
       reader.classList.add("open");
       document.body.style.overflow="hidden";
       currentTopic=null; rSearch.value=""; rSearchWrap.classList.remove("has");
@@ -658,7 +665,7 @@
   /* ===== SEARCH ===== */
   function norm(s){ return (s||"").toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g,""); }
   function topicHaystack(t){
-    var parts=[t.title, t.summary||"", t.explanation||""];
+    var parts=[t.title, t.summary||"", t.explanation||"", t.cid||""];
     (t.rx||[]).forEach(function(r){
       parts.push(r.title); parts.push(r.explanation||"");
       (r.scenarios||[]).forEach(function(s){
@@ -774,8 +781,10 @@
     html += '<div class="crumb">'+esc(blk.title)+'</div>';
     html += '<div class="topic-head">';
     html += '<h2><span>'+esc(t.title)+'</span>'+
-            '<span class="sev '+sevChar(t.severity)+'">'+sevLabel+'</span>'+
-            '<span class="pg">p'+t.page+'</span></h2>';
+            '<span class="sev '+sevChar(t.severity)+'">'+sevLabel+'</span>';
+    if(t.cid) html += '<span class="cid">CID '+esc(t.cid)+'</span>';
+    if(t.page) html += '<span class="pg">p'+t.page+'</span>';
+    html += '</h2>';
     html += '<button class="star-big '+(isFav(t.id)?"on":"")+'" title="Favoritar (⭐)">'+
             (isFav(t.id)?"★":"☆")+'</button>';
     html += '</div>';
@@ -801,7 +810,8 @@
       html += '<div class="rx-block"><div class="rx-head">';
       html += '<span class="icon">💊</span>';
       html += '<span class="title">'+esc(r.title)+'</span>';
-      html += '<span class="pg">p'+r.page+'</span></div>';
+      if(r.page) html += '<span class="pg">p'+r.page+'</span>';
+      html += '</div>';
 
       if(r.scenarios && r.scenarios.length){
         if(r.scenarios.length > 1){
