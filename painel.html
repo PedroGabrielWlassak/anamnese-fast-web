@@ -119,7 +119,7 @@
   .rbar .acc{
     width:34px;height:34px;border-radius:9px;display:grid;place-items:center;
     background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.28);
-    color:#fff;cursor:pointer;font-size:15px;flex-shrink:0;font-family:inherit
+    color:#fff;cursor:pointer;font-size:15px;flex-shrink:0;font-family:inherit;text-decoration:none
   }
   .rbar .acc:hover{background:rgba(255,255,255,.25)}
   .rbar .rt{flex:1;min-width:0}
@@ -474,8 +474,8 @@
     <div class="cards">
       <button class="card rx" id="btnRx">
         <span class="badge">Crânio-caudal · 🔴🟡🟢</span>
-        <h3>Receituário · APS / Urgência</h3>
-        <div class="desc">Consulta rápida por região anatômica. Modelo pronto para colar + CID-10 + explicação.</div>
+        <h3>Prescrição PS Fast</h3>
+        <div class="desc">Receitas prontas para PS/APS por região anatômica. Modelo pronto para colar + CID-10.</div>
         <div class="counts" id="rxCounts"><span>— tópicos</span></div>
         <div class="open">Abrir →</div>
       </button>
@@ -491,6 +491,7 @@
 
     <div class="quicks">
       <a class="quick" href="index.html"><span class="ico">📋</span><span>Abrir Anamnese FAST</span></a>
+      <a class="quick" href="recursos/ps-fast.pdf" download><span class="ico">⬇</span><span>Baixar PDF (PS Fast)</span></a>
       <button class="quick" id="reloadBtn"><span class="ico">⟳</span><span>Recarregar painel</span></button>
       <button class="quick" id="lockBtn"><span class="ico">🔒</span><span>Bloquear painel</span></button>
     </div>
@@ -508,7 +509,7 @@
     <button class="acc" id="rBack" title="Voltar" aria-label="Voltar">←</button>
     <button class="acc" id="rMenu" title="Índice" aria-label="Menu">☰</button>
     <div class="rt">
-      <div class="t" id="rTitle">Receituário · APS / Urgência</div>
+      <div class="t" id="rTitle">Prescrição PS Fast</div>
       <div class="s" id="rSub"></div>
     </div>
     <div class="rsearch" id="rSearchWrap">
@@ -516,6 +517,7 @@
       <input id="rSearch" type="search" placeholder="Buscar (sepse, atropina, IAM…)" autocomplete="off" />
       <button class="clr" id="rClear" title="Limpar busca" aria-label="Limpar">×</button>
     </div>
+    <a class="acc" id="rPdf" title="Baixar PDF" aria-label="Baixar PDF" href="recursos/ps-fast.pdf" download>⬇</a>
   </div>
   <div class="filters" id="filters">
     <button class="fchip fav" data-sev="fav">⭐ Favoritos</button>
