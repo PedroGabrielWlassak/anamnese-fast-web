@@ -248,6 +248,39 @@
   .topic-head .star-big:hover{border-color:var(--star);color:var(--star)}
   .topic-head .star-big.on{color:var(--star);background:var(--star-bg);border-color:var(--star)}
 
+  /* Quick-jump pills */
+  .jumps{display:flex;gap:6px;margin-bottom:14px;flex-wrap:wrap}
+  .jump{
+    padding:6px 12px;border-radius:99px;font-size:12px;font-weight:700;
+    border:1px solid var(--line-2);background:var(--panel);color:var(--ink);
+    cursor:pointer;font-family:inherit;text-decoration:none;
+    display:inline-flex;align-items:center;gap:5px
+  }
+  .jump:hover{border-color:var(--brand);color:var(--brand)}
+
+  /* Alarm box */
+  .alarm-box{
+    background:var(--red-bg);border:1px solid var(--red-bd);border-left:4px solid #dc2626;
+    border-radius:10px;padding:12px 14px;margin-bottom:14px;
+    font-size:13.5px;line-height:1.55;white-space:pre-wrap;color:var(--ink)
+  }
+  .alarm-box .ab-h{
+    font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;
+    color:var(--red);margin-bottom:5px;display:flex;align-items:center;gap:6px
+  }
+  .alarm-box mark{background:#fde68a;color:#0f172a;padding:0 2px;border-radius:3px}
+
+  /* Dest group header */
+  .dest-h{
+    display:flex;align-items:center;gap:8px;margin:22px 0 10px;
+    font-size:13px;font-weight:800;text-transform:uppercase;letter-spacing:.6px
+  }
+  .dest-h::after{content:"";flex:1;height:1px;background:var(--line-2)}
+  .dest-h.ps{color:var(--amber)}
+  .dest-h.casa{color:var(--green)}
+  .dest-h.internacao{color:var(--red)}
+  .dest-h.outro{color:var(--brand)}
+
   .disclaimer{
     background:var(--panel);border:1px solid var(--line);border-left:4px solid var(--brand);
     border-radius:10px;padding:12px 14px;margin-bottom:14px;
@@ -665,7 +698,7 @@
   /* ===== SEARCH ===== */
   function norm(s){ return (s||"").toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g,""); }
   function topicHaystack(t){
-    var parts=[t.title, t.summary||"", t.explanation||"", t.cid||""];
+    var parts=[t.title, t.summary||"", t.explanation||"", t.cid||"", t.alarmes||""];
     (t.rx||[]).forEach(function(r){
       parts.push(r.title); parts.push(r.explanation||"");
       (r.scenarios||[]).forEach(function(s){
@@ -789,6 +822,28 @@
             (isFav(t.id)?"★":"☆")+'</button>';
     html += '</div>';
 
+    // Quick-jump pills (acesso rápido dentro do card)
+    var hasPs=(t.rx||[]).some(function(r){return r.dest==="ps";});
+    var hasCasa=(t.rx||[]).some(function(r){return r.dest==="casa";});
+    var hasInt=(t.rx||[]).some(function(r){return r.dest==="internacao";});
+    var jumps=[];
+    if(t.anamnese||t.exame) jumps.push(["sec-anamnese","📋 Anamnese/EF"]);
+    if(hasPs) jumps.push(["sec-ps","💉 PS"]);
+    if(hasCasa) jumps.push(["sec-casa","🏠 Casa"]);
+    if(hasInt) jumps.push(["sec-internacao","🏥 Internação"]);
+    if(t.retorno) jumps.push(["sec-retorno","🔁 Retorno"]);
+    if(jumps.length>1){
+      html += '<div class="jumps">';
+      jumps.forEach(function(jp){ html += '<button class="jump" data-jump="'+jp[0]+'">'+jp[1]+'</button>'; });
+      html += '</div>';
+    }
+
+    // Sinais de alarme
+    if(t.alarmes){
+      html += '<div class="alarm-box"><div class="ab-h">🚩 Sinais de alarme — reclassificar / emergência</div>'+
+              highlight(esc(t.alarmes), q)+'</div>';
+    }
+
     // Disclaimer/summary box
     var disc = buildDisclaimer(t);
     if(disc){
@@ -805,8 +860,40 @@
               '</details>';
     }
 
-    // Rx blocks
-    (t.rx||[]).forEach(function(r, rxIdx){
+    // Anamnese + Exame físico (copiar e editar)
+    if(t.anamnese || t.exame){
+      html += '<div class="dest-h outro" id="sec-anamnese">📋 Anamnese + Exame físico</div>';
+      html += '<div class="rx-block"><div class="rx-scenario on"><div class="grid">';
+      if(t.anamnese){
+        html += '<div><div class="col-h">📝 Anamnese direcionada</div>';
+        html += '<div class="copy-box">'+highlight(esc(t.anamnese), q)+'</div>';
+        html += '<div class="copy-actions"><button class="copy-btn copy-tpl" data-tpl="anamnese">📋 Copiar anamnese</button></div></div>';
+      }
+      if(t.exame){
+        html += '<div><div class="col-h">🩺 Exame físico direcionado</div>';
+        html += '<div class="copy-box">'+highlight(esc(t.exame), q)+'</div>';
+        html += '<div class="copy-actions"><button class="copy-btn copy-tpl" data-tpl="exame">📋 Copiar exame físico</button></div></div>';
+      }
+      html += '</div></div></div>';
+    }
+
+    // Rx blocks agrupados por destino: PS → Casa → Internação → Modelos
+    var destOrder={ps:0,casa:1,internacao:2,outro:3};
+    var destLabel={ps:"💉 Receita — PS / Sala",casa:"🏠 Receita — Casa",
+                   internacao:"🏥 Receita — Internação",outro:"📄 Modelos"};
+    var rxList=(t.rx||[]).map(function(r,i){return {r:r,i:i};});
+    rxList.sort(function(a,b){
+      var da=destOrder[a.r.dest||"outro"], db=destOrder[b.r.dest||"outro"];
+      return (da-db) || (a.i-b.i);
+    });
+    var lastDest=null;
+    rxList.forEach(function(o){
+      var r=o.r, rxIdx=o.i;
+      var d=r.dest||"outro";
+      if(d!==lastDest){
+        html += '<div class="dest-h '+d+'" id="sec-'+d+'">'+destLabel[d]+'</div>';
+        lastDest=d;
+      }
       html += '<div class="rx-block"><div class="rx-head">';
       html += '<span class="icon">💊</span>';
       html += '<span class="title">'+esc(r.title)+'</span>';
@@ -875,6 +962,15 @@
       html += '</div>';
     });
 
+    // Orientação de retorno (safety-netting)
+    if(t.retorno){
+      html += '<div class="dest-h casa" id="sec-retorno">🔁 Orientação de retorno (safety-netting)</div>';
+      html += '<div class="rx-block"><div class="rx-scenario on">';
+      html += '<div class="copy-box">'+highlight(esc(t.retorno), q)+'</div>';
+      html += '<div class="copy-actions"><button class="copy-btn copy-tpl" data-tpl="retorno">📋 Copiar retorno</button></div>';
+      html += '</div></div>';
+    }
+
     if(!disc && !t.explanation && !(t.rx||[]).length){
       html += '<div class="disclaimer"><em>Sem conteúdo estruturado disponível para este tópico.</em></div>';
     }
@@ -904,8 +1000,27 @@
       });
     });
 
+    // Wire quick-jump pills
+    rMain.querySelectorAll(".jump").forEach(function(b){
+      b.addEventListener("click",function(){
+        var el=rMain.querySelector("#"+b.getAttribute("data-jump"));
+        if(el) el.scrollIntoView({behavior:"smooth",block:"start"});
+      });
+    });
+    // Wire template copy (anamnese / exame / retorno)
+    rMain.querySelectorAll(".copy-tpl").forEach(function(btn){
+      btn.addEventListener("click",function(){
+        var kind=btn.getAttribute("data-tpl");
+        var text = kind==="anamnese" ? t.anamnese : kind==="exame" ? t.exame : t.retorno;
+        copyToClipboard(text).then(function(){
+          var orig=btn.textContent; btn.classList.add("ok"); btn.textContent="✓ Copiado!";
+          showToast("Copiado para a área de transferência");
+          setTimeout(function(){btn.classList.remove("ok");btn.textContent=orig;},1400);
+        }).catch(function(){showToast("Falha ao copiar");});
+      });
+    });
     // Wire copy buttons
-    rMain.querySelectorAll(".copy-btn").forEach(function(btn){
+    rMain.querySelectorAll(".copy-btn[data-copy]").forEach(function(btn){
       btn.addEventListener("click",function(){
         var kind=btn.getAttribute("data-copy");
         var rx=+btn.getAttribute("data-rx"), sc=+btn.getAttribute("data-sc");
