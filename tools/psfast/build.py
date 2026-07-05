@@ -79,67 +79,75 @@ for f in sorted(glob.glob(os.path.join(_here, "conditions_*.py"))):
 # BUILD TOPICS
 # ---- Mais frequentes no PS/APS (aparecem no bloco 🔥 Frequentes) ----
 FREQ_TITLES = {
-    "IVAS / Resfriado / Gripe", "Faringoamigdalite", "Amigdalite aguda",
-    "Sinusite aguda", "Otite média aguda", "Otite externa aguda", "Rinite alérgica",
-    "GECA / Gastroenterite (adulto)", "Cefaleia", "Enxaqueca", "Lombalgia / Mialgia",
-    "Cólica menstrual / SUA", "Cistite / ITU não complicada", "Pielonefrite",
-    "Dengue / Arbovirose", "Conjuntivite", "Dor de dente", "Alergia / Urticária",
-    "Herpes zoster", "Escabiose", "Gota", "Vertigem / Labirintite / Tontura",
-    "Epigastralgia / Pirose", "DRGE / Gastrite", "Constipação",
-    "Elevação importante da PA (sem LOA)", "Influenza / Gripe", "Pneumonia",
-    "Nefrolitíase / Cólica nefrética", "Hemorroida", "Lombalgia / Mialgia",
+    "IVAS SUS Amigldalite Resfriado", "Faringoamigdalite", "Amigdalite Aguda",
+    "Sinusite Aguda", "Otite Media Aguda", "Otite Média", "Otite Externa Aguda", "Otite Externa",
+    "Rinite Alérgica", "GECA em Adulto", "Gastroenterite // Náuseas e Vômitos",
+    "Cefaleia", "Enxaqueca", "Lombalgia // Mialgia", "Cólica Menstrual ou Sangramento",
+    "Cistite", "Infecção Urinária", "Pielonefrite", "Dengue", "Conjuntivite",
+    "Alergia", "Alergia e Rinite Alérgica alergia", "Herpes Zoster", "Escabiose", "Gota",
+    "Vertigem // Labirintite// Tontura", "Tontura", "Epigastralgia / Pirose",
+    "Doença do Refluxo Gastroesofágico", "Gastrite/drge", "Constipação",
+    "Elevação Importante da PA", "Influenza", "Pneumonia", "Bronquite",
+    "Nefrolitiase - Colica Nefretica", "Hemorróida", "Enjoo / Nauseas",
+    "Cólica Biliar", "Disenteria", "Herpes Simples", "Impetigo", "Abscesso Cutâneo",
     "Náuseas e vômitos (gestante)", "ITU / Cistite (gestante)",
-    "Herpes simples", "Tínea corporis", "Impetigo", "Abscesso cutâneo",
 }
 
 # ---- Sinônimos / apelidos p/ busca (termo digitado -> palavras extras no índice) ----
 ALIASES = {
-    "IVAS / Resfriado / Gripe": "gripe resfriado ivas coriza espirro tosse",
+    "IVAS SUS Amigldalite Resfriado": "gripe resfriado ivas coriza espirro tosse dor de garganta",
     "Faringoamigdalite": "dor de garganta odinofagia faringite garganta",
-    "Amigdalite aguda": "dor de garganta garganta odinofagia placas amigdala",
-    "Sinusite aguda": "dor facial secrecao nasal seio",
-    "Otite média aguda": "dor de ouvido otalgia ouvido",
-    "Otite externa aguda": "dor de ouvido ouvido nadador",
-    "Rinite alérgica": "espirro coriza nariz alergia",
-    "GECA / Gastroenterite (adulto)": "diarreia dor de barriga vomito virose intestino",
+    "Amigdalite Aguda": "dor de garganta garganta odinofagia placas amigdala",
+    "Sinusite Aguda": "dor facial secrecao nasal seio",
+    "Otite Media Aguda": "dor de ouvido otalgia ouvido otite",
+    "Otite Média": "dor de ouvido otalgia ouvido otite",
+    "Otite Externa Aguda": "dor de ouvido ouvido nadador otite",
+    "Otite Externa": "dor de ouvido ouvido otite",
+    "Rinite Alérgica": "espirro coriza nariz alergia",
+    "GECA em Adulto": "diarreia dor de barriga vomito virose intestino gastroenterite",
+    "Gastroenterite // Náuseas e Vômitos": "diarreia vomito nausea virose gastroenterite",
     "Cefaleia": "dor de cabeca",
     "Enxaqueca": "migranea dor de cabeca aura",
-    "Cefaleia tensional": "dor de cabeca tensao",
-    "Lombalgia / Mialgia": "dor nas costas coluna lombar dor muscular",
-    "Cólica menstrual / SUA": "colica menstrual dismenorreia menstruacao sangramento",
-    "Cistite / ITU não complicada": "itu infeccao urinaria disuria ardencia ao urinar",
+    "Cefaléia Tensional": "dor de cabeca tensao",
+    "Lombalgia // Mialgia": "dor nas costas coluna lombar dor muscular",
+    "Cólica Menstrual ou Sangramento": "colica menstrual dismenorreia menstruacao sangramento sua",
+    "Cistite": "itu infeccao urinaria disuria ardencia ao urinar cistite",
+    "Infecção Urinária": "itu infeccao urinaria disuria cistite",
     "Pielonefrite": "itu alta infeccao urinaria rim febre lombar",
-    "Nefrolitíase / Cólica nefrética": "pedra no rim calculo renal colica renal",
-    "Dengue / Arbovirose": "dengue zika chikungunya arbovirose virose febre",
+    "Nefrolitiase - Colica Nefretica": "pedra no rim calculo renal colica renal nefrolitiase",
+    "Dengue": "dengue zika chikungunya arbovirose virose febre",
     "Conjuntivite": "olho vermelho olho remela vista",
-    "Dor de dente": "odontalgia dente odonto",
-    "Alergia / Urticária": "coceira prurido urticaria placas alergia",
+    "Alergia": "coceira prurido urticaria placas alergia",
+    "Alergia e Rinite Alérgica alergia": "coceira prurido urticaria alergia rinite",
     "Escabiose": "sarna coceira",
     "Pediculose": "piolho lendea",
-    "Herpes zoster": "cobreiro zoster",
+    "Herpes Zoster": "cobreiro zoster",
+    "Herpes Simples": "herpes labial",
     "Gota": "acido urico podagra artrite",
-    "Vertigem / Labirintite / Tontura": "tontura labirintite vertigem",
+    "Vertigem // Labirintite// Tontura": "tontura labirintite vertigem",
+    "Tontura": "tontura labirintite vertigem",
     "Epigastralgia / Pirose": "azia queimacao estomago boca do estomago pirose",
-    "DRGE / Gastrite": "azia refluxo gastrite queimacao",
+    "Doença do Refluxo Gastroesofágico": "azia refluxo drge gastrite queimacao",
+    "Gastrite/drge": "azia refluxo gastrite queimacao drge",
     "Constipação": "prisao de ventre intestino preso",
-    "Diarreia (gestante)": "diarreia",
-    "Hemorroida": "hemorroida sangramento anal",
-    "Elevação importante da PA (sem LOA)": "pressao alta hipertensao urgencia hipertensiva pa elevada",
-    "IAM — infarto agudo do miocárdio": "infarto dor no peito precordialgia sca",
-    "AVC isquêmico": "avc derrame deficit isquemico",
-    "AVC hemorrágico": "avc derrame hemorragia",
+    "Hemorróida": "hemorroida sangramento anal",
+    "Elevação Importante da PA": "pressao alta hipertensao urgencia hipertensiva pa elevada",
+    "IAM Infarto Agudo do Miocardio": "infarto dor no peito precordialgia sca",
+    "Acidente Vascular Encefálico Isquemico AVCI": "avc derrame deficit isquemico",
+    "Acidente Vascular Encefálico Hemorragico AVCH": "avc derrame hemorragia",
     "Anafilaxia": "choque anafilatico alergia grave",
-    "Crise de asma (exacerbação)": "falta de ar bombinha chiado sibilo asma",
-    "DPOC exacerbado": "falta de ar dpoc bombinha",
+    "Crise de Asma — Exacerbação": "falta de ar bombinha chiado sibilo asma",
+    "DPOC Exacerbado": "falta de ar dpoc bombinha",
     "Pneumonia": "pneumonia tosse febre pulmao",
-    "Influenza / Gripe": "gripe influenza h1n1 oseltamivir",
-    "Vaginose bacteriana": "corrimento odor vaginal",
-    "Candidíase vaginal": "corrimento coceira vaginal candidiase",
+    "Influenza": "gripe influenza h1n1 oseltamivir",
+    "Vaginose": "corrimento odor vaginal",
+    "Candidíase": "corrimento coceira vaginal candidiase",
     "Tricomoníase": "corrimento ist",
+    "Enjoo / Nauseas": "enjoo nausea vomito",
+    "Cólica Biliar": "dor abdominal colica vesicula",
+    "Impetigo": "ferida pele crosta bolha impetigo",
     "Náuseas e vômitos (gestante)": "enjoo vomito nausea gravida",
     "ITU / Cistite (gestante)": "itu infeccao urinaria gravida",
-    "Herpes simples": "herpes labial",
-    "Impetigo": "ferida pele cro sta bolha impetigo",
 }
 
 # ============================================================
@@ -252,28 +260,29 @@ def emit_pdf(grouped):
     def esc(s): return html.escape(s).replace("\n","<br/>")
     for g in grouped:
         el.append(Paragraph(g["title"], h2))
+        from reportlab.platypus import KeepTogether, HRFlowable
         for t in g["topics"]:
-            block = [Paragraph(esc(t["title"]) + (f' &nbsp;·&nbsp; <font size=7 color="#64748b">CID {esc(t["cid"])}</font>' if t["cid"] else ""), hcond)]
+            head = [Paragraph(esc(t["title"]) + (f' &nbsp;·&nbsp; <font size=7 color="#64748b">CID {esc(t["cid"])}</font>' if t["cid"] else ""), hcond)]
             if t["alarmes"]:
-                block.append(Paragraph("🚩 " + esc(t["alarmes"]), alarm))
+                head.append(Paragraph("🚩 " + esc(t["alarmes"]), alarm))
+            if t["summary"]:
+                head.append(Paragraph("💡 " + esc(t["summary"]), note))
             if t["anamnese"]:
-                block.append(Paragraph("<b>Anamnese</b>", desth))
-                block.append(Preformatted(t["anamnese"], mono))
+                head.append(Paragraph("<b>Anamnese</b>", desth))
+                head.append(Preformatted(t["anamnese"], mono))
             if t["exame"]:
-                block.append(Paragraph("<b>Exame físico</b>", desth))
-                block.append(Preformatted(t["exame"], mono))
+                head.append(Paragraph("<b>Exame físico</b>", desth))
+                head.append(Preformatted(t["exame"], mono))
+            # cabeçalho + orientação juntos; prescrições fluem (podem quebrar entre páginas)
+            el.append(HRFlowable(width="100%", thickness=0.4, color=colors.HexColor("#e2e8f0"),
+                                 spaceBefore=4, spaceAfter=3))
+            try: el.append(KeepTogether(head))
+            except Exception: el.extend(head)
             for r in sorted(t["rx"], key=lambda x: DEST_ORDER.get(x["dest"],3)):
-                block.append(Paragraph(esc(DEST_LABEL.get(r["dest"],"")) + " — " + esc(r["title"]), desth))
+                el.append(Paragraph(esc(DEST_LABEL.get(r["dest"],"")) + " — " + esc(r["title"]), desth))
                 for i, s in enumerate(r["scenarios"]):
                     prefix = "OU  " if i>0 else ""
-                    block.append(Preformatted(prefix + s["model_full"], mono))
-            if t["summary"]:
-                block.append(Paragraph("💡 " + esc(t["summary"]), note))
-            el.append(Table([[block]], colWidths=[182*mm],
-                       style=TableStyle([("BOX",(0,0),(-1,-1),0.4,colors.HexColor("#e2e8f0")),
-                                         ("LEFTPADDING",(0,0),(-1,-1),8),("RIGHTPADDING",(0,0),(-1,-1),8),
-                                         ("TOPPADDING",(0,0),(-1,-1),4),("BOTTOMPADDING",(0,0),(-1,-1),6),
-                                         ("BACKGROUND",(0,0),(-1,-1),colors.HexColor("#ffffff"))])))
+                    el.append(Preformatted(prefix + s["model_full"], mono))
             el.append(Spacer(1,3))
     doc.build(el)
     return True

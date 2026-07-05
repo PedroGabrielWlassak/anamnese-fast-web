@@ -6,2967 +6,4504 @@
 
 ## 🚨 Geral / Crítico
 
-### Acidente botrópico (jararaca)  ·  CID T63
-
-**💉 PS / Sala — Prescrição — PS**
-```
-Soro antibotrópico (5mg/ml):
-Leve: 2–4 amp EV
-Moderado: 4–8 amp EV
-Grave: 12 amp EV.
-Se infecção secundária: Cloranfenicol 50–100 mg/kg/dia VO/EV 6/6 horas.
-Dipirona 1g EV 6/6 horas.
-```
-
-💡 Manter diurese 30–40 ml/hora; elevação do membro. Complicações: fasciotomia / desbridamento / drenagem.
-
-### Acidente escorpiônico  ·  CID T63
-
-**💉 PS / Sala — Moderado / grave**
-```
-Moderado: monitorização; soro antiescorpiônico (5ml) 3 amp EV (ou antiaracnídico 3 amp EV); observação 24h.
-Grave: soro antiescorpiônico (5ml) 6 amp EV (ou antiaracnídico 6 amp EV); internação.
-```
-
-💡 Leve: infiltração de anestésico sem vasoconstrictor, observação 4h, compressa morna. Limpar com água e sabão.
-
-### Acidente por aranha marrom  ·  CID T63
-
-**💉 PS / Sala — Prescrição — PS**
-```
-Leve–moderado: Prednisona 20mg — 2 comprimidos pela manhã por 5 dias.
-Grave: 5 amp SAAr EV (em até 36h da picada) + Prednisona 20mg 2 cp/manhã por 5 dias.
-Muito grave: 10 amp SAAr EV + Prednisona 20mg 2 cp/manhã por 5–7 dias.
-```
-
 ### Anafilaxia  ·  CID T78
 
-**💉 PS / Sala — Prescrição — PS**
+**🏠 Casa — Prescrição — Casa**
 ```
-Adrenalina (1mg/ml): 0,3–0,5 mg IM — repetir 5/5 min por mais 2x se necessário.
-Sala de emergência. MOV. Dieta zero. Ringer lactato 500ml EV.
-Hidrocortisona (100mg/frasco): 300mg + SF 0,9% 10 ml.
-Se broncoespasmo: nebulização Salbutamol (5mg/ml) 10–20 gotas + 3ml SF 0,9%.
-```
-
-**💉 PS / Sala — Refratariedade**
-```
-Adrenalina 0,1ml + 9ml SF EV em bolus.
-Adrenalina 10 amp + 90ml SG5% em BIC — começar 4ml/hora em acesso central.
+ADRENALINA (1mg/ml): 0,3 – 0,5 MG IM – REPETIR 5/5 MIN POR MAIS 2X, SE NECESSÁRIO
+SALA DE EMERGENCIA
+MOV
+DIETA ZERO
+RINGER LACTATO 500ML EV
+HIDROCORTISONA (100mg/frasco): 300MG + SF 0,9% 10 ML
 ```
 
-### Dengue / Arbovirose  ·  CID A90
-
-🚩 **Alarme:** Sinais de alarme (surgem na DEFERVESCÊNCIA, 3º–6º dia): dor abdominal intensa e contínua, vômitos persistentes, sangramento de mucosas, letargia/irritabilidade, hipotensão postural/lipotimia, hepatomegalia dolorosa, Ht subindo com plaquetas caindo.
-
-**💉 PS / Sala — Grupo C/D**
+**🏠 Casa — Se broncoespasmo**
 ```
-Hemograma, albumina, transaminases, PCR. Se necessário: Rx tórax, USG abdominal.
-10ml/kg SF0,9% EV. Reavaliar. Mais 10ml/kg SF0,9% EV.
+NEBULIZAÇÃO: SALBUTAMOL (5mg/ml) 10-20 gotas + 3ml SF 0,9%
 ```
 
-**🏠 Casa — Sem alarme**
+**🏠 Casa — Refratariedade**
 ```
-Soro de reidratação oral — 4 envelopes
-Diluir 1 envelope em 1 litro de água e beber durante o dia. Beber mais 3 litros de outros líquidos.
-Dipirona 1g
-Tomar 1 comprimido de 6/6 horas se dor ou febre.
+- ADRENALINA 0,1ML + 9ML SF EV EM BOLUS
+- ADRENALINA 10 AMP + 90ML SG5% EM BIC – COMEÇAR COM 4ML/HORA EM ACESSO CENTRAL
+___________________________________________________________
+```
+
+### Ataque Isquemico Transitório  ·  CID G45
+
+**🏠 Casa — Prescrição — Casa**
+```
+ECG, USG cervical, Angio TC/ RNM, eco transtorácico (ambulatorialmente ou internado)
+Calcular ABCD2 score
+```
+
+**🏠 Casa — ABCD2 < 4**
+```
+AAS 100MG
+02 CP AO DIA
+```
+
+**🏠 Casa — INTERNAÇÃO**
+```
+AAS 100MG
+02 CPS, DOSE DE ATAQUE. SEGUIDO POR 01 CP/ DIA
+CLOPIDOGREL 75MG
+04 CPS, DOSE DE ATAQUE. SEGUIDO POR 01 CP AO DIA (POR 21 DIAS)
+DIPIRONA 1G EV DE 4/4 HORAS
+METOCLOPRAMIDA 10MG EV 8/8 HORAS
+OMEPRAZOL 20-40MG VO/EV PELA MANHA
+_________________________________________________________________
+```
+
+### Dengue  ·  CID A90
+
+**🏠 Casa — Prescrição — Casa**
+```
+1) Soro de reidratação oral ------------------- 1 caixa
+Diluir 1 sachê em 1L de água filtrada e tomar pelo menos 1L ao longo de um dia. Alternar com água filtrada. Armazenar em geladeira e descartar no dia seguinte. Tomar soro de reidratação oral até melhora completa dos sintomas.
+1) Dipirona 500mg ----------------------------------- 40 comprimidos
+Tomar 2 comprimidos de 6 em 6 horas se dor ou febre por 5 dias
 ```
 
 _OU_
 ```
-Paracetamol 500mg
-Tomar 1 comprimido de 6/6 horas se dor ou febre.
-Desloratadina 5mg
-Tomar 1 comprimido 1x ao dia se coceira.
-Dramin B6
-Tomar 1 comprimido de 8/8 horas se náusea, vômito ou tontura.
-OU Ondansetrona 8mg — 1 comprimido de 8/8h se náusea/vômito por 5 dias.
-```
-
-💡 Colher NS1 em até 5 dias de sintomas (de preferência no 3º). EVITAR AINE e AAS (risco de sangramento) — usar dipirona/paracetamol. Paciente em uso de AAS: hemograma diário; suspender se plaquetas <30.000. Repouso e aumento de ingestão de líquidos.
-
-### Dor de dente  ·  CID K08.8
-
-**📋 Anamnese**
-```
-PACIENTE REFERE DOR DE DENTE HÁ [X] DIA(S). Nega febre ou outros sintomas sistêmicos. Informo que não há dentista na unidade e oriento buscar UPA com suporte odontológico.
-```
-
-**🩺 Exame físico**
-```
-Bom estado geral, corado, hidratado, acianótico, anictérico, afebril.
-Sem edema, hiperemia ou alterações visíveis. Cavidade oral sem secreção purulenta evidente.
+1)PARACETAMOL 500mg ---------------------------- 40 comprimidos
+Tomar 1 comprimido se 6 em 6 horas se dor ou febre por 5 dias
+3)Ondansetrona 08 mg
+Tomar 1 comprimido de 8/8h, se náusea ou vomito por 5 dias
 ```
 
 **🏠 Casa — Prescrição — Casa**
 ```
-Dipirona 500mg — 20 comprimidos
-Tomar via oral 2 comprimidos de 6 em 6 horas se dor ou febre.
-Diclofenaco 50mg — 10 comprimidos
-Tomar 1 comprimido de 8 em 8 horas por 5 dias.
+Colher NS1 em até 5 dias de sintomas, de preferência no 3º.
 ```
-
-💡 Orientar retorno se febre, edema local, trismo ou piora da dor.
-
-### Febre maculosa  ·  CID A77
 
 **🏠 Casa — Prescrição — Casa**
 ```
-Doxiciclina 100mg
-Tomar 1 comprimido de 12/12 horas por 7 dias (ou até 7 dias após parar a febre).
-Dipirona 500mg
-Tomar 1 comprimido de 6/6h se dor ou febre.
-Dramin B6
-Tomar 1 comprimido de 8/8h se náusea ou vômito.
+DIPIRONA 1G -------------
+TOMAR 01CP DE 6/6 HORAS, SE DOR OU FEBRE
+DESLORATADINA 5MG
+TOMAR 01 CP 1X AO DIA, SE COCEIRA
+DRAMIN B6
+TOMAR 01 CP DE 8/8 HORAS, SE NÁUSEA, VOMITO OU TONTURA
+SORO DE REIDRATAÇÃO ORAL ------------------------------------ 4 ENVELOPES
+DILUIR 1 ENVELOPE EM 1 LITRO DE AGUA E BEBER DURANTE O DIA. BEBER MAIS 3 LITROS DE OUTROS LÍQUIDOS
+(ÁGUA, SUCO, ETC).
 ```
 
-**🏥 Internação — Se internação**
+💡 - Repouso - Aumentar ingestão de líquidos - Não utilizar anti-inflamatórios (Ex: Ibuprofeno, Nimesulida, Cetoprofeno, etc) - Retornar ao serviço médico caso apresente sinais de alarme (dor abdominal intensa e contínua, vômitos persistentes, sangramento de mucosas). Grupo C/D HEMOGRAMA, ALBUMINA, TRANSAMINASES, PCR. Se necessário: RX TORAX, USG ABDOMINAL Aqui: 10ml/kg SF0,9% EV Reavaliar Mais 10ml/kg SF0,9% EV Paciente em uso de AAS: hemograma diário. Suspender se plaquetas <30 000 ________________________________________________________________________
+
+### Elevação Importante da PA  ·  CID I16.0
+
+**💉 PS / Sala — Nitroprussiato de sódio EV — EAP, encefalopatia, crise adrenérgica**
 ```
-SF 0,9% 30ml/kg EV em 24h.
-Doxiciclina 100mg EV de 12/12 horas (manter por 3 dias após término da febre).
-Dipirona 1g EV 4/4h se dor ou febre.
-Bromoprida 10mg/2ml EV de 8/8h se náusea ou vômito.
-```
-
-💡 Solicitar hemograma, Na, K, creatinina, TGP, TGO.
-
-<!-- FLAG: 'Dipirona 50mg 6/6h' no bloco oral — provável 500mg (typo). -->
-
-### Intoxicação exógena  ·  CID Y19.9
-
-**💉 PS / Sala — Descontaminação / antídotos**
-```
-Carvão ativado 1g/kg (máx 50g) — até 2 horas da ingestão, VO ou SNE. Manter: 50g 4/4 horas.
-AAS/tricíclicos/fenobarbital: Bicarbonato de sódio 1–2 mEq/kg (ampola 8,4%, 1ml=1mEq) EV bolus; após 150ml de bicarbonato + 1L SG5% contínuo 100–200ml/h.
-Organofosforados/carbamatos: Atropina 2mg EV a cada 5 min até sumir roncos.
-Opioides: Naloxona 0,4mg EV, repetir a cada 3 min aumentando a dose (0,8/2/4/6).
-Benzodiazepínicos: Flumazenil 0,1mg EV bolus.
-Cocaína/anfetamina/crack: Diazepam EV.
-Paracetamol: N-acetilcisteína 140mg/kg; manter 17 doses de 70mg/kg 4/4 horas.
+Nitroglicerina EV — SCA, IAM, IC descompensada
+Labetalol ou Nicardipino EV — AVC hemorrágico (meta PAS < 140)
+Nitroprussiato + Esmolol EV — Dissecção de aorta (meta PAS < 120 em 20 min)
+Hidralazina EV + Sulfato de Magnésio — Eclâmpsia / pré-eclâmpsia grave
 ```
 
-💡 MOV (O2 se Sat <94%), ABCD, ligar Ceatox 0800 014 8110. Hemograma, EAS, função renal, Na, K, Ca, Mg, gasometria arterial, ECG.
-
-### Leptospirose  ·  CID A27
+**🏠 Casa — ⚠️ CHECAR ANTES DE MEDICAR**
+```
+- Tomou os remédios hoje? Aderência ao esquema habitual?
+- Uso de: cocaína, anfetamina, AINE, descongestionante, AO?
+- Dor/ansiedade elevando PA de forma reativa?
+- Glicemia capilar (descartar hipo)
+- ECG
+ECG: ________________
+GLICEMIA CAPILAR: ________________
+```
 
 **🏠 Casa — Prescrição — Casa**
 ```
-Doxiciclina 100mg — 14 comprimidos
-Tomar 1 comprimido de 12/12 horas por 7 dias.
-Dipirona 500mg
-Tomar 1 a 2 comprimidos de 6/6 horas se dor ou febre.
-Bromoprida 10mg
-Tomar 1 comprimido de 8/8 horas se náusea ou vômito.
+Meta: redução GRADUAL em 24–48h. NÃO forçar queda rápida.
+NÃO usar Nifedipino sublingual (queda abrupta = isquemia tecidual).
 ```
 
-💡 Hemograma, ureia, creatinina, Na, K, TGO, TGP, bilirrubina, VHS, PCR, Urina I, CPK, sorologia. Repouso, hidratação, evitar aspirina.
-
-### Relação sexual desprotegida / Violência sexual (PEP)  ·  CID Z20.2
-
-**💉 PS / Sala — Prescrição — PS**
+**🏠 Casa — Prescrição — Casa**
 ```
-Tenofovir/Lamivudina 300mg + 300mg — 1 comprimido ao dia por 28 dias.
-Dolutegravir 50mg — 1 comprimido ao dia por 28 dias.
-Levonorgestrel 1,5mg (até 72 horas) — 1 comprimido VO.
-Penicilina G benzatina 2.400.000 UI IM — 1.200.000 em cada glúteo.
-Ceftriaxona 500mg IM.
-Azitromicina 500mg — 2 comprimidos VO.
-Metronidazol 400mg — 5 comprimidos VO.
+1) Captopril 25mg --------------------------------- 2 comprimidos
+Tomar 1 comprimido agora. Repetir em 60 min se PA ainda ≥ 180/110 mmHg.
+ou
+1) Clonidina 0,1mg -------------------------------- 2 comprimidos
+Tomar 1 comprimido agora. Repetir em 60 min se necessário.
+(Preferir em casos de ansiedade/hiperatividade simpática. Atenção: risco de rebote se uso crônico suspenso abruptamente.)
+2) Dipirona 1g (500mg/comp) -------------------- 4 comprimidos
+Tomar 2 comprimidos VO agora se cefaleia ou dor.
+ou
+Dipirona 500mg/ml solução oral
+Tomar 40 gotas VO agora se cefaleia ou dor.
 ```
 
-💡 Teste rápido HIV, sífilis, hepatite B e C. Checar vacina hepatite B. PEP até 72 horas.
+**🏠 Casa — Prescrição — Casa**
+```
+OPÇÃO 1 — IECA
+Enalapril 10mg ------------------------------------ 30 comprimidos
+Tomar 1 comprimido de 12 em 12 horas.
+Enalapril 20mg ------------------------------------ 30 comprimidos
+Tomar 1 comprimido de 12 em 12 horas.
+ou
+Captopril 25mg ------------------------------------ 30 comprimidos
+Tomar 1 comprimido de 8 em 8 horas.
+OPÇÃO 2 — BRA
+Losartana 50mg ----------------------------------- 30 comprimidos
+Tomar 1 comprimido, 1x ao dia.
+Losartana 100mg ---------------------------------- 30 comprimidos
+Tomar 1 comprimido, 1x ao dia.
+OPÇÃO 3 — BCC
+Anlodipino 5mg ------------------------------------ 30 comprimidos
+Tomar 1 comprimido, 1x ao dia.
+Anlodipino 10mg ----------------------------------- 30 comprimidos
+Tomar 1 comprimido, 1x ao dia.
+OPÇÃO 4 — DIURÉTICO
+Hidroclorotiazida 25mg --------------------------- 30 comprimidos
+Tomar 1 comprimido pela manhã.
+Clortalidona 25mg -------------------------------- 30 comprimidos
+Tomar 1 comprimido pela manhã.
+```
+
+**🏠 Casa — Prescrição — Casa**
+```
+- ECG — SEMPRE
+- Glicemia capilar — SEMPRE
+- Creatinina + ureia — suspeita LOA renal / IRC
+- Urina I — hematúria, proteinúria
+- Potássio — uso de diurético / vômitos
+- Troponina — dor precordial / suspeita SCA
+- Rx tórax — dispneia / suspeita EAP
+- TC crânio s/ contraste — déficit neurológico / cefaleia em trovoada
+- BNP/Pro-BNP — dispneia / suspeita IC
+```
+
+**🏠 Casa — Prescrição — Casa**
+```
+CID: I16.1
+→ INTERNAR EM UTI
+→ Anti-hipertensivo EV + monitorização contínua
+→ Reduzir no máx. 25% da PAM na 1ª hora, depois gradual em 24–48h
+(exceção: dissecção de aorta — redução mais agressiva)
+```
+
+💡 "Urgência Hipertensiva" — termo substituído pela Diretriz SBC 2025. Usar I16.0 para elevação importante sem LOA. I16.1 para emergência hipertensiva.
+PACIENTE REFERE CEFALEIA/TONTURA HÁ . Nega déficit neurológico focal, nega dor torácica, nega dispneia, nega alteração visual, nega disfagia, nega vômitos, nega oligúria. PA: ___x___ mmHg. FC: ___. Sem sinais de lesão de órgão-alvo.
+
+### Enjoo / Nauseas
+
+**🏠 Casa — Prescrição — Casa**
+```
+1. DRAMIN B6 ------------------------------------------------ 1 CAIXA
+TOMAR 01 COMPRIMIDO DE 8/8H SE NAUSEAS/VÔMITOS
+```
+
+_OU_
+```
+1. ONDANSENTRONA 4MG ---------------------------------- 1 CAIXA
+TOMAR 01 COMPRIMIDO DE 8/8H SE NAUSEAS/VÔMITOS
+```
+
+_OU_
+```
+1. PLASIL 10 MG ---------------------------------------------- 1 CAIXA
+TOMAR 01 COMPRIMIDO DE 8/8H SE NAUSEAS/VÔMITOS
+```
+
+### Febre Maculosa  ·  CID A77
+
+**🏠 Casa — Prescrição — Casa**
+```
+DOXICILINA 100MG ---------------------------
+TOMAR 01 CP DE 12/12 HORAS POR 7 DIAS OU POR ATÉ 7 DIAS APÓS PARAR A FEBRE
+DIPIRONA 50MG -------------------------------
+TOMAR 01 CP DE 6/6H, SE DOR OU FEBRE
+DRAMIN B6 --------------------------------------
+TOMAR 01 CP DE 8/8H, SE NAUSEA OU VOMITO
+```
+
+**🏠 Casa — Se internação**
+```
+SF 0,9% 30ML/KG EV EM 24H
+DOXACILINA 100MG EV DE 12/12 HORAS, MANTER POR 3 DIAS APÓS TERMINO DE FEBRE
+DIPIRONA 1G EV 4/4H, SE DOR OU FEBRE
+BROMOPRIDA 10MG/2ML EV DE 8/8H,SE NAUSEA OU VOMITO
+SOLICITAR: HEMOGRAMA, NA, K, CREATININA, TGP, TGO
+________________________________________________________
+```
+
+### Infecção Urinária  ·  CID N39
+
+**🏠 Casa — Prescrição — Casa**
+```
+NITROFURANTOINA 100MG ----------------------
+TOMAR 01 CP DE 6/6HORAS POR 7 DIAS
+```
+
+_OU_
+```
+FOSFOMICINA 3G -----------------
+TOMAR 1 ENVELOPE, DOSE ÚNICA
+```
+
+_OU_
+```
+AMOXICILINA + CLAVULANATO 500/125MG ------------------
+TOMAR 01 CP DE 8/8 HORAS POR 7 DIAS
+DIPIRONA 500MG --------------------------
+TOMAR 01 CP DE 6/6 HORAS, SE DOR OU FEBRE
+PYRIDIUM 200MG --------------------------
+TOMAR 01 CP DE 8/8 HORAS, APÓS AS REFECIÇÕES, POR NO MÁXIMO, DOIS DIAS
+---------------------------------------------------------------------------------------------------
+```
+
+### Intoxicação Exógena  ·  CID Y19.9
+
+**🏠 Casa — Prescrição — Casa**
+```
+MOV (O2 se Sat <94%)
+ABCD
+Ligar Ceatox 0800 014 8110
+Hemograma, EAS, função renal, Na, K, Ca, Mg, gasometria arterial, ECG
+Descontaminação
+CARVÃO ATIVADO 1G/KG (máx 50g) – em até 2 horas da ingestão. VO ou SNE.
+Manter: 50G 4/4 HORAS
+Se AAS, tricíclicos, fenobarbital: BICARBONATO DE SÓDIO 1-2 MEQ/KG – na ampola de 8,4% 1ml = 1 mEq – fazer EV
+em infusão aberta em bolus. Após: 150 ml de Bicarbonato + 1L de soro glicosado 5% – infusão continua de 100-
+200ml/h. Acompanhar com EAS, Ca e K.
+Se organofosforados/carbamatos: ATROPINA 2MG EV A CADA 5 MINUTOS ate sumir os roncos na ausculta
+Se opióides: NALOXONA 0,4 MG EV, REPETIR A CADA 3 MINUTOS, AUMENTANDO A DOSE (0,8/2/4/6)
+Se benzodiazepínicos: FLUMAZENIL 0,1MG EV BOLUS
+Se cocaína, anfetamina, crack: DIAZEPAM EV
+Se paracetamol: N-ACETILCISTEINA 140MG/ KG. Manter: 17 doses 70mg/kg 4/4 horas
+No olho: 1-2 gotas de colírio anestésico + lavagem com SF
+______________________________________________________________________
+```
+
+### Intubação Orotraqueal Paciente 70kg
+
+**🏠 Casa — Prescrição — Casa**
+```
+- MOV
+- Preparo: checar aspirador, separar materiais (laringoscopio 3 ou 4, tubo 7 ou 7,5, ambu, guedel seringa 20ml) e
+drogas, posicionar
+- Pré-oxigenação: mascara não reinalante ou bolsa-valvula 10 a 12 L/min por 3 a 5 minutos
+- Analgesia: Fentanil (2mg/ml - 10ml): 3 a 4ml EV em bolus lento
+- Hipnótico: Etomidato (10ml): 10ml EV (0,2 a 0,4 mg/kg) OU Quetamina (10ml): 3-4ml OU propofol (20ml): 10-15ml
+OU Midazolam (10ml): 3-4ml
+- Bloqueador neuromuscular: Succinilcolina (10mg/ml): misturar o pó em 10ml SF, aspirar tudo (1 a 1,5mg/kg) OU
+Rocuronio (5ml): 7ml EV
+- IOT: checar ausculta
+- Ventilador: Modo VCV FiO2 100% PEEP: 6 a 10 FR: 16 Tinsp: 1,0 VC (4-6ml/kg predito): 420 ml
+- Sedação em BIC: Fentanil 4 amp + 500ml SF em 10 ml/h E Midazolam 4 amp + 500ml SF em 10ml/h
+_____________________________________________________________________
+```
+
+### Leptospirose
+
+**🏠 Casa — Prescrição — Casa**
+```
+HEMOGRAMA, UREIA, CREATININA, NA, K, TGO, TGP, BILIRRUBINA TOTAL E FRAÇÕES, VHS, PCR, URINA I, CPK
+PCR LEPTOSPIROSE / IGM IGG LEPTOSPIROSE
+```
+
+**🏠 Casa — Prescrição — Casa**
+```
+DOXICILINA 100MG ------------------- 014 CPS
+TOMAR 01 CP DE 12/12 HORAS POR 7 DIAS
+DIPIRONA 500MG
+TOMAR 01 A 02 CPS DE 6/6 HORAS, SE DOR OU FEBRE
+BROMOPRIDA 10MG
+TOMAR 01 CP DE 8/8 HORAS, SE NÁUSEA OU VOMITO
+```
+
+💡 - Repouso - Hidratação - Evitar uso de Aspirina _____________________________________________________________________________________
+
+### Picada Aranha Marrom  ·  CID W57
+
+**🏠 Casa — Leve – moderado**
+```
+PREDNISONA 20MG
+TOMAR 02 CPS PELA MANHA POR 5 DIAS
+```
+
+**🏠 Casa — Grave**
+```
+5 AMP SAAr EV (em até 36h da picada)
+PREDNISONA 20MG
+TOMAR 02 CPS PELA MANHA POR 5 DIAS
+```
+
+**🏠 Casa — Muito grave**
+```
+10 AMP SAAr EV
+PREDNISONA 20MG
+TOMAR 02 CPS PELA MANHA POR 5 A 7 DIAS
+```
+
+### Picada Escorpião Acidente Escorpiônico  ·  CID T63
+
+**🏠 Casa — Quadros leves**
+```
+INFILTRAÇÃO ANESTÉSICO SEM VASOCONSTRICTOR
+```
+
+**🏠 Casa — OBSERVAÇÃO POR 4 HORAS**
+```
+COMPRESSA MORNA LOCAL
+```
+
+**🏠 Casa — Quadros moderados**
+```
+MONITORIZAÇÃO
+SORO ANTIESCORPIÔNICO (5ml): 3 AMP EV
+Se não tiver o soro: SORO ANTIARACNÍDICO 3 AMP EV
+```
+
+**🏠 Casa — Quadros graves**
+```
+SORO ANTIESCORPIÔNICO (5ml): 6 AMP EV
+Se não tiver o soro: SORO ANTIARACNÍDICO 6 AMP EV
+```
+
+💡 limpar com água e sabão, compressa morna ____________________________________________________________
+
+### Picada Jararaca Acidente Botrópico  ·  CID T63
+
+**🏠 Casa — Prescrição — Casa**
+```
+SORO ANTIBOTRÓPICO (5mg/ml)
+Leve: 2-4 AMP EV
+Moderado: 4-8 AMP EV
+Grave: 12 AMP EV
+```
+
+**🏠 Casa — Se infecção secundária**
+```
+CLORANFENICOL 50-100 MG/KG/DIA VO/EV 6/6 HORAS
+DIPIRONA 1G EV 6/6 HORAS
+MANTER DIURESE 30-40 ML/ HORA
+ELEVAÇÃO DO MEMBRO
+Se complicações: FASCIOTOMIA / DESBRIDAMENTO DE AREAS NECROSADAS / DRENAGEM ABSCESSO
+_____________________________________________________________________
+```
+
+### Relação Sexual Desprotegida/ Violência Sexual
+
+**🏠 Casa — Prescrição — Casa**
+```
+Teste rápido HIV, sífilis, hepatite B e C. Checar vacina hepatite B.
+PEP (até 72 horas)
+TENOFOVIR/LAMIVUDINA 300MG + 300MG
+TOMAR 01 CP AO DIA POR 28 DIAS
+DOLUTEGRAVIR 50MG
+TOMAR 01 CP AO DIA POR 28 DIAS
+LEVONORGESTREL 1,5mg (até 72 horas)
+TOMAR 01 CP VO
+PENICILINA G BENZATINA
+2,4 MILHOES UI IM – 1,2 MILHÃO EM CADA GLUTEO
+CEFTRIAXONA 500MG IM
+AZITROMICINA 500MG 02 CPS
+METRONIDAZOL 400MG 05 CPS VO
+HEMATOLOGIA
+```
 
 ### Sepse  ·  CID A41
 
-**💉 PS / Sala — Alta suspeição**
+**🏠 Casa — Prescrição — Casa**
 ```
-Gasometria, lactato e culturas. Antibiótico: ligar CCIH do hospital.
-Cristaloide 30ml/kg em 3h — alíquotas de 500ml.
-Se necessário: Noradrenalina (1mg/ml) 20ml + 80ml SG 5% EV em BIC (começar 10ml/h).
-Dipirona (500mg/ml): 1–2g 6/6h.
-Bromoprida (10mg/2ml): 10mg EV 8/8h.
-Omeprazol (40mg/ml): 20–40mg EV/VO pela manhã.
+Suspeita: SOFA e NEWS - solicitar hemograma, creatinina, bilirrubina
 ```
 
-💡 Suspeita: SOFA e NEWS — hemograma, creatinina, bilirrubina. Ao internar: hemocultura e urocultura.
+**🏠 Casa — Alta suspeição**
+```
+- Gasometria, Lactato e Culturas
+- Antibiótico: ligar CCIH do hospital para perguntar
+- Cristaloide 30ml/kg em 3h - alíquotas de 500ml
+- Se necessário: Noradrenalina (1mg/ml) 20ml + 80ml SG 5% EV em BIC (começar com 10ml/h)
+- Dipirona (500mg/ml): 1-2g 6/6h
+- Bromoprida (10/2ml): 10mg EV 8/8h
+- Omeprazol (40mg/ml): 20-40mg EV/VO pela manha
+Ao internar: hemocultura e urocultura.
+____________________________________________________________________
+```
 
 
 ## 🧠 Cabeça / Neuro
 
-### Ataque isquêmico transitório  ·  CID G45
+### Acidente Vascular Encefálico Hemorragico AVCH  ·  CID I64
 
-**🏠 Casa — ABCD2 <4**
+**🏠 Casa — Prescrição — Casa**
 ```
-AAS 100mg
-Tomar 2 comprimidos ao dia.
-```
-
-**🏥 Internação — ABCD2 ≥4**
-```
-Internação.
-AAS 100mg: 2 comprimidos dose de ataque, seguido de 1 comprimido/dia.
-Clopidogrel 75mg: 4 comprimidos dose de ataque, seguido de 1 comprimido ao dia (por 21 dias).
-Dipirona 1g EV de 4/4 horas. Metoclopramida 10mg EV 8/8 horas. Omeprazol 20–40mg VO/EV pela manhã.
+Dextro, hemograma, coagulograma, betaHCG, ECG, TC crânio sem contraste
+DIETA ZERO
+SF 0,9% OU RINGER LACTATO 20-30 ML/KG/DIA
+DIPIRONA 1G EV DE 4/4 HORAS
+METOCLOPRAMIDA 10MG EV 8/8 HORAS
+OMEPRAZOL 20-40MG VO/EV PELA MANHA
 ```
 
-💡 ECG, USG cervical, Angio-TC/RNM, eco transtorácico. Calcular ABCD2.
-
-### AVC hemorrágico  ·  CID I61 · I62
-
-**💉 PS / Sala — Prescrição — PS**
+**🏠 Casa — Crise convulsiva**
 ```
-Dieta zero. SF 0,9% ou Ringer lactato 20–30 ml/kg/dia.
-Dipirona 1g EV de 4/4 horas.
-Metoclopramida 10mg EV 8/8 horas.
-Omeprazol 20–40mg VO/EV pela manhã.
-Crise convulsiva: Difenil-hidantoína (50mg/ml) ataque 15 mg/kg EV; manutenção 100mg EV de 8/8h.
-Subaracnoide: Nimodipina 60mg 4/4 horas por 21 dias.
+DIFENIL-HIDANTOINA (50MG/ML)
+Ataque: 15 mg/kg EV
+Manutenção: 100MG EV DE 8/8H
+Manter PAS = 140 (hemorragia intraparenquimatosa) e PAS < 160mmHg (hemorragia subaracnoide).
+NITROPRUSSIATO DE SÓDIO (25MG/ML) 50MG + 250ML SG 5%(= 200MCG/ML) – INICIAR COM 0,5 MCG/KGMIN.
 ```
 
-💡 Dextro, hemograma, coagulograma, βhCG, ECG, TC crânio sem contraste. Manter PAS=140 (intraparenquimatosa) ou <160 (subaracnoide): Nitroprussiato (25mg/ml) 50mg + 250ml SG5% (=200mcg/ml) iniciar 0,5 mcg/kg/min. Suspender/reverter antiagregantes e anticoagulantes. Internação UTI + neurocirurgia.
-
-### AVC isquêmico  ·  CID I63 · I64
-
-**💉 PS / Sala — Prescrição — PS**
+**🏠 Casa — Se hemorragia subaracnoide**
 ```
-Dieta zero. SF 0,9% ou Ringer lactato 20–30 ml/kg/dia.
-Insulina regular 2–4 UI SC (manter glicemia 140–180).
-Dipirona 1g EV de 4/4 horas.
-Metoclopramida 10mg EV 8/8 horas.
-Omeprazol 20–40mg VO/EV pela manhã. O2 se Sat <94%.
+NIMODIPINA 60MG 4/4 HORAS POR 21 DIASC
+SUSPENDER ANTIAGREGANTES E ANTICOAGULANTES.
+REVERTER ANTICOAGULAÇÃO (olhar whitebook).
 ```
 
-**💉 PS / Sala — Trombólise (<4,5h) — checar contraindicações**
+**🏥 Internação — INTERNAÇÃO UTI + AVALIAÇÃO NEUROCIRURGIAO.**
 ```
-Alteplase (50mg/ml) 0,9 mg/kg (máx 90mg): 10% da dose em bolus, restante em infusão lenta em 1 hora — acesso periférico.
-AAS 100mg: 2 comprimidos ao dia (se trombólise, aguardar 24h para iniciar).
-Heparina não fracionada 5000 SC 8/8h OU Enoxaparina 40mg SC 24/24h (se trombólise, aguardar 24h).
+_____________________________________________________________________________
 ```
 
-💡 Dextro, hemograma, coagulograma, βhCG, ECG, TC crânio sem contraste. Controle PA: manter ≤220x120; iniciar trombólise apenas se ≤185x110 (manter <180x110). Nitroprussiato (25mg/ml) 50mg + 250ml SG5% (=200mcg/ml) iniciar 0,5 mcg/kg/min. Internação UTI.
+### Acidente Vascular Encefálico Isquemico AVCI  ·  CID I64
+
+**🏠 Casa — Prescrição — Casa**
+```
+Dextro, hemograma, coagulograma, betaHCG, ECG, TC crânio sem contraste
+DIETA ZERO
+SF 0,9% OU RINGER LACTATO 20-30 ML/KG/DIA
+INSULINA REGULAR 2-4 UI SC (manter glicemia entre 140 e 180)
+DIPIRONA 1G EV DE 4/4 HORAS
+METOCLOPRAMIDA 10MG EV 8/8 HORAS
+OMEPRAZOL 20-40MG VO/EV PELA MANHA
+O2 SE SAT <94%
+Controle PA
+Manter ≤ 220x120 em qualquer situação
+Iniciar trombólise apenas se ≤185x110 – manter abaixo de 180x110
+NITROPRUSSIATO DE SÓDIO (25MG/ML) 50MG + 250ML SG 5%(= 200MCG/ML) – INICIAR COM 0,5 MCG/KG/MIN
+Trombólise (< 4,5h): checar contraindicações
+ALTEPLASE (50MG/ML) 0,9 MG/KG (MÁX 90 MG): 10% DA DOSE EM BOLUS, RESTANTE EM INSUFAO LENTA EM 1
+HORA – ACESSO PERIFÉRICO
+AAS 100MG: 02 CPS AO DIA (se trombólise, aguardar 24 para iniciar)
+HEPARINA NÃO FRACIONADA 5000 SC 8/8H OU ENOXAPARARINA 40MG SC 24/24H (se trombólise, aguardar 24 para
+iniciar).
+```
+
+**🏥 Internação — INTERNAÇÃO UTI**
+```
+_____________________________________________________________________________
+```
 
 ### Cefaleia  ·  CID R51
 
-**📋 Anamnese**
+**🏠 Casa — Prescrição — Casa**
 ```
-Paciente refere cefaleia há [X]. Nega início súbito da dor, nega pico de intensidade em segundos, nega pior cefaleia da vida, nega trauma craniano recente, nega febre, nega rigidez de nuca, nega vômitos persistentes, nega síncope, nega convulsões, nega alteração visual, nega diplopia, nega alteração da fala, nega confusão mental, nega fraqueza, nega parestesias, nega desequilíbrio, nega dificuldade para deambular, nega uso de anticoagulantes, nega mudança do padrão habitual.
-```
-
-**🩺 Exame físico**
-```
-Bom estado geral, corado, hidratado, acianótico, anictérico, afebril.
-Neuro: Glasgow 15, sem sinais meníngeos, sem déficits focais.
+Bom estado geral, corado, hidratado, acianótico, anictérico, afebril
+Neuro: GLASGOW 15, sem sinais meníngeos, sem déficits focais.
 ```
 
 **🏠 Casa — Prescrição — Casa**
 ```
-Dipirona 500mg — 40 comprimidos
-Tomar 2 comprimidos de 6/6 horas se dor, por 5 dias.
-Naproxeno 550mg — 10 comprimidos
-Tomar 1 comprimido de 12/12 horas se dor (até 5 dias).
+1) Dipirona 500mg ----------------------------------- 40 comprimidos
+Tomar 2 comprimidos de 6 em 6 horas se dor por 5 dias
+2) Naproxeno 550mg -------------- 10 comprimidos
+Tomar 1 comprimido de 12 em 12 horas se dor. Uso por até 5 dias.
+ou
+2)Cetoprofeno 100mg --------------------------- 1 caixa
+Tomar 1 comprimido de 12 em 12 horas se dor. Uso por até 5 dias.
+3) ONDANSENTRONA 4MG ---------------------------------- 1 CAIXA
+TOMAR 01 COMPRIMIDO DE 8/8H SE NAUSEAS/VÔMITOS
+4) Sumax 50mg --------------------- 1 caixa
+Tomar 1 comprimido ao iniciar sintomas de enxaqueca para abortar crise. A dose pode ser repetida, se necessário.
+```
+
+💡 Paciente refere cefaleia há  . Nega início súbito da dor, nega pico de intensidade em segundos, nega pior cefaleia da vida, nega trauma craniano recente, nega febre, nega rigidez de nuca, nega vômitos persistentes, nega síncope, nega convulsões, nega alteração visual, nega diplopia, nega alteração da fala, nega confusão mental, nega fraqueza, nega parestesias, nega desequilíbrio, nega dificuldade para deambular, nega uso de anticoagulantes, nega mudança do padrão habitual da cefaleia.
+#MEDICAMENTOS DE USO CONTÍNUO: NEGA
+#COMORBIDADES PRÉVIAS: NEGA
+#ALERGIAS: NEGA ALERGIAS MEDICAMENTOSAS CONHECIDAS.
+#EXAME FÍSICO:
+
+### Cefaléia Pós Raqui  ·  CID O74.5
+
+**🏠 Casa — Prescrição — Casa**
+```
+DIPIRONA + MUCATO DE ISOMETEPTENO + CAFEINA 300/30/30MG-------------------------
+TOMAR 02 CP DE 6/6 HORAS, POR 3 DIAS
 ```
 
 _OU_
 ```
-Cetoprofeno 100mg — 1 caixa
-Tomar 1 comprimido de 12/12 horas se dor (até 5 dias).
-Ondansetrona 4mg — 1 caixa
-Tomar 1 comprimido de 8/8h se náusea/vômito.
-Sumatriptano 50mg — 1 caixa
-Tomar 1 comprimido ao iniciar sintomas de enxaqueca para abortar a crise (pode repetir se necessário).
-```
-
-### Cefaleia pós-raqui  ·  CID O74.5
-
-**💉 PS / Sala — Refratário (na unidade)**
-```
-Ringer lactato 2500ml EV em 24h.
+PARACETAMOL + CAFEINA 500/65MG ---------------
+TOMAR 02 CP DE 6/6H POR 3 DIAS
 ```
 
 **🏠 Casa — Prescrição — Casa**
 ```
-Dipirona + mucato de isometepteno + cafeína 300/30/30mg
-Tomar 2 comprimidos de 6/6 horas por 3 dias.
+AMITRIPTILINA 25MG ------------------------
+TOMAR 01 CP A NOITE POR 3 NOITES
 ```
 
-_OU_
+**🏠 Casa — Refratário**
 ```
-Paracetamol + cafeína 500/65mg
-Tomar 2 comprimidos de 6/6h por 3 dias.
-Refratário: Amitriptilina 25mg — 1 comprimido à noite por 3 noites.
+AQUI: RINGER LACTATO 2500ML EV EM 24H
+______________________________________________________________________________
 ```
 
-### Cefaleia tensional  ·  CID R51
+### Cefaléia Tensional  ·  CID R51
 
 **🏠 Casa — Prescrição — Casa**
 ```
-Paracetamol 750mg
-Tomar 1 comprimido de 6/6 horas se dor.
+PARACETAMOL 750MG
+TOMAR 01 CP DE 6/6 HORAS, SE DOR
 E/OU
-Diclofenaco 50mg
-Tomar 1 comprimido de 6/6 horas.
+DICLOFENACO 50MG
+TOMAR 01 CP DE 6/6 HORAS
 ```
 
-💡 Profilaxia: Amitriptilina 10mg 1 a 5 cp à noite.
-
-### Crise convulsiva  ·  CID R56
-
-**💉 PS / Sala — Prescrição — PS**
+**🏠 Casa — Prescrição — Casa**
 ```
-MOV. Se HGT <60: glicose hipertônica 50%.
-Diazepam 10mg EV — repetir no máximo 2x. Se sem acesso: Midazolam 15mg IM.
-Não melhorou: Fenitoína 1 amp + 250ml de SF 0,9% EV em BIC — correr em 30 minutos.
+AMITRIPTILINA 10MG
+TOMAR 01 A 05 CPS A NOITE
+_____________________________________________________________________________________
 ```
 
-💡 Procurar focos: TC crânio, eletrólitos, hemograma, PCR, Urina I. Avaliação Neurologia. Considerar IOT se não houver melhora.
+### Crise Convulsiva  ·  CID R56
 
-### Encefalopatia hipertensiva  ·  CID I67.4
-
-**💉 PS / Sala — Prescrição — PS**
+**🏠 Casa — Prescrição — Casa**
 ```
-Dieta zero. Ringer lactato 20ml/kg EV em 24 horas se necessário.
-Abaixar 15% da PA na 1ª hora: Nitroprussiato de sódio 1 amp (50mg/2ml) + 250ml SG5% — iniciar infusão 5–10ml/hora.
-Dipirona 1g EV de 6/6 horas se dor.
-Bromoprida 10mg EV de 8/8 horas se náusea/vômito.
-Omeprazol 40mg EV 1x pela manhã.
+- MOV
+- Se HGT < 60: glicose hipertonica 50%
+- Diazepam 10mg EV - repetir no máximo 2x / Se paciente SEM acesso: Midazolam 15 mg IM
+- Não melhorou: Fenitoína 1 amp + 250ml de SF 0,9% EV em BIC - correr em 30 minutos
+- Considerar IOT se não houver melhora
+- Procurar focos: TC crânio, eletrólitos, hemograma, PCR, Urina I
+- Avaliação Neurologia
+________________________________________________________________
 ```
 
-💡 Excluir IAM, AVC, dissecção de aorta, trauma. ECG, Rx tórax, Urina I, creatinina, eletrólitos, marcadores cardíacos (s/n), TC crânio (s/n).
+### Encefalopatia Hipertensiva  ·  CID I67.4
+
+**🏠 Casa — Prescrição — Casa**
+```
+Excluir IAM, AVC, Dissecção aorta, trauma
+ECG, RX TÓRAX, URINA 1, CREATININA, ELETRÓLITOS, MARCADORES CARDIACOS (S/N), TC CRANIO (S/N)
+DIETA ZERO
+RINGER LACTATO 20ML/KG EV EM 24 HORAS, SE NECESSÁRIO
+Abaixar 15% da PA na 1º hora: NITROPRUSSIATO DE SÓDIO: 1 AMP (50MG/2ML) + 250ML SG5% - INICIAR INFUSAO
+COM 5-10ML/ HORA
+DIPIRONA 1G EV DE 6/6HORAS, SE DOR
+BROMOPRIDA 10NG EV DE 8/8 HORAS, SE NAUSEA E VOMITO
+OMEPRAZOL 40MG EV 1X PELA MANHA
+_____________________________________________________________________________
+```
 
 ### Enxaqueca  ·  CID G43
 
-**💉 PS / Sala — Na unidade**
+**🏠 Casa — Prescrição — Casa**
 ```
-Crise leve: Dipirona 1 amp EV OU Profenid 1 amp EV.
-Crise moderada: Clorpromazina 1 amp EV e/ou Dramin 1 amp EV ou Bromoprida 1 amp EV.
-Estado migranoso: Dexametasona 1 amp EV lento. Evitar opioides.
-```
-
-**🏠 Casa — Crise (uso oral)**
-```
-Sumatriptano 50mg
-Tomar 1 a 2 comprimidos, dose única, se crise de enxaqueca.
+SUMATRIPTANO 50MG
+TOMAR 01 A 02 CP, DOSE ÚNICA, SE CRISE DE ENXAQUECA
 ```
 
 _OU_
 ```
-Naproxeno 500mg
-Tomar 1 comprimido de 12/12 horas por 3 dias.
+NAPROXENO 500MG
+TOMAR 01 CP DE 12/12 HORAS POR 3 DIAS
 ```
 
 _OU_
 ```
-Ibuprofeno 400mg
-Tomar 1 comprimido de 12/12 horas por 3 dias.
+IBUPROFENO 400MG
+TOMAR 01 CP DE 12/12 HORAS POR 3 DIAS
 ```
 
-💡 Evitar opioides. Profilaxia: Propranolol 40mg 2 cp 1x/dia OU Metoprolol 25mg 4 cp 1x/dia OU Amitriptilina 25mg 1 cp 1x/dia OU Ácido valproico 250mg 1 cp 3x/dia.
-
-### Meningite bacteriana  ·  CID G00.9
-
-**🏥 Internação — Prescrição — Internação**
+**🏠 Casa — Crise leve**
 ```
-Ringer lactato ou SF 0,9% 20ml/kg EV.
-Ceftriaxona 2g EV 12/12 horas por 7–14 dias
-OU Meropenem 2g EV de 8/8 horas por 10–14 dias (suspeita pseudomonas/enterobactéria).
-Se >50 anos: + Ampicilina 2g EV de 4/4 horas.
-Dexametasona 0,15ml/kg EV de 6/6 horas por 2 dias (começar 30 min antes do ATB).
-Dipirona (500mg/ml) 1g EV 6/6 horas.
-Metoclopramida (10mg/2ml) 1 amp + AD EV 8/8 horas OU Bromoprida (10mg/2ml) 1 amp EV 8/8h.
-Omeprazol (40mg/10ml) 20–40mg EV/VO 1x ao dia pela manhã.
+DIPIRONA 1 AMP EV OU
+PROFENID 1 AMP EV
 ```
 
-💡 Hemograma, ureia, creatinina, coagulograma, hemocultura, lactato, glicose, líquor, TC (s/n). Profilaxia de contactantes (meningococo): Ciprofloxacino 500mg VO dose única OU Rifampicina 600mg 12/12h por 2 dias.
-
-### Neuralgia do trigêmeo  ·  CID G50.9
+**🏠 Casa — Crise moderada**
+```
+CLORPROMAZINA 1 AMP EV E/OU
+DRAMIN 1 AMP EV OU BROMOPRIDA 1 AMP EV E/OU
+Estado migranoso
+DEXAMETASONA 1 AMP EV LENTO
+```
 
 **🏠 Casa — Prescrição — Casa**
 ```
-Carbamazepina 200mg
-Tomar 1 comprimido de 12/12 horas.
-E/OU
-Gabapentina 300mg
-Tomar 1 comprimido de 8/8 horas.
-```
-
-💡 Encaminhar neurologista.
-
-### Neuralgia pós-herpética  ·  CID G53.0
-
-**🏠 Casa — Tópico**
-```
-Capsaicina creme 0,075%
-Aplicar na região 2–3x ao dia.
-```
-
-**🏠 Casa — Oral**
-```
-Gabapentina 300mg
-Tomar 1 a 6 comprimidos 1x ao dia.
+PROPRANOLOL 40MG
+TOMAR 02 CPS 1X AO DIA
 ```
 
 _OU_
 ```
-Amitriptilina 25mg
-Tomar 1 a 3 comprimidos 1x ao dia.
+METOPROLOL 25MG
+TOMAR 04 CP 1X AO DIA
 ```
 
-💡 Após aplicar o creme pode 'queimar' por alguns minutos.
+_OU_
+```
+AMITRIPTILINA 25MG
+TOMAR 01 CP 1X AO DIA
+```
+
+_OU_
+```
+ACIDO VALPROICO 250MG
+TOMAR 01 CP 3X AO DIA
+```
+
+💡 EVITAR OPIÓIDES
+
+### Meningite Bacteriana  ·  CID G00.9
+
+**🏠 Casa — Prescrição — Casa**
+```
+HEMOGRAMA, UREIA, CREATININA, COAGULOGRAMA, HEMOCULTURA, LACTATO, GLICOSE, LÍQUOR, TC (S/N)
+RINGER LACTATO OU SF 0,9% 20ML/KG EV
+CEFTRIAXONA 2G EV 12/12 HORAS POR 7-14 DIAS
+```
+
+_OU_
+```
+MEROPENEM 2G EV DE 8/8 HORAS POR 10-14 DIAS (suspeita pseudomonas/enterobacteria)
+Se >50 anos: + AMPICILINA 2G EV DE 4/4 HORAS
+DEXAMETASONA 0,15ML/KG EV DE 6/6 HORAS POR 2 DIAS (começar 30 min antes do atb)
+DIPIRONA (500MG/ML) 1G EV 6/6 HORAS
+METOCLOPRAMIDA (10MG/2ML): 1 AMP + AD EV 8/8 HORAS
+```
+
+_OU_
+```
+BROMOPRIDA (10MG/2ML) 1 AMP EV 8/8HORAS
+OMEPRAZOL (40MG/10ML): 20-40MG EV/VO 1X AO DIA PELA MANHA
+```
+
+**🏠 Casa — OBSERVAÇÃO NEUROLÓGICA**
+```
+SINAIS VITAS
+```
+
+**🏠 Casa — Prescrição — Casa**
+```
+CIPROFLOXACINO 500MG
+TOMAR 01 CP VO DOSE ÚNICA
+```
+
+_OU_
+```
+RIFAMPICINA 600MG
+TOMAR 01 CP DE 12/12 HORAS POR 2 DIAS
+_____________________________________________________________________
+```
+
+💡 Se meningococo, profilaxia para contactuantes:
+
+### Neuralgia do Trigêmio  ·  CID G50.9
+
+**🏠 Casa — Prescrição — Casa**
+```
+CARBAMAZEPINA 200MG
+TOMAR 01 CP DE 12/12 HORAS
+E/OU
+GABAPENTINA 300MG
+TOMAR 01 CP DE 8/8 HORAS
+Encaminhar Neurologista
+*Possibilidade de hidantalizar
+____________________________________________________________________________
+```
+
+### Neuralgia Pós Herpética  ·  CID G53.0
+
+**🏠 Casa — Prescrição — Casa**
+```
+CAPSAICINA CREME 0,075%
+APLICAR NA REGIÃO 2-3X AO DIA
+OU
+```
+
+**🏠 Casa — Prescrição — Casa**
+```
+GABAPENTINA 300MG
+TOMAR 01 A 06 CPS 1X AO DIA
+```
+
+_OU_
+```
+AMITRIPTILINA 25MG
+TOMAR 01 A 03 CPS 1X AO DIA
+Orientação: após aplicar creme pode “queimar” por alguns minutos
+______________________________________________________________________
+```
 
 ### Paralisia de Bell  ·  CID G51.0
 
-**🏠 Casa — Oral**
+**🏠 Casa — Prescrição — Casa**
 ```
-Prednisona 20mg
-Tomar 3 a 4 comprimidos 1x ao dia por 5–7 dias.
+Hemograma, PCR – excluir infecções
+```
+
+**🏠 Casa — Prescrição — Casa**
+```
+PREDNISONA 20MG
+TOMAR 03 A 04 CPS 1X AO DIA POR 5-7 DIAS
 ```
 
 _OU_
 ```
-Prednisolona 20mg
-Tomar 3 comprimidos 1x ao dia por 5 dias.
+PREDNISOLONA 20MG
+TOMAR 03 CPS 1X AO DIA POR 5 DIAS
 ```
 
-**🏠 Casa — Oftálmico**
+**🏠 Casa — USO OFTALMICO**
 ```
-Carmelose sódica
-Pingar 1 gota no olho afetado sempre que necessário.
-```
-
-💡 Hemograma, PCR (excluir infecções). Encaminhar neurologista.
-
-### Síndrome de Ramsay Hunt  ·  CID B02.2
-
-**🏠 Casa — Oral**
-```
-Valaciclovir 1g
-Tomar 1 comprimido de 8/8 horas por 7–10 dias.
+CARMELOSE SODICA
+PINGAR 1 GOTA EM OLHO AFETADO, SEMPRE QUE NECESSÁRIO
+Encaminhar neurologista
+_________________________________________________________
 ```
 
-_OU_
-```
-Aciclovir 400mg
-Tomar 1 comprimido de 4/4 horas por 10 dias.
-Dipirona 1g
-Tomar 1 comprimido de 6/6 horas se dor ou febre.
-```
+### Síndrome de Ramsay Hunt
 
-**🏠 Casa — Oftálmico**
+**🏠 Casa — Prescrição — Casa**
 ```
-Carmelose sódica
-Pingar 1 gota no olho afetado sempre que necessário.
-```
-
-💡 Casos graves (vertigem, zumbido, perda auditiva) → internar. Encaminhar neurologista.
-
-### Vertigem / Labirintite / Tontura  ·  CID R42
-
-**💉 PS / Sala — Agora (na unidade)**
-```
-SF 0,9% 100ml + Dramin 1 amp EV.
-Sem melhora: Metoclopramida 10mg EV.
-Sem melhora: Diazepam 1 amp EV.
-```
-
-**🏠 Casa — Sintomático**
-```
-Dramin B6
-Tomar 1 comprimido de 6/6h se náuseas ou vômitos.
-Labirin 8mg — 1 caixa
-Tomar 1 comprimido de 8/8h.
+VALACICLOVIR 1G
+TOMAR 01 CP DE 8/8 HORAS POR 7 – 10 DIAS
 ```
 
 _OU_
 ```
-Meclin 50mg
-Tomar 1 comprimido de 12/12 horas por 5 dias.
-Cinarizina 25mg
-Tomar 1 comprimido de 8/8 horas por até 5 dias.
+ACICLOVIR 400MG
+TOMAR 01 CP DE 4/4 HORAS POR 10 DIAS
+DIPIRONA 1G
+TOMAR 01 CP DE 6/6 HORAS, SE DOR OU FEBRE
 ```
 
-**🏠 Casa — Neurite vestibular**
+**🏠 Casa — USO OFTALMICO**
 ```
-Prednisona 20mg — 1 caixa
-Tomar 3 comprimidos pela manhã por 5 dias (corticoterapia com desmame: 60mg/dia 5 dias, reduzir 10mg/dia até o 9º, 5mg no 10º).
-Crônica: Flunarizina 10mg — 1 comprimido à noite por 5 dias.
+CARMELOSE SODICA
+PINGAR 1 GOTA EM OLHO AFETADO, SEMPRE QUE NECESSÁRIO
+Casos graves: vertigem, zumbido, perda auditiva -> internar
+Encaminhar neurologista
+________________________________________________
+DERMATOLOGIA / PELE E ANEXOS
 ```
 
-💡 Excluir AVC: score HINTS.
+### Tontura  ·  CID R42
+
+**🏠 Casa — Neurite vestibular aguda**
+```
+1) Prednisona 20mg ------------------- 1 caixa
+Tomar 3 comprimidos pela manha, todos os dias, por 5 dias.Corticoterapia oral por 10 dias (5 dias de 60 mg/dia, com redução de 10 mg até o 9o dia e 5 mg no 10o dia);
+```
+
+_OU_
+```
+1) Prednisona 10mg -------------------- 1 caixa
+Tomar 1 comprimido pela manha por 4 dias, apos o termino do item 1). Em seguida, tomar meio comprimido pela manha, por um dia apenas.
+- Neurite vestibular cronica
+1) Flunarizina 10mg
+Tomar 1 comprimido a noite por 5 dias.
+```
+
+**🏠 Casa — Sintomatico**
+```
+2) Cinarizina 25mg --------------------
+Tomar 1 comprimido de 8 em 8 horas por ate 5 dias.
+```
+
+_OU_
+```
+2) Dramin B6 50mg ------------
+Tomar 1 comprimido de 8 em 8 horas por ate 5 dias.
+```
+
+### Vertigem // Labirintite// Tontura  ·  CID R42
+
+**🏠 Casa — Prescrição — Casa**
+```
+Excluir AVC: Score HINTS
+```
+
+**🏠 Casa — Prescrição — Casa**
+```
+DRAMIN B6 -------------------------
+TOMAR 01 COMPRIMIDO DE 6/6H, SE NÁUSEAS OU VÔMITOS
+LABIRIN 8MG ---------------------- 1 CAIXA
+TOMAR 1 COMPRIMIDO DE 8/8H
+```
+
+_OU_
+```
+MECLIN 50MG ---------------------
+TOMAR 01 CP DE 12/12 HORAS POR 5 DIAS
+```
+
+_OU_
+```
+PREDNISONA 1MG/KG
+TOMAR 01 CP 1X AO DIA POR 5 DIAS
+AGORA: SF0,9% 100ML + DRAMIN 1 AMP EV
+Se não melhorara: METOCLOPRAMIDA 10MG EV
+Se não melhorara: DIAZEPAM 1 AMP EV
+______________________________________________________________________________
+```
 
 
 ## 👁 Olhos
 
-### Calázio  ·  CID H00.1
+### Calazio  ·  CID H00.1
 
-**🏠 Casa — Uso oftalmológico**
+**🏠 Casa — USO OFTALMOLÓGICO**
 ```
-Tobramicina 0,3% pomada
-Aplicar 1 cm da pomada 2x ao dia por 5 dias.
-Compressas mornas por 10 minutos 4x ao dia com massagem suave sobre a lesão.
+1) TOBRAMICINA 0,3% POMADA
+APLICAR 1CM DA POMADA 2X AO DIA POR 5 DIAS
+2) FAZER COMPRESSAS MORNAS POR 10 MINUTOS 4X AO DIA COM MASSAGEM SUAVE SOBRE A LESÃO
+__________________________________________________________________________
 ```
 
-### Celulite periorbitária / pré-septal  ·  CID H05
+### Celulite Periorbitaria / Pré Septal
 
 **🏠 Casa — Prescrição — Casa**
 ```
-Amoxicilina + clavulanato 500mg — 30 comprimidos
-Tomar 1 comprimido de 8/8 horas por 10 dias.
+AMOXICILINA + CLAVULANATO 500MG ------------- 30 CPS
+TOMAR 01 CP DE 8/8 HORAS POR 10 DIAS
 ```
 
 _OU_
 ```
-Moxifloxacino 400mg — 10 comprimidos
-Tomar 1 comprimido 1x ao dia por 10 dias.
+MOXIFLOXACINO 400MG ------------ 10 CPS
+TOMAR 01 CP 1X AO DIA POR 10 DIAS
 ```
 
-💡 Compressas quentes na área inflamada 3x ao dia. Excluir celulite septal (TC).
+💡 - Compressas quentes na área inflamada 3x ao dia Excluir: celulite septal (TC) ____________________________________________________________________________
 
 ### Conjuntivite  ·  CID H10
 
-**🩺 Exame físico**
+**🏠 Casa — Prescrição — Casa**
 ```
-Olho [D/E] com hiperemia conjuntival discreta, sem secreção purulenta evidente. Sem edema periorbitário importante.
+Olho direito com hiperemia conjuntival discreta, sem secreção purulenta evidente. Sem edema periorbitário importante
+USO OFTAMOLÓGICO
+1) Tobramicina 0,3% solucao oftalmica --------- 1 frasco
+Aplicar 1 gota no olho acometido, de 6 em 6 horas, por 7 dias.
+2) COLÍRIO LUBRIFICANTE (SYSTANE, LACRIFILM ou LACRIMA) ----------------------------
+PINGAR 01 GOTA EM OLHO AFETADO DE 4/4HORAS
+3)SORO FISIOLÓGICO 0,9%
+APLICAR COMPRESSA GELADA COM SORO FISIOLOGICO 4X AO DIA NO OLHO AFETADO
 ```
-
-**🏠 Casa — Uso oftalmológico**
-```
-Tobramicina 0,3% solução oftálmica — 1 frasco
-Aplicar 1 gota no olho acometido, de 6/6 horas, por 7 dias.
-Colírio lubrificante (Systane, Lacrifilm ou Lacrima)
-Pingar 1 gota no olho afetado de 4/4 horas.
-Soro fisiológico 0,9%
-Aplicar compressa gelada com soro fisiológico 4x ao dia no olho afetado.
-```
-
-**🏠 Casa — Uso oral**
-```
-Loratadina 10mg — 7 comprimidos
-Tomar 1 comprimido à noite por até 7 noites.
-Dipirona 500mg
-Tomar 1 comprimido de 6/6 horas se dor.
-```
-
-### Herpes zoster oftálmico  ·  CID B02.3
 
 **🏠 Casa — Prescrição — Casa**
 ```
-Aciclovir 400mg
-Tomar 2 comprimidos de 4/4 horas por 7 dias.
-Prednisona 20mg
-Tomar 2 comprimidos 1x ao dia.
+1) Loratadina 10mg ------------------------------ 7 comprimidos
+Tomar 1 comprimido à noite por até 7 noites.
+2) DIPIRONA 500MG --------------------------
+TOMAR 01 CP DE 6/6 HORAS, SE DOR
+__________________________________________________________________________
 ```
 
-💡 Compressas geladas; deixar a pele seca.
+### Herpes Zoster Ocular  ·  CID B00.5
 
-### Neurite óptica  ·  CID H46
-
-**🏥 Internação — Na internação**
+**🏠 Casa — Prescrição — Casa**
 ```
-Dieta oral branda.
-Metilprednisolona 1g + SF 400ml EV — infundir em 30–60 minutos, por 3–5 dias.
-Dipirona 1–2g EV de 6/6 horas.
-Metoclopramida 10mg EV + AD, de 8/8 horas, se náusea ou vômito.
-Omeprazol 20–40mg VO/EV de 24/24 horas, pela manhã.
+ACICLOVIR 400MG ---------------
+TOMAR 02 CPS DE 4/4 HORAS POR 7 DIAS
+PREDNISONA 20MG -------------
+TOMAR 02 CPS 1X AO DIA
 ```
 
-💡 Solicitar hemograma, ureia, creatinina, Na, K e TC de crânio sem contraste. Avaliação oftalmo e neurologista.
+💡 compressas geladas, deixar a pele seca. OTORRINOLARINGOLOGIA
 
-### Queimadura ocular (abrasão / química)  ·  CID T26
+### Neurite Optica  ·  CID H46
 
-💡 Lavar olho com SF 0,9% 1 litro. Colírio anestésico. Avaliação oftalmo.
+**🏠 Casa — Prescrição — Casa**
+```
+SOLICITAR HEMOGRAMA, UREIA, CREAT, SODIO, POTASSIO E TC DE CRANIO SEM CONSTRASTE
+AVALIAÇÃO DO OFTALMO E NEUROLOGISTA
+```
+
+**🏠 Casa — Na internação**
+```
+DIETA ORAL BRANDA
+METILPREDNISOLONA 1G + SF 400ML EV INFUNDIR EM 30-60 MINUTOS – POR 3-5 DIAS
+IVERMECTINA (6MG/CP) 200MCG/KG/DIA POR 1-2 DIAS (Dose usual: 2-3 CP VO DOSE ÚNICA)
+DIPIRONA 1-2G EV DE 6/6 HORAS
+METOCLOPRAMIDA 10MG EV + AD, DE 8/8 HORAS, SE NAUSEA OU VOMITO
+OMEPRAZOL 20-40MG VO/EV DE 24/24 HORAS, PELA MANHA
+_____________________________________________________________________
+ORTOPEDIA/ REUMATOLOGIA
+```
+
+### Queimadura Ocular – Abrasão, Química
+
+**🏠 Casa — Prescrição — Casa**
+```
+LAVAR OLHO COM SF 0,9% 1 LITRO
+COLÍRIO ANESTÉSICO
+AVALIAÇÃO OFTALMO
+____________________________________________________________________________
+```
 
 
 ## 👂 Otorrino
 
-### Amigdalite aguda  ·  CID J03
+### Alergia e Rinite Alérgica alergia  ·  CID T78.4
 
-**🏠 Casa — ATB (se bacteriana)**
+**🏠 Casa — Prescrição — Casa**
 ```
-Amoxicilina 500mg — 30 comprimidos
-Tomar 1 comprimido de 8 em 8 horas por 10 dias. (Completar os 10 dias mesmo com melhora. Buscar PS se reação adversa.)
+1) Soro fisiológico 0,9% -------------------------- 1 frasco
+Aplicar uma seringa de 20ml de soro fisiológico em cada narina, três vezes ao dia, até melhora dos sintomas.
+2) Budesonida 64mcg spray nasal --------- 1 frasco
+Aplicar 1 jato em cada narina de 12 em 12 horas por 10 dias.
 ```
 
 _OU_
 ```
-Amoxicilina + clavulanato 875+125mg — 20 comprimidos
+2) Fluticasona 50mcg spray nasal  -------- 1 frasco
+Aplicar 1 jato em cada narina, uma vez ao dia, por 10 dias.
+```
+
+_OU_
+```
+2) Mometasona 50mcg spray nasal ------ 1 frasco
+Aplicar 1 jato em cada narina, uma vez ao dia, por 10 dias.
+```
+
+_OU_
+```
+2) Beclometasona 50mcg spray nasal ---- 1 frasco
+Aplicar 2 jatos em cada narina de 12 em 12 horas por 10 dias.
+3) Loratadina 10mg ------------------------------ 10 comprimidos
+Tomar 1 comprimido à noite por até 10 noites.
+3) Loratadina 1mg/ml --------------------------- 1 frasco > acima de 2a!
+< 30kg: Tomar 5 ml por via oral à noite por até 7 noites.
+> 30kg: Tomar 10ml por via oral à noite por até 7 noites.
+```
+
+_OU_
+```
+3) Prometazina 25 mg
+Tomar 1 comprimido A NOITE  por 7 dias.
+```
+
+_OU_
+```
+4) Hidroxizina 25 mg > pode tomar de 8/8h se necessário!
+Tomar 1 comprimido à noite por até 10 noites.
+x) Hidroxizina 2mg/ml ---------------------- 1 frasco > acima de 6m!
+< 40kg: Tomar 2mg/kg/dia divididos em 3 tomadas ao longo dia por até 10d.
+> 40kg: 0,7mg/kg de peso corporal de 8 em 8 horas por até 10d. Máximo de 100mg/dia.
+4) Prednisona 20mg ------------------------- 10 comprimidos
+Tomar 2 comprimidos pela manhã, uma vez ao dia, por até 5 dias.
+5) Montelucaste 10 mg
+Tomar 1 comprimido à noite por 30 noites.
+x) Montelucaste > indicado para > 2 anos
+Se 2-5 anos: Tomar 4 mg, uma vez à noite, por até 30 noites.
+Se 6-14 anos: Tomar 5 mg, uma vez à noite, por até 30 noites.
+Se >15a: seguir prescrição de adulto
+Bilastina 20 mg
+Tomar 1 comprimido VO pela manhã por 10 dias.
+```
+
+### Amigdalite Aguda  ·  CID J03
+
+**🏠 Casa — SE BACTERIANA**
+```
+1) Amoxicilina 500mg ------------------------------ 30 comprimidos
+Tomar 1 comprimido de 8 em 8 horas por 10 dias.  (Tomar os 10 dias, mesmo que os sintomas melhorem antes. Buscar PS em caso de reação adversa)
+```
+
+_OU_
+```
+1) Amoxicilina + clavulanato 875+125mg ------- 20 comprimidos
 Tomar 1 comprimido de 12 em 12 horas por 10 dias.
 ```
 
 _OU_
 ```
-Clindamicina 300mg
+1) Clindamicina 300mg ------------------------
 Tomar 1 comprimido de 8 em 8 horas por 10 dias.
 ```
 
-**🏠 Casa — Sintomáticos**
+**🏠 Casa — Prescrição — Casa**
 ```
-Dipirona 500mg — 20 comprimidos
-Tomar via oral 2 comprimidos de 6 em 6 horas se dor ou febre.
-Maleato de dexclorfeniramina 2mg/5ml
+1) Dipirona 500mg ----------------------------------- 20 comprimidos
+Tomar  via oral 2 comprimidos de 6 em 6 horas se dor ou febre.
+2) Maleato de dexclorfeniramina 2mg/5ml
 Tomar via oral 5 mL, 2x por dia, por 5 dias.
-Prednisona 20mg
+3) PREDNISONA 20MG --------------------------
 Tomar 1 comprimido pela manhã, por 5 dias.
-Strepsils pastilhas — 1 caixa
-Dissolver 1 pastilha na boca, 2 ou mais vezes ao dia, até alívio. Máximo 10/dia.
+4) Strepsils pastilhas ------------------------------ 1 caixa
+Dissolver uma pastilha na boca, duas ou mais vezes ao dia, até o alívio dos sintomas. Limite máximo diário de 10 pastilhas.
 ```
-
-**🏠 Casa — Uso nasal**
-```
-Lavagem nasal com soro fisiológico 0,9% — 1 frasco
-Aplicar 1 seringa de 20ml em cada narina, 3x ao dia, até melhora.
-Budesonida 64mcg spray nasal — 1 frasco
-Aplicar 1 jato em cada narina de 12 em 12 horas por 10 dias.
-```
-
-💡 Viral na maioria → sintomático. Bacteriana (Centor/estrepto) → ATB abaixo.
-
-### Cerume  ·  CID H61.2
 
 **🏠 Casa — Prescrição — Casa**
 ```
-Cerumin
-Aplicar 5 gotas no ouvido afetado 3x ao dia por 5 dias.
-Dipirona 500mg
-Tomar 1 comprimido de 6 em 6 horas se dor.
+1) Lavagem Nasal com Soro fisiológico 0,9% -------------------------- 1 frasco
+Aplicar uma seringa de 20ml de soro fisiológico em cada narina, três vezes ao dia, até melhora dos sintomas.
+2) Budesonida 64mcg spray nasal --------- 1 frasco
+Aplicar 1 jato em cada narina de 12 em 12 horas por 10 dias.
+_____________________________________________________________________
+```
+
+### Cerume  ·  CID H61.2
+
+**🏠 Casa — USO OTOLOGICO**
+```
+1) CERUMIN ----------------------------
+APLICAR 5 GOTAS NO OUVIDO AFETADO 3X AO DIA POR 5 DIAS
+2) DIPIRONA 500MG ---------------------------------
+TOMAR 01 COMPRIMIDO DE 6/6H SE DOR
+___________________________________________________________________________
 ```
 
 ### Faringoamigdalite  ·  CID J03
 
-**💉 PS / Sala — Na unidade (IM, se necessário)**
+**💉 PS / Sala — APLICAR IM, DOSE ÚNICA**
 ```
-Agora: Profenid OU Decadron IM.
-Penicilina benzatina 1.200.000 UI — aplicar IM, dose única.
+______________________________________________________________________
 ```
 
-**🏠 Casa — ATB (se necessário)**
+**🏠 Casa — Prescrição — Casa**
 ```
-Amoxicilina 500mg — 30 comprimidos
+75% VIRAL  Quadro clínico: dor de garganta, disfagia, mialgia, febre baixa, tosse, coriza hialina e espirros
+Exame físico: hiperemia e edema da mucosa faríngea e das amígdalas, com presença de
+exsudato (raramente). Ausência de adenopatia
+20-40% bacteriana
+O exame físico revela hiperemia, aumento de tonsilas e exsudato purulento, além de adenomegalia
+em cadeia jugulodigástrica, observada em 60% dos casos. No hemograma observamos leucocitose
+com desvio à esquerda.
+```
+
+**🏠 Casa — Prescrição — Casa**
+```
+Amoxicilina 500mg ------------------------------ 30 comprimidos
 Tomar 1 comprimido de 8 em 8 horas por 10 dias.
+ou
+AMOXICILINA + CLAVULANATO (875 + 125 MG) ------------------------- 20 CPS
+TOMAR 1 CP DE 12/12H POR 10 DIAS.
 ```
 
-_OU_
+**🏠 Casa — Prescrição — Casa**
 ```
-Amoxicilina + clavulanato 875+125mg — 20 comprimidos
-Tomar 1 comprimido de 12 em 12 horas por 10 dias.
-```
-
-**🏠 Casa — Sintomáticos**
-```
-Dipirona 500mg — 20 comprimidos
-Tomar via oral 2 comprimidos de 6 em 6 horas se dor ou febre.
-Maleato de dexclorfeniramina 2mg/5ml
+1) Dipirona 500mg ----------------------------------- 20 comprimidos
+Tomar  via oral 2 comprimidos de 6 em 6 horas se dor ou febre.
+2) Maleato de dexclorfeniramina 2mg/5ml
 Tomar via oral 5 mL, 2x por dia, por 5 dias.
-Prednisona 20mg
+3) PREDNISONA 20MG --------------------------
 Tomar 1 comprimido pela manhã, por 5 dias.
-Strepsils pastilhas — 1 caixa
-Dissolver 1 pastilha na boca, 2 ou mais vezes ao dia, até alívio. Máximo 10/dia.
+4) Strepsils pastilhas ------------------------------ 1 caixa
+Dissolver uma pastilha na boca, duas ou mais vezes ao dia, até o alívio dos sintomas. Limite máximo diário de 10 pastilhas.
 ```
 
-**🏠 Casa — Uso nasal**
+**🏠 Casa — Prescrição — Casa**
 ```
-Lavagem nasal com soro fisiológico 0,9% — 1 frasco
-Aplicar 1 seringa de 20ml em cada narina, 3x ao dia, até melhora.
-Budesonida 64mcg spray nasal — 1 frasco
+1) Lavagem Nasal com Soro fisiológico 0,9% -------------------------- 1 frasco
+Aplicar uma seringa de 20ml de soro fisiológico em cada narina, três vezes ao dia, até melhora dos sintomas.
+2) Budesonida 64mcg spray nasal --------- 1 frasco
 Aplicar 1 jato em cada narina de 12 em 12 horas por 10 dias.
 ```
 
-💡 75% viral (dor de garganta, mialgia, febre baixa, tosse, coriza, sem adenopatia). 20–40% bacteriana (hiperemia, tonsilas aumentadas, exsudato purulento, adenomegalia jugulodigástrica, leucocitose com desvio). ATB só se necessário. Na unidade: Profenid ou Decadron IM.
-
-### IVAS / Resfriado / Gripe  ·  CID J06.9
-
-**📋 Anamnese**
+**🏠 Casa — AGORA: PROFENID OU DECADRON**
 ```
-PACIENTE REFERE [sintomas gripais] há [X] dias. Nega febre, nega dispneia, nega dor torácica, nega disfagia, nega vômitos e nega prostração. Sem outros sintomas associados.
+PENICILINA BENZATINA 1,2 MILHOES --------
 ```
 
-**🏠 Casa — Sintomáticos**
-```
-Dipirona 500mg — 20 comprimidos
-Tomar via oral 2 comprimidos de 6 em 6 horas se dor ou febre.
-```
+### IVAS SUS Amigldalite Resfriado  ·  CID J06.9 · J03.9 · J00
 
-_OU_
+**🏠 Casa — Prescrição — Casa**
 ```
-Paracetamol 500mg — 20 comprimidos
-Tomar 1 comprimido de 8 em 8 horas se dor ou febre.
-Maleato de dexclorfeniramina 2mg/5ml
+1) Dipirona 500mg ----------------------------------- 20 comprimidos
+Tomar  via oral 2 comprimidos de 6 em 6 horas se dor ou febre.
+ou
+1) Paracetamol 500 mg----------------------------------- 20 comprimidos
+Tomar 1 comprimido de 8 em 8 horas se dor ou febre
+2) Maleato de dexclorfeniramina 2mg/5ml
 Tomar via oral 5 mL, 3x por dia, por 5 dias.
-Cetoprofeno 100mg — 1 caixa
-Tomar via oral 1 comprimido de 12 em 12 horas por 5 dias.
-```
-
-_OU_
-```
-Diclofenaco 50mg — 10 comprimidos
+3) Cetoprofeno 100mg --------------------------- 1 caixa
+Tomar  via oral 1 comprimido de 12 em 12 horas por 5 dias.
+ou
+Diclofenaco 50mg ----------------- 10 comprimidos
 Tomar 1 comprimido de 8 em 8 horas por 5 dias.
-```
-
-_OU_
-```
-Prednisona 20mg
+ou
+3) PREDNISONA 20MG --------------------------
 Tomar 1 comprimido pela manhã, por 5 dias.
-Strepsils pastilhas — 1 caixa
-Dissolver 1 pastilha na boca, 2 ou mais vezes ao dia, até alívio. Máximo 10 pastilhas/dia.
-Dropropizina 3mg/ml xarope 120 ml
+4) Strepsils pastilhas ------------------------------ 1 caixa
+Dissolver uma pastilha na boca, duas ou mais vezes ao dia, até o alívio dos sintomas. Limite máximo diário de 10 pastilhas.
+5)DROPROPIZINA 3MG/ML XAROPE 120 ml
 Tomar 10 ml de 6 em 6 horas, por 3 dias.
 ```
 
 _OU_
 ```
-Acetilcisteína xarope 40 mg/mL
-Tomar 15 mL antes de dormir, via oral, por 5 dias.
+5)Acetilcisteína Xarope (40 mg/mL):
+Tomar 15 mL, antes de dormir, via oral, por 5 dias.
 ```
 
-**🏠 Casa — Uso nasal**
+**🏠 Casa — Prescrição — Casa**
 ```
-Lavagem nasal com soro fisiológico 0,9% — 1 frasco
-Aplicar 1 seringa de 20ml em cada narina, 3x ao dia, até melhora.
-Budesonida 64mcg spray nasal — 1 frasco
+1)Lavagem Nasal com Soro fisiológico 0,9% -------------------------- 1 frasco
+Aplicar uma seringa de 20ml de soro fisiológico em cada narina, três vezes ao dia, até melhora dos sintomas.
+2) Budesonida 64mcg spray nasal --------- 1 frasco
 Aplicar 1 jato em cada narina de 12 em 12 horas por 10 dias.
+Opções diferentes de anti-histaminico
+MALEATO DE DEXCLORFENIRAMINA 2MG
+TOMAR 01 CP DE 8/8 HORAS POR 5 DIAS
+Bilastina 20 mg
+Tomar 1 comprimido VO pela manhã por 10 dias.
 ```
 
-**🏠 Casa — ATB (se indicado)**
+**🏠 Casa — SE PRECISAR DE ATB**
 ```
-Amoxicilina 500mg — 30 comprimidos
+Amoxicilina 500mg ------------------------------ 30 comprimidos
+Tomar 1 comprimido de 8 em 8 horas por 10 dias.
+Amoxicilina + clavulanato 875+125mg ------- 20 comprimidos
+Tomar 1 comprimido de 12 em 12 horas por 10 dias.
+Levofloxacino 750mg ------------------------- 10 comprimidos
+Tomar 1 comprimido, uma vez ao dia, por 10 dias
+Claritromicina 500mg ------------------------- 20 comprimidos
+Tomar 1 comprimido de 12 em 12 horas por 10 dias.
+Azitromicina 500mg --------------------------- 5 comprimidos
+Tomar 1 comprimido, uma vez ao dia, por 5 dias.
+Penicilina benzatina 1.200.000 UI IM dose única
+Clindamicina 300mg --------------------------- 30 comprimidos
 Tomar 1 comprimido de 8 em 8 horas por 10 dias.
 ```
 
-_OU_
+**🏠 Casa — Spray para dor de garganta**
 ```
-Amoxicilina + clavulanato 875+125mg — 20 comprimidos
-Tomar 1 comprimido de 12 em 12 horas por 10 dias.
-```
-
-_OU_
-```
-Azitromicina 500mg — 5 comprimidos
-Tomar 1 comprimido 1x ao dia por 5 dias.
+Hexomedine spray ------------------------------ 1 frasco
+Aplicar 3 jatos de 4 em 4 horas em garganta se dor.
 ```
 
-_OU_
-```
-Claritromicina 500mg — 20 comprimidos
-Tomar 1 comprimido de 12 em 12 horas por 10 dias.
-```
-
-_OU_
-```
-Levofloxacino 750mg — 10 comprimidos
-Tomar 1 comprimido 1x ao dia por 10 dias.
-```
-
-_OU_
-```
-Clindamicina 300mg — 30 comprimidos
-Tomar 1 comprimido de 8 em 8 horas por 10 dias.
-```
-
-_OU_
-```
-Penicilina benzatina 1.200.000 UI — IM, dose única.
-Hexomedine spray — 1 frasco
-Aplicar 3 jatos de 4 em 4 horas na garganta se dor.
-```
-
-💡 Aumentar ingesta hídrica para melhorar expectoração. Anti-histamínico alternativo: Dexclorfeniramina 2mg 1 cp de 8/8h por 5 dias, ou Bilastina 20mg 1 cp VO pela manhã por 10 dias. ATB apenas se critério (Centor alto / bacteriana).
+💡 PACIENTE REFERE HÁ DIAS. Nega febre, nega dispneia, nega dor torácica, nega disfagia, nega vômitos e nega prostração. Sem outros sintomas associados.
+GERAIS: AUMENTAR INGESTA DE ÁGUA PARA MELHORAR EXPECTORAÇÃO
 
 ### Otalgia  ·  CID H92.0
 
 **🏠 Casa — Prescrição — Casa**
 ```
-Dipirona 500mg
-Tomar 1 a 2 comprimidos de 6 em 6 horas se dor ou febre.
-Oto-Xilodase
-Aplicar 5 gotas no ouvido afetado, 3x ao dia por 7 dias.
+DIPIRONA 500MG
+TOMAR 01 A 02 CPS DE 6/6 HORAS, SE DOR OU FEBRE
 ```
 
-### Otite externa aguda  ·  CID H60
-
-**🏠 Casa — Tópico + analgesia**
+**🏠 Casa — Prescrição — Casa**
 ```
-Ciprofloxacino + hidrocortisona (Otociriax) — 1 frasco
+OTO-XILODASE
+APLICAR 5 GOTAS EM OUVIDO AFETADO, 3X AO DIA POR 7 DIAS
+______________________________________________________________________
+```
+
+### Otite Externa  ·  CID H60
+
+**🏠 Casa — Prescrição — Casa**
+```
+1) Ciprofloxacino + hidrocortisona  -------------------------------- 1 frasco
 Aplicar 3 gotas no ouvido acometido de 12 em 12 horas por 7 dias.
-Ibuprofeno 600mg
-Tomar 1 comprimido de 8 em 8 horas por 5 dias.
 ```
 
 **🏠 Casa — Otite externa fúngica**
 ```
-Clotrimazol 1% — 1 frasco
-Aplicar 3–4 gotas no ouvido acometido de 8 em 8 horas até resolução.
+1) Clotrimazol  (1%) ------------------ 1 frasco
+Aplicar 3-4 gotas no ouvido acometido de 8 em 8 horas até a resolução.
 ```
 
-💡 Otite necrotizante (ambulatorial): Ciprofloxacino 500mg 1 cp 12/12h por 4 semanas. Na unidade: Dipirona + Decadron IM.
-
-### Otite média aguda  ·  CID H66 · H65
-
-**🏠 Casa — ATB**
+**🏠 Casa — Otite necrotizante em tratamento ambulatorial**
 ```
-Amoxicilina 500mg — 21 comprimidos
+1) Ciprofloxacino 500 mg ------------------------------ 56 comprimidos
+Tomar 1 comprimido de 12 em 12 horas por 4 semanas.
+2) Dipirona 500mg ----------------------------------- 20 comprimidos
+Tomar 2 comprimidos de 6 em 6 horas se dor ou febre.
+2) Paracetamol 750mg ---------------------------- 20 comprimidos
+Tomar 1 comprimido se 6 em 6 horas se dor ou febre.
+```
+
+### Otite Externa Aguda  ·  CID H60
+
+**💉 PS / Sala — IM: DIPIRONA + DECADRON**
+```
+______________________________________________________________________________
+```
+
+**🏠 Casa — Prescrição — Casa**
+```
+CIPROFLOXACINO + HIDROCORTICONA (OTOCIRIAX) ------------------
+APLICAR 3 GOTAS NA ORELHA ACOMETIDA DE 12/12 HORAS POR 7 DIAS
+```
+
+**🏠 Casa — Prescrição — Casa**
+```
+IBUPROFENO 600MG ------------------------
+TOMAR O1 CP DE 8/8HORAS, POR 5 DIAS
+```
+
+### Otite Media Aguda  ·  CID H65
+
+**💉 PS / Sala — IM: DIPIRONA + DECADRON**
+```
+________________________________________________
+```
+
+**🏠 Casa — Prescrição — Casa**
+```
+AMOXICILINA + CLAVULANATO 875/125MG -------------------------------
+TOMAR 01 CP DE 12/12HORAS POR 10 DIAS
+```
+
+### Otite Média  ·  CID H66
+
+**🏠 Casa — Prescrição — Casa**
+```
+ATB indicado se < 6m, otorreia, OMA bilateral < 24m, toxemia, otalgia > 48h, T > 39C ou incerteza de reavaliação
+> ATENÇÃO: amoxicilina se < 2a: 10d de tratamento; se > 2a: 7 dias
+1) Amoxicilina 500 mg  ------------------------- 21 comprimidos
 Tomar 1 comprimido de 8 em 8 horas por 7 dias.
 ```
 
 _OU_
 ```
-Amoxicilina + clavulanato 875+125mg — 20 comprimidos
+1) Amoxicilina + clavulanato 875+125mg ------- 20 comprimidos
 Tomar 1 comprimido de 12 em 12 horas por 10 dias.
 ```
 
 _OU_
 ```
-Axetilcefuroxima 500mg — 20 comprimidos
-Tomar 1 comprimido de 12 em 12 horas por 10 dias.
+1) Acetilcefuroxima 500mg --------------------- 20 comprimidos
+Tomar 1 comprimido de 12 em 12 horas por 10 dias
 ```
 
 _OU_
 ```
-Azitromicina 500mg — VO dose única, seguida de 250mg de 24/24h do 2º ao 5º dia.
+1) Azitromicina 500 mg VO dose única seguido de 250 mg de 24/24 horas, do 2º ao 5º dia (dose máxima de 500 mg/dia no 1º dia e 250 mg/dia nos dias seguintes)
 ```
 
-**🏠 Casa — OMC simples agudizada**
+**🏠 Casa — Se OTITE MÉDIA CRÔNICA simples agudizada**
 ```
-Ciprofloxacino + hidrocortisona (Otociriax) — 1 frasco
+1) Ciprofloxacino + hidrocortisona  -------------------------------- 1 frasco
 Aplicar 3 gotas no ouvido acometido de 12 em 12 horas por 7 dias.
-Ciprofloxacino 500mg — 20 comprimidos
+2) Ciprofloxacino 500mg ---------------- 20 comprimidos
 Tomar 1 comprimido de 12 em 12 horas por 10 dias.
-Prednisona 20mg — 10 comprimidos
-Tomar 2 comprimidos pela manhã por até 5 dias.
-Proteção auricular + encaminhar ORL.
+3) Prednisona 20mg --------------------- 10 comprimidos
+Tomar 2 comprimidos de manhã por até 5 dias.
+4) Proteção auricular + ORL!!
 ```
 
-💡 ATB se <6m, otorreia, OMA bilateral <24m, toxemia, otalgia >48h, T>39°C ou incerteza de reavaliação. Amoxicilina: <2a → 10 dias; >2a → 7 dias. Na unidade: Dipirona + Decadron IM.
-
-### Perfuração de membrana timpânica  ·  CID H72
+### Perfuração Membrana Timpânica  ·  CID H72
 
 **🏠 Casa — Prescrição — Casa**
 ```
-Levofloxacino 500mg
-Tomar 1 comprimido 1x ao dia por 10 dias.
-Prednisona 20mg
-Tomar 1 comprimido 1x ao dia por 5 dias.
+LEVOFLOXACINO 500MG
+TOMAR 01 CP 1X AO DIA POR 10 DIAS
+PREDNISONA 20MG
+TOMAR 01 CP 1X AO DIA POR 5 DIAS
 ```
 
-💡 NÃO molhar o ouvido. Retorno com otorrino em 10 dias.
+💡 NÃO molhar ouvido, retorno com otorrino em 10 dias __________________________________________________________________________ OUTROS
 
-### Rinite alérgica  ·  CID J30
-
-**🏠 Casa — Anti-histamínico**
-```
-Dexclorfeniramina 2mg
-Tomar 1 comprimido de 8 em 8 horas por 7 dias.
-```
-
-_OU_
-```
-Loratadina 10mg
-Tomar 1 comprimido 1x à noite por 7 dias.
-```
-
-_OU_
-```
-Hidroxizina 25mg
-Tomar 1 comprimido 1x à noite por 7 dias.
-```
-
-**🏠 Casa — Uso nasal**
-```
-Lavagem nasal com soro fisiológico 0,9% — 1 frasco
-Aplicar 1 seringa de 20ml em cada narina, 3x ao dia, até melhora.
-Budesonida 64mcg spray nasal — 1 frasco
-Aplicar 1 jato em cada narina de 12 em 12 horas por 10 dias.
-```
-
-### Sinusite aguda  ·  CID J01
-
-**🏠 Casa — Sintomáticos + nasal**
-```
-Prednisona 20mg
-Tomar 1 comprimido pela manhã por 5 dias.
-Dipirona 500mg
-Tomar 1 a 2 comprimidos de 6 em 6 horas se dor ou febre.
-Lavagem nasal com soro fisiológico 0,9% — 1 frasco
-Aplicar 1 seringa de 20ml em cada narina, 3x ao dia, até melhora.
-Budesonida 64mcg spray nasal — 1 frasco
-Aplicar 1 jato em cada narina de 12 em 12 horas por 10 dias.
-```
-
-**🏠 Casa — ATB (se >10 dias / dupla piora)**
-```
-Amoxicilina + clavulanato 500+125mg — 30 comprimidos
-Tomar 1 comprimido de 8 em 8 horas por 10 dias.
-```
-
-_OU_
-```
-Levofloxacino 750mg
-Tomar 1 comprimido 1x ao dia por 5–7 dias.
-```
-
-💡 ATB se >10 dias, sinal de dupla piora, ou febre muito alta persistente + dor facial intensa.
-
-<!-- FLAG: Amox-clav 500+125mg descrita '8/8h por 10 dias' — seu manual antes citava 5–7 dias; conferir duração. -->
-
-### Tosse subaguda pós-viral  ·  CID R05.2
+### Rinite Alérgica  ·  CID J30
 
 **🏠 Casa — Prescrição — Casa**
 ```
-Dropropizina 3mg/ml xarope 120 ml
-Tomar 10 ml de 6 em 6 horas, por 3 dias.
-Budesonida 50mcg nasal
-Aplicar 1 jato em cada narina de 12 em 12 horas por 5 dias.
+1) DEXCLORFENIRAMINA 2MG
+TOMAR 01 CP DE 8/8 HORAS POR 7 DIAS
+```
+
+_OU_
+```
+1) LORATADINA 10MG
+TOMAR 01 CP 1X A NOITE POR 7 DIAS
+```
+
+_OU_
+```
+1) HIDROXIZINA 25MG
+TOMAR 01 CP 1X A NOITE POR 7 DIAS
+```
+
+**🏠 Casa — Prescrição — Casa**
+```
+1)Lavagem Nasal com Soro fisiológico 0,9% -------------------------- 1 frasco
+Aplicar uma seringa de 20ml de soro fisiológico em cada narina, três vezes ao dia, até melhora dos sintomas.
+2) Budesonida 64mcg spray nasal --------- 1 frasco
+Aplicar 1 jato em cada narina de 12 em 12 horas por 10 dias.
+__________________________________________________________________
+```
+
+### Sinusite Aguda  ·  CID J01
+
+**🏠 Casa — Prescrição — Casa**
+```
+1) PREDNISONA 20MG
+TOMAR 01 CP PELA MANHA POR 5 DIAS
+2) DIPIRONA 500MG
+TOMAR 01 A 02 CPS DE 6/6 HORAS, SE DOR OU FEBRE
+```
+
+**🏠 Casa — Prescrição — Casa**
+```
+1)Lavagem Nasal com Soro fisiológico 0,9% -------------------------- 1 frasco
+Aplicar uma seringa de 20ml de soro fisiológico em cada narina, três vezes ao dia, até melhora dos sintomas.
+2) Budesonida 64mcg spray nasal --------- 1 frasco
+Aplicar 1 jato em cada narina de 12 em 12 horas por 10 dias.
+USO DE ATB SE MAIS DE 10 DIAS OU SINAL DA DUPLA PIORA, OU FEBRE MUITO ALTA PERSISTENTE + Dor facial intensa
+```
+
+**🏠 Casa — Prescrição — Casa**
+```
+AMOXICILINA + CLAVULANATO 500 + 125MG -------------------- 30 CPS
+TOMAR 01 CP DE 8/8 HORAS POR 10 DIAS
+```
+
+_OU_
+```
+LEVOFLOXACINO 750MG ----------------------------------
+TOMAR 01 CP 1X AO DIA POR 5-7 DIAS
+________________________________________________________________________
 ```
 
 
 ## 🫁 Tórax / Cardio-Pneumo
 
-### Asma — manutenção (GINA 2026)  ·  CID J45
+### Asma — Manutenção Gina 2026  ·  CID J45
 
-**🏠 Casa — Track 1 (preferido) — CI-formoterol**
+**🏠 Casa — Prescrição — Casa**
 ```
-STEP 1–2: Budesonida + formoterol 200/6 mcg — inalar 1 cápsula/dose SE NECESSÁRIO (alívio anti-inflamatório).
-STEP 3 (MART): Budesonida + formoterol 200/6 mcg — 1 dose de 12/12h (manutenção) + 1 dose SE NECESSÁRIO (mesma bombinha).
-STEP 4 (MART): Budesonida + formoterol 200/6 mcg — 2 doses de 12/12h (manutenção) + 1 dose SE NECESSÁRIO (máx ~12 doses/dia).
+>>> CONCEITO-CHAVE: NÃO usar SABA (salbutamol) ISOLADO como alívio. Todo
+paciente deve ter corticoide inalatório (CI). SABA sozinho = mais crises.
+------------------------------------------------------------------------
+TRACK 1 (PREFERIDO) — alívio com CI-FORMOTEROL (budesonida/formoterol)
+------------------------------------------------------------------------
+STEP 1–2: BUDESONIDA + FORMOTEROL 200/6 MCG
+INALAR 1 CÁPSULA/DOSE SE NECESSÁRIO (alívio anti-inflamatório - AIR)
+STEP 3 (MART): BUDESONIDA + FORMOTEROL 200/6 MCG
+INALAR 1 DOSE DE 12/12H (manutenção)
++ 1 DOSE SE NECESSÁRIO p/ sintomas (mesma bombinha)
+STEP 4 (MART): BUDESONIDA + FORMOTEROL 200/6 MCG
+INALAR 2 DOSES DE 12/12H (manutenção)
++ 1 DOSE SE NECESSÁRIO (máx ~12 doses/dia)
+STEP 5: ENCAMINHAR especialista (fenotipagem, LAMA, biológicos).
+------------------------------------------------------------------------
+TRACK 2 (ALTERNATIVO) — só se Track 1 indisponível, boa adesão e asma estável
+alívio com SABA ou CI-SABA
+------------------------------------------------------------------------
+STEP 1: CI dose baixa SEMPRE que usar o SABA
+STEP 2: CI dose baixa DIÁRIO (ex.: BUDESONIDA 200MCG 1 dose 12/12h)
++ SALBUTAMOL 100MCG 1–2 jatos SE NECESSÁRIO
+STEP 3: CI-LABA (formoterol/budesonida ou salmeterol/fluticasona) 12/12h + SABA SOS
+STEP 4: CI-LABA dose MÉDIA 12/12h + SABA SOS
+------------------------------------------------------------------------
+ADD-ON (qualquer step, se controle insuficiente): MONTELUCASTE 10MG À NOITE
+ENXAGUAR A BOCA após CI (evita candidíase oral).
+________________________________________________________________________
 ```
 
-**🏠 Casa — Track 2 (alternativo) — só se Track 1 indisponível**
+### Bradicardia Instável  ·  CID R00.1
+
+**🏠 Casa — Prescrição — Casa**
 ```
-STEP 1: CI dose baixa SEMPRE que usar o SABA.
-STEP 2: CI dose baixa DIÁRIO (ex.: Budesonida 200mcg 1 dose 12/12h) + Salbutamol 100mcg 1–2 jatos SE NECESSÁRIO.
-STEP 3: CI-LABA (formoterol/budesonida ou salmeterol/fluticasona) 12/12h + SABA SOS.
-STEP 4: CI-LABA dose MÉDIA 12/12h + SABA SOS.
-Add-on (qualquer step, se controle insuficiente): Montelucaste 10mg à noite.
+MOV, DEXTRO
+ATROPINA 1MG EV BOLUS – REPETIR A CADA 3-5 MINUTOS (MÁX 3MG)
 ```
 
-💡 CONCEITO-CHAVE: NÃO usar SABA (salbutamol) isolado como alívio. Todo paciente deve ter corticoide inalatório (CI). SABA sozinho = mais crises. Enxaguar a boca após CI (evita candidíase). STEP 5: encaminhar especialista (fenotipagem, LAMA, biológicos).
-
-### Bradicardia instável  ·  CID R00.1
-
-**💉 PS / Sala — Prescrição — PS**
+**🏠 Casa — Sem resposta**
 ```
-MOV, dextro.
-Atropina 1mg EV bolus — repetir a cada 3–5 minutos (máx 3mg).
-Sem resposta: Dopamina 5 amp + 200ml SG — iniciar 20ml/h
-OU Epinefrina (1mg) 10 amp + 90ml SG — iniciar 6ml/h (se responder, reduzir para 3ml/h).
-Sem resposta: Fentanil (50mcg/ml) 2ml + 8ml SF — fazer 20 a 30 mcg OU Morfina 4 a 5 mg.
-Marca-passo transcutâneo: ligar função MP, modo fixo, FC 60, iniciar estimulação (energia 40, aumentar 10 em 10).
-Transferir paciente.
+DOPAMINA 5 AMP + 200ML SG – INICIAR COM 20ML/H
+```
+
+_OU_
+```
+EPINEFRINA (1MG) 10 AMP + 90ML SG – INICIAR COM 6ML/H (SE RESPONDER, PODE DIMINUIR PARA 3ML/H)
+```
+
+**🏠 Casa — Sem resposta**
+```
+FENTANIL (50MCG/ML) – 2ML + 8ML SF – FAZER 20 A 30 MCG
+```
+
+_OU_
+```
+MORFINA 4 A 5 MG
+MARCAPASSO TRANSCUTÂNEO: ligar a função MP, escolher modo fixo, escolher a FC (60), iniciar a estimulação
+(energia 40, ir aumentando aos poucos 10 em 10).
+TRANSFERIR PACIENTE
+___________________________________________________________________
 ```
 
 ### Bronquite  ·  CID J20
 
 **🏠 Casa — Prescrição — Casa**
 ```
-Beclometasona 200mcg
-2 jatos de 12/12 horas por 7 dias ou até alívio dos sintomas.
-Salbutamol 100mcg
-2 jatos até de 4/4 horas, se crise.
-Dipirona 500mg
-Tomar 1 comprimido de 6/6 horas, se dor ou febre.
+BECLOMETASONA 200MCG
+02 JATOS DE 12/12 HORAS POR 7 DIAS OU ATÉ ALÍVIO DE SINTOMAS
+SALBUTAMOL 100MCG
+02 JATOS ATÉ DE 4/4 HORAS, SE CRISE
+DIPIRONA 500MG
+TOMAR 01 CP DE 6/6HORAS, SE DOR OU FEBRE
 ```
 
-**🏠 Casa — Uso nasal**
+**🏠 Casa — Prescrição — Casa**
 ```
-Lavagem nasal com soro fisiológico 0,9% — 1 frasco
-Aplicar 1 seringa de 20ml em cada narina, 3x ao dia, até melhora.
-Budesonida 64mcg spray nasal — 1 frasco
-Aplicar 1 jato em cada narina de 12 em 12 horas por 10 dias.
+1)Lavagem Nasal com Soro fisiológico 0,9% -------------------------- 1 frasco
+Aplicar uma seringa de 20ml de soro fisiológico em cada narina, três vezes ao dia, até melhora dos sintomas.
+2) Budesonida 64mcg spray nasal --------- 1 frasco
+Aplicar 1 jato em cada narina de 12 em 12 horas por 10 dias.O
+_______________________________________________________________________
 ```
 
 ### Coqueluche  ·  CID A37
 
 **🏠 Casa — Prescrição — Casa**
 ```
-Azitromicina 500mg — 5 comprimidos
-Tomar 1 comprimido 1x ao dia por 5 dias.
-Dipirona 500mg
-Tomar 1 comprimido de 6/6 horas, se dor ou febre.
-Bromoprida 10mg
-Tomar 1 comprimido de 8/8 horas, se náusea ou vômito.
+AZITROMICINA 500MG ---------------------- 05 CPS
+TOMAR 01 CP 1X AO DIA POR 5 DIAS
+DIPIRONA 500MG
+TOMAR 01 CP DE 6/6 HORAS, SE DOR OU FEBRE
+BROMOPRIDA 10MG
+TOMAR 01 CP DE 8/8 HORAS, SE NÁUSEA OU VOMITO
+________________________________________________________________________
 ```
 
-### Crise de asma (exacerbação)  ·  CID J45
+### Crise de Asma — Exacerbação  ·  CID J45
 
-🚩 **Alarme:** Fala entrecortada, uso de musculatura acessória, SatO2 <92%, sonolência/confusão, tórax silencioso → grave.
-
-**💉 PS / Sala — Na unidade**
+**💉 PS / Sala — NA UNIDADE**
 ```
-O2 se Sat <94% (meta 93–95%).
-Salbutamol 100mcg: 4–10 jatos com espaçador de 20/20 min por 1 hora
-+ Brometo de ipratrópio 20mcg: 4–8 jatos de 20/20 min por 1 hora.
-OU nebulização: Salbutamol 10–20 gotas + ipratrópio 30–40 gotas + SF 0,9% 3ml.
-Corticoide sistêmico precoce (até 1h): Prednisona 40–50mg VO OU Hidrocortisona 200mg EV.
-Reavaliar após 1ª hora; se não melhorar, repetir broncodilatador.
-```
-
-**💉 PS / Sala — Crise grave / sem resposta**
-```
-Sulfato de magnésio 2g EV + SF 0,9% 100–250ml — correr em 20 min (dose única).
-Gasometria, considerar VNI, contato com retaguarda/UTI.
-```
-
-**🏠 Casa — Para casa**
-```
-Prednisona 40mg/dia por 5–7 dias (criança 3–5 dias).
-Formoterol + budesonida 6/200 mcg
-Manutenção: inalar 1 cápsula de 12/12h (enxaguar a boca após).
-Alívio: se falta de ar/sintomas, inalar 1 cápsula extra. Não ultrapassar ~12 doses/dia (manutenção + alívio).
-Encaminhar para acompanhamento.
-```
-
-💡 GINA 2026: PREFERIR salbutamol. Fenoterol passou a NÃO recomendado (risco cardiovascular/mortalidade). MgSO4 nebulizado sem benefício (usar EV).
-
-### Dissecção aguda de aorta  ·  CID I71
-
-**💉 PS / Sala — Prescrição — PS**
-```
-Dieta zero. Ringer lactato 500ml EV, s/n.
-Morfina (10mg/ml): 1 amp + 9ml AD — fazer 4ml.
-Deixar FC <60 e PAS entre 100 e 120: Metoprolol 5mg bolus EV — repetir de 10/10 min s/n (máx 20mg).
-Se não melhorar: Niprid (50mg/2ml) 1 amp + 250ml SG5% EV em BIC, começar 2ml/h (titular).
-```
-
-💡 ECG, Rx tórax, hemograma, lactato, ureia, creatinina, TGO, TGP. Monitorização em leito de emergência. Cateter O2 2L/min se Sat <92% ou dispneia. Cabeceira elevada. Sinais vitais 1/1h.
-
-### Dor torácica — abordagem rápida  ·  CID R07
-
-🚩 **Alarme:** 6 causas que matam: SCA/IAM · Dissecção de aorta (dor rasgando, assimetria de pulso/PA) · TEP (dispneia súbita, taquicardia, dor pleurítica) · Pneumotórax hipertensivo (MV abolido, desvio traqueia, turgência) · Tamponamento (hipotensão + turgência + bulhas abafadas) · Ruptura de esôfago (vômito + dor + enfisema subcutâneo).
-
-💡 Passo 1: ECG em até 10 min + MOV. Passo 2: pensar nas 6 causas antes de 'musculoesquelético'. Score HEART estratifica SCA: 0–3 baixo (alta com troponina seriada negativa), 4–6 moderado (internar/observar), ≥7 alto (invasiva precoce/transferir). Solicitar ECG seriado (1 normal não exclui), troponina seriada (0h/1h ou 0h/3h), Rx tórax, hemograma, eletrólitos, função renal, glicemia; D-dímero se suspeita TEP + Wells baixo, Angio-TC se D-dímero+. Se SCA confirmada/suspeita → protocolo IAM e internar/transferir.
-
-### DPOC exacerbado  ·  CID J44
-
-**💉 PS / Sala — Na unidade**
-```
-Nebulização: Fenoterol 10 gotas + ipratrópio 30 gotas + SF 0,9% 3ml de 20/20 min por 1 hora.
-Prednisona 40mg VO OU Hidrocortisona 300mg EV.
-Cateter nasal 2–3L (meta 88–92%).
+- O2 SE SAT < 94% (meta 93–95%)
+- SALBUTAMOL 100MCG: 4–10 JATOS COM ESPAÇADOR DE 20/20 MIN POR 1 HORA
++ BROMETO DE IPRATRÓPIO 20MCG: 4–8 JATOS DE 20/20 MIN POR 1 HORA
+OU NEBULIZAÇÃO: SALBUTAMOL 10–20 GOTAS + IPRATRÓPIO 30–40 GOTAS + SF 0,9% 3ML
 ```
 
 **🏠 Casa — Prescrição — Casa**
 ```
-Amoxicilina + clavulanato 500+125mg — 30 comprimidos
-Tomar 1 comprimido de 8/8 horas por 10 dias.
-Prednisona 20mg
-Tomar 2 comprimidos 1x ao dia por 7 dias.
-Inalatório de 6/6h por 5 dias: Salbutamol 10 gotas + ipratrópio 20 gotas + SF 0,9% 2ml.
-OU spray: Salbutamol 100mcg 2 jatos de 6/6h + Ipratrópio 20mcg 2 jatos de 6/6h.
+ATENÇÃO GINA 2026: PREFERIR SALBUTAMOL. FENOTEROL passou a NÃO recomendado
+(risco cardiovascular e mortalidade). MgSO4 NEBULIZADO sem benefício (usar EV).
 ```
 
-### Edema agudo de pulmão  ·  CID J81
-
-**💉 PS / Sala — Prescrição — PS**
+**🏠 Casa — CORTICOIDE SISTÊMICO PRECOCE (até 1h)**
 ```
-Dieta zero (até melhora de dispneia). VNI.
-Furosemida 20mg/2ml: 1mg/kg.
-Morfina 10mg/ml (não para todos): 3 a 5 ml EV → 1 amp + 9ml SF.
-Tridil (em cardiopatia isquêmica) ou Niprid (mais usado): 1 amp + 240ml SG 5% EV BIC (paciente 70kg começar 10ml/h).
-SVD (quantificar diurese). Glicemia capilar 2/2h. Se HGT <60: glicose hipertônica 50%. Insulina regular SOS.
-Monitorização. Cabeceira elevada.
+PREDNISONA 40–50MG VO  OU  HIDROCORTISONA 200MG EV
+- REAVALIAR após 1ª hora; se não melhorar, repetir broncodilatador.
 ```
 
-### Elevação importante da PA (sem LOA)  ·  CID I16.0
-
-🚩 **Alarme:** Reclassifica p/ EMERGÊNCIA (I16.1) se LOA: dor torácica, dispneia, déficit neurológico, alteração visual, dor dorsal/abdominal (dissecção), gestante. Checar antes de medicar: aderência aos remédios hoje? Uso de cocaína/anfetamina/AINE/descongestionante/AO? Dor/ansiedade reativa? Glicemia capilar (descartar hipo)? ECG.
-
-**📋 Anamnese**
+**🏠 Casa — CRISE GRAVE / SEM RESPOSTA**
 ```
-PACIENTE REFERE CEFALEIA/TONTURA HÁ [X]. Nega déficit neurológico focal, nega dor torácica, nega dispneia, nega alteração visual, nega disfagia, nega vômitos, nega oligúria. PA: ___x___ mmHg. FC: ___. Sem sinais de lesão de órgão-alvo.
+- SULFATO DE MAGNÉSIO 2G EV + SF 0,9% 100–250ML — CORRER EM 20 MIN (dose única)
+- Gasometria, considerar VNI, contato com retaguarda/UTI
 ```
 
-**💉 PS / Sala — Conduta — sem LOA**
+**🏠 Casa — PARA CASA**
 ```
-Captopril 25mg — 2 comprimidos
-Tomar 1 comprimido agora. Repetir em 60 min se PA ainda ≥180/110 mmHg.
+- PREDNISONA 40MG/DIA POR 5–7 DIAS (criança 3–5 dias)
+1) FORMOTEROL + BUDESONIDA 6/200 MCG
+MANUTENÇÃO: INALAR 1 CÁPSULA DE 12/12H (enxaguar a boca após)
+ALÍVIO: SE FALTA DE AR/SINTOMAS, INALAR 1 CÁPSULA EXTRA
+→ NÃO ULTRAPASSAR ~12 DOSES/DIA NO TOTAL (manutenção + alívio)
+- Encaminhar p/ acompanhamento.
+_______________________________________________________________________________
+```
+
+### Dissecção Aguda de Aorta  ·  CID I71
+
+**🏠 Casa — Prescrição — Casa**
+```
+ECG, RX TÓRAX, HEMOGRAMA, LACTATO, UREIA, CREAT, TGO, TGP
+DIETA ZERO
+RINGER LACTATO 500ML EV, S/N
+MORFINA (10mg/ml): 1 AMP + 9ML AD – FAZER 4ML
+Deixar FC <60 e PAS entre 100 e 120: METOPROLOL 5MG BOLUS EV – repetir de 10/10 minutos S/N (Max 20mg)
+```
+
+**🏠 Casa — Se não melhorar com droga acima**
+```
+NIPRID (50mg/2ml): 1 AMP + 250ML SG5% - FAZER EV EM BIC, COMEÇAR COM 2ML/H (aumentar/reduzir conforme
+necessidade)
+MONITORIZAÇÃO EM LEITO DE EMERGENCIA
+CAT O2 2L/MIN, SE SAT <92% OU DISPNEIA
+CABECEIRA ELEVADA
+SINAIS VITAIS 1/1 HORA
+_____________________________________________________________________________
+```
+
+### Dor Torácica — Abordagem Rápida  ·  CID R07
+
+**🏠 Casa — Prescrição — Casa**
+```
+PASSO 1 — ECG EM ATÉ 10 MINUTOS + MONITORIZAR (MOV).
+```
+
+**🏠 Casa — PASSO 2 — Pensar nas 6 CAUSAS QUE MATAM antes de "musculoesquelético"**
+```
+1. SCA / IAM → ver protocolo IAM
+2. DISSECÇÃO DE AORTA → dor "rasgando", migratória, assimetria de pulso/PA entre braços
+3. TEP → dispneia súbita, taquicardia, dor pleurítica (Wells / PERC + D-dímero)
+4. PNEUMOTÓRAX HIPERTENSIVO → dispneia, MV abolido, desvio traqueia, turgência jugular
+5. TAMPONAMENTO CARDÍACO → hipotensão + turgência jugular + bulhas abafadas (Beck)
+6. RUPTURA ESÔFAGO (Boerhaave) → vômito + dor torácica + enfisema subcutâneo
+```
+
+**🏠 Casa — >>> SCORE HEART (estratifica risco de SCA na emergência)**
+```
+H  History (anamnese):     pouco suspeita 0 / moderada 1 / muito suspeita 2
+E  ECG:                    normal 0 / alt. inespecífica repolarização 1 / infra ST 2
+A  Age (idade):            < 45a = 0 / 45–64a = 1 / ≥ 65a = 2
+R  Risk factors:           nenhum 0 / 1–2 fatores 1 / ≥3 ou aterosclerose conhecida 2
+T  Troponina:              normal 0 / 1–3x 1 / > 3x = 2
+(Fatores: HAS, DM, dislipidemia, tabagismo, obesidade, história familiar)
+```
+
+**🏠 Casa — INTERPRETAÇÃO**
+```
+0–3  → BAIXO risco (MACE ~1–2%). Considerar alta com troponina negativa seriada + seguimento.
+4–6  → MODERADO. Internar/observar, troponina seriada, avaliar isquemia.
+≥ 7  → ALTO. Estratégia invasiva precoce / transferência p/ serviço com hemodinâmica.
+```
+
+**🏠 Casa — SOLICITAR**
+```
+- ECG (REPETIR seriado — 1 ECG normal NÃO exclui SCA)
+- Troponina seriada (0h e 1h, ou 0h e 3h)
+- Rx tórax, hemograma, eletrólitos, função renal, glicemia
+- D-dímero SE suspeita de TEP (e Wells baixo); Angio-TC se D-dímero+ ou alta suspeita
+SE SCA CONFIRMADA/SUSPEITA → seguir protocolo IAM (AAS, clopidogrel, etc.) e
+TRANSFERIR/INTERNAR.
+--------------------------------------
+```
+
+### DPOC Exacerbado  ·  CID J44
+
+**💉 PS / Sala — AQUI**
+```
+NEBULIZAÇÃO: FENOTEROL 10 GOTAS + IPRATRÓPIO 30 GOTAS + SF 0,9% 3 ML DE 20/20 MINTOS POR 1 HORA
+PREDNISONA 40MG VO OU HIDROCORTISONA 300MG EV
+CAT NASAL 2-3L (meta: 88-92%)
+```
+
+**🏠 Casa — Prescrição — Casa**
+```
+AMOXICILINA + CLAVULANATO 500 + 125MG -------------------- 30 CPS
+TOMAR 01 CP DE 8/8 HORAS POR 10 DIAS
+PREDNISONA 20MG -------------------
+TOMAR 02 CP 1X AO DIA POR 7 DIAS
+USO INALATÓRIO
+```
+
+**🏠 Casa — FAZER INALAÇÃO DE 6/6 HORAS POR 5 DIAS**
+```
+SALBUTAMOL 10 GOTAS ---------------
+IPRATRÓPIO 20 GOTAS -----------------
+SF 0,9% 2ML ------------------------------
 ```
 
 _OU_
 ```
-Clonidina 0,1mg — 2 comprimidos
-Tomar 1 comprimido agora. Repetir em 60 min se necessário. (Preferir em ansiedade/hiperatividade simpática; risco de rebote se uso crônico suspenso.)
-Dipirona 1g (500mg/comp) — 4 comprimidos
-Tomar 2 comprimidos VO agora se cefaleia ou dor.
-OU Dipirona 500mg/ml solução oral — 40 gotas VO agora se cefaleia ou dor.
+SALBUTAMOL SPRAY 100MCG -----------------
+FAZER 2 JATOS DE 6/6 HORAS POR 5 DIAS
+IPRATRÓPIO SPRAY 20MCG -------------------
+FAZER 2 JATOS DE 6/6 HORAS POR 5 DIAS
 ```
 
-**🏠 Casa — Ajuste do esquema crônico**
-```
-IECA: Enalapril 10mg — 1 cp de 12/12h (ou Enalapril 20mg 12/12h) OU Captopril 25mg — 1 cp de 8/8h.
-BRA: Losartana 50mg — 1 cp 1x/dia (ou 100mg 1x/dia).
-BCC: Anlodipino 5mg — 1 cp 1x/dia (ou 10mg 1x/dia).
-Diurético: Hidroclorotiazida 25mg — 1 cp pela manhã (ou Clortalidona 25mg pela manhã).
-Retorno ao ambulatório/UBS em até 7 dias. Aumentar ingesta hídrica. Dieta hipossódica.
-Retornar IMEDIATAMENTE se déficit neurológico, dor no peito, falta de ar, alteração visual, piora da cefaleia.
-```
+### Edema Agudo de Pulmãoj81
 
-💡 Meta: redução GRADUAL em 24–48h. NÃO forçar queda rápida. NÃO usar nifedipino sublingual (queda abrupta = isquemia). Emergência (I16.1) → UTI + anti-hipertensivo EV + monitorização; reduzir no máx 25% da PAM na 1ª hora (exceção dissecção). Nitroprussiato EV (EAP/encefalopatia), Nitroglicerina EV (SCA/IC), Labetalol/Nicardipino EV (AVC hemorrágico, PAS<140), Nitroprussiato+Esmolol (dissecção, PAS<120 em 20min), Hidralazina EV+MgSO4 (eclâmpsia), Fentolamina EV (feocromocitoma). CID: I10 essencial · I16.0 sem LOA · I16.1 emergência · I16.9 não especificada.
-
-### IAM — infarto agudo do miocárdio  ·  CID I21.9
-
-**💉 PS / Sala — Prescrição — PS**
+**🏠 Casa — Prescrição — Casa**
 ```
-AAS 300mg VO mastigado.
-Clopidogrel 75mg: 4 comprimidos VO (ou 1 comprimido se ≥75 anos).
-Dipirona (500mg/ml): 1g EV 6/6h.
-Dinitrato de isossorbida 5mg: 1 comprimido sublingual — repetir a cada 5 min se necessário (checar contraindicações!).
-Morfina (10mg/ml): 1 amp + 9ml AD — fazer 2 a 5 ml, repetir a cada 5 min se necessário.
+- Dieta zero (até melhora de dispneia)
+- VNI
+- Furosemida 20mg/2ml: 1mg/kg
+- Morfina 10mg/ml (não é para todos): 3 a 5 ml EV -> 1 amp + 9 mlSF
+- Tridil (em cardiopatia isquemica) ou Niprid (mais usado): 1 amp + 240ml SG 5% EV BIC (Paciente com 70kg começar
+com 10ml/h)
+- SVD (quantificar diurese)
+- Glicemia capilar 2/2h
+- Se HGT < 60: glicose hipertonica 50%
+- Insulina regular SOS
+- Monitorização
+- Cabeceira elevada
+_________________________________________________________________
 ```
 
-💡 ECG, troponina, CK-MB. Jejum. MOV + cateter nasal se Sat <90%. SF 0,5ml/kg/h. Encaminhar/internar UTI.
+### IAM Infarto Agudo do Miocardio  ·  CID I21.9
 
-### Influenza / Gripe  ·  CID J11
+**🏠 Casa — Prescrição — Casa**
+```
+ECG, TROPONINA, CKMB
+JEJUM
+MOV + CAT NASAL SE SAT <90%
+SF 0,5ml/kg/h
+AAS 300MG VO MASTIGADO
+CLOPIDOGREL 75 MG 04 CPS VO OU se ≥ 75 anos 01 CP VO
+DIPIRONA (500mg/ml): 1G EV 6/6H
+DINITRATO ISOSSORBIDA (5MG): 1 CP SUBLINGUAL – repetir a cada 5 min, se necessário (CONTRAINDICAÇÕES!)
+MORFINA (10mg/ml): 1 amp + 9ml ad – fazer 2 a 5 ml, repetir a cada 5 min, se necessário
+ENCAMINHAR/ INTERNAR UTI
+_________________________________________________________________
+```
 
-**🏠 Casa — Antiviral**
+### Influenza  ·  CID J11
+
+**🏠 Casa — Prescrição — Casa**
 ```
-Oseltamivir 75mg
-Tomar 1 comprimido de 12/12 horas por 5 dias.
+OSELTAMIVIR 75MG
+TOMAR 01 CP DE 12/12 HORAS POR 5 DIAS
+*correção para função renal
 ```
 
-**🏠 Casa — Sintomáticos**
+**🏠 Casa — Prescrição — Casa**
 ```
-Dipirona 500mg — 20 comprimidos
-Tomar via oral 2 comprimidos de 6 em 6 horas se dor ou febre.
-Maleato de dexclorfeniramina 2mg/5ml
+1) Dipirona 500mg ----------------------------------- 20 comprimidos
+Tomar  via oral 2 comprimidos de 6 em 6 horas se dor ou febre.
+2) Maleato de dexclorfeniramina 2mg/5ml
 Tomar via oral 5 mL, 3x por dia, por 5 dias.
-Cetoprofeno 100mg — 1 caixa
-Tomar 1 comprimido de 12 em 12 horas por 5 dias.
-```
-
-_OU_
-```
-Prednisona 20mg
+3) Cetoprofeno 100mg --------------------------- 1 caixa
+Tomar  via oral 1 comprimido de 12 em 12 horas por 5 dias.
+ou
+3) PREDNISONA 20MG --------------------------
 Tomar 1 comprimido pela manhã, por 5 dias.
-Strepsils pastilhas — 1 caixa
-Dissolver 1 pastilha na boca, 2 ou mais vezes ao dia, até alívio. Máximo 10/dia.
-Acetilcisteína xarope 40 mg/mL
-Tomar 15 mL antes de dormir, via oral, por 5 dias.
+4) Strepsils pastilhas ------------------------------ 1 caixa
+Dissolver uma pastilha na boca, duas ou mais vezes ao dia, até o alívio dos sintomas. Limite máximo diário de 10 pastilhas.
+5)Acetilcisteína Xarope (40 mg/mL):
+Tomar 15 mL, antes de dormir, via oral, por 5 dias.
 ```
 
-**🏠 Casa — Uso nasal**
+**🏠 Casa — Prescrição — Casa**
 ```
-Lavagem nasal com soro fisiológico 0,9% — 1 frasco
-Aplicar 1 seringa de 20ml em cada narina, 3x ao dia, até melhora.
-Budesonida 64mcg spray nasal — 1 frasco
+1)Lavagem Nasal com Soro fisiológico 0,9% -------------------------- 1 frasco
+Aplicar uma seringa de 20ml de soro fisiológico em cada narina, três vezes ao dia, até melhora dos sintomas.
+2) Budesonida 64mcg spray nasal --------- 1 frasco
 Aplicar 1 jato em cada narina de 12 em 12 horas por 10 dias.
+-------------------------------------------------------------------------------------
+________________________________________________________________________
 ```
 
-💡 Oseltamivir: corrigir para função renal.
+### Insuficiencia Cardiaca  ·  CID I50
 
-### Insuficiência cardíaca (perfis)  ·  CID I50
-
-**💉 PS / Sala — Perfil B**
+**🏠 Casa — Prescrição — Casa**
 ```
-Dieta zero até compensação. Restrição hídrica. VNI. Se Sat <90%: máscara O2.
-Furosemida (20mg/2ml): 1mg/kg EV.
-Hidralazina 25 a 100mg VO 8/8h OU Nitroprussiato (50mg/2ml): 1 amp + 248ml SG 5% EV em BIC, iniciar 10ml/h.
-```
-
-**💉 PS / Sala — Perfil C**
-```
-Dieta zero. Restrição hídrica.
-Furosemida (20mg/2ml): 1mg/kg EV.
-Nitroprussiato (50mg/2ml): 1 amp + 248ml SG 5% EV, iniciar 10ml/h.
-Se hipotensão: Noradrenalina (1mg/ml) 20ml + 80ml SG5% EV em BIC, iniciar 1ml/h. Encaminhar.
+Perfil B
+- Dieta zero até compensação clínica
+- Restrição hídrica
+- VNI
+- Se sat <90%: mascara O2
+- Furosemida (20mg/2ml): 1mg/kg EV
+- Hidralazina 25 a 100mg VO 8/8h OU Nitroprussiato (50mg/2ml): 1 amp + 248ml SG 5% EV em BIC - iniciar com
+10ml/h
 ```
 
-**💉 PS / Sala — Perfil D**
+**🏠 Casa — Perfil C**
 ```
-Dieta oral conforme aceitação.
-SF 0,9% 20ml/kg em 24h. Encaminhar.
-```
-
-### Oclusão arterial aguda  ·  CID I74.3
-
-**💉 PS / Sala — Prescrição — PS**
-```
-Enoxaparina 1mg/kg 12/12h.
-Aquecimento passivo do membro.
-Contato com cirurgião vascular.
+- Dieta zero
+- Restrição hídrica
+- Furosemida (20mg/2ml): 1mg/kg EV
+- Nitroprussiato (50mg/2ml): 1 amp + 248ml SG 5% EV - iniciar com 10ml/h
+- Se hipotensão: Noradrenalina (1mg/ml) 20 ml + 80ml SG5% EV em BIC - iniciar 1ml/h
+- Encaminhar.
 ```
 
-💡 Hemograma, ureia, creatinina, Na, K, coagulograma / USG doppler arterial urgente. Não aguardar exames para iniciar tratamento.
+**🏠 Casa — Perfil D**
+```
+- Dieta oral conforme aceitação
+- SF 0,9% 20ml/kg em 24h
+- Encaminhar
+____________________________________________________
+```
+
+### Oclusão Arterial Aguda  ·  CID I74.3
+
+**🏠 Casa — Prescrição — Casa**
+```
+HEMOGRAMA, UREIA, CREATININA, SODIO, POTASSIO, COAGULOGRAMA / USG DOPPLER ARTERIAL urgente
+Não aguardar resultado de exames para inicio de tratamento.
+ENOXAPARINA 1MG/KG 12/12H
+AQUECIMENTO PASSIVO DO MEMBRO
+CONTATO COM CIRURGIÃO VASCULAR
+_____________________________________________________________
+```
 
 ### Pneumonia  ·  CID J18
 
-**🏠 Casa — Ambulatorial**
+**🏠 Casa — Solicitar raio-x, solicitar laboratorio. Internação se SatO2 < 92%,**
 ```
-Amoxicilina + clavulanato 875/125mg — 20 comprimidos
-Tomar 1 comprimido de 12/12 horas por 10 dias.
+CURB-65 não muda com idade (a idade ≥65 já é 1 ponto). Reescreveria: 0–1 ambulatorial; ≥2 considerar internação; ≥3 grave.
+```
+
+**🏠 Casa — Prescrição — Casa**
+```
+AMOXICILINA + CLAVULANATO 875/125MG --------------------------- 20 CPS
+TOMAR 01 CP DE 12/12 HORAS POR 10 DIAS
 ```
 
 _OU_
 ```
-Levofloxacino 500mg — 7 comprimidos
-Tomar 1 comprimido 1x ao dia por 7 dias.
-Dipirona 500mg
-Tomar 1 comprimido de 6/6 horas, se dor ou febre.
-Bromoprida 10mg
-Tomar 1 comprimido de 8/8 horas, se náusea ou vômito.
+LEVOFLOXACINO 500MG--------------- 7 CPS
+TOMAR 01CP 1X AO DIA POR 7 DIAS
+DIPIRONA 500MG ------------------------
+TOMAR 01 CP DE 6/6 HORAS, SE DOR OU FEBRE
+BROMOPRIDA 10MG-------------------
+TOMAR 01 CP DE 8/8HORAS, SE NAUSEA OU VOMITO
+NEBULIZAÇÃO COM SF 0,9%
 ```
 
-**🏥 Internação — Internação / paciente grave (PSI/PORT)**
+**🏠 Casa — Internação**
 ```
-Solicitar: Rx tórax; hemograma, ureia, creatinina, eletrólitos. Avaliar necessidade de internação.
-Levofloxacino 750mg: 1 amp 1x/dia
+- Levofloxacino 750mg: 1 amp 1x/dia
 ```
 
 _OU_
 ```
-Ceftriaxona 2g 1x/dia + Azitromicina 500mg 1x/dia EV
+Ceftriaxone 2g 1x/dia + Azitromicina 500mg 1x/dia EV
 ```
 
 _OU_
 ```
 Clavulin + Azitromicina 500mg 1x/dia EV
-Glicemia capilar 4/4h. Se HGT <60: glicose hipertônica 50%. Insulina regular SOS.
+- Glicemia capilar 4/4h
+- Se HGT < 60: glicose hipertonica 50%
+- Insulina regular SOS
+___________________________________________________________________
 ```
 
-💡 Solicitar Rx e laboratório. Internação se SatO2 <92%. CURB-65: 0–1 ambulatorial; ≥2 considerar internação; ≥3 grave. Nebulização com SF 0,9%.
+**🏥 Internação — Internação/paciente grave: PSI/PORT**
+```
+- Rx tórax
+- Hemograma, ureia, creatinina, eletrólitos
+```
 
 ### Taquiarritmias  ·  CID I49
 
-**💉 PS / Sala — Paciente instável — cardioversão**
+**🏠 Casa — Paciente instável**
 ```
-Flutter atrial: cardioversão sincronizada 50J.
-Fibrilação atrial: cardioversão sincronizada 120J.
-Taquicardia supraventricular: cardioversão sincronizada 50J.
-TV monomórfica: cardioversão sincronizada 100J.
-TV polimórfica: cardioversão sincronizada 200J.
-Torsades de pointes: desfibrilação 200J bifásico + sulfato de Mg 2g EV em 15 min.
-Cardioversão: monitorizar, acesso venoso; Fentanil (100mcg/2ml) 1 amp + 8ml AD — 2ml EV bolus; Etomidato (20mg/10ml) ½ amp EV bolus; ventilar com ambu; sincronizar, carga adequada, gel nas pás.
-```
-
-**💉 PS / Sala — Paciente estável**
-```
-MOV, dextro.
-Taquicardia supraventricular: manobra vagal e/ou Adenosina 6mg/12mg EV bolus + flush 10ml SF.
-Fibrilação atrial: Amiodarona 300mg + 250ml SG5% em 30 min. Manutenção: Amiodarona 900mg em 250ml SG5% em 24h.
-OU Metoprolol 5mg EV em 5 min (1mg/min) — repetir a cada 15 min se necessário (máx 15mg).
-OU Diltiazem 0,25mg/kg EV em infusão lenta.
-Flutter atrial: Amiodarona 300mg + 150ml SG5% em 30 min. Manutenção igual.
-OU Metoprolol 5mg EV.
-TV monomórfica/polimórfica: Amiodarona 150mg EV em 10 min. Manutenção: 1mg/min (6h), 0,5mg/min (18h).
-Torsades de pointes: sulfato de Mg 2g EV em 15 min.
+Flutter atrial: CARDIOVERSÃO SINCRONIZADA 50J
+Fibrilação atrial: CARDIOVERSÃO SINCRONIZADA 120J
+Taquicardia supraventricular: CARDIOVERSÃO SINCRONIZADA 50J
+TV monomórfica: CARDIOVERSÃO SINCRONIZADA100J
+TV polimórfica: CARDIOVERSÃO SINCRONIZADA 200J
+Torsades de pointes: DESFIBRILAÇÃO 200J BIFÁSICO + SULFATO DE MG 22 EV EM 15 MIN
 ```
 
-<!-- FLAG: Torsades: 'SULFATO DE MG 22 EV EM 15 MIN' — provável 2 g (typo). Conferir. -->
+**🏠 Casa — Cardioversão sincronizada**
+```
+- MONITORIZAR, ACESSO VENOSO
+- FENTANIL (100MCG/2ML): 1 AMP + 8ML AD – FAZER 2ML EV BOLUS
+- ETOMIDATO (20MG/10ML): ½ AMPOLA EV BOLUS
+- VENTILAÇÃO COM AMBU
+- SINCRONIZAR O APARELHO, COLOCAR A CARGA ADEQUADA
+- COLOCAR GEL NAS PÁS
+```
 
-### Tosse / SRAG
+**🏠 Casa — Paciente estável**
+```
+MOV
+DEXTRO
+Taquicardia supraventricular: MANOBRA VAGAL E/OU ADENOSINA 6MG/12MG EV BOLUS + FLUSH 10ML SF
+Fibrilação atrial: AMIODARONA 300MG + 250ML SG5% EM 30 MIN
+MANUTENÇÃO: AMIODARONA 900MG EM 250ML SG5% CORRER EM 24 HORAS
+```
+
+_OU_
+```
+METOPROLOL 5MG EV EM 5 MIN (1mg por minuto) – REPETIR A CADA 15 MIN, SE NECESSARIO (Max 15 mg)
+```
+
+_OU_
+```
+DILTIAZEM 0,25MG/KG EV EM INFUSÃO LENTA
+Flutter atrial: AMIODARONA 300MG + 150ML SG5% EM 30 MIN
+MANUTENÇÃO: AMIODARONA 900MG EM 250ML SG5% CORRER EM 24 HORAS
+```
+
+_OU_
+```
+METOPROLOL 5MG EV
+TV monomorfica: AMIODARONA 150MG EV EM 10 MIN.
+MANUTENÇÃO: 1MG/MIN (6h), 0,5 MG/MIN (18h)
+TV polimórfica: AMIODARONA 150MG EV EM 10 MIN
+MANUTENÇÃO: 1MG/MIN (6h), 0,5MG/MIN (18h)
+Torsades de pointes: SULFATO DE MG 2G EV EM 15 MIN
+_______________________________________________
+```
+
+### Tosse e SRAG
 
 **🏠 Casa — Prescrição — Casa**
 ```
-Vick 44E — 1 frasco
+1) Vick 44E ---------------------------------------------- 1 frasco
 Tomar 15 ml de 8 em 8 horas se tosse persistente.
-```
-
-_OU_
-```
-Dropropizina 3mg/ml xarope 120 ml
+ou
+1)DROPROPIZINA 3MG/ML XAROPE 120 ml
 Tomar 10 ml de 6 em 6 horas, por 3 dias.
-Strepsils pastilhas — 1 caixa
-Dissolver 1 pastilha na boca, 2 ou mais vezes ao dia, até alívio. Máximo 10/dia.
-Oseltamivir 75mg — 10 comprimidos
-Tomar 1 comprimido de 12 em 12 horas por 5 dias.
-Loratadina 10mg — 7 comprimidos
-Tomar 1 comprimido à noite por 7 dias.
+2) Strepsils pastilhas ------------------------------ 1 caixa
+Dissolver uma pastilha na boca, duas ou mais vezes ao dia, até o alívio dos sintomas. Limite máximo diário de 10 pastilhas.
+3) Oseltamivir 75mg ------------------------------- 10 comprimidos
+Tomar um comprimido de 12 em 12 horas por 5 dias.
+4) Loratadina 10 mg ------------------- 7 comprimidos
+Tomar 1 cp a noite por 7 dias
 ```
 
-### Tromboflebite superficial  ·  CID I80
+### Tosse Subgaguda Pós Viral  ·  CID R05.2
 
-**🏠 Casa — Baixo / intermediário risco**
+**🏠 Casa — Prescrição — Casa**
 ```
-Ibuprofeno 400mg
-Tomar 1 comprimido de 8/8 horas.
+1) DROPROPIZINA 3MG/ML XAROPE 120 ml
+Tomar 10 ml de 6 em 6 horas, por 3 dias.
+```
+
+**🏠 Casa — Prescrição — Casa**
+```
+1)BUDESONIDA 50MCG
+APLICAR 1 JATO EM CADA NARINA DE 12/12 HORAS POR 5 DIAS
+------------------------------------------------------------------------------------------------------------
+```
+
+### Tromboflebite Superficial  ·  CID I80
+
+**🏠 Casa — Prescrição — Casa**
+```
+Abrir Whitebook para avaliar risco.
+```
+
+**🏠 Casa — Prescrição — Casa**
+```
+IBUPROFENO 400MG
+TOMAR 01 CP DE 8/8 HORAS
 ```
 
 _OU_
 ```
-Diclofenaco 50mg
-Tomar 1 comprimido de 8/8 horas.
-Risco intermediário, por 45 dias: Enoxaparina 40mg/0,4ml SC 24/24h por 45 dias OU Rivaroxabana 10mg 1x ao dia por 45 dias.
+DICLOFENACO 50MG
+TOMAR 01 CP DE 8/8 HORAS
 ```
 
-**🏠 Casa — Alto risco (fatores TEV/TVP)**
+**🏠 Casa — Prescrição — Casa**
 ```
-Ibuprofeno 400mg
-Tomar 1 comprimido de 8/8 horas.
+IBUPROFENO 400MG
+TOMAR 01 CP DE 8/8 HORAS
 ```
 
 _OU_
 ```
-Diclofenaco 50mg
-Tomar 1 comprimido de 8/8 horas.
-Por 3 meses: Enoxaparina 1mg/kg SC 12/12h OU Rivaroxabana 15mg 12/12h por 21 dias, após Rivaroxabana 20mg 1x ao dia.
+DICLOFENACO 50MG
+TOMAR 01 CP DE 8/8 HORAS
 ```
 
-💡 Avaliar risco (Whitebook). Orientações: compressa morna ou fria 3x/dia até melhora, elevação dos membros, meias compressivas.
-
-### Trombose venosa profunda  ·  CID I82
-
-**🏠 Casa — Ambulatorial**
+**🏠 Casa — Por 45 dias**
 ```
-Rivaroxabana 15mg
-Tomar 1 comprimido de 12/12 horas por 3 semanas.
-Depois: Rivaroxabana 20mg — 1 comprimido 1x ao dia por 3 meses.
-Dipirona 1g
-Tomar 1 comprimido de 6/6 horas se dor.
-Deocil SL 10mg
-Tomar 1 comprimido de 12/12 horas se dor intensa.
-OU Varfarina 5mg — 1 comprimido às 18h. Controle INR a cada 15 dias.
+ENOXAPARINA 40MG/0,4ML
+APLICAR 40MG SC DE 24/24 HORAS POR 45 DIAS
 ```
 
-**🏥 Internação — Internação**
+_OU_
 ```
-Dieta sem restrições.
-Enoxaparina 1mg/kg (máx 100mg) SC 12/12 horas.
-OU se clearance <30: Heparina não fracionada 25000 UI/5ml — fazer 5ml + SF 0,9% 245ml (100U/ml); ataque 80U/kg; manutenção 18U/kg/hora EV em BI por pelo menos 5 dias.
-E Varfarina 5mg VO 1x ao dia. Controle TAP/INR.
-Dipirona 1g 6/6h. Bromoprida 10mg EV 8/8h. Cetoprofeno 1 amp EV 12/12h.
+RIVAROXABANA 10MG
+TOMAR 01 CP 1X AO DIA POR 45 DIAS
+Alto risco (paciente com fatores de risco para TEV/TVP, recorrência da trombose após cessar anticoagulação)
+TVP WELLS
 ```
 
-💡 Hemograma, ureia, creatinina, Na, K, TGO, TGP, USG doppler venoso. Manter membros elevados, repouso relativo. Alta hospitalar quando INR entre 2 e 3.
+**🏠 Casa — Prescrição — Casa**
+```
+IBUPROFENO 400MG
+TOMAR 01 CP DE 8/8 HORAS
+```
+
+_OU_
+```
+DICLOFENACO 50MG
+TOMAR 01 CP DE 8/8 HORAS
+```
+
+**🏠 Casa — Por 3 meses**
+```
+ENOXAPARINA
+1mg/kg SC DE 12/12 HORAS
+```
+
+_OU_
+```
+RIVAROXABANA 15MG
+TOMAR 01 CP DE 12/12 HORAS POR 21 DIAS, APÓS:
+RIVAROXABANA 20MG
+TOMAR 01 CP 1X AO DIA
+Para todos – ORIENTAÇÕES: COMPRESA MORNA OU FRIA 3X AO DIA ATÉ MELHORA, ELEVAÇÃO DOS MEMBROS,
+MEIAS COMPRESSIVAS.
+___________________________________________________________________
+FERIDAS
+```
+
+**🏠 Casa — Prescrição — Casa**
+```
+POMADA ENZIMÁTICA COLAGENSE – Iruxol, Kollagenase, Sanyl
+APLICAR A POMADA SOBRE A LESÃO, COLOCAR GAZE ÚMIDA E COBRIR COM GAZE SECA E FIXAR. TROCA A CADA 24
+HORAS.
+Indicação: feridas com tecido desvitalizado.
+```
+
+**🏠 Casa — Prescrição — Casa**
+```
+CURATIVO COM ACIDOS GRAXOS ESSENCIAIS – Agederm, ativoderme, dersani
+APLICAR SOBRE A LESÃO, COBRIR COM GAZE ESTÉRIL E FIXAR. TROCA A CADA 24 HORAS OU ANTES, SE NECESSÁRIO.
+Indicação: prevenção de ulceras de pressão, feridas abertas superficiais com ou sem infecção.
+Antes de usar: remover o exsudato e tecido desvitalizado.
+```
+
+**🏠 Casa — Prescrição — Casa**
+```
+CURATIVO COM HIDROCOLÓIDES – Hydrocoll, Duoderm, Comfeel, Tegasorb
+APLICAR CURATIVO SOBRE A LESÃO. TROCA A CADA 1 A 7 DIAS, CONFORME NECESSIDADE.
+Indicação: feridas abertas não infectadas, com leve a moderada exsudação; prevenção de ulceras de pressão não
+infectadas.
+Contraindicação: ferida infectada, com tecido desvitalizado ou necrose; queimaduras de 3º grau
+```
+
+**🏠 Casa — Prescrição — Casa**
+```
+CURATIVO COM HIDROGEL – Duoderm Gel, Hydrosorb, Hypergel
+APLICAR SOBRE A LESÃO E OCLUIR A FERIDA COM GAZE ESTÉRIL. TROCA A CADA 1 A 3 DIAS, CONFORME
+NECESSIDADE.
+Indicação: feridas superficiais moderada ou baixa exsudação; remover crostas, fibrinas, tecidos desvitalizados ou
+necrosados.
+```
+
+**🏠 Casa — Prescrição — Casa**
+```
+CURATIVO COM ALGINATO DE CÁLCIO – Algoderm, Curasorb, Sorbalgon
+MODELAR O CURATIVO NO INTERIOR DA FERIDA, UMEDECENDO A FIBRA COM SOLUÇÃO FISIOLÓGICA. NÃO DEIXAR
+QUE O CURATIVO ULTRAPASSE A BORDA DA FERIDA. OCLUIR COM GAZE ESTÉRIL.
+Indicação: feridas abertas, sangrantes, altamente exsudativas com ou sem infecção, ate a redução do exsudato.
+```
+
+**🏠 Casa — Prescrição — Casa**
+```
+CARVÃO ATIVADO – Carboflex, Vliwaktiv
+COLOCAR O CURATIVO SOBRE A FERIDA. OCLUIR COM GAZE ESTÉRIL. TROCA A CADA 1 A 4 DIAS, CONFORME
+NECESSIDADE.
+Indicação: feridas fétidas, infectadas e exsudativas.
+```
+
+**🏠 Casa — Prescrição — Casa**
+```
+SULFADIAZINA DE PRATA – Dermazine, Pratazine
+APLICAR O CREME NA LESÃO. COLOCAR GAZE ÚMIDA E COBRIR COM GAZE ESTÉRIL. TROCA A CADA 12 HORAS OU
+ANTES, SE NECESSÁRIO.
+Indicação: feridas causadas por queimaduras ou que necessitem de ação antibacteriana.
+https://www.scielo.br/j/rcbc/a/LFCNqqNQH9zZqjJgNLCYkws/
+INFECTOLOGIA
+```
+
+💡 - Lavar lesão com Soro fisiológico ou Clorexidine Dergemante - Aplicar pomada/curativo - Colocar gaze úmida - Colocar gaze seca e fechar com micropore.
+
+### Trombose Venosa  ·  CID I82
+
+**🏠 Casa — Prescrição — Casa**
+```
+HEMOGRAMA, UREIA, CREATININA, NA, K, TGO, TGP, USG DOPPLER VENOSO
+```
+
+**🏠 Casa — Se internação**
+```
+DIETA SEM RESTRIÇÕES
+ENOXAPARINA 1mg/kg (máx 100mg) SC 12/12 HORAS
+OU
+```
+
+**🏠 Casa — Se Clearance <30**
+```
+HEPARINA NÃO FRACIONADA 25000 UNIDADES/5ML
+FAZER 5ML + SF 0,9% 245ML (concentração: 100U/ml) – dose de ataque 80U/kg
+Dose de manutenção: 18U/kg/hora EV em BI por pelo menos 5 dias
+E
+VARFARINA 5MG VO 1X AO DIA
+CONTROLE TAP /INR
+DIPIRONA 1G 6/6HORAS
+BROMOPRIDA 10MG EV 8/8 HORAS
+CETOPROFENO 1 AMP EV 12/12 HORAS
+MANTER MEMBROS ELEVADOS
+REPOUSO RELATIVO NO LEITO
+ALTA HOSPITALAR QUANDO INR ENTRE 2 E 3
+```
+
+**🏠 Casa — Prescrição — Casa**
+```
+RIVAROXABANA 15MG ---------------
+TOMAR 01 CP DE 12/12 HORAS, POR 3 SEMANAS
+RIVAROXABANA 20MG ---------------
+TOMAR 01 CP 1X AO DIA POR 3 MESES
+DIPIRONA 1G --------------------
+TOMAR 01 CP 6/6 HORAS, SE DOR
+DEOCIL SL 10MG
+TOMAR 01 CPDE 12/12 HORAS, SE DOR INTENSA
+OU
+```
+
+**🏠 Casa — Prescrição — Casa**
+```
+VARFARINA 5MG -----------------
+TOMAR 01 CP AS 18H00
+Controle INR a cada 15 dias
+_____________________________________________________________
+```
 
 
 ## 🫃 Abdome / Gastro
 
-### Abdome agudo obstrutivo  ·  CID K56.6
+### Abdome Agudo Obstrutivo  ·  CID K56.6
 
-**💉 PS / Sala — Brida / aderência**
+**🏠 Casa — Prescrição — Casa**
 ```
-Dieta zero. Sonda nasogástrica aberta.
-Dipirona 2g EV 4/4h.
-Tramal 100mg + Bromoprida 10mg EV, se necessário.
-Luftal 125mg 4/4h VO ou SNG.
-500ml SF 0,9% + 5 amp SG 50% + 1 amp NaCl 20% + 1 amp KCl 19,1% 6/6h.
-Sinais vitais.
+RX ABDOME AGUDO (TÓRAX AP, ABDOME DEITADO, ABDOME EM PÉ), HEMOGRAMA, PCR, UREIA, CREATININA,
+SÓDIO, POTASSIO.
 ```
 
-💡 Rx abdome agudo (tórax AP, abdome deitado e em pé), hemograma, PCR, ureia, creatinina, Na, K. Aguardar 24–36h ou chamar cirurgia. Se repercussão sistêmica (febre, taquicardia, leucocitose, prostração): chamar cirurgia.
+**🏠 Casa — Se brida/aderência**
+```
+DIETA ZERO
+SONDA NASOGASTRICA ABERTA
+DIPIRONA 2G EV 4/4H
+TRAMAL 100MG + BROMOPRIDA 10MG EV, SE NECESSÁRIO
+LUFTAL 125MG 4/4H VO OU SNG
+500ML SF 0,9% + 5 AMP SG 50% + 1 AMP NACL 20% + 1 AMP KCL 19,1% 6/6H
+```
+
+**🏠 Casa — Formula hidratação basal**
+```
+20 – 30ML/KG DE AGUA
+400KCAL DE GLICOSE
+2 MEQ/KG NA
+1 MEQ/KG K
+SINAIS VITAIS
+AGUARDAR 24-36H OU CHAMAR EQUIPE CIRURGIA.
+Se repercussões sistêmicas (febre, taquicardia, leucocitose, prostração):
+CHAMAR EQUIPE CIRURGIA
+```
+
+**🏠 Casa — Se outras causas e sem sinais sistêmicos**
+```
+TC ABDOME COM CONTRASTE
+___________________________________________________________________________
+```
 
 ### Afta  ·  CID K12.0
 
-**🏠 Casa — Uso local**
+**🏠 Casa — Prescrição — Casa**
 ```
-Omcilon-A (triancinolona)
-Aplicar pequena quantidade sobre a lesão 3x ao dia por 7 dias.
-```
-
-### Apendicite aguda (Alvarado)  ·  CID K35
-
-🚩 **Alarme:** Dor que MIGRA para FID, anorexia, náusea/vômito, febre. Mulher jovem com dor em FID → sempre pensar em causa ginecológica (ectópica, cisto roto, DIP) e pedir beta-hCG.
-
-**💉 PS / Sala — Conduta na unidade**
-```
-Dieta zero. SF 0,9% ou Ringer lactato EV.
-Dipirona 1g EV 6/6h se dor.
-Ondansetrona 4mg EV 8/8h se náusea/vômito.
-Se cirurgia indicada / suspeita perfuração → ATB pré-op: Ceftriaxona 2g EV 1x ao dia + Metronidazol 500mg EV 8/8h.
-Avaliação/contato cirurgia geral.
+OMCILON A --------------------
+APLICAR UMA PQUENA QUANTIDADE SOBRE A LESÃO 3X AO DIA POR 7 DIAS.
+________________________________________________________________________
 ```
 
-💡 Score de Alvarado (MANTRELS, 0–10): Migração 1 · Anorexia 1 · Náusea/vômito 1 · Dor à palpação FID 2 · Descompressão dolorosa 1 · Temperatura ≥37,3°C 1 · Leucocitose >10.000 2 · Desvio à esquerda 1. ≤4 improvável (alta com retorno); 5–6 observação+imagem; 7–8 imagem+cirurgia; ≥9 cirurgia direta. Solicitar hemograma, PCR, Urina I, beta-hCG (toda mulher fértil), USG (jovens magros/crianças/gestantes) ou TC com contraste. Analgesia NÃO mascara o diagnóstico — pode/deve dar.
-
-### Candidíase oral  ·  CID B37
-
-**🏠 Casa — Uso tópico**
-```
-Nistatina 100.000 UI/ml
-Tomar 1 a 6 ml 4x ao dia por 7–14 dias. Bochechar e manter por vários minutos na cavidade oral antes de engolir.
-```
-
-### Colecistite aguda  ·  CID K81
-
-**💉 PS / Sala — Prescrição — PS**
-```
-Dieta zero. Ringer lactato 500ml EV.
-Dipirona 1g EV 6/6h.
-Cetoprofeno 100mg EV 12/12h.
-Bromoprida 10mg EV 8/8h.
-Ceftriaxona 2g EV 24/24h.
-Metronidazol 500mg EV 8/8h.
-```
-
-💡 Hemograma, PCR, Na, K, ureia, creatinina, TGO, TGP, bilirrubina total e frações, FA, gama GT, amilase, lipase, USG abdome superior. Sinais vitais 6/6h.
-
-### Colite pseudomembranosa  ·  CID A04.7
+### Apendicite Aguda — Score de Alvarado  ·  CID K35
 
 **🏠 Casa — Prescrição — Casa**
 ```
-Metronidazol 250mg
-Tomar 2 comprimidos de 8/8 horas por 10 dias.
+ANAMNESE: dor que MIGRA para FID, anorexia, náusea/vômito, febre.
+Pico clássico: dor periumbilical → migra p/ FID em 12–24h.
+```
+
+**🏠 Casa — >>> SCORE DE ALVARADO (0–10) — "MANTRELS"**
+```
+M  Migração da dor p/ FID .................... 1
+A  Anorexia ................................. 1
+N  Náusea/vômito ............................ 1
+T  Dor à palpação em FID (Tenderness) ....... 2
+R  Descompressão dolorosa (Rebound/Blumberg). 1
+E  Elevação temperatura ≥ 37,3°C ............ 1
+L  Leucocitose > 10.000 ..................... 2
+S  Desvio à esquerda (neutrófilos > 75%) .... 1
+```
+
+**🏠 Casa — INTERPRETAÇÃO**
+```
+≤ 4   → BAIXA probabilidade. Apendicite improvável. Reavaliar/alta com retorno e sinais de alarme.
+```
+
+**🏠 Casa — 5–6   → INTERMEDIÁRIA. Observação + IMAGEM (USG ou TC).**
+```
+7–8   → PROVÁVEL. Imagem + AVALIAÇÃO CIRÚRGICA.
+≥ 9   → MUITO PROVÁVEL. AVALIAÇÃO CIRÚRGICA direta.
+```
+
+**🏠 Casa — SOLICITAR**
+```
+- Hemograma, PCR
+- Urina I (excluir ITU/cálculo)
+- Beta-hCG (TODA mulher em idade fértil — excluir gravidez/ectópica)
+- USG abdome: 1ª linha em jovens magros, crianças, gestantes
+- TC abdome COM contraste: adultos (melhor acurácia), dúvida diagnóstica, obesos
+```
+
+**🏠 Casa — Se cirurgia indicada / suspeita perfuração → ATB pré-op**
+```
+CEFTRIAXONA 2G EV 1X AO DIA + METRONIDAZOL 500MG EV 8/8H
+- AVALIAÇÃO/CONTATO CIRURGIA GERAL
+ATENÇÃO: Alvarado é APOIO, não substitui clínica. Mulher jovem com dor em FID
+→ sempre pensar em causa ginecológica (ectópica, cisto roto, DIP) e pedir beta-hCG.
+________________________________________________________________________
+```
+
+💡 NA UNIDADE: - DIETA ZERO - SF 0,9% ou Ringer Lactato EV - DIPIRONA 1G EV 6/6H, SE DOR (analgesia NÃO mascara o diagnóstico — pode/deve dar) - ONDANSETRONA 4MG EV 8/8H, SE NÁUSEA/VÔMITO
+
+### Candidiase Oral  ·  CID B37
+
+**🏠 Casa — Prescrição — Casa**
+```
+NISTATINA 100.000
+TOMAR 1 A 6 ML 4X AO DIA POR 7 – 14 DIAS. DEVE SER BOCHECHADA E MANTIDA POR VÁRIOS MINUTOS NA
+CAVIDADE ORAL ANTES DE SER ENGOLIDA.
+______________________________________________________________________
+```
+
+### Colecistite Aguda  ·  CID K81
+
+**🏠 Casa — Prescrição — Casa**
+```
+HEMOGRAMA, PCR, NA, K, UREIA, CREATININA, TGO, TGP, BILIRRUBINA TOTAL E FRAÇÕES, FA, GAMA GT, AMILASE,
+LIPASE, USG ABDOME SUPERIOR
+DIETA ZERO
+RINGER LACTATO 500ML EV
+DIPIRONA 1G EV 6/6H
+CETOPROFENO 100MG EV 12/12H
+BROMOPRIDA 10MG EV 8/8H
+CEFTRIAXONA 2G EV 24/24H
+METRONIDAZOL 500MG EV 8/8H
+SINAIS VITAIS 6/6H
+___________________________________________________________________
+```
+
+### Colite Pseudomembranosa  ·  CID A04.7
+
+**🏠 Casa — Prescrição — Casa**
+```
+Hemograma, uréia, creatinina, sódio, potássio, albumina.
+```
+
+**🏠 Casa — Prescrição — Casa**
+```
+METRONIDAZOL 250MG
+TOMAR 02 CPS DE 8/8 HORAS POR 10 DIAS
 ```
 
 _OU_
 ```
-Vancomicina 125mg
-Tomar 1 comprimido de 6/6 horas por 10 dias.
+VANCOMICINA 125MG
+TOMAR 01 CP DE 6/6 HORAS POR 10 DIAS
+_______________________________________________________________________
 ```
-
-💡 Hemograma, ureia, creatinina, Na, K, albumina.
 
 ### Constipação  ·  CID K59.0
 
-**🏠 Casa — 1ª linha**
+**🏠 Casa — Prescrição — Casa**
 ```
-Plantago ovata Forssk — 1 caixa
-Diluir 1 envelope em 1 copo de água, 1x ao dia até melhora (pode repetir de 8/8h).
-```
-
-_OU_
-```
-Policarbofila cálcica 625mg
-Tomar 1 comprimido de 12/12 horas, junto com as refeições.
+1) Plantago ovata Forssk -------------- 1 caixa
+Diluir 01 envelope em 01 copo de água, uma vez ao dia, até melhora dos sintomas. A dose pode ser repetida de 8 em 8 horas, se necessário.
 ```
 
 _OU_
 ```
-Óleo mineral
-Tomar 1 colher de sopa (20 ml) de 12/12 horas.
+1) Óleo mineral --------------------------- 1 frasco
+Tomar 1 colher de sopa de 12/12h.
 ```
 
 _OU_
 ```
-Lactulose 667 mg/mL — 1 frasco
-Tomar 15 ml 1x ao dia até melhora (máx 60 ml/dia).
-```
-
-**🏠 Casa — Se não melhorar**
-```
-Polietilenoglicol 4000
-Tomar 10g diluídos em água ou suco 1x ao dia.
+1) Lactulose 667 mg/mL ------------------ 1 frasco
+Tomar 15 ml, uma vez ao dia, até melhora dos sintomas. Ajustar conforme resposta, considerando dose máxima de 60 ml por dia.
 ```
 
 _OU_
 ```
-Hidróxido de magnésio 1200mg/15ml
-Tomar 30 ml 1x ao dia.
+1)Bisacodil 5 mg ----------------------------- 1 caixa
+Tomar 01 cp de 12 em 12 horas se resistência a outras medidas laxativas.
 ```
-
-_OU_
-```
-Bisacodil 5mg — 1 caixa
-Tomar 1 comprimido 1x ao dia (ou 12/12h se resistência a outras medidas).
-```
-
-💡 Se intensa: clister glicerinado 500ml agora.
-
-### Cólica biliar  ·  CID K80
 
 **🏠 Casa — Prescrição — Casa**
 ```
-Dipirona 500mg — 40 comprimidos
-Tomar 2 comprimidos de 6/6 horas se dor ou febre por 5 dias.
+PLANTAGO OVATA FORSSK -------------------
+TOMAR 01 ENVELOPE 2X AO DIA
 ```
 
 _OU_
 ```
-Paracetamol 750mg — 40 comprimidos
-Tomar 1 comprimido de 6/6 horas se dor ou febre por 5 dias.
-Buscopan composto — 1 caixa
-Tomar 1 comprimido de 6/6 horas se dor ou cólica.
-Diclofenaco 50mg — 10 comprimidos
-Tomar 1 comprimido de 12/12 horas se dor intensa por até 5 dias.
-Tramadol 50mg — 12 comprimidos
-Tomar 1 comprimido de 8/8 horas se dor muito intensa e resistente.
-Ondansetrona 8mg sublingual — 1 caixa
-Deixar 1 comprimido abaixo da língua até absorção, de 8/8 horas se náusea ou vômito.
+POLICARBOFILA CALCICA 625MG -----------------
+TOMAR 01 CP DE 12/12 HORAS, JUNTO COM AS REFEIÇÕES
 ```
 
 _OU_
 ```
-Metoclopramida 10mg — 10 comprimidos
-Tomar 1 comprimido de 8/8 horas se náusea ou vômito.
+ÓLEO MINERAL
+TOMAR 20ML DE 12/12 HORAS
+LUFTAL 125MG
+TOMAR 01 CP DE 4/4 HORAS
+DOMPERIDONA 10MG
+TOMAR 01 CP 20 MINUTOS DAS REFEIÇÕES (ALMOÇO E JANTA)
+BROMOPRIDA 10MG
+TOMAR 01 CP DE 8/8 HORAS, SE NAUSEA OU VOMITO
+```
+
+**🏠 Casa — Prescrição — Casa**
+```
+POLIETILENOGLICOL 4000 ------------------
+TOMAR 10G DILUIDOS EM AGUA OU SUCO 1X AO DIA
+```
+
+_OU_
+```
+LACTULOSE ------------------
+TOMAR 15 ML 1X AO DIA
+```
+
+_OU_
+```
+HIDROXIDO DE MAGNESIO 1200MG/15ML -----------------------
+TOMAR 30 ML 1X AOD IA
+```
+
+**🏠 Casa — Prescrição — Casa**
+```
+BISACODIL 5MG------------------
+TOMAR 01 CP 1X AO DIA
+```
+
+**🏠 Casa — Se intensa**
+```
+CLISTER GLICERINADO 500ML AGORA
+_____________________________________________________________________________________
+```
+
+### Cólica Biliar  ·  CID K80
+
+**🏠 Casa — Prescrição — Casa**
+```
+1) Dipirona 500mg ----------------------------------- 40 comprimidos
+Tomar 2 comprimidos de 6 em 6 horas se dor ou febre por 5 dias
+```
+
+_OU_
+```
+1) Paracetamol 750mg ---------------------------- 40 comprimidos
+Tomar 1 comprimido se 6 em 6 horas se dor ou febre por 5 dias
+2) Buscopan composto --------------------------- 1 caixa
+Tomar 1 comprimido de 6 em 6 horas se dor ou cólica.
+3) Diclofenaco 50mg ----------------- 10 comprimidos
+Tomar 1 comprimido de 12 em 12 horas se dor intensa por até 5 dias.
+4) Tramadol 50mg -------------------- 12 comprimidos
+Tomar 1 comprimido de 8 em 8 horas se dor muito intensa e resistente aos tratamentos anteriores.
+5) Ondansetrona 8mg sublingual --------------- 1 caixa
+Deixar 1 comprimido abaixo da língua até a absorção completa. Tomar medicação de 8 em 8 horas se náusea ou vômito.
+```
+
+_OU_
+```
+4) Metoclopramida 10mg --------------------- 10 comprimidos
+Tomar 1 comprimido de 8 em 8 horas se náusea ou vômito.
 ```
 
 ### Disenteria  ·  CID A09
 
 **🏠 Casa — Prescrição — Casa**
 ```
-Ciprofloxacino 500mg
-Tomar 1 comprimido de 12/12 horas por 3–5 dias.
+CIPROFLOXACINO 500MG
+TOMAR 01 CP DE 12/12 HORAS POR 3-5 DIAS
 ```
 
 _OU_
 ```
-Azitromicina 1g
-Tomar 1 comprimido, dose única.
+AZITROMICINA 1G
+TOMAR 01 CP, DOSE ÚNICA
 ```
 
 _OU_
 ```
-Azitromicina 500mg
-Tomar 1 comprimido 1x ao dia por 3–5 dias.
-Albendazol 400mg
-Tomar 1 comprimido 1x ao dia por 3 dias (associar se indicado).
+AZITROMICINA 500MG
+TOMAR 01 CP 1X AO DIA POR 3-5 DIAS
+E/OU
+ALBENDAZOL 400MG
+TOMAR 01 CP 1X AO DIA POR 3 DIAS
+_______________________________________________________________________
 ```
 
-### Diverticulite aguda  ·  CID K57
+### Diverticulite Aguda  ·  CID K57
 
-**💉 PS / Sala — Complicada**
+**🏠 Casa — Prescrição — Casa**
 ```
-Dieta zero. Ringer lactato 500ml EV.
-Ceftriaxona 2g EV 24/24h.
-Metronidazol 500mg EV 8/8h.
-Dipirona 1g EV 6/6h SN. Bromoprida 10mg EV 8/8h SN. Sinais vitais 6/6h.
+HEMOGRAMA, PCR, NA, K, UREIA, CREATININA, TC ABDOME COM CONTRASTE
 ```
 
-**🏠 Casa — Não complicada**
+**🏠 Casa — Prescrição — Casa**
 ```
-Ciprofloxacino 500mg
-Tomar 1 comprimido de 12/12 horas por 7 dias.
-Metronidazol 250mg
-Tomar 2 comprimidos de 8/8 horas por 7 dias.
-Dipirona 500mg
-Tomar 1 comprimido de 6/6 horas se dor.
+CIPROFLOXACINO 500MG
+TOMAR 01 CP DE 12/12 HORAS POR 7 DIAS
+METRONIDAZOL 250MG
+TOMAR 02 CP DE 8/8 HORAS POR 7 DIAS
+DIPIRONA 500MG
+TOMAR 01 CP DE 6/6 HORAS, SE DOR
 ```
 
-💡 Hemograma, PCR, Na, K, ureia, creatinina, TC abdome com contraste. Dieta sem resíduos (leve, sem sementes).
-
-### DRGE / Gastrite  ·  CID K21 · K29
-
-**🏠 Casa — IBP**
+**🏠 Casa — Complicada**
 ```
-Omeprazol 20mg — 28 comprimidos
-Tomar 2 comprimidos 1x ao dia, em jejum (30 min antes da refeição), por 14 dias.
+DIETA ZERO
+RINGER LACTATO 500ML EV
+CEFTRIAXONA 2G EV 24/24H
+METRONIDAZOL 500MG EV 8/8H
+DIPIRONA 1G EV 6/6H SN
+BROMOPRIDA 10MG EV 8/8H SN
+SINAIS VITAIS 6/6H
+___________________________________________________________________
+```
+
+💡 dieta sem resíduos (leve, sem sementes) (www.gamedii.com.br/especialidades-nutricao/378-dietasem-residuos)
+
+### Doença do Refluxo Gastroesofágico  ·  CID K21
+
+**🏠 Casa — Prescrição — Casa**
+```
+OMEPRAZOL 20MG
+TOMAR 02 CP PELA MANHA, 30 MINUTOS ANTES DA REFEIÇÃO
 ```
 
 _OU_
 ```
-Pantoprazol 20mg
-Tomar 1 a 2 comprimidos pela manhã.
+PANTOPRAZOL 20MG
+TOMAR 01 A 02 CP PELA MANHA
+E (não é obrigatório)
+DOMPERIDONA 10MG
+TOMAR 01 CP DE 8/8 HORAS
 ```
 
 _OU_
 ```
-Dexlansoprazol (Dexilant) 30mg
+BROMOPRIDA 10mg
+TOMAR 01 CP DE 8/8 HORAS
+```
+
+_OU_
+```
+HIDROXIDO DE MAGNÉSIO 60MG/ML
+TOMAR 5 – 10 ML VO 1 HORA APÓS AS REFEIÇÕES E AO DEITAR
+```
+
+💡 manter tratamento por 4-8 semanas, não comer antes de deitar, evitar refeições volumosas, cessar tabagismo, evitar alimentos (café,chocolate, álcool) ----------------------------------------------------------------------------------------------
+
+### Enterobiase/ Oxiurose  ·  CID B80
+
+**🏠 Casa — Prescrição — Casa**
+```
+ALBENDAZOL 400MG
+TOMAR (10mg/kg – máximo 400mg) 1X AO DIA POR 3 DIAS
+DIPIRONA 1G
+TOMAR 01 CP DE 6/6 HORAS, SE DOR OU FEBRE
+HIDROXIZINA 25MG
+TOMAR 01 CP DE 8/8 HORAS, SE COCEIRA
+_____________________________________________________________________________________
+```
+
+### Epigastralgia / Pirose  ·  CID R10.1
+
+**🏠 Casa — Prescrição — Casa**
+```
+HIDROXÍDO DE ALUMÍNIO ----------------------
+TOMAR 15 ML 3X AO DIA, 15 MINUTOS ANTES DAS PRINCIPAIS REFEIÇÕES (CAFÉ DA MANHA, ALMOÇO E JANTA)
+DIPIRONA 500MG --------------------------------
+TOMAR 01 CP DE 6/6 HORAS, SE DOR
+```
+
+_OU_
+```
+HIDROXIDO DE ALUMINIO + HIDROXIDO DE MAGNESIO + SIMETICONA
+TOMAR 10ML 4X AO DIA, 1 HORA ANTES DAS REFEIÇÕES1) Buscopan Composto
+Tomar 01 comprimido de 08/08 horas se dor
+2) Ondansetrona 4mg
+TOMAR 01 CP DE 8/8 HORAS SE NAUSEA
+3) OMEPRAZOL 20MG -----------
+TOMAR 01 CP 1X AO DIA, PELA MANHA, POR 10 DIAS
+3) LUFTAGASTRO PRO
+Tomar 01 sachê se sintomas de azia e má digestão
+4) Dexilant 30 mg
 Tomar 1 comprimido pela manhã, por 30 dias.
+---------------------------------------------------------------------------------------------------------------------------------------
 ```
 
-**🏠 Casa — Procinético / antiácido**
-```
-Domperidona 10mg
-Tomar 1 comprimido de 8/8 horas.
-```
+### Gastrite/drge  ·  CID K29
 
-_OU_
+**🏠 Casa — Prescrição — Casa**
 ```
-Bromoprida 10mg
-Tomar 1 comprimido de 8/8 horas.
-Hidróxido de magnésio 60mg/ml
-Tomar 5–10 ml VO 1 hora após as refeições e ao deitar.
-Pepsamar (hidróxido de alumínio) 230mg — 1 caixa
+x) Omeprazol 20mg -------------------28 comprimidos
+Tomar 2 comprimidos, uma vez ao dia, em jejum e aguardar 30 minutos para se alimentar por 14 dias.
+x) Pepsamar (HIDROXIDIDO DE ALUMINIO) 230mg ----------------- 1 caixa
 Mastigar 2 comprimidos ao sentir azia intensa.
 ```
 
-💡 Manter tratamento 4–8 semanas; não comer antes de deitar; evitar refeições volumosas; cessar tabagismo; evitar café/chocolate/álcool.
-
-### Enterobíase / Oxiurose  ·  CID B80
+### Gastroenterite // Náuseas e Vômitos  ·  CID A09
 
 **🏠 Casa — Prescrição — Casa**
 ```
-Albendazol 400mg
-Tomar (10mg/kg – máximo 400mg) 1x ao dia por 3 dias.
-Dipirona 1g
-Tomar 1 comprimido de 6/6 horas se dor ou febre.
-Hidroxizina 25mg
-Tomar 1 comprimido de 8/8 horas se coceira.
+BUSCOPAM COMPOSTO
+TOMAR 1 CP VO DE 8/8H SE DOR ABDOMINAL
+DRAMIN B6
+TOMAR 01 COMPRIMIDO DE 8/8H, SE NÁUSEAS OU VÔMITOS.
+SORO DE REIDRATAÇÃO ORAL ----------------------------- 3 ENVELOPES
+DISSOLVER 1 ENVELOPE EM 1 LITRO DE AGUA FILTRADA. TOMAR PEQUENAS QUANTIDADES VÁRIAS VEZES AO DIA.
+FLORATIL 200 MG
+DILUIR 1 SACHÊ EM ÁGUA CONFORME BULA E TOMAR DE 12/12 H POR 3 DIAS.
+SIMETICONA 40MG
+TOMAR 1 CP VO DE 8/8H, SE GASES
+RACECADOTRILA 100MG
+TOMAR 01 CP DE 8/8 HORAS, ATÉ CESSAR A DIARRÉIA
+Se < 5 anos: DAR ZINCO 20MG/ DIA POR 10 DIAS
+Se < 6 meses: DAR ZINCO 10MG/DIA POR 10 DIAS
+________________________________________________________________________
 ```
 
-### Epigastralgia / Pirose  ·  CID R10.1 · K29
+### GECA em Adulto  ·  CID A09
 
 **🏠 Casa — Prescrição — Casa**
 ```
-Hidróxido de alumínio
-Tomar 15 ml 3x ao dia, 15 minutos antes das principais refeições.
-```
-
-_OU_
-```
-Hidróxido de alumínio + hidróxido de magnésio + simeticona
-Tomar 10 ml 4x ao dia, 1 hora antes das refeições.
-Dipirona 500mg
-Tomar 1 comprimido de 6/6 horas se dor.
-Omeprazol 20mg
-Tomar 1 comprimido 1x ao dia, pela manhã, por 10 dias.
-Buscopan composto
-Tomar 1 comprimido de 8/8 horas se dor.
-Ondansetrona 4mg
-Tomar 1 comprimido de 8/8 horas se náusea.
-```
-
-### GECA / Gastroenterite (adulto)  ·  CID A09
-
-**📋 Anamnese**
-```
-PACIENTE REFERE DIARREIA HÁ [X] DIA(S). Nega febre, nega sangue nas fezes, nega vômitos persistentes, nega incapacidade de ingerir líquidos, nega redução da diurese, nega tontura, nega síncope, nega dor abdominal intensa, nega distensão abdominal e nega prostração importante.
-#Medicamentos de uso contínuo: nega  #Comorbidades: nega  #Alergias: nega  #Gestação: [avaliar]
-```
-
-**🩺 Exame físico**
-```
-Bom estado geral, corado, hidratado, acianótico, anictérico, afebril.
-Abdome discretamente distendido, plano, dor discreta à palpação difusa, sem defesa ou rigidez.
+Bom estado geral, corado, hidratado, acianótico, anictérico, afebril
+Abdome discretamente distendido, plano, dor discreta à palpação difusamente, sem defesa ou rigidez.
 ```
 
 **🏠 Casa — Prescrição — Casa**
 ```
-Soro de hidratação oral — 4 sachês
-Diluir 1 sachê em 1L de água filtrada e tomar 1 copo a cada evacuação. Armazenar em geladeira, descartar no dia seguinte. Manter até melhora completa.
-Dipirona 500mg — 20 comprimidos
-Tomar 1 comprimido de 6/6 horas se dor ou febre.
-Buscopan composto — 1 caixa
-Tomar 1 comprimido de 6/6 horas se dor ou cólica.
-Metoclopramida 10mg — 10 comprimidos
-Tomar 1 comprimido de 8/8 horas se náusea ou vômito.
+1) Soro de hidratação oral ------------------- 4 sachês
+Diluir 1 sachê em 1L de água filtrada e tomar um copo a cada novo episódio de evacuação. Armazenar em geladeira e descartar no dia seguinte. Tomar soro de reidratação oral até melhora completa dos sintomas.
+2) Dipirona 500mg ----------------------------------- 20 comprimidos
+Tomar 1 comprimido de 6 em 6 horas se dor ou febre.
+3) Buscopan composto --------------------------- 1 caixa
+Tomar 1 comprimido de 6 em 6 horas se dor ou cólica.
+4) Metoclopramida 10mg --------------------- 10 comprimidos
+Tomar 1 comprimido de 8 em 8 horas se náusea ou vômito.
 ```
 
 _OU_
 ```
-Ondansetrona 4mg sublingual — 1 caixa
-Deixar 1 a 2 comprimidos abaixo da língua até dissolver, de 8/8 horas se náusea ou vômito.
-Floratil — 1 caixa
-Tomar 1 comprimido de 12/12 horas por 3 dias.
-Racecadotrila 100mg
-Tomar 1 comprimido de 8/8 horas até cessar a diarreia (até 3–5 dias), associado a hidratação oral.
-Simeticona gotas — 1 frasco
-Tomar 50 gotas de 8/8 horas se gases.
+4) Ondansetrona 4mg sublingual --------- 1 caixa
+Deixar 1 a 2 comprimidos abaixo da língua até dissolver. Tomar de 8 em 8 horas se náusea ou vômito.
+5)Floratil ---------------------------------------------- 1 caixa
+Tomar 1 comprimido de 12 em 12 horas por 3 dias.
+6) RACECADOTRILA 100MG
+TOMAR 01 CP DE 8/8 HORAS, por até 3–5 dias ou até cessar diarreia, associado a hidratação oral.
+7) SIMETICONA GOTAS --------------------------------- 01 FRASCO
+TOMAR 50 GOTAS DE 8/8H, SE GASES.
+SE EPIGASTRALGIA
+Omeprazol 20mg -------------------28 comprimidos
+Tomar 1 comprimido, uma vez ao dia, em jejum e aguardar 30 minutos para se alimentar por 14 dias.
 ```
 
-**🏠 Casa — Se epigastralgia**
+**🏠 Casa — SE PRECISAR DE ATB**
 ```
-Omeprazol 20mg — 28 comprimidos
-Tomar 1 comprimido 1x ao dia, em jejum, aguardar 30 min para alimentar, por 14 dias.
-```
-
-**🏠 Casa — Se precisar de ATB**
-```
-Ciprofloxacino 500mg — 6 comprimidos
-Tomar 1 comprimido de 12/12 horas por 3 dias.
+1) Ciprofloxacino 500mg ----------------------- 6 comprimidos
+Tomar 1 comprimido de 12 em 12 horas por 3 dias.
 ```
 
 _OU_
 ```
-Sulfametoxazol-trimetoprima 800/160mg
-Tomar 1 comprimido de 12/12 horas por 3 a 5 dias.
+2) Sulfametoxazol-trimetoprima 800-160mg
+Tomar 1 comprimido de 12 em 12 horas por 3 a 5 dias.
 ```
 
-💡 Zinco (criança): <5 anos 20mg/dia por 10 dias; <6 meses 10mg/dia por 10 dias.
+💡 PACIENTE REFERE DIARREIA HÁ  DIA. Nega febre, nega sangue nas fezes, nega vômitos persistentes, nega incapacidade de ingerir líquidos, nega redução da diurese, nega tontura, nega síncope, nega dor abdominal intensa, nega distensão abdominal e nega prostração importante.
+#MEDICAMENTOS DE USO CONTÍNUO: NEGA
+#COMORBIDADES PRÉVIAS: NEGA
+#ALERGIAS: NEGA ALERGIAS MEDICAMENTOSAS CONHECIDAS.
+#Possibilidade de estar gestante:
+#EXAME FÍSICO:
 
-### Hemorragia digestiva alta  ·  CID K92.2
-
-**💉 PS / Sala — Prescrição — PS**
-```
-Dieta zero. Ringer lactato 500ml EV agora (20–30ml/kg de ressuscitação).
-```
-
-**💉 PS / Sala — HDA varicosa**
-```
-Ceftriaxona 2g EV agora.
-Terlipressina 2mg EV agora.
-```
-
-**💉 PS / Sala — HDA não varicosa**
-```
-Omeprazol 40mg EV agora (manter de 12/12 horas).
-```
-
-💡 Monitorização. Concentrado de hemácias se Hb <7. Noradrenalina 4 amp + 254ml SG5% EV em BIC — iniciar 5–10ml/h (alvo PAM <65) se necessário. SVD (meta 0,5ml/kg/h). Solicitar EDA e UTI.
-
-### Hemorroida  ·  CID I84
-
-**🏠 Casa — Uso oral**
-```
-Plantago ovata (Metamucil/Fibermais/Muvinlax)
-Tomar 1 a 3 sachês, diluídos em 200 ml de água.
-Lactulose
-Tomar 15 ml de 8/8 horas.
-Dipirona 500mg
-Tomar 1 comprimido de 6/6 horas se dor.
-Cetoprofeno 100mg
-Tomar 1 comprimido de 12/12 horas por 3–5 dias.
-```
-
-**🏠 Casa — Uso externo**
-```
-Xyloproct pomada
-Aplicar fina camada várias vezes ao dia na área afetada (ou usar o aplicador).
-```
-
-_OU_
-```
-Hidrocortisona creme 10mg/g
-Aplicar fina camada na região afetada 2 a 3 vezes por dia, por no máximo 2 semanas.
-```
-
-💡 Banho de assento: água morna por 15 min, 2x ao dia.
-
-### Ingesta de corpo estranho  ·  CID T18.9
-
-💡 Rx abdome (deitado e em pé) e tórax. Objeto perfurocortante/pilhas/bateria/grandes, objeto no esôfago, paciente sintomático → EDA + avaliação cirurgia. Outros: orientar sinais de alarme, retorno em 24–48h para novo Rx.
-
-### Pancreatite aguda  ·  CID K85
-
-**💉 PS / Sala — Prescrição — PS**
-```
-Dieta zero (até melhora clínica).
-Ringer lactato 1000ml EV agora.
-Ringer lactato 500ml + 7 amp (10ml) glicose hipertônica 50% + 1 amp (10ml) KCl 8/8 horas.
-Dipirona 1g EV 6/6 horas.
-Cetoprofeno 100mg EV 12/12h.
-Morfina 2mg/ml: 2–4ml 4/4h se necessário.
-Ondansetrona 4mg/ml 8/8h EV.
-```
-
-💡 Hemograma, FA, gama GT, TGO, TGP, bilirrubinas, amilase, lipase, PCR, glicemia, Na, K, USG abdominal e/ou TC abdome. SVD (quantificar diurese, ideal >0,5ml/kg/h). Sinais vitais 6/6h.
-
-### Parasitose  ·  CID B80
+### Hemorragia Digestiva Alta  ·  CID K92.2
 
 **🏠 Casa — Prescrição — Casa**
 ```
-Albendazol 200mg
-Tomar 2 comprimidos, dose única.
+MONITORIZAÇÃO
+DIETA ZERO
+RINGER LACTATO 500ML EV AGORA (20-30ml/kg de ressuscitação)
+CONCENTRADO DE HEMÁCIAS, se necessário (HB <7)
+NORADRENALINA: 4 AMP + 254ML SG5% EV EM BIC – INICIAR 5-10ML/H (Alvo PAM < 65), se necessário
+SVD – quantificar diurese (Meta: 0,5ml/kg/hora)
+SOLICITAR EDA
+SOLICITAR UTI
+```
+
+**🏠 Casa — HDA Varicosa**
+```
+CEFTRIAXONA 2G EV AGORA
+TERLIPRESSINA 2MG EV AGORA
+```
+
+**🏠 Casa — HDA Não varicosa**
+```
+OMEPRAZOL 40MG EV AGORA (manter de 12/12 horas)
+___________________________________________________________
+```
+
+### Hemorróida  ·  CID I84
+
+**🏠 Casa — Prescrição — Casa**
+```
+PLANTAGO OVATA (METAMUCIL/FIBERMAIS/MUVINLAX) -------------------
+TOMAR 1 A 3 SACHES, DILUIDOS EM 200ML DE AGUA
+E/OU
+LACTULOSE -----------------
+TOMAR 15ML DE 8/8 HORAS
+DIPIRONA 500MG ---------------
+TOMAR 01 CP DE 6/6 HORAS, SE DOR
+CETOPROFENO 100MG ----------------
+TOMAR 01 CP DE 12/12 HORAS POR 3-5 DIAS
+```
+
+**🏠 Casa — Prescrição — Casa**
+```
+XYLOPROCT POMADA -----------------------------
+APLICAR FINA CAMADA VARIAS VEZES AO DIA NA AREA AFETADA
+```
+
+_OU_
+```
+XYLOPROCT POMADA --------------------------------
+UTILIZAR O APLICADOR PARA APLICAR MEDICAÇÃO
+```
+
+_OU_
+```
+HIDROCORTISONA CREME 10MG/G ------------------
+APLICAR FINA CAMADA NA REGIÃO AFETADA 2 A 3 VEZES POR DIA, POR NO MÁXIMO, 2 SEMANAS
+BANHO DE ASSENTO ---------------------
+SENTAR EM BACIA COM AGUA MORNA E PERMANECER POR 15 MINUTOS, 2 VEZES POR DIA
+-----------------------------------------------------------------------------------------------------------------------------------
+```
+
+### Ingesta Corpo Estranho  ·  CID T18.9
+
+**🏠 Casa — Prescrição — Casa**
+```
+RX ABDOME (DEITADO E EM PÉ) E TÓRAX
+Objeto perfurocortante, pilhas, bateria, grandes: EDA, AVALIAÇÃO CIRURGIA
+Objeto no esôfago: EDA, AVALIAÇÃO CIRURGIA
+Paciente sintomático: EDA, AVALIAÇÃO CIRURGIA
+Outros: ORIENTAR SINAIS DE ALARME, RETORNO EM 24-48H PARA REALIZAR NOVO RX.
+___________________________________________________________________________
+---------------------------------------------------------------------------------------------------------------------------------
+OFTALMOLOGIA
+```
+
+### Pancreatite Aguda  ·  CID K85
+
+**🏠 Casa — Prescrição — Casa**
+```
+HEMOGRAMA, FA, GAMA GT, TGO, TGP, BILIRRUBINAS TOTAIS E FRAÇÕES, AMILASE, LIPASE, PCR, GLICEMIA, NA, K,
+USG ABDOMINAL E/OU TC ABDOME
+DIETA ZERO (até melhora clínica)
+RINGER LACTATO 1000ML EV AGORA
+RINGER LACTATO 500ML + 7 AMP (10ML) GLICOSE HIPERTÔNICA 50% + 1 AMP (10ML) KCL 8/8 HORAS
+DIPIRONA 1G EV 6/6 HORAS
+CETOPROFENO 100MG 12/12H EV
+MORFINA 2MG/ML: 2-4ML 4/4H, SE NECESSÁRIO
+ONDANSETRONA 4MG/ML 8/8H EV
+SVD – quantificar diurese (ideal: >0,5ml/kg/h)
+SINAIS VITAIS 6/6H
+____________________________________________________________________
+```
+
+### Parasitose AE
+
+**🏠 Casa — Prescrição — Casa**
+```
+ALBENDAZOL 200MG
+TOMAR 02 COMPRIMIDOS, DOSE ÚNICA
+______________________________________________
 ```
 
 ### Soluço  ·  CID R06.6
 
 **🏠 Casa — Prescrição — Casa**
 ```
-Clorpromazina 25mg
-Tomar 1 a 2 comprimidos de 12/12 horas por 5 a 10 dias.
+CLOPROMAZINA 25MG
+TOMAR 01 A 02 CPS DE 12/12 HORAS POR 5 A 10 DIAS
 ```
 
 _OU_
 ```
-Gabapentina 300mg
-Tomar ½ comprimido de 8/8 horas por 5 a 10 dias.
+GABAPENTINA 300MG
+TOMAR ½ CP DE 8/8 HORAS POR 5 A 10 DIAS
 ```
 
 _OU_
 ```
-Bromoprida 10mg
-Tomar 1 comprimido de 8/8 horas por 5 a 10 dias.
+BROMOPRIDA 10MG
+TOMAR 01 CP DE 8/8 HORAS POR 5 A 10 DIAS
 ```
 
 _OU_
 ```
-Baclofeno 10mg
-Tomar 1 comprimido de 12/12 horas por 5 a 10 dias.
+BACLOFENO 10MG
+TOMAR 01 CP DE 12/12 HORAS POR 5 A 10 DIAS
+___________________________________________________________________
 ```
 
 ### Xerostomia  ·  CID R68.2
 
 **🏠 Casa — Prescrição — Casa**
 ```
-Goma de mascar sem açúcar.
-Pilocarpina 4% (40mg/ml)
-Aplicar 3 gotas 3x ao dia, durante ou após as refeições.
-Saliva artificial (Kin-Hidrat)
-Usar conforme necessidade.
-Dexpantenol
-Aplicar nos lábios 2–3x ao dia.
+GOMA DE MASCAR SEM AÇUCAR
+E/OU
+PILOCARPINA 4% 40MG/ML
+APLICAR 3 GOTAS 3X AO DIA, DURANTE OU APÓS AS REFEIÇÕES
+E/OU
+SALIVA ARTIFICIAL KIN-HIDRAT
+USAR DE ACORDO COM NECESSIDADE
+E/OU
+DEXPANTENOL
+APLICAR NOS LÁBIOS 2-3X AO DIA
 ```
 
-💡 Consumir acerola, limão, maçãs, peras; umedecer a cavidade oral com água filtrada ou gelo.
+💡 consumir acerola, limão, maças, peras; umedecer cavidade oral com água filtrada ou gelo ______________________________________________________________________________
 
 
 ## 🩸 Renal / Endócrino / Metabólico
 
-### Cetoacidose diabética  ·  CID E14.1
+### Cetoacidose Diabética  ·  CID E14.1
 
-**🏥 Internação — Reposição volêmica / eletrólitos**
+**🏠 Casa — Prescrição — Casa**
 ```
-Dieta zero. 15–20 ml/kg SF0,9% na primeira hora.
-Após exames — Na normal-alto: NaCl 0,45% 250–500ml/h; Na baixo: NaCl 0,9% 250–500ml/h.
-Quando glicemia = 200: soro glicosado 5% + NaCl 0,45% 150–250ml/h.
-K <3,3: KCl 10% (1g/10ml) 10ml + NaCl 0,45% 100ml — 20–40 mEq/h até K >3,3 (NÃO dar insulina).
-K entre 3,3 e 5,5: KCl 10% 10ml + NaCl 0,45% 100ml — 20–30 mEq em cada litro EV.
-K >5,5: dosar novamente em 2 horas.
-Se pH <6,9: bicarbonato de sódio 8,4% (1mEq/ml) 100ml + SF0,9% 400ml — correr em 2 horas.
+DEXTRO, GASOMETRIA ARTERIAL, URINA 1, NA, K, HEMOGRAMA, UREIA, CREATININA, ECG
+DIETA ZERO
+15-20ML/KG SF0,9% NA PRIMEIRA HORA
 ```
 
-**🏥 Internação — Insulina**
+**🏠 Casa — Após resultado de exames**
 ```
-Grave: Insulina regular (100UI/ml) 1ml + 99ml SF0,9% (1 UI/ml) — 0,1 UI/kg em bolus; após 0,1 UI/kg/h EV em BI (titular). Quando glicemia = 200: 0,02–0,05 UI/kg/h.
-Leve-moderado: Insulina regular 0,3 UI/kg SC dose única; após 0,2 UI/kg SC de 2/2h. Quando glicemia = 200: 0,1 UI/kg SC 2/2h.
-Dipirona 1g EV 6/6h. Bromoprida 10mg EV 8/8h. O2 se necessário.
-```
-
-💡 Dextro, gasometria arterial, Urina I, Na, K, hemograma, ureia, creatinina, ECG. Glicemia capilar 1/1h (estável por 3h → 2/2h). Ureia/creatinina/Na/K de 2/2h até estabilização. Internar.
-
-### Estado hiperglicêmico hiperosmolar  ·  CID E14
-
-**🏥 Internação — Prescrição — Internação**
-```
-Dieta zero. SF0,9% 15–20 ml/kg na primeira hora.
-Após exames — Na normal-alto: NaCl 0,45% 150–250 ml/h.
-Quando glicemia = 300: solução glicosada 5% 150ml + SF 150ml — infundir 150 ml/h.
-K <3,3: KCl 10% (1g/10ml) 10ml + NaCl 0,45% 100ml — 20–40 mEq/h até K >3,3 (NÃO dar insulina).
-K entre 3,3 e 5,5: KCl 10% 10ml + NaCl 0,45% 100ml — 20–30 mEq por litro EV.
-Insulina regular (100UI/ml) 1ml + 99ml SF0,9% — 0,1 UI/kg bolus; após 0,1 UI/kg/h EV em BI. Quando glicemia = 300: 0,5 a 1,0 UI/h EV.
-Dipirona 1g EV 6/6h. Bromoprida 10mg EV 8/8h.
+Na normal-alto: NaCl 0,45% 250-500ML/HORA
+Na baixo: NaCl 0,9% 250-500ML/HORA
+Quando glicemia = 200: SORO GLICOSADO 5% + NaCl 0,45% 150-250ML/HORA
+K <3,3: CLORETO DE POTÁSSIO 10% (1G/10ML) 10ML + NaCl 0,45% 100ML – ADMINISTRAR 20-40 mEq/HORA ATÉ K
+>3,3 – NÃO DAR INSULINA
+K ENTRA 3,3 E 5,5: DE POTÁSSIO 10% (1G/10ML) 10ML + NaCl 0,45% 100ML – ADMINISTRAR 20-30 mEq EM CADA
+LITRO DE FLUIDO EV
+K > 5,5: DOSAR NOVAMENTE EM 2 HORAS
+Se pH <6,9: BICARBONATO DE SÓDIO 8,4% (1mEq/ML) 100ML + SF0,9% 400ML – CORRER EM 2 HORAS
 ```
 
-💡 Dextro, gasometria arterial, Urina I, Na, K, hemograma, ureia, creatinina, ECG. Glicemia capilar 1/1h. Ureia/creatinina/Na/K de 2/2h. Internar.
+**🏠 Casa — Paciente leve-moderado**
+```
+INSULINA REGULAR (100UI/ML): 0,3 UI/KG SC DOSE ÚNICA
+APÓS: 0,2 UI/KG SC DE 2/2 HORAS
+Quando glicemia = 200: 0,1 UI/KG SC 2/2HORAS
+DIPIRONA 1G EV DE 6/6HORAS
+BROMOPRIDA 10MG EV DE 8/8HORAS
+O2 SE NECESSÁRIO
+GLICEMIA CAPILAR 1/1 HORAS – se valores estáveis por 3 horas, fazer de 2/2 horas
+UREIA, CREATININA, NA, K DE 2/2 HORAS – até estabilização
+INTERNAR
+______________________________________________________________________
+```
+
+**🏥 Internação — Paciente grave**
+```
+INSULINA REGULAR (100UI/ML): 1ML + 99ML SF0,9% (Concentração: 1 unidade/ml) – ADMINISTRAR 0,1 UI/KG EM
+BOLUS
+APÓS: 0,1 UI/KG/HORA EV EM BI – TITULAR RESPOSTA
+Quando glicemia = 200: 0,02 – 0,05 UI/KG/HORA EV
+```
+
+### Estado Hiperglicêmico Hiperosmolar  ·  CID E14
+
+**🏠 Casa — Prescrição — Casa**
+```
+DEXTRO, GASOMETRIA ARTERIAL, URINA 1, NA, K, HEMOGRAMA, UREIA, CREATININA, ECG
+DIETA ZERO
+SF0,9% 15-20ML/KG NA PRIMEIRA HORA
+```
+
+**🏠 Casa — Após resultado de exames**
+```
+Na normal-alto: NaCl 0,45% 150-250 ML/HORA
+Quando glicemia = 300: SOLUÇÃO GLICOSADA 5% 150 ML + SF 150 ML – infundir 150 ml/hora
+K <3,3: CLORETO DE POTÁSSIO 10% (1G/10ML) 10ML + NaCl 0,45% 100ML – ADMINISTRAR 20-40 mEq/HORA ATÉ K
+>3,3 – NÃO DAR INSULINA
+K ENTRA 3,3 E 5,5: DE POTÁSSIO 10% (1G/10ML) 10ML + NaCl 0,45% 100ML – ADMINISTRAR 20-30 mEq EM CADA
+LITRO DE FLUIDO EV
+K > 5,5: DOSAR NOVAMENTE EM 2 HORAS
+INSULINA REGULAR (100UI/ML): 1ML + 99ML SF0,9% (Concentração: 1 unidade/ml) – ADMINISTRAR 0,1 UI/KG EM
+BOLUS
+APÓS: 0,1 UI/KG/HORA EV EM BI – TITULAR RESPOSTA
+Quando glicemia = 300: 0,5 A 1,0 UI/HORA EV
+DIPIRONA 1G EV DE 6/6HORAS
+BROMOPRIDA 10MG EV DE 8/8HORAS
+GLICEMIA CAPILAR 1/1 HORAS – se valores estáveis por 3 horas, fazer de 2/2 horas
+UREIA, CREATININA, NA, K DE 2/2 HORAS – até estabilização
+INTERNAR
+______________________________________________________________________
+```
 
 ### Hiperglicemia  ·  CID R73.9
 
-**💉 PS / Sala — Insulina regular SC conforme glicemia capilar**
+**🏠 Casa — Insulina Regular SC**
 ```
-Glicemia 150–250: 2 UI
-Glicemia 250–300: 4 UI
-Glicemia 300–350: 6 UI
-Glicemia 350–400: 8 UI
-Glicemia >400: 10 UI
+Glicemia 150-250: 2UI
+Glicemia 250-300: 4UI
+Glicemia 300-350: 6UI
+Glicemia 350-400: 8UI
+Glicemia >400: 10U
+Cuidado com CAD e EHH!
+_________________________________________________
 ```
-
-💡 Cuidado com CAD e EHH!
 
 ### Hiperpotassemia  ·  CID E87.5
 
-**💉 PS / Sala — Se ECG alterado**
+**🏠 Casa — Se ECG alterado**
 ```
-Gluconato de cálcio 10% 10ml + SG5% 100ml EV em BIC em 2–3 min.
-Insulina regular 10 UI + SG10% 500ml EV em BIC em 60 minutos.
-OU nebulização com salbutamol: 10 gotas + 3ml SF — repetir até 3x.
-OU Furosemida (20mg/2ml): 1 amp de 12/12h.
+GLUCONATO DE CÁLCIO 10% 10ML + SG5% 100ML EV EM BIC EM 2-3 MIN
+INSULINA REGULAR 10 UI + SG10% 500ML EV EM BIC EM 60 MINUTOS
 ```
 
-### Hipoglicemia  ·  CID E16.2
-
-**💉 PS / Sala — Prescrição — PS**
+_OU_
 ```
-Glicose hipertônica 50%: 4 a 6 amp EV (começar com 4).
-Sem acesso venoso (incomum): Glucagon 1mg IM.
-Hepatopatas, etilistas, desnutridos: Tiamina 100mg EV.
+NEBULIZAÇÃO COM SALBUTAMOL: 10 GOTAS + 3ML SF – REPETIR ATÉ 3X
+```
+
+_OU_
+```
+FUROSEMIDA (20MG/2ML): 1 AMP DE 12/12 H
+______________________________________________________________________
+```
+
+### Hipoglicemia
+
+**🏠 Casa — Prescrição — Casa**
+```
+LEVE (55-70 MG/DL):
+```
+
+**🏠 Casa — Prescrição — Casa**
+```
+1) GH 50% ------------------------------------------------------------------------ 1 FRASCO
+DILUIR DE 30-40ML EM ÁGUA, SUCOS, REFRIGERANTES E OUTROS LÍQUIDOS
+BEG, CHAAA, LOTE
+NEURO: GLASGOW 15, PUPILAS ISOFOTORREAGENTES, SEM DEFICTS FOCAIS, SEM SINAIS DE IRRITAÇÃO MENINGEA.
+ACV: 2 BRNF, SEM SOPROS AUDIVEIS
+AR: MV + BILATERALMENTE, SEM RUIDOS ADVENTICIOS
+ABD: FLACIDO, INDOLOR A PALPAÇÃO, RHA+, AUSENCIA DE VICEROMEGALIAS E MASSAS PALPAVEIS.
+MEMBROS: SEM EDEMA, SEM DOR A PALPAÇÃO, SEM SINAIS DE TVP. TEC MENOR QUE 3 SEGUNDOS. PULSOS
+PRESENTES, AMPLOS E SIMETRICOS BILATERALMENTE
+OROSCOPIA: SEM ALTERAÇÕES
+OTOSCOPIA: MT TRANSPARENTE, SEM ABAULAMENTOS
+________________________________________________
+PRESCREVO SINTOMATICOS EM UNIDADE
+PRESCREVO SINTOMATICOS PARA DOMICILIO
+ORIENTO SINAIS DE ALARME E RETORNO SE NECESSARIO
+TRATO DIGESTIVO
+```
+
+### Hipoglicemia 16.2
+
+**🏠 Casa — Prescrição — Casa**
+```
+GLICOSE HIPERTÔNICA 50%: 4 A 6 AMP EV (começar com 4)
+Caso não conseguir acesso venoso (incomum): GLUCAGON 1MG IM
+Hepatopatas, etilistas, desnutridos: TIAMINA 100MG EV
+__________________________________________________________________
 ```
 
 ### Hiponatremia  ·  CID E87.1
 
-**💉 PS / Sala — Grave (<120) e aguda**
+**🏠 Casa — Grave (<120) e aguda**
 ```
-SF 0,9% 445 ml + NaCl 20% 55ml — infundir em BI durante 12 horas.
-Solicitar Na após.
+SF 0,9% 445 ML + NACL 20% 55ML - INFUNDIR EM BI DURANTE 12 HORAS
+SOLICITAR NA APÓS
+_____________________________________________________________________
 ```
 
 ### Hipopotassemia  ·  CID E87.6
 
-**💉 PS / Sala — Moderado/grave (K <3)**
-```
-KCl 19,1% 15 ml (1,5 ampola) + SF 0,9% 1 litro — EV em BIC 250 ml/h por 4 horas.
-```
-
 **🏠 Casa — Leve**
 ```
-KCl xarope 6%
-Tomar 15ml VO de 8/8 horas.
+KCL XAROPE 6%
+TOMAR 15ML VO DE 8/8 HORAS
 ```
 
 _OU_
 ```
-Cloreto de potássio 600mg
-Tomar 1 comprimido de 8/8 horas.
+CLORETO DE POTÁSIO 600MG
+TOMAR 01 CP DE 8/8 HORAS
+Moderado/grave (K < 3)
+KCL 19,1% 15 ML (1,5 ampola) + SF 0,9% 1 LITRO – EV EM BIC 250 ML/H POR 4 HORAS
+______________________________________________________________________
 ```
 
 ### Rabdomiólise  ·  CID M62
 
-💡 Hemograma, ureia, creatinina, fósforo, K, Ca, TGO, TGP, GGT, glicose, ácido úrico, gasometria venosa, CPK, Urina I, ECG. CPK <3000 sem disfunção renal: hidratação + CPK diário. CPK >5000 e lesão renal: internação, SF/Ringer, monitorar débito urinário, corrigir distúrbios (hipercalemia, hipocalcemia, hiperfosfatemia).
+**🏠 Casa — Prescrição — Casa**
+```
+HEMOGAMA, UREIA, CREATININA, FOSFORO, POTASSIO, CALCIO, TGO, TGP, GGT, GLICOSE, ACIDO URICO,
+GASOMETRIA VENOSA, CPK, URINA I, ECG
+CPK < 3000 sem disfunção renal:
+HIDRATAÇÃO + CPK DIARIAMENTE
+CPK > 5000 e lesão renal:
+```
+
+**🏠 Casa — INTERNAÇÃO**
+```
+SF OU RINGER LACTATO
+MONITORAR DEBITO URINÁRIO
+CORREÇÃO DISTURBIOS HIDROELETROLITICOS (Hipercalemia, hipocalcemia, hiperfosfatemia).
+_______________________________________________________________________________
+```
 
 
 ## 💉 Hematologia
 
-### Anemia ferropriva  ·  CID D50.9
+### Anemia Ferropriva  ·  CID D50.9
 
 **🏠 Casa — Prescrição — Casa**
 ```
-Sulfato ferroso (200mg ferro elementar)
-Tomar 1 comprimido 1x ao dia, 30 minutos antes ou 60 minutos após as refeições. De preferência com suco de laranja.
+SULFATO FERROSO (200MG FERRO ELEMENTAR) --------------------------
+TOMAR 01 CP 1X AO DIA, TOMAR 30 MINUTOS ANTES OU 60 MINUTOS DAS REFEIÇÕES. DE PREFERENCIA JUNTO
+COM SUCO DE LARANJA
+________________________________________________________________
 ```
 
-### Anemia megaloblástica  ·  CID D51
+### Anemia Megaloblastica  ·  CID D51
 
 **🏠 Casa — Vitamina B12**
 ```
-Cianocobalamina 2500 mcg/ml
-Aplicar 5000 mcg IM a cada 7 dias por 4 semanas; após, 5000 mcg IM a cada 30 dias por 2 meses.
+USO INTRAMUSCULAR
+CIANOCOBALAMINA 2500 MCG/ML ----------------------
+APLICAR 5000 MCG IM A CADA 7 DIAS POR 4 SEMANAS.
+APÓS, 5000MCG IM A CADA 30 DIAS, POR 2 MESES.
+OU
 ```
 
-_OU_
+**🏠 Casa — Prescrição — Casa**
 ```
-Cianocobalamina 1000mcg
-Tomar 1 comprimido 1x ao dia.
-```
-
-**🏠 Casa — Ácido fólico**
-```
-Ácido fólico 5mg
-Tomar 1 comprimido 1x ao dia.
+CIANOCOBALAMINA 1000MCG -------------------
+TOMAR 01 CP 1X AO DIA
+Ac fólico
 ```
 
-### Crise álgica falcêmica  ·  CID D57
-
-**💉 PS / Sala — Prescrição — PS**
+**🏠 Casa — Prescrição — Casa**
 ```
-SF 0,9% 500ml (3 a 5L/24h).
-Leve: Dipirona 1g EV.
-Moderada: Tramadol 100mg + 100ml SF 0,9% + Bromoprida EV lento.
-Intensa: Morfina (2mg/2ml) 2ml, repetir em 5 min se não melhorar.
+ACIDO FOLICO 5MG ------------------
+TOMAR 01 CP 1X AO DIA
+____________________________________________________________________
 ```
 
-💡 Síndrome torácica aguda: SF 0,9% 2 a 3L/24h; se Sat <90%: O2; Ceftriaxona 2g 1x/dia EV + Azitromicina 500mg 1x/dia VO.
+### Crise Algica Falcemica  ·  CID D57
+
+**🏠 Casa — Prescrição — Casa**
+```
+- SF 0,9% 500ml (3 a 5L/24h)
+- Leve: Dipirona 1g EV
+- Moderada: Tramadol 100mg + 100ml SF 0,9 + bromoprida EV lento
+- Intensa: Morfina (2mg/2ml) 2ml repetir em 5min, se não melhorar.
+```
+
+**🏠 Casa — Síndrome Torácica Aguda**
+```
+- SF 0,9% 2 a 3L/24h
+- Se sat <90%: O2
+- Ceftriaxona 2g 1x/dia EV + Azitromicina 500mg 1x/dia VO
+______________________________________________________________
+```
 
 ### Epistaxe  ·  CID R04.0
 
-💡 Avaliar sinais de trauma → ABCD, imagem. Avaliar uso de AAS/Clopidogrel/Marevan e HAS descontrolada. Manter paciente sentado com cabeça levemente fletida. Tampão anterior: gaze + pinça Kelly + 1 amp adrenalina (ou ácido tranexâmico 50mg/ml 5–10ml) + xylocaína gel. Se não melhorar: ácido tranexâmico 1 amp + 250ml SF 0,9% correr em 10–30 min. Observação e encaminhar especialista.
+**🏠 Casa — Prescrição — Casa**
+```
+- Avaliar sinais de trauma -> ABCD, exame de imagem
+- Avaliar uso de AAS, Clopidogrel, Marevan/ HAS descontrolada
+- Manter paciente sentado com cabeça levemente fletida
+- Preparar tampão anterior: gaze + pinça kelly +1 amp adrenalina (ou ácido tranexâmico 50mg/ml 5 a 10ml) +
+xylocaina gel
+- Se não melhorar: ácido tranexâmico 1 amp + 250ml SF 0,9% correr em 10 a 30 min
+```
 
-### Neutropenia febril  ·  CID D72.9
+**🏠 Casa — Deixar em observação e encaminhar para especialista**
+```
+___________________________________________________________
+```
+
+### Neutropenia Febril  ·  CID D72.9
+
+**🏠 Casa — Prescrição — Casa**
+```
+Hemograma, função renal, eletrólitos, função hepática, PCR, lactato, hemocultura.
+MASCC SCORE p/ saber onde tratar.
+```
 
 **🏠 Casa — Ambulatorial**
 ```
-Amoxicilina + clavulanato 875/125mg
-Tomar 1 comprimido de 12/12 horas.
-Ciprofloxacino 500mg
-Tomar 1 comprimido de 12/12 horas.
+CEFEPIME 2G EV 8/8 HORAS OU
+```
+
+**🏠 Casa — Prescrição — Casa**
+```
+AMOXICILINA + CLAVULANATO 875/125MG
+TOMAR 01 CP DE 12/12 HORAS
+CIPROFLOXACINO 500MG
+TOMAR 01 CP DE 12/12 HORAS
+OU
+```
+
+**🏠 Casa — Prescrição — Casa**
+```
+LEVOFLOXACINO 500MG
+TOMAR 01 CP 1X AO DIA
+```
+
+**🏠 Casa — Internação**
+```
+CEFEPIME 2G 8/8 HORAS
 ```
 
 _OU_
 ```
-Levofloxacino 500mg
-Tomar 1 comprimido 1x ao dia.
+MEROPENEM 1G 8/8 HORAS
 ```
 
-**🏥 Internação — Internação**
+_OU_
 ```
-Cefepime 2g 8/8 horas
-OU Meropenem 1g 8/8 horas
-OU Tazocin 4,5g 6/6 horas.
-Se infecção cutânea: acrescentar Vancomicina 2g 8/8 horas.
-Se diarreia por Clostridium: Vancomicina 500mg VO.
-```
-
-💡 Hemograma, função renal, eletrólitos, função hepática, PCR, lactato, hemocultura. MASCC score para definir local de tratamento.
-
-### Transfusão de hemoderivados
-
-**💉 PS / Sala — Hemácias**
-```
-Concentrado de hemácias (1 unidade aumenta 1 Hb e 3% Ht) — nos primeiros 30 min, 15 gotas/min (média 1–2 horas).
-Dipirona 500mg – 1g EV de 6/6 horas.
-Metoclopramida 10mg/2ml – 1 amp EV.
-Se histórico de reação alérgica: Difenidramina 50mg/ml – 10–50mg IM profunda ou EV em 5–30 min OU Prometazina 25mg/ml – 1 amp IM.
-Dosar Hb/Ht em 1–2 horas.
+TAZOCIN 4,5G 6/6 HORAS
+Se presença de infecção cutânea, acrescentar: VANCOMINA 2G 8/8 HORAS
+Se diarréia por Clonstridium: VANCOMINA 500MG VO
+_________________________________________________________________
 ```
 
-**💉 PS / Sala — Plaquetas**
+### Transfusão de Hemoderivados
+
+**🏠 Casa — HEMÁCIAS**
 ```
-Concentrado de plaquetas (50–60ml/bolsa) – 1 unidade/10kg – infundir em 30 minutos.
-Dipirona 500mg – 1g EV de 6/6 horas.
-Metoclopramida 10mg/2ml – 1 amp EV.
+CONCENTRADO DE HEMÁCIAS (1 unidade aumenta 1 hb e 3% ht) – nos primeiros 30 minutos, 15 gotas/minuto
+(média 1-2 horas)
+DIPIRONA 500MG – 1G EV DE 6/6 HORAS
+METOCLOPRAMIDA 10MG/2ML – 1 AMP EV
+```
+
+**🏠 Casa — Se histórico de reação alérgica**
+```
+DIFENIDRAMINA 50MG/ML – 10-50MG IM PROFUNDA OU EV EM 5-30 ,OMITOS
+```
+
+_OU_
+```
+PROMETAZINA 25MG/ML – 1 AMP IM
+Dosar Hb/Ht em 1-2 horas
+PLAQUETAS
+CONCENTRADO DE PLAQUETAS (50-60ml/bolsa) – 1 UNIDADE/10KG – INFUNDIR EM 30 MINUTOS
+DIPIRONA 500MG – 1G EV DE 6/6 HORAS
+METOCLOPRAMIDA 10MG/2ML – 1 AMP EV
+____________________________________________
+SISTEMA UROGENITAL
 ```
 
 
 ## 🦴 MSK / Reumato / Orto
 
-### Dor crônica  ·  CID R52.2
+### Dor Crônica  ·  CID R52.2
 
 **🏠 Casa — Prescrição — Casa**
 ```
-Dipirona sódica 500mg — 40 comprimidos
-Tomar 2 comprimidos por via oral a cada 6 horas, em horários fixos (6h–12h–18h–00h). Máx 4 g/dia.
-Naproxeno 500mg — 20 comprimidos
-Tomar 1 comprimido de 12/12 horas, junto com alimento, por no máximo 5 dias.
+1. Dipirona sódica 500 mg —  40 COMPRIMIDOS
+Tomar 2 comprimidos por via oral a cada 6 horas, em horários fixos (6h – 12h – 18h – 00h).
+Não usar "só se doer" — tomar regularmente para manter nível analgésico constante. Máx. 4 g/dia.
+2.  Naproxeno 500 mg - 20 comprimidos
+Tomar 1 comprimido por via oral a cada 12 horas, junto com alimento ou leite, por no máximo 5 dias. Não tomar com estômago vazio
 OU (idoso, HAS)
-Celecoxibe 200mg — caixa com 10 cápsulas
+2. Celecoxibe 200 mg — caixa com 10 cápsulas
 Tomar 1 cápsula por via oral 1 vez ao dia.
-Diclofenaco gel 1% — bisnaga 60g
-Aplicar 2–3g sobre a articulação dolorosa, 3 a 4 vezes ao dia.
-Gabapentina 300mg — caixa com 30 cápsulas
-Iniciar 1 cápsula à noite por 7 dias; após, 1 cápsula de 8/8 horas conforme tolerância.
-Tramadol 50mg — caixa com 10 comprimidos
-Tomar 1 comprimido de 8/8 horas somente nos dias de dor intensa. Não usar de forma contínua.
+3. Diclofenaco gel 1% tópico - Bisnagas 60 g
+Aplicar 2–3 g (um fio de 5 cm aprox.) sobre a articulação dolorosa, esfregando suavemente, 3 a 4 vezes ao dia.
+Lavar as mãos após aplicação. Não aplicar em pele ferida ou mucosas.
+4. Gabapentina 300 mg - caixa com 30 cápsulas
+Iniciar com 1 cápsula à noite por 7 dias. Após, aumentar para 1 cápsula de 8 em 8 horas (manhã, tarde e noite), conforme tolerância.
+Pode causar sonolência no início — por isso começa à noite. O efeito na dor aparece após 2–3 semanas de uso regular. Não suspender de repente.
+ATENÇÃO - TRAMADOL SAO 2 VIAS
+5. Tramadol 50 mg  — caixa com 10 comprimidos
+Tomar 1 comprimido por via oral a cada 8 horas, somente nos dias de dor intensa. Não usar de forma contínua.
 ```
 
-**🏠 Casa — Dor articular**
+**🏠 Casa — (Bia) PARA DOR ARTICULAR**
 ```
-Sulfato de glucosamina 1500mg + sulfato de condroitina 1200mg
+1. Sulfato de glucosamina 1500 mg + sulfato de condroitina 1200 mg
 Tomar 1 sachê ao dia, dissolvido em água, junto com refeição.
+_____________________________________________________________________
 ```
 
-### Entorse de tornozelo  ·  CID S93.4
-
-**🏠 Casa — Prescrição — Casa**
-```
-Dipirona 500mg
-Tomar 1 a 2 comprimidos de 6/6 horas se dor.
-Cetoprofeno 100mg
-Tomar 1 comprimido de 12/12 horas por 5 dias.
-```
-
-_OU_
-```
-Ibuprofeno 600mg
-Tomar 1 comprimido de 8/8 horas por 5 dias.
-Se dor intensa: Tramadol 100mg — 1 comprimido de 8/8 horas se dor intensa.
-```
-
-💡 Gelo local 5x/dia por 20 min; imobilização 1–2 semanas; elevação do membro; repouso relativo.
-
-### Fasciíte plantar  ·  CID M72.2
+### Entorse do Tornozelo  ·  CID S93.4
 
 **🏠 Casa — Prescrição — Casa**
 ```
-Cetoprofeno 100mg
-Tomar 1 comprimido de 12/12 horas por 7 dias.
-Dipirona 500mg
-Tomar 1 a 2 comprimidos de 6/6 horas se dor.
+DIPIRONA 500MG ---------------------
+TOMAR 01 A 02 CPS DE 6/6 HORAS, SE DOR
+CETOPROFENO 100MG ----------------
+TOMAR 01 CP DE 12/12 HORAS POR 5 DIAS
+OU IBUPROFENO 600MG -------------
+TOMAR 01 CP DE 8/8 HORAS POR 5 DIAS
 ```
 
-💡 Alongamento; calçados com bom amortecimento; perda ponderal; calor local 4x/dia 20 min.
+**🏠 Casa — Se dor intensa**
+```
+TRAMADOL 100MG -----------------
+TOMAR 01 CP DE 8/8 HORAS, SE DOR INTENSA
+```
+
+💡 - Gelo local 5x/ dia por 20 minutos - Imobilização durante 1-2 semanas - Elevação do membro - Repouso relativo __________________________________________________________________
+
+### Fasciite Plantar  ·  CID M72.2
+
+**🏠 Casa — Prescrição — Casa**
+```
+CETOPROFENO 100MG
+TOMAR 01 CP DE 12/12 HORAS POR 7 DIAS
+DIPIRONA 500MG
+TOMAR 01 A 02 CPS DE 6/6 HORAS, SE DOR
+```
+
+💡 - Alongamento - Modificar calçados (bom amortecimento) - Perda ponderal - Calor local 4x ao dia, 20 min/vez __________________________________________________________________
 
 ### Gota  ·  CID M10
 
-**🏠 Casa — Crise aguda**
-```
-Naproxeno
-Tomar 1 comprimido de 12/12 horas por 5 dias.
-```
-
-_OU_
-```
-Ibuprofeno 600mg
-Tomar 1 comprimido de 12/12 horas por 5 dias.
-```
-
-_OU_
-```
-Prednisona 20mg
-Tomar 1 comprimido 1x ao dia por 5 dias.
-```
-
-_OU_
-```
-Colchicina 0,5mg
-Tomar 2 comprimidos; após 1 hora, 1 comprimido; em seguida, 1 comprimido de 12/12 horas.
-```
-
-💡 Na unidade: Profenid 1 amp IM. Profilaxia: Alopurinol 100mg 1 cp 1x ao dia.
-
-### Insuficiência venosa crônica  ·  CID I87.2
-
 **🏠 Casa — Prescrição — Casa**
 ```
-Diosmina + hesperidina 450+50mg
-Tomar 1 comprimido de 12/12 horas.
-Se úlcera: Pentoxifilina 400mg — 1 comprimido de 12/12 horas até cicatrização.
-Se dermatite de contato: Triancinolona OU Betametasona — passar na lesão 2x ao dia até melhora.
+NAPROXENO
+TOMAR 1CP DE 12/12 HORAS POR 5 DIAS
 ```
 
-💡 Elevação dos MMII 30 min 3x/dia; atividade física; meia de compressão elástica.
-
-### Lombalgia / Mialgia  ·  CID M54.5 · M79.1
-
-**📋 Anamnese**
+_OU_
 ```
-PACIENTE REFERE LOMBALGIA HÁ [X] DIAS. Dor pior ao movimento e melhora com repouso. Nega irradiação. Nega trauma. Nega febre. Nega sintomas urinários. Nega perda de força ou anestesia. Nega uso prévio de medicações para o quadro.
+IBUPROFENO 600MG ---------------------
+TOMAR 01 CP DE 12/12 HORAS POR 5 DIAS
 ```
 
-**🩺 Exame físico**
+_OU_
 ```
-Bom estado geral, corado, hidratado, acianótico, anictérico, afebril.
-Coluna lombar discretamente dolorosa à palpação paravertebral, sem deformidades. Mobilidade normal, dor que piora ao movimento. Sem déficits neurológicos em MMII.
+PREDNISONA 20MG ---------------------
+TOMAR 01CP 1X AO DIA POR 5 DIAS
+```
+
+_OU_
+```
+COLCHICINA 0,5MG ---------------------
+TOMAR 02 CPS. APÓS 1 HORA, TOMAR 01 CP. EM SEGUIDA, TOMAR 01 CP DE 12/12 HORAS
+AGORA: PROFENID 1AMP IM
 ```
 
 **🏠 Casa — Prescrição — Casa**
 ```
-Dipirona 500mg — 40 comprimidos
-Tomar 2 comprimidos por via oral a cada 6 horas, se dor. (Opção: horários fixos 6h–12h–18h–00h; máx 4 g/dia.)
-Naproxeno 500mg — 20 comprimidos
-Tomar 1 comprimido de 12/12 horas, junto com alimento, por no máximo 5 dias.
+ALOPURINOL 100MG
+TOMAR 01 CP 1X AO DIA
+__________________________________________________________________________________
+```
+
+### Insuficiencia Venosa Cronica  ·  CID I87.2
+
+**🏠 Casa — Prescrição — Casa**
+```
+DIOSMINA + HESPERIDINA 450+50MG
+TOMAR 01 CP DE 12/12 HORAS
+```
+
+**🏠 Casa — Prescrição — Casa**
+```
+PENTOXIFILINA 400MG
+TOMAR 01 CP DE 12/12 HORAS, ATÉ CICATRIZAÇÃO
+```
+
+**🏠 Casa — Prescrição — Casa**
+```
+TRIANCINOLONA
+PASSAR NA LESÃO 2X AO DIA, ATÉ MELHORA DA LESÃO
 ```
 
 _OU_
 ```
-Cetoprofeno 100mg — 20 comprimidos
-Tomar 1 comprimido de 12/12 horas, junto com alimento, por no máximo 5 dias.
+BETAMETASONA
+PASSAR NA LESÃO 2X AO DIA, ATÉ MELHORA DA LESÃO
+```
+
+💡 elevação dos membros inferiores por 30 min 3x ao dia, pratica de atividade física, meia de compressão elástica. __________________________________________________________________________
+
+### Lombalgia // Mialgia  ·  CID M54.5 · M79.6
+
+**🏠 Casa — Prescrição — Casa**
+```
+Bom estado geral, corado, hidratado, acianótico, anictérico, afebril
+Coluna lombar discretamente dolorosa à palpação paravertebral, sem deformidades perceptíveis. Mobilidade normal, com dor que piora ao movimento. Sem déficits neurológicos em MMII.
+```
+
+**🏠 Casa — Prescrição — Casa**
+```
+1) DIPIRONA 500MG --------------------------------- 40 comprimidos
+Tomar 2 comprimidos por via oral a cada 6 horas, se dor
 ```
 
 _OU_
 ```
-Diclofenaco 50mg — 10 comprimidos
-Tomar 1 comprimido de 8/8 horas por 5 dias.
-Ciclobenzaprina 5mg
-Tomar 1 comprimido 30 min antes de dormir, por 5 dias (pode causar sono).
+1) Dipirona sódica 500 mg —  40 COMPRIMIDOS
+Tomar 2 comprimidos por via oral a cada 6 horas, em horários fixos (6h – 12h – 18h – 00h).
+Não usar "só se doer" — tomar regularmente para manter nível analgésico constante. Máx. 4 g/dia.
+2) Naproxeno 500 mg - 20 comprimidos
+Tomar 1 comprimido por via oral a cada 12 horas, junto com alimento, por no máximo 5 dias. Não tomar com estômago vazio.
+ou
 ```
 
-**🏠 Casa — 2ª via (dor intensa)**
+**🏠 Casa — Prescrição — Casa**
 ```
-Tramal Retard 100mg — 1 caixa
-Tomar 1 comprimido de 6/6h se dor intensa.
-Paracetamol + codeína 500+30mg — 1 caixa
-Tomar 1 comprimido de 8/8h se dor intensa.
+1) DIPIRONA 500MG --------------------------------- 40 comprimidos
+Tomar 2 comprimidos por via oral a cada 6 horas, se dor
+2) Cetoprofeno 100 mg - 20 comprimidos
+Tomar 1 comprimido por via oral a cada 12 horas, junto com alimento, por no máximo 5 dias. Não tomar com estômago vazio.
+ou
+Diclofenaco 50mg ----------------- 10 comprimidos
+Tomar 1 comprimido de 8 em 8 horas por 5 dias.
+3)CICLOBENZAPRINA 5MG ----------------------
+TOMAR 01 COMPRIMIDO 30 MIN ANTES DE DORMIR,  POR 5 DIAS. Antes de dormir porque pode dar sono
 ```
+
+**🏠 Casa — 2VIAS RECEITA**
+```
+TRAMAL RETARD 100MG ------------------- 1 CAIXA
+TOMAR 01 CP DE 6/6H SE DOR INTENSA.
+PARACETAMOL+COIDEÍNA 500+30MG ---------------- 01 CAIXA
+TOMAR 01 COMPRIMIDO DE 8/8H SE DOR INTENSA.
+-------------------------------------------------------------------------------------
+________________________________________________________________________
+```
+
+💡 PACIENTE REFERE LOMBALGIA, HÁ DIAS. Dor pior ao movimento e melhora com repouso. Nega Irradiação. Nega trauma. Nega febre. Nega sintomas urinários. Nega perda de força ou anestesia. Nega uso prévio de medicações para o quadro.
+#MEDICAMENTOS DE USO CONTÍNUO: NEGA
+#COMORBIDADES PRÉVIAS: NEGA
+#ALERGIAS: NEGA ALERGIAS MEDICAMENTOSAS CONHECIDAS.
+#EXAME FÍSICO:
 
 ### Osteoartrite  ·  CID M19
 
-**🏠 Casa — Uso oral**
+**🏠 Casa — Prescrição — Casa**
 ```
-Dipirona 500mg
-Tomar 1 a 2 comprimidos de 6/6 horas se dor.
+DIPIRONA 500MG
+TOMAR 01 A 02 CPS DE 6/6 HORAS, SE DOR
 E/OU
-Diclofenaco 25mg
-Tomar 1 comprimido de 8/8 horas por 5 dias.
+DICLOFENACO 25MG
+TOMAR 01 CP DE 8/8 HORAS POR 5 DIAS
 ```
 
 _OU_
 ```
-Tramal 100mg
-Tomar 1 comprimido de 6/6 horas se dor intensa.
+TRAMAL 100MG
+TOMAR 01 CP DE 6/6 HORAS, SE DOR INTENSA
 ```
 
 _OU_
 ```
-Duloxetina 30mg
-Tomar 1 comprimido por dia por 7 dias; após, 2 comprimidos por dia.
+DULOXETINA 30MG
+TOMAR 01 CP POR DIA POR 7 DIAS. APÓS, TOMAR 02 CPS POR DIA.
 ```
 
-**🏠 Casa — Uso tópico**
+**🏠 Casa — Prescrição — Casa**
 ```
-Diclofenaco gel
-Aplicar fina camada na articulação acometida 3x ao dia.
+DICLOFENACO GEL
+APLICAR FINA CAMADA EM ARTICULAÇÃO ACOMETIDA 3X AO DIA
 ```
 
 _OU_
 ```
-Nimesulida gel
-Aplicar fina camada na articulação acometida 2x ao dia.
+NIMESULIDA GEL
+APLICAR FINA CAMADA EM ARTICULAÇÃO ACOMETIDA 2X AO DIA
 ```
 
-💡 Perda de peso; atividade física.
+💡 perda de peso, atividade física ___________________________________________________________________ NEUROLOGIA
 
 
 ## 🌸 Genitourinário / Gineco
 
-### Atrofia urogenital  ·  CID N90
-
-**🏠 Casa — Uso vaginal**
-```
-Estradiol 10mcg/comprimido
-Aplicar 1 comprimido via vaginal 2x na semana.
-```
-
-_OU_
-```
-Promestrieno creme vaginal 10mg
-Aplicar à noite por 30 noites.
-```
-
-💡 Checar contraindicações.
-
-### Bacteriúria assintomática  ·  CID N39
+### Atrofia Urogenital  ·  CID N90
 
 **🏠 Casa — Prescrição — Casa**
 ```
-Nitrofurantoína 100mg
-Tomar 1 comprimido de 12/12 horas por 5–7 dias.
+Checar contraindicações
+```
+
+**🏠 Casa — Prescrição — Casa**
+```
+ESTRADIOL 10MCG/COMPRIMIDO
+APLICAR 1 COMPRIMIDO VIA VAGINAL 2X NA SEMANA
+OU
+```
+
+**🏠 Casa — Prescrição — Casa**
+```
+PROMESTRIENO CREME VAGINAL 10MG
+APLICAR A NOITE POR 30 NOITES
+_____________________________________________________________________
+```
+
+### Bacteriúria Assintomáticas  ·  CID N39
+
+**🏠 Casa — Prescrição — Casa**
+```
+NITROFURANTOINA 100MG
+TOMAR 01 CP DE 12/12 HORAS POR 5-7 DIAS
 ```
 
 _OU_
 ```
-Amoxicilina 500mg
-Tomar 1 comprimido de 8/8 horas por 5–7 dias.
+AMOXICILINA 500MG
+TOMAR 01 CP DE 8/8 HORAS POR 5-7 DIAS
 ```
 
 _OU_
 ```
-Fosfomicina 3g
-Tomar 1x, dose única.
+FOSFOMICINA 3G
+TOMAR 1X, DOSE ÚNICA]
+____________________________________________________________________
 ```
-
-💡 Tratar apenas em situações específicas (gestante, pré-procedimento urológico).
 
 ### Balanite  ·  CID N51.2
 
-**🏠 Casa — Tópico**
+**🏠 Casa — Prescrição — Casa**
 ```
-Nitrato de miconazol creme 2%
-Aplicar nas lesões 2x ao dia.
-Hidrocortisona 1% creme
-Aplicar nas lesões 2x ao dia.
-```
-
-**🏠 Casa — Oral**
-```
-Fluconazol 150mg
-Tomar 1 comprimido, dose única.
-Dipirona 500mg
-Tomar 1 comprimido de 6/6 horas se dor.
-Desloratadina 5mg
-Tomar 1 comprimido 1x ao dia se coceira.
+NITRATO DE MICONAZOL CREME 2% ------------------
+APLICAR NAS LESOES 2X AO DIA
+HIDROCORTISONA 1% CREME ---------------------------
+APLICAR NAS LESOES 2X AO DIA
 ```
 
-### Cancro mole  ·  CID A57
+_OU_
+```
+FLUCONAZOL 150MG ----------------------
+TOMAR 01 CP DOSE UNICA
+```
 
 **🏠 Casa — Prescrição — Casa**
 ```
-Azitromicina 500mg — 2 comprimidos
-Tomar 2 comprimidos VO em dose única.
+DIPIRONA 500MG ------------------
+TOMAR 01 CP DE 6/6 HORAS, SE DOR
+DESLORATADINA 5MG ----------
+TOMAR 01 CP 1X AO DIA, SE COCEIRA
+__________________________________________________________________________
 ```
 
-### Candidíase vaginal  ·  CID B37
+### Cancro mole
 
-**🏠 Casa — Uso vaginal**
+**🏠 Casa — Rx USO ORAL**
 ```
-Miconazol creme 2%
-1 aplicador intravaginal à noite por 7 noites.
+1- AZITROMICINA 500 MG __________________ 02 COMPRIMIDOS
+TOMAR 02 COMPRIMIDOS VO EM DOSE ÚNICA
+# EVITAR ROUPAS JUSTAS E DE MATERIAL SINTÉTICO (EX: CALCINHA DE
+RENDA)
+# NÃO UTILIZAR PERFUMES DE VULVA
+# EVITE DUCHAS VAGINAIS
+# NÃO UTILIZE SABONETES COMUNS PARA LAVAR A REGIÃO GENITAL, OPTE
+POR SABONETES ÍNTIMOS
+# ACOSTUME-SE A DORMIR SEM CALCINHA
 ```
 
-**🏠 Casa — Uso oral**
+**🏠 Casa — Prescrição — Casa**
 ```
-Fluconazol 150mg
-Tomar 1 comprimido, dose única.
-Recorrente: Fluconazol 150mg 1 cp a cada 3 dias por 3 doses; depois 1 cp por semana por 6 meses.
+AZITROMICINA 500MG -------------------- 02 CPS
+TOMAR 02 CPS, DOSE ÚNICA
+____________________________________________________________________
 ```
 
-💡 NÃO dar fluconazol para gestante!
+### Candidíase  ·  CID B37
+
+**🏠 Casa — Prescrição — Casa**
+```
+1)FLUCONAZOL 150 MG ---------------------------- 01 COMPRIMIDO
+USO: 01 COMPRIMIDO, VIA ORAL, DOSE ÚNICA
+```
+
+_OU_
+```
+1)MICONAZOL 2% CREME ---------------------------- 07
+APLICADORES USO: 01 APLICADOR CHEIO, VIA VAGINAL, 01 VEZ POR DIA, POR 7 DIAS
+*NAO DAR FLUCONAZOL PARA GESTANTE!
+```
+
+**🏠 Casa — Prescrição — Casa**
+```
+MICONAZOL CREME 2% --------------------------------
+1 APLICADOR INTRAVAGINAL A NOITE POR 7 NOITES
+OU
+```
+
+**🏠 Casa — Prescrição — Casa**
+```
+FLUCONAZOL 150MG ------------------------------
+TOMAR 01 CP, DOSE ÚNICA
+```
+
+**🏠 Casa — Prescrição — Casa**
+```
+FLUCONAZOL 150MG -------------------
+TOMAR 01 CP A CADA 3 DIAS, POR 3 DOSES. EM SEGUIDA, TOMAR 01 CP POR SEMANA, POR 6 MESES
+______________________________________________________________________________
+```
 
 ### Cervicite  ·  CID N72
 
-**💉 PS / Sala — Prescrição — PS**
+**🏠 Casa — Prescrição — Casa**
 ```
-Ceftriaxona 250mg IM dose única.
+CEFTRIAXONA 250MG IM DOSE ÚNICA
+AZITROMICINA 1G ---------------------
+TOMAR 01 CP DOSE ÚNICA
+________________________________________________________________________________
 ```
+
+### Cistite  ·  CID N30
 
 **🏠 Casa — Prescrição — Casa**
 ```
-Azitromicina 1g
-Tomar 1 comprimido, dose única.
-```
-
-### Cistite / ITU não complicada  ·  CID N30 · N39
-
-**🏠 Casa — 1ª linha**
-```
-Nitrofurantoína 100mg — 20 comprimidos
-Tomar 1 comprimido de 6/6 horas por 5 dias.
+1) Nitrofurantoína 100mg ----------------------- 20 comprimidos
+Tomar 1 comprimido de 6 em 6 horas por 5 dias.
 ```
 
 _OU_
 ```
-Fosfomicina 3g — 1 envelope
-Diluir em ½ copo e tomar em dose única antes de dormir.
+1) Fosfomicina 3g ----------------------------------- 1 envelope
+Diluir o envelope em meio copo e tomar em dose única antes de dormir.
 ```
 
 _OU_
 ```
-Cefalexina 500mg — 20 comprimidos
-Tomar 1 comprimido de 6/6 horas por 5 dias.
+1) Cefalexina 500mg ------------------------------- 20 comprimidos
+Tomar 1 comprimido de 6 em 6 horas por 5 dias.
 ```
 
-**🏠 Casa — 2ª linha**
+**🏠 Casa — 2ª LINHA ALTERNATIVA**
 ```
-Ciprofloxacino 500mg — 20 comprimidos
-Tomar 1 comprimido de 12/12 horas por 5 dias.
-```
-
-_OU_
-```
-Amoxicilina + clavulanato 500/125mg
-Tomar 1 comprimido de 8/8 horas por 7 dias.
-```
-
-**🏠 Casa — Sintomáticos**
-```
-Pyridium 100–200mg
-Tomar 1 comprimido de 8/8 (a 12/12) horas, após as refeições, por no máximo 2 dias (urina fica laranja).
-Dipirona 500mg — 40 comprimidos
-Tomar 2 comprimidos de 6/6 horas se dor ou febre por 5 dias.
+1)ciprofloxacino 500 mg ------------------------- 20 comprimidos
+tomar 1 cp de 12 em 12 horas por 5 dias
+2) Pyridium 100mg > fica laranja!
+Tomar 1 cápsula de 12 em 12 horas até alívio dos sintomas
+2) Dipirona 500mg ----------------------------------- 40 comprimidos
+Tomar 2 comprimidos de 6 em 6 horas se dor ou febre por 5 dias
 ```
 
 _OU_
 ```
-Paracetamol 750mg — 20 comprimidos
-Tomar 1 comprimido de 6/6 horas se dor ou febre.
+2) Paracetamol 750mg ---------------------------- 20 comprimidos
+Tomar 1 comprimido se 6 em 6 horas se dor ou febre.
 ```
 
-<!-- FLAG: Duração da Nitrofurantoína: bloco 'Cistite' diz 6/6h por 5 dias; bloco 'Infecção urinária N39' dizia 7 dias. Padronizar. -->
-
-### Climatério (sintomas vasomotores)  ·  CID N95.1
+### Climatério Sintomas Vasomotores  ·  CID N95.1
 
 **🏠 Casa — Prescrição — Casa**
 ```
-Isoflavona de soja 200mg — 1 caixa
-Tomar 1 comprimido VO de 24/24h por 30 dias.
+ISOFLAVONA DE SOJA 200MG ------------------------------------------ 1CX
+TOMAR 1 CP VO DE 24/24H POR 30 DIAS.
+------------------------------------------------------------------------------------------------------------------
 ```
 
-### Cólica menstrual / SUA  ·  CID N94
+### Cólica Menstrual ou Sangramento  ·  CID N94
 
 **🏠 Casa — Prescrição — Casa**
 ```
-Dipirona 500mg — 40 comprimidos
-Tomar 2 comprimidos de 6/6 horas se dor ou febre por 5 dias.
+1) Dipirona 500mg ----------------------------------- 40 comprimidos
+Tomar 2 comprimidos de 6 em 6 horas se dor ou febre por 5 dias
 ```
 
 _OU_
 ```
-Paracetamol 500mg — 40 comprimidos
-Tomar 1 comprimido de 6/6 horas se dor ou febre por 5 dias.
-Buscopan composto — 1 caixa
-Tomar 1 comprimido de 6/6 horas se dor ou cólica.
-Diclofenaco 50mg — 10 comprimidos
-Tomar 1 comprimido de 8/8 horas por 5 dias.
-Ácido mefenâmico 500mg — 1 caixa
-Tomar 1 comprimido de 8/8 horas se cólica intensa.
+1)PARACETAMOL 500mg ---------------------------- 40 comprimidos
+Tomar 1 comprimido se 6 em 6 horas se dor ou febre por 5 dias
+2) Buscopan composto --------------------------- 1 caixa
+Tomar 1 comprimido de 6 em 6 horas se dor ou cólica.
+3) Diclofenaco 50mg ----------------- 10 comprimidos
+Tomar 1 comprimido de 8 em 8 horas por 5 dias.
+4) Ácido mefenâmico 500mg --------- 1 caixa
+Tomar 1 comprimido de 8 em 8 horas se cólica intensa.
 ```
 
 _OU_
 ```
-Ácido tranexâmico 250mg — 36 comprimidos
+4) Ácido tranexâmico 250mg ---------- 36 comprimidos
 Tomar 4 comprimidos, 3 vezes ao dia, por 3 dias.
 ```
 
-### Escroto agudo  ·  CID N51.1
+### Escroto Agudo  ·  CID N51.1
 
-💡 Hemograma, PCR, Urina I, urocultura, USG doppler bolsa escrotal. Encaminhar urologia/cirurgia.
-
-### Gonorreia (+ clamídia)  ·  CID A54
-
-**💉 PS / Sala — Prescrição — PS**
+**🏠 Casa — Prescrição — Casa**
 ```
-Ceftriaxona 500mg IM dose única agora.
+HEMOGRAMA, PCR, URINA I, UROCULTURA, USG DOPPLER BOLSA ESCROTAL
+ENCAMINHAR UROLOGIA/CIRURGIA
+___________________________________________________________________________
+```
+
+### Gonorréia  ·  CID O98.2
+
+**🏠 Casa — Prescrição — Casa**
+```
+CEFTRIAXONA 500MG IM DOSE ÚNICA AGORA
 ```
 
 **🏠 Casa — Prescrição — Casa**
 ```
-Doxiciclina 100mg
-Tomar 1 comprimido de 12/12 horas por 7 dias.
-OU (gestante)
-Azitromicina 500mg
-Tomar 2 comprimidos, dose única.
+DOXICILINA 100MG ------------------------
+TOMAR 01CP DE 12/12HORAS POR 7 DIAS
+```
+
+_OU_
+```
+(GESTANTE)
+CEFTRIAXONA 500MG IM DOSE ÚNICA AGORA
+```
+
+**🏠 Casa — Prescrição — Casa**
+```
+AZITROMICINA 500MG ----------------
+TOMAR 02 CP, DOSE ÚNICA
+# EVITAR ROUPAS JUSTAS E DE MATERIAL SINTÉTICO (EX: CALCINHA DE
+RENDA)
+# NÃO UTILIZAR PERFUMES DE VULVA
+# EVITE DUCHAS VAGINAIS
+# NÃO UTILIZE SABONETES COMUNS PARA LAVAR A REGIÃO GENITAL, OPTE
+POR SABONETES ÍNTIMOS
+# ACOSTUME-SE A DORMIR SEM CALCINHA
+```
+
+**🏠 Casa — SOLICITO**
+```
+- TESTE RÁPIDO PARA HIV
+- HBsAg,Anti-HBs, Anti-HBc IgM e IgG
+- Anti-HCV
+- VDRL e FTA-Abs
+_________________________________________________________________
 ```
 
 ### Herpes genital  ·  CID A60
 
 **🏠 Casa — Prescrição — Casa**
 ```
-Aciclovir 200mg — 50 comprimidos
-Tomar 1 comprimido de 4/4h (exceto 1 dose noturna) por 10 dias. Horário sugerido: 06:00 / 10:00 / 14:00 / 18:00 / 22:00.
+1- ACICLOVIR 200 MG ____________________ 50 COMPRIMIDOS
+TOMAR 01 COMPRIMIDO DE 4/4H, EXCETUANDO-SE UMA DOSE NOTURNA,
+POR 10 DIAS
+HORÁRIO SUGERIDO: 06:00 / 10:00 / 14:00 / 18:00 / 22:00
+```
+
+**🏠 Casa — Profilaxia (indicada se > 6 episódios/ano)**
+```
+1- ACICLOVIR 200 MG ____________________
+TOMAR 01 COMPRIMIDO DE 12/12H
+```
+
+**🏠 Casa — Prescrição — Casa**
+```
+ACICLOVIR 400MG
+TOMAR 01 CP DE 8/8 HORAS POR 5-7 DIAS
+DIPIRONA 1G
+TOMAR 01 CP DE 6/6 HORAS, SE DOR OU FEBRE
+_______________________________________________________________
+```
+
+### Incontinência Urinária  ·  CID R32
+
+**🏠 Casa — Prescrição — Casa**
+```
+OXIBUTININA 5MG
+TOMAR 01 CP DE 8/8 HORAS
 ```
 
 _OU_
 ```
-Aciclovir 400mg
-Tomar 1 comprimido de 8/8 horas por 5–7 dias.
-Dipirona 1g
-Tomar 1 comprimido de 6/6 horas se dor ou febre.
+IMIPRAMINA 10MG
+TOMAR 01 CP AO DIA
 ```
 
-💡 Profilaxia (se >6 episódios/ano): Aciclovir 200mg 1 cp de 12/12h.
+💡 tratar constipação/DPOC/ICC/DM, evitar cafeína e bebidas alcoólicas, fazer fisioterapia pélvica __________________________________________________________________________
 
-### Incontinência urinária  ·  CID R32
+### Linfogranuloma Venéreo  ·  CID A55
 
 **🏠 Casa — Prescrição — Casa**
 ```
-Oxibutinina 5mg
-Tomar 1 comprimido de 8/8 horas.
-```
-
-_OU_
-```
-Imipramina 10mg
-Tomar 1 comprimido ao dia.
-```
-
-💡 Tratar constipação/DPOC/ICC/DM; evitar cafeína e álcool; fisioterapia pélvica.
-
-### Linfogranuloma venéreo  ·  CID A55
-
-**🏠 Casa — Prescrição — Casa**
-```
-Doxiciclina 100mg — 42 comprimidos
-Tomar 1 comprimido de 12/12 horas por 21 dias.
+DOXICICLINA 100MG -------------------------- 42 CPS
+TOMAR 01 CP DE 12/12 HORAS POR 21 DIAS
+------------------------------------------------------------------------------------------------------------------
 ```
 
 ### Mastite
 
 **🏠 Casa — Prescrição — Casa**
 ```
-Cefalexina 500mg
-Tomar 1 comprimido de 6/6 horas por 10 a 14 dias.
+CEFALEXINA 500MG
+TOMAR 01 CP DE 6/6 HORAS, POR 10 A 14 DIAS
 ```
 
 _OU_
 ```
-Amoxicilina 500mg
-Tomar 1 comprimido de 8/8 horas por 10 a 14 dias.
+AMOXICILINA 500MG
+TOMAR 01 CP DE 8/8 HORAS POR 10 A 14 DIAS
+__________________________________________________________________________
 ```
 
-### Nefrolitíase / Cólica nefrética  ·  CID N23
+### Nefrolitiase - Colica Nefretica  ·  CID N23
 
-**💉 PS / Sala — Agora**
+**🏠 Casa — Prescrição — Casa**
 ```
-Dieta zero. SF 0,9% 500ml EV.
-Buscopan composto EV. Cetoprofeno EV.
-Sem melhora: Tramadol 100mg + SF 0,9% 100ml EV lento; Bromoprida 10mg EV.
+HEMOGRAMA, UREIA, CREATININA, URINA I, TC SEM CONTRASTE DE ABDOME
 ```
 
-**🏠 Casa — Uso oral**
+**🏠 Casa — Prescrição — Casa**
 ```
-Buscopan composto
-Tomar 1 comprimido de 6/6h se dor.
-Cetoprofeno 100mg
-Tomar 1 comprimido de 12/12h por 5 dias.
-Bromoprida 10mg
-Tomar 1 comprimido 8/8h se náusea ou vômito.
-Tansulosina 0,4mg
-Tomar 1 comprimido 1x ao dia por 4–6 semanas.
+BUSCOPAM COMPOSTO ------------------
+TOMAR 01 CP DE 6/6H, SE DOR
+CETOPROFENO 100MG --------------------
+TOMAR 01 CP DE 12/12H POR 5 DIAS
+BROMOPRIDA 10MG ---------------
+TOMAR 01 CP 8/8H, SE NAUSEA OU VOMITO
+TANSULOSINA 0,4MG ----------------
+TOMAR 01 CP 1X AO DIA POR 4-6 SEMANAS
 ```
 
-💡 Hemograma, ureia, creatinina, Urina I, TC sem contraste de abdome. Tansulosina para cálculos <1cm SEM infecção. Encaminhar urologista. Internação: febre, rim único, função renal limítrofe, gestante, imunossuprimidos.
+**🏠 Casa — AGORA**
+```
+DIETA ZERO
+SF 0,9% 500ML EV
+BUSCOPAM COMPOSTO EV
+CETOPROFENO EV
+```
+
+**🏠 Casa — Sem melhora**
+```
+TRAMADOL 100MG + SF 0,9% 100ML EV LENTO
+BROMOPRIDA 10MG EV
+Encaminhar Urologista
+Internação: febre, rim único, função renal limítrofe, gestante, imunossuprimidos
+________________________________________________
+```
+
+💡 tansulosina para cálculos <1 cm SEM infecção
 
 ### Orquiepididimite  ·  CID N45
 
-**💉 PS / Sala — Agora**
-```
-Ceftriaxona (250mg/2ml) 1 amp EV.
-```
-
 **🏠 Casa — Jovem**
 ```
-Doxiciclina 100mg
-Tomar 1 comprimido de 12/12 horas por 10 dias.
-Dipirona 500mg
-Tomar 1 a 2 comprimidos de 6/6 horas se dor.
-Ibuprofeno 600mg
-Tomar 1 comprimido de 8/8 horas por 3 dias.
+AGORA: CEFTRIAXONA (250MG/2ML) 1 AMP EV
 ```
 
-**🏠 Casa — Idoso**
+**🏠 Casa — Prescrição — Casa**
 ```
-Levofloxacino 500mg
-Tomar 1 comprimido de 24/24 horas por 10 dias.
-Dipirona 500mg
-Tomar 1 a 2 comprimidos de 6/6 horas se dor.
-Ibuprofeno 600mg
-Tomar 1 comprimido de 8/8 horas por 3 dias.
+DOXICICLINA 100MG
+TOMAR 01 CP DE 12/12 HORAS POR 10 DIAS
+DIPIRONA 500MG
+TOMAR 01 A 02 CP DE 6/6 HORAS, SE DOR
+IBUPROFENO 600MG
+TOMAR 01 CP DE 8/8 HORAS POR 3 DIAS
 ```
 
-💡 Suspensório escrotal por 10 dias; evitar esforço físico; encaminhar urologista.
+**🏠 Casa — Prescrição — Casa**
+```
+LEVOFLOXACINO 500MG
+TOMAR 01 CP DE 24/24 HORAS POR 10 DIAS
+DIPIRONA 500MG
+TOMAR 01 A 02 CP DE 6/6 HORAS, SE DOR
+IBUPROFENO 600MG
+TOMAR 01 CP DE 8/8 HORAS POR 3 DIAS
+```
+
+💡 suspensório escrotal (melhora a dor) por 10 dias, evitar esforço físico, encaminhar urologista ____________________________________________________________ ENDOCRINOLOGIA
 
 ### Pielonefrite  ·  CID N11
 
-**💉 PS / Sala — Na unidade**
+**🏠 Casa — Prescrição — Casa**
 ```
-SF 250ml + 1 amp Dipirona.
-```
-
-**🏠 Casa — Ambulatorial**
-```
-Levofloxacino 750mg
-Tomar 1 comprimido ao dia por 7 dias.
+SF 250ML + 1 AMP DIPIRONA
+HEMOGRAMA, UREIA, CREATININA, URINA I, UROCULTURA, ANTIBIOGRAMA, Na, K – SE DISPONIVEL USG VIAS
+URINARIAS E HEMOCULTURA
+Exames Laboratoriais: a urina tipo I demonstra pH tendendo a alcalino, leucocitúria e hematúria
 ```
 
-_OU_
+**🏠 Casa — Prescrição — Casa**
 ```
-Ciprofloxacino 500mg
-Tomar 1 comprimido de 12/12 horas por 7 dias.
-Dipirona 500mg
-Tomar 1 a 2 comprimidos de 6/6 horas se dor.
-Bromoprida 10mg
-Tomar 1 comprimido de 8/8 horas se náusea ou vômito.
-```
-
-**🏥 Internação — Internação**
-```
-SF 30–40ml/kg em 24h.
-Dipirona 1g 6/6 horas se dor.
-Bromoprida 10mg EV 8/8 horas se náusea ou vômito.
-Ciprofloxacino 400mg EV 12/12 horas
+LEVOFLOXACINO 750MG
+TOMAR 01 CP AO DIA POR 7 DIAS
 ```
 
 _OU_
 ```
-Ceftriaxona 2g EV 24/24h.
-```
-
-💡 Hemograma, ureia, creatinina, Urina I, urocultura, antibiograma, Na, K; se disponível USG vias urinárias e hemocultura. Ambulatorial: retornar em 48–72h para reavaliação. Internação se sepse, complicação, comorbidade significativa, não aceitação oral, não controle dos sintomas, gestação.
-
-### Sangramento uterino anormal  ·  CID N93
-
-**💉 PS / Sala — Sangramento agudo**
-```
-Dieta branda. Ringer lactato 500–2000 ml EV correr rápido.
-Monitorização. Glicemia capilar. Glicose hipertônica 50% 20ml EV se HGT <70. Repouso no leito.
-Ácido tranexâmico 10mg/kg EV (dose máxima 600mg/dose) agora.
-OU Ácido tranexâmico 1,5g VO de 8/8 horas por 5 dias.
-```
-
-**🏠 Casa — Sangramento crônico**
-```
-Levonorgestrel + etinilestradiol 0,15mg/0,03mg
-Tomar 1 comprimido de 12/12 horas por 7 dias. Depois, 1 comprimido por dia por 21 dias.
-OU inserir DIU de levonorgestrel.
+CIPROFLOXACINO 500 mg
+TOMAR 01 CP DE 12/12 HORAS POR 7 DIAS
+DIPIRONA 500MG
+TOMAR 01 A 02 CP DE 6/6 HORAS, SE DOR
+BROMOPRIDA 10MG
+TOMAR 01 CP DE 8/8 HORAS, SE NAUSEA OU VOMITO
+Internação (sepse, complicação, comorbidade significativa, não aceitação oral, não controle dos sintomas, gestação):
+SF 30-40ML/KG EM 24H
+DIPIRONA 1G 6/6 HORAS, SE DOR
+BROMOPRIDA 10MG EV 8/8 HORAS, SE NAUSEA OU VOMITO
+CIPROFLOXACINO 400MG EV 12/12 HORAS
 ```
 
 _OU_
 ```
-Ibuprofeno 600mg
-Tomar 1 comprimido de 8/8 horas por 5 dias.
+CEFTRIAXONA 2G EV 24/24H
+----------------------------------------------------------------------------------------------------
+```
+
+💡 retornar em 48-72h para reavaliação
+
+### Sangramento Uterino Anormal  ·  CID N93
+
+**🏠 Casa — Sangramento agudo**
+```
+DIETA BRANDA
+RINGER LACTATO 500- 2000L EV CORRER RAPIDO
+MONITORIZAÇÃO
+GLICEMIA CAPILAR
+GLICOSE HIPERTONICA 50% 20ML EV SE HGT <70
+RESPOUSO NO LEITO
+ÁCIDO TRANEXÂMICO 10mg/kg EV (Dose máxima 600mg/dose) AGORA
+OU
+```
+
+**🏠 Casa — Prescrição — Casa**
+```
+ÁCIDO TRANEXAMICO 1,5G VO DE 8/8 HORAS POR 5 DIAS
+```
+
+**🏠 Casa — Prescrição — Casa**
+```
+LEVONORGESTREL + ETINILESTRADIOL 0,15MG/0,03 MG
+TOMAR 01 CP DE 12/12 HORAS POR 7 DIAS. DEPOIS, 1 CP POR DIA POR 21 DIAS
 ```
 
 _OU_
 ```
-Ácido tranexâmico 500mg
-Tomar 1 comprimido de 8/8 horas por 4 dias.
+INSERIR DIU LEVONORGESTRAL
 ```
 
-<!-- FLAG: 'Ringer lactato 500- 2000L EV' no bloco agudo — 'L' provável typo de 'ml' (500–2000 ml). -->
+_OU_
+```
+IBUPROFENO 600MG ------------------------
+TOMAR 01 CP DE 8/8 HORAS POR 5 DIAS
+```
 
-### Sífilis  ·  CID A53.9
+_OU_
+```
+DICLOFENACO 50MG --------------------
+TOMAR 01 CP DE 8/8 HORAS POR 5 DIAS
+```
+
+_OU_
+```
+ACIDO MEFENAMICO 500MG -------------
+TOMAR 01 CP DE 8/8 HORAS POR 4 DIAS
+```
+
+_OU_
+```
+ACIDO TRANEXAMICO 500MG -----------
+TOMAR 01 CP DE 8/8 HORAS POR 4 DIAS
+________________________________________________________________________
+```
+
+### Sífilis  ·  CID A51
+
+**🏠 Casa — Prescrição — Casa**
+```
+Rx USO INTRAMUSCULAR
+1- PENICILINA G BENZATINA 1.200.000 UI ___ 02 AMPOLAS
+APLICAR UMA AMPOLA EM CADA GLÚTEO MÉDIO
+Ou
+1- PENICILINA G BENZATINA 1.200.000 UI ___ 06 AMPOLAS
+APLICAR UMA AMPOLA EM CADA GLÚTEO MÉDIO, A CADA 07 DIAS, ATÉ
+COMPLETAR TRÊS DOSES
+```
+
+**🏠 Casa — SOLICITO**
+```
+- TESTE RÁPIDO PARA HIV
+- HBsAg,Anti-HBs, Anti-HBc IgM e IgG
+- Anti-HCV
+```
 
 **🏠 Casa — Recente**
 ```
-Penicilina G benzatina 2.400.000 UI
-Aplicar 1.200.000 UI IM em cada glúteo, dose única.
+PENICILINA G BENZATINA 2,4 MILHOES ----------
+APLICAR 1,2 MILHAO IM EM CADA GLUTEO, DOSE ÚNICA
 ```
 
 _OU_
 ```
-Doxiciclina 100mg
-Tomar 1 comprimido de 12/12 horas por 15 dias.
+DOXACILINA 100MG ---------------------------
+TOMAR 01 CP DE 12/12HORAS POR 15 DIAS
 ```
 
 **🏠 Casa — Tardia**
 ```
-Penicilina G benzatina 2.400.000 UI
-Aplicar 1.200.000 UI IM em cada glúteo, 1x/semana por 3 semanas.
+PENICILINA G BENZATINA 2,4 MILHOES ----------
+APLICAR 1,2 MILHAO IM EM CADA GLUTEO 1X/ SEMANA, POR 3 SEMANAS
 ```
 
 _OU_
 ```
-Doxiciclina 100mg
-Tomar 1 comprimido de 12/12 horas por 30 dias.
+DOXACILINA 100MG ---------------------------
+TOMAR 01 CP DE 12/12HORAS POR 30 DIAS
+__________________________________________________________________
 ```
-
-💡 Solicitar teste rápido HIV, HBsAg/Anti-HBs/Anti-HBc, Anti-HCV, VDRL e FTA-Abs.
 
 ### Tricomoníase  ·  CID A59
 
-**🏠 Casa — Uso oral**
+**🏠 Casa — Rx USO ORAL**
 ```
-Metronidazol 400mg
-Tomar 5 comprimidos, dose única.
+1- METRONIDAZOL 250 MG _______________ 28 COMPRIMIDOS
+TOMAR 02 COMPRIMIDOS DE 12/12h POR 07 DIAS
 ```
 
 _OU_
 ```
-Metronidazol 250mg
-Tomar 2 comprimidos de 12/12 horas por 7 dias.
+USO INTRAVAGINAL
+2- METRONIDAZOL GELEIA VAGINAL 100mg/g _____ 01 BISNAGA
+APLICAR O CONTEÚDO DE UM APLICADOR CHEIO DENTRO DA VAGINA, À
+NOITE AO DEITAR, POR 07 NOITES
+# EVITAR ROUPAS JUSTAS E DE MATERIAL SINTÉTICO (EX: CALCINHA DE
+RENDA)
+# NÃO UTILIZAR PERFUMES DE VULVA
+# ACOSTUME-SE A DORMIR SEM CALCINHA
 ```
 
-**🏠 Casa — Uso intravaginal**
+**🏠 Casa — Prescrição — Casa**
 ```
-Metronidazol geleia vaginal 100mg/g — 1 bisnaga
-Aplicar 1 aplicador cheio dentro da vagina, à noite ao deitar, por 7 noites.
-```
-
-💡 Não beber álcool. Tratar parceria.
-
-### Vaginose bacteriana  ·  CID N76
-
-**🏠 Casa — Uso oral**
-```
-Metronidazol 250mg — 28 comprimidos
-Tomar 2 comprimidos de 12/12h por 7 dias.
+METRONIDAZOL 400MG -----------------------------
+TOMAR 05 CPS, DOSE ÚNICA
 ```
 
-**🏠 Casa — Uso vaginal**
+_OU_
 ```
-Metronidazol ginecológico 100mg/g
-1 aplicador intravaginal por 5 noites.
+METRONIDAZOL 250MG -------------------------------
+TOMAR 02 CPS DE 12/12 HORAS POR 7 DIAS
 ```
 
-💡 Evitar roupas justas/sintéticas; não usar perfumes na vulva; evitar duchas; dormir sem calcinha; usar sabonete íntimo.
+💡 não beber álcool ________________________________________________________________________________
+
+### Vaginose  ·  CID N76
+
+**🏠 Casa — Prescrição — Casa**
+```
+1- METRONIDAZOL 250 MG _______________ 28 COMPRIMIDOS
+TOMAR 02 COMPRIMIDOS DE 12/12h POR 07 DIAS
+# EVITAR ROUPAS JUSTAS E DE MATERIAL SINTÉTICO (EX: CALCINHA DE
+RENDA)
+# NÃO UTILIZAR PERFUMES DE VULVA
+# EVITE DUCHAS VAGINAIS
+# ACOSTUME-SE A DORMIR SEM CALCINHA
+# NÃO UTILIZE SABONETES COMUNS PARA LAVAR A REGIÃO GENITAL, OPTE
+POR SABONETES ÍNTIMOS
+```
+
+**🏠 Casa — Prescrição — Casa**
+```
+METRONIDAZOL 250MG -------------------------
+TOMAR 02 CPS DE 12/12HORAS POR 7 DIAS
+OU
+```
+
+**🏠 Casa — Prescrição — Casa**
+```
+METRONIDAZOL GINECOLÓGICO 100MG/G -----------------
+1 APLICADOR INTRAVAGINAL POR 5 NOITES
+_________________________________________________________________________
+```
 
 
 ## 🧴 Pele
 
-### Abscesso cutâneo  ·  CID L02
+### Abscesso Cutâneo  ·  CID L02
 
 **🏠 Casa — Prescrição — Casa**
 ```
-Cefalexina 500mg
-Tomar 1 comprimido de 6/6 horas por 7 dias.
-Dipirona 500mg
-Tomar 1 comprimido de 6/6 horas se dor.
-Ibuprofeno 600mg
-Tomar 1 comprimido de 8/8 horas por 5 dias.
+CEFALEXINA 500MG ----------------------
+TOMAR 01 CP DE 6/6 HORAS POR 7 DIAS
+DIPIRONA 500MG ----------
+TOMAR 01 CP DE 6/6 HORAS SE DOR
+IBUPROFENO 600MG ------
+TOMAR 01 CP DE 8/8 HORAS, POR 5 DIAS
+COMPRESSA QUENTE POR 20 MINUTOS 2X AO DIA POR 5 DIAS
+--------------------------------------------------------------------------------------------------------------------------
 ```
 
-💡 Compressa quente por 20 minutos 2x ao dia por 5 dias.
+### Alergia  ·  CID T78.4
 
-### Alergia / Urticária  ·  CID T78.4
-
-**🏠 Casa — Localizada**
+**💉 PS / Sala — IM: FENERGAN**
 ```
-Cetoprofeno 100mg
-Tomar 1 comprimido de 12/12 horas por 5 dias.
-Dexametasona creme 1mg/g
-Aplicar nas lesões 2x ao dia por 10–14 dias.
+__________________________________________________________________
 ```
-
-_OU_
-```
-Mometasona 1mg/g
-Aplicar fina camada nas lesões 1x ao dia.
-Hidroxizina 25mg
-Tomar 1 comprimido de 8/8h por 3 dias.
-```
-
-_OU_
-```
-Desloratadina 5mg
-Tomar 1 comprimido 1x ao dia por 5 dias.
-```
-
-**🏠 Casa — Extensa**
-```
-Prednisona 20mg
-Tomar 1 comprimido de 12/12h por 5–14 dias.
-Hidroxizina 25mg
-Tomar 1 comprimido de 8/8h.
-```
-
-💡 Extensa/refratária: IM Fenergan.
-
-### Dermatite de contato  ·  CID L24.9
-
-**🏠 Casa — Localizado**
-```
-Dexametasona 0,1% creme
-Aplicar nas lesões 2x ao dia por 10–14 dias.
-OU (face e áreas de dobra)
-Hidrocortisona 1% creme
-Aplicar nas lesões 2x ao dia por 10–14 dias.
-Hidroxizina 25mg
-Tomar 1 comprimido de 8/8 horas se prurido.
-```
-
-_OU_
-```
-Dexclorfeniramina 2mg
-Tomar 1 comprimido de 8/8 horas se prurido.
-```
-
-**🏠 Casa — Extenso**
-```
-Prednisona 20mg
-Tomar 0,5 mg/kg/dia por 5–14 dias.
-Hidroxizina 25mg
-Tomar 1 comprimido de 8/8 horas se prurido.
-```
-
-### Dermatite perioral  ·  CID L71.0
 
 **🏠 Casa — Prescrição — Casa**
 ```
-Hidrocortisona 1% creme
-Aplicar nas lesões 1–2x ao dia por 5–7 dias.
-Moderados: Metronidazol 0,75% gel — aplicar nas lesões 2x por dia até melhora; OU Clindamicina 1% gel/loção 1–2x por dia até melhora.
-Extensos/não responsivos: Tetraciclina 250mg — 2 comprimidos 2x ao dia por 8–12 semanas; OU Doxiciclina 100mg 1–2x por dia por 8–12 semanas.
+CETOPROFENO 100MG -------
+TOMAR 01 CP DE 12/12 HORAS POR 5 DIAS
+```
+
+**🏠 Casa — Prescrição — Casa**
+```
+DEXAMETASONA CREME 1MG/G --------------
+APLICAR EM LESÕES 2X AO DIA POR 10-14 DIAS
+```
+
+_OU_
+```
+MOMETASONA 1MG/G ---------
+APLICAR FINA CAMADA EM LESÕES 1X AO DIA
+```
+
+**🏠 Casa — Prescrição — Casa**
+```
+HIDROXIZINA 25MG --------------
+TOMAR 01 CP DE 8/8H POR 3 DIAS
+```
+
+_OU_
+```
+DESLORATADINA 5MG -------------------
+TOMAR 01CP 1X AO DIA POR 5 DIAS
+```
+
+**🏠 Casa — Prescrição — Casa**
+```
+PREDNISONA 20MG----------------
+TOMAR 01 CP DE 12/12H POR 5-14 DIAS
+HIDROXIZINA 25MG --------------
+TOMAR 01 CP DE 8/8H
+```
+
+### Dermatite de Contato  ·  CID L24.9
+
+**🏠 Casa — Prescrição — Casa**
+```
+DEXAMETASOMA 0,1% CREME
+APLICAR NAS LESÕES 2X AO DIA POR 10-14 DIAS
+OU
+```
+
+**🏠 Casa — Para face e áreas de dobra**
+```
+HIDROCORTISONA 1% CREME
+APLICAR NAS LESÕES 2X AO DIA POR 10-14 DIAS
+E/OU
+HIDROXIZINA 25MG
+TOMAR 01 CP DE 8/8 HORAS, SE PRURIDO
+```
+
+_OU_
+```
+DEXCLORFENIRAMINA 2MG
+TOMAR 01 CP DE 8/8 HORAS, SE PRURIDO
+```
+
+**🏠 Casa — Prescrição — Casa**
+```
+PREDNISONA 20MG
+TOMAR 0,5mg/kg/dia POR 5-14 DIAS
+HIDROXIZINA 25MG
+TOMAR 01 CP DE 8/8 HORAS, SE PRURIDO
+```
+
+_OU_
+```
+DEXCLORFENIRAMINA 2MG
+TOMAR 01 CP DE 8/8 HORAS, SE PRURIDO
+_________________________________________________________________
+```
+
+### Dermatite Perioral  ·  CID L71.0
+
+**🏠 Casa — Prescrição — Casa**
+```
+HIDROCORTISONA 1% CREME
+APLICAR NAS LESÕES 1-2X AO DIA POR 5-7 DIAS
+```
+
+**🏠 Casa — Casos moderados**
+```
+E
+METRONIDAZOL 0,75% GEL
+APPLICAR NAS LESÕES 2X POR DIA TÉ MELHORA CLÍNICA
+```
+
+_OU_
+```
+CLINDAMICINA 1% GEL OU LOÇÃO (manipulado)
+APLICAR NAS LESÕES 1-2X POR DIA ATÉ MELHORA CLÍNICA
+```
+
+**🏠 Casa — Casos extensos/ não responsivos**
+```
+TETRACICLINA 250MG
+TOMAR 02 CPS 2X AO DIA POR 8-12 SEMANAS
+```
+
+_OU_
+```
+DOXACICLINA 100MG
+TOMAR 01 CP 1-2X POR DIA POR 8-12 SEMANAS
+___________________________________________________________
 ```
 
 ### Disidrose  ·  CID L30.1
 
-**🏠 Casa — Uso tópico**
+**🏠 Casa — Prescrição — Casa**
 ```
-Propionato de clobetasol 0,05% creme ou pomada
-Aplicar nas lesões 1x por dia, por 2–4 semanas ou até melhora.
-```
-
-💡 Limitar lavagem de mãos (2–3x/dia); controlar estresse/temperaturas elevadas.
-
-### Erisipela / Celulite  ·  CID A46 · L03
-
-**🏠 Casa — Ambulatorial**
-```
-Amoxicilina + clavulanato 875/125mg
-Tomar 1 comprimido de 12/12 horas por 10 dias.
+PROPIONATO DE CLOBETASOL 0,05% CREME OU POMADA
+APLICAR NAS LESÕES 1X POR DIA, POR 2 -4 SEMANAS OU ATE MELHORA DO QUADRO
 ```
 
 _OU_
 ```
-Cefalexina 500mg
-Tomar 1 comprimido de 6/6 horas por 7 dias.
-Dipirona 500mg
-Tomar 1 a 2 comprimidos de 6/6 horas se dor.
-Se não melhorar só com cefalexina, associar Clindamicina 300mg 1 cp de 6/6h ou 8/8h por 7 dias.
+APLICAR NAS LESÕES 1X POR DIA, POR 2 -4 SEMANAS OU ATE MELHORA DO QUADRO
 ```
 
-**🏥 Internação — Internação**
-```
-Cefazolina 1g EV de 8/8 horas por 7–14 dias
-OU Ceftriaxona 1g EV de 12/12 horas por 7–14 dias
-OU Clindamicina 600mg EV de 8/8 horas por 7–14 dias.
-Dipirona 1g EV de 6/6 horas se dor. Bromoprida 10mg EV de 8/8 horas se náusea/vômito.
-```
+💡 limitar lavagem de mãos (2 a 3x/dia), controlar estresse/temperaturas elevadas ________________________________________________________________________
 
-💡 Compressa gelada 3x ao dia por 15 minutos. Se bolhas: Neomicina + bacitracina 20g — aplicar sobre lesão 2x ao dia. Cefalexina se >70kg: 1g de 6/6h.
+### Drenagem Abscesso
 
-### Escabiose  ·  CID B86
-
-**🏠 Casa — Uso oral**
+**🏠 Casa — Prescrição — Casa**
 ```
-Ivermectina 6mg (200mcg/kg/dia — calcular por peso)
-Tomar VO dose única. Repetir em 7 dias.
-Loratadina 10mg
-Tomar 1 comprimido 1x ao dia por 5–7 dias.
+- Separar material
+- Clorexidina alcoólico
+- Campo operatório
+- Anestesia local: agulha marrom ou preta (+ finas)
+- Incisão pequena com lamina 11 (+ pontiaguda) + Kelly para ajudar (ampliar), se necessario
+- Drenagem
+- Colocar gaze dentro da loja, se não houver drenagem espontânea
+- Curativo: gaze + micropore
+________________________________________________________________________
 ```
 
-_OU_
+**🏠 Casa — Prescrição Ceftriaxona**
 ```
-Hidroxizina 25mg
-Tomar 1 comprimido à noite por 7 noites.
-```
-
-**🏠 Casa — Uso tópico**
-```
-Permetrina 5% loção ou creme — 1 frasco
-Aplicar no corpo todo (adultos: poupar região cefálica; crianças e sarna crostosa: incluir couro cabeludo) por 1–3 noites seguidas. Lavar pela manhã. Repetir em 7 dias. Gestante: contato por 2 horas e depois lavar.
+FAZER CEFTRIAXONA 2G + 100 ML SF 0,9% EV 1X AO DIA – CORRER EM 30 MINUTOS
 ```
 
-_OU_
+**🏠 Casa — INTERNAÇÃO**
 ```
-Enxofre precipitado 5% (manipular em vaselina) — 1 frasco
-Aplicar no corpo todo (poupar região cefálica) por 3–4 noites seguidas.
+DIETA
+SF 0,9 500ML EV, ACM
+SORO GLICOFISIO 500ML EV, ACM
+DIPIRONA 1G 6/6H, SE DOR OU FEBRE
+TRAMAL 100MG 6/6H, A CRITERIO MÉDICO
+METOCLOPRAMIDA 8/8H, SE NAUSEA OU VOMITO
+OMEPRAZOL 40MG VO/EV 1X AO DIA
+LACTULOSE 667MG/ML 10ML DE 12/12H, SE CONSTIPAÇÃO
+ENOXAPARINA 40MG/G SC 24/24H
+MEDICAÇÕS DE USO CONTÍNUO
+EXAMES LABORATORIAIS E DE IMAGEM
+Se quadro infeccioso: UROCULTURA E HEMOCULTURA.
+CONTROLE DOS SINAIS VITAIS 6/6H
+CABECEIRA ELEVADA 30º
+DEAMBULAÇÃO / REPOUSO RELATIVO NO LEITO / REPOUSO NO LEITO
 ```
 
-💡 Tratar todos do domicílio; trocar roupa de cama 1x/dia por 3 dias; estender roupas ao sol; manter unhas curtas.
-
-### Feridas / Curativos
-
-💡 Lavar com SF ou clorexidina degermante; aplicar pomada/curativo; gaze úmida; gaze seca + micropore. Pomada enzimática colagenase (tecido desvitalizado); ácidos graxos essenciais (prevenção/superficiais); hidrocoloides (não infectadas, exsudação leve-moderada); hidrogel (superficiais, remover crostas/fibrina); alginato de cálcio (sangrantes/altamente exsudativas); carvão ativado (fétidas/infectadas); sulfadiazina de prata (queimaduras/ação antibacteriana).
-
-### Foliculite  ·  CID L73.9
-
-**🏠 Casa — Uso tópico**
+**🏠 Casa — Se DM ou NPO**
 ```
-Sabonete antisséptico
-Passar em regiões afetadas no banho, por 10 dias.
-Mupirocina creme
+DEXTRO
+INSULINA REGULAR 100UI CONFORME DEXTRO
+GLICOSE 50%, SE HIPOGLICEMIA
+________________________________________________________________________
+FOLICULITE L73.9
+```
+
+**🏠 Casa — Prescrição — Casa**
+```
+1) SABONETE ANTISSÉPTICO
+PASSAR EM REGIÕES AFETADAS NO BANHO, POR 10 DIAS.
+2) Mupirocina creme
 Passar fina camada nas lesões, 2 a 3 vezes por dia, por 10 dias.
 ```
 
-**🏠 Casa — Uso oral**
+**🏠 Casa — Prescrição — Casa**
 ```
-Dipirona 500mg
-Tomar 1 comprimido de 6/6 horas se dor.
+3) DIPIRONA 500MG --------------------------
+TOMAR 01 CP DE 6/6 HORAS, SE DOR
+CID K088 DOR DE DENTE
+PACIENTE REFERE DOR DE DENTE HÁ 1 DIA. Nega febre ou outros sintomas sistêmicos.  INFORMO QUE NÃO TEM DENTISTA NA UNIDADE E ORIENTO BUSCAR UPA LAPA.
+#MEDICAMENTOS DE USO CONTÍNUO: NEGA
+#COMORBIDADES PRÉVIAS: NEGA
+#ALERGIAS: NEGA ALERGIAS MEDICAMENTOSAS CONHECIDAS.
 ```
 
-### Furúnculo / Carbúnculo  ·  CID L02
-
-**🏠 Casa — Tópico**
+**🏠 Casa — #EXAME FÍSICO**
 ```
-Ácido fusídico 2% creme
-Aplicar na lesão 2x ao dia por 7 dias ou até melhora clínica.
+Bom estado geral, corado, hidratado, acianótico, anictérico, afebril
+Sem edema, hiperemia ou alterações visíveis
+Cavidade oral sem secreção purulenta evidente.
+```
+
+**🏠 Casa — Prescrição — Casa**
+```
+1) Dipirona 500mg ----------------------------------- 20 comprimidos
+Tomar  via oral 2 comprimidos de 6 em 6 horas se dor ou febre.
+2) Diclofenaco 50mg ----------------- 10 comprimidos
+Tomar 1 comprimido de 8 em 8 horas por 5 dias.
+Orientado que a unidade não dispõe de atendimento odontológico, sendo necessária continuidade do acompanhamento com cirurgião-dentista.
+Orientado procurar serviço de urgência odontológica (ex: UPA com suporte odontológico) em caso de piora do quadro.
+Sem sinais de infecção sistêmica no momento.
+Orientado retorno se surgirem sinais de alarme, como febre, edema local, trismo ou piora da dor.
+________________________________________________________________________ ________________________________________________________________________
+Onicocriptose / UNHA ENCRAVADA L60.0
+```
+
+**🏠 Casa — Prescrição — Casa**
+```
+1)CEFALEXINA 500MG ----------------------
+TOMAR 01 CP VO DE 6/6 HORAS POR 7 DIAS
+2) DIPIRONA 500MG ----------
+TOMAR 01 A 02 CP VO DE 6/6 HORAS SE DOR
+3) IBUPROFENO 300MG ------
+TOMAR 02 CP VO DE 8/8 HORAS, POR 5 DIAS
+________________________________________________________________________ ________________________________________________________________________
+```
+
+💡 Prescrito analgésico para controle da dor.
+Não manipular a lesão Evitar calçados fechados/apertados Manter local limpo e seco
+
+### Erisipela ou Celulite  ·  CID A46 · L03
+
+**🏠 Casa — Prescrição — Casa**
+```
+Ambulatorial (erisipela localizado, sintomas sistêmicos ausentes/leves):
+```
+
+**🏠 Casa — Prescrição — Casa**
+```
+AMOXICILINA + CLAVULANATO 875/125MG -------------------------
+TOMAR 01 DE 12/12 HORAS POR 10 DIAS
 ```
 
 _OU_
 ```
-Mupirocina 2% pomada
-Aplicar na lesão 2x ao dia por 7 dias ou até melhora clínica.
+CEFALEXINA 500MG ----------------
+TOMAR 01 CP DE 6/6 HORAS POR 7 DIAS
+Se > 70kg: 1g de 6/6 horas
+DIPIRONA 500MG ---------------
+TOMAR 01 A 02 CPS DE 6/ HORAS, SE DOR
+BROMOPRIDA 10MG ---------
+TOMAR 01 CP DE 8/8 HORAS, SE NAUSEA OU VOMITO
+OMEPRAZOL 20MG -----------
+TOMAR 01 CP 1X AO DIA, PELA MANHA
 ```
 
-**🏠 Casa — Oral**
+**🏠 Casa — Orientação**
 ```
-Cefalexina 500mg
-Tomar 1 comprimido de 6/6 horas por 7–14 dias.
+- Compressa gelada 3x ao dia por 15 minutos
 ```
-
-💡 Compressa quente 20 min 2x/dia por 5 dias; lavar com sabão de clorexidina. Repetição: Mupirocina 2% nas narinas 2x/dia por 5–10 dias + antisséptico (clorexidina/triclosan) em genitália, axilas, inguinal e inframamária por 7 dias.
-
-### Herpes simples  ·  CID B00.9
 
 **🏠 Casa — Prescrição — Casa**
 ```
-Aciclovir 400mg
-Tomar 1 comprimido de 8/8 horas por 5 dias (ou 7 dias na primoinfecção).
-Dipirona 500mg
-Tomar 1 comprimido de 6/6 horas se dor ou febre.
+NEOMICINA + BACITRACINA 20G
+APLICAR SOBRE LESÃO 2X AO DIA
 ```
 
-### Herpes zoster  ·  CID B02
-
-**🏠 Casa — Prescrição — Casa**
+**🏠 Casa — Se não melhorar só com cefalexina, associar**
 ```
-Aciclovir 400mg
-Tomar 2 comprimidos 5x ao dia por 7–10 dias.
-Diclofenaco 50mg
-Tomar 1 comprimido de 8/8 horas.
+CEFALEXINA 500MG -------------------------------- 28 CPS
+TOMAR 01 CP DE 6/6 HORAS POR 7 DIAS
+CLINDAMICINA 300MG ---------------------------
+TOMAR 01 CP DE 6/6H OU 8/8H POR 7 DIAS
+```
+
+**🏠 Casa — Internação**
+```
+CEFAZOLINA 1G EV DE 8/8 HORAS POR 7-14 DIAS
 ```
 
 _OU_
 ```
-Paracetamol + codeína 500+7,5mg
-Tomar 1 comprimido de 6/6 horas se dor intensa.
-```
-
-### Hidradenite supurativa  ·  CID L73.2
-
-**🏠 Casa — Prescrição — Casa**
-```
-Dipirona 500mg
-Tomar 1 a 2 comprimidos de 6/6 horas se dor ou febre.
-Clindamicina gel 1%
-Aplicar na lesão de 12/12 horas até melhora clínica.
+CEFTRIAXONA 1G EV DE 12/12 HORAS POR 7-14 DIAS
 ```
 
 _OU_
 ```
-Ácido fusídico creme 2%
-Aplicar na lesão de 8/8 horas até melhora clínica.
+CLINDAMICINA 600MG EV DE 8/8 HORAS, POR 7-14 DIAS
+DIPIRONA 1G EV DE 6/6 HORAS, SE DOR
+BROMOPRIDA 10MG EV DE 8/8HORAS, SE NAUSEA OU VOMITO
+________________________________________________________________________________
 ```
 
-💡 Encaminhar dermatologista.
+### Escabiose  ·  CID B86
+
+**🏠 Casa — Prescrição — Casa**
+```
+1) Ivermectina 6 mg (1 CP) PRECISA FAZER A CONTA POR QUILO ------------------
+Tomar 200 microgramas/kg/dia VO dose única. Repetir a dose em 7 dias.
++
+2) Permetrina 5% loção ou creme -------------------- 1 frasco
+Aplicar no corpo todo (em adultos, poupar a região cefálica; em crianças e na sarna crostosa incluir couro cabeludo) por 1-3 noites seguidas. Lavar o corpo na manhã seguinte. Repetir o esquema em 7 dias. Em gestantes, é suficiente o contato por apenas 2 horas e depois lavar o corpo.
+```
+
+_OU_
+```
+2) Enxofre precipitado 5% (manipular em vaselina) ------ 1 frasco
+Aplicar no corpo todo (poupar região cefálica) por 3-4 noites seguidas.
+3) Loratadina 10 mg --------------- 7 comprimidos
+Tomar 1 comprimido, uma vez ao dia, por até 7 dias.
+```
+
+_OU_
+```
+3) Hidroxizina  25mg  ------------- 7 comprimidos
+Tomar 1 comprimido à noite por 7 noites.
+```
+
+**🏠 Casa — Prescrição — Casa**
+```
+IVERMECTINA 6MG (200MCG/KG/DIA)
+TOMAR 1CP VO, DOSE ÚNICA. REPETIR EM 7 DIAS.
+LORATADINA 10MG
+TOMAR 01 CP 1X AO DIA POR 5 DIAS
+```
+
+**🏠 Casa — Prescrição — Casa**
+```
+PERMETRINA 5% LOÇÃO/CREME
+APLICAR 1-3 NOITES SEGUIDAS. REPETIR EM 7 DIAS
+```
+
+💡 Trocar a roupa de cama, de banho e a do corpo (que foi usada no dia do tratamento e nos dias anteriores, inclusive). Fazer isso diariamente por, pelo menos, três dias. Lavar as roupas, estender e deixá-las expostas ao sol quente, complementando com ferro de passar, para eliminar o parasita. Caso a lavagem das roupas não seja possível, é recomendado fechá-las em saco plástico por quatro a sete dias. Manter as unhas curtas. tratar todos do mesmo domicilio, trocar roupa de cama 1x ao dia por 3 dias, estender roupas no sol, manter unhas curtas _________________________________________________________________
+
+### Furunculo / Carbunculo  ·  CID L02
+
+**🏠 Casa — Prescrição — Casa**
+```
+ACIDO FUSIDICO 2% CREME -------------
+APLICAR NA LESÃO 2X AO DIA POR 7 DIAS OU ATE MELHORA CLÍNICA
+COMPRESSA QUENTE POR 20 MINUTOS 2X AO DIA POR 5 DIAS
+LAVAR LOCAL COM SABÃO DE CLOREXIDINA
+```
+
+_OU_
+```
+MUPIROCINA 2% POMADA ---------
+APLICAR NA LESÃO 2X AO DIA POR 7 DIAS OU ATE MELHORA CLÍNICA
+COMPRESSA QUENTE POR 20 MINUTOS 2X AO DIA POR 5 DIAS
+LAVAR LOCAL COM SABÃO DE CLOREXIDINA
+OU
+```
+
+**🏠 Casa — Prescrição — Casa**
+```
+CEFALEXINA 500MG -------
+TOMAR 01 CP DE 6/6HORAS POR 7-14 DIAS
+```
+
+**🏠 Casa — Prescrição — Casa**
+```
+COMPRESSA QUENTE POR 20 MINUTOS 2X AO DIA POR 5 DIAS
+LAVAR LOCAL COM SABÃO DE CLOREXIDINA
+```
+
+**🏠 Casa — Prescrição — Casa**
+```
+MUPIROCINA 2% POMADA
+PASSAR 2X AO DIA NAS NARINAS POR 5-10 DIAS
+ANTISSÉPTICO (CLOREXIDINA DEGERMANTE OU TRICLOSAN SABONETE)
+LAVAR GENITÁLIA, AXILAS, REGIÃO INGUINAL E INFRAMAMÁRIA POR 7 DIAS
+_________________________________________________________________
+```
+
+### Herpes Simples  ·  CID B00.9
+
+**🏠 Casa — Prescrição — Casa**
+```
+ACICLOVIR 400MG -----------------
+TOMAR 01 CP DE 8/H8 HORAS POR 5 DIAS OU POR 7 DIAS (primoinfecção)
+DIPIRONA 500MG ----------------
+TOMAR 01 CP DE 6/6 HORAS, SE DOR OU FEBRE
+___________________________________________________________________________
+```
+
+### Herpes Zoster  ·  CID B00.9
+
+**🏠 Casa — Prescrição — Casa**
+```
+ACICLOVIR 400MG
+TOMAR 02 CPS 5X AOD IA POR 7-10 DIAS
+DICLOFENACO 50MG
+TOMAR 01 CP DE 8/8 HORAS
+```
+
+_OU_
+```
+PARACETAMOL + CODEINA 500+7,5MG
+TOMAR 01 CP DE 6/6 HORAS, SE DOR INTENSA
+________________________________________________
+```
+
+### Hidradenite Supurativa L 732
+
+**🏠 Casa — Prescrição — Casa**
+```
+DIPIRONA 500MG
+TOMAR 01 A 02 CPS DE 6/6 HORAS, SE DOR OU FEBRE
+```
+
+**🏠 Casa — Prescrição — Casa**
+```
+CLINDAMICINA GEL 1%
+APLICAR NA LESÃO DE 12/12 HORAS ATÉ MELHORA CLÍNICA
+```
+
+_OU_
+```
+ÁCIDO FUSÍDICO CREME 2%
+APLICAR NA LESÃO DE 8/8 HORAS ATÉ MELHORA CLÍNICA
+Encaminhar Dermatologista
+_____________________________________________________________________
+```
 
 ### Impetigo  ·  CID L01
 
-**🏠 Casa — Uso tópico**
+**🏠 Casa — Prescrição — Casa**
 ```
-Mupirocina 2% creme
-Aplicar de 8/8 horas por 5–7 dias.
+MUPIROCINA 2% CREME
+APLICAR DE 8/8 HORAS POR 5-7 DIAS
 ```
-
-**🏠 Casa — Extenso / falha tópica**
-```
-Cefalexina 500mg
-Tomar 1 comprimido de 6/6 horas por 7 dias.
-```
-
-_OU_
-```
-Sulfametoxazol + trimetoprima 800+160mg
-Tomar 1 comprimido de 12/12 horas por 7–10 dias.
-```
-
-💡 Lavagem com água e sabão ou sabonete antisséptico (triclosan, clorexidina).
-
-### Onicocriptose / Unha encravada  ·  CID L60.0
 
 **🏠 Casa — Prescrição — Casa**
 ```
-Cefalexina 500mg
-Tomar 1 comprimido VO de 6/6 horas por 7 dias.
-Dipirona 500mg
-Tomar 1 a 2 comprimidos VO de 6/6 horas se dor.
-Ibuprofeno 300mg
-Tomar 2 comprimidos VO de 8/8 horas, por 5 dias.
+CEFALEXINA 500MG
+TOMAR 01 CP DE 6/6 HORAS POR 7 DIAS
 ```
 
-💡 Não manipular a lesão; evitar calçados fechados/apertados; manter local limpo e seco.
+_OU_
+```
+SULFAMETOXAZOL + TRIMETOPRIMA 800 + 160MG/CP
+TOMAR 01 CP DE 12/12 HORAS POR 7-10 DIAS
+```
+
+💡 lavagem com agua+sábado ou sabonete antissépticos (triclosan, clorezidina) ___________________________________________________________
 
 ### Pediculose  ·  CID B85.1
 
-**🏠 Casa — Uso tópico**
+**🏠 Casa — Prescrição — Casa**
 ```
-Permetrina 1% shampoo
-Aplicar no couro cabeludo, deixar agir 10 minutos e enxaguar. Repetir 3–5 vezes por semana.
-```
-
-_OU_
-```
-Permetrina 5% loção
-Aplicar no couro cabeludo à noite e lavar no dia seguinte. Por 3 noites seguidas; repetir após 7 dias.
-Ácido acético 5%
-Aplicar 10ml de ácido acético + 10ml de água fria antes de passar o pente fino.
-```
-
-**🏠 Casa — Uso oral**
-```
-Ivermectina 6mg
-Tomar 200 mcg/kg, dose única. Repetir após 7 dias.
-```
-
-### Queimadura  ·  CID T30
-
-**💉 PS / Sala — 3º grau**
-```
-Dieta zero até estabilização.
-Ringer lactato aquecido (4 × peso × SCQ) — metade em 8 horas, metade nas 16 horas seguintes.
-Tramadol 100mg + SF 0,9% 100ml + Bromoprida 10mg
-OU Morfina 10mg/ml + SG 9ml — fazer 3ml EV.
-Sonda vesical — manter débito 0,5 ml/kg/hora.
-```
-
-**🏠 Casa — 2º grau**
-```
-Lavar com água corrente abundante; retirar objetos/roupas; limpeza com água e clorexidina degermante; curativo oclusivo.
-Dipirona 500mg
-Tomar 1 a 2 comprimidos de 6/6 horas se dor.
+PERMETRINA 1% SHAMPOO
+APLICAR NO COURO CABELUDO, DEIXAR AGIR POR 10 MINUTOS E ENXAGUAR. REPETIR 3-5 VEZES POR SEMANA
 ```
 
 _OU_
 ```
-Paracetamol + codeína 500mg + 7,5mg
-Tomar 1 comprimido de 6/6 horas se dor.
-Hidroxizina 25mg
-Tomar 1 comprimido de 8/8 horas se coceira.
-Sulfadiazina de prata 1% (Dermazine/Pratazine)
-Passar na lesão 1x ao dia.
+PERMETRINA 5% LOÇÃO
+APLICAR NO COURO CABELUDO A NOITE E LAVAR O CABELO NO DIA SEGUINTE. APLICAR POR 3 NOITES SEGUIDAS E
+REPETIR O TRATAMENTO APÓS 7 DIAS
+E
+ÁCIDO ACÉTICO 5%
+APLICAR 10ML DE ÁCIDO ACÉTICO + 10ML DE ÁGUA FRIA ANTES DE PASSAR O PENTE FINO
+E/OU
 ```
 
-💡 Internar: queimadura 2º grau >10%, em face/mãos/pés/genitália, 3º grau, via aérea, elétrica.
-
-### Tínea capitis  ·  CID B35.0
-
-**🏠 Casa — Uso oral**
+**🏠 Casa — Prescrição — Casa**
 ```
-Griseofulvina (manipulado)
-Tomar 500mg 1x ao dia ou de 12/12 horas, durante a refeição, por 5–7 dias.
+IVERMECTINA 6MG
+TOMAR 200 MCG/KG, DOSE ÚNICA. REPETIR APÓS 7 DIAS.
+______________________________________________________________________
 ```
 
-### Tínea corporis  ·  CID B35.4
+### Queimadura  ·  CID T30.0
 
-**🏠 Casa — Uso tópico**
+**🏠 Casa — Queimadura 2º grau**
 ```
-Cetoconazol creme 2%
-Aplicar na lesão 2x ao dia por 2–4 semanas.
-```
-
-_OU_
-```
-Miconazol 2% creme/loção
-Aplicar na lesão 2x ao dia por 2–4 semanas.
+LAVAR COM AGUA CORRENTE ABUNDANTE, RETIRAR TODOS OS OBJETOS/ROUPAS.
+RETIRAR CORPOS ESTRANHOS, LIMPEZA COM AGUA E CLOREXIDINA DEGERMANTE, CURATIVO OCLUSIVO
 ```
 
-### Tínea pedis  ·  CID B35.3
-
-**🏠 Casa — Uso tópico**
+**🏠 Casa — Prescrição — Casa**
 ```
-Cetoconazol creme 2%
-Aplicar na lesão 2x ao dia por 4–6 semanas.
+DIPIRONA 500MG
+TOMAR 01 A 02 CPS DE 6/6 HORAS, SE DOR
 ```
 
 _OU_
 ```
-Miconazol 2% creme/loção
-Aplicar na lesão 2x ao dia por 4–6 semanas.
+PARACETAMOL + CODEÍNA 500MG + 7,5MG
+TOMAR 01 CP DE 6/6 HORAS, SE DOR
+HIDROXIZINA 25MG
+TOMAR 01 CP DE 8/8 HORAS, SE COCEIRA
+```
+
+**🏠 Casa — Prescrição — Casa**
+```
+SULFADIAZINA DE PRATA 1% (DERMAZINE/PRATAZINE)
+PASSAR EM LESÃO 1X AO DIA
+LIMPEZA DA FERIDA (SORO FISIOLOGICO OU CLOREXEDINE DERGEMANTE)
+MEMBRACEL CURATIVO
+APÓS HIGIENIZAÇÃO, APLICAR CURATIVO E APÓS, COBRIR LOCAL COM GAZE E FAIXA, FIXE COM ESPARADRAPO OU
+FITA ADESIVA
+```
+
+**🏠 Casa — Queimadura 3º grau**
+```
+DIETA ZERO, ATÉ ESTABILIZAÇÃO
+RINGER LACTATO AQUECIDO (4 x PESO x SCQ) – METADE DO VOLUME EM 8 HORAS E A OUTRA METADE NAS
+PRÓXIMAS 16 HORAS
+TRAMADOL 100MG + SF 0,9% 100ML + BROMOPRIDA 10MG
+```
+
+_OU_
+```
+MORFINA 10MG/ML + SG% 9ML – FAZER 3ML EV
+SONDA VESICAL – manter debito em 0,5 ml/kg/hora
+Internar: queimadura 2º grau >10%, queimadura em face/mãos/pés/genitálias, queimadura 3º grau, queimadura via
+aérea, queimadura elétrica
+___________________________________________________________________
+```
+
+### Queimadura Elétrica  ·  CID W87.9
+
+**🏠 Casa — Prescrição — Casa**
+```
+ECG, hemograma, uréia, creatinina, troponina, CPKM, CPK, Urina I
+ABCDE
+RINGER LACTATO
+4x SQC x peso – CORRER 50% NAS PRIMEIRAS 8 HORAS
+DIPIRONA 1G EV 6/6 HORAS, SN
+TRAMAL 100MG 6/6 HORAS, SN
+MONITORIZAÇÃO CONTINUA 12-24HORAS
+SVD – QUANTIFICAR DIURESE
+REMÉDIOS
+```
+
+**🏠 Casa — Expectorante**
+```
+AMBROXOL XAROPE SEM AÇUCAR
+TOMAR 5ML 3X AO DIA POR 5 DIAS
+ACETILCISTEINA 600MG
+TOMAR 1X A NOITE POR 5 NOITES
+ACETILCISTEINA XAROPE 40mg/ml
+TOMAR 15ML A NOITE POR 5 NOITES
+ACETILCISTEINA ENVELOPE 600mg/5g
+TOMAR 1 ENVELOPE A NOITE POR 5 NOITES
+VICK 44E XAROPE
+TOMAR 15 ML DE 6/6 HORAS
+```
+
+**🏠 Casa — Tosse seca**
+```
+SEKI XAROPE
+TOMAR 10 ML 3X AO DIA POR 5 DIAS
+```
+
+_OU_
+```
+CLOPERASTINA 3,54MG/ML
+TOMAR 10ML 3X AO DIA POR 5 DIAS
+```
+
+**🏠 Casa — Antitussígeno**
+```
+DROPROPIZINA 3MG/ML
+TOMAR 10ML 4X AO DIA
+```
+
+**🏠 Casa — Dor de garganta**
+```
+STREPSILS/FLOGORAL PASTILHA
+1 PASTILHA, SEMPRE QUE NECESSÁRIO
+CLORIDRATO DE BENZIDAMINA PASTILHA
+01 PASTILHA VO DE ATÉ 3/3 HORAS, SE DOR DE GARGANTA
+```
+
+**🏠 Casa — Resfriado**
+```
+CORISTINA D, CIMEGRIPE, RESFENOL (paracetamol, clorfeniramina, fenilefrina)
+TOMAR 01 CP DE 6/6 HORAS
+NEOLEFRIN (fenilefrina, carbinoxamina, paracetamol)
+TOMAR 01 CP DE 8/8 HORAS
+BENEGRIPE (dipirona, clorfeniramina, cafeína)
+TOMAR 3X AO DIA
+DECONGEX PLUS
+TOMAR 10 A 15ML 3X AO DIA
+```
+
+**🏠 Casa — Anti-inflamatório + protetor gástrico**
+```
+NIVUX
+TOMAR 01 CP DE 12/12 HORAS POR 3 DIAS
+Pomada
+TROK-N
+APLICAR FINA CAMADA SOBRE LESÃO 1-2X POR DIA, POR 7-10 DIAS
+EXAMES
+```
+
+**🏠 Casa — ISTs**
+```
+HBsAg, Anti-HCV, anti HIV 1 e 2, anti-HAC total, Anti HBs, anticorpos anti-gonococo IgM e IgG, chlamydia trachomatis
+IgM e IgG, VDRL.
+Rotina
+Hemograma, uréia, creatinina, sódio, potássio, TGO, TGP, glicemia de jejum, triglicérides, colesterol total e frações,
+25-hidroxivitamina D, vitamina B12, TSH, T4 livre, ferritina.
+Em > 50 anos: sangue oculto nas fezes e mamografia
+Em mulheres > 65 anos/ homens > 70 anos/ fatores de risco: densitometria óssea.
+Em DM: Hb glicada
+PROCEDIMENTOS
+```
+
+### Tínea Capitis
+
+**🏠 Casa — Prescrição — Casa**
+```
+GRISEOFULVINA (manipulado)
+TOMAR 500MG 1X AO DIA OU DE 12/12 HORAS, DURANTE A REFEIÇÃO, POR 5-7 DIAS
+_______________________________________________________________
+```
+
+### Tínea Corporis  ·  CID B35.4
+
+**🏠 Casa — Prescrição — Casa**
+```
+CETOCONAZOL CREME 2%
+APLICAR NA LESÃO 2X AO DIA POR 2-4 SEMANAS
+```
+
+_OU_
+```
+MICONAZOL 2% CREME/LOÇÃO
+APLICAR NA LESÃO 2X AO DIA POR 2-4 SEMANAS
+__________________________________________________________________________
+```
+
+### Tínea Pedis  ·  CID B35.3
+
+**🏠 Casa — Prescrição — Casa**
+```
+CETOCONAZOL CREME 2%
+APLICAR NA LESÃO 2X AO DIA POR 4-6 SEMANAS
+```
+
+_OU_
+```
+MICONAZOL 2% CREME/LOÇÃO
+APLICAR NA LESÃO 2X AO DIA POR 4-6 SEMANAS
+_______________________________________________________________________________
 ```
 
 
 ## 🧠 Psiquiatria
 
-### Abstinência alcoólica  ·  CID F10.3
+### Abstinência Alcoolica  ·  CID F10.3
 
-**💉 PS / Sala — Prescrição — PS**
+**🏠 Casa — Prescrição — Casa**
 ```
-Diazepam 10mg — 1 comprimido a cada hora até melhora (máx 40mg/dia).
-OU Lorazepam 2mg — 1 comprimido a cada hora até melhora (máx 10mg/dia).
-E Tiamina 100–250mg EV/IM 1x/dia por 3 dias.
-Se hipoglicemia (fazer tiamina antes): Glicose hipertônica 50% 4 amp EV.
-Delirium tremens: Diazepam 5–10mg EV a cada 5–10 min (máx 20mg/dia).
-Refratário: Fenobarbital 130–260mg EV a cada 15 min até melhora (máx 15 mg/kg/dia).
+HEMOGRAMA, GLICEMIA, UREIA, CREATININA, TGO, TGP, AMILASE, LIPASE
+DIAZEPAM 10MG
+01 CP A CADA HORA, ATÉ MELHORA (máximo: 40mg/dia)
 ```
 
-💡 Hemograma, glicemia, ureia, creatinina, TGO, TGP, amilase, lipase.
+_OU_
+```
+LORAZEPAM 2MG
+01 CP A CADA HORA, ATÉ MELHORA (máximo: 10mg/dia)
+E
+TIAMINA 100- 250MG EV/IM 1X/ DIA POR 3 DIAS
+```
+
+**🏠 Casa — Se hipoglicemia (fazer tiamina antes)**
+```
+GLICOSE HIPERTÔNICA 50%: 4 AMP EV
+```
+
+**🏠 Casa — Se Delirium tremens**
+```
+DIAZEPAM 5-10MG EV, A CADA 5-10 MINUTOS (Maximo: 20mg/dia)
+```
+
+**🏠 Casa — Se refratário**
+```
+FENOBARBITAL 130-260MG EV A CADA 15 MIN ATÉ MELHORA (máximo: 15 mg/kg/dia)
+PACIENTE GRAVE
+```
 
 
 ## 🤰 Gestante
@@ -3196,42 +4733,6 @@ Metronidazol vaginal — 1 dosador 1x à noite por 5 dias.
 
 ## 📝 Modelos / Bônus
 
-### Bulário rápido por sintoma
-
-**📄 Modelo — Expectorante**
-```
-Ambroxol xarope sem açúcar — 5ml 3x ao dia por 5 dias.
-Acetilcisteína 600mg — 1x à noite por 5 noites (ou xarope 40mg/ml 15ml à noite; ou envelope 600mg/5g à noite).
-Vick 44E xarope — 15ml de 6/6 horas.
-```
-
-**📄 Modelo — Tosse seca / antitussígeno**
-```
-Seki xarope — 10ml 3x ao dia por 5 dias.
-OU Cloperastina 3,54mg/ml — 10ml 3x ao dia por 5 dias.
-Dropropizina 3mg/ml — 10ml 4x ao dia.
-```
-
-**📄 Modelo — Dor de garganta**
-```
-Strepsils/Flogoral pastilha — 1 pastilha sempre que necessário.
-Cloridrato de benzidamina pastilha — 1 pastilha VO de até 3/3 horas se dor de garganta.
-```
-
-**📄 Modelo — Resfriado (combinados)**
-```
-Coristina D / Cimegripe / Resfenol (paracetamol, clorfeniramina, fenilefrina) — 1 cp de 6/6 horas.
-Neolefrin (fenilefrina, carbinoxamina, paracetamol) — 1 cp de 8/8 horas.
-Benegripe (dipirona, clorfeniramina, cafeína) — 3x ao dia.
-Decongex Plus — 10 a 15ml 3x ao dia.
-```
-
-**📄 Modelo — AINE + protetor / pomada**
-```
-Nivux — 1 cp de 12/12 horas por 3 dias.
-Trok-N pomada — aplicar fina camada sobre lesão 1–2x por dia, por 7–10 dias.
-```
-
 ### Conduta / Alta
 
 **📄 Modelo — Modelo**
@@ -3241,17 +4742,6 @@ Orientações gerais. Oriento sinais de alarme. Prescrevo sintomáticos.
 Explico o uso correto das medicações. Oriento retorno caso haja sinal de alarme ou piora.
 Converso com o paciente e esclareço dúvidas. Explico a conduta aplicada; o paciente aceita, entende e concorda.
 Alta médica.
-```
-
-### Drenagem de abscesso
-
-**📄 Modelo — Modelo**
-```
-Separar material. Clorexidina alcoólico. Campo operatório.
-Anestesia local (agulha marrom ou preta, mais finas).
-Incisão pequena com lâmina 11 + Kelly para ampliar se necessário. Drenagem.
-Colocar gaze dentro da loja se não houver drenagem espontânea.
-Curativo: gaze + micropore.
 ```
 
 ### Exame físico — frases direcionadas
@@ -3302,51 +4792,6 @@ Anoperíneo/toque retal: pele e mucosa íntegras, esfíncter normotenso, sem tum
 #Gestante:
 ```
 
-### Exames laboratoriais
-
-**📄 Modelo — ISTs**
-```
-HBsAg · Anti-HCV · Anti-HIV 1 e 2 · Anti-HBc total · Anti-HBs · anticorpos anti-gonococo IgM e IgG · Chlamydia trachomatis IgM e IgG · VDRL.
-```
-
-**📄 Modelo — Rotina**
-```
-Hemograma · ureia · creatinina · Na · K · TGO · TGP · glicemia de jejum · triglicérides · colesterol total e frações · 25-OH vitamina D · vitamina B12 · TSH · T4 livre · ferritina.
->50 anos: sangue oculto nas fezes e mamografia. Mulheres >65a / homens >70a / fatores de risco: densitometria óssea. DM: hemoglobina glicada.
-```
-
-### Internação — prescrição padrão
-
-**🏥 Internação — Modelo**
-```
-Dieta.
-SF 0,9% 500ml EV, ACM.
-Soro glicofisiológico 500ml EV, ACM.
-Dipirona 1g 6/6h, se dor ou febre.
-Tramal 100mg 6/6h, a critério médico.
-Metoclopramida 8/8h, se náusea ou vômito.
-Omeprazol 40mg VO/EV 1x ao dia.
-Lactulose 667mg/ml 10ml de 12/12h, se constipação.
-Enoxaparina 40mg SC 24/24h.
-Controle dos sinais vitais 6/6h. Cabeceira elevada 30°.
-Se DM ou NPO: dextro; insulina regular conforme dextro; glicose 50% se hipoglicemia.
-Exames laboratoriais e de imagem. Se quadro infeccioso: urocultura e hemocultura.
-```
-
-### Intubação orotraqueal (70 kg)
-
-**💉 PS / Sala — Sequência rápida**
-```
-MOV. Preparo: checar aspirador; materiais (laringoscópio 3 ou 4, tubo 7 ou 7,5, ambu, guedel, seringa 20ml) e drogas; posicionar.
-Pré-oxigenação: máscara não reinalante ou bolsa-válvula 10 a 12 L/min por 3 a 5 minutos.
-Analgesia: Fentanil (2mg/ml – 10ml): 3 a 4ml EV em bolus lento.
-Hipnótico: Etomidato (10ml): 10ml EV (0,2 a 0,4 mg/kg) OU Quetamina (10ml): 3–4ml OU Propofol (20ml): 10–15ml OU Midazolam (10ml): 3–4ml.
-Bloqueador neuromuscular: Succinilcolina (10mg/ml): misturar o pó em 10ml SF, aspirar tudo (1 a 1,5mg/kg) OU Rocurônio (5ml): 7ml EV.
-IOT: checar ausculta.
-Ventilador: Modo VCV, FiO2 100%, PEEP 6 a 10, FR 16, Tinsp 1,0, VC (4–6 ml/kg predito) ≈ 420 ml.
-Sedação em BIC: Fentanil 4 amp + 500ml SF a 10 ml/h E Midazolam 4 amp + 500ml SF a 10 ml/h.
-```
-
 ### Medicações na unidade (IM / EV)
 
 **💉 PS / Sala — Analgésicos / AINE / corticoide**
@@ -3384,53 +4829,6 @@ Morfina 10mg/mL (1mL) IM pura: aplicar ___ mL IM profundo agora (0,3 a 0,5 mL pa
 Prometazina 25mg/mL (2mL) [Fenergan] — aplicar 1 amp IM profundo agora.
 Benzilpenicilina benzatina 1.200.000 UI [Benzetacil] — diluir com 4mL AD, aplicar 1 F/A IM profundo agora.
 ```
-
-### Prescrição de Ceftriaxona
-
-**📄 Modelo — Modelo**
-```
-Ceftriaxona 2g + 100ml SF 0,9% EV 1x ao dia — correr em 30 minutos.
-Duração: ___  Data de início: ___
-```
-
-### Templates — anamnese / EF / evolução
-
-**📄 Modelo — Anamnese direcionada**
-```
-QP: [queixa] há [tempo].
-HDA: [início, evolução, intensidade, fatores de melhora/piora, sintomas associados].
-Nega: [sinais de alarme da queixa].
-APP: [comorbidades, medicações de uso, alergias].
-```
-
-**📄 Modelo — Exame físico direcionado**
-```
-BEG, [afebril/febril], corado, hidratado, acianótico, anictérico.
-SSVV: PA __/__ | FC __ | FR __ | SatO2 __% | Tax __°C.
-Direcionado: [achados relevantes à queixa].
-```
-
-**📄 Modelo — Exame físico completo**
-```
-BEG, corado, hidratado, acianótico, anictérico, afebril.
-Neuro: Glasgow 15, pupilas isofotorreagentes, sem déficits focais, sem sinais meníngeos.
-ACV: 2 BRNF, sem sopros audíveis.
-AR: MV+ bilateralmente, sem ruídos adventícios.
-Abdome: flácido, indolor à palpação, RHA+, sem visceromegalias ou massas.
-Membros: sem edema, sem dor à palpação, sem sinais de TVP, TEC <3s, pulsos amplos e simétricos.
-Orofaringe sem alterações. Otoscopia: MT translúcida, sem abaulamentos.
-```
-
-**📄 Modelo — Evolução / conduta**
-```
-# [Diagnóstico / hipótese]
-HDA: [resumo]. Nega [alarmes pesquisados].
-EF: [SSVV + direcionado].
-Conduta: Prescrevo sintomáticos na unidade. Prescrevo sintomáticos para domicílio.
-Oriento sinais de alarme e retorno se necessário. Compreendeu. Alta em BEG.
-```
-
-💡 Esqueleto universal: copiar e editar. Sempre documentar SSVV na alta, alarmes pesquisados e negativos, orientação de retorno compreendida.
 
 
 ## 💊 Formulário SUS
