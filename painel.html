@@ -557,6 +557,7 @@
 (function(){
   /* ===== CONFIG ===== */
   var PIN = "1234";
+  var DATA_VERSION = "20260705e"; // bump a cada atualização de dados (cache-bust)
   var SESSION_KEY = "painel_unlocked_v1";
   var THEME_KEY   = "painel_theme_v1";
   var FAVS_KEY    = "painel_favs_v1";
@@ -639,7 +640,7 @@
 
   function openReader(){
     var ready = dataLoaded ? Promise.resolve()
-      : loadScript("recursos/data-prescricoes.js").then(function(){
+      : loadScript("recursos/data-prescricoes.js?v="+DATA_VERSION).then(function(){
           dataLoaded=true; DATA=window.PRESCRICOES; updateRxCounts();
         });
     ready.then(function(){
@@ -664,7 +665,7 @@
       "<span>🟡 "+DATA.counts.amarela+"</span>" +
       "<span>🟢 "+DATA.counts.verde+"</span>";
   }
-  loadScript("recursos/data-prescricoes.js").then(function(){
+  loadScript("recursos/data-prescricoes.js?v="+DATA_VERSION).then(function(){
     dataLoaded=true; DATA=window.PRESCRICOES; updateRxCounts();
   }).catch(function(){});
 
