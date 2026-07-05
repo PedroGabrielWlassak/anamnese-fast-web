@@ -2969,6 +2969,231 @@ Refratário: Fenobarbital 130–260mg EV a cada 15 min até melhora (máx 15 mg/
 💡 Hemograma, glicemia, ureia, creatinina, TGO, TGP, amilase, lipase.
 
 
+## 🤰 Gestante
+
+### Anemia (gestante)  ·  CID O99.0
+
+**🏠 Casa — Prescrição — Casa**
+```
+Profilaxia: Sulfato ferroso 40mg + Ácido fólico 0,2mg/mL 60 gotas — até o 3º mês de puerpério.
+Tratamento: ajustar sulfato ferroso conforme hemoglobina.
+```
+
+### Ansiedade / Depressão (gestante)  ·  CID F41
+
+**💉 PS / Sala — Crise de ansiedade**
+```
+Neozine 40mg/ml — 5 gotas VO.
+Prometazina — 1 amp IM.
+Diazepam 5mg — 1 cp VO se na maternidade e refratária a outras medidas.
+```
+
+**🏠 Casa — Manutenção**
+```
+Sertralina 50mg — 1 cp VO 1x ao dia.
+```
+
+💡 Insônia: Neozine 40mg/ml 5 gotas VO à noite.
+
+### Broncoespasmo / Crise asmática (gestante)  ·  CID J45
+
+**🏠 Casa — Prescrição — Casa**
+```
+Salbutamol (spray/nebulização).
+```
+
+💡 Crises graves: considerar corticoide, porém avaliar se é PNAR e vai precisar de doppler — o corticoide anula a avaliação do ducto venoso.
+
+### Candidíase (gestante)  ·  CID B37
+
+**🏠 Casa — Prescrição — Casa**
+```
+Miconazol creme vaginal — 1 tubete por noite, por 7 noites.
+Se candidíase de repetição/importante: Fluconazol 150mg VO dose única.
+```
+
+### Clamídia / Gonorreia (gestante)  ·  CID A54 · A56
+
+**🏠 Casa — Prescrição — Casa**
+```
+Azitromicina 500mg — 2 cp VO dose única
++ Ceftriaxona 250mg IM dose única.
+```
+
+### Constipação (gestante)  ·  CID K59.0
+
+**🏠 Casa — Prescrição — Casa**
+```
+Óleo mineral.
+Lactulona — 10ml VO.
+Tamarine — 1 cp VO à noite por 7 dias.
+Bisacodil (Dulcolax) 5mg — 1 cp VO.
+```
+
+### Diabetes (gestante)  ·  CID O24
+
+**🏠 Casa — Prescrição — Casa**
+```
+Insulina (esquema conforme glicemia).
+```
+
+### Diarreia (gestante)  ·  CID A09
+
+**🏠 Casa — Prescrição — Casa**
+```
+Soro de reidratação oral.
+Floratil 200mg — 1 cp VO de 8/8h por 3 dias.
+Enterogermina — 5ml VO de 8/8h por 3 dias.
+```
+
+### Doença hemorroidária (gestante)  ·  CID O22.4
+
+**🏠 Casa — Prescrição — Casa**
+```
+Diosmina + hesperidina (Proctyl, Daflon) tópico — aplicar na região.
+```
+
+### Dor (gestante)  ·  CID R52
+
+**💉 PS / Sala — Dor intensa (na unidade)**
+```
+Dipirona 500mg EV se dor intensa.
+Decadron 1 amp IM se dor intensa.
+Tramal 1 amp EV se dor refratária.
+```
+
+**🏠 Casa — Prescrição — Casa**
+```
+Paracetamol 500mg VO de 4/4h (pode associar Prednisona 5mg VO de 12/12h se dor intensa).
+Miosan 5mg à noite por 3 dias, se cefaleia intensa.
+```
+
+### Dor abdominal (gestante)  ·  CID R10
+
+**🏠 Casa — Prescrição — Casa**
+```
+Escopolamina (Buscopan) 10mg — 1 cp VO de 8/8h.
+OU Escopolamina + paracetamol (Buscoduo) 10+500mg — 1 cp VO de 8/8h.
+OU Ranitidina 150mg — 1 cp VO de 8/8h.
+```
+
+### Epigastralgia (gestante)  ·  CID K21
+
+**🏠 Casa — Prescrição — Casa**
+```
+Simeco Plus (hidróxido de alumínio + hidróxido de magnésio + simeticona) — 10ml VO de 8/8h.
+OU LuftaGastro Pro (alginato de sódio + bicarbonato de potássio) — 10ml VO de 8/8h.
+OU Hidróxido de alumínio (Mylanta Plus) — 10ml VO de 8/8h.
+```
+
+### Epilepsia (gestante)  ·  CID G40
+
+**💉 PS / Sala — Crise refratária**
+```
+Diazepam 5mg — 1 cp VO se na maternidade e refratária a outras medidas.
+```
+
+💡 Manter medicação usual, desde que NÃO seja Valproato de Sódio. Aumentar o esquema de ácido fólico no 1º trimestre.
+
+### Hipertensão (gestante)  ·  CID O10
+
+**💉 PS / Sala — Hipertensão aguda grave**
+```
+Nifedipino 20mg — 1 cp VO de 30/30 min.
+Hidralazina 5mg — 1 amp EV de 30/30 min.
+```
+
+**💉 PS / Sala — Crise hipertensiva / eclâmpsia (MgSO4)**
+```
+MgSO4 8ml + SF 0,9% 92ml — correr em 20 min em BIC (300ml/h).
+MgSO4 10ml + SG 5% 500ml — correr 100ml/h em BIC.
+```
+
+**🏠 Casa — Crônica / leve**
+```
+Metildopa 250mg
+Tomar 1 a 2 comprimidos VO até de 6/6h.
+```
+
+### ITU / Cistite (gestante)  ·  CID O23
+
+**🏠 Casa — Prescrição — Casa**
+```
+<36 semanas: Nitrofurantoína 100mg — 1 cp VO de 6/6h por 5 dias.
+>36 semanas: Cefalexina 500mg — 1 cp VO de 6/6h por 7 dias.
+Amoxicilina ou Amoxicilina + clavulanato — de 8/8h por 4–7 dias.
+```
+
+### Náuseas e vômitos (gestante)  ·  CID O21
+
+**🏠 Casa — Prescrição — Casa**
+```
+Ondansetrona (Vonau, Zofran) 4mg — 1 cp VO de 8/8h.
+OU Meclizina (Meclin) 25mg — 1 cp VO de 8/8h.
+OU Metoclopramida (Plasil) 4mg — 1 cp/1 amp de 8/8h.
+OU Dimenidrinato (Dramin) 40 gotas/1cp/1 amp de 8/8h.
+OU Ranitidina 150mg — 1 cp VO de 8/8h.
+```
+
+### Pielonefrite (gestante)  ·  CID O23
+
+**🏥 Internação — Prescrição — Internação**
+```
+Cefuroxima 750mg EV de 8/8h — até ficar afebril e trocar por VO, completando 10–14 dias.
+OU Cefepima 2g EV de 8/8h ou de 12/12h.
+```
+
+### Pneumonia / Sinusite / Amigdalite (gestante)  ·  CID J18 · J01 · J03
+
+**🏠 Casa — Prescrição — Casa**
+```
+Amoxicilina 500mg — 1 cp VO de 8/8h.
+OU Amoxicilina + clavulanato (Clavulin) 875+125mg — 1 cp VO de 12/12h.
+OU Azitromicina 500mg — 1 cp VO 1x ao dia por 5 dias.
+```
+
+### Prurido (gestante)  ·  CID L29
+
+**🏠 Casa — Prescrição — Casa**
+```
+Levocetirizina (Zina) 5mg — 1 cp VO.
+OU Loratadina 10mg — 1 cp VO.
+OU Hidroxizina (Hixizine) 25mg — 1 cp VO.
+OU Fexofenadina (Allegra) 120mg — 1 cp VO.
+```
+
+### Síndrome gripal (gestante)  ·  CID J06
+
+**🏠 Casa — Prescrição — Casa**
+```
+Beclometasona spray nasal — 2 jatos em cada narina de 12/12h.
+OU Budesonida spray nasal — 2 jatos em cada narina de 12/12h.
+Bromelin S — 10ml de 12/12h.
+Loratadina 10mg — 1 cp VO 1x ao dia.
+```
+
+### Tricomoníase (gestante)  ·  CID A59
+
+**🏠 Casa — Prescrição — Casa**
+```
+Metronidazol 250mg — 2 cp de 12/12h por 7 dias.
+OU Metronidazol 250mg — 8 cp VO dose única.
+```
+
+### Vaginose (gestante)  ·  CID N76
+
+**🏠 Casa — Prescrição — Casa**
+```
+Metronidazol vaginal — 1 dosador 1x à noite por 5 dias.
+```
+
+### ⛔ NÃO usar em gestante
+
+🚩 **Alarme:** NÃO prescrever em gestantes: AINEs · Sulfametoxazol + trimetoprima · Valproato de sódio (epilepsia).
+
+💡 Lista de contraindicações frequentes. Sempre checar categoria de risco na gestação antes de prescrever.
+
+
 ## 📝 Modelos / Bônus
 
 ### Bulário rápido por sintoma
@@ -3007,6 +3232,17 @@ Nivux — 1 cp de 12/12 horas por 3 dias.
 Trok-N pomada — aplicar fina camada sobre lesão 1–2x por dia, por 7–10 dias.
 ```
 
+### Conduta / Alta
+
+**📄 Modelo — Modelo**
+```
+Medicação na unidade + conduta para casa.
+Orientações gerais. Oriento sinais de alarme. Prescrevo sintomáticos.
+Explico o uso correto das medicações. Oriento retorno caso haja sinal de alarme ou piora.
+Converso com o paciente e esclareço dúvidas. Explico a conduta aplicada; o paciente aceita, entende e concorda.
+Alta médica.
+```
+
 ### Drenagem de abscesso
 
 **📄 Modelo — Modelo**
@@ -3016,6 +3252,54 @@ Anestesia local (agulha marrom ou preta, mais finas).
 Incisão pequena com lâmina 11 + Kelly para ampliar se necessário. Drenagem.
 Colocar gaze dentro da loja se não houver drenagem espontânea.
 Curativo: gaze + micropore.
+```
+
+### Exame físico — frases direcionadas
+
+**📄 Modelo — Geral (resumido)**
+```
+Bom estado geral, corado, hidratado, acianótico, anictérico, afebril.
+Murmúrios vesiculares presentes bilateralmente, sem ruídos adventícios, eupneico em ar ambiente.
+BRNF 2T, sem sopros, pulsos cheios, TEC <2s.
+Abdome flácido, plano, indolor à palpação.
+Membros: sem edema, sem dor à palpação, sem sinais de TVP, TEC <3s, pulsos amplos e simétricos.
+Neuro: Glasgow 15, sem sinais meníngeos, sem déficits focais.
+```
+
+**📄 Modelo — ORL / Pescoço / Oroscopia**
+```
+Oroscopia: sem evidências de hiperemia, adenomegalias, abaulamentos patológicos, placas ou exsudatos.
+Pescoço: traqueia centrada, musculatura tópica, sem alterações cutâneas à inspeção, ausência de massas ou tumorações à palpação.
+Orofaringe sem alterações à inspeção, sem linfonodomegalia cervical.
+Orofaringe com discreta hiperemia e edema, sem exsudato. Ausência de linfonodomegalia cervical palpável.
+Orofaringe com amígdalas hiperemiadas e hipertrofiadas, com exsudato puntiforme esbranquiçado. Sem linfonodomegalia cervical palpável.
+```
+
+**📄 Modelo — Otoscopia**
+```
+Otoscopia normal: coloração perolácea, íntegra, triângulo luminoso de Politzer presente, impressão do cabo do martelo, sem secreção.
+Otite média aguda: MT hiperemiada, abaulada, perfuração puntiforme com saída de secreção purulenta.
+OD: MT com discreta opacidade, sem abaulamento, sem perfuração.
+Cerume: massa marrom/amarelada em forma de rolha, pode impossibilitar a visualização da MT.
+Otite externa: MT normal, secreção e edema no conduto auditivo externo.
+```
+
+**📄 Modelo — Oftalmo / Ombro / Coluna / Toque retal**
+```
+Olho esquerdo: hiperemia conjuntival difusa, secreção serosa/aquosa discreta, sem secreção purulenta, sem edema palpebral importante, córnea sem opacidades, reflexo fotomotor preservado. Olho direito sem alterações.
+Ombro: sem sinais flogísticos, discreta limitação por dor, sem deformidades, neurovascular distal preservado.
+Coluna lombar discretamente dolorosa à palpação paravertebral, sem deformidades, mobilidade preservada, sem déficits neurológicos em MMII.
+Cervicalgia com contratura muscular, dor à palpação e limitação de mobilidade, sem déficits neurológicos.
+Anoperíneo/toque retal: pele e mucosa íntegras, esfíncter normotenso, sem tumorações, fezes em ampola retal pastosas, sem melena em dedo de luva.
+```
+
+**📄 Modelo — Resumo — antecedentes**
+```
+#Medicamentos de uso contínuo: nega
+#Comorbidades prévias: nega
+#Alergias: nega alergias medicamentosas conhecidas.
+#Tabagista:
+#Gestante:
 ```
 
 ### Exames laboratoriais
@@ -3061,6 +3345,44 @@ Bloqueador neuromuscular: Succinilcolina (10mg/ml): misturar o pó em 10ml SF, a
 IOT: checar ausculta.
 Ventilador: Modo VCV, FiO2 100%, PEEP 6 a 10, FR 16, Tinsp 1,0, VC (4–6 ml/kg predito) ≈ 420 ml.
 Sedação em BIC: Fentanil 4 amp + 500ml SF a 10 ml/h E Midazolam 4 amp + 500ml SF a 10 ml/h.
+```
+
+### Medicações na unidade (IM / EV)
+
+**💉 PS / Sala — Analgésicos / AINE / corticoide**
+```
+Cetoprofeno 50mg/mL (2mL) — aplicar 1 amp IM agora.
+Dipirona sódica 500mg/mL (2mL) — aplicar 1 amp IM agora.
+Dexametasona 4mg/mL — aplicar 1 amp IM agora.
+Diclofenaco sódico 25mg/mL (3mL) — aplicar 1 amp IM agora.
+```
+
+**💉 PS / Sala — Sintomáticos (náusea / vômito / gástrico)**
+```
+Ondansetrona 2mg/mL — aplicar 1 amp IM agora.
+Bromoprida 5mg/mL (2mL) — aplicar 1 amp IM agora.
+Metoclopramida 5mg/mL (2mL) — aplicar 1 amp IM agora.
+Dimenidrinato + piridoxina 50+50mg/mL (1mL) [Dramin B6] — aplicar 1 amp IM profundo agora.
+Omeprazol 40mg (pó liofilizado) — diluir em 10mL do diluente próprio e fazer EV lento agora.
+```
+
+**💉 PS / Sala — Antiespasmódicos**
+```
+Escopolamina simples 20mg/mL (1mL) [Buscopan] — aplicar 1 amp IM agora.
+Escopolamina + dipirona [Buscopan composto] — aplicar 1 amp IM agora.
+```
+
+**💉 PS / Sala — Opioides (dor forte / refratária)**
+```
+Tramadol 50mg (1mL): 1 amp + SF 0,9% 100mL EV, correr lento em 20 minutos.
+Morfina 10mg/mL (1mL) EV diluída: diluir 1 amp (1mL) + 9mL AD (=1mg/mL); aplicar ___ mL (___ mg) EV lento agora (ex: 2 a 3 mL).
+Morfina 10mg/mL (1mL) IM pura: aplicar ___ mL IM profundo agora (0,3 a 0,5 mL para analgesia).
+```
+
+**💉 PS / Sala — Outros**
+```
+Prometazina 25mg/mL (2mL) [Fenergan] — aplicar 1 amp IM profundo agora.
+Benzilpenicilina benzatina 1.200.000 UI [Benzetacil] — diluir com 4mL AD, aplicar 1 F/A IM profundo agora.
 ```
 
 ### Prescrição de Ceftriaxona
@@ -3109,4 +3431,493 @@ Oriento sinais de alarme e retorno se necessário. Compreendeu. Alta em BEG.
 ```
 
 💡 Esqueleto universal: copiar e editar. Sempre documentar SSVV na alta, alarmes pesquisados e negativos, orientação de retorno compreendida.
+
+
+## 💊 Formulário SUS
+
+### Formulário SUS — A
+
+**📄 Modelo — Medicamentos (A)**
+```
+abacavir, sulfato (ABC) 20 mg/mL solução oral  — disp. em SAE/IST/AIDS
+abacavir, sulfato (ABC) 300 mg comprimido  — disp. em SAE/IST/AIDS
+aciclovir 30 mg/g (3%) pomada oftálmica  — disp. em unidades de referência · Exclusivamente para pacientes em tratamento em Hospital Dia/ AMAE/ AE e em unidades de referência em Oftalmologia
+aciclovir 50 mg/g (5%) creme  — disp. em unidades de referência · Exclusivamente para pacientes em tratamento em SAE/IST/AIDS, Centro de Especialidades Odontológicas, Casa Ser, Hospital Dia/ AMAE/ AE
+aciclovir 200 mg comprimido  — disp. nas Unidades de Saúde
+aciclovir 400 mg comprimido  — disp. em SAE/IST/AIDS · Exclusivamente para pacientes em tratamento nestas unidades
+ácido acetilsalicílico 100 mg comprimido  — disp. nas Unidades de Saúde
+ácido fólico 0,2 mg/mL solução oral (gotas)  — disp. nas Unidades de Saúde
+ácido fólico 5 mg comprimido  — disp. nas Unidades de Saúde
+ácido folínico 5 mg/mL solução oral  — disp. em unidades de referência · Exclusivamente para pacientes em tratamento de toxoplasmose
+ácido paraminossalicílico 4g sachê granulado revestido  — disp. em unidades de referência - exclusivo para tratamento de esquemas especiais de TB/MNT
+adapaleno 1 mg/g (0,1%) gel  — disp. nas Unidades de Saúde
+albendazol 40 mg/mL suspensão oral  — disp. nas Unidades de Saúde
+albendazol 400 mg comprimido mastigável  — disp. nas Unidades de Saúde
+alendronato de sódio 70 mg comprimido  — disp. nas Unidades de Saúde · Exclusivamente para o tratamento da osteopenia/osteoporose. · Necessário formulário para prescrição e dispensação
+alfapeginterferona 2A 180 mcg seringa preenchida  — disp. em unidades de referência para tratamento de hepatites virais · Exclusivamente para pacientes em tratamento de hepatites virais
+algestona acetofenida 150 mg/mL + enantato de estradiol 10 mg/mL solução injetável  — disp. nas Unidades de Saúde
+alopurinol 100 mg comprimido  — disp. nas Unidades de Saúde
+amiodarona, cloridrato 200 mg comprimido  — disp. nas Unidades de Saúde
+amitriptilina, cloridrato 25 mg comprimido  — disp. nas Unidades de Saúde
+amoxicilina 50 mg/mL pó para suspensão oral  — disp. nas Unidades de Saúde
+amoxicilina 500 mg cápsula  — disp. nas Unidades de Saúde
+anlodipino, besilato 5 mg comprimido  — disp. nas Unidades de Saúde
+anlodipino, besilato 10 mg comprimido  — disp. nas Unidades de Saúde
+atazanavir, sulfato (ATV) 300 mg cápsula  — disp. em SAE/IST/AIDS
+atenolol 50 mg comprimido  — disp. nas Unidades de Saúde
+atorvastatina 10 mg comprimido  — disp. em SAE/IST/AIDS · Exclusivamente para pacientes em tratamento nestas unidades
+azitromicina 40 mg/mL suspensão oral  — disp. nas Unidades de Saúde
+azitromicina 500 mg comprimido  — disp. nas Unidades de Saúde
+```
+
+💡 29 itens. Consulta de disponibilidade na rede (não é prescrição).
+
+### Formulário SUS — B
+
+**📄 Modelo — Medicamentos (B)**
+```
+beclometasona, dipropionato 50 mcg/dose pó, solução inalante ou aerossol oral  — disp. nas Unidades de Saúde
+beclometasona, dipropionato 200 mcg/dose aerossol oral  — disp. nas Unidades de Saúde
+beclometasona, dipropionato 50 mcg/dose aerossol nasal  — disp. nas Unidades de Saúde
+benzilpenicilina benzatina 600.000 UI pó para suspensão injetável fam  — disp. nas Unidades de Saúde
+benzilpenicilina benzatina 1.200.000 UI pó para suspensão injetável fam  — disp. nas Unidades de Saúde
+benzoilmetronidazol 40 mg/mL (equivalente a 25 mg de metronidazol) suspensão oral ou secnidazol 30 mg/mL suspensão oral  — disp. nas Unidades de Saúde
+biperideno, cloridrato 2 mg comprimido  — disp. nas Unidades de Saúde
+brimonidina 2 mg/mL (0,2%) solução oftálmica  — disp. em unidades de referência · Exclusivamente para pacientes em tratamento de glaucoma. Prescrição por médico oftalmologista das unidades da rede municipal
+bupropiona, cloridrato 150 mg comprimido  — disp. em unidades de referência · Exclusivamente para pacientes cadastrados no Programa de Controle de Tabagismo do SUS
+```
+
+💡 9 itens. Consulta de disponibilidade na rede (não é prescrição).
+
+### Formulário SUS — C
+
+**📄 Modelo — Medicamentos (C)**
+```
+cabergolina 0,5 mg comprimido  — disp. em SAE/IST/AIDS · Exclusivamente para pacientes em tratamento nestas unidades
+captopril 25 mg comprimido  — disp. nas Unidades de Saúde
+carbamazepina 20 mg/mL (2%) suspensão oral  — disp. nas Unidades de Saúde
+carbamazepina 200 mg comprimido  — disp. nas Unidades de Saúde
+carbonato de cálcio 1.250 mg (equivalente a 500 mg de Ca++) comprimido  — disp. nas Unidades de Saúde
+carbonato de cálcio 1.500 mg (equivalente a 600 mg de Ca++) + colecalciferol (vit D3) 400 UI comprimido  — disp. nas Unidades de Saúde
+carbonato de lítio 300 mg comprimido  — disp. nas Unidades de Saúde
+carvedilol 6,25 mg comprimido  — disp. nas Unidades de Saúde
+carvedilol 12,5 mg comprimido  — disp. nas Unidades de Saúde
+cefalexina 50 mg/mL suspensão oral  — disp. nas Unidades de Saúde
+cefalexina comprimido 500 mg  — disp. nas Unidades de Saúde
+cetoconazol 20 mg/g (2%) creme  — disp. nas Unidades de Saúde
+cetoconazol 2% shampoo  — disp. nas Unidades de Saúde
+cianocobalamina (vit. B12) 2,5 mg/mL (2.500 mcg) solução injetável  — disp. nas Unidades de Saúde
+ciprofloxacino, cloridrato 500 mg comprimido  — disp. nas Unidades de Saúde
+ciproterona 50 mg comprimido  — disp. em unidades de referência · Exclusivamente para pacientes cadastrados no Programa de Saúde Integral da População LGBTIA+ da SMS
+claritromicina 50 mg/mL pó para suspensão oral  — disp. nas Unidades de Saúde
+claritromicina 500 mg comprimido  — disp. nas Unidades de Saúde e em unidades de referência para tratamento de esquemas especiais de TB/MNT
+clindamicina, cloridrato 300 mg cápsula  — disp. nas Unidades de Saúde
+clofazimina 100 mg comprimido  — disp. em unidades de referência - exclusivo para tratamento de esquemas especiais de TB/MNT
+clofazimina 100 mg + clofazimina 50 mg + rifampicina 300 mg + dapsona 100 mg (multibacilar) adulto comprimidos em blister  — disp. em unidades de referência para o tratamento da hanseníase
+clofazimina 150 mg + clofazimina 50 mg + rifampicina 300 mg + rifampicina 150 mg + dapsona 50 mg (multibacilar) pediátrico comprimidos em blister  — disp. em unidades de referência para o tratamento da hanseníase
+clomipramina, cloridrato 25 mg comprimido  — disp. nas Unidades de Saúde
+clonazepam 2,5 mg/mL (0,25%) solução oral gotas  — disp. nas Unidades de Saúde
+clonazepam 0,5 mg comprimido  — disp. nas Unidades de Saúde
+clonazepam 2 mg comprimido  — disp. nas Unidades de Saúde
+cloranfenicol 5 mg/g + retinol, acetato 10.000 UI/g + aminoácidos 25 mg/g + metionina 5 mg/g pomada oftálmica  — disp. nas Unidades de Saúde
+cloreto de sódio 9 mg/mL (0,9 % - 0,154 mEq/mL) solução injetável ampola  — disp. nas Unidades de Saúde
+cloreto de sódio 9 mg/mL (0,9%) solução nasal gotas  — disp. nas Unidades de Saúde
+clorpromazina, cloridrato 40 mg/mL (4%) solução oral (gotas)  — disp. nas Unidades de Saúde
+clorpromazina, cloridrato 25 mg comprimido  — disp. nas Unidades de Saúde
+clorpromazina, cloridrato 100 mg comprimido  — disp. nas Unidades de Saúde
+colecalciferol (vitamina D3) 200 UI a 220 UI/gota solução oral  — disp. em unidades de referência
+Dispensação sob protocolo (em elaboração)
+Cynara scolymus L. (alcachofra) 24 a 48 mg derivados de ácido cafeoilquínico expressos em ácido clorogênico  — disp. nas Unidades de Saúde · Exclusivamente para pacientes em tratamento na Rede Municipal de Saúde
+Orientação técnica para prescrição e dispensação
+```
+
+💡 36 itens. Consulta de disponibilidade na rede (não é prescrição).
+
+### Formulário SUS — D
+
+**📄 Modelo — Medicamentos (D)**
+```
+daclatasvir 60 mg comprimido  — disp. em unidades de referência para tratamento de hepatites virais · Exclusivamente para pacientes em tratamento de hepatites virais
+dapsona 100 mg comprimido  — disp. em SAE/IST/AIDS
+darunavir (DRV) 75 mg comprimido  — disp. em SAE/IST/AIDS
+darunavir (DRV) 150 mg comprimido  — disp. em SAE/IST/AIDS
+darunavir (DRV) 600 mg comprimido  — disp. em SAE/IST/AIDS
+darunavir (DRV) 800 mg comprimido  — disp. em SAE/IST/AIDS
+dexametasona 0,1 mg/mL solução oral  — disp. nas Unidades de Saúde
+dexametasona 1 mg/g (0,1%) creme  — disp. nas Unidades de Saúde
+dexametasona 1 mg/mL (0,1%) suspensão oftálmica  — disp. em unidades de referência · Exclusivamente para pacientes em tratamento por médico oftalmologista
+dexclorfeniramina, maleato 0,4 mg/mL solução oral  — disp. nas Unidades de Saúde
+dextrana 1 mg/mL + hipromelose 3 mg/mL (0,3%) solução oftálmica  — disp. nas Unidades de Saúde
+diazepam 5 mg comprimido  — disp. nas Unidades de Saúde
+diclofenaco 50 mg comprimido  — disp. nas Unidades de Saúde
+digoxina 0,25 mg comprimido  — disp. nas Unidades de Saúde
+dimenidrinato 25 mg/mL + piridoxina, cloridrato (vit. B6) 5 mg/mL solução oral gotas  — disp. nas Unidades de Saúde
+dipirona sódica 500 mg/mL solução oral gotas  — disp. nas Unidades de Saúde
+dipirona sódica 500 mg comprimido  — disp. nas Unidades de Saúde
+dolutegravir 50 mg (DTG) comprimido  — disp. em SAE/IST/AIDS
+doxazosina 2 mg comprimido  — disp. nas Unidades de Saúde
+doxiciclina, cloridrato 100 mg comprimido  — disp. nas Unidades de Saúde
+```
+
+💡 20 itens. Consulta de disponibilidade na rede (não é prescrição).
+
+### Formulário SUS — E
+
+**📄 Modelo — Medicamentos (E)**
+```
+efavirenz (EFZ) 30 mg/mL solução oral  — disp. em SAE/IST/AIDS
+efavirenz (EFZ) 200 mg comprimido  — disp. em SAE/IST/AIDS
+efavirenz (EFZ) 600 mg comprimido  — disp. em SAE/IST/AIDS
+enalapril, maleato 5 mg comprimido  — disp. nas Unidades de Saúde
+enalapril, maleato 20 mg comprimido  — disp. nas Unidades de Saúde
+enfuvirtida (T-20) 90 mg/mL pó para solução injetavel  — disp. em SAE/IST/AIDS
+enoxaparina sódica 20 mg (equivalente a 100 mg/mL) solução injetável seringa 0,2 mL SC  — disp. em unidades de referência
+Dispensação exclusiva para usuários em tratamento na Rede Municipal de Saúde  — Necessário formulário para prescrição e dispensação
+enoxaparina sódica 40 mg (equivalente a 100 mg/mL) solução injetável seringa 0,4 mL SC  — disp. em unidades de referência
+Dispensação exclusiva para usuários em tratamento na Rede Municipal de Saúde  — Necessário formulário para prescrição e dispensação
+enoxaparina sódica 60 mg (equivalente a 100 mg/mL) solução injetável seringa 0,6 mL SC  — disp. em unidades de referência
+Dispensação exclusiva para usuários em tratamento na Rede Municipal de Saúde  — Necessário formulário para prescrição e dispensação
+entecavir 0,5 mg comprimido  — disp. em unidades de referência para tratamento de hepatites virais · Exclusivamente para pacientes em tratamento de hepatites virais
+escopolamina 10 mg/mL solução oral gotas ou comprimido 10 mg  — disp. nas Unidades de Saúde
+escopolamina 6,67 mg/mL + dipirona sódica 333,4 mg/mL solução oral gotas  — disp. nas Unidades de Saúde
+espiramicina 500 mg (equivalente a 1.500.000 UI) comprimido  — disp. em unidades de referência · Exclusivamente para pacientes em tratamento de toxoplasmose
+espironolactona 25 mg comprimido  — disp. nas Unidades de Saúde
+espironolactona 100 mg comprimido  — disp. nas Unidades de Saúde
+estradiol, valerato 1mg comprimido  — disp. nas Unidades de Saúde
+estradiol, valerato 2mg comprimido  — disp. em unidades de referência · Exclusivamente para pacientes cadastrados no Programa de Saúde Integral da População LGBTIA+ da SMS
+estriol 1 mg/g (0,1%) creme vaginal  — disp. nas Unidades de Saúde
+etambutol, cloridrato 400 mg comprimido  — disp. em unidades de referência - exclusivo para tratamento de esquemas especiais de TB/MNT
+etionamida 250 mg comprimido  — disp. em unidades de referência - exclusivo para tratamento de esquemas especiais de TB/MNT
+etonogestrel 68 mg implante subdérmico  — disp. em unidades de referência · Necessário formulário para procedimento
+etravirina (ETR) 100 mg comprimido  — disp. em SAE/IST/AIDS
+etravirina (ETR) 200 mg comprimido  — disp. em SAE/IST/AIDS
+```
+
+💡 26 itens. Consulta de disponibilidade na rede (não é prescrição).
+
+### Formulário SUS — F
+
+**📄 Modelo — Medicamentos (F)**
+```
+fenitoína ou fenitoína sódica 100 mg comprimido  — disp. nas Unidades de Saúde
+fenobarbital 100 mg comprimido  — disp. nas Unidades de Saúde
+fenobarbital 40 mg/mL (4%) solução oral gotas  — disp. nas Unidades de Saúde
+fenoterol 5 mg/mL solução inalante gotas  — disp. nas Unidades de Saúde
+finasterida 5 mg comprimido  — disp. em unidades de referência · Exclusivamente para pacientes em tratamento por urologista
+fluconazol 100 mg cápsula  — disp. em SAE/IST/AIDS · Exclusivamente para pacientes em tratamento nestas unidades
+fluconazol 150 mg cápsula  — disp. nas Unidades de Saúde
+fluoxetina, cloridrato 20 mg cápsula  — disp. nas Unidades de Saúde
+folinato de cálcio 15 mg comprimido  — disp. em unidades de referência · Exclusivamente para pacientes em tratamento de toxoplasmose
+formoterol 6 mcg + budesonida 200 mcg pó em cápsula para inalação  — disp. nas Unidades de Saúde · Exclusivamente para pacientes em tratamento na Rede Municipal de Saúde
+formoterol 12 mcg + budesonida 400 mcg pó em cápsula para inalação  — disp. nas Unidades de Saúde · Exclusivamente para pacientes em tratamento na Rede Municipal de Saúde
+furosemida 40 mg comprimido  — disp. nas Unidades de Saúde
+```
+
+💡 12 itens. Consulta de disponibilidade na rede (não é prescrição).
+
+### Formulário SUS — G
+
+**📄 Modelo — Medicamentos (G)**
+```
+gabapentina 300 mg comprimido  — disp. em SAE/IST/AIDS · Exclusivamente para pacientes em tratamento nestas unidades
+gliclazida 60 mg comprimido de liberação prolongada  — disp. nas Unidades de Saúde
+Glycine max (L.) Merril. (isoflavonas de soja) mínimo de 50 mg de isoflavonas totais  — disp. nas Unidades de Saúde · Exclusivamente para pacientes em tratamento na Rede Municipal de Saúde
+Orientação técnica para prescrição e dispensação
+```
+
+💡 4 itens. Consulta de disponibilidade na rede (não é prescrição).
+
+### Formulário SUS — H
+
+**📄 Modelo — Medicamentos (H)**
+```
+haloperidol 2 mg/mL (0,2%) solução oral gotas  — disp. nas Unidades de Saúde
+haloperidol 1 mg comprimido  — disp. nas Unidades de Saúde
+haloperidol 5 mg comprimido  — disp. nas Unidades de Saúde
+haloperidol, decanoato 70,52 mg/mL (equivalente a 50 mg/mL de haloperidol) solução injetável  — disp. nas Unidades de Saúde
+Harpagophytum procumbens (Burch.) DC. (garra do diabo) harpagosídeo 5 mg a 50 mg comprimido  — disp. nas Unidades de Saúde · Exclusivamente para pacientes em tratamento na Rede Municipal de Saúde
+Orientação técnica para prescrição e dispensação
+hidroclorotiazida 25 mg comprimido  — disp. nas Unidades de Saúde
+hidrocortisona, acetato 10 mg/g (1%) creme  — disp. nas Unidades de Saúde
+hidróxido de alumínio 60 mg/mL a 63 mg/mL suspensão oral  — disp. nas Unidades de Saúde
+hipoclorito de sódio 25 mg/mL de cloro ativo (2,5 %) solução
+disponível nas Unidades de Saúde
+```
+
+💡 11 itens. Consulta de disponibilidade na rede (não é prescrição).
+
+### Formulário SUS — I
+
+**📄 Modelo — Medicamentos (I)**
+```
+ibuprofeno 50 mg/mL suspensão oral gotas  — disp. nas Unidades de Saúde
+ibuprofeno 300 mg comprimido  — disp. nas Unidades de Saúde
+imipramina, cloridrato 25 mg comprimido  — disp. nas Unidades de Saúde
+imiquimode 50 mg/g (5%) creme  — disp. em SAE/IST/AIDS · Exclusivamente para pacientes em tratamento nestas unidades
+imunoglobulina anti Rho (D) 250 mcg a 300 mcg solução injetável fam  — disp. em unidades de referência
+Exclusivo para procedimento
+imunoglobulina humana anti-hepatite B 1000 UI/ 5 mL solução injetável  — disp. em unidades de referência para tratamento de hepatites virais · Exclusivamente para pacientes em tratamento de hepatites virais
+insulina humana NPH 100 UI/mL suspensão injetável frasco  — disp. nas Unidades de Saúde
+insulina humana NPH 100 UI/mL suspensão injetável caneta  — disp. nas Unidades de Saúde
+Orientação técnica para prescrição e dispensação  — Necessário formulário para dispensação
+Insulina humana NPH 100 UI/mL suspensão injetável carpule / tubete  — disp. nas Unidades de Saúde
+Orientação técnica para prescrição e dispensação  — Necessário formulário para dispensação
+insulina humana regular 100 UI/mL solução injetável frasco  — disp. nas Unidades de Saúde
+insulina humana regular 100 UI/mL solução injetável caneta  — disp. nas Unidades de Saúde
+Orientação técnica para prescrição e dispensação  — Necessário formulário para dispensação
+insulina humana regular 100 UI/mL solução injetável carpule / tubete  — disp. nas Unidades de Saúde
+Orientação técnica para prescrição e dispensação  — Necessário formulário para dispensação
+ipratrópio, brometo 0,25 mg/mL (0,025%) solução inalante gotas  — disp. nas Unidades de Saúde
+isoniazida 100 mg comprimido  — disp. em unidades de referência - medicamento exclusivo para tratamento de esquemas especiais de TB/MNT; tratamento da Infeccção Latente da Tuberculose (ILTB) e tratamento de crianças
+isoniazida 300 mg comprimido
+medicamento utilizado no tratamento de ILTB em unidades IST/Aids; tratamento de ILTB, associado a rifapentina 150mg, exclusivo em unidades de referência
+isoniazida 150 mg + rifampicina 300 mg comprimido
+medicamento exclusivo para tratamento com esquema básico de TB nas Unidades de Saúde; tratamento de esquemas especiais de TB em unidades de referência
+isoniazida 75 mg + rifampicina 150 mg comprimido
+medicamento exclusivo para tratamento com esquema básico de TB nas Unidades de Saúde; tratamento de esquemas especiais de TB em unidades de referência
+isossorbida, dinitrato 5 mg comprimido sublingual ou propatilnitrato 10 mg comprimido  — disp. nas Unidades de Saúde
+isossorbida, mononitrato 20 mg comprimido  — disp. nas Unidades de Saúde
+itraconazol 100 mg cápsula  — disp. nas Unidades de Saúde
+ivermectina 6 mg comprimido  — disp. nas Unidades de Saúde
+```
+
+💡 29 itens. Consulta de disponibilidade na rede (não é prescrição).
+
+### Formulário SUS — L
+
+**📄 Modelo — Medicamentos (L)**
+```
+lamivudina (3TC) 10 mg/mL solução oral  — disp. em SAE/IST/AIDS
+lamivudina (3TC) 150 mg comprimido  — disp. em SAE/IST/AIDS
+levodopa 100 mg + benserazida 25 mg cápsula de liberação prolongada (HBS)  — disp. em unidades de referência
+levodopa 100 mg + benserazida 25 mg comprimido  — disp. em unidades de referência
+levodopa 100 mg + benserazida 25 mg comprimido dispersível  — disp. em unidades de referência
+levodopa 200 mg + benserazida 50 mg comprimido  — disp. em unidades de referência
+levodopa 250 mg + carbidopa 25 mg comprimido  — disp. em unidades de referência
+levofloxacino 250 mg comprimido  — disp. em unidades de referência - exclusivo para tratamento de esquemas especiais de TB/MNT
+levofloxacino 500 mg comprimido  — disp. em unidades de referência - exclusivo para tratamento de esquemas especiais de TB/MNT
+levonorgestrel 0,75 mg comprimido cartela  — disp. nas Unidades de Saúde
+levonorgestrel 0,15 mg + etinilestradiol 0,03 mg comprimido cartela  — disp. nas Unidades de Saúde
+levonorgestrel 19,5 mg sistema intrauterino (SIU)  — disp. em unidades de referência · Necessário formulário para procedimento
+levonorgestrel 52 mg sistema intrauterino (SIU)  — disp. em unidades de referência · Necessário formulário para procedimento
+levotiroxina sódica 12,5 mcg comprimido  — disp. nas Unidades de Saúde
+levotiroxina sódica 25 mcg comprimido  — disp. nas Unidades de Saúde
+levotiroxina sódica 50 mcg comprimido  — disp. nas Unidades de Saúde
+levotiroxina sódica 100 mcg comprimido  — disp. nas Unidades de Saúde
+linezolida 600 mg comprimido  — disp. em unidades de referência - exclusivo para tratamento de esquemas especiais de TB/MNT
+loperamida 2 mg comprimido  — disp. em SAE/IST/AIDS · Exclusivamente para pacientes em tratamento nestas unidades
+lopinavir (LPV) 80 mg/mL + ritonavir (r) 20 mg/mL solução oral  — disp. em SAE/IST/AIDS
+lopinavir (LPV) 100 mg + ritonavir (r) 25 mg comprimido  — disp. em SAE/IST/AIDS
+loratadina 1 mg/mL solução oral  — disp. nas Unidades de Saúde
+loratadina 10 mg comprimido  — disp. nas Unidades de Saúde
+losartana potássica 50 mg comprimido  — disp. nas Unidades de Saúde
+```
+
+💡 24 itens. Consulta de disponibilidade na rede (não é prescrição).
+
+### Formulário SUS — M
+
+**📄 Modelo — Medicamentos (M)**
+```
+maraviroque (MVQ) 150 mg comprimido  — disp. em SAE/IST/AIDS
+Maytenus ilicifolia Mart. ex. Reissek. (espinheira santa) taninos totais 13 mg a 20 mg comprimido  — disp. nas Unidades de Saúde · Exclusivamente para pacientes em tratamento na Rede Municipal de Saúde
+Orientação técnica para prescrição e dispensação
+mebendazol 20 mg/mL suspensão oral  — disp. nas Unidades de Saúde
+medroxiprogesterona, acetato 10 mg comprimido  — disp. nas Unidades de Saúde
+medroxiprogesterona, acetato 25 mg + estradiol cipionato 5 mg suspensão injetável  — disp. nas Unidades de Saúde
+medroxiprogesterona, acetato 150 mg/mL suspensão injetável  — disp. nas Unidades de Saúde
+metformina, cloridrato 500 mg comprimido  — disp. nas Unidades de Saúde
+metformina, cloridrato 850 mg comprimido  — disp. nas Unidades de Saúde
+metildopa 250 mg comprimido  — disp. nas Unidades de Saúde
+metilfenidato 10 mg comprimido  — disp. em unidades de referência · Exclusivamente para os pacientes em tratamento na Rede Municipal de Saúde
+Orientação técnica para prescrição
+metoclopramida, cloridrato 10 mg comprimido  — disp. nas Unidades de Saúde
+metronidazol 100 mg/g (10%) creme ou gel vaginal  — disp. nas Unidades de Saúde
+metronidazol 250 mg comprimido  — disp. nas Unidades de Saúde
+miconazol, nitrato 20 mg/g (2%) creme vaginal  — disp. nas Unidades de Saúde
+Mikania glomerata spreng (guaco) solução oral  — disp. nas Unidades de Saúde · Exclusivamente para pacientes em tratamento na Rede Municipal de Saúde
+Orientação técnica para prescrição e dispensação
+morfina, sulfato 30 mg comprimido de liberação modificada  — disp. em unidades de referência · Exclusivamente para pacientes em tratamento em Hospital Dia
+moxifloxacino 400 mg comprimido  — disp. em unidades de referência - exclusivo para tratamento de esquemas especiais de TB/MNT
+mupirocina 20 mg/g pomada bisnaga  — disp. em unidades de referência · Exclusivamente para pacientes em tratamento em Hospital Dia/ AMAE/ AE/ Centros de Exame da Mulher
+```
+
+💡 21 itens. Consulta de disponibilidade na rede (não é prescrição).
+
+### Formulário SUS — N
+
+**📄 Modelo — Medicamentos (N)**
+```
+naltrexona 50 mg comprimido  — disp. em UBS e CAPS AD
+nevirapina (NVP) 10 mg/mL suspensão oral  — disp. em SAE/IST/AIDS
+nevirapina (NVP) 200 mg comprimido  — disp. em SAE/IST/AIDS
+nicotina 2 mg goma de mascar  — disp. em unidades de referência · Exclusivamente para pacientes cadastrados no Programa de Controle de Tabagismo do SUS
+nicotina 7 mg adesivo transdérmico  — disp. em unidades de referência · Exclusivamente para pacientes cadastrados no Programa de Controle de Tabagismo do SUS
+nicotina 14 mg adesivo transdérmico  — disp. em unidades de referência · Exclusivamente para pacientes cadastrados no Programa de Controle de Tabagismo do SUS
+nicotina 21 mg adesivo transdérmico  — disp. em unidades de referência · Exclusivamente para pacientes cadastrados no Programa de Controle de Tabagismo do SUS
+nifedipino 20 mg comprimido liberação prolongada  — disp. nas Unidades de Saúde
+nirmatrelvir + ritonavir comprimidos revestidos  — disp. em unidades de referência
+Exclusivo para tratamento de COVID-19
+nistatina 100.000 UI/mL suspensão oral  — disp. nas Unidades de Saúde
+nitrofurantoína 100 mg comprimido  — disp. nas Unidades de Saúde
+noretisterona 0,35 mg comprimido cartela  — disp. nas Unidades de Saúde
+noretisterona, enantato 50 mg/mL + estradiol, valerato 5 mg/mL solução injetável  — disp. nas Unidades de Saúde
+norfloxacino 400 mg comprimido  — disp. nas Unidades de Saúde
+nortriptilina, cloridrato 25 mg comprimido  — disp. nas Unidades de Saúde
+```
+
+💡 16 itens. Consulta de disponibilidade na rede (não é prescrição).
+
+### Formulário SUS — O
+
+**📄 Modelo — Medicamentos (O)**
+```
+óleo mineral frasco  — disp. nas Unidades de Saúde
+omeprazol 20 mg cápsula  — disp. nas Unidades de Saúde
+oseltamivir 30 mg cápsula  — disp. nas Unidades de Saúde
+oseltamivir 45 mg cápsula  — disp. nas Unidades de Saúde
+oseltamivir 75 mg cápsula  — disp. nas Unidades de Saúde
+óxido de zinco 150 a 250 mg/g + retinol (vit. A) + colecalciferol pomada  — disp. nas Unidades de Saúde
+```
+
+💡 6 itens. Consulta de disponibilidade na rede (não é prescrição).
+
+### Formulário SUS — P
+
+**📄 Modelo — Medicamentos (P)**
+```
+paracetamol 200 mg/mL solução oral gotas  — disp. nas Unidades de Saúde
+paracetamol 500 mg comprimido  — disp. nas Unidades de Saúde
+pentoxifilina 400 mg comprimido  — disp. em unidades de referência de hanseníase
+periciazina 40 mg/mL (4%) solução oral gotas  — disp. nas Unidades de Saúde
+permetrina 10 mg/mL (1%) loção capilar  — disp. nas Unidades de Saúde
+permetrina 50 mg/mL (5%) creme ou loção  — disp. nas Unidades de Saúde
+pilocarpina, cloridrato 20 mg/mL (2%) solução oftálmica  — disp. em unidades de referência · Exclusivamente para pacientes em tratamento de glaucoma. Prescrição por médico oftalmologista das unidades da rede municipal
+pirazinamida 500 mg comprimido  — disp. em unidades de referência - exclusivo para tratamento de esquemas especiais de TB/MNT
+pirazinamida 150 mg comprimido dispersível  — disp. em unidades de referência - exclusivo para tratamento de TB em crianças e de esquemas especiais de TB/MNT
+piridoxina, cloridrato (vit. B6) 40 mg comprimido  — disp. nas Unidades de Saúde e em unidades de referência para tratamento de Tuberculose em condições específicas
+piridoxina, cloridrato (vit. B6) 50 mg comprimido  — disp. em unidades de referência - exclusivo para tratamento de TB em gestantes
+pirimetamina 25 mg comprimido  — disp. em unidades de referência · Exclusivamente para pacientes em tratamento de toxoplasmose
+pirimetamina 3 mg/mL solução oral  — disp. em unidades de referência · Exclusivamente para pacientes em tratamento de toxoplasmose
+pravastatina 20 mg comprimido  — disp. em SAE/IST/AIDS · Exclusivamente para pacientes em tratamento nestas unidades
+praziquantel 600 mg comprimido  — disp. em unidades de referência, utilizado no tratamento da esquistossomose
+prednisolona, fosfato sódico 4,02 mg/mL (equivalente a 3 mg/mL de prednisolona) solução oral  — disp. nas Unidades de Saúde
+prednisona 5 mg comprimido  — disp. nas Unidades de Saúde
+prednisona 20 mg comprimido  — disp. nas Unidades de Saúde
+primaquina 15 mg comprimido  — disp. em SAE/IST/AIDS
+progesterona 200 mg cápsula gelatinosa  — disp. nas Unidades de Saúde
+prometazina, cloridrato 25 mg comprimido  — disp. nas Unidades de Saúde
+propiltiuracila 100 mg comprimido  — disp. nas Unidades de Saúde
+propranolol, cloridrato 40 mg comprimido  — disp. nas Unidades de Saúde
+```
+
+💡 23 itens. Consulta de disponibilidade na rede (não é prescrição).
+
+### Formulário SUS — R
+
+**📄 Modelo — Medicamentos (R)**
+```
+raltegravir (RAL) 100 mg comprimido  — disp. em SAE/IST/AIDS
+raltegravir (RAL) 100 mg granulado sachê  — disp. em SAE/IST/AIDS
+raltegravir (RAL) 400 mg comprimido  — disp. em SAE/IST/AIDS
+retinol, acetato (vit. A) 50.000 UI/mL + colecalciferol (vit. D) 10.000 UI/mL solução oral gotas  — disp. nas Unidades de Saúde
+rifabutina 150 mg cápsula  — disp. em unidades de referência - exclusivo para o tratamento de TB para pacientes em uso de inibidores de protease
+rifampicina 20 mg/mL (2%) suspensão oral  — disp. em unidades de referência - exclusivo para tratamento de TB em crianças; cobertura de foco de meningites bacterianas e doenca miningocóccica; tratamento da Infeccção Latente da Tuberculose (ILTB); tratamento de esquemas especiais de TB
+rifampicina 300 mg cápsula  — disp. em unidades de referência - exclusivo para cobertura de foco de meningites bacterianas e doença meningocóccica; hidradenite supurativa; tratamento da Infeccção Latente da Tuberculose (ILTB); tratamento de esquemas especiais de TB/ MNT
+rifampicina 150 mg + isoniazida 75 mg + pirazinamida 400 mg + etambutol, cloridrato 275 mg comprimido
+medicamento exclusivo para tratamento de TB nas Unidades de Saúde; tratamento de esquemas especiais de TB em unidades de referência
+rifampicina 75 mg + isoniazida 50 mg + pirazinamida 150 mg comprimido dispersível  — disp. em unidades de referência - exclusivo para tratamento de tuberculose em crianças
+rifampicina 75 mg + isoniazida 50 mg comprimido dispersível  — disp. em unidades de referência - exclusivo para tratamento de tuberculose em crianças
+rifapentina 150 mg comprimido  — disp. em unidades de referência - exclusivo para tratamento da Infecção Latente de Tuberculose (ILTB)
+risperidona 2 mg comprimido  — disp. nas Unidades de Saúde
+ritonavir 100 mg/mL pó para suspensão oral  — disp. em SAE/IST/AIDS
+ritonavir (RTV) 100 mg comprimido  — disp. em SAE/IST/AIDS
+```
+
+💡 15 itens. Consulta de disponibilidade na rede (não é prescrição).
+
+### Formulário SUS — S
+
+**📄 Modelo — Medicamentos (S)**
+```
+sais para reidratação oral pó para solução oral  — disp. nas Unidades de Saúde
+salbutamol, sulfato 100 mcg/dose aerossol oral frasco  — disp. nas Unidades de Saúde
+sertralina 50 mg comprimido  — disp. nas Unidades de Saúde
+sinvastatina 10 mg comprimido  — disp. nas Unidades de Saúde
+sinvastatina 20 mg comprimido  — disp. nas Unidades de Saúde
+sinvastatina 40 mg comprimido  — disp. nas Unidades de Saúde
+sofosbuvir 400 mg comprimido revestido  — disp. em unidades de referência para tratamento de hepatites virais · Exclusivamente para pacientes em tratamento de hepatites virais
+sofosbuvir 400 mg + velpatasvir 100 mg comprimido revestido  — disp. em unidades de referência para tratamento de hepatites virais · Exclusivamente para pacientes em tratamento de hepatites virais
+sofosbuvir 400 mg + velpatasvir 100 mg + voxilaprevir 100 mg comprimido revestido  — disp. em unidades de referência para tratamento de hepatites virais · Exclusivamente para pacientes em tratamento de hepatites virais
+sofosbuvir 200 mg + velpatasvir 50 mg granulado  — disp. em unidades de referência para tratamento de hepatites virais · Exclusivamente para pacientes em tratamento de hepatites virais
+sulfadiazina 500 mg comprimido  — disp. em unidades de referência · Exclusivamente para pacientes em tratamento de toxoplasmose
+sulfadiazina 150 mg/mL solução oral  — disp. em unidades de referência · Exclusivamente para pacientes em tratamento de toxoplasmose
+sulfametoxazol 40 mg/mL + trimetoprima 8 mg/mL suspensão oral  — disp. nas Unidades de Saúde
+sulfametoxazol 800 mg + trimetoprima 160 mg comprimido  — disp. nas Unidades de Saúde
+sulfato ferroso heptahidratado 125 mg/mL (equivalente a 25 mg de Fe++) solução oral gotas  — disp. nas Unidades de Saúde
+sulfato ferroso heptahidratado equivalente a 40 mg de Fe++ comprimido  — disp. nas Unidades de Saúde
+```
+
+💡 16 itens. Consulta de disponibilidade na rede (não é prescrição).
+
+### Formulário SUS — T
+
+**📄 Modelo — Medicamentos (T)**
+```
+talidomida 100 mg comprimido  — disp. em SAE/IST/AIDS e em unidades de referência em hanseníase
+tenofovir 300 mg comprimido  — disp. em SAE/IST/AIDS e em unidades de referência para tratamento de hepatites virais.
+tenofovir alafenamida 25 mg comprimido  — disp. em SAE/IST/AIDS e em unidades de referência para tratamento de hepatites virais.
+tenofovir (TDF) 300 mg + lamivudina (3TC) 300 mg + efavirenz (EFZ) 600 mg comprimido  — disp. em SAE/IST/AIDS
+tenofovir (TDF) 300 mg + entricitabina (FTC) 200 mg  — disp. em SAE/IST/AIDS
+tenofovir (TDF) 300 mg + lamivudina (3TC) 300 mg  — disp. em SAE/IST/AIDS e em unidades de referência para tratamento de hepatites virais.
+teofilina 100 mg cápsula de liberação prolongada  — disp. nas Unidades de Saúde
+terbinafina 250 mg comprimido  — disp. nas Unidades de Saúde
+terizidona 250 mg comprimido  — disp. em unidades de referência - exclusivo para tratamento de esquemas especiais de TB/MNT
+testosterona, undecanoato 250 mg/mL solução injetável  — disp. em unidades de referência · Exclusivamente para pacientes cadastrados no Programa de Saúde Integral da População LGBTIA+ da SMS
+tiamazol 5 mg comprimido  — disp. nas Unidades de Saúde
+tiamina, cloridrato (vit. B1) 300 mg comprimido  — disp. nas Unidades de Saúde
+timolol, maleato 5 mg/mL (0,5%) solução oftálmica  — disp. em unidades de referência · Exclusivamente para pacientes em tratamento de glaucoma. Prescrição por médico oftalmologista das unidades da rede municipal
+tinidazol 500 mg comprimido  — disp. nas Unidades de Saúde
+tobramicina 3 mg/mL (0,3%) solução oftálmica  — disp. nas Unidades de Saúde
+tramadol 50 mg comprimido  — disp. em unidades de referência · Exclusivamente para pacientes em tratamento em Hospital Dia
+```
+
+💡 16 itens. Consulta de disponibilidade na rede (não é prescrição).
+
+### Formulário SUS — U
+
+**📄 Modelo — Medicamentos (U)**
+```
+ureia 100 mg/g (10%) creme
+medicamento para pacientes em tratamento nas unidades de hanseníase
+```
+
+💡 2 itens. Consulta de disponibilidade na rede (não é prescrição).
+
+### Formulário SUS — V
+
+**📄 Modelo — Medicamentos (V)**
+```
+valaciclovir 500 mg comprimido  — disp. em SAE/IST/AIDS · Exclusivamente para pacientes em tratamento nestas unidades
+Valeriana officinalis L. (valeriana) sesquiterpenos 0,8 mg a 3,5 mg comprimido  — disp. nas Unidades de Saúde · Exclusivamente para pacientes em tratamento na Rede Municipal de Saúde
+Orientação técnica para prescrição e dispensação
+valproato de sódio 57,624 mg/mL (equivalente a 50 mg de ácido valpróico) solução oral ou xarope  — disp. nas Unidades de Saúde
+valproato de sódio 576 mg (equivalente a 500 mg de ácido valpróico) comprimido revestido ou cápsula  — disp. nas Unidades de Saúde
+varfarina sódica 2,5 mg comprimido  — disp. nas Unidades de Saúde
+varfarina sódica 5 mg comprimido  — disp. nas Unidades de Saúde
+```
+
+💡 7 itens. Consulta de disponibilidade na rede (não é prescrição).
+
+### Formulário SUS — Z
+
+**📄 Modelo — Medicamentos (Z)**
+```
+zidovudina (AZT) 10 mg/mL solução injetável  — disp. em SAE/IST/AIDS
+zidovudina (AZT) 10 mg/mL solução oral  — disp. em SAE/IST/AIDS
+zidovudina (AZT) 100 mg cápsula  — disp. em SAE/IST/AIDS
+zidovudina (AZT) 300 mg + lamivudina (3TC) 150 mg comprimido  — disp. em SAE/IST/AIDS
+```
+
+💡 4 itens. Consulta de disponibilidade na rede (não é prescrição).
 

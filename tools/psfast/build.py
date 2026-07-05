@@ -24,7 +24,9 @@ BLOCKS = [
     ("GU",     "🌸 Genitourinário / Gineco","Cistite · Pielonefrite · Cólica nefrética · SUA · Vaginites · ISTs · Climatério"),
     ("PELE",   "🧴 Pele",                 "Alergia · Abscesso · Tínea · Escabiose · Herpes · Queimadura · Erisipela · Feridas"),
     ("PSIQ",   "🧠 Psiquiatria",          "Abstinência alcoólica"),
-    ("BONUS",  "📝 Modelos / Bônus",      "Templates · Exames · Bulário · IOT · Drenagem · Internação"),
+    ("GEST",   "🤰 Gestante",             "Prescrições por sistema na gestação · o que NÃO usar"),
+    ("BONUS",  "📝 Modelos / Bônus",      "Templates · Exame físico · Conduta · Medicações IM/EV · Bulário · IOT · Internação"),
+    ("FARM",   "💊 Formulário SUS",       "Medicamentos disponíveis na rede (A–Z) e onde retirar"),
 ]
 BLOCK_ORDER = {b[0]: i for i, b in enumerate(BLOCKS)}
 DEST_ORDER = {"ps": 0, "casa": 1, "internacao": 2, "outro": 3}
