@@ -158,6 +158,12 @@
   .fchip.a .dot{background:#fbbf24}
   .fchip.g .dot{background:#22c55e}
   .fchip.fav.on{background:var(--star);color:#0f172a;border-color:var(--star)}
+  .fchip.freq.on{background:#ea580c;color:#fff;border-color:#ea580c}
+  .rside .topic .bhint{font-size:10px;color:var(--muted);flex-shrink:0;margin-left:4px;opacity:.75}
+  .rside .topic.active .bhint{color:rgba(255,255,255,.7)}
+  .rside .block.freq .block-h{background:#fff2e8;color:#c2410c}
+  html[data-theme="dark"] .rside .block.freq .block-h{background:#3a1e0a;color:#fb923c}
+  .rside .block.freq .block-h .arr{color:inherit}
 
   .rwrap{flex:1;display:grid;grid-template-columns:300px 1fr;min-height:0}
   @media(max-width:900px){.rwrap{grid-template-columns:1fr}}
@@ -520,6 +526,7 @@
     <a class="acc" id="rPdf" title="Baixar PDF" aria-label="Baixar PDF" href="recursos/ps-fast.pdf" download>⬇</a>
   </div>
   <div class="filters" id="filters">
+    <button class="fchip freq" data-sev="freq">🔥 Frequentes</button>
     <button class="fchip fav" data-sev="fav">⭐ Favoritos</button>
     <span style="border-left:1px solid var(--line-2);margin:0 2px"></span>
     <button class="fchip on" data-sev="all">Todas</button>
@@ -612,6 +619,7 @@
   var currentTopic=null, currentBlock=null;
   var sevFilters={vermelha:true,amarela:true,verde:true};
   var favOnly=false;
+  var freqOnly=false;
 
   // Persisted: which blocks are expanded
   var openBlocks = {};
@@ -671,14 +679,18 @@
   document.querySelectorAll(".fchip").forEach(function(c){
     c.addEventListener("click",function(){
       var sev=c.getAttribute("data-sev");
-      if(sev==="fav"){
+      if(sev==="freq"){
+        freqOnly = !freqOnly; c.classList.toggle("on",freqOnly);
+        if(freqOnly && favOnly){ favOnly=false; document.querySelector('.fchip[data-sev="fav"]').classList.remove("on"); }
+      } else if(sev==="fav"){
         favOnly = !favOnly; c.classList.toggle("on",favOnly);
+        if(favOnly && freqOnly){ freqOnly=false; document.querySelector('.fchip[data-sev="freq"]').classList.remove("on"); }
       } else if(sev==="all"){
         sevFilters={vermelha:true,amarela:true,verde:true};
         document.querySelectorAll(".fchip[data-sev]").forEach(function(x){
           var s = x.getAttribute("data-sev");
           if(s==="all") x.classList.add("on");
-          else if(s!=="fav") x.classList.remove("on");
+          else if(s!=="fav" && s!=="freq") x.classList.remove("on");
         });
       } else {
         document.querySelector('.fchip[data-sev="all"]').classList.remove("on");
@@ -689,7 +701,7 @@
           document.querySelector('.fchip[data-sev="all"]').classList.add("on");
           document.querySelectorAll(".fchip[data-sev]").forEach(function(x){
             var s=x.getAttribute("data-sev");
-            if(s!=="all" && s!=="fav") x.classList.remove("on");
+            if(s!=="all" && s!=="fav" && s!=="freq") x.classList.remove("on");
           });
         }
       }
@@ -699,8 +711,10 @@
 
   /* ===== SEARCH ===== */
   function norm(s){ return (s||"").toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g,""); }
+  function blockEmoji(blk){ return (blk.title||"").trim().split(" ")[0]; }
   function topicHaystack(t){
-    var parts=[t.title, t.summary||"", t.explanation||"", t.cid||"", t.alarmes||""];
+    if(t.__hay) return t.__hay; // cache
+    var parts=[t.title, t.aliases||"", t.summary||"", t.explanation||"", t.cid||"", t.alarmes||""];
     (t.rx||[]).forEach(function(r){
       parts.push(r.title); parts.push(r.explanation||"");
       (r.scenarios||[]).forEach(function(s){
@@ -708,13 +722,38 @@
         (s.alternatives||[]).forEach(function(a){parts.push(a);});
       });
     });
-    return norm(parts.join(" \n "));
+    t.__hay = norm(parts.join(" \n "));
+    return t.__hay;
+  }
+  function tokens(q){ return norm(q).trim().split(/\s+/).filter(function(x){return x.length>0;}); }
+
+  function passesFilters(t){
+    if(favOnly && !isFav(t.id)) return false;
+    if(freqOnly && !t.freq) return false;
+    if(!sevFilters[t.severity]) return false;
+    return true;
   }
   function matchTopic(t,q){
-    if(favOnly && !isFav(t.id)) return false;
-    if(!sevFilters[t.severity]) return false;
+    if(!passesFilters(t)) return false;
     if(!q) return true;
-    return topicHaystack(t).indexOf(q)>=0;
+    var hay=topicHaystack(t), toks=tokens(q);
+    // AND: cada token precisa aparecer em algum lugar do índice (título/apelidos/conteúdo)
+    return toks.every(function(tok){ return hay.indexOf(tok)>=0; });
+  }
+  // Relevância: título > apelido > corpo; frequentes ganham leve bônus
+  function scoreTopic(t,q){
+    var qn=norm(q).trim(); if(!qn) return t.freq?1:0;
+    var title=norm(t.title), al=norm(t.aliases||""), toks=tokens(q), s=0;
+    if(title.indexOf(qn)>=0) s+=1000;
+    if(title.indexOf(qn)===0) s+=500;               // começa com
+    if(al.indexOf(qn)>=0) s+=300;
+    toks.forEach(function(tok){
+      if(title.indexOf(tok)>=0) s+=120;
+      else if(al.indexOf(tok)>=0) s+=50;
+      else s+=2;                                     // só no corpo
+    });
+    if(t.freq) s+=8;
+    return s;
   }
   function sevChar(s){ return s==="vermelha"?"r":s==="amarela"?"a":"g"; }
 
@@ -722,44 +761,66 @@
   function buildSidebar(query){
     var q=norm((query||"").trim());
     rSide.innerHTML="";
-    var anyShown=false;
     var searching = q.length>0;
 
-    // Favorites virtual block (top)
-    var favTopics=[];
-    DATA.blocks.forEach(function(blk){
-      blk.topics.forEach(function(t){
-        if(isFav(t.id) && matchTopic(t,q)) favTopics.push({blk:blk,t:t});
+    // ---- Busca ativa: lista PLANA ranqueada (melhor achar rápido) ----
+    if(searching){
+      var hits=[];
+      DATA.blocks.forEach(function(blk){
+        blk.topics.forEach(function(t){
+          if(matchTopic(t,q)) hits.push({blk:blk,t:t,sc:scoreTopic(t,q)});
+        });
       });
-    });
-    if(favTopics.length && !favOnly){
-      var fb=document.createElement("div");
-      fb.className="block fav";
-      var collapsed = !openBlocks["__fav__"] && !searching && false; // favs default open
-      if(collapsed) fb.classList.add("collapsed");
-      fb.innerHTML='<div class="block-h"><div class="left">'+
-        '<span class="ttl">⭐ Favoritos</span>'+
-        '<span class="cnt">'+favTopics.length+'</span></div>'+
-        '<span class="arr">▾</span></div><div class="topics"></div>';
-      fb.querySelector(".block-h").addEventListener("click",function(){
-        fb.classList.toggle("collapsed");
-        setBlockOpen("__fav__", !fb.classList.contains("collapsed"));
-      });
-      var ul=fb.querySelector(".topics");
-      favTopics.forEach(function(o){ ul.appendChild(makeTopicEl(o.blk,o.t,true)); });
-      rSide.appendChild(fb);
-      var hr=document.createElement("hr"); rSide.appendChild(hr);
-      anyShown=true;
+      hits.sort(function(a,b){ return b.sc-a.sc || a.t.title.localeCompare(b.t.title); });
+      if(!hits.length){
+        rSide.innerHTML='<div class="empty">Nada encontrado.<br><small>Tente outro termo (ex: "dor de garganta", "itu", "pressão alta") ou ajuste filtros.</small></div>';
+        return;
+      }
+      var rb=document.createElement("div"); rb.className="block";
+      rb.innerHTML='<div class="block-h"><div class="left"><span class="ttl">🔎 Resultados</span>'+
+        '<span class="cnt">'+hits.length+'</span></div></div><div class="topics"></div>';
+      var ul=rb.querySelector(".topics");
+      hits.forEach(function(o){ ul.appendChild(makeTopicEl(o.blk,o.t,blockEmoji(o.blk))); });
+      rSide.appendChild(rb);
+      return;
     }
 
-    // Normal blocks
+    var anyShown=false;
+
+    // ---- Favoritos (virtual, topo) ----
+    if(!favOnly && !freqOnly){
+      var favTopics=[];
+      DATA.blocks.forEach(function(blk){ blk.topics.forEach(function(t){
+        if(isFav(t.id) && passesFilters(t)) favTopics.push({blk:blk,t:t});
+      });});
+      if(favTopics.length){
+        rSide.appendChild(virtualBlock("fav","⭐ Favoritos","__fav__",favTopics));
+        rSide.appendChild(document.createElement("hr"));
+        anyShown=true;
+      }
+    }
+
+    // ---- 🔥 Frequentes (virtual, topo) ----
+    if(!favOnly && !freqOnly){
+      var freqTopics=[];
+      DATA.blocks.forEach(function(blk){ blk.topics.forEach(function(t){
+        if(t.freq && passesFilters(t)) freqTopics.push({blk:blk,t:t});
+      });});
+      freqTopics.sort(function(a,b){ return a.t.title.localeCompare(b.t.title); });
+      if(freqTopics.length){
+        rSide.appendChild(virtualBlock("freq","🔥 Frequentes","__freq__",freqTopics));
+        rSide.appendChild(document.createElement("hr"));
+        anyShown=true;
+      }
+    }
+
+    // ---- Blocos normais ----
     DATA.blocks.forEach(function(blk){
-      var topics = blk.topics.filter(function(t){ return matchTopic(t,q); });
+      var topics = blk.topics.filter(passesFilters);
       if(!topics.length) return;
       anyShown=true;
       var el=document.createElement("div"); el.className="block";
-      // Collapse logic: collapsed by default unless: searching with matches, or user opened it
-      var shouldOpen = searching || openBlocks[blk.id] === true;
+      var shouldOpen = (favOnly||freqOnly) || openBlocks[blk.id] === true;
       if(!shouldOpen) el.classList.add("collapsed");
       el.innerHTML='<div class="block-h"><div class="left">'+
         '<span class="ttl">'+esc(blk.title)+'</span>'+
@@ -770,21 +831,36 @@
         setBlockOpen(blk.id, !el.classList.contains("collapsed"));
       });
       var ul=el.querySelector(".topics");
-      topics.forEach(function(t){ ul.appendChild(makeTopicEl(blk,t,false)); });
+      topics.forEach(function(t){ ul.appendChild(makeTopicEl(blk,t,(favOnly||freqOnly)?blockEmoji(blk):"")); });
       rSide.appendChild(el);
     });
     if(!anyShown){
-      rSide.innerHTML='<div class="empty">Nada encontrado.<br><small>Tente outro termo ou ajuste filtros.</small></div>';
+      rSide.innerHTML='<div class="empty">Nada aqui.<br><small>Ajuste os filtros acima.</small></div>';
     }
   }
 
-  function makeTopicEl(blk, t, inFavs){
+  function virtualBlock(cls, label, key, list){
+    var el=document.createElement("div"); el.className="block "+cls;
+    if(openBlocks[key]===false) el.classList.add("collapsed");
+    el.innerHTML='<div class="block-h"><div class="left"><span class="ttl">'+label+'</span>'+
+      '<span class="cnt">'+list.length+'</span></div><span class="arr">▾</span></div><div class="topics"></div>';
+    el.querySelector(".block-h").addEventListener("click",function(){
+      el.classList.toggle("collapsed");
+      setBlockOpen(key, !el.classList.contains("collapsed"));
+    });
+    var ul=el.querySelector(".topics");
+    list.forEach(function(o){ ul.appendChild(makeTopicEl(o.blk,o.t,blockEmoji(o.blk))); });
+    return el;
+  }
+
+  function makeTopicEl(blk, t, hint){
     var li=document.createElement("div");
     li.className="topic "+sevChar(t.severity);
     if(currentTopic && currentTopic.id === t.id) li.classList.add("active");
     var starOn = isFav(t.id) ? "on" : "";
     li.innerHTML="<span class='dot'></span>"+
       "<span class='title'>"+esc(t.title)+"</span>"+
+      (hint ? "<span class='bhint'>"+esc(hint)+"</span>" : "")+
       "<button class='star "+starOn+"' title='Favoritar'>"+(isFav(t.id)?"★":"☆")+"</button>";
     li.addEventListener("click",function(ev){
       if(ev.target.closest(".star")) return;

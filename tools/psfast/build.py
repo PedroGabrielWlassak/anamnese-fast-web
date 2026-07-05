@@ -77,6 +77,71 @@ for f in sorted(glob.glob(os.path.join(_here, "conditions_*.py"))):
 
 # ============================================================
 # BUILD TOPICS
+# ---- Mais frequentes no PS/APS (aparecem no bloco 🔥 Frequentes) ----
+FREQ_TITLES = {
+    "IVAS / Resfriado / Gripe", "Faringoamigdalite", "Amigdalite aguda",
+    "Sinusite aguda", "Otite média aguda", "Otite externa aguda", "Rinite alérgica",
+    "GECA / Gastroenterite (adulto)", "Cefaleia", "Enxaqueca", "Lombalgia / Mialgia",
+    "Cólica menstrual / SUA", "Cistite / ITU não complicada", "Pielonefrite",
+    "Dengue / Arbovirose", "Conjuntivite", "Dor de dente", "Alergia / Urticária",
+    "Herpes zoster", "Escabiose", "Gota", "Vertigem / Labirintite / Tontura",
+    "Epigastralgia / Pirose", "DRGE / Gastrite", "Constipação",
+    "Elevação importante da PA (sem LOA)", "Influenza / Gripe", "Pneumonia",
+    "Nefrolitíase / Cólica nefrética", "Hemorroida", "Lombalgia / Mialgia",
+    "Náuseas e vômitos (gestante)", "ITU / Cistite (gestante)",
+    "Herpes simples", "Tínea corporis", "Impetigo", "Abscesso cutâneo",
+}
+
+# ---- Sinônimos / apelidos p/ busca (termo digitado -> palavras extras no índice) ----
+ALIASES = {
+    "IVAS / Resfriado / Gripe": "gripe resfriado ivas coriza espirro tosse",
+    "Faringoamigdalite": "dor de garganta odinofagia faringite garganta",
+    "Amigdalite aguda": "dor de garganta garganta odinofagia placas amigdala",
+    "Sinusite aguda": "dor facial secrecao nasal seio",
+    "Otite média aguda": "dor de ouvido otalgia ouvido",
+    "Otite externa aguda": "dor de ouvido ouvido nadador",
+    "Rinite alérgica": "espirro coriza nariz alergia",
+    "GECA / Gastroenterite (adulto)": "diarreia dor de barriga vomito virose intestino",
+    "Cefaleia": "dor de cabeca",
+    "Enxaqueca": "migranea dor de cabeca aura",
+    "Cefaleia tensional": "dor de cabeca tensao",
+    "Lombalgia / Mialgia": "dor nas costas coluna lombar dor muscular",
+    "Cólica menstrual / SUA": "colica menstrual dismenorreia menstruacao sangramento",
+    "Cistite / ITU não complicada": "itu infeccao urinaria disuria ardencia ao urinar",
+    "Pielonefrite": "itu alta infeccao urinaria rim febre lombar",
+    "Nefrolitíase / Cólica nefrética": "pedra no rim calculo renal colica renal",
+    "Dengue / Arbovirose": "dengue zika chikungunya arbovirose virose febre",
+    "Conjuntivite": "olho vermelho olho remela vista",
+    "Dor de dente": "odontalgia dente odonto",
+    "Alergia / Urticária": "coceira prurido urticaria placas alergia",
+    "Escabiose": "sarna coceira",
+    "Pediculose": "piolho lendea",
+    "Herpes zoster": "cobreiro zoster",
+    "Gota": "acido urico podagra artrite",
+    "Vertigem / Labirintite / Tontura": "tontura labirintite vertigem",
+    "Epigastralgia / Pirose": "azia queimacao estomago boca do estomago pirose",
+    "DRGE / Gastrite": "azia refluxo gastrite queimacao",
+    "Constipação": "prisao de ventre intestino preso",
+    "Diarreia (gestante)": "diarreia",
+    "Hemorroida": "hemorroida sangramento anal",
+    "Elevação importante da PA (sem LOA)": "pressao alta hipertensao urgencia hipertensiva pa elevada",
+    "IAM — infarto agudo do miocárdio": "infarto dor no peito precordialgia sca",
+    "AVC isquêmico": "avc derrame deficit isquemico",
+    "AVC hemorrágico": "avc derrame hemorragia",
+    "Anafilaxia": "choque anafilatico alergia grave",
+    "Crise de asma (exacerbação)": "falta de ar bombinha chiado sibilo asma",
+    "DPOC exacerbado": "falta de ar dpoc bombinha",
+    "Pneumonia": "pneumonia tosse febre pulmao",
+    "Influenza / Gripe": "gripe influenza h1n1 oseltamivir",
+    "Vaginose bacteriana": "corrimento odor vaginal",
+    "Candidíase vaginal": "corrimento coceira vaginal candidiase",
+    "Tricomoníase": "corrimento ist",
+    "Náuseas e vômitos (gestante)": "enjoo vomito nausea gravida",
+    "ITU / Cistite (gestante)": "itu infeccao urinaria gravida",
+    "Herpes simples": "herpes labial",
+    "Impetigo": "ferida pele cro sta bolha impetigo",
+}
+
 # ============================================================
 def build_topics():
     topics = []
@@ -98,6 +163,8 @@ def build_topics():
             "alarmes": c.get("alarmes",""), "anamnese": c.get("anamnese",""),
             "exame": c.get("exame",""), "retorno": c.get("retorno",""),
             "flags": c.get("flags",[]),
+            "freq": c["title"] in FREQ_TITLES,
+            "aliases": ALIASES.get(c["title"], ""),
             "rx": rx,
         })
     topics.sort(key=lambda t: (BLOCK_ORDER.get(t["block"],99), t["title"].lower()))
