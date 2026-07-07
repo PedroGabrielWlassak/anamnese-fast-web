@@ -287,6 +287,48 @@
   .dest-h.internacao{color:var(--red)}
   .dest-h.outro{color:var(--brand)}
 
+  /* ===== Campos editáveis (Disclaimer / EF / PS / Casa) ===== */
+  .efields{display:flex;flex-direction:column;gap:12px;margin-bottom:16px}
+  .efield{border:1px solid var(--line);border-radius:12px;background:var(--panel);
+    box-shadow:var(--shadow);overflow:hidden}
+  .efield.disc{border-left:4px solid var(--brand)}
+  .efield.exame{border-left:4px solid #7c3aed}
+  .efield.ps{border-left:4px solid var(--amber)}
+  .efield.casa{border-left:4px solid var(--green)}
+  .efield-h{display:flex;align-items:center;gap:8px;padding:10px 12px;
+    border-bottom:1px solid var(--line);background:linear-gradient(180deg,rgba(13,107,107,.04),transparent)}
+  .efield-h .lbl{font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.5px;flex:1}
+  .efield.disc .lbl{color:var(--brand)} .efield.exame .lbl{color:#7c3aed}
+  .efield.ps .lbl{color:var(--amber)} .efield.casa .lbl{color:var(--green)}
+  .efield-h .edited{font-size:10px;font-weight:700;color:#fff;background:#7c3aed;
+    padding:2px 7px;border-radius:99px;letter-spacing:.3px}
+  .efield-body{padding:12px}
+  .efield-view{white-space:pre-wrap;font-size:13px;line-height:1.55;color:var(--ink);
+    font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+  .efield-view.rx{background:var(--code-bg);color:var(--code-fg);border-radius:8px;padding:12px 14px;
+    font-size:12.5px;line-height:1.6;border:1px solid #334155}
+  .efield-view.empty{color:var(--muted);font-style:italic;font-family:inherit}
+  .efield-view mark{background:#fde68a;color:#0f172a;padding:0 2px;border-radius:3px}
+  .efield-ta{width:100%;min-height:90px;resize:vertical;border:1px solid var(--line-2);
+    border-radius:8px;padding:10px 12px;font:inherit;font-size:13px;line-height:1.5;
+    color:var(--field-fc);background:var(--field);
+    font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+  .efield-ta:focus{outline:0;box-shadow:var(--focus)}
+  .efield-acts{display:flex;gap:6px;margin-top:8px;flex-wrap:wrap}
+  .ef-btn{appearance:none;border:1px solid var(--line-2);background:var(--panel);color:var(--ink);
+    padding:7px 12px;border-radius:8px;font:inherit;font-size:12px;font-weight:600;cursor:pointer;
+    display:inline-flex;align-items:center;gap:5px}
+  .ef-btn:hover{border-color:var(--brand);color:var(--brand)}
+  .ef-btn.primary{background:var(--brand);color:#fff;border-color:var(--brand)}
+  .ef-btn.primary:hover{background:var(--brand-2);color:#fff}
+  .ef-btn.ok{background:#15803d;color:#fff;border-color:#15803d}
+  .ef-btn.warn{color:var(--red);border-color:var(--red-bd)}
+  .ef-toolbar{display:flex;gap:6px;flex-wrap:wrap;margin:0 0 12px}
+  .ref-details{margin-bottom:16px}
+  .ref-details>summary{cursor:pointer;font-size:11px;font-weight:700;text-transform:uppercase;
+    letter-spacing:.5px;color:var(--muted);padding:6px 0}
+  .ref-details[open]>summary{color:var(--brand)}
+
   .disclaimer{
     background:var(--panel);border:1px solid var(--line);border-left:4px solid var(--brand);
     border-radius:10px;padding:12px 14px;margin-bottom:14px;
@@ -523,7 +565,10 @@
       <input id="rSearch" type="search" placeholder="Buscar (sepse, atropina, IAM…)" autocomplete="off" />
       <button class="clr" id="rClear" title="Limpar busca" aria-label="Limpar">×</button>
     </div>
+    <button class="acc" id="rExport" title="Exportar minhas edições (backup)" aria-label="Exportar edições">⤓</button>
+    <button class="acc" id="rImport" title="Importar edições" aria-label="Importar edições">⤒</button>
     <a class="acc" id="rPdf" title="Baixar PDF" aria-label="Baixar PDF" href="recursos/ps-fast.pdf" download>⬇</a>
+    <input type="file" id="rImportFile" accept="application/json,.json" style="display:none">
   </div>
   <div class="filters" id="filters">
     <button class="fchip freq" data-sev="freq">🔥 Frequentes</button>
@@ -557,7 +602,7 @@
 (function(){
   /* ===== CONFIG ===== */
   var PIN = "1234";
-  var DATA_VERSION = "20260706a"; // bump a cada atualização de dados (cache-bust)
+  var DATA_VERSION = "20260706b"; // bump a cada atualização de dados (cache-bust)
   var SESSION_KEY = "painel_unlocked_v1";
   var THEME_KEY   = "painel_theme_v1";
   var FAVS_KEY    = "painel_favs_v1";
@@ -714,16 +759,20 @@
   function norm(s){ return (s||"").toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g,""); }
   function blockEmoji(blk){ return (blk.title||"").trim().split(" ")[0]; }
   function topicHaystack(t){
-    if(t.__hay) return t.__hay; // cache
-    var parts=[t.title, t.aliases||"", t.summary||"", t.explanation||"", t.cid||"", t.alarmes||""];
-    (t.rx||[]).forEach(function(r){
-      parts.push(r.title); parts.push(r.explanation||"");
-      (r.scenarios||[]).forEach(function(s){
-        parts.push(s.header||""); parts.push(s.model_full||"");
-        (s.alternatives||[]).forEach(function(a){parts.push(a);});
+    if(!t.__hay){
+      var parts=[t.title, t.aliases||"", t.summary||"", t.explanation||"", t.cid||"", t.alarmes||"", t.exame||""];
+      (t.rx||[]).forEach(function(r){
+        parts.push(r.title); parts.push(r.explanation||"");
+        (r.scenarios||[]).forEach(function(s){
+          parts.push(s.header||""); parts.push(s.model_full||"");
+          (s.alternatives||[]).forEach(function(a){parts.push(a);});
+        });
       });
-    });
-    t.__hay = norm(parts.join(" \n "));
+      t.__hay = norm(parts.join(" \n "));
+    }
+    // edições do usuário não são cacheadas (podem mudar)
+    var ed=getAllEdits()[t.id];
+    if(ed){ return t.__hay+" \n "+norm(Object.keys(ed).map(function(k){return ed[k];}).join(" \n ")); }
     return t.__hay;
   }
   function tokens(q){ return norm(q).trim().split(/\s+/).filter(function(x){return x.length>0;}); }
@@ -884,6 +933,46 @@
   }
 
   /* ===== TOPIC VIEW ===== */
+  /* ===== CAMPOS EDITÁVEIS (persistem no aparelho) ===== */
+  var EFIELDS = [
+    {key:"disclaimer", cls:"disc",  icon:"🛈", label:"Disclaimer / quando usar", rx:false},
+    {key:"exame",      cls:"exame", icon:"🩺", label:"Exame físico esperado",     rx:false},
+    {key:"ps",         cls:"ps",    icon:"💉", label:"Prescrição — PS / Sala",     rx:true},
+    {key:"casa",       cls:"casa",  icon:"🏠", label:"Prescrição — Casa",          rx:true},
+  ];
+  var EDITS_KEY = "psfast_edits_v1";
+  function getAllEdits(){ try{ return JSON.parse(localStorage.getItem(EDITS_KEY)||"{}"); }catch(e){ return {}; } }
+  function saveAllEdits(o){ localStorage.setItem(EDITS_KEY, JSON.stringify(o)); }
+  function getEdit(id,key){ var a=getAllEdits(); return (a[id]&&a[id][key]!=null)?a[id][key]:null; }
+  function hasEdit(id,key){ return getEdit(id,key)!=null; }
+  function setEdit(id,key,val){ var a=getAllEdits(); a[id]=a[id]||{}; a[id][key]=val; saveAllEdits(a); }
+  function clearEdit(id,key){ var a=getAllEdits(); if(a[id]){ delete a[id][key]; if(!Object.keys(a[id]).length) delete a[id]; } saveAllEdits(a); }
+  function seedRx(t,dest){
+    var out=[];
+    (t.rx||[]).forEach(function(r){
+      if((r.dest||"casa")!==dest) return;
+      var lbl=(r.title && !/^Prescri[çc][ãa]o/.test(r.title)) ? r.title : "";
+      var parts=[];
+      (r.scenarios||[]).forEach(function(s){
+        var m=(s.model_full||"").trim();
+        if(s.alternatives && s.alternatives.length){
+          m=(s.header?s.header+"\n":"")+s.alternatives.map(function(a){return "• "+a;}).join("\n");
+        }
+        if(m) parts.push(m);
+      });
+      if(parts.length) out.push((lbl?"» "+lbl+"\n":"")+parts.join("\n\nOU\n\n"));
+    });
+    return out.join("\n\n");
+  }
+  function seedFor(t,key){
+    if(key==="disclaimer") return t.summary||"";
+    if(key==="exame") return t.exame||"";
+    if(key==="ps") return seedRx(t,"ps")||seedRx(t,"internacao");
+    if(key==="casa") return seedRx(t,"casa");
+    return "";
+  }
+  function effField(t,key){ var e=getEdit(t.id,key); return e!=null?e:seedFor(t,key); }
+
   function selectTopic(blk,t){
     currentTopic=t; currentBlock=blk;
     var q=norm(rSearch.value.trim());
@@ -901,61 +990,42 @@
             (isFav(t.id)?"★":"☆")+'</button>';
     html += '</div>';
 
-    // Quick-jump pills (acesso rápido dentro do card)
-    var hasPs=(t.rx||[]).some(function(r){return r.dest==="ps";});
-    var hasCasa=(t.rx||[]).some(function(r){return r.dest==="casa";});
-    var hasInt=(t.rx||[]).some(function(r){return r.dest==="internacao";});
-    var jumps=[];
-    if(t.anamnese||t.exame) jumps.push(["sec-anamnese","📋 Anamnese/EF"]);
-    if(hasPs) jumps.push(["sec-ps","💉 PS"]);
-    if(hasCasa) jumps.push(["sec-casa","🏠 Casa"]);
-    if(hasInt) jumps.push(["sec-internacao","🏥 Internação"]);
-    if(t.retorno) jumps.push(["sec-retorno","🔁 Retorno"]);
-    if(jumps.length>1){
-      html += '<div class="jumps">';
-      jumps.forEach(function(jp){ html += '<button class="jump" data-jump="'+jp[0]+'">'+jp[1]+'</button>'; });
-      html += '</div>';
-    }
-
-    // Sinais de alarme
+    // Sinais de alarme (mantém no topo)
     if(t.alarmes){
       html += '<div class="alarm-box"><div class="ab-h">🚩 Sinais de alarme — reclassificar / emergência</div>'+
               highlight(esc(t.alarmes), q)+'</div>';
     }
 
-    // Disclaimer/summary box
-    var disc = buildDisclaimer(t);
-    if(disc){
-      html += '<div class="disclaimer">'+
-              '<div class="disc-h">💡 Quando usar · pontos-chave</div>'+
-              highlight(esc(disc), q)+'</div>';
-    }
-
-    // Full explanation (if longer than summary, show in collapsible block)
-    if(t.explanation && t.explanation.length > (t.summary||"").length + 50){
-      html += '<details class="meta-explain">'+
-              '<summary style="cursor:pointer;font-weight:600;color:var(--amber);font-size:12px;text-transform:uppercase;letter-spacing:.5px;">📋 Conduta completa do ebook</summary>'+
-              '<div style="margin-top:8px">'+highlight(esc(t.explanation), q)+'</div>'+
-              '</details>';
-    }
-
-    // Anamnese + Exame físico (copiar e editar)
-    if(t.anamnese || t.exame){
-      html += '<div class="dest-h outro" id="sec-anamnese">📋 Anamnese + Exame físico</div>';
-      html += '<div class="rx-block"><div class="rx-scenario on"><div class="grid">';
-      if(t.anamnese){
-        html += '<div><div class="col-h">📝 Anamnese direcionada</div>';
-        html += '<div class="copy-box">'+highlight(esc(t.anamnese), q)+'</div>';
-        html += '<div class="copy-actions"><button class="copy-btn copy-tpl" data-tpl="anamnese">📋 Copiar anamnese</button></div></div>';
+    // ===== 4 CAMPOS EDITÁVEIS (Disclaimer · EF · PS · Casa) =====
+    html += '<div class="efields">';
+    EFIELDS.forEach(function(f){
+      var val = effField(t, f.key);
+      var edited = hasEdit(t.id, f.key);
+      html += '<div class="efield '+f.cls+'" data-fkey="'+f.key+'">';
+      html += '<div class="efield-h"><span>'+f.icon+'</span><span class="lbl">'+f.label+'</span>'+
+              (edited?'<span class="edited">editado</span>':'')+'</div>';
+      html += '<div class="efield-body">';
+      if(val && val.trim()){
+        html += '<div class="efield-view'+(f.rx?' rx':'')+'">'+highlight(esc(val), q)+'</div>';
+      } else {
+        html += '<div class="efield-view empty">— vazio. Toque em ✏️ Editar para preencher.</div>';
       }
-      if(t.exame){
-        html += '<div><div class="col-h">🩺 Exame físico direcionado</div>';
-        html += '<div class="copy-box">'+highlight(esc(t.exame), q)+'</div>';
-        html += '<div class="copy-actions"><button class="copy-btn copy-tpl" data-tpl="exame">📋 Copiar exame físico</button></div></div>';
-      }
+      html += '<div class="efield-acts">';
+      if(val && val.trim()) html += '<button class="ef-btn primary ef-copy">📋 Copiar</button>';
+      html += '<button class="ef-btn ef-edit">✏️ Editar</button>';
+      if(edited) html += '<button class="ef-btn warn ef-restore">↺ Restaurar original</button>';
       html += '</div></div></div>';
-    }
+    });
+    html += '</div>';
 
+    // ===== Referência original (fonte) — colapsável, para preencher os campos =====
+    var refParts = "";
+    if(t.explanation && t.explanation.length > (t.summary||"").length + 30){
+      refParts += '<div class="meta-explain"><div class="me-h">📋 Conduta / observações da fonte</div>'+
+                  highlight(esc(t.explanation), q)+'</div>';
+    }
+    // Rx blocks originais (referência) — captura por slice a partir daqui
+    var refStart = html.length;
     // Rx blocks agrupados por destino: PS → Casa → Internação → Modelos
     var destOrder={ps:0,casa:1,internacao:2,outro:3};
     var destLabel={ps:"💉 Receita — PS / Sala",casa:"🏠 Receita — Casa",
@@ -1041,7 +1111,7 @@
       html += '</div>';
     });
 
-    // Orientação de retorno (safety-netting)
+    // Orientação de retorno (safety-netting) — vai junto na referência
     if(t.retorno){
       html += '<div class="dest-h casa" id="sec-retorno">🔁 Orientação de retorno (safety-netting)</div>';
       html += '<div class="rx-block"><div class="rx-scenario on">';
@@ -1050,12 +1120,49 @@
       html += '</div></div>';
     }
 
-    if(!disc && !t.explanation && !(t.rx||[]).length){
-      html += '<div class="disclaimer"><em>Sem conteúdo estruturado disponível para este tópico.</em></div>';
+    // Recorta o bloco de referência (rx + retorno) e embrulha em <details>
+    var refBody = html.slice(refStart);
+    html = html.slice(0, refStart);
+    var refInner = refParts + refBody;
+    if(refInner.trim()){
+      html += '<details class="ref-details"><summary>📚 Conteúdo original da fonte — referência para preencher os campos acima</summary>'+
+              refInner + '</details>';
     }
 
     rMain.innerHTML=html;
     rMain.scrollTop=0;
+
+    // Wire campos editáveis
+    rMain.querySelectorAll(".efield").forEach(function(fd){
+      var key=fd.getAttribute("data-fkey");
+      var cp=fd.querySelector(".ef-copy");
+      if(cp) cp.addEventListener("click",function(){
+        var v=effField(t,key);
+        copyToClipboard(v).then(function(){
+          var o=cp.textContent; cp.classList.add("ok"); cp.textContent="✓ Copiado!";
+          showToast("Copiado para a área de transferência");
+          setTimeout(function(){cp.classList.remove("ok");cp.textContent=o;},1300);
+        }).catch(function(){showToast("Falha ao copiar");});
+      });
+      var eb=fd.querySelector(".ef-edit");
+      eb.addEventListener("click",function(){
+        var body=fd.querySelector(".efield-body");
+        var cur=effField(t,key);
+        body.innerHTML='<textarea class="efield-ta" spellcheck="false"></textarea>'+
+          '<div class="efield-acts"><button class="ef-btn primary ef-save">💾 Salvar</button>'+
+          '<button class="ef-btn ef-cancel">Cancelar</button></div>';
+        var ta=body.querySelector(".efield-ta"); ta.value=cur; ta.focus();
+        ta.style.height=Math.max(90,ta.scrollHeight+8)+"px";
+        body.querySelector(".ef-save").addEventListener("click",function(){
+          setEdit(t.id,key,ta.value); showToast("Salvo neste aparelho"); selectTopic(currentBlock,t);
+        });
+        body.querySelector(".ef-cancel").addEventListener("click",function(){ selectTopic(currentBlock,t); });
+      });
+      var rs=fd.querySelector(".ef-restore");
+      if(rs) rs.addEventListener("click",function(){
+        clearEdit(t.id,key); showToast("Restaurado o original"); selectTopic(currentBlock,t);
+      });
+    });
 
     // Wire star-big
     var sb = rMain.querySelector(".star-big");
@@ -1201,6 +1308,41 @@
     buildSidebar("");
     if(currentTopic) selectTopic(currentBlock,currentTopic);
     rSearch.focus();
+  });
+
+  /* ===== Backup das edições (exportar / importar) ===== */
+  document.getElementById("rExport").addEventListener("click",function(){
+    var data=getAllEdits(); var n=Object.keys(data).length;
+    if(!n){ showToast("Nenhuma edição para exportar ainda"); return; }
+    var blob=new Blob([JSON.stringify(data,null,2)],{type:"application/json"});
+    var a=document.createElement("a");
+    a.href=URL.createObjectURL(blob);
+    a.download="psfast-edicoes-"+new Date().toISOString().slice(0,10)+".json";
+    document.body.appendChild(a); a.click(); a.remove();
+    showToast(n+" patologia(s) exportada(s)");
+  });
+  var importFile=document.getElementById("rImportFile");
+  document.getElementById("rImport").addEventListener("click",function(){ importFile.click(); });
+  importFile.addEventListener("change",function(){
+    var f=importFile.files&&importFile.files[0]; if(!f) return;
+    var rd=new FileReader();
+    rd.onload=function(){
+      try{
+        var incoming=JSON.parse(rd.result);
+        if(typeof incoming!=="object"||Array.isArray(incoming)) throw new Error("formato inválido");
+        var cur=getAllEdits(), add=0;
+        Object.keys(incoming).forEach(function(id){
+          cur[id]=cur[id]||{};
+          Object.keys(incoming[id]||{}).forEach(function(k){ cur[id][k]=incoming[id][k]; add++; });
+        });
+        saveAllEdits(cur);
+        showToast("Importado: "+Object.keys(incoming).length+" patologia(s)");
+        if(currentTopic) selectTopic(currentBlock,currentTopic);
+        buildSidebar(rSearch.value);
+      }catch(e){ showToast("Arquivo inválido"); }
+      importFile.value="";
+    };
+    rd.readAsText(f);
   });
 })();
 </script>
