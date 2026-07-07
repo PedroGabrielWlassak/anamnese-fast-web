@@ -54,6 +54,13 @@ ABCD2 ≥ 4
 
 ### Dengue  ·  CID A90
 
+**🩺 Exame físico**
+```
+BEG, corado, hidratado, acianótico, anictérico, afebril., hidratado.
+SSVV: PA __/__ | FC __ | FR __ | SatO2 __% | Tax __°C. (PA deitado e em pé).
+Prova do laço: [negativa]. Pele: [exantema?], sem petéquias/sangramentos. Abdome: fígado não palpável, indolor. Sem hipotensão postural.
+```
+
 **🏠 Casa — Prescrição — Casa**
 ```
 1) Soro de reidratação oral ------------------- 1 caixa
@@ -87,6 +94,13 @@ DILUIR 1 ENVELOPE EM 1 LITRO DE AGUA E BEBER DURANTE O DIA. BEBER MAIS 3 LITROS 
 - Repouso - Aumentar ingestão de líquidos - Não utilizar anti-inflamatórios (Ex: Ibuprofeno, Nimesulida, Cetoprofeno, etc) - Retornar ao serviço médico caso apresente sinais de alarme (dor abdominal intensa e contínua, vômitos persistentes, sangramento de mucosas). Grupo C/D HEMOGRAMA, ALBUMINA, TRANSAMINASES, PCR. Se necessário: RX TORAX, USG ABDOMINAL Aqui: 10ml/kg SF0,9% EV Reavaliar Mais 10ml/kg SF0,9% EV Paciente em uso de AAS: hemograma diário. Suspender se plaquetas <30 000 ________________________________________________________________________
 
 ### Enjoo / Náuseas
+
+**🩺 Exame físico**
+```
+BEG, corado, hidratado, acianótico, anictérico, afebril., hidratado.
+SSVV: PA __/__ | FC __ | FR __ | SatO2 __% | Tax __°C.
+Abdome: flácido, indolor, RHA+, sem defesa. Sem sinais de desidratação. [Investigar causa: gestação, medicações, labiríntica, gastrointestinal].
+```
 
 **🏠 Casa — Prescrição — Casa**
 ```
@@ -342,6 +356,13 @@ INTERNAÇÃO UTI
 
 ### Cefaleia  ·  CID R51
 
+**🩺 Exame físico**
+```
+BEG, corado, hidratado, acianótico, anictérico, afebril., orientado.
+SSVV: PA __/__ | FC __ | FR __ | SatO2 __% | Tax __°C.
+Neuro: Glasgow 15, pupilas isofotorreagentes, sem déficits focais, sem rigidez de nuca. Marcha e fala preservadas. Fundo de olho [sem papiledema, se avaliado].
+```
+
 **🏠 Casa — Prescrição — Casa**
 ```
 1) Dipirona 500mg ----------------------------------- 40 comprimidos
@@ -441,6 +462,13 @@ OMEPRAZOL 40MG EV 1X PELA MANHA
 💡 Excluir IAM, AVC, Dissecção aorta, trauma
 
 ### Enxaqueca  ·  CID G43
+
+**🩺 Exame físico**
+```
+BEG, corado, hidratado, acianótico, anictérico, afebril., [fotofobia presente].
+SSVV: PA __/__ | FC __ | FR __ | SatO2 __% | Tax __°C.
+Neuro: Glasgow 15, sem déficits focais, sem rigidez de nuca, pupilas isofotorreagentes.
+```
 
 **💉 PS / Sala — Crise leve**
 ```
@@ -615,6 +643,13 @@ DERMATOLOGIA / PELE E ANEXOS
 
 ### Vertigem / Labirintite / Tontura  ·  CID R42
 
+**🩺 Exame físico**
+```
+BEG, corado, hidratado, acianótico, anictérico, afebril.
+SSVV: PA __/__ | FC __ | FR __ | SatO2 __% | Tax __°C.
+Neuro: Glasgow 15, sem déficits focais. HINTS: [head-impulse / nistagmo / skew]. Nistagmo [horizontal, unidirecional, esgotável]. Marcha [com desvio], Romberg [__]. Otoscopia normal.
+```
+
 **💉 PS / Sala — Prescrição — PS**
 ```
 DRAMIN B6 -------------------------
@@ -686,6 +721,12 @@ TOMAR 01 CP 1X AO DIA POR 10 DIAS
 
 ### Conjuntivite  ·  CID H10
 
+**🩺 Exame físico**
+```
+BEG, corado, hidratado, acianótico, anictérico, afebril., afebril.
+Olho [D/E]: hiperemia conjuntival difusa, secreção [serosa/purulenta], sem edema palpebral importante. Córnea sem opacidades, reflexo fotomotor preservado, acuidade visual preservada. Olho contralateral sem alterações.
+```
+
 **🏠 Casa — Prescrição — Casa**
 ```
 USO OFTALMOLÓGICO
@@ -738,6 +779,13 @@ ORTOPEDIA/ REUMATOLOGIA
 ## 👂 Otorrino
 
 ### Alergia / Rinite Alérgica  ·  CID T78.4
+
+**🩺 Exame físico**
+```
+BEG, corado, hidratado, acianótico, anictérico, afebril.
+SSVV: PA __/__ | FC __ | FR __ | SatO2 __% | Tax __°C.
+Pele: [placas urticariformes / sem lesões]. Rinoscopia: mucosa pálida, coriza hialina. AP: MV+ sem sibilos. Sem edema de glote/lábios, sem estridor.
+```
 
 **🏠 Casa — Prescrição — Casa**
 ```
@@ -797,6 +845,13 @@ Tomar 1 comprimido VO pela manhã por 10 dias.
 
 ### Amigdalite Aguda  ·  CID J03
 
+**🩺 Exame físico**
+```
+BEG, corado, hidratado, acianótico, anictérico, afebril.
+SSVV: PA __/__ | FC __ | FR __ | SatO2 __% | Tax __°C.
+Orofaringe: amígdalas hiperemiadas com exsudato; úvula centrada, sem abaulamento. Adenopatia cervical anterior [dolorosa]. Sem trismo/sialorreia.
+```
+
 **🏠 Casa — SE BACTERIANA**
 ```
 1) Amoxicilina 500mg ------------------------------ 30 comprimidos
@@ -846,6 +901,14 @@ TOMAR 01 COMPRIMIDO DE 6/6H SE DOR
 ```
 
 ### Faringoamigdalite  ·  CID J03
+
+**🩺 Exame físico**
+```
+BEG, corado, hidratado, acianótico, anictérico, afebril.
+SSVV: PA __/__ | FC __ | FR __ | SatO2 __% | Tax __°C.
+Orofaringe: amígdalas hiperemiadas e hipertrofiadas [± exsudato puntiforme]. Linfonodo cervical anterior [doloroso à palpação]. Sem trismo, sem sialorreia, sem abaulamento peritonsilar.
+AP: MV+ sem RA.
+```
 
 **💉 PS / Sala — Prescrição — PS**
 ```
@@ -897,6 +960,14 @@ com desvio à esquerda.
 SE NECESSARIO ATB
 
 ### IVAS / Amigdalite / Resfriado  ·  CID J06.9 · J03.9 · J00
+
+**🩺 Exame físico**
+```
+BEG, corado, hidratado, acianótico, anictérico, afebril.
+SSVV: PA __/__ | FC __ | FR __ | SatO2 __% | Tax __°C.
+Orofaringe: hiperemia leve, sem exsudato. Otoscopia: MT translúcida bilateral.
+AP: MV+ bilateral, sem RA, eupneico em ar ambiente. Sem linfonodomegalia cervical significativa.
+```
 
 **🏠 Casa — Prescrição — Casa**
 ```
@@ -983,6 +1054,13 @@ APLICAR 5 GOTAS EM OUVIDO AFETADO, 3X AO DIA POR 7 DIAS
 
 ### Otite Externa  ·  CID H60
 
+**🩺 Exame físico**
+```
+BEG, corado, hidratado, acianótico, anictérico, afebril.
+SSVV: PA __/__ | FC __ | FR __ | SatO2 __% | Tax __°C.
+Otoscopia [D/E]: dor à tração do tragus/pavilhão, edema e hiperemia do conduto [± secreção]. MT [visível/não visualizada]. Retroauricular livre.
+```
+
 **💉 PS / Sala — Prescrição — PS**
 ```
 IM: DIPIRONA + DECADRON
@@ -1017,6 +1095,13 @@ TOMAR 01 CP DE 8/8HORAS, POR 5 DIAS
 ```
 
 ### Otite Média Aguda  ·  CID H66 · H65
+
+**🩺 Exame físico**
+```
+BEG, corado, hidratado, acianótico, anictérico, afebril.
+SSVV: PA __/__ | FC __ | FR __ | SatO2 __% | Tax __°C.
+Otoscopia [D/E]: MT abaulada, hiperemiada, opaca [± otorreia]. Região retroauricular sem edema/eritema. Mímica facial preservada.
+```
 
 **💉 PS / Sala — Prescrição — PS**
 ```
@@ -1080,6 +1165,13 @@ TOMAR 01 CP 1X AO DIA POR 5 DIAS
 
 ### Rinite Alérgica  ·  CID J30
 
+**🩺 Exame físico**
+```
+BEG, corado, hidratado, acianótico, anictérico, afebril.
+SSVV: PA __/__ | FC __ | FR __ | SatO2 __% | Tax __°C.
+Rinoscopia: mucosa nasal pálida/edemaciada, coriza hialina. Sem secreção purulenta. Orofaringe sem exsudato. AP: MV+ sem RA.
+```
+
 **🏠 Casa — Prescrição — Casa**
 ```
 1) DEXCLORFENIRAMINA 2MG
@@ -1107,6 +1199,13 @@ Aplicar 1 jato em cada narina de 12 em 12 horas por 10 dias.
 ```
 
 ### Sinusite Aguda  ·  CID J01
+
+**🩺 Exame físico**
+```
+BEG, corado, hidratado, acianótico, anictérico, afebril.
+SSVV: PA __/__ | FC __ | FR __ | SatO2 __% | Tax __°C.
+Face: dor à palpação/percussão de seios [maxilar/frontal]. Rinoscopia: secreção [purulenta] em meato médio. Sem edema/eritema periorbitário, sem alteração visual. Neuro: sem déficits.
+```
 
 **🏠 Casa — Prescrição — Casa**
 ```
@@ -1214,6 +1313,13 @@ TRANSFERIR PACIENTE
 ```
 
 ### Bronquite  ·  CID J20
+
+**🩺 Exame físico**
+```
+BEG, corado, hidratado, acianótico, anictérico, afebril., afebril.
+SSVV: PA __/__ | FC __ | FR __ | SatO2 __% | Tax __°C.
+AP: MV+ bilateral, [roncos/sibilos esparsos], sem estertores crepitantes localizados. SatO2 preservada.
+```
 
 **🏠 Casa — Prescrição — Casa**
 ```
@@ -1391,6 +1497,13 @@ ENCAMINHAR/ INTERNAR UTI
 
 ### Influenza  ·  CID J11
 
+**🩺 Exame físico**
+```
+BEG, corado, hidratado, acianótico, anictérico, afebril., [febril].
+SSVV: PA __/__ | FC __ | FR __ | SatO2 __% | Tax __°C.
+Orofaringe: hiperemia leve. AP: MV+ bilateral, sem RA, SatO2 preservada. Sem sinais de gravidade (sem dispneia, sem hipoxemia).
+```
+
 **🏠 Casa — Prescrição — Casa**
 ```
 OSELTAMIVIR 75MG
@@ -1467,6 +1580,13 @@ CONTATO COM CIRURGIÃO VASCULAR
 Não aguardar resultado de exames para inicio de tratamento.
 
 ### Pneumonia  ·  CID J18
+
+**🩺 Exame físico**
+```
+REG/BEG, [febril, taquipneico?].
+SSVV: PA __/__ | FC __ | FR __ | SatO2 __% | Tax __°C.
+AP: estertores crepitantes em base [D/E], [± sopro tubário, ↑FTV]. SatO2 __%. CURB-65: C__ U__ R__ B__ (idade≥65)__ = __ pontos. [Confusão? FR≥30? PA<90/60?].
+```
 
 **🏠 Casa — Prescrição — Casa**
 ```
@@ -1808,6 +1928,13 @@ TOMAR 01 CP DE 6/6 HORAS POR 10 DIAS
 
 ### Constipação  ·  CID K59.0 · K59
 
+**🩺 Exame físico**
+```
+BEG, corado, hidratado, acianótico, anictérico, afebril.
+SSVV: PA __/__ | FC __ | FR __ | SatO2 __% | Tax __°C.
+Abdome: distendido, timpânico, RHA+, indolor ou dor leve difusa, sem defesa. Toque retal: [fezes endurecidas em ampola / ampola vazia], sem massas, sem sangue.
+```
+
 **🏠 Casa — Prescrição — Casa**
 ```
 1) Plantago ovata Forssk -------------- 1 caixa
@@ -1890,6 +2017,13 @@ Se não melhorar
 
 ### Cólica Biliar  ·  CID K80
 
+**🩺 Exame físico**
+```
+BEG, corado, hidratado, acianótico, anictérico, afebril., afebril.
+SSVV: PA __/__ | FC __ | FR __ | SatO2 __% | Tax __°C.
+Abdome: dor em hipocôndrio direito/epigástrio, Murphy [negativo — se positivo, pensar colecistite], sem defesa/DB, RHA+. Sem icterícia.
+```
+
 **🏠 Casa — Prescrição — Casa**
 ```
 1) Dipirona 500mg ----------------------------------- 40 comprimidos
@@ -1917,6 +2051,13 @@ Tomar 1 comprimido de 8 em 8 horas se náusea ou vômito.
 ```
 
 ### Disenteria  ·  CID A09
+
+**🩺 Exame físico**
+```
+BEG, corado, hidratado, acianótico, anictérico, afebril., [febril].
+SSVV: PA __/__ | FC __ | FR __ | SatO2 __% | Tax __°C.
+Abdome: RHA+ aumentados, dor difusa, sem defesa/DB. Fezes com [sangue/muco]. Avaliar estado de hidratação.
+```
 
 **🏠 Casa — Prescrição — Casa**
 ```
@@ -1968,6 +2109,13 @@ Não complicada
 
 ### Doença do Refluxo Gastroesofágico  ·  CID K21
 
+**🩺 Exame físico**
+```
+BEG, corado, hidratado, acianótico, anictérico, afebril.
+SSVV: PA __/__ | FC __ | FR __ | SatO2 __% | Tax __°C.
+Abdome: leve dor epigástrica, sem defesa, RHA+. Orofaringe sem alterações. Sem disfagia/odinofagia, sem sinais de alarme.
+```
+
 **🏠 Casa — Prescrição — Casa**
 ```
 OMEPRAZOL 20MG
@@ -2011,6 +2159,13 @@ TOMAR 01 CP DE 8/8 HORAS, SE COCEIRA
 
 ### Epigastralgia / Pirose  ·  CID R10.1
 
+**🩺 Exame físico**
+```
+BEG, corado, hidratado, acianótico, anictérico, afebril.
+SSVV: PA __/__ | FC __ | FR __ | SatO2 __% | Tax __°C.
+Abdome: dor à palpação em epigástrio, sem defesa/DB, RHA+. Sem massas. Sem sinais de alarme (sem melena, sem massa, sem emagrecimento).
+```
+
 **🏠 Casa — Prescrição — Casa**
 ```
 HIDROXÍDO DE ALUMÍNIO ----------------------
@@ -2036,6 +2191,13 @@ Tomar 1 comprimido pela manhã, por 30 dias.
 
 ### Gastrite / DRGE  ·  CID K29
 
+**🩺 Exame físico**
+```
+BEG, corado, hidratado, acianótico, anictérico, afebril.
+SSVV: PA __/__ | FC __ | FR __ | SatO2 __% | Tax __°C.
+Abdome: dor à palpação em epigástrio, sem defesa/DB, RHA+. Sem massas nem visceromegalias.
+```
+
 **🏠 Casa — Prescrição — Casa**
 ```
 x) Omeprazol 20mg -------------------28 comprimidos
@@ -2045,6 +2207,13 @@ Mastigar 2 comprimidos ao sentir azia intensa.
 ```
 
 ### GECA / Gastroenterite (adulto)  ·  CID A09
+
+**🩺 Exame físico**
+```
+BEG, corado, hidratado, acianótico, anictérico, afebril., mucosas úmidas.
+SSVV: PA __/__ | FC __ | FR __ | SatO2 __% | Tax __°C.
+Abdome: RHA+ (aumentados), flácido, dor difusa leve à palpação, sem defesa/rigidez, DB negativa. Sem sinais de desidratação (turgor preservado, sem hipotensão postural).
+```
 
 **🏠 Casa — Prescrição — Casa**
 ```
@@ -2138,6 +2307,12 @@ OMEPRAZOL 40MG EV AGORA (manter de 12/12 horas)
 ```
 
 ### Hemorroida  ·  CID I84
+
+**🩺 Exame físico**
+```
+BEG, corado, hidratado, acianótico, anictérico, afebril., afebril.
+Região anal: [mamilo hemorroidário externo trombosado / plicoma], sem abscesso/celulite perianal. Toque retal: [conforme tolerância], sem massas, sem sangue vivo abundante.
+```
 
 **🏠 Casa — Prescrição — Casa**
 ```
@@ -2622,6 +2797,13 @@ TOMAR 01 A 02 CPS DE 6/6 HORAS, SE DOR
 
 ### Gota  ·  CID M10
 
+**🩺 Exame físico**
+```
+BEG, corado, hidratado, acianótico, anictérico, afebril., afebril.
+SSVV: PA __/__ | FC __ | FR __ | SatO2 __% | Tax __°C.
+Articulação [1ª MTF/joelho/tornozelo]: monoartrite com sinais flogísticos (edema, calor, rubor, dor intensa). Sem porta de entrada infecciosa evidente.
+```
+
 **🏠 Casa — Prescrição — Casa**
 ```
 NAPROXENO
@@ -2676,6 +2858,13 @@ Se dermatite de contato
 TRIANCINOLONA PASSAR NA LESÃO 2X AO DIA, ATÉ MELHORA DA LESÃO OU BETAMETASONA PASSAR NA LESÃO 2X AO DIA, ATÉ MELHORA DA LESÃO
 
 ### Lombalgia / Mialgia  ·  CID M54.5 · M79.6
+
+**🩺 Exame físico**
+```
+BEG, corado, hidratado, acianótico, anictérico, afebril.
+SSVV: PA __/__ | FC __ | FR __ | SatO2 __% | Tax __°C.
+Coluna lombar: dor à palpação de musculatura paravertebral, sem dor em linha média/processos espinhosos. Lasègue negativo bilateral. Força e sensibilidade de MMII preservadas. Reflexos simétricos. Sem alteração esfincteriana.
+```
 
 **🏠 Casa — Prescrição — Casa**
 ```
@@ -2874,6 +3063,13 @@ TOMAR 01 CP DOSE ÚNICA
 
 ### Cistite / ITU  ·  CID N30 · N39
 
+**🩺 Exame físico**
+```
+BEG, corado, hidratado, acianótico, anictérico, afebril., afebril.
+SSVV: PA __/__ | FC __ | FR __ | SatO2 __% | Tax __°C.
+Abdome: dor leve à palpação suprapúbica, sem defesa. Giordano NEGATIVO bilateral. Sem toxemia.
+```
+
 **🏠 Casa — Prescrição — Casa**
 ```
 1) Nitrofurantoína 100mg ----------------------- 20 comprimidos
@@ -2939,6 +3135,13 @@ TOMAR 1 CP VO DE 24/24H POR 30 DIAS.
 ```
 
 ### Cólica Menstrual ou Sangramento  ·  CID N94
+
+**🩺 Exame físico**
+```
+BEG, corado, hidratado, acianótico, anictérico, afebril.
+SSVV: PA __/__ | FC __ | FR __ | SatO2 __% | Tax __°C.
+Abdome: dor à palpação em hipogástrio, sem defesa/DB. Sem massas palpáveis. [Especular/toque conforme indicação].
+```
 
 **🏠 Casa — Prescrição — Casa**
 ```
@@ -3062,6 +3265,13 @@ TOMAR 01 CP DE 8/8 HORAS POR 10 A 14 DIAS
 
 ### Nefrolitíase / Cólica Nefrética  ·  CID N23
 
+**🩺 Exame físico**
+```
+[REG por dor], inquieto, sem posição antálgica.
+SSVV: PA __/__ | FC __ | FR __ | SatO2 __% | Tax __°C.
+Giordano [positivo à D/E]. Abdome flácido, dor em flanco/fossa lombar, sem irritação peritoneal. [Sem febre — se febre, pensar em pielonefrite obstrutiva].
+```
+
 **💉 PS / Sala — AGORA**
 ```
 DIETA ZERO
@@ -3124,6 +3334,13 @@ TOMAR 01 CP DE 8/8 HORAS POR 3 DIAS
 Idoso
 
 ### Pielonefrite  ·  CID N11
+
+**🩺 Exame físico**
+```
+REG/BEG, [febril].
+SSVV: PA __/__ | FC __ | FR __ | SatO2 __% | Tax __°C.
+Giordano POSITIVO à [D/E]. Abdome sem sinais de irritação peritoneal. Avaliar toxemia/instabilidade (indicam internação).
+```
 
 **💉 PS / Sala — Prescrição — PS**
 ```
@@ -3324,6 +3541,13 @@ METRONIDAZOL GINECOLÓGICO 100MG/G -----------------
 
 ### Abscesso Cutâneo  ·  CID L02
 
+**🩺 Exame físico**
+```
+BEG, corado, hidratado, acianótico, anictérico, afebril.
+SSVV: PA __/__ | FC __ | FR __ | SatO2 __% | Tax __°C.
+Pele: coleção flutuante, eritematosa, dolorosa em [localização], [com/sem] celulite perilesional. [Sem sinais sistêmicos / avaliar febre].
+```
+
 **🏠 Casa — Prescrição — Casa**
 ```
 CEFALEXINA 500MG ----------------------
@@ -3336,6 +3560,13 @@ COMPRESSA QUENTE POR 20 MINUTOS 2X AO DIA POR 5 DIAS
 ```
 
 ### Alergia  ·  CID T78.4
+
+**🩺 Exame físico**
+```
+BEG, corado, hidratado, acianótico, anictérico, afebril.
+SSVV: PA __/__ | FC __ | FR __ | SatO2 __% | Tax __°C.
+Pele: lesões [urticariformes/eczematosas] em [localização], [com/sem] sinais de infecção secundária. Sem edema de lábios/glote, sem estridor, AP: MV+ sem sibilos.
+```
 
 **💉 PS / Sala — Prescrição — PS**
 ```
@@ -3636,6 +3867,12 @@ Se presença de bolhas
 
 ### Escabiose  ·  CID B86 · B68
 
+**🩺 Exame físico**
+```
+BEG, corado, hidratado, acianótico, anictérico, afebril.
+Pele: pápulas e escoriações pruriginosas em espaços interdigitais, punhos, axilas, cintura, região genital. Prurido de predomínio noturno. [Contactantes sintomáticos?].
+```
+
 **🏠 Casa — Prescrição — Casa**
 ```
 1) Ivermectina 6 mg (1 CP) PRECISA FAZER A CONTA POR QUILO ------------------
@@ -3686,6 +3923,12 @@ MUPIROCINA 2% POMADA PASSAR 2X AO DIA NAS NARINAS POR 5-10 DIAS ANTISSÉPTICO (C
 
 ### Herpes Simples  ·  CID B00.9
 
+**🩺 Exame físico**
+```
+BEG, corado, hidratado, acianótico, anictérico, afebril.
+Pele/mucosa: vesículas agrupadas em base eritematosa em [lábio/genital], [± úlceras rasas dolorosas]. Sem sinais de infecção bacteriana secundária.
+```
+
 **🏠 Casa — Prescrição — Casa**
 ```
 ACICLOVIR 400MG -----------------
@@ -3695,6 +3938,13 @@ TOMAR 01 CP DE 6/6 HORAS, SE DOR OU FEBRE
 ```
 
 ### Herpes Zoster  ·  CID B02
+
+**🩺 Exame físico**
+```
+BEG, corado, hidratado, acianótico, anictérico, afebril.
+SSVV: PA __/__ | FC __ | FR __ | SatO2 __% | Tax __°C.
+Pele: vesículas agrupadas sobre base eritematosa, distribuição em dermátomo [__], unilateral, sem ultrapassar linha média. [Avaliar acometimento oftálmico/ramo V1].
+```
 
 **🏠 Casa — Prescrição — Casa**
 ```
@@ -3721,6 +3971,12 @@ TOMAR 01 A 02 CPS DE 6/6 HORAS, SE DOR OU FEBRE
 💡 CLINDAMICINA GEL 1% APLICAR NA LESÃO DE 12/12 HORAS ATÉ MELHORA CLÍNICA OU ÁCIDO FUSÍDICO CREME 2% APLICAR NA LESÃO DE 8/8 HORAS ATÉ MELHORA CLÍNICA Encaminhar Dermatologista
 
 ### Impetigo  ·  CID L01
+
+**🩺 Exame físico**
+```
+BEG, corado, hidratado, acianótico, anictérico, afebril., afebril.
+Pele: lesões com crostas melicéricas [± bolhas] em [face/membros], sem celulite/abscesso associado. Sem sinais sistêmicos.
+```
 
 **🏠 Casa — Prescrição — Casa**
 ```
@@ -4082,6 +4338,13 @@ Tomar 1 a 2 comprimidos VO até de 6/6h.
 
 ### ITU / Cistite (gestante)  ·  CID O23
 
+**🩺 Exame físico**
+```
+BEG, corado, hidratado, acianótico, anictérico, afebril., afebril.
+SSVV: PA __/__ | FC __ | FR __ | SatO2 __% | Tax __°C.
+Abdome gravídico; dor suprapúbica leve. Giordano negativo bilateral. [Se Giordano+ ou febre → pielonefrite: internar].
+```
+
 **🏠 Casa — Prescrição — Casa**
 ```
 <36 semanas: Nitrofurantoína 100mg — 1 cp VO de 6/6h por 5 dias.
@@ -4090,6 +4353,13 @@ Amoxicilina ou Amoxicilina + clavulanato — de 8/8h por 4–7 dias.
 ```
 
 ### Náuseas e vômitos (gestante)  ·  CID O21
+
+**🩺 Exame físico**
+```
+BEG, corado, hidratado, acianótico, anictérico, afebril., hidratada.
+SSVV: PA __/__ | FC __ | FR __ | SatO2 __% | Tax __°C.
+Abdome gravídico, indolor, RHA+. Sem sinais de desidratação. [IG __ sem; avaliar cetose/hiperêmese se vômitos incoercíveis].
+```
 
 **🏠 Casa — Prescrição — Casa**
 ```

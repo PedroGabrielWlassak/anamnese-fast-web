@@ -165,6 +165,7 @@ def build_topics():
             "summary": c.get("nota",""), "explanation": c.get("nota",""),
             "alarmes": c.get("alarmes",""), "anamnese": c.get("anamnese",""),
             "exame": c.get("exame",""), "retorno": c.get("retorno",""),
+            "disclaimer": c.get("disclaimer",""),
             "flags": c.get("flags",[]),
             "freq": c["title"] in FREQ_TITLES,
             "aliases": ALIASES.get(c["title"], ""),
