@@ -8,6 +8,13 @@
 
 ### Anafilaxia  ·  CID T78
 
+**🩺 Exame físico**
+```
+REG/MEG, ansioso.
+SSVV: PA __/__ | FC __ | FR __ | SatO2 __% | Tax __°C.
+Pele: urticária/angioedema, edema de lábios/face. VAS: [estridor, edema de glote]. AP: sibilos difusos, tiragem. ACV: taquicardia, [hipotensão]. Nível de consciência [__].
+```
+
 **💉 PS / Sala — Prescrição — PS**
 ```
 ADRENALINA (1mg/ml): 0,3 – 0,5 MG IM – REPETIR 5/5 MIN POR MAIS 2X, SE NECESSÁRIO
@@ -30,6 +37,13 @@ NEBULIZAÇÃO: SALBUTAMOL (5mg/ml) 10-20 gotas + 3ml SF 0,9%
 ```
 
 ### Ataque Isquemico Transitório  ·  CID G45
+
+**🩺 Exame físico**
+```
+BEG, corado, hidratado, acianótico, anictérico, afebril. (assintomático no momento — déficit já resolvido).
+SSVV: PA __/__ | FC __ | FR __ | SatO2 __% | Tax __°C.
+Neuro: Glasgow 15, SEM déficits focais no exame atual. ACV: RCR, avaliar sopro carotídeo, ritmo (FA?). Calcular ABCD2.
+```
 
 **🏠 Casa — ABCD2 < 4**
 ```
@@ -122,6 +136,13 @@ TOMAR 01 COMPRIMIDO DE 8/8H SE NAUSEAS/VÔMITOS
 
 ### Febre Maculosa  ·  CID A77
 
+**🩺 Exame físico**
+```
+REG, febril, toxemiado.
+SSVV: PA __/__ | FC __ | FR __ | SatO2 __% | Tax __°C.
+Pele: exantema maculopapular em punhos/tornozelos com progressão centrípeta (inclui palmas/plantas). Mialgia intensa. [História de carrapato/área rural]. Avaliar sinais de gravidade (petéquias, alteração neurológica).
+```
+
 **🏠 Casa — Prescrição — Casa**
 ```
 DOXICILINA 100MG ---------------------------
@@ -142,6 +163,13 @@ SOLICITAR: HEMOGRAMA, NA, K, CREATININA, TGP, TGO
 ```
 
 ### Intoxicação Exógena  ·  CID Y19.9
+
+**🩺 Exame físico**
+```
+[Nível de consciência __], Glasgow __.
+SSVV: PA __/__ | FC __ | FR __ | SatO2 __% | Tax __°C.
+Pupilas [mióticas/midriáticas]. Pele [seca/sudoreica]. Toxíndrome: [colinérgica/anticolinérgica/opioide/simpaticomimética]. Odor [__]. Avaliar ABCDE.
+```
 
 **💉 PS / Sala — Prescrição — PS**
 ```
@@ -166,6 +194,13 @@ No olho: 1-2 gotas de colírio anestésico + lavagem com SF
 
 ### Intubação Orotraqueal (70 kg)
 
+**🩺 Exame físico**
+```
+Paciente com indicação de via aérea definitiva.
+SSVV: PA __/__ | FC __ | FR __ | SatO2 __% | Tax __°C.
+Glasgow __, esforço respiratório [__], SatO2 __%. Preditores de VA difícil (LEMON/Mallampati). Pré-oxigenação, monitorização, material checado.
+```
+
 **💉 PS / Sala — Prescrição — PS**
 ```
 - MOV
@@ -184,6 +219,13 @@ Rocuronio (5ml): 7ml EV
 
 ### Leptospirose
 
+**🩺 Exame físico**
+```
+REG, febril.
+SSVV: PA __/__ | FC __ | FR __ | SatO2 __% | Tax __°C.
+Mialgia intensa (panturrilhas), sufusão conjuntival. [Icterícia rubínica]. Avaliar oligúria/LRA, sinais hemorrágicos, comprometimento pulmonar (síndrome de Weil).
+```
+
 **🏠 Casa — Prescrição — Casa**
 ```
 DOXICILINA 100MG ------------------- 014 CPS
@@ -198,6 +240,13 @@ TOMAR 01 CP DE 8/8 HORAS, SE NÁUSEA OU VOMITO
 HEMOGRAMA, UREIA, CREATININA, NA, K, TGO, TGP, BILIRRUBINA TOTAL E FRAÇÕES, VHS, PCR, URINA I, CPK PCR LEPTOSPIROSE / IGM IGG LEPTOSPIROSE
 
 ### Picada de Aranha-Marrom  ·  CID W57
+
+**🩺 Exame físico**
+```
+BEG, corado, hidratado, acianótico, anictérico, afebril.
+SSVV: PA __/__ | FC __ | FR __ | SatO2 __% | Tax __°C.
+Lesão: placa marmórea com halo isquêmico central em [local], dor local. Avaliar forma cutânea vs cutâneo-visceral (hemólise: icterícia, colúria, oligúria).
+```
 
 **💉 PS / Sala — Grave**
 ```
@@ -221,6 +270,13 @@ TOMAR 02 CPS PELA MANHA POR 5 DIAS
 
 ### Picada de Escorpião (Acidente Escorpiônico)  ·  CID T63
 
+**🩺 Exame físico**
+```
+[BEG/agitado por dor].
+SSVV: PA __/__ | FC __ | FR __ | SatO2 __% | Tax __°C.
+Local da picada: dor intensa, [parestesia]. Avaliar sinais sistêmicos (sudorese, sialorreia, vômitos, taquicardia, taquipneia) → moderado/grave.
+```
+
 **💉 PS / Sala — Quadros moderados**
 ```
 MONITORIZAÇÃO
@@ -241,6 +297,13 @@ INTERNAÇÃO
 
 ### Picada de Jararaca (Acidente Botrópico)  ·  CID T63
 
+**🩺 Exame físico**
+```
+[BEG].
+SSVV: PA __/__ | FC __ | FR __ | SatO2 __% | Tax __°C.
+Local: edema, dor, equimose, [bolhas/necrose]. Sangramento local/gengivorragia. Avaliar tempo de coagulação, sinais de gravidade (sangramento sistêmico, oligúria, hipotensão).
+```
+
 **💉 PS / Sala — Prescrição — PS**
 ```
 SORO ANTIBOTRÓPICO (5mg/ml)
@@ -259,6 +322,13 @@ Se complicações: FASCIOTOMIA / DESBRIDAMENTO DE AREAS NECROSADAS / DRENAGEM AB
 ```
 
 ### Relação Desprotegida / Violência Sexual (PEP)
+
+**🩺 Exame físico**
+```
+BEG, corado, hidratado, acianótico, anictérico, afebril.
+SSVV: PA __/__ | FC __ | FR __ | SatO2 __% | Tax __°C.
+Exame conforme protocolo de violência sexual (preservação de evidências se aplicável). Genital/anal: [lesões?]. Definir janela para PEP (<72h) e contracepção de emergência.
+```
 
 **🏠 Casa — Prescrição — Casa**
 ```
@@ -281,6 +351,13 @@ PEP (até 72 horas)
 
 ### Sepse  ·  CID A41
 
+**🩺 Exame físico**
+```
+REG/MEG, toxemiado.
+SSVV: PA __/__ | FC __ | FR __ | SatO2 __% | Tax __°C.
+Nível de consciência [rebaixado?]. Perfusão: TEC __s, extremidades [frias/quentes], livedo. Buscar foco (pulmonar/urinário/abdominal/pele/SNC). qSOFA: FR≥22 __ | PAS≤100 __ | alteração do sensório __.
+```
+
 **💉 PS / Sala — Alta suspeição**
 ```
 - Cristaloide 30ml/kg em 3h - alíquotas de 500ml
@@ -299,6 +376,13 @@ Ao internar: hemocultura e urocultura.
 ## 🧠 Cabeça / Neuro
 
 ### AVC Hemorrágico (AVCH)  ·  CID I64
+
+**🩺 Exame físico**
+```
+[Rebaixamento], Glasgow __.
+SSVV: PA __/__ | FC __ | FR __ | SatO2 __% | Tax __°C.
+Neuro: déficit focal [__], [rigidez de nuca se HSA], pupilas [__]. NIHSS __. Cefaleia súbita intensa/vômitos. PA habitualmente elevada.
+```
 
 **💉 PS / Sala — Prescrição — PS**
 ```
@@ -329,6 +413,13 @@ REVERTER ANTICOAGULAÇÃO (olhar whitebook).
 INTERNAÇÃO UTI + AVALIAÇÃO NEUROCIRURGIAO.
 
 ### AVC Isquêmico (AVCI)  ·  CID I64
+
+**🩺 Exame físico**
+```
+[Alerta/rebaixado], Glasgow __.
+SSVV: PA __/__ | FC __ | FR __ | SatO2 __% | Tax __°C.
+Neuro: déficit focal — [hemiparesia/disartria/desvio de rima/afasia/hemianopsia]. NIHSS __. Definir tempo de início (última vez visto bem) para janela de trombólise.
+```
 
 **💉 PS / Sala — Prescrição — PS**
 ```
@@ -388,6 +479,13 @@ Neuro: GLASGOW 15, sem sinais meníngeos, sem déficits focais.
 
 ### Cefaleia Pós-Raqui  ·  CID O74.5
 
+**🩺 Exame físico**
+```
+BEG, corado, hidratado, acianótico, anictérico, afebril.
+SSVV: PA __/__ | FC __ | FR __ | SatO2 __% | Tax __°C.
+Cefaleia POSTURAL (piora ao sentar/levantar, alivia deitado), após raqui/punção. Neuro: sem déficits focais, sem rigidez de nuca. [± zumbido, fotofobia].
+```
+
 **💉 PS / Sala — Refratário**
 ```
 AQUI: RINGER LACTATO 2500ML EV EM 24H
@@ -415,6 +513,13 @@ TOMAR 01 CP A NOITE POR 3 NOITES
 
 ### Cefaleia Tensional  ·  CID R51
 
+**🩺 Exame físico**
+```
+BEG, corado, hidratado, acianótico, anictérico, afebril., orientado.
+SSVV: PA __/__ | FC __ | FR __ | SatO2 __% | Tax __°C.
+Dor em aperto/pressão bilateral, leve-moderada, sem náusea. Neuro: sem déficits, sem rigidez de nuca. Tensão em musculatura cervical/trapézios.
+```
+
 **🏠 Casa — Prescrição — Casa**
 ```
 PARACETAMOL 750MG
@@ -434,6 +539,13 @@ TOMAR 01 A 05 CPS A NOITE
 
 ### Crise Convulsiva  ·  CID R56
 
+**🩺 Exame físico**
+```
+Pós-ictal: sonolento, [confuso], Glasgow em recuperação.
+SSVV: PA __/__ | FC __ | FR __ | SatO2 __% | Tax __°C.
+Sem sinais de trauma cranioencefálico. Neuro: [Todd?], sem rigidez de nuca. Glicemia capilar __. Avaliar mordedura de língua/liberação esfincteriana.
+```
+
 **💉 PS / Sala — Prescrição — PS**
 ```
 - MOV
@@ -446,6 +558,13 @@ TOMAR 01 A 05 CPS A NOITE
 ```
 
 ### Encefalopatia Hipertensiva  ·  CID I67.4
+
+**🩺 Exame físico**
+```
+[Confuso/rebaixado], Glasgow __.
+SSVV: PA muito elevada __/__ | FC __.
+Neuro: cefaleia, [alteração visual], sem déficit focal fixo (diagnóstico de exclusão — afastar AVC). Fundo de olho: [papiledema/exsudatos].
+```
 
 **💉 PS / Sala — Prescrição — PS**
 ```
@@ -531,6 +650,13 @@ PROFILAXIA
 
 ### Meningite Bacteriana  ·  CID G00.9
 
+**🩺 Exame físico**
+```
+REG/MEG, toxemiado, febril.
+SSVV: PA __/__ | FC __ | FR __ | SatO2 __% | Tax __°C.
+Rigidez de nuca, Kernig/Brudzinski [positivos]. Glasgow __. [Petéquias/púrpura = meningococcemia]. Fotofobia. Avaliar sinais de HIC.
+```
+
 **💉 PS / Sala — Prescrição — PS**
 ```
 HEMOGRAMA, UREIA, CREATININA, COAGULOGRAMA, HEMOCULTURA, LACTATO, GLICOSE, LÍQUOR, TC (S/N)
@@ -571,6 +697,12 @@ TOMAR 01 CP DE 12/12 HORAS POR 2 DIAS
 
 ### Neuralgia do Trigêmeo  ·  CID G50.9
 
+**🩺 Exame físico**
+```
+BEG, corado, hidratado, acianótico, anictérico, afebril.
+Dor paroxística, em choque, no território do trigêmeo (V2/V3), desencadeada por gatilhos (falar/mastigar/tocar). Neuro: SEM déficit sensitivo/motor entre as crises (se déficit → investigar causa secundária).
+```
+
 **🏠 Casa — Prescrição — Casa**
 ```
 CARBAMAZEPINA 200MG
@@ -583,6 +715,12 @@ Encaminhar Neurologista
 ```
 
 ### Neuralgia Pós Herpética  ·  CID G53.0
+
+**🩺 Exame físico**
+```
+BEG, corado, hidratado, acianótico, anictérico, afebril.
+Dor neuropática (queimação/choque) no dermátomo de zoster prévio, com [alodínia]. Pele: cicatrizes/hiperpigmentação da erupção prévia, sem lesões ativas.
+```
 
 **🏠 Casa — Prescrição — Casa**
 ```
@@ -600,6 +738,12 @@ Orientação: após aplicar creme pode “queimar” por alguns minutos
 💡 CAPSAICINA CREME 0,075% APLICAR NA REGIÃO 2-3X AO DIA OU
 
 ### Paralisia de Bell  ·  CID G51.0
+
+**🩺 Exame físico**
+```
+BEG, corado, hidratado, acianótico, anictérico, afebril.
+Paralisia facial periférica: acomete fronte (não enruga testa), sinal de Bell, apagamento do sulco nasolabial. Otoscopia normal (afastar Ramsay Hunt/otite). Restante do exame neurológico normal.
+```
 
 **🏠 Casa — Prescrição — Casa**
 ```
@@ -620,6 +764,12 @@ Encaminhar neurologista
 💡 Hemograma, PCR – excluir infecções
 
 ### Síndrome de Ramsay Hunt
+
+**🩺 Exame físico**
+```
+BEG, corado, hidratado, acianótico, anictérico, afebril.
+Paralisia facial periférica + vesículas em conduto auditivo/pavilhão/orofaringe (zoster ótico). [Otalgia, hipoacusia, vertigem, zumbido]. Otoscopia: vesículas no CAE.
+```
 
 **🏠 Casa — Prescrição — Casa**
 ```
@@ -705,6 +855,12 @@ Excluir AVC: Score HINTS
 
 ### Celulite Periorbitária / Pré-Septal
 
+**🩺 Exame físico**
+```
+BEG, corado, hidratado, acianótico, anictérico, afebril., [febril].
+Olho [D/E]: edema e eritema palpebral, SEM proptose, SEM dor à motricidade ocular, SEM oftalmoplegia, acuidade e reflexos preservados (se presentes → orbitária/pós-septal = emergência).
+```
+
 **🏠 Casa — Prescrição — Casa**
 ```
 AMOXICILINA + CLAVULANATO 500MG ------------- 30 CPS
@@ -750,6 +906,12 @@ TOMAR 01 CP DE 6/6 HORAS, SE DOR
 
 ### Herpes Zoster Ocular  ·  CID B00.5
 
+**🩺 Exame físico**
+```
+BEG, corado, hidratado, acianótico, anictérico, afebril.
+Vesículas em dermátomo V1 (fronte/pálpebra), sinal de Hutchinson (ponta do nariz). Olho: hiperemia, [dor, fotofobia]. Avaliar acuidade visual e córnea (fluoresceína).
+```
+
 **🏠 Casa — Prescrição — Casa**
 ```
 ACICLOVIR 400MG ---------------
@@ -761,6 +923,12 @@ TOMAR 02 CPS 1X AO DIA
 💡 compressas geladas, deixar a pele seca. OTORRINOLARINGOLOGIA
 
 ### Neurite Óptica  ·  CID H46
+
+**🩺 Exame físico**
+```
+BEG, corado, hidratado, acianótico, anictérico, afebril.
+Olho [D/E]: baixa de acuidade visual subaguda, dor à motricidade ocular, discromatopsia. Defeito pupilar aferente relativo (DPAR). Fundo de olho: [papilite ou normal].
+```
 
 **🏥 Internação — Na internação**
 ```
@@ -891,6 +1059,12 @@ Aplicar 1 jato em cada narina de 12 em 12 horas por 10 dias.
 ```
 
 ### Cerume  ·  CID H61.2
+
+**🩺 Exame físico**
+```
+BEG, corado, hidratado, acianótico, anictérico, afebril.
+Otoscopia [D/E]: rolha de cerume ocluindo o conduto, MT não visualizada. Sem sinais de otite externa/média associada.
+```
 
 **🏠 Casa — Prescrição — Casa**
 ```
@@ -1040,6 +1214,13 @@ CENTOR
 
 ### Otalgia  ·  CID H92.0
 
+**🩺 Exame físico**
+```
+BEG, corado, hidratado, acianótico, anictérico, afebril.
+SSVV: PA __/__ | FC __ | FR __ | SatO2 __% | Tax __°C.
+Otoscopia: [normal — considerar causa referida: ATM, dental, faríngea]. Palpação de ATM e cervical. Orofaringe.
+```
+
 **🏠 Casa — Prescrição — Casa**
 ```
 DIPIRONA 500MG
@@ -1153,6 +1334,12 @@ TOMAR 01 CP DE 12/12HORAS POR 10 DIAS
 
 ### Perfuração Membrana Timpânica  ·  CID H72
 
+**🩺 Exame físico**
+```
+BEG, corado, hidratado, acianótico, anictérico, afebril.
+Otoscopia [D/E]: perfuração da MT [central/marginal], [± otorreia]. Avaliar história de trauma/otite/barotrauma. Acuidade auditiva grosseira.
+```
+
 **🏠 Casa — Prescrição — Casa**
 ```
 LEVOFLOXACINO 500MG
@@ -1238,6 +1425,13 @@ TOMAR 01 CP 1X AO DIA POR 5-7 DIAS
 
 ### Tosse Subaguda Pós-Viral  ·  CID R05.2
 
+**🩺 Exame físico**
+```
+BEG, corado, hidratado, acianótico, anictérico, afebril., afebril.
+SSVV: PA __/__ | FC __ | FR __ | SatO2 __% | Tax __°C.
+Orofaringe: [gotejamento pós-nasal]. AP: MV+ sem RA, SatO2 preservada. Tosse há 3–8 semanas após IVAS, sem sinais de gravidade.
+```
+
 **🏠 Casa — Prescrição — Casa**
 ```
 1) DROPROPIZINA 3MG/ML XAROPE 120 ml
@@ -1254,6 +1448,13 @@ APLICAR 1 JATO EM CADA NARINA DE 12/12 HORAS POR 5 DIAS
 ## 🫁 Tórax / Cardio-Pneumo
 
 ### Asma — Manutenção Gina 2026  ·  CID J45
+
+**🩺 Exame físico**
+```
+BEG, corado, hidratado, acianótico, anictérico, afebril., eupneico (fora de crise).
+SSVV: PA __/__ | FC __ | FR __ | SatO2 __% | Tax __°C.
+AP: MV+ bilateral, [sibilos esparsos ou ausentes]. Avaliar controle (sintomas diurnos, despertares, uso de resgate, limitação). Técnica inalatória.
+```
 
 **🏠 Casa — Prescrição — Casa**
 ```
@@ -1282,6 +1483,13 @@ ENXAGUAR A BOCA após CI (evita candidíase oral).
 paciente deve ter corticoide inalatório (CI). SABA sozinho = mais crises.
 
 ### Bradicardia Instável  ·  CID R00.1
+
+**🩺 Exame físico**
+```
+[Rebaixado/sudoreico].
+SSVV: FC < 50 __ | PA __/__ (hipotensão?) | SatO2 __%.
+Sinais de má perfusão/instabilidade (5D: dor torácica, dispneia, ↓consciência, desmaio, ↓PA). ECG: [tipo de bloqueio].
+```
 
 **💉 PS / Sala — Prescrição — PS**
 ```
@@ -1341,6 +1549,13 @@ Aplicar 1 jato em cada narina de 12 em 12 horas por 10 dias.O
 
 ### Coqueluche  ·  CID A37
 
+**🩺 Exame físico**
+```
+BEG, corado, hidratado, acianótico, anictérico, afebril., afebril ou febre baixa.
+SSVV: PA __/__ | FC __ | FR __ | SatO2 __% | Tax __°C.
+Paroxismos de tosse com guincho inspiratório/vômito pós-tosse. AP: geralmente limpo entre acessos. [Contactante/vacinação].
+```
+
 **🏠 Casa — Prescrição — Casa**
 ```
 AZITROMICINA 500MG ---------------------- 05 CPS
@@ -1352,6 +1567,13 @@ TOMAR 01 CP DE 8/8 HORAS, SE NÁUSEA OU VOMITO
 ```
 
 ### Crise de Asma — Exacerbação  ·  CID J45
+
+**🩺 Exame físico**
+```
+[REG/MEG], [taquipneico], fala [frases/palavras].
+SSVV: PA __/__ | FC __ | FR __ | SatO2 __% | Tax __°C.
+AP: sibilos difusos, tiragem, uso de acessória, [tórax silencioso = gravíssimo]. SatO2 __%. FR __. Nível de consciência.
+```
 
 **💉 PS / Sala — NA UNIDADE**
 ```
@@ -1385,6 +1607,13 @@ ALÍVIO: SE FALTA DE AR/SINTOMAS, INALAR 1 CÁPSULA EXTRA
 
 ### Dissecção Aguda de Aorta  ·  CID I71
 
+**🩺 Exame físico**
+```
+MEG, dor torácica/dorsal intensa 'rasgando'.
+SSVV: PA __/__ (assimetria entre MMSS?), FC __.
+Pulsos assimétricos/déficit de pulso. [Sopro de insuficiência aórtica]. Avaliar déficit neurológico/isquemia.
+```
+
 **💉 PS / Sala — Prescrição — PS**
 ```
 ECG, RX TÓRAX, HEMOGRAMA, LACTATO, UREIA, CREAT, TGO, TGP
@@ -1405,6 +1634,13 @@ SINAIS VITAIS 1/1 HORA
 ```
 
 ### Dor Torácica — Abordagem Rápida  ·  CID R07
+
+**🩺 Exame físico**
+```
+[BEG/MEG].
+SSVV: PA __/__ | FC __ | FR __ | SatO2 __% | Tax __°C.
+ACV: RCR 2T, [sopros, B3/B4], turgência jugular. AP: MV+ [estertores/abolido]. Reprodutível à palpação? Pulsos simétricos? ECG em ≤10 min. Buscar as 6 causas fatais.
+```
 
 **🏠 Casa — PASSO 2 — Pensar nas 6 CAUSAS QUE MATAM antes de "musculoesquelético"**
 ```
@@ -1431,6 +1667,13 @@ T  Troponina:              normal 0 / 1–3x 1 / > 3x = 2
 - ECG (REPETIR seriado — 1 ECG normal NÃO exclui SCA) - Troponina seriada (0h e 1h, ou 0h e 3h) - Rx tórax, hemograma, eletrólitos, função renal, glicemia - D-dímero SE suspeita de TEP (e Wells baixo); Angio-TC se D-dímero+ ou alta suspeita  SE SCA CONFIRMADA/SUSPEITA → seguir protocolo IAM (AAS, clopidogrel, etc.) e TRANSFERIR/INTERNAR.
 
 ### DPOC Exacerbado  ·  CID J44
+
+**🩺 Exame físico**
+```
+[REG], [taquipneico], tórax em tonel.
+SSVV: PA __/__ | FC __ | FR __ | SatO2 __% | Tax __°C.
+AP: MV↓ difuso, sibilos/roncos, expiração prolongada. SatO2 __% (meta 88–92%). Uso de musculatura acessória, cianose, edema (cor pulmonale).
+```
 
 **💉 PS / Sala — AQUI**
 ```
@@ -1462,6 +1705,13 @@ FAZER 2 JATOS DE 6/6 HORAS POR 5 DIAS
 
 ### Edema Agudo de Pulmão  ·  CID J81
 
+**🩺 Exame físico**
+```
+MEG, dispneia intensa, ortopneia, sudoreico.
+SSVV: PA __/__ | FC __ | FR __ | SatO2 __% | Tax __°C.
+AP: estertores crepitantes bilaterais até ápices, [sibilos]. ACV: taquicardia, B3, turgência jugular. SatO2 baixa. Extremidades [frias].
+```
+
 **💉 PS / Sala — Prescrição — PS**
 ```
 - VNI
@@ -1480,6 +1730,13 @@ com 10ml/h)
 💡 - Dieta zero (até melhora de dispneia)
 
 ### IAM — Infarto Agudo do Miocárdio  ·  CID I21.9
+
+**🩺 Exame físico**
+```
+[BEG/MEG], sudoreico, ansioso.
+SSVV: PA __/__ | FC __ | FR __ | SatO2 __% | Tax __°C.
+Dor precordial em aperto, irradiação [MSE/mandíbula], >20 min. ACV: RCR 2T, [B3/B4, sopro, atrito]. AP: [estertores = Killip]. ECG em ≤10 min.
+```
 
 **🏠 Casa — Prescrição — Casa**
 ```
@@ -1538,6 +1795,13 @@ Aplicar 1 jato em cada narina de 12 em 12 horas por 10 dias.
 
 ### Insuficiência Cardíaca  ·  CID I50
 
+**🩺 Exame físico**
+```
+[REG], [dispneico].
+SSVV: PA __/__ | FC __ | FR __ | SatO2 __% | Tax __°C.
+ACV: turgência jugular, B3, [sopros]. AP: estertores crepitantes bibasais. Edema de MMII, [hepatomegalia, ascite]. Perfil hemodinâmico (quente/frio × seco/congesto).
+```
+
 **💉 PS / Sala — Prescrição — PS**
 ```
 Perfil B
@@ -1568,6 +1832,13 @@ Perfil B
 ```
 
 ### Oclusão Arterial Aguda  ·  CID I74.3
+
+**🩺 Exame físico**
+```
+BEG, corado, hidratado, acianótico, anictérico, afebril., dor intensa no membro.
+SSVV: PA __/__ | FC __ | FR __ | SatO2 __% | Tax __°C.
+Membro [__]: 6 P — dor, palidez, ausência de pulso, parestesia, paralisia, poiquilotermia (frio). TEC alargado. Comparar com contralateral. Tempo de isquemia.
+```
 
 **🏠 Casa — Prescrição — Casa**
 ```
@@ -1629,6 +1900,13 @@ CURB-65 não muda com idade (a idade ≥65 já é 1 ponto). Reescreveria: 0–1 
 
 ### Taquiarritmias  ·  CID I49
 
+**🩺 Exame físico**
+```
+[BEG/instável], palpitações.
+SSVV: FC __ (>100) | PA __/__ | SatO2 __%.
+Avaliar instabilidade (dor torácica, dispneia, ↓consciência, hipotensão). ECG: QRS [estreito/largo], R-R [regular/irregular].
+```
+
 **💉 PS / Sala — Cardioversão sincronizada**
 ```
 - MONITORIZAR, ACESSO VENOSO
@@ -1680,6 +1958,13 @@ Paciente instável
 
 ### Tosse e SRAG
 
+**🩺 Exame físico**
+```
+[REG], [dispneico].
+SSVV: PA __/__ | FC __ | FR __ | SatO2 __% | Tax __°C.
+AP: MV+ [estertores], SatO2 __%. Avaliar sinais de gravidade (FR≥24, SatO2<95%, esforço, piora do estado geral). Definir se preenche critério de SRAG.
+```
+
 **🏠 Casa — Prescrição — Casa**
 ```
 1) Vick 44E ---------------------------------------------- 1 frasco
@@ -1696,6 +1981,13 @@ Tomar 1 cp a noite por 7 dias
 ```
 
 ### Tromboflebite Superficial  ·  CID I80
+
+**🩺 Exame físico**
+```
+BEG, corado, hidratado, acianótico, anictérico, afebril., afebril.
+SSVV: PA __/__ | FC __ | FR __ | SatO2 __% | Tax __°C.
+Membro: cordão venoso endurecido, eritematoso, doloroso ao longo de trajeto de veia superficial, SEM edema importante de todo o membro (avaliar extensão e proximidade da junção safeno-femoral).
+```
 
 **🏠 Casa — Prescrição — Casa**
 ```
@@ -1778,6 +2070,13 @@ SULFADIAZINA DE PRATA – Dermazine, Pratazine APLICAR O CREME NA LESÃO. COLOCA
 
 ### Trombose Venosa  ·  CID I82
 
+**🩺 Exame físico**
+```
+BEG, corado, hidratado, acianótico, anictérico, afebril.
+SSVV: PA __/__ | FC __ | FR __ | SatO2 __% | Tax __°C.
+Membro [__]: edema assimétrico, dor à palpação da panturrilha, [empastamento, ↑temperatura, dilatação venosa superficial]. Homans de baixo valor. Calcular escore de Wells.
+```
+
 **💉 PS / Sala — Se Clearance <30**
 ```
 HEPARINA NÃO FRACIONADA 25000 UNIDADES/5ML
@@ -1829,6 +2128,13 @@ Tratamento ambulatorial
 
 ### Abdome Agudo Obstrutivo  ·  CID K56.6
 
+**🩺 Exame físico**
+```
+[REG/MEG], [desidratado].
+SSVV: PA __/__ | FC __ | FR __ | SatO2 __% | Tax __°C.
+Abdome distendido, timpânico, RHA [aumentados/metálicos ou abolidos], dor difusa, [parada de eliminação de gases/fezes], vômitos. Toque retal: ampola [vazia]. Cicatrizes prévias.
+```
+
 **💉 PS / Sala — Se brida/aderência**
 ```
 DIETA ZERO
@@ -1855,6 +2161,13 @@ CHAMAR EQUIPE CIRURGIA
 TC ABDOME COM CONTRASTE
 
 ### Apendicite Aguda — Score de Alvarado  ·  CID K35
+
+**🩺 Exame físico**
+```
+BEG, corado, hidratado, acianótico, anictérico, afebril., [febril].
+SSVV: PA __/__ | FC __ | FR __ | SatO2 __% | Tax __°C.
+Abdome: dor em FID (McBurney), Blumberg [+], [Rovsing, psoas, obturador]. Defesa localizada. Alvarado: __ pontos. βhCG em mulher fértil.
+```
 
 **🏠 Casa — SOLICITAR**
 ```
@@ -1887,6 +2200,12 @@ INTERPRETAÇÃO
 
 ### Candidiase Oral  ·  CID B37
 
+**🩺 Exame físico**
+```
+BEG, corado, hidratado, acianótico, anictérico, afebril.
+Cavidade oral: placas brancas removíveis (aspecto de leite coalhado) em mucosa jugal/língua/palato, com base eritematosa. Avaliar fatores predisponentes (ATB, corticoide inalatório, imunossupressão, DM).
+```
+
 **🏠 Casa — Prescrição — Casa**
 ```
 NISTATINA 100.000
@@ -1895,6 +2214,13 @@ CAVIDADE ORAL ANTES DE SER ENGOLIDA.
 ```
 
 ### Colecistite Aguda  ·  CID K81
+
+**🩺 Exame físico**
+```
+[REG], febril.
+SSVV: PA __/__ | FC __ | FR __ | SatO2 __% | Tax __°C.
+Abdome: dor em HD, sinal de MURPHY POSITIVO, [defesa localizada]. RHA+. [Icterícia leve]. Avaliar sinais de colangite (tríade de Charcot).
+```
 
 **💉 PS / Sala — Prescrição — PS**
 ```
@@ -1911,6 +2237,13 @@ SINAIS VITAIS 6/6H
 ```
 
 ### Colite Pseudomembranosa  ·  CID A04.7
+
+**🩺 Exame físico**
+```
+[REG], [febril].
+SSVV: PA __/__ | FC __ | FR __ | SatO2 __% | Tax __°C.
+Abdome: distendido, dor difusa, RHA+. Diarreia volumosa (uso recente de ATB). Avaliar desidratação e sinais de gravidade (megacólon: distensão importante, toxemia).
+```
 
 **🏠 Casa — Prescrição — Casa**
 ```
@@ -2082,6 +2415,13 @@ TOMAR 01 CP 1X AO DIA POR 3 DIAS
 
 ### Diverticulite Aguda  ·  CID K57
 
+**🩺 Exame físico**
+```
+BEG, corado, hidratado, acianótico, anictérico, afebril., [febril].
+SSVV: PA __/__ | FC __ | FR __ | SatO2 __% | Tax __°C.
+Abdome: dor em FIE, [defesa/Blumberg localizado em FIE], massa palpável dolorosa? RHA+/↓. Avaliar sinais de complicação (peritonite difusa, sepse).
+```
+
 **💉 PS / Sala — Complicada**
 ```
 DIETA ZERO
@@ -2146,6 +2486,12 @@ TOMAR 5 – 10 ML VO 1 HORA APÓS AS REFEIÇÕES E AO DEITAR
 💡 manter tratamento por 4-8 semanas, não comer antes de deitar, evitar refeições volumosas, cessar tabagismo, evitar alimentos (café,chocolate, álcool) ----------------------------------------------------------------------------------------------
 
 ### Enterobíase / Oxiurose  ·  CID B80
+
+**🩺 Exame físico**
+```
+BEG, corado, hidratado, acianótico, anictérico, afebril.
+Região perianal: [escoriações por prurido]. Prurido anal de predomínio noturno. Restante do exame sem alterações. [Contactantes/creche].
+```
 
 **🏠 Casa — Prescrição — Casa**
 ```
@@ -2283,6 +2629,13 @@ Abdome discretamente distendido, plano, dor discreta à palpação difusamente, 
 
 ### Hemorragia Digestiva Alta  ·  CID K92.2
 
+**🩺 Exame físico**
+```
+[REG/MEG, palidez].
+SSVV: PA __/__ | FC __ | FR __ | SatO2 __% | Tax __°C. (avaliar hipotensão postural).
+Toque retal: MELENA. [Hematêmese/borra de café]. Estigmas de hepatopatia? Avaliar repercussão hemodinâmica e classificar (Blatchford).
+```
+
 **💉 PS / Sala — Prescrição — PS**
 ```
 MONITORIZAÇÃO
@@ -2349,6 +2702,13 @@ SENTAR EM BACIA COM AGUA MORNA E PERMANECER POR 15 MINUTOS, 2 VEZES POR DIA
 
 ### Pancreatite Aguda  ·  CID K85
 
+**🩺 Exame físico**
+```
+[REG/MEG].
+SSVV: PA __/__ | FC __ | FR __ | SatO2 __% | Tax __°C.
+Abdome: dor epigástrica intensa em faixa/irradiação dorsal, [distensão], RHA↓. [Sinais de Cullen/Grey-Turner = grave]. Avaliar SIRS/gravidade.
+```
+
 **💉 PS / Sala — Prescrição — PS**
 ```
 HEMOGRAMA, FA, GAMA GT, TGO, TGP, BILIRRUBINAS TOTAIS E FRAÇÕES, AMILASE, LIPASE, PCR, GLICEMIA, NA, K,
@@ -2366,6 +2726,13 @@ SINAIS VITAIS 6/6H
 
 ### Parasitose
 
+**🩺 Exame físico**
+```
+BEG, corado, hidratado, acianótico, anictérico, afebril.
+SSVV: PA __/__ | FC __ | FR __ | SatO2 __% | Tax __°C.
+Abdome: flácido, RHA+, [dor difusa leve]. Avaliar palidez (anemia), prurido anal. Geralmente exame pobre; contexto epidemiológico.
+```
+
 **🏠 Casa — Prescrição — Casa**
 ```
 ALBENDAZOL 200MG
@@ -2373,6 +2740,13 @@ TOMAR 02 COMPRIMIDOS, DOSE ÚNICA
 ```
 
 ### Soluço  ·  CID R06.6
+
+**🩺 Exame físico**
+```
+BEG, corado, hidratado, acianótico, anictérico, afebril.
+SSVV: PA __/__ | FC __ | FR __ | SatO2 __% | Tax __°C.
+Soluço persistente. Exame geralmente normal — investigar causa (refluxo, irritação diafragmática, SNC, distúrbio metabólico) se >48h/refratário.
+```
 
 **🏠 Casa — Prescrição — Casa**
 ```
@@ -2400,6 +2774,12 @@ TOMAR 01 CP DE 12/12 HORAS POR 5 A 10 DIAS
 
 ### Xerostomia  ·  CID R68.2
 
+**🩺 Exame físico**
+```
+BEG, corado, hidratado, acianótico, anictérico, afebril.
+Cavidade oral: mucosa seca, saliva escassa/espessa, [candidíase associada, cáries]. Avaliar medicações xerostomizantes e doenças associadas (Sjögren, DM).
+```
+
 **🏠 Casa — Prescrição — Casa**
 ```
 GOMA DE MASCAR SEM AÇUCAR
@@ -2420,6 +2800,13 @@ APLICAR NOS LÁBIOS 2-3X AO DIA
 ## 🩸 Renal / Endócrino / Metabólico
 
 ### Cetoacidose Diabética  ·  CID E14.1
+
+**🩺 Exame físico**
+```
+[REG/MEG], desidratado, [rebaixado].
+SSVV: PA __/__ | FC __ | FR __ | SatO2 __% | Tax __°C.
+Ritmo de Kussmaul, hálito cetônico. Mucosas secas, TEC alargado. Glicemia capilar __ (>250). Buscar fator precipitante (infecção, má adesão). Cetonúria/cetonemia.
+```
 
 **💉 PS / Sala — Após resultado de exames**
 ```
@@ -2464,6 +2851,13 @@ Quando glicemia = 200: 0,02 – 0,05 UI/KG/HORA EV
 
 ### Estado Hiperglicêmico Hiperosmolar  ·  CID E14
 
+**🩺 Exame físico**
+```
+[Rebaixado], desidratação grave.
+SSVV: PA __/__ | FC __ | FR __ | SatO2 __% | Tax __°C.
+Mucosas muito secas, TEC alargado, [hipotensão]. Glicemia capilar __ (muito alta, >600). Sem Kussmaul/cetose importante. Nível de consciência ∝ osmolaridade. Buscar precipitante.
+```
+
 **💉 PS / Sala — Após resultado de exames**
 ```
 Na normal-alto: NaCl 0,45% 150-250 ML/HORA
@@ -2493,6 +2887,13 @@ SF0,9% 15-20ML/KG NA PRIMEIRA HORA
 
 ### Hiperglicemia  ·  CID R73.9
 
+**🩺 Exame físico**
+```
+BEG, corado, hidratado, acianótico, anictérico, afebril.
+SSVV: PA __/__ | FC __ | FR __ | SatO2 __% | Tax __°C.
+Glicemia capilar __. Avaliar sintomas (poliúria, polidipsia), sinais de desidratação, cetose (afastar CAD/EHH). Buscar infecção/fator descompensador.
+```
+
 **🏠 Casa — GLICEMIA CAPILAR**
 ```
 Glicemia 150-250: 2UI
@@ -2506,6 +2907,13 @@ Cuidado com CAD e EHH!
 💡 - Insulina Regular SC:
 
 ### Hiperpotassemia  ·  CID E87.5
+
+**🩺 Exame físico**
+```
+BEG, corado, hidratado, acianótico, anictérico, afebril. (sintomas inespecíficos).
+SSVV: PA __/__ | FC __ | FR __ | SatO2 __% | Tax __°C.
+Avaliar fraqueza muscular, [arritmia]. ECG obrigatório: onda T apiculada, alargamento de QRS, ↓onda P. K sérico __. Buscar causa (LRA, drogas, rabdomiólise).
+```
 
 **💉 PS / Sala — Se ECG alterado**
 ```
@@ -2524,6 +2932,13 @@ FUROSEMIDA (20MG/2ML): 1 AMP DE 12/12 H
 ```
 
 ### Hipoglicemia  ·  CID E16.2
+
+**🩺 Exame físico**
+```
+[Sudoreico/rebaixado/agitado].
+SSVV: PA __/__ | FC __ | FR __ | SatO2 __% | Tax __°C.
+Glicemia capilar __ (<70). Sinais adrenérgicos (tremor, sudorese, taquicardia) e neuroglicopênicos (confusão, déficit focal transitório, ↓consciência). Buscar causa (jejum, insulina/hipoglicemiante).
+```
 
 **💉 PS / Sala — Prescrição — PS**
 ```
@@ -2558,6 +2973,13 @@ TRATO DIGESTIVO
 
 ### Hiponatremia  ·  CID E87.1
 
+**🩺 Exame físico**
+```
+[Variável conforme gravidade/velocidade].
+SSVV: PA __/__ | FC __ | FR __ | SatO2 __% | Tax __°C.
+Avaliar volemia (hipo/eu/hipervolêmica): mucosas, TEC, edema, turgência. Neuro: [confusão, cefaleia, convulsão se grave/aguda]. Na sérico __.
+```
+
 **🏠 Casa — Prescrição — Casa**
 ```
 SF 0,9% 445 ML + NACL 20% 55ML - INFUNDIR EM BI DURANTE 12 HORAS
@@ -2567,6 +2989,13 @@ SOLICITAR NA APÓS
 💡 Grave (<120) e aguda:
 
 ### Hipopotassemia  ·  CID E87.6
+
+**🩺 Exame físico**
+```
+BEG, corado, hidratado, acianótico, anictérico, afebril.
+SSVV: PA __/__ | FC __ | FR __ | SatO2 __% | Tax __°C.
+Fraqueza muscular, [cãibras], [íleo]. ECG: onda U, achatamento de T, [ESV]. K sérico __. Buscar causa (perdas GI, diuréticos).
+```
 
 **🏠 Casa — Leve**
 ```
@@ -2584,6 +3013,13 @@ KCL 19,1% 15 ML (1,5 ampola) + SF 0,9% 1 LITRO – EV EM BIC 250 ML/H POR 4 HORA
 
 ### Rabdomiólise  ·  CID M62
 
+**🩺 Exame físico**
+```
+BEG, corado, hidratado, acianótico, anictérico, afebril.
+SSVV: PA __/__ | FC __ | FR __ | SatO2 __% | Tax __°C.
+Mialgia, fraqueza, urina escura (mioglobinúria — 'cor de coca-cola'). [Edema/dor muscular localizada]. Buscar causa (trauma/imobilização, exercício, drogas, convulsão). CPK __.
+```
+
 **🏠 Casa — Prescrição — Casa**
 ```
 HEMOGAMA, UREIA, CREATININA, FOSFORO, POTASSIO, CALCIO, TGO, TGP, GGT, GLICOSE, ACIDO URICO,
@@ -2600,6 +3036,13 @@ CPK > 5000 e lesão renal:
 
 ### Anemia Ferropriva  ·  CID D50.9
 
+**🩺 Exame físico**
+```
+BEG, corado, hidratado, acianótico, anictérico, afebril.
+SSVV: PA __/__ | FC __ | FR __ | SatO2 __% | Tax __°C.
+Palidez cutâneo-mucosa, [coiloníquia, queilite angular]. ACV: [sopro sistólico funcional]. Investigar fonte de perda (menstrual, digestiva). Hb __.
+```
+
 **🏠 Casa — Prescrição — Casa**
 ```
 SULFATO FERROSO (200MG FERRO ELEMENTAR) --------------------------
@@ -2608,6 +3051,13 @@ COM SUCO DE LARANJA
 ```
 
 ### Anemia Megaloblástica  ·  CID D51
+
+**🩺 Exame físico**
+```
+BEG, corado, hidratado, acianótico, anictérico, afebril.
+SSVV: PA __/__ | FC __ | FR __ | SatO2 __% | Tax __°C.
+Palidez, [glossite, icterícia leve]. Neuro (B12): [parestesias, ↓propriocepção, marcha atáxica]. Investigar dieta/absorção. Hb/VCM __.
+```
 
 **💉 PS / Sala — Vitamina B12**
 ```
@@ -2633,6 +3083,13 @@ TOMAR 01 CP 1X AO DIA
 
 ### Crise Álgica Falcêmica  ·  CID D57
 
+**🩺 Exame físico**
+```
+[REG por dor].
+SSVV: PA __/__ | FC __ | FR __ | SatO2 __% | Tax __°C.
+Dor óssea/articular difusa, [priapismo]. Avaliar sinais de complicação: síndrome torácica aguda (dor torácica, hipoxemia, infiltrado), sequestro, febre/infecção, AVC.
+```
+
 **💉 PS / Sala — Prescrição — PS**
 ```
 - SF 0,9% 500ml (3 a 5L/24h)
@@ -2650,6 +3107,13 @@ TOMAR 01 CP 1X AO DIA
 
 ### Epistaxe  ·  CID R04.0
 
+**🩺 Exame físico**
+```
+BEG, corado, hidratado, acianótico, anictérico, afebril.
+SSVV: PA __/__ | FC __ (avaliar HAS/repercussão).
+Rinoscopia: sangramento [anterior — Kiesselbach / posterior]. Avaliar uso de anticoagulante/antiagregante, coagulopatia. Estimar volume.
+```
+
 **💉 PS / Sala — Prescrição — PS**
 ```
 - Preparar tampão anterior: gaze + pinça kelly +1 amp adrenalina (ou ácido tranexâmico 50mg/ml 5 a 10ml) +
@@ -2663,6 +3127,13 @@ xylocaina gel
 - Manter paciente sentado com cabeça levemente fletida
 
 ### Neutropenia Febril  ·  CID D72.9
+
+**🩺 Exame físico**
+```
+[REG/MEG], febril.
+SSVV: PA __/__ | FC __ | FR __ | SatO2 __% | Tax __°C.
+Buscar foco minucioso (cavidade oral, pele/cateter, perianal — evitar toque retal, pulmonar, urinário). Sinais de sepse. Quimioterapia recente. Calcular MASCC.
+```
 
 **💉 PS / Sala — Ambulatorial**
 ```
@@ -2706,6 +3177,13 @@ MASCC SCORE p/ saber onde tratar.
 
 ### Transfusão de Hemoderivados
 
+**🩺 Exame físico**
+```
+BEG, corado, hidratado, acianótico, anictérico, afebril.
+SSVV: PA __/__ | FC __ | FR __ | SatO2 __% | Tax __°C.
+Avaliar indicação e alvo (Hb/plaquetas/coagulação). Durante: monitorar febre, calafrio, dispneia, urticária, dor lombar, hipotensão (reação transfusional). Checar compatibilidade/identificação.
+```
+
 **💉 PS / Sala — HEMÁCIAS**
 ```
 CONCENTRADO DE HEMÁCIAS (1 unidade aumenta 1 hb e 3% ht) – nos primeiros 30 minutos, 15 gotas/minuto
@@ -2734,6 +3212,13 @@ SISTEMA UROGENITAL
 ## 🦴 MSK / Reumato / Orto
 
 ### Dor Crônica  ·  CID R52.2
+
+**🩺 Exame físico**
+```
+BEG, corado, hidratado, acianótico, anictérico, afebril.
+SSVV: PA __/__ | FC __ | FR __ | SatO2 __% | Tax __°C.
+Exame do sítio doloroso: [articular/miofascial/neuropático]. Amplitude de movimento, pontos-gatilho, sinais neurológicos. Escala de dor __/10. Impacto funcional. Sem sinais de alarme (bandeiras vermelhas).
+```
 
 **🏠 Casa — Prescrição — Casa**
 ```
@@ -2765,6 +3250,12 @@ Tomar 1 sachê ao dia, dissolvido em água, junto com refeição.
 
 ### Entorse do Tornozelo  ·  CID S93.4
 
+**🩺 Exame físico**
+```
+BEG, corado, hidratado, acianótico, anictérico, afebril.
+Tornozelo [D/E]: edema e dor em [maléolo lateral/ligamento talofibular anterior], equimose. Carga [possível/impossível]. Critérios de Ottawa (dor em maléolo posterior/base do 5º meta/navicular).
+```
+
 **🏠 Casa — Prescrição — Casa**
 ```
 DIPIRONA 500MG ---------------------
@@ -2784,6 +3275,12 @@ TOMAR 01 CP DE 8/8 HORAS, SE DOR INTENSA
 💡 - Gelo local 5x/ dia por 20 minutos - Imobilização durante 1-2 semanas - Elevação do membro - Repouso relativo __________________________________________________________________
 
 ### Fasciíte Plantar  ·  CID M72.2
+
+**🩺 Exame físico**
+```
+BEG, corado, hidratado, acianótico, anictérico, afebril.
+Pé [D/E]: dor à palpação da inserção da fáscia plantar no calcâneo, pior aos primeiros passos matinais. Dorsiflexão dos pododáctilos reproduz dor. Sem sinais inflamatórios sistêmicos.
+```
 
 **🏠 Casa — Prescrição — Casa**
 ```
@@ -2839,6 +3336,13 @@ TOMAR 01 CP 1X AO DIA
 PROFILAXIA
 
 ### Insuficiência Venosa Crônica  ·  CID I87.2
+
+**🩺 Exame físico**
+```
+BEG, corado, hidratado, acianótico, anictérico, afebril.
+SSVV: PA __/__ | FC __ | FR __ | SatO2 __% | Tax __°C.
+MMII: varizes, edema vespertino, dermatite ocre, [lipodermatosclerose, úlcera maleolar medial]. Pulsos distais presentes (afastar componente arterial). Sem sinais de TVP aguda.
+```
 
 **🏠 Casa — Prescrição — Casa**
 ```
@@ -2913,6 +3417,12 @@ Coluna lombar discretamente dolorosa à palpação paravertebral, sem deformidad
 
 ### Osteoartrite  ·  CID M19
 
+**🩺 Exame físico**
+```
+BEG, corado, hidratado, acianótico, anictérico, afebril.
+Articulação [joelho/mãos/quadril]: dor mecânica, crepitação, [nódulos de Heberden/Bouchard], limitação de ADM, [derrame leve]. Sem sinais inflamatórios exuberantes/febre.
+```
+
 **🏠 Casa — Prescrição — Casa**
 ```
 DIPIRONA 500MG
@@ -2942,6 +3452,12 @@ DICLOFENACO GEL APLICAR FINA CAMADA EM ARTICULAÇÃO ACOMETIDA 3X AO DIA OU NIME
 
 ### Atrofia Urogenital  ·  CID N90
 
+**🩺 Exame físico**
+```
+BEG, corada, hidratada, acianótica, anictérica, afebril.
+Exame genital: mucosa vaginal pálida, fina, ressecada, [perda de rugosidade, petéquias]. Contexto de pós-menopausa. Sintomas de secura/dispareunia/urinários.
+```
+
 **🏠 Casa — Prescrição — Casa**
 ```
 ESTRADIOL 10MCG/COMPRIMIDO
@@ -2958,6 +3474,13 @@ APLICAR A NOITE POR 30 NOITES
 💡 Checar contraindicações
 
 ### Bacteriúria Assintomática  ·  CID N39
+
+**🩺 Exame físico**
+```
+BEG, corado, hidratado, acianótico, anictérico, afebril., ASSINTOMÁTICO.
+SSVV: PA __/__ | FC __ | FR __ | SatO2 __% | Tax __°C.
+Sem disúria/polaciúria/dor lombar. Giordano negativo. Urocultura positiva sem sintomas. (Tratar apenas gestante/pré-procedimento urológico.)
+```
 
 **🏠 Casa — Prescrição — Casa**
 ```
@@ -2978,6 +3501,12 @@ TOMAR 1X, DOSE ÚNICA]
 ```
 
 ### Balanite  ·  CID N51.2
+
+**🩺 Exame físico**
+```
+BEG, corado, hidratado, acianótico, anictérico, afebril.
+Glande/prepúcio: eritema, edema, [secreção, placas esbranquiçadas se candidiásica]. Avaliar fimose/higiene, DM. Sem úlcera (se úlcera → investigar IST).
+```
 
 **🏠 Casa — Prescrição — Casa**
 ```
@@ -3003,6 +3532,12 @@ TOMAR 01 CP 1X AO DIA, SE COCEIRA
 
 ### Cancro Mole  ·  CID A57
 
+**🩺 Exame físico**
+```
+BEG, corado, hidratado, acianótico, anictérico, afebril.
+Genital: úlcera(s) DOLOROSA(S), fundo sujo/purulento, bordas irregulares e amolecidas. Adenopatia inguinal dolorosa [bubão, fistulizado]. (vs cancro duro da sífilis: indolor.)
+```
+
 **🏠 Casa — Rx USO ORAL**
 ```
 1- AZITROMICINA 500 MG __________________ 02 COMPRIMIDOS
@@ -3023,6 +3558,12 @@ TOMAR 02 CPS, DOSE ÚNICA
 ```
 
 ### Candidíase  ·  CID B37 · B37.9
+
+**🩺 Exame físico**
+```
+BEG, corada, hidratada, acianótica, anictérica, afebril.
+Exame especular: corrimento branco grumoso ('leite talhado'), aderido, hiperemia/edema vulvovaginal, prurido. pH vaginal normal (<4,5). Sem odor de peixe.
+```
 
 **🏠 Casa — Prescrição — Casa**
 ```
@@ -3053,6 +3594,12 @@ TOMAR 01 CP A CADA 3 DIAS, POR 3 DOSES. EM SEGUIDA, TOMAR 01 CP POR SEMANA, POR 
 Candidiase recorrente
 
 ### Cervicite  ·  CID N72
+
+**🩺 Exame físico**
+```
+BEG, corada, hidratada, acianótica, anictérica, afebril.
+Especular: colo hiperemiado, friável, com secreção mucopurulenta no orifício. Dor à mobilização do colo? (afastar DIP). Coletar para gonococo/clamídia.
+```
 
 **🏠 Casa — Prescrição — Casa**
 ```
@@ -3128,6 +3675,13 @@ TOMAR 01 CP DE 8/8 HORAS, APÓS AS REFEIÇÕES, POR NO MÁXIMO, DOIS DIAS
 
 ### Climatério Sintomas Vasomotores  ·  CID N95.1
 
+**🩺 Exame físico**
+```
+BEG, corada, hidratada, acianótica, anictérica, afebril.
+SSVV: PA __/__ | FC __ | FR __ | SatO2 __% | Tax __°C.
+Exame geral sem alterações agudas. Contexto de peri/pós-menopausa (fogachos, sudorese, insônia). Avaliar sinais de atrofia urogenital associada. PA/IMC.
+```
+
 **🏠 Casa — Prescrição — Casa**
 ```
 ISOFLAVONA DE SOJA 200MG ------------------------------------------ 1CX
@@ -3169,6 +3723,12 @@ Tomar 4 comprimidos, 3 vezes ao dia, por 3 dias.
 
 ### Gonorreia  ·  CID O98.2
 
+**🩺 Exame físico**
+```
+BEG, corado, hidratado, acianótico, anictérico, afebril.
+Genital: [secreção uretral purulenta abundante / corrimento cervical mucopurulento]. Disúria. Avaliar acometimento faríngeo/anal e coinfecção por clamídia.
+```
+
 **💉 PS / Sala — Prescrição — PS**
 ```
 CEFTRIAXONA 500MG IM DOSE ÚNICA AGORA
@@ -3203,6 +3763,12 @@ POR SABONETES ÍNTIMOS
 
 ### Herpes Genital  ·  CID A60 · A60.9
 
+**🩺 Exame físico**
+```
+BEG, corado, hidratado, acianótico, anictérico, afebril.
+Genital: vesículas agrupadas e/ou úlceras rasas DOLOROSAS em base eritematosa, [adenopatia inguinal dolorosa]. Primoinfecção: mais extenso + sintomas sistêmicos.
+```
+
 **🏠 Casa — Prescrição — Casa**
 ```
 1- ACICLOVIR 200 MG ____________________ 50 COMPRIMIDOS
@@ -3227,6 +3793,13 @@ TOMAR 01 CP DE 6/6 HORAS, SE DOR OU FEBRE
 
 ### Incontinência Urinária  ·  CID R32
 
+**🩺 Exame físico**
+```
+BEG, corado, hidratado, acianótico, anictérico, afebril.
+SSVV: PA __/__ | FC __ | FR __ | SatO2 __% | Tax __°C.
+Avaliar tipo (esforço/urgência/mista): teste de esforço, [prolapso genital], resíduo pós-miccional. Toque: tônus/força do assoalho pélvico. Afastar ITU/causa reversível.
+```
+
 **🏠 Casa — Prescrição — Casa**
 ```
 OXIBUTININA 5MG
@@ -3243,6 +3816,12 @@ TOMAR 01 CP AO DIA
 
 ### Linfogranuloma Venéreo  ·  CID A55
 
+**🩺 Exame físico**
+```
+BEG, corado, hidratado, acianótico, anictérico, afebril.
+Genital: úlcera/pápula transitória (pode passar despercebida) seguida de adenopatia inguinal dolorosa (bubão), [sinal do sulco]. Avaliar forma anorretal (proctite) em contexto de risco.
+```
+
 **🏠 Casa — Prescrição — Casa**
 ```
 DOXICICLINA 100MG -------------------------- 42 CPS
@@ -3250,6 +3829,13 @@ TOMAR 01 CP DE 12/12 HORAS POR 21 DIAS
 ```
 
 ### Mastite
+
+**🩺 Exame físico**
+```
+BEG, corada, hidratada, acianótica, anictérica, afebril., [febril].
+SSVV: PA __/__ | FC __ | FR __ | SatO2 __% | Tax __°C.
+Mama [D/E]: área de eritema, calor, dor e endurecimento (geralmente lactante). Avaliar flutuação (abscesso), fissura mamilar, adenopatia axilar.
+```
 
 **🏠 Casa — Prescrição — Casa**
 ```
@@ -3304,6 +3890,13 @@ TOMAR 01 CP 1X AO DIA POR 4-6 SEMANAS
 HEMOGRAMA, UREIA, CREATININA, URINA I, TC SEM CONTRASTE DE ABDOME
 
 ### Orquiepididimite  ·  CID N45
+
+**🩺 Exame físico**
+```
+BEG, corado, hidratado, acianótico, anictérico, afebril., [febril].
+SSVV: PA __/__ | FC __ | FR __ | SatO2 __% | Tax __°C.
+Bolsa escrotal [D/E]: dor e edema de epidídimo/testículo, [hiperemia], Prehn positivo (alívio com elevação), reflexo cremastérico presente (afastar torção — Prehn neg/cremastérico ausente).
+```
 
 **💉 PS / Sala — Jovem**
 ```
@@ -3381,6 +3974,13 @@ Ambulatorial
 
 ### Sangramento Uterino Anormal  ·  CID N93
 
+**🩺 Exame físico**
+```
+BEG, corada, hidratada, acianótica, anictérica, afebril., [palidez se sangramento importante].
+SSVV: PA __/__ | FC __ | FR __ | SatO2 __% | Tax __°C. (avaliar repercussão/hipotensão).
+Especular: origem do sangramento, volume, [coágulos]. βhCG. Avaliar anemia sintomática.
+```
+
 **💉 PS / Sala — Sangramento agudo**
 ```
 DIETA BRANDA
@@ -3437,6 +4037,12 @@ TOMAR 01 CP DE 8/8 HORAS POR 4 DIAS
 
 ### Sífilis  ·  CID A51 · A53.9
 
+**🩺 Exame físico**
+```
+BEG, corado, hidratado, acianótico, anictérico, afebril.
+Primária: cancro DURO — úlcera única, indolor, base endurecida, adenopatia indolor. Secundária: roséola/lesões palmoplantares, condiloma plano. Solicitar VDRL/teste treponêmico.
+```
+
 **💉 PS / Sala — Prescrição — PS**
 ```
 Rx USO INTRAMUSCULAR
@@ -3476,6 +4082,12 @@ TOMAR 01 CP DE 12/12HORAS POR 30 DIAS
 
 ### Tricomoníase  ·  CID A59
 
+**🩺 Exame físico**
+```
+BEG, corada, hidratada, acianótica, anictérica, afebril.
+Especular: corrimento amarelo-esverdeado bolhoso, abundante, colo 'em framboesa', pH >4,5, prurido/ardor vulvar. Teste de aminas [+]. IST — tratar parceria.
+```
+
 **🏠 Casa — Rx USO ORAL**
 ```
 1- METRONIDAZOL 250 MG _______________ 28 COMPRIMIDOS
@@ -3509,6 +4121,12 @@ TOMAR 02 CPS DE 12/12 HORAS POR 7 DIAS
 💡 não beber álcool ________________________________________________________________________________
 
 ### Vaginose  ·  CID N76 · N76.1
+
+**🩺 Exame físico**
+```
+BEG, corada, hidratada, acianótica, anictérica, afebril.
+Especular: corrimento branco-acinzentado homogêneo, aderente, odor de peixe (teste de aminas +), pH >4,5, SEM inflamação exuberante. Critérios de Amsel.
+```
 
 **🏠 Casa — Prescrição — Casa**
 ```
@@ -3616,6 +4234,12 @@ EXTENSA
 
 ### Dermatite de Contato  ·  CID L24.9
 
+**🩺 Exame físico**
+```
+BEG, corado, hidratado, acianótico, anictérico, afebril.
+Pele: eritema, vesículas, [descamação/liquenificação se crônica] com distribuição na área de contato (padrão geográfico/linear). Prurido. Identificar agente (níquel, cosmético, planta).
+```
+
 **🏠 Casa — Para face e áreas de dobra**
 ```
 HIDROCORTISONA 1% CREME
@@ -3651,6 +4275,12 @@ Quadro extenso
 
 ### Dermatite Perioral  ·  CID L71.0
 
+**🩺 Exame físico**
+```
+BEG, corado, hidratado, acianótico, anictérico, afebril.
+Face: pápulas e pústulas eritematosas perorais, poupando a borda vermelha dos lábios (zona clara). História de corticoide tópico facial. Sem comedões (vs acne).
+```
+
 **🏠 Casa — Casos extensos/ não responsivos**
 ```
 TETRACICLINA 250MG
@@ -3667,6 +4297,13 @@ TOMAR 01 CP 1-2X POR DIA POR 8-12 SEMANAS
 E METRONIDAZOL 0,75% GEL APPLICAR NAS LESÕES 2X POR DIA TÉ MELHORA CLÍNICA OU CLINDAMICINA 1% GEL OU LOÇÃO (manipulado) APLICAR NAS LESÕES 1-2X POR DIA ATÉ MELHORA CLÍNICA
 
 ### Drenagem Abscesso
+
+**🩺 Exame físico**
+```
+BEG, corado, hidratado, acianótico, anictérico, afebril., [afebril].
+SSVV: PA __/__ | FC __ | FR __ | SatO2 __% | Tax __°C.
+Coleção flutuante, eritematosa e dolorosa em [local], [ponto de drenagem]. Avaliar celulite perilesional e sinais sistêmicos. Sensibilidade/perfusão distais preservadas.
+```
 
 **💉 PS / Sala — Prescrição Ceftriaxona**
 ```
@@ -3811,6 +4448,13 @@ DE ALTA: - Retornar ao ambulatório/UBS em ATÉ 7 DIAS para reavaliação e ajus
 
 ### Erisipela / Celulite  ·  CID A46 · L03
 
+**🩺 Exame físico**
+```
+BEG, corado, hidratado, acianótico, anictérico, afebril., [febril].
+SSVV: PA __/__ | FC __ | FR __ | SatO2 __% | Tax __°C.
+Pele [membro/face]: placa eritematosa, quente, dolorosa, [bordas nítidas na erisipela / difusas na celulite], [bolhas, linfangite, adenopatia]. Identificar porta de entrada (micose interdigital, ferida).
+```
+
 **🏠 Casa — Prescrição — Casa**
 ```
 AMOXICILINA + CLAVULANATO 875/125MG -------------------------
@@ -3910,6 +4554,12 @@ PERMETRINA 5% LOÇÃO/CREME APLICAR 1-3 NOITES SEGUIDAS. REPETIR EM 7 DIAS
 
 ### Furunculo / Carbunculo  ·  CID L02
 
+**🩺 Exame físico**
+```
+BEG, corado, hidratado, acianótico, anictérico, afebril.
+Pele: nódulo(s) foliculares eritematosos e dolorosos com [ponto de pus central], carbúnculo = confluência de vários. Avaliar celulite associada e sinais sistêmicos. DM?
+```
+
 **🏠 Casa — Prescrição — Casa**
 ```
 CEFALEXINA 500MG -------
@@ -3962,6 +4612,12 @@ TOMAR 01 CP DE 6/6 HORAS, SE DOR INTENSA
 
 ### Hidradenite Supurativa  ·  CID L73.2
 
+**🩺 Exame físico**
+```
+BEG, corado, hidratado, acianótico, anictérico, afebril.
+Áreas intertriginosas (axila/inguinal/inframamária): nódulos dolorosos recidivantes, abscessos, [fístulas, cicatrizes em ponte, comedões duplos]. Estadiar (Hurley I–III).
+```
+
 **🏠 Casa — Prescrição — Casa**
 ```
 DIPIRONA 500MG
@@ -3996,6 +4652,12 @@ Se quadro extenso, sintomas sistêmicos, falha tratamento tópico
 
 ### Pediculose  ·  CID B85.1
 
+**🩺 Exame físico**
+```
+BEG, corado, hidratado, acianótico, anictérico, afebril.
+Couro cabeludo (ou púbis): lêndeas aderidas à haste do cabelo, [piolhos vivos], escoriações por prurido, [adenopatia cervical posterior]. Contactantes.
+```
+
 **🏠 Casa — Prescrição — Casa**
 ```
 PERMETRINA 1% SHAMPOO
@@ -4020,6 +4682,13 @@ TOMAR 200 MCG/KG, DOSE ÚNICA. REPETIR APÓS 7 DIAS.
 ```
 
 ### Queimadura  ·  CID T30.0
+
+**🩺 Exame físico**
+```
+BEG, corado, hidratado, acianótico, anictérico, afebril.
+SSVV: PA __/__ | FC __ | FR __ | SatO2 __% | Tax __°C.
+Queimadura em [local]: profundidade [1º/2º superficial/2º profundo/3º], SCQ estimada __% (regra dos 9). Avaliar vias aéreas (fuligem, rouquidão), áreas nobres (face/mãos/pés/períneo), circunferencial.
+```
 
 **💉 PS / Sala — Queimadura 3º grau**
 ```
@@ -4055,6 +4724,13 @@ TOMAR 01 CP DE 8/8 HORAS, SE COCEIRA
 SULFADIAZINA DE PRATA 1% (DERMAZINE/PRATAZINE) PASSAR EM LESÃO 1X AO DIA LIMPEZA DA FERIDA (SORO FISIOLOGICO OU CLOREXEDINE DERGEMANTE) MEMBRACEL CURATIVO APÓS HIGIENIZAÇÃO, APLICAR CURATIVO E APÓS, COBRIR LOCAL COM GAZE E FAIXA, FIXE COM ESPARADRAPO OU FITA ADESIVA
 
 ### Queimadura Elétrica  ·  CID W87.9
+
+**🩺 Exame físico**
+```
+BEG, corado, hidratado, acianótico, anictérico, afebril.
+SSVV: PA __/__ | FC __ | FR __ | SatO2 __% | Tax __°C.
+Marcas de entrada/saída da corrente em [locais]. Lesão tecidual pode ser MUITO maior que a aparente. ECG/monitorização (arritmia), avaliar mioglobinúria/rabdomiólise, síndrome compartimental.
+```
 
 **💉 PS / Sala — Prescrição — PS**
 ```
@@ -4147,6 +4823,12 @@ PROCEDIMENTOS
 
 ### Tínea Capitis
 
+**🩺 Exame físico**
+```
+BEG, corado, hidratado, acianótico, anictérico, afebril.
+Couro cabeludo: placa(s) de alopecia com descamação, [cabelos tonsurados, pontos pretos], [querion = placa inflamatória dolorosa]. Adenopatia cervical/occipital. Luz de Wood se disponível.
+```
+
 **🏠 Casa — Prescrição — Casa**
 ```
 GRISEOFULVINA (manipulado)
@@ -4157,6 +4839,13 @@ TOMAR 500MG 1X AO DIA OU DE 12/12 HORAS, DURANTE A REFEIÇÃO, POR 5-7 DIAS
 ## 🧠 Psiquiatria
 
 ### Abstinência Alcoólica  ·  CID F10.3
+
+**🩺 Exame físico**
+```
+[Ansioso/agitado, tremor].
+SSVV: PA __/__ | FC __ | FR __ | SatO2 __% | Tax __°C.
+Tremor de extremidades, sudorese, taquicardia, HAS. Avaliar gravidade (CIWA-Ar): alucinações, convulsão, desorientação (delirium tremens). Glicemia/hidratação.
+```
 
 **💉 PS / Sala — Prescrição — PS**
 ```
@@ -4194,6 +4883,14 @@ PACIENTE GRAVE
 
 ### Anemia (gestante)  ·  CID O99.0
 
+**🩺 Exame físico**
+```
+BEG, corada, hidratada, acianótica, anictérica, afebril.
+SSVV: PA __/__ | FC __ | FR __ | SatO2 __% | Tax __°C.
+Palidez cutâneo-mucosa. Obstétrico: BCF __ bpm | AU __ cm | tônus uterino normal | dinâmica ausente | sem perdas vaginais | movimentação fetal presente.
+Hb __ (ajustar meta na gestação).
+```
+
 **🏠 Casa — Prescrição — Casa**
 ```
 Profilaxia: Sulfato ferroso 40mg + Ácido fólico 0,2mg/mL 60 gotas — até o 3º mês de puerpério.
@@ -4201,6 +4898,13 @@ Tratamento: ajustar sulfato ferroso conforme hemoglobina.
 ```
 
 ### Ansiedade / Depressão (gestante)  ·  CID F41
+
+**🩺 Exame físico**
+```
+BEG, corada, hidratada, acianótica, anictérica, afebril.
+SSVV: PA __/__ | FC __ | FR __ | SatO2 __% | Tax __°C.
+Humor/afeto [__], ansiedade, [insônia]. Avaliar risco (ideação, funcionalidade). Obstétrico: BCF __ bpm | AU __ cm | tônus uterino normal | dinâmica ausente | sem perdas vaginais | movimentação fetal presente.
+```
 
 **💉 PS / Sala — Crise de ansiedade**
 ```
@@ -4218,6 +4922,13 @@ Sertralina 50mg — 1 cp VO 1x ao dia.
 
 ### Broncoespasmo / Crise asmática (gestante)  ·  CID J45
 
+**🩺 Exame físico**
+```
+[REG], [taquipneica].
+SSVV: PA __/__ | FC __ | FR __ | SatO2 __% | Tax __°C.
+AP: sibilos difusos, SatO2 __% (manter ≥95% — feto é sensível à hipóxia). Obstétrico: BCF __ bpm | AU __ cm | tônus uterino normal | dinâmica ausente | sem perdas vaginais | movimentação fetal presente.
+```
+
 **🏠 Casa — Prescrição — Casa**
 ```
 Salbutamol (spray/nebulização).
@@ -4227,6 +4938,12 @@ Salbutamol (spray/nebulização).
 
 ### Candidíase (gestante)  ·  CID B37
 
+**🩺 Exame físico**
+```
+BEG, corada, hidratada, acianótica, anictérica, afebril.
+Especular: corrimento branco grumoso aderido, prurido/hiperemia vulvovaginal, pH normal. Obstétrico: BCF __ bpm | AU __ cm | tônus uterino normal | dinâmica ausente | sem perdas vaginais | movimentação fetal presente.
+```
+
 **🏠 Casa — Prescrição — Casa**
 ```
 Miconazol creme vaginal — 1 tubete por noite, por 7 noites.
@@ -4235,6 +4952,13 @@ Se candidíase de repetição/importante: Fluconazol 150mg VO dose única.
 
 ### Clamídia / Gonorreia (gestante)  ·  CID A54 · A56
 
+**🩺 Exame físico**
+```
+BEG, corada, hidratada, acianótica, anictérica, afebril.
+Especular: colo friável com secreção mucopurulenta. Obstétrico: BCF __ bpm | AU __ cm | tônus uterino normal | dinâmica ausente | sem perdas vaginais | movimentação fetal presente.
+Rastrear/tratar parceria; risco de transmissão perinatal.
+```
+
 **🏠 Casa — Prescrição — Casa**
 ```
 Azitromicina 500mg — 2 cp VO dose única
@@ -4242,6 +4966,12 @@ Azitromicina 500mg — 2 cp VO dose única
 ```
 
 ### Constipação (gestante)  ·  CID K59.0
+
+**🩺 Exame físico**
+```
+BEG, corada, hidratada, acianótica, anictérica, afebril.
+Abdome gravídico, RHA+, [distensão leve], indolor. Toque retal se necessário. Obstétrico: BCF __ bpm | AU __ cm | tônus uterino normal | dinâmica ausente | sem perdas vaginais | movimentação fetal presente.
+```
 
 **🏠 Casa — Prescrição — Casa**
 ```
@@ -4253,12 +4983,26 @@ Bisacodil (Dulcolax) 5mg — 1 cp VO.
 
 ### Diabetes (gestante)  ·  CID O24
 
+**🩺 Exame físico**
+```
+BEG, corada, hidratada, acianótica, anictérica, afebril.
+SSVV: PA __/__ | FC __ | FR __ | SatO2 __% | Tax __°C.
+Glicemia capilar __. Avaliar controle glicêmico. Obstétrico: BCF __ bpm | AU __ cm | tônus uterino normal | dinâmica ausente | sem perdas vaginais | movimentação fetal presente.
+```
+
 **🏠 Casa — Prescrição — Casa**
 ```
 Insulina (esquema conforme glicemia).
 ```
 
 ### Diarreia (gestante)  ·  CID A09
+
+**🩺 Exame físico**
+```
+BEG, corada, hidratada, acianótica, anictérica, afebril., hidratada.
+SSVV: PA __/__ | FC __ | FR __ | SatO2 __% | Tax __°C.
+Abdome gravídico, RHA+ aumentados, dor difusa leve, sem defesa. Obstétrico: BCF __ bpm | AU __ cm | tônus uterino normal | dinâmica ausente | sem perdas vaginais | movimentação fetal presente.
+```
 
 **🏠 Casa — Prescrição — Casa**
 ```
@@ -4269,12 +5013,26 @@ Enterogermina — 5ml VO de 8/8h por 3 dias.
 
 ### Doença hemorroidária (gestante)  ·  CID O22.4
 
+**🩺 Exame físico**
+```
+BEG, corada, hidratada, acianótica, anictérica, afebril.
+Região anal: mamilos hemorroidários [externos/trombosados], sem abscesso/celulite. Obstétrico: BCF __ bpm | AU __ cm | tônus uterino normal | dinâmica ausente | sem perdas vaginais | movimentação fetal presente.
+```
+
 **🏠 Casa — Prescrição — Casa**
 ```
 Diosmina + hesperidina (Proctyl, Daflon) tópico — aplicar na região.
 ```
 
 ### Dor (gestante)  ·  CID R52
+
+**🩺 Exame físico**
+```
+BEG, corada, hidratada, acianótica, anictérica, afebril.
+SSVV: PA __/__ | FC __ | FR __ | SatO2 __% | Tax __°C.
+Exame do sítio doloroso [__]. Obstétrico: BCF __ bpm | AU __ cm | tônus uterino normal | dinâmica ausente | sem perdas vaginais | movimentação fetal presente.
+Evitar AINE (sobretudo 3º trimestre).
+```
 
 **💉 PS / Sala — Dor intensa (na unidade)**
 ```
@@ -4291,6 +5049,14 @@ Miosan 5mg à noite por 3 dias, se cefaleia intensa.
 
 ### Dor abdominal (gestante)  ·  CID R10
 
+**🩺 Exame físico**
+```
+BEG, corada, hidratada, acianótica, anictérica, afebril.
+SSVV: PA __/__ | FC __ | FR __ | SatO2 __% | Tax __°C.
+Abdome gravídico: localizar dor, RHA, defesa/DB. Obstétrico: BCF __ bpm | AU __ cm | tônus uterino normal | dinâmica ausente | sem perdas vaginais | movimentação fetal presente.
+🚩 Diferenciar de causas obstétricas (DPP, TPP, pré-eclâmpsia) e cirúrgicas (apendicite).
+```
+
 **🏠 Casa — Prescrição — Casa**
 ```
 Escopolamina (Buscopan) 10mg — 1 cp VO de 8/8h.
@@ -4299,6 +5065,14 @@ OU Ranitidina 150mg — 1 cp VO de 8/8h.
 ```
 
 ### Epigastralgia (gestante)  ·  CID K21
+
+**🩺 Exame físico**
+```
+BEG, corada, hidratada, acianótica, anictérica, afebril.
+SSVV: PA __/__ | FC __ | FR __ | SatO2 __% | Tax __°C.
+Abdome: dor epigástrica. Obstétrico: BCF __ bpm | AU __ cm | tônus uterino normal | dinâmica ausente | sem perdas vaginais | movimentação fetal presente.
+🚩 Se 3º trim + HAS/cefaleia/escotomas → afastar pré-eclâmpsia/HELLP (dor em HD/epigástrio).
+```
 
 **🏠 Casa — Prescrição — Casa**
 ```
@@ -4309,6 +5083,14 @@ OU Hidróxido de alumínio (Mylanta Plus) — 10ml VO de 8/8h.
 
 ### Epilepsia (gestante)  ·  CID G40
 
+**🩺 Exame físico**
+```
+BEG, corada, hidratada, acianótica, anictérica, afebril.
+SSVV: PA __/__ | FC __ | FR __ | SatO2 __% | Tax __°C.
+Pós-ictal se crise recente. Neuro: [déficit?]. Obstétrico: BCF __ bpm | AU __ cm | tônus uterino normal | dinâmica ausente | sem perdas vaginais | movimentação fetal presente.
+🚩 Crise no 3º trim/periparto com HAS → afastar eclâmpsia.
+```
+
 **💉 PS / Sala — Crise refratária**
 ```
 Diazepam 5mg — 1 cp VO se na maternidade e refratária a outras medidas.
@@ -4317,6 +5099,14 @@ Diazepam 5mg — 1 cp VO se na maternidade e refratária a outras medidas.
 💡 Manter medicação usual, desde que NÃO seja Valproato de Sódio. Aumentar o esquema de ácido fólico no 1º trimestre.
 
 ### Hipertensão (gestante)  ·  CID O10
+
+**🩺 Exame físico**
+```
+BEG, corada, hidratada, acianótica, anictérica, afebril.
+SSVV: PA __/__ (repetir), FC __.
+Edema [__], reflexos [normo/hiperativos], [clônus]. Obstétrico: BCF __ bpm | AU __ cm | tônus uterino normal | dinâmica ausente | sem perdas vaginais | movimentação fetal presente.
+🚩 Sinais de pré-eclâmpsia grave: cefaleia, escotomas, dor em HD/epigástrio, hiper-reflexia.
+```
 
 **💉 PS / Sala — Hipertensão aguda grave**
 ```
@@ -4372,6 +5162,14 @@ OU Ranitidina 150mg — 1 cp VO de 8/8h.
 
 ### Pielonefrite (gestante)  ·  CID O23
 
+**🩺 Exame físico**
+```
+REG, febril.
+SSVV: PA __/__ | FC __ | FR __ | SatO2 __% | Tax __°C.
+Giordano POSITIVO à [D/E]. Obstétrico: BCF __ bpm | AU __ cm | tônus uterino normal | dinâmica ausente | sem perdas vaginais | movimentação fetal presente.
+Alto risco de trabalho de parto prematuro/sepse → internar.
+```
+
 **🏥 Internação — Prescrição — Internação**
 ```
 Cefuroxima 750mg EV de 8/8h — até ficar afebril e trocar por VO, completando 10–14 dias.
@@ -4379,6 +5177,13 @@ OU Cefepima 2g EV de 8/8h ou de 12/12h.
 ```
 
 ### Pneumonia / Sinusite / Amigdalite (gestante)  ·  CID J18 · J01 · J03
+
+**🩺 Exame físico**
+```
+BEG, corada, hidratada, acianótica, anictérica, afebril., [febril].
+SSVV: PA __/__ | FC __ | FR __ | SatO2 __% | Tax __°C.
+Foco: [AP com estertores / orofaringe com exsudato / dor em seios da face]. SatO2 __%. Obstétrico: BCF __ bpm | AU __ cm | tônus uterino normal | dinâmica ausente | sem perdas vaginais | movimentação fetal presente.
+```
 
 **🏠 Casa — Prescrição — Casa**
 ```
@@ -4388,6 +5193,13 @@ OU Azitromicina 500mg — 1 cp VO 1x ao dia por 5 dias.
 ```
 
 ### Prurido (gestante)  ·  CID L29
+
+**🩺 Exame físico**
+```
+BEG, corada, hidratada, acianótica, anictérica, afebril.
+Pele: [lesões urticariformes / sem lesões]. Obstétrico: BCF __ bpm | AU __ cm | tônus uterino normal | dinâmica ausente | sem perdas vaginais | movimentação fetal presente.
+🚩 Prurido palmoplantar sem lesões no 3º trim → afastar colestase gravídica (dosar ácidos biliares/TGO/TGP).
+```
 
 **🏠 Casa — Prescrição — Casa**
 ```
@@ -4399,6 +5211,14 @@ OU Fexofenadina (Allegra) 120mg — 1 cp VO.
 
 ### Síndrome gripal (gestante)  ·  CID J06
 
+**🩺 Exame físico**
+```
+BEG, corada, hidratada, acianótica, anictérica, afebril., [febril].
+SSVV: PA __/__ | FC __ | FR __ | SatO2 __% | Tax __°C.
+Orofaringe hiperemiada, coriza. AP: MV+ sem RA, SatO2 preservada. Obstétrico: BCF __ bpm | AU __ cm | tônus uterino normal | dinâmica ausente | sem perdas vaginais | movimentação fetal presente.
+Gestante é grupo de risco para influenza — baixo limiar para oseltamivir.
+```
+
 **🏠 Casa — Prescrição — Casa**
 ```
 Beclometasona spray nasal — 2 jatos em cada narina de 12/12h.
@@ -4409,6 +5229,12 @@ Loratadina 10mg — 1 cp VO 1x ao dia.
 
 ### Tricomoníase (gestante)  ·  CID A59
 
+**🩺 Exame físico**
+```
+BEG, corada, hidratada, acianótica, anictérica, afebril.
+Especular: corrimento amarelo-esverdeado bolhoso, colo 'em framboesa', pH >4,5, teste de aminas +. Obstétrico: BCF __ bpm | AU __ cm | tônus uterino normal | dinâmica ausente | sem perdas vaginais | movimentação fetal presente.
+```
+
 **🏠 Casa — Prescrição — Casa**
 ```
 Metronidazol 250mg — 2 cp de 12/12h por 7 dias.
@@ -4416,6 +5242,13 @@ OU Metronidazol 250mg — 8 cp VO dose única.
 ```
 
 ### Vaginose (gestante)  ·  CID N76
+
+**🩺 Exame físico**
+```
+BEG, corada, hidratada, acianótica, anictérica, afebril.
+Especular: corrimento acinzentado homogêneo, odor de peixe (aminas +), pH >4,5. Obstétrico: BCF __ bpm | AU __ cm | tônus uterino normal | dinâmica ausente | sem perdas vaginais | movimentação fetal presente.
+Associada a parto prematuro — tratar.
+```
 
 **🏠 Casa — Prescrição — Casa**
 ```
